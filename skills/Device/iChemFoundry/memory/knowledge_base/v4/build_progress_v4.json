@@ -1,0 +1,42 @@
+{
+  "version": "v4",
+  "created_at": "2026-05-21",
+  "phases_completed": [
+    "Phase0_vocab",
+    "Phase1_schema",
+    "Phase2_router",
+    "Phase3_extraction",
+    "Phase4_aggregation",
+    "Phase5_methods",
+    "Phase6_bridge_wiki",
+    "Phase7_retriever"
+  ],
+  "phases_in_progress": [],
+  "phases_pending": [],
+  "paper_routing": {
+    "total_papers": 274,
+    "principle_only": 13,
+    "dual_pipeline": 247,
+    "material_only": 14,
+    "routing_file": "shared/paper_routing.json"
+  },
+  "principle_kb_stats": {
+    "parsed_papers": 260,
+    "parsed_chunks": 55216,
+    "concept_entities": 1028,
+    "principle_traces": 4838,
+    "typed_claims": 4838,
+    "mechanism_principles": 11,
+    "structure_property_maps": 85,
+    "optimization_levers": 31,
+    "design_axioms": 7,
+    "principle_playbooks": 12
+  },
+  "pipeline_status": {
+    "P3_remaining_PID": 0,
+    "P4_P9_PID": 0,
+    "last_updated": "2026-05-23"
+  },
+  "last_updated": "2026-05-23",
+  "diffusion_papers_processed": 20
+}

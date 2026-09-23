@@ -1,0 +1,111 @@
+2540
+© Georg Thieme Verlag  Stuttgart · New York — Synthesis  2018 , 50, 2533–2545D. Ma et al. Paper Syn  thesis
+1,4-dioxane (3 mL) at 130 °C for 12 h afforded ( S)-4dh (PE/EtOAc 10:1,
+495 mL); yield: 0.0619 g (34%); colorless liquid; [ α]D20 –66.7 ( c 0.780,
+CHCl3).
+HPLC: Chiralcel OJ-H column, n-hexane/ i-PrOH (200:1), 1.0 mL/min,
+λ = 214 nm; tR (minor) = 11.3 min, tR (major) = 11.9 min; 94% ee.
+1H NMR (300 MHz, CDCl3): δ = 5.08 (qd, J1 = 6.5 Hz, J2 = 2.0 Hz, 1 H,
+=CH), 4.95–4.84 (m, 1 H, =CH), 3.66 (t, J = 6.5 Hz, 2 H, OCH2), 2.11–
+1.96 (m, 2 H, CH2), 1.92–1.74 (m, 2 H, CH + OH), 1.68–1.18 (m, 8 H, 4 ×
+CH2), 0.894 (t, J = 7.4 Hz, 3 H, CH3), 0.886 (t, J = 7.5 Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 203.7, 94.9, 90.4, 62.8, 42.9, 32.2, 28.9,
+27.7, 27.5, 25.4, 11.7, 11.5.
+Using (S)- 3b: Following the Typical Procedure I, the reaction of hex-5-
+yn-1-ol ( 1d; 0.1509 g, 1.5 mmol), 2-ethylbutanal ( 2h; 0.1502 g, 1.5
+mmol), ( S)-3b (0.1369 g, 1 mmol), and CuBr2 (0.0455 g, 0.2 mmol) in
+1,4-dioxane (3 mL) at 130 °C for 12 h afforded ( S)-4dh (PE/EtOAc 10:1,
+495 mL); yield: 0.0980 g (53%); colorless liquid; [ α]D20 –73.6 ( c 0.975,
+CHCl3).
+HPLC: Chiralcel OJ-H column, n-hexane/ i-PrOH (200:1), 1.0 mL/min,
+λ = 214 nm; tR (minor) = 11.4 min, tR (major) = 12.2 min; 99% ee.
+IR (neat): 3328, 2962, 2933, 2874, 1961, 1456, 1377, 1341, 1283,
+1065, 1036 cm–1.
+1H NMR (300 MHz, CDCl3): δ = 5.07 (qd, J1 = 6.5 Hz, J2 = 1.5 Hz, 1 H,
+=CH), 4.92–4.85 (m, 1 H, =CH), 3.66 (t, J = 6.5 Hz, 2 H, OCH2), 2.07–
+1.97 (m, 2 H, CH2), 1.89–1.74 (m, 2 H, CH + OH), 1.70–1.20 (m, 8 H, 4 ×
+CH2), 0.893 (t, J = 7.5 Hz, 3 H, CH3), 0.886 (t, J = 7.4 Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 203.7, 94.9, 90.4, 62.8, 42.9, 32.2, 28.9,
+27.7, 27.5, 25.4, 11.7, 11.5.
+MS (70 eV, EI): m/z (%) = 183 [(M + 1)+, 0.4], 182 (M+, 1.2), 93 (100).
+HRMS: m/z calcd for C12H22O (M+): 182.1671; found: 182.1670.
+Synthesis of ( R)-6-Phenylhexa-4,5-dien-1-ol [( R)-4cc]
+Synthesis of ( R)-4cc Using ( S)-3a; Typical Procedure II
+To a flame-dried Schlenk tube were added CuBr2 (0.1135 g, 0.5
+mmol), ( S)-3a (0.2589 g, 1.0 mmol), prop-2-yn-1-ol ( 1c; 0.1733 g, 2
+mmol, dissolved in 1.5 mL of 1,4-dioxane), and benzaldehyde 2c
+(0.1592 g, 1.5 mmol, dissolved in 1.5 mL of 1,4-dioxane) sequentiallyunder N
+2. The resulting mixture was heated in an oil bath preheated
+at 70 °C with stirring. After 46.5 h, the reaction was complete as mon-itored by TLC. The mixture was cooled to r.t., diluted with Et
+2O (30
+mL), and washed with aq HCl (3 M, 20 mL). The organic layer was sep-arated and the aqueous layer was extracted with Et
+2O (3 × 15 mL). The
+combined organic layers were washed with brine (20 mL) and dried(anhyd Na
+2SO4). After filtration and evaporation, the residue was pu-
+rified by chromatography on silica gel (CH2Cl2/Et2O 100:1, 300 mL) to
+afford ( R)-4cc; yield: 0.0783 g (45%); pale yellow liquid; [ α]D20 –224.2
+(c 1.035, CHCl3).
+HPLC: Chiralcel OJ-H column, n-hexane/ i-PrOH (80:1), 0.8 mL/min,
+λ = 214 nm; tR (major) = 60.7 min), tR (minor) = 66.7 min; 95% ee.
+IR (neat): 3354, 3082, 3062, 3030, 2937, 2876, 1948, 1597, 1495,
+1459, 1264, 1057 cm–1.
+1H NMR (300 MHz, CDCl3): δ = 7.32–7.23 (m, 4 H, ArH), 7.22–7.13 (m,
+1 H, ArH), 6.18–6.12 (m, 1 H, =CH), 5.59 (q, J = 6.6 Hz, 1 H, =CH), 3.67
+(t, J = 6.6 Hz, 2 H, OCH2), 2.20 (qd, J1 = 7.1 Hz, J2 = 3.0 Hz, 2H , CH2),
+1.91–1.67 (m, 3 H, OH + CH2).
+13C NMR (75 MHz, CDCl3): δ = 205.1, 134.8, 128.5, 126.7, 126.5, 95.0,
+94.4, 62.1, 31.8, 24.8.MS (70 eV, EI): m/z (%) = 174 (M+, 16.58), 130 (100).
+HRMS: m/z calcd for C12H14O (M+): 174.1045; found: 174.1051.
+Synthesis of ( R)-4cc Using ( S)-3b; Typical Procedure III
+To a flame-dried Schlenk tube were added CuBr2 (0.1132 g, 0.5
+mmol), ( S)-3b (0.1296 g, 1.0 mmol, dissolved in 1 mL of 1,4-dioxane),
+prop-2-yn-1-ol ( 1c; 0.1733 g, 2 mmol, dissolved in 1 mL of 1,4-diox-
+ane), and benzaldehyde ( 2c; 0.1596 g, 1.5 mmol, dissolved in 1 mL of
+1,4-dioxane) sequentially under N2. The resulting mixture was heated
+in an oil bath preheated at 70 °C with stirring. After 46.5 h, the reac-tion was complete as monitored by TLC. The mixture was cooled tor.t. and diluted with Et
+2O (30 mL) and washed with aq HCl (3 M, 20
+mL). The organic layer was separated and the aqueous layer was ex-tracted with Et
+2O (3 × 15 mL). The combined organic layers were
+washed with brine (20 mL) and dried (anhyd Na2SO4). After filtration
+and evaporation, the residue was purified by chromatography on sili-ca gel (CH
+2Cl2/Et2O 100:1, 300 mL) to afford ( R)-4cc; yield: 0.0644 g
+(37%); pale yellow liquid; [ α]D20 –245.2 ( c 1.100, CHCl3).
+HPLC: Chiralcel OJ-H column, n-hexane/ i-PrOH (80:1), 0.8 mL/min,
+λ = 214 nm; tR (major) = 60.8 min), tR (minor) = 66.4 min; 98% ee.
+1H NMR (300 MHz, CDCl3): δ = 7.32–7.23 (m, 4 H, ArH), 7.22–7.12 (m,
+1 H, ArH), 6.17–6.10 (m, 1 H, =CH), 5.59 (q, J = 6.5 Hz, 1 H, =CH), 3.67
+(t, J = 6.5 Hz, 2 H, OCH2), 2.25–2.14 (m, 2 H, CH2), 1.96–1.67 (m, 3 H,
+OH + CH2).
+13C NMR (75 MHz, CDCl3): δ = 205.1, 134.8, 128.5, 126.7, 126.5, 95.0,
+94.4, 62.1, 31.8, 24.8.
+Synthesis of ( R)-6-(4-Bromophenyl)hexa-4,5-dien-1-ol [( R)-4cd]
+Using (S)- 3a: Following the Typical Procedure II, the reaction of pent-
+4-yn-1-ol ( 1c; 0.1729 g, 2 mmol), 4-bromobenzaldehyde ( 2d; 0.2831
+g, 1.5 mmol), ( S)-3a (0.2580 g, 1 mmol), and CuBr2 (0.1141 g, 0.5
+mmol) in 1,4-dioxane (3 mL) at 70 °C for 44.5 h afforded ( R)-4cd
+(CH2Cl2/Et2O 40:1, 280 mL); yield: 0.1300 g (51%); yellow liquid;
+[α]D20 –209.0 ( c 1.02, CHCl3).
+HPLC: Chiralcel OJ-H column, n-hexane/ i-PrOH (50:1), 1.0 mL/min,
+λ = 214 nm; tR (minor) = 28.9 min, tR (major) = 40.5 min; 90% ee.
+1H NMR (300 MHz, CDCl3): δ = 7.40 (d, J = 8.7 Hz, 2 H, ArH), 7.13 (d, J =
+8.4 Hz, 2 H, ArH), 6.13–6.04 (m, 1 H, =CH), 5.59 (q, J = 6.6 Hz, 1 H,
+=CH), 3.67 (t, J = 6.3 Hz, 2 H, OCH2), 2.26–2.13 (m, 2 H, CH2), 190 (br s,
+1 H, OH), 1.83–1.64 (m, 2 H, CH2).
+13C NMR (75 MHz, CDCl3): δ = 205.2, 133.8, 131.6, 128.0, 120.3, 94.9,
+94.2, 62.1, 31.7, 24.7.
+Using (S)- 3b: Following the Typical Procedure II, the reaction of pent-
+4-yn-1-ol ( 1c; 0.1730 g, 2 mmol), 4-bromobenzaldehyde ( 2d; 0.2839
+g, 1.5 mmol), ( S)-3b (0.1290 g, 1 mmol), and CuBr2 (0.1131 g, 0.5
+mmol) in 1,4-dioxane (3 mL) at 70 °C for 45.5 h afforded ( R)-4cd (CH2-
+Cl2/Et2O, 40:1, 280 mL); yield: 0.1065 g (41%, purity 97%); yellow liq-
+uid; [α]D20 –241.5 ( c 0.995, CHCl3).
+HPLC: Chiralcel OJ-H column, n-hexane/ i-PrOH (50:1), 1.0 mL/min,
+λ = 214 nm; tR (minor) = 29.2 min, tR (major) = 41.8 min; 94% ee.
+IR (neat): 3354, 2936, 1948, 1899, 1587, 1487, 1444, 1387, 1258,
+1230, 1197, 1174, 1069, 1009 cm–1.
+1H NMR (300 MHz, CDCl3): δ = 7.39 (d, J = 8.4 Hz, 2 H, ArH), 7.13 (d, J =
+8.4 Hz, 2 H, ArH), 6.13–6.02 (m, 1 H, =CH), 5.59 (q, J = 6.5 Hz, 1 H,
+=CH), 3.67 (t, J = 6.5 Hz, 2 H, OCH2), 2.27–2.14 (m, 2 H, CH2), 1.90 (br s,
+1 H, OH), 1.80–1.66 (m, 2 H, CH2).
+13C NMR (75 MHz, CDCl3): δ = 205.2, 133.8, 131.6, 128.0, 120.2, 94.9,
+94.2, 62.0, 31.7, 24.7.

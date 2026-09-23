@@ -1,0 +1,12 @@
+NAME,tempo,additive,ratio,solvent,volume
+TYPE,DATA,DATA,DATA,DATA,DATA
+173093,6,CsCl,eq_1,DCE,v_2
+809,6,RbBF4,eq_1,DCE,v_1
+781,6,RbCl,eq_1,DCE,v_1
+221,6,CsCl,eq_1,DCE,v_1
+173107,6,CsI,eq_1,DCE,v_2
+173674,6,RbBO2,eq_1,DCE,v_2
+173681,6,RbBF4,eq_1,DCE,v_2
+345965,6,CsCl,eq_1,DCE,v_3
+173653,6,RbCl,eq_1,DCE,v_2
+346525,6,RbCl,eq_1,DCE,v_3

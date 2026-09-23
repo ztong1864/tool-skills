@@ -1,0 +1,22 @@
+S10
+ 1H NMR (300 MHz, CDCl 3) δ 7.82-7.73 (m, 2 H, ArH ), 7.51-7.35 (m, 3 H, ArH ),
+6.52 (bs, 1 H, NH), 5.30-5.19 (m, 2 H,  CH=C=CH), 4.05-3.95 (m, 2 H, NCH 2),
+1.96-1.86 (m, 2 H, CH 2), 1.73-1.55 (m, 1 H, CH), 0.894 (d, J = 6.6 Hz, 3 H, Me),
+0.891 (d, J = 6.6 Hz, 3 H, Me); 13C NMR (75 MHz, CDCl 3) δ 203.8, 167.3, 134.5,
+131.3, 128.4, 126.8, 92.9, 87.8, 38.5, 38.0, 28. 3, 22.1, 22.0; IR (neat) ν (cm-1) 3320,
+3064, 2955, 2927, 2869, 1964, 1727, 1644, 1603, 1578, 1538, 1489, 1465, 1308, 1076;
+MS (EI) m/z (%): 229 (M+, 7.05), 105 (100);  HRMS calcd for C 15H19NO [M+]:
+229.1467, found: 229.1469.
+3. Preparation of ( Ra)-tert-butyl (dodeca-2,3-dienyl)carbamate ( Ra)-4cc.
+(zjs-3-097)
+
+The reaction of CuBr 2 (45.4 mg, 0.2 mmol), 1c (231.9 mg, 1.5 mmol), ( S)-3 (254.1
+mg, 1.0 mmol), and 2c (214.5 mg, 1.5 mmol) in dioxa ne (3.0 mL) afforded ( Ra)-4cc
+(220.9 mg, 78%) (eluent: petroleum ether/ethyl  acetate = 100/1) as a liquid: 97% ee
+(HPLC conditions: Chiralcel AD-R column, MeOH/H 2O = 85/15, 1.0 mL/min, λ =
+214 nm, tR(major) = 12.2 min, tR(minor) = 16.2 min); [ α]D20 = -60.4 ( c = 1.02,
+CHCl 3)); 1H NMR (400 MHz, CDCl 3) δ 5.28-5.22 (m, 1 H, one proton of CH=C=CH),
+5.18-5.12 (m, 1 H, one proton of CH=C=CH), 4.72 (bs, 1 H, NH), 3.78-3.60 (m, 2 H,
+NCH 2), 2.00 (qd,  J1 = 6.8 Hz, J2 = 2.8 Hz, 2 H, CH 2), 1.45 (s, 9 H, t-Bu), 1.43-1.27
+(m, 12 H, (CH 2)6), 0.88 (t, J = 6.8 Hz, 3 H, Me); 13C NMR (100 MHz, CDCl 3) δ 203.1,
+155.6, 93.9, 89.0, 79.1, 39.3, 31.8, 29.3, 29.2, 29.0, 28.6, 28.3, 22.6, 14.0; IR (neat) ν

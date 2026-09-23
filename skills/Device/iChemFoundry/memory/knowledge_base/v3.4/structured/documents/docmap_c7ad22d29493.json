@@ -1,0 +1,63 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_c7ad22d29493",
+  "paper_id": "9a91aa096117",
+  "raw_path": "相关文献/Yang 等 - Framework Enabling Benchmark Inverse Selective CO2.pdf",
+  "title": "Framework Enabling Benchmark Inverse Selective CO2",
+  "authors": [
+    "Yang"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "PMOF-1",
+    "MUF-16",
+    "MOF-1",
+    "MOF-2",
+    "ZU-610",
+    "SIFSIX-3-Ni"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Al",
+    "Mn",
+    "Cd",
+    "In",
+    "V",
+    "Ce",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "BDC"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "conclusion": "of adsorption and separation metrics of CO2-selective materials reported in the \nliteratures at 1 bar and room temperature.a",
+    "results_summary": "1 \n \nSupporting Information \nImmobilization of Polar Group into an Ultramicroporous Metal-Organic \nFramework Enabling Benchmark Inverse Selective CO2/C2H2 Separation with \nRecord C2H2 Production \nShan"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:31:54.149804"
+}

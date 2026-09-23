@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_337da5ac4642",
+  "canonical_material_id": "mat_a8e3cf2726c6",
+  "canonical_name": "Zn-MOF-a",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_f5e7ccf071a4",
+    "mcard_6ffd54703d48"
+  ],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_c856d8e9b8a6"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 0.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "mechanism",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "125eb726c7ef"
+  ],
+  "evidence_trace_ids": [
+    "trace_932836ab6d3c",
+    "trace_58ce309f80ab"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:17:02.861708",
+  "updated_at": "2026-04-23T18:17:02.861895"
+}

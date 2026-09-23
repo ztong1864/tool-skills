@@ -1,0 +1,87 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_07aa01ab1602",
+  "canonical_material_id": "mat_919c4d9a0096",
+  "canonical_name": "xF-MAC-3",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_3cfea02891f1",
+  "pillar_id": null,
+  "topology": "pcu-b",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_4672c0c1c381",
+    "mcard_abbd3c3ca1f1",
+    "mcard_3b7589f80c19",
+    "mcard_ddb3312c015e",
+    "mcard_ea6956b577c0",
+    "mcard_ba03c45c9bb6"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_366f6f740b5c",
+    "mechcard_e16aa20d769e",
+    "mechcard_ff8ee938c5b3",
+    "mechcard_6ac1df4fc914",
+    "mechcard_6faa3c9822b0",
+    "mechcard_6ffb22ee135e",
+    "mechcard_a9f99fea895e",
+    "mechcard_8554a87053cc",
+    "mechcard_fcbc52d6dfb0"
+  ],
+  "recipe_card_ids": [
+    "recipe_645e640f2bf9",
+    "recipe_8852216d4a71",
+    "recipe_00b4f7284ebc",
+    "recipe_df0dafc9480b",
+    "recipe_dabccc562ce6"
+  ],
+  "claim_card_ids": [
+    "claim_2eba503b7c90",
+    "claim_629f614d3226",
+    "claim_4df386e923b0",
+    "claim_28b82323ea58"
+  ],
+  "design_rule_card_ids": [
+    "drule_fcab742fe31b",
+    "drule_ab95aec5fb85"
+  ],
+  "failure_case_card_ids": [
+    "fail_5fd7432318f6"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "b693b8f886ee"
+  ],
+  "evidence_trace_ids": [
+    "trace_47f9bf5e52d6",
+    "trace_46a56a8ee5e0",
+    "trace_8c5da004ea43",
+    "trace_036fbc323d8d",
+    "trace_1c9207120ccc",
+    "trace_40ab2dbae3b3",
+    "trace_0c6401b12123",
+    "trace_458792dd8723",
+    "trace_ac3c22b85eec",
+    "trace_ea50406f23b0",
+    "trace_19dd9cf6cb47",
+    "trace_7574938692f1",
+    "trace_cf950b2fb354",
+    "trace_1910cde13cd4",
+    "trace_449092b30921",
+    "trace_73ea84d4214d",
+    "trace_b3af5cfc1b4f",
+    "trace_86767d56ade6",
+    "trace_784bc719d2d9"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:29:03.704513",
+  "updated_at": "2026-04-23T19:29:38.773043"
+}

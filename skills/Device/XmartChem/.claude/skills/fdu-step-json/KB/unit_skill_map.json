@@ -1,0 +1,7 @@
+{
+  "exp_add_solid": "fdu-add-solid-json",
+  "exp_pipetting": "fdu-add-liquid-json",
+  "exp_magnetic_stirrer": "fdu-reaction-control-json",
+  "exp_filtering_samples": "fdu-filter-json",
+  "exp_high_filtering_samples": "fdu-high-filter-json"
+}

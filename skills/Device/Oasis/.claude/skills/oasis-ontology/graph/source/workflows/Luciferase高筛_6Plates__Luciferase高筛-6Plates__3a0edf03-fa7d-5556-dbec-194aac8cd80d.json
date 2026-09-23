@@ -1,0 +1,797 @@
+{
+  "code": 1,
+  "message": "Ok",
+  "data": {
+    "2a932b8a-9a15-41e6-bc18-a808f73e285f": [
+      {
+        "m": 0,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "147a49d2-85a5-4edd-83ad-7c3233b05c1f": [
+      {
+        "m": 0,
+        "n": 1,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveIn_1",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 2,
+            "DisplayStepName": "移入工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "8390fc98-ded1-40bf-bc42-f7a410a6ae5f": [
+      {
+        "m": 0,
+        "n": 2,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveOut_1",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 3,
+            "DisplayStepName": "移液",
+            "DisplayStepDevTypeName": "移液站A",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "610fee71-f4ad-4e40-a2bb-5a53958d9314": [
+      {
+        "m": 0,
+        "n": 3,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "38e8e673-ae01-41ff-b549-1896b8c79db7": [
+      {
+        "m": 1,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "bfed48c2-75cd-45ec-8ef1-0ebfbbe3e194": [
+      {
+        "m": 1,
+        "n": 1,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveOut_2",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 3,
+            "DisplayStepName": "移出工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "5b02d36c-81a4-4a74-a7fa-be2e96056671": [
+      {
+        "m": 1,
+        "n": 2,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "eb814d2a-23fe-49e7-9970-74a9c5e2cbf0": [
+      {
+        "m": 1,
+        "n": 3,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "e8068817-4aa2-4969-81b7-07773a68b05c": [
+      {
+        "m": 1,
+        "n": 4,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveIn_2",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 5,
+            "DisplayStepName": "移液",
+            "DisplayStepDevTypeName": "移液站A",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "22503e55-7974-4550-aae9-5cf75f5b5b7d": [
+      {
+        "m": 2,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "648f5c41-a453-4da7-9de5-31bd3a47cf42": [
+      {
+        "m": 2,
+        "n": 1,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveIn_3",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 2,
+            "DisplayStepName": "移入工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "bba77c5a-cd7a-4f14-9ff1-d9796a3b81cb": [
+      {
+        "m": 2,
+        "n": 2,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveOut_3",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 3,
+            "DisplayStepName": "移出工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "cee4a899-0791-4ca9-895c-28c3041c86eb": [
+      {
+        "m": 2,
+        "n": 3,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "ff7cc544-d6c2-48e9-978e-17fcdfd49b15": [
+      {
+        "m": 3,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "9925c450-1c34-49d6-9773-7562c34c2eae": [
+      {
+        "m": 3,
+        "n": 1,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveIn_4",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 2,
+            "DisplayStepName": "移入工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "94c98eb9-dd84-4d6b-bcf6-62764fa7032b": [
+      {
+        "m": 3,
+        "n": 2,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveOut_4",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 3,
+            "DisplayStepName": "移出工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "1f41bc09-e214-4067-919d-f7b315a39731": [
+      {
+        "m": 3,
+        "n": 3,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "00093512-6576-400d-9c0f-e2207dad7e68": [
+      {
+        "m": 4,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "ffe52821-28d1-4995-9f23-65132f9a48f2": [
+      {
+        "m": 4,
+        "n": 1,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveIn_5",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 2,
+            "DisplayStepName": "移入工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "68e2773d-e6ed-45c9-90cb-ca2ee608bd4d": [
+      {
+        "m": 4,
+        "n": 2,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveOut_5",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 3,
+            "DisplayStepName": "移出工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "c1aabe0b-46cd-4939-844f-5c510a3ba4b0": [
+      {
+        "m": 4,
+        "n": 3,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "3cf1c5cb-8768-4091-b4ae-1f08a3224f64": [
+      {
+        "m": 5,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "0f6a5160-920a-4edb-9783-8a469b032ba2": [
+      {
+        "m": 5,
+        "n": 1,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveIn_6",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 2,
+            "DisplayStepName": "移入工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "a9b18b63-ca36-4ee9-b38b-be8af19cab26": [
+      {
+        "m": 5,
+        "n": 2,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveOut_6",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 3,
+            "DisplayStepName": "移出工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "2235f2d1-c2b6-4398-b94c-d824c3a7c9ab": [
+      {
+        "m": 5,
+        "n": 3,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "0107df34-2c32-44f6-a8d3-eccac82ba2a6": [
+      {
+        "m": 6,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "edd98946-e24c-425c-b12e-0ada3f9f8215": [
+      {
+        "m": 6,
+        "n": 1,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "c1d4e114-0eb9-4d4d-ab1a-c061666a7847": [
+      {
+        "m": 6,
+        "n": 2,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "18c0608c-7d4e-47d2-bccc-9783f05ab452": [
+      {
+        "m": 6,
+        "n": 3,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveIn_Med1",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 4,
+            "DisplayStepName": "移入工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "30bc373e-12a9-46b1-9a48-9d0400fbac2e": [
+      {
+        "m": 6,
+        "n": 4,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "MoveOut_Med1",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 5,
+            "DisplayStepName": "移出工作站",
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ],
+    "62f23540-8daf-4111-ae80-1c1fcec5a929": [
+      {
+        "m": 6,
+        "n": 5,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "b375d935-709a-4cdc-abb2-913580837075": [
+      {
+        "m": 6,
+        "n": 6,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "d6c09588-fc11-4816-a7dd-c3e5e42d65d5": [
+      {
+        "m": 6,
+        "n": 7,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "f27bba72-c979-4b78-9e35-80fd8efa8c99": [
+      {
+        "m": 7,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "c104d2b2-e28d-4c07-98cf-adf364e79adb": [
+      {
+        "m": 7,
+        "n": 1,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "01a7d7b4-a8c1-4b4f-a7b2-c13dad0329c2": [
+      {
+        "m": 7,
+        "n": 2,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "056452c6-6ab1-4747-a09a-ce2502a85d86": [
+      {
+        "m": 7,
+        "n": 3,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "AddMedicine_6Plates",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 4,
+            "DisplayStepName": "移液",
+            "DisplayStepDevTypeName": "移液站A",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": ""
+          }
+        ]
+      }
+    ]
+  },
+  "error": null,
+  "timestamp": 1778830050103,
+  "path": "/api/workflow/sub-workflow/3a0edf03-fa7d-5556-dbec-194aac8cd80d/step-parameters"
+}

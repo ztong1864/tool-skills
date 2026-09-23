@@ -1,0 +1,204 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_c69533ccec05",
+  "paper_id": "f99adb3f4b07",
+  "title": "An electrochemically neutralized energy-assisted l",
+  "year": 2018,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C2H4",
+    "C2H6"
+  ],
+  "one_line_summary": "Mn-dtzip shows C2H4_productivity = 109.6 cm3/g for C2H4",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "weight_loss (DMF/H2O) = 29.8 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "C2H4_productivity (C2H4) = 109.6 cm3/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "breakthrough_recyclability_runs (C2H4/C3H6) = 4.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "open_metal_sites_and_accessible_uncoordinated_N/O_atoms_on_pore_walls → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "3D_honeycomb_framework → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] create open metal sites together with accessible organic hydrogen-bond-acceptor sites in the framework → improves preferential adsorption of C3H6 over C2H4 and helps overcome the capacity-selectivity trade-off"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use high-porosity frameworks with polar channel surfaces decorated by rich open metal sites, uncoordinated tetrazolate N, and accessible carboxylate O sites → enables both high C3H6 uptake and significant C3H6/C2H4 selectivity, superior to spe-MOF and Ni-MOF-74"
+    },
+    {
+      "title": "Comparison",
+      "body": "srl-MOF vs spe-MOF: winner=subject_a on C3H6/C2H4 selectivity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_94eb5477291a",
+    "trace_9b99628434ab",
+    "trace_bc4d3b82c156",
+    "trace_9dd3f841f9a2",
+    "trace_8b78906749cf",
+    "trace_3e5ed3860cf7",
+    "trace_6c8ea7f9db93",
+    "trace_4cad6fe30469",
+    "trace_70ae30eaea3f",
+    "trace_1364120e6f65",
+    "trace_3197928e8909",
+    "trace_84c2b3d502e8",
+    "trace_850752d69e57",
+    "trace_052b4af4d5be",
+    "trace_1ee92b00bcb0",
+    "trace_e0e084981f23",
+    "trace_e00de989c49d",
+    "trace_50911f339a43",
+    "trace_04fb21d5016e",
+    "trace_1a0195086294",
+    "trace_4ebdd3885a5d",
+    "trace_0251954cd6e1",
+    "trace_af008eec7de9",
+    "trace_38110eeea3dc",
+    "trace_43a6e3ca0b5f",
+    "trace_3b5baa7d4d1a",
+    "trace_540429e4ea2b",
+    "trace_c8c0e8290185",
+    "trace_09bf27081c47",
+    "trace_e0015c728956",
+    "trace_99d57a8ffc0a",
+    "trace_31500d2756dc",
+    "trace_3a47ca4af09a",
+    "trace_0684ce2805f5",
+    "trace_5b151e7bbc57",
+    "trace_6ca8a0fe7190",
+    "trace_f378f630069e",
+    "trace_f2874b3a77ba",
+    "trace_f8ee8b8a3d6c",
+    "trace_c7bb243d0bea",
+    "trace_4ef983a8f12f",
+    "trace_7f0eeafb873e",
+    "trace_a05b554d9b02",
+    "trace_21191c27879d",
+    "trace_c9a07b527173",
+    "trace_0251954cd6e1",
+    "trace_af008eec7de9",
+    "trace_bc4d3b82c156",
+    "trace_9b99628434ab",
+    "trace_3e5ed3860cf7",
+    "trace_e0015c728956",
+    "trace_4cad6fe30469",
+    "trace_50911f339a43",
+    "trace_3197928e8909",
+    "trace_052b4af4d5be",
+    "trace_850752d69e57",
+    "trace_1ee92b00bcb0",
+    "trace_21191c27879d",
+    "trace_4ef983a8f12f",
+    "trace_31500d2756dc",
+    "trace_540429e4ea2b",
+    "trace_99d57a8ffc0a",
+    "trace_a05b554d9b02",
+    "trace_3b5baa7d4d1a",
+    "trace_0684ce2805f5",
+    "trace_3a47ca4af09a",
+    "trace_5b151e7bbc57",
+    "trace_38110eeea3dc",
+    "trace_e00de989c49d",
+    "trace_7f0eeafb873e",
+    "trace_6ca8a0fe7190",
+    "trace_6c8ea7f9db93",
+    "trace_c8c0e8290185",
+    "trace_04fb21d5016e",
+    "trace_c7bb243d0bea",
+    "trace_c9a07b527173",
+    "trace_1364120e6f65",
+    "trace_f378f630069e",
+    "trace_8b78906749cf",
+    "trace_e0e084981f23",
+    "trace_09bf27081c47",
+    "trace_94eb5477291a",
+    "trace_70ae30eaea3f",
+    "trace_43a6e3ca0b5f",
+    "trace_1a0195086294",
+    "trace_f2874b3a77ba",
+    "trace_4ebdd3885a5d",
+    "trace_f8ee8b8a3d6c",
+    "trace_84c2b3d502e8",
+    "trace_9dd3f841f9a2"
+  ],
+  "measurement_card_ids": [
+    "mcard_6fc1063ca349",
+    "mcard_7bb14799c3f0",
+    "mcard_b2f9a19ae8a8"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_61a9f437e131",
+    "mechcard_68ca86831665"
+  ],
+  "recipe_card_ids": [
+    "recipe_15a98fd35533",
+    "recipe_ef27beeb1ddb"
+  ],
+  "claim_card_ids": [
+    "claim_9bf8b7266fa8",
+    "claim_51ed2efaa726",
+    "claim_b13aef90170d",
+    "claim_575db196050d",
+    "claim_f85381b42e49",
+    "claim_4723317ae93a",
+    "claim_74bc6ab1920c"
+  ],
+  "design_rule_card_ids": [
+    "drule_b35ef36be824",
+    "drule_3f6a5fd55d74"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_00cefbc8a2dc",
+    "comp_df30e0269eac",
+    "comp_32348b21b902",
+    "comp_6c7d81492b38"
+  ],
+  "failure_case_card_ids": [
+    "fail_fec66219da13",
+    "fail_7346f119a6bb"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_f3c1211ae936"
+  ],
+  "dossier_ids": [
+    "dossier_31c768cca47a"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Prior MOFs often show a capacity-selectivity trade-off: some have high C3H6 uptake but only moderate selectivity, while others are selective but load little C3H6.",
+    "Mn-dtzip is highly porous after solvent removal, with 65.8% porosity, an effective pore size of about 12.4 Å, and BET area of 880.9 m2 g-1.",
+    "Mn-dtzip combines open metal sites with uncoordinated tetrazolate N and carboxylate O sites, creating more accessible C3H6 binding sites than for C2H4."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.088453",
+  "updated_at": "2026-04-24T00:19:48.088455",
+  "raw_path": "相关文献/Li 等 - 2018 - An electrochemically neutralized energy-assisted l.pdf",
+  "authors": [
+    "Li"
+  ]
+}

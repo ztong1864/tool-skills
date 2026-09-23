@@ -1,0 +1,958 @@
+disease_id,disease_name
+20528,ACTH-dependent Cushing syndrome
+18613,AH amyloidosis
+19438,AL amyloidosis
+18225,ALK-positive large B-cell lymphoma
+19441,ATTRV122I amyloidosis
+5629,Acanthamoeba keratitis
+9410,Addison disease
+11913_7088_11743_12153_7089_11194_12321_15140_4975_11561_11647_11777_12344_12609_12630_12631_14265_10422_14036_14316_100088,Alzheimer disease
+11401,Alzheimer disease without neurofibrillary tangles
+4095,B-cell neoplasm
+16430,Balo concentric sclerosis
+11822_100344_9424_909_10503_11242_15231,Bartter disease
+10311,Becker muscular dystrophy
+7243,Burkitt lymphoma
+11751,"COPD, severe early onset"
+1444,Chagas disease
+705,Clostridium difficile colitis
+5011_5535,Crohn disease
+5532,Crohn's colitis
+9050,Cushing disease due to pituitary adenoma
+18912,Cushing syndrome
+14394_13217_32668_12529_32669_44309_12937_13216_13964_12938_12925_7110_14245_12924_60662_32670_44310_12939_15253_11636,Diamond-Blackfan anemia
+100135,Dravet syndrome
+10679,Duchenne muscular dystrophy
+17346,Epstein-Barr virus-positive diffuse large B-cell lymphoma of the elderly
+12817,Ewing sarcoma
+10526,Fabry disease
+5775,G6PD deficiency
+9266_9265_9267_18150,Gaucher disease
+5364,Graves disease
+5109,HIV infectious disease
+7699,Hashimoto thyroiditis
+17989,His bundle tachycardia
+4626,Hodgkin's paragranuloma
+4952,Hodgkins lymphoma
+7739,Huntington disease
+11487_11299_11671_15548,Huntington disease-like
+18425,Huntington disease-like syndrome due to C9ORF72 expansions
+9100,IDDM 1
+18673,IgG4-related pachymeningitis
+18645,IgG4-related sclerosing cholangitis
+18800,Kallmann syndrome
+5055,Kaposi's sarcoma (disease)
+7708,Kasabach-Merritt syndrome
+18556,Lambert-Eaton myasthenic syndrome
+15531_17025_18310_17036_17029,Langerhans cell histiocytosis
+10788,Leber hereditary optic neuropathy
+5824,Legionnaires' disease
+16532,Lennox-Gastaut syndrome
+19632,Lyme disease
+7947,Marfan syndrome
+18945,McLeod neuroacanthocytosis syndrome
+7972,Meniere disease
+11871_11873_9757_9756_18982_1982_20384,Niemann-Pick disease
+14143_11531_14693_13186_8104_12371_14691_13379_12690_32786_12547_32839_33669_18997,Noonan syndrome
+11764_11658_13625_8199_14604_11613_14233_11562_8200_14796_17279_5180_6966_828_10796_10360_11737_13167,Parkinson disease
+8231,Peyronie disease
+8243,Pick disease
+5920,Plasmodium falciparum malaria
+8300,Prader-Willi syndrome
+19186,Q fever
+8364,Raynaud disease
+5942,Reye syndrome
+13276,Reynolds syndrome
+2083,Richter syndrome
+19618,Sheehan syndrome
+10030,Sjogren syndrome
+10819_11370_19353,Stargardt disease
+18229,Stevens-Johnson syndrome
+5525_3540,T-cell leukemia
+17597,T-cell/histiocyte rich large B cell lymphoma
+7661,Tourette syndrome
+19444,Trichinellosis
+100280,Waldenstrom macroglobulinemia
+6015,Waterhouse-Friderichsen syndrome
+10198,Wernicke-Korsakoff syndrome
+18097,West syndrome
+8679_11112_14779_11056_8680_8683_6058,Wilms tumor
+10200,Wilson disease
+10264,X-linked adrenal hypoplasia congenita
+18544_10247,X-linked adrenoleukodystrophy
+19032,X-linked intellectual disability with isolated growth hormone deficiency
+10482,X-linked parkinsonism-spasticity syndrome
+19610,Zollinger-Ellison syndrome
+19136,Zygomycosis
+11876_10826,absence epilepsy
+11438,acne (disease)
+19543,acquired aneurysmal subarachnoid hemorrhage
+19624_15055_15056,acquired angioedema
+24305,acquired hyperprolactinemia
+19832,acquired pituitary hormone deficiency
+9891,acquired polycythemia vera
+18854,acquired purpura fulminans
+19933,acromegaly
+43300,actinic cheilitis
+5173,actinic keratosis (disease)
+5542,acute coronary syndrome
+17858,acute erythroid leukemia
+8294,acute intermittent porphyria
+19203,acute interstitial pneumonia
+15796,acute lung injury
+4967,acute lymphoblastic leukemia (disease)
+4948_872_4963_20511_4947_814,acute lymphoblastic/lymphocytic leukemia
+20320,acute myeloblastic leukemia with maturation
+5224,acute myeloblastic leukemia without maturation
+15165,acute myeloid leukemia and myelodysplastic syndromes related to topoisomerase type 2 inhibitor
+17894,acute myeloid leukemia with CEBPA somatic mutations
+18437,acute myeloid leukemia with NPM1 somatic mutations
+20316,acute myeloid leukemia with abnormal bone marrow eosinophils inv(16)(p13q22) or t(16;16)(p13;q22)
+18435,acute myeloid leukemia with inv3(p21;q26.2) or t(3;3)(p21;q26.2)
+5223,acute myeloid leukemia with minimal differentiation
+18433,acute myeloid leukemia with t(6;9)(p23;q34)
+18256,acute myeloid leukemia with t(8;16)(p11;p13) translocation
+15166,acute myeloid leukemia with t(8;21)(q22;q22) translocation
+18434,acute myeloid leukemia with t(9;11)(p22;q23)
+12883,acute promyelocytic leukemia
+6502,acute respiratory distress syndrome
+3652,acute urate nephropathy
+18532,adenocarcinoma of liver and intrahepatic biliary tract
+18351,adenocarcinoma of penis
+5636,adenosarcoma
+2817,adrenal gland cancer
+6640,adrenal gland hyperfunction
+4974,adrenal gland pheochromocytoma
+19801_15128_43370,adrenal insufficiency
+4,adrenocortical insufficiency
+15898,adrenogenital syndrome
+18324,adult-onset myasthenia gravis
+20333,aggressive systemic mastocytosis
+5433,alcohol withdrawal
+6642,alcohol withdrawal delirium
+15561,aleukemic mast cell leukemia
+4784,allergic asthma
+15243,allergic bronchopulmonary aspergillosis
+11786_5324_24332,allergic rhinitis
+4907,alopecia
+7082_12551_5340,alopecia areata
+5644,amebiasis
+1836,amenorrhea (disease)
+1152,amnestic disorder
+19028,amoebiasis due to Entamoeba histolytica
+19065,amyloidosis (disease)
+12945_11691_12077_8780_11196_27694_11951_10459_11223_11632_14223_12790_12753_13715_7103_13264_13891_14181_4976_5145_11952,amyotrophic lateral sclerosis
+16684,anaplastic astrocytoma
+16700,anaplastic ependymoma
+16703,anaplastic oligoastrocytoma
+16696,anaplastic oligodendroglioma
+19154,androgen insensitivity syndrome
+16705,angiocentric glioma
+10481,angioedema
+1868_1744_1742_1864,angle-closure glaucoma
+5306_20655,ankylosing spondylitis
+5351_33926,anorexia nervosa
+1164,antisocial personality disorder
+11918,anxiety
+8187_2050_5618_5451_5371_100081_5383_1942_1098_3265_11924_12384,anxiety disorder
+7345,aorta coarctation
+4845,aphthous stomatitis
+15909,aplastic anemia
+5649,appendicitis
+8450_15304,arachnoiditis
+8815,argininosuccinic aciduria
+7690,aromatase excess syndrome
+2277,arteriosclerosis disorder
+5578,arthritic joint disease
+6816,arthropathy
+5657_240,aspergillosis
+265,aspiration pneumonia (disease)
+4979,asthma
+16707,astroblastoma
+19781,astrocytoma (excluding glioblastoma)
+5311,atherosclerosis
+5642,atopic conjunctivitis
+4980,atopic eczema
+4981,atrial fibrillation (disease)
+465,atrioventricular block (disease)
+5302,"attention deficit hyperactivity disorder, inattentive type"
+7743,attention deficit-hyperactivity disorder
+18321,atypical juvenile parkinsonism
+5260,autism (disease)
+5258,autism spectrum disorder
+20643,autism susceptibility 1
+7179,autoimmune disease
+20108_16450_19532,autoimmune hemolytic anemia
+8558_19098,autoimmune thrombocytopenic
+15445,autosomal dominant coarctation of aorta
+19263,autosomal erythropoietic protoporphyria
+9572,autosomal recessive familial Mediterranean fever
+4471,bacterial arthritis
+1725,balanitis xerotica obliterans
+20804,basal cell carcinoma
+3996,basal ganglia disease
+10811,benign prostatic hyperplasia (disease)
+11559_9469_19008,benign recurrent intrahepatic cholestasis
+6676_24182_24183,beriberi
+19402_16486,beta thalassemia
+13517,beta-thalassemia HBB/LCRB
+17145,beta-thalassemia and related diseases
+16487,beta-thalassemia intermedia
+4868,biliary tract disease
+4985_693_24613_1866,bipolar disorder
+5669,black piedra
+6678,bladder calculus
+6115,"blast phase chronic myelogenous leukemia, BCR-ABL1 positive"
+11728,blepharospasm
+5382,bone Paget disease
+5374,bone marrow neoplasm
+2629,bone osteosarcoma
+16093,borderline epithelial tumor of ovary
+5498,botulism
+24472,boutonneuse fever
+1657,brain cancer
+5299,brain ischemia
+7254,breast cancer
+4989,breast carcinoma
+5590,breast ductal adenocarcinoma
+21100,breast neoplasm
+4822,bronchiectasis
+3781_5607_18597,bronchitis
+5683,brucellosis
+2443,bruxism (disease)
+18182,bullous impetigo
+2026,candidiasis
+5318,canker sore
+9376,carbamoyl phosphate synthetase I deficiency disease
+100347,carcinoid syndrome
+4993,carcinoma
+19086,carcinoma of esophagus
+745,cardiac arrest
+5693,cauda equina syndrome
+3155,cavernous hemangioma
+7706,cavernous hemangiomas of face-supraumbilical midline raphe syndrome
+2602,central nervous system disease
+22687_4742,cerebellar degeneration
+2679,cerebral infarction
+8948,cerebrotendinous xanthomatosis
+11057,cerebrovascular disorder
+2974,cervical cancer
+5131,cervical carcinoma
+2877,cervical carcinosarcoma
+4789_1929_1930_1931,cholangitis
+6698,cholecystolithiasis
+6699,choledocholithiasis
+12672,cholelithiasis
+15766,cholera
+1751,cholestasis
+10917_7319_1314,chondrocalcinosis
+16706,chordoid glioma of the third ventricle
+4674,chorioretinitis (disease)
+15908,chromomycosis
+15274,chronic beryllium disease
+15574,chronic cutaneous lupus erythematosus
+15687,chronic eosinophilic leukemia
+6147,"chronic eosinophilic leukemia, not otherwise specified"
+5366,chronic hepatitis B virus infection
+5354,chronic hepatitis C virus infection
+3864,chronic lymphocytic leukemia/small lymphocytic lymphoma
+11996,"chronic myelogenous leukemia, BCR-ABL1 positive"
+5002,chronic obstructive pulmonary disease
+15129_15130,chronic primary adrenal insufficiency
+13024,chronic thromboembolic pulmonary hypertension
+9528,chylomicron retention disease
+2970,ciliary body disease
+16602,citrin deficiency
+8988_16603_15991,citrullinemia
+9348,classic Hodgkin lymphoma
+20329,"classic Hodgkin lymphoma, lymphocyte-rich type"
+5005,clear cell renal carcinoma
+1966_1817,closed-angle glaucoma
+5706,coccidioidomycosis
+5401,colonic neoplasm
+5575,colorectal cancer
+13099,"combined pituitary hormone deficiencies, genetic form"
+1209,common wart
+18712,composite hemangioendothelioma
+18479_19847_23601_60783,congenital adrenal hyperplasia
+9934,congenital alveolar capillary dysplasia
+15403_15404_18715_18716,congenital hemangioma
+15770_16553,congenital hypogonadotropic hypogonadism
+44331_16408_19858_18612_16410_15792_16409,congenital hypothyroidism
+19010,congenital isolated hyperinsulinism
+13361,congenital prothrombin deficiency
+5715,congenital toxoplasmosis
+5009,congestive heart failure
+2203,constipation disorder
+5480,contact dermatitis
+4577,corneal ulcer
+5010,coronary artery disease
+6716,coronary thrombosis
+5724,cryptococcosis
+9047,cryptorchidism (disease)
+15474,cryptosporidiosis
+18168_19033_18167,cutis verticis gyrata
+18408,cystic echinococcosis
+9061,cystic fibrosis
+15484,cysticercosis
+16239,cystinosis
+9067_19745_19746,cystinuria
+6032,cystitis
+1639,deficiency anemia
+2175,degeneration of macula and posterior pole
+1627,dementia (disease)
+2406,dermatitis
+15614_6565,dermatitis herpetiformis
+11292,"dermatitis, atopic"
+11934_23273,dermatofibrosarcoma protuberans
+8054_16367_1907,dermatomyositis
+19373,desmoplastic small round cell tumor
+10632_33369_33371_10472_14477_32598_10396_32768_33361_13389_14859_14392_33373_32752_32657_14593_32663_14947_13388_14377_32808_14895_30059_13387_32880_33363_32678_13989_33366_10375_13277_33362_14917_14921_14933_14942_30054_14607_14595_14133_33370_14201_32918_14949_32813_14533_14598_10246_33368_15025_14371_54845_14360_13056_13801_14718_14719_32812_32858_30072_14505_14199_14003_14328_15000_33367_33372_15002_12245_30856_32710_32725_33364_33365_14868_29138_32822_12812_32895_14625_34106_33374_100079_14916_14647_100062_25353,developmental and epileptic encephalopathy
+5015,diabetes mellitus (disease)
+12819,diabetic ketoacidosis
+5016,diabetic nephropathy
+6626,diabetic neuropathy
+1583,diabetic polyneuropathy
+1673,diarrheal disease
+15447,differentiated thyroid carcinoma
+16686,diffuse astrocytoma
+7648_5017,diffuse gastric adenocarcinoma
+18905_17601_6117_6268_6428,diffuse large B-cell lymphoma
+17596,diffuse large B-cell lymphoma of the central nervous system
+19558_4706,discoid lupus erythematosus
+17306,disorder of phenylalanine metabolism
+1243_1242,disseminated intravascular coagulation
+11381,dominant beta-thalassemia
+20386,double outlet right ventricle with subaortic or doubly committed ventricular septal defect with pulmonary stenosis
+6733,dry eye syndrome
+5412,duodenal ulcer (disease)
+920,duodenum cancer
+1442,dysthymic disorder
+16022,early myoclonic encephalopathy
+10709,early-onset parkinsonism-intellectual disability syndrome
+5424,elephantiasis
+5440,embryonal carcinoma
+18843,embryonal carcinoma of the central nervous system
+5025_6669,endocarditis
+12048,endogenous depression
+6744,endolymphatic hydrops
+11962,endometrial cancer
+2447,endometrial carcinoma (disease)
+5133,endometriosis (disease)
+10888,endometriosis of uterus
+21251,endometrium neoplasm
+5746,enterobiasis
+9172,enterocolitis (disease)
+19122_5749_44972_15927_4806_17363,eosinophilic pneumonia
+16715,ependymoblastoma
+9176,epidermodysplasia verruciformis
+5027,epilepsy
+5754,epilepsy with generalized tonic-clonic seizures
+15523,epithelioid hemangioendothelioma
+17387_4060_4105_4521,epithelioid sarcoma
+5362,erectile dysfunction (disease)
+1266,erysipelas
+6545_44719,erythema multiforme
+60729_8319_1676,erythropoietic protoporphyria
+20920,escherichia coli infection
+7576,esophageal cancer
+44782,esophageal ulcer
+1409,esophagitis (disease)
+7781,"essential hypertension, genetic"
+5758,eunuchism
+6547,exanthem (disease)
+18752,exercise-induced malignant hyperthermia
+18088,familial Mediterranean fever
+8731,familial adrenal hypoplasia with absent pituitary luteinizing hormone
+7448,familial dermatographia
+8733,familial glucocorticoid deficiency
+1336,familial hyperlipidemia
+14250,familial hyperprolactinemia
+24573,familial hypertrophic cardiomyopathy
+15762_17290_18804,familial intrahepatic cholestasis
+10188,familial isolated deficiency of vitamin E
+8303,familial male-limited precocious puberty
+2350,familial nephrotic syndrome
+16248,familial ovarian cancer
+17895,familial papillary or follicular thyroid carcinoma
+11578,familial papillary thyroid carcinoma with renal papillary neoplasia
+23122,familial prostate carcinoma
+19111,familial thrombocytosis
+7958_17896,familial thyroid carcinoma
+16829,familial visceral myopathy
+21124,female infertility
+6760,fetal erythroblastosis
+16688,fibrillary astrocytoma
+6210_891,fibrolamellar hepatocellular carcinoma
+5761,filarial elephantiasis
+482,focal hand dystonia
+18906,follicular lymphoma
+16453,foodborne botulism
+16426,fusariosis
+30105_18116,galactosemia
+1056,gastric cancer
+4950,gastric carcinoma
+18184,gastric linitis plastica
+21085,gastric neoplasm
+1126,gastric ulcer (disease)
+5001_4966,gastritis
+2269,gastroenteritis
+7186,gastroesophageal reflux disease
+11719,gastrointestinal stromal tumor
+6769,gastroparesis (disease)
+16689,gemistocytic astrocytoma
+18944,gestational trophoblastic neoplasm
+16682,giant cell glioblastoma
+11129_9277_5041,glaucoma
+18177,glioblastoma (disease)
+21042,glioma
+16681,gliosarcoma
+18327,glomus tumor
+16372,glossopharyngeal neuralgia
+9294_13291_10598_13091_10362_9868_9295_9293_9290_9291_2413_2412,glycogen storage disease
+5397,goiter (disease)
+7681,"goiter, multinodular 1, with or without Sertoli-Leydig cell tumors"
+5393,gout
+20547_13730,graft versus host disease
+18031,granulomatous slack skin disease
+18935,hairy cell leukemia
+17600,hairy cell leukemia variant
+5627,head and neck cancer
+1340,heart cancer
+5267,heart disease
+5252,heart failure
+6500_3096_2323,hemangioma
+17636,hemiparkinsonism-hemiatrophy syndrome
+19050_4781_44348_44349,hemoglobinopathy
+10604_10602_15720_15719_18660_15721_15715_15716_15717,hemophilia
+4872_4873,hemorrhoid
+1436,hemosiderosis
+18048,heparin-induced thrombocytopenia (disease)
+1548,hepatic coma
+1711,hepatic encephalopathy
+5231,hepatitis C virus infection
+7256_18902_16216_3243,hepatocellular carcinoma
+12526_15053_19623_15054,hereditary angioedema
+33946,hereditary angioedema with C1Inh deficiency
+16419,hereditary breast carcinoma
+3582,hereditary breast ovarian cancer syndrome
+6507,hereditary hemochromatosis
+10619_10358_20720,hereditary hypophosphatemic rickets
+18466,hereditary late onset Parkinson disease
+7116,hereditary neurocutaneous angioma
+20989,hereditary persistence of fetal hemoglobin
+16249,hereditary site-specific ovarian cancer syndrome
+19565,hereditary von Willebrand disease
+12521,herpes simplex encephalitis
+18312,histoplasmosis
+18328,homozygous familial hypercholesterolemia
+5459,human African trypanosomiasis
+43455,humoral hypercalcemia of malignancy
+3009,hyperaldosteronism
+9377,hyperammonemia due to N-acetylglutamate synthase deficiency
+8814,hyperargininemia
+1566,hypercalcemia disease
+15691,hypereosinophilic syndrome
+5803_18619,hyperinsulinemic hypoglycemia
+12382_11153_9734,"hyperinsulinemic hypoglycemia, familial"
+2177,hyperinsulinism (disease)
+21187_11237_11470,hyperlipidemia
+7759,"hyperlipidemia, familial combined, LPL related"
+14412_7761_7762_18473_37748,hyperlipoproteinemia
+24570_7767_6964_1530_1741_10837_16166_12406_21132,hyperparathyroidism
+328,hyperphosphatemia (disease)
+6793,hyperpituitarism
+5804,hyperprolactinemia (disease)
+17853,hypersensitivity pneumonitis
+1200_1134_15512_5080_100078,hypertension
+5044,hypertensive disorder
+4425,hyperthyroidism
+19280,hypertrichosis (disease)
+5347,hypertriglyceridemia (disease)
+13412_13200_12112_7268_11843_13474_13475_13477_10946_12799_8647_12804_13455_14883_13852_13197_7267_13195_12111_13369_7266_13476_5045,hypertrophic cardiomyopathy
+1821,hypoactive sexual desire disorder
+11393_17773_32766,hypoalphalipoproteinemia
+1357_387,hypochromic anemia
+4946,hypoglycemia
+2146,hypogonadism
+9421,"hypogonadism, male"
+9417_18555,hypogonadotropic hypogonadism
+7794_9239_9223_13912_13961_7844_13946_14105_13910_14102_12880_14461_9482_30010_14107_13914_10635_14106_13911_12528_13926_13913_12988_14103_13915,hypogonadotropic hypogonadism with or without anosmia
+16384,hypogonadotropic hypogonadism-frontoparietal alopecia syndrome
+7078_12911_12912_8749_11301_19992_16165_1220,hypoparathyroidism
+313,hypophosphatemia (disease)
+19591_5152,hypopituitarism
+5468,hypotensive disorder
+5420_16412_15777,hypothyroidism
+16778,iatrogenic botulism
+12197,idiopathic aplastic anemia
+18956,idiopathic bronchiectasis
+11895,idiopathic hypereosinophilic syndrome
+2429,idiopathic interstitial pneumonia
+8345,idiopathic pulmonary fibrosis
+17256_17257,idiopathic uveitis
+18369,immature ovarian teratoma
+15804,infant botulism
+4796,infectious meningitis
+9960_12845_33643_11471_12831_12875_12941_13153_8617_54849_5265_12832_12610_12840_11087_11521_11661_11699_11700_11701_12040_12829_12837_12838_12841_12852_12886_12887_12940_12973_13012,inflammatory bowel disease
+5812,influenza
+13855,"influenza, severe, susceptibility to"
+16595,inhalational anthrax
+16777,inhalational botulism
+17893,inherited acute myeloid leukemia
+1713,inherited aplastic anemia
+17337,inherited isolated adrenal insufficiency due to partial CYP11A1 deficiency
+13600,insomnia (disease)
+18301,interstitial cystitis
+15806_15805,intestinal botulism
+916,intestinal infectious disease
+4565_2803_2801,intestinal obstruction
+6810,intracranial hypertension
+6812,intracranial vasospasm
+20324,intravascular large B-cell lymphoma
+4765,intrinsic asthma
+4953,invasive ductal breast carcinoma
+6563,inverted follicular keratosis
+2289,iris disease
+6814,iritis (disease)
+1356,iron deficiency anemia
+2279,iron metabolism disease
+5052,irritable bowel syndrome
+7834,islet cell adenomatosis
+50,isolated congenital growth hormone deficiency
+10615_13006_8250_32569_9876_32567,isolated growth hormone deficiency
+16621,juvenile Huntington disease
+9394,juvenile Paget disease
+32920,juvenile arthritis due to defect in LACC1
+11429_19433,juvenile idiopathic arthritis
+14231,juvenile onset Parkinson disease 19A
+16691_4000_3999,juvenile pilocytic astrocytoma
+16236,kaposiform hemangioendothelioma
+5348,keloid
+7847,keloid formation
+4903_3085_1465_33821,keratitis
+15599_4768_25431,keratoconjunctivitis
+19004_24675,kidney Wilms tumor
+6065_100345,lactose intolerance
+15317,laryngotracheal angioma
+5823,legionellosis
+5058,leiomyosarcoma
+11989_5446,leishmaniasis
+5124,leprosy
+5825,leptospirosis
+9519,letterer-Siwe disease
+13108_7190_12318_12934_12935_12936_13109,"leukemia, lymphocytic, susceptibility to"
+18056_6572_16767_43923_16769_16770,lichen planus
+4901,lingual-facial-buccal dyskinesia
+6835,lipoid nephrosis
+5060_4510_3591,liposarcoma
+5828,listeriosis
+2691,liver cancer
+19562,localized scleroderma
+10939,low phospholipid associated cholelithiasis
+744,lung abscess (disease)
+8903,lung cancer
+21117,lung neoplasm
+4670_5282_19561,lupus erythematosus
+6277_11705,lymphangioleiomyomatosis
+2013,lymphangioma
+19297,lymphedema
+5062,lymphoma
+11508,"lymphoma, non-Hodgkin, familial"
+432,lymphoplasmacytic lymphoma
+4638,lymphosarcoma
+19245,lysosomal lipid storage disorder
+5190,macroglobulinemia
+11285_13406_12767_12540_7932_14189_3004_5150_5417_14207_12659_14266_13420_13409_12419_13416_12674_100114,macular degeneration
+7440_10648_12685_694_12881_12319_12642_12686_12877_12882,major affective disorder
+2009_12050_12100,major depressive disorder
+5136,malaria
+20541,maligant granulosa cell tumor of ovary
+20542,malignant Sertoli-Leydig cell tumor of ovary
+21063,malignant colon neoplasm
+20538,malignant dysgerminomatous germ cell tumor of ovary
+18171,malignant germ cell tumor of ovary
+100342,malignant glioma
+6846_1785_1133,malignant hypertension
+18493,malignant hyperthermia of anesthesia
+6292,malignant mesothelioma (disease)
+16096,malignant non-dysgerminomatous germ cell tumor of ovary
+18172,malignant sex cord stromal tumor of ovary
+24612,manic bipolar affective disorder
+18876_6430,mantle cell lymphoma
+20334,mast cell leukemia
+7950,mastocytosis
+430,mature T-cell and NK-cell non-Hodgkin lymphoma
+15277,medullary thyroid gland carcinoma
+1700,megaloblastic anemia (disease)
+6579,melanoacanthoma
+5105_5012,melanoma
+21108,meningitis (disease)
+18059_5373,meningococcal infection
+5084,mental disorder
+5191,metastatic melanoma
+1117,methemoglobinemia
+1245,microcytic anemia
+5277,migraine disorder
+11845_12441_11851_11847_8000_12440_11850_12715_100246_13344_12210_12303_12331,"migraine with or without aura, susceptibility to"
+41086,mixed anxiety and depressive disorder
+7896_4600_4614_875,monocytic leukemia
+19182,monogenic obesity
+5531,morphine dependence
+8015,motion sickness
+5859,mucocutaneous leishmaniasis
+17988,multifocal atrial tachycardia (disease)
+12552_8234_8082_7540_19003_17169,multiple endocrine neoplasia
+5301,multiple sclerosis
+7803,multiple system atrophy
+11486_12279_19950_20121_23595_18281,muscular dystrophy
+2081,musculoskeletal system disease
+9688_18325,myasthenia gravis
+16823,mycetoma
+9691_15821_45071,mycosis fungoides and variants
+18881,myelodysplastic syndrome
+44903,myelofibrosis
+18874_4643,myeloid leukemia
+11908_18871_20311,myelomonocytic leukemia
+20076,myeloproliferative neoplasm
+6652_3678_1090_3672_3673_3676_3677_3679_6803,myocardial infarction
+5068,myocardial infarction (disease)
+24644,myocardial ischemia
+21167,myositis
+8055_9715_9710,myotonia congenita
+9718,myxedema
+13652_12179_8062_21107,narcolepsy
+19371,narcolepsy without cataplexy
+16158,narcolepsy-cataplexy syndrome
+6314,nasal cavity polyp
+11601,neonatal intrahepatic cholestasis due to citrin deficiency
+4949,neoplasm of mature B-cells
+1567,nephrocalcinosis
+10356,nephrogenic syndrome of inappropriate antidiuresis
+100151_9066_18467,nephropathic cystinosis
+5072,neuroblastoma
+1315,neurocirculatory asthenia
+2120,neuroendocrine carcinoma
+21193_17046,neuroepithelial neoplasm
+7039_7245_18975_21061_8075,neurofibromatosis
+20124,neuromuscular junction disease
+958,neuroretinitis
+5379,neurotic disorder
+15290_1440,neurotrophic keratopathy
+9971,newborn respiratory distress syndrome
+8575,nicotine dependence
+17776,nocardiosis
+10910_10941_22,nocturnal enuresis
+19137,non-24-hour sleep-wake syndrome
+15760_18908_15759,non-Hodgkin lymphoma
+15789,non-acquired combined pituitary hormone deficiencies without extra-pituitary malformations
+18762,non-acquired combined pituitary hormone deficiency
+19824,non-acquired pituitary hormone deficiency
+16211,non-papillary transitional cell carcinoma of the bladder
+5233,non-small cell lung carcinoma (disease)
+7763,nonpapillary renal cell carcinoma
+11122,obesity disorder
+8114_1158,obsessive-compulsive disorder
+4632,obsolete Hodgkin's granuloma
+15560,obsolete classic mast cell leukemia
+1807,obsolete familial combined hyperlipidemia
+2144,obsolete hyperuricemia (disease)
+1445,obsolete neurogenic bladder (disease)
+20671,obsolete susceptibility to ischemic stroke
+20578,obsolete vitamin D deficiency
+6874,obstructive jaundice
+7147,obstructive sleep apnea syndrome
+6589,occupational dermatitis
+6875,ocular hypertension
+16701_16702,oligoastrocytoma
+2544_16695_18744_2543_2540,oligodendroglial tumor
+5338,open-angle glaucoma
+5530,opiate dependence
+5884,opisthorchiasis
+495,oppositional defiant disorder (disease)
+5886,oral candidiasis
+9797,orotic aciduria
+20751_5469_15914_21272,orthostatic hypotension
+5890,osteitis fibrosa
+5178_6629_5416_6630_6631_6632,osteoarthritis
+8143_7704_11923_12893_12894_12568,osteoarthritis susceptibility
+1068,osteomalacia (disease)
+5246,osteomyelitis (disease)
+5298,osteoporosis
+2752,ovarian adenocarcinoma
+8170,ovarian cancer
+3792,ovarian carcinosarcoma
+6045,ovarian clear cell adenocarcinoma
+6335,ovarian endometrioid adenocarcinoma
+2229,ovarian epithelial tumor
+5601,ovarian mucinous adenocarcinoma
+3795,ovarian small cell carcinoma
+6624,overactive bladder (disease)
+10962_7758_14622_19272_6588_18865_17667_17673_17672_44663,palmoplantar keratoderma
+5048,pancreatic insulin-producing neuroendocrine tumor
+24677,pancreatic insulinoma
+11986_4982_5003_6515_3232,pancreatitis
+17255,panuveitis (disease)
+2512,papillary adenocarcinoma
+17884,papillary renal cell carcinoma
+4568,paralytic ileus (disease)
+6592,parapsoriasis
+18626,paratyphoid fever
+21095,parkinsonian disorder
+9830,parkinsonian-pyramidal syndrome
+5898,paronychia (disease)
+15529,paroxysmal Hemicrania
+5384,partial epilepsy
+6891,partial motor epilepsy
+24266_14878_11827,patent ductus arteriosus
+18055,pediatric hepatocellular carcinoma
+19725,pediatric systemic lupus erythematosus
+19975,pellagra
+6594,pemphigus
+1325,penile cancer
+6361,penile fibromatosis
+6895,penile neoplasm
+6896,peptic esophagitis
+4247,peptic ulcer disease
+5076_5593,periodontitis
+4964,"peripheral T-cell lymphoma, not otherwise specified"
+18271,peripheral primitive neuroectodermal tumor
+4522,peritonitis
+8228,pernicious anemia
+22430,persistent fetal circulation syndrome
+8233,phaeochromocytoma
+9861_19259_16366_19258,phenylketonuria
+3699,phobic disorder
+2319,phosphorus metabolism disease
+7559_12304_12305,photoparoxysmal response
+6906,pigmented villonodular synovitis
+16692,pilomyxoid astrocytoma
+6372,pituicytoma
+15127,pituitary deficiency
+19614,pituitary deficiency due to Rathke's pouch cysts
+19617,pituitary deficiency due to empty sella turcica syndrome
+20479,pituitary gigantism
+19841,pituitary hormone defiency from vascular origin
+6375,placental hemangioma
+19095,plague
+9693,plasma cell myeloma
+17347,plasmablastic lymphoma
+5615,plasmacytoma
+16690,pleomorphic xanthoastrocytoma
+18667,pleural empyema (disease)
+19121,pneumocystosis
+5249,pneumonia
+43905_2572_1255_3479_43919,pneumonitis
+33281_8263_33004_13131_9889_4691_20642,polycystic kidney disease
+5571,polycythemia (disease)
+1945,postencephalitic Parkinson disease
+41052,postherpetic neuralgia
+1438,postinflammatory pulmonary fibrosis
+8159,postmenopausal osteoporosis
+5929,postpartum depression
+11479,postural orthostatic tachycardia syndrome
+3019,potassium deficiency disease
+19165_88_15791_15714,precocious puberty
+20512,precursor T-cell acute lymphoblastic leukemia
+5081,preeclampsia
+1780,premature ejaculation (disease)
+1119,premature menopause
+1422,primary aldosteronism
+7193_5388_13079_13080_13636_13637,primary biliary cholangitis
+2571,primary central nervous system lymphoma
+15810,primary cutaneous CD4+ small/medium-sized pleomorphic T-cell lymphoma
+15758,primary cutaneous T-cell lymphoma
+607,primary cutaneous T-cell non-Hodgkin lymphoma
+15811,primary cutaneous aggressive epidermotropic CD8+ T-cell lymphoma
+6383,"primary cutaneous diffuse large B-cell lymphoma, Leg type"
+15812,primary cutaneous gamma/delta-positive T-cell lymphoma
+19476,primary cutaneous peripheral T-cell lymphoma not otherwise specified
+9824_13327_9823_2474,primary hyperoxaluria
+18714,primary intralymphatic angioendothelioma
+11744,primary intraosseous venous malformation
+20323,primary mediastinal large B-cell lymphoma
+9692,primary myelofibrosis
+17327,primary non-gestational choriocarcinoma of ovary
+5387_19852_19851,primary ovarian failure
+15686,primary peritoneal carcinoma (disease)
+10911_3430_6388,prolactin producing pituitary gland tumor
+5082,prostate adenocarcinoma
+8315,prostate cancer
+5159,prostate carcinoma
+21259,prostate neoplasm
+5280,prostatitis (disease)
+16687,protoplasmic astrocytoma
+9468,pseudotumor cerebri
+5083,psoriasis
+11849,psoriatic arthritis
+1196,psychologic dyspareunia
+5485,psychotic disorder
+15924,pulmonary arterial hypertension
+5279,pulmonary embolism (disease)
+4849,pulmonary emphysema
+4802,pulmonary eosinophilia
+2771,pulmonary fibrosis
+1999_5149,pulmonary hypertension
+6052,pulmonary tuberculosis
+9329_20713_9937,pulmonary venoocclusive disease
+809,purpura fulminans
+22205,pustular psoriasis
+6939_1110,pyelonephritis
+18824,pyoderma gangrenosum
+6941,rat-bite fever
+5272,refractory anemia
+19633,relapsing fever
+5314,relapsing-remitting multiple sclerosis
+5549,renal cell adenocarcinoma
+5086,renal cell carcinoma (disease)
+8369_11422_9967_8368_15827_17828_1909_18440_17829,renal tubular acidosis
+21113,respiratory failure
+5391,restless legs syndrome
+18713,retiform hemangioendothelioma
+2303_6948_6951_2089_41093_1630_1633_2088,retinal artery occlusion
+19101,retinal capillary malformation
+24340,retinal neuroblastoma
+2708,retinitis
+8380_3075,retinoblastoma
+3040,retrograde amnesia
+5212,rhabdomyosarcoma (disease)
+8383,rheumatoid arthritis
+3014_4514,rhinitis
+5520,rickets (disease)
+827,salmonellosis
+19338,sarcoidosis
+5089,sarcoma
+15254,schistosomiasis
+5487,schizoaffective disorder
+5090_13498_8414_10897_33312_10943_11552_14092_12054_11960_11280_11294_11295_11298_11307_11498_12879_13089_13506,schizophrenia
+1265,schizophreniform disorder
+19340,scleroderma (disease)
+13433_18646_18647,sclerosing cholangitis
+19365,scrub typhus
+9412,scurvy
+6962,sebaceous adenocarcinoma
+6608_6609,seborrheic dermatitis
+8420,seborrheic keratosis
+3001,seminoma
+43789,serum sickness
+9549,severe early-childhood-onset retinal dystrophy
+19345,shigellosis
+9879,short stature due to growth hormone qualitative anomaly
+18967,short stature due to isolated growth hormone deficiency with X-linked hypogammaglobulinemia
+11382,sickle cell anemia
+5961,sinusitis
+20747_20748_8863,sitosterolemia
+10029,situs inversus
+5341_2529_2656_2939_2956_4091,skin carcinoma
+5093,skin disease
+24376,"sleep disorder, initiating and maintaining sleep"
+8433,small cell lung carcinoma
+956,small intestine cancer
+1247,social phobia
+20513,spermatocytic seminoma
+16222,spindle cell hemangioma
+5095_43377,spondyloarthropathy
+7126_8468_24512_13192,"spondyloarthropathy, susceptibility to"
+5968,sporotrichosis
+10150_4958_5096_6082_500_514,squamous cell carcinoma
+18513,squamous cell carcinoma of colon
+18534,squamous cell carcinoma of liver and intrahepatic biliary tract
+18352,squamous cell carcinoma of penis
+16266,squamous cell carcinoma of the corpus uteri
+24313,staphylococcal infection
+18183_5970,staphylococcal pneumonia
+5545,staphylococcus aureus infection
+2125,status epilepticus
+1270,stone in bladder diverticulum
+5972,streptococcal pneumonia
+20544,streptococcal toxic-shock syndrome
+5098,stroke disorder
+6981,subacute bacterial endocarditis
+5099,subarachnoid hemorrhage (disease)
+7079_2491_4938_2046_5367_5689_4456_5186,substance abuse/dependence
+6988,sulfhemoglobinemia
+1928,suppurative cholangitis
+2206,sweat gland cancer
+21072,sympathetic paraganglioma
+15787_15788,symptomatic form of hemophilia in female carriers
+2400,synovitis (disease)
+7915,systemic lupus erythematosus (disease)
+16586,systemic mastocytosis
+5100,systemic sclerosis
+10096,tardive dyskinesia (disease)
+16848_8538,temporal arteritis
+4855,tenosynovitis
+5447,testicular cancer
+10274_10108,testicular germ cell tumor
+3669,testicular seminoma
+18193_6448,testicular teratoma
+5526,tetanus
+8542,tetralogy of fallot
+20543,"theca steroid-producing cell malignant tumor of ovary, not further specified"
+19457,therapy related acute myeloid leukemia and myelodysplastic syndrome
+8889,thromboangiitis obliterans
+8554_13794_11173_5029_10301,thrombocythemia
+10120_8555_14837_8556_30867_14536_12775_10743_2049_4680,thrombocytopenia
+8559_8560_2305,thrombophilia
+3393,thymus gland disease
+2108,thyroid cancer
+11653_14681_14682_8566_8567,"thyroid cancer, nonmedullary"
+6996,thyroid crisis (disease)
+12004_15075_5034_5075_24622_6467,thyroid gland carcinoma
+6468,thyroid gland undifferentiated (anaplastic) carcinoma
+4126,thyroiditis (disease)
+10138,thyrotoxicosis
+16468,toxin-mediated infectious botulism
+5264,transient ischemic attack (disease)
+6474,transitional cell carcinoma
+5992,trichinosis
+5996,trichuriasis
+11514,tricuspid atresia (disease)
+8599,trigeminal neuralgia
+1732,trigonitis
+18068,trisomy 13
+940,trypanosomiasis
+8612_13199_19341_1734,tuberous sclerosis
+11927,tufted angioma (disease)
+18077,tularemia
+11123_12919_7454_5147_10861_10862_10863_10864_10950_11016_11033_11068_11167_11168_11302_11572_12422_12920_12921_12961_13078,type 1 diabetes mellitus
+5148,type 2 diabetes mellitus
+5619,typhoid fever
+1246,typhus
+10162_10160_10161_4741,tyrosinemia
+5101,ulcerative colitis (disease)
+15667,unclassified acute myeloid leukemia
+18533,undifferentiated carcinoma of liver and intrahepatic biliary tract
+16267,undifferentiated carcinoma of the corpus uteri
+5263,unipolar depression
+5398,upper aerodigestive tract neoplasm
+5297,urethritis (disease)
+1187,urinary bladder cancer
+4986,urinary bladder carcinoma
+4987,urinary bladder neoplasm
+4114,urinary bladder small cell neuroendocrine carcinoma
+5492,urticaria (disease)
+6003,uterine corpus cancer
+20283_6651,uveitis
+2234,vaginitis (disease)
+8638,varicose disease
+5385,vascular disease
+6004,vasomotor rhinitis
+945,venous insufficiency (disease)
+190,ventricular fibrillation (disease)
+5477,ventricular tachycardia
+19085,vernal keratoconjunctivitis
+18734,verrucous hemangioma
+7015,viral meningitis
+5445,visceral leishmaniasis
+1386,visual epilepsy
+7016,vitamin A deficiency (disease)
+20696,vitamin B12 deficiency
+8661,vitiligo
+8668_13304_10191_15628_15629_15630_15631,von Willebrand disease
+24574,von Willebrand disease (hereditary or acquired)
+6014,vulvovaginal candidiasis
+1827,white piedra
+15803,wound botulism
+948,xerophthalmia
+5744,yolk sac tumor

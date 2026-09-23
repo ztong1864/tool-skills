@@ -1,0 +1,59 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_46901396e8e1",
+  "canonical_material_id": "mat_ceb3d2553e00",
+  "canonical_name": "[Cd(Htrz)(SO4)(H2O)]",
+  "metal_element": "Cd",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_d9d79a3a44b1",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_0ca5f86993cc",
+    "mcard_821bd830de04"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_80fbd58ab7ab",
+    "mechcard_becc25f549a9",
+    "mechcard_02b638e3f738",
+    "mechcard_fcc8d7fec8bf",
+    "mechcard_d8172283a9ec"
+  ],
+  "recipe_card_ids": [
+    "recipe_3b34e1fd4e38"
+  ],
+  "claim_card_ids": [
+    "claim_07447080c9ca"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_8fca8d0a41d0"
+  ],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "4bf71c012a6c"
+  ],
+  "evidence_trace_ids": [
+    "trace_28f7be92fa38",
+    "trace_68a2305157fc",
+    "trace_94954bc451ec",
+    "trace_835d0bb31eeb",
+    "trace_15f652576e9f",
+    "trace_7e4096ad788c",
+    "trace_305be57b0df0"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:35:51.438983",
+  "updated_at": "2026-04-23T22:36:40.261694"
+}

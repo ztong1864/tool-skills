@@ -1,0 +1,194 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_8723df4f5ffb",
+  "paper_id": "08078d819c99",
+  "title": "Two Unprecedented 3-Connected Three-Dimensional Ne",
+  "year": 2004,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "H2"
+  ],
+  "one_line_summary": "Design rule: use ligands with specific geometry to direct rigid square-planar secondary building units",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "copper-mediated cycloaddition forming copper(I) triazolate coordination polymer → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "large 3D channels interpenetrated by an identical translational net → porosity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use ligands with specific geometry to direct rigid square-planar secondary building units → has successfully produced targeted network structures"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] control the dihedral angles between adjacent square-planar nodes → enables assembly of specific 3D network topologies instead of the commonly favored 2D 4^4 grids"
+    },
+    {
+      "title": "Comparison",
+      "body": "Cu(OH)2 replacement condition in another synthesis vs Cu2(OH)2CO3-based original condition in the same synthesis: winner=subject_b on product_yield"
+    },
+    {
+      "title": "Comparison",
+      "body": "ligands with methyl substituents in compound 1 vs ligands with larger propyl substituents in compound 2: winner=subject_b on adjacent-node_dihedral_angle"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] assemble extended structures solely from square-planar building blocks without controlling adjacent-node orientation: formation of 3D networks is disfavored because 2D square-grid 4^4 nets are favored"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_a8139d656a52",
+    "trace_bdd3c98d8fc8",
+    "trace_2119a2ebcda3",
+    "trace_57433674063a",
+    "trace_97d3bb060590",
+    "trace_e30f53ade003",
+    "trace_c151114e4d6a",
+    "trace_91c5673ea169",
+    "trace_728eede4b0d1",
+    "trace_321e1c23d4e8",
+    "trace_9400edb7857e",
+    "trace_611b86c63a7a",
+    "trace_93e171c3f97f",
+    "trace_98470f17cd5e",
+    "trace_cc4d1e1a197f",
+    "trace_970d3ca0d965",
+    "trace_7010b8596c38",
+    "trace_5d9a44b0178b",
+    "trace_5aefcb5d3e04",
+    "trace_95f831d3cc92",
+    "trace_c375da263fb7",
+    "trace_7236b49281c3",
+    "trace_ddeca7023197",
+    "trace_3f2baf28c429",
+    "trace_eaa0e3b98f4a",
+    "trace_44e9401b0d59",
+    "trace_cce163012683",
+    "trace_f81bb7cdf5fa",
+    "trace_8117d259471a",
+    "trace_1b568e6aac9c",
+    "trace_660d1cfb08e5",
+    "trace_f5b285337c99",
+    "trace_d32ce6e5c0d6",
+    "trace_f4b7fda03c25",
+    "trace_1fa11edbba87",
+    "trace_9dda3fd36f26",
+    "trace_5e9aead5b59f",
+    "trace_5593728f6f9f",
+    "trace_2c036ec2d82b",
+    "trace_c65a0458d479",
+    "trace_57bf7197cdbb",
+    "trace_9400edb7857e",
+    "trace_970d3ca0d965",
+    "trace_2119a2ebcda3",
+    "trace_7010b8596c38",
+    "trace_728eede4b0d1",
+    "trace_1fa11edbba87",
+    "trace_bdd3c98d8fc8",
+    "trace_93e171c3f97f",
+    "trace_44e9401b0d59",
+    "trace_7236b49281c3",
+    "trace_57433674063a",
+    "trace_660d1cfb08e5",
+    "trace_2c036ec2d82b",
+    "trace_1b568e6aac9c",
+    "trace_611b86c63a7a",
+    "trace_cc4d1e1a197f",
+    "trace_c65a0458d479",
+    "trace_f4b7fda03c25",
+    "trace_5d9a44b0178b",
+    "trace_57bf7197cdbb",
+    "trace_cce163012683",
+    "trace_f5b285337c99",
+    "trace_ddeca7023197",
+    "trace_a8139d656a52",
+    "trace_c375da263fb7",
+    "trace_5593728f6f9f",
+    "trace_98470f17cd5e",
+    "trace_f81bb7cdf5fa",
+    "trace_5e9aead5b59f",
+    "trace_e30f53ade003",
+    "trace_3f2baf28c429",
+    "trace_97d3bb060590",
+    "trace_5aefcb5d3e04",
+    "trace_c151114e4d6a",
+    "trace_8117d259471a",
+    "trace_95f831d3cc92",
+    "trace_321e1c23d4e8",
+    "trace_d32ce6e5c0d6",
+    "trace_9dda3fd36f26",
+    "trace_eaa0e3b98f4a",
+    "trace_91c5673ea169"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_4539e5e396b3",
+    "mechcard_3951191e2fff",
+    "mechcard_ce412139bd01",
+    "mechcard_33d727fcdba5",
+    "mechcard_d71d98f35a39",
+    "mechcard_9b391fcfa983",
+    "mechcard_e6831033b15f"
+  ],
+  "recipe_card_ids": [
+    "recipe_691b6c266209",
+    "recipe_dfd32e10bb2a",
+    "recipe_4a1e849b3fe1"
+  ],
+  "claim_card_ids": [
+    "claim_314eb1dcce5b",
+    "claim_fb19cff52304",
+    "claim_173be327a2ae",
+    "claim_ef9847765386",
+    "claim_fcafdd5a47f1",
+    "claim_e03cba96c5d2",
+    "claim_ac82b8699765",
+    "claim_5914f065deb4"
+  ],
+  "design_rule_card_ids": [
+    "drule_3fd9ec5251f7",
+    "drule_c3268bf28f7f",
+    "drule_868454220f85"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_0aac6169392d",
+    "comp_051bc039d008",
+    "comp_6e682a743f8c",
+    "comp_f7e48d1e8b7a"
+  ],
+  "failure_case_card_ids": [
+    "fail_b191fb8f8095"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_fc01bb8cc21c",
+    "mat_1d1f82216969",
+    "mat_8ca56b78316f"
+  ],
+  "dossier_ids": [
+    "dossier_b870474cf42c",
+    "dossier_b894ee51fa57",
+    "dossier_a3aff60775b7"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Crystallography shows each triazolate is μ3-tridentate and each Cu(I) is trigonal-planar, producing novel 3D 3-connected nets in both 1 and 2.",
+    "The copper-mediated hydrothermal reaction of nitriles and ammonia is presented as a novel non-hydrazine route to 3,5-disubstituted 1,2,4-triazoles.",
+    "Topology in square-planar-node networks depends strongly on adjacent-node dihedral angles; methyl vs propyl substituents (~30° vs ~90°) likely enforce them sterically."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.216578",
+  "updated_at": "2026-04-24T00:19:49.216583",
+  "raw_path": "相关文献/Zhang 等 - 2004 - Two Unprecedented 3-Connected Three-Dimensional Ne.pdf",
+  "authors": [
+    "Zhang"
+  ]
+}

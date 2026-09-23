@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_35e0d31b69b6",
+  "paper_id": "4358ab539332",
+  "raw_path": "相关文献/Liu 和 Niu - 2013 - Hydrothermal in situ ligand synthesis and self-ass.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "pcu"
+  ],
+  "key_sections": {
+    "results_summary": "Hydrothermal in situ ligand synthesis and self-assembly of a 3D\npillar–layer framework with 2-fold interpenetrated pcu topology\nQing-bo Liu a, Jia-Jia Niu b,⁎\na College of Science, Nanjing Forestry Un"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:20:18.092078"
+}

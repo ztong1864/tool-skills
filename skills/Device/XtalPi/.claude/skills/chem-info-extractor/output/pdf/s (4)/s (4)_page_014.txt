@@ -1,0 +1,30 @@
+S14
+ this dried reaction with a screw cap unde r an argon atmosphere and the resulting
+mixture sealed with the sc rew cap was stirred at 130 ℃. When the reaction was
+complete as monitored by TLC, the reaction mixture was cooled to room temperature
+and then filtered. Evaporation and column chromatography on silica gel afforded 3df
+(138 mg, 56%) as a liquid (eluent: pe troleum ether/ethyl acetate = 25:1): 1H NMR
+(300 MHz, CDCl 3) δ 8.20 (d, J = 8.7 Hz, 2 H), 7.51 (d, J = 8.7 Hz, 2 H), 5.35-5.20 (m,
+2 H), 4.63 (s, 2 H), 4.09 (dd, J = 6.5, 2.7 Hz, 2 H), 2.42-2.20 (m, 1 H), 1.02 (d, J = 6.6
+Hz, 6 H); 13C NMR (75 MHz, CDCl 3) δ 203.7, 147.3, 146.1, 127.7, 123.5, 99.6, 89.2,
+70.2, 69.4, 27.7, 22.4; MS (EI) m/z (%) 247 (M+, 0.18), 81 (100); IR (neat) 2961,
+2926, 2867, 1960, 1606, 1522, 1465, 1459, 1345, 1093, 1015; Anal. calcd. for C
+14H17NO 3: (%) C 68.00, H 6.93, N 5.66; Found: C 67.88, H 7.27, N 5.51.
+(3) Synthesis of  1-(4-nitrobenzyloxy)octa-2,3-diene (3dg)
+3dg O2NOn-Bu
+O2NO
++ n-BuCHO +
+N
+HO
+2g
+1.4 equiv 1.8 equivZnI2 (0.8 equiv)
+toluene, 150 ℃
+6 h, 42% 1d
+
+To a dried reaction tube was added ZnI 2 (256 mg, 0.80 mmol). This reaction tube
+was dried under vacuum with a heating gun. Then propargyl 4-nitrobenzyl ether 1d
+(191 mg, 1.00 mmol), valeraldehyde (155 mg, 1.80 mmol), morpholine (122 mg, 1.40
+mmol), and toluene (5 mL) were added sequen tially into this dried reaction tube with
+a screw tube under an argon atmosphere and the resulting mixture sealed with the
+screw tube was stirred at 150 ℃. When the reaction was complete as monitored by
+TLC, the reaction mixture was cooled to room temperature and then filtered.

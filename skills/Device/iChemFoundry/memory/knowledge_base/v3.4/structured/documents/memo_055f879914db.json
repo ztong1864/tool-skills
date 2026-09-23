@@ -1,0 +1,221 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_055f879914db",
+  "paper_id": "d3f7c46a759d",
+  "title": "Novel HBD-Containing Zn (dobdc) (datz) as efficien",
+  "year": 2021,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6"
+  ],
+  "one_line_summary": "Zn2(H2dobdc)(datz)2-1.5DMF shows BET_surface_area = 246.0 m2/g for N2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "BET_surface_area (N2) = 246.0 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "recyclability_runs = 6.0 dimensionless at 15.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "pore_volume (N2) = 0.1 cm3/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "free hydroxyl and amino groups as HBD groups in 3D framework with 1D channels → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "Zn centers and abundant HBD groups in micropores → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] combine HBD groups with N-rich units in porous MOFs → promising for efficient catalytic CO2 chemical conversion"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce N-rich units and micropores into porous MOFs → enhances CO2 affinity and thereby improves catalytic performance for CO2 cycloaddition to epoxides"
+    },
+    {
+      "title": "Comparison",
+      "body": "porous MOFs such as MOF-5, MOF-74, ZIF-68, and UiO-66 with high surface area and pore volume but lacking effective epoxide and CO2 activation sites vs MOF catalysts with active functional groups for epoxide and CO2 activation: winner=subject_b on ability_to_achieve_mild_condition_CO2_conversion"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_53b12eb36b0b",
+    "trace_a0e214420cff",
+    "trace_8a964341af48",
+    "trace_0ccc3c7fcc00",
+    "trace_15f040b5e0cc",
+    "trace_c0033de55c56",
+    "trace_9de2fda99499",
+    "trace_3e3bd4ca01f1",
+    "trace_f8591ddb5d9b",
+    "trace_5f136011c046",
+    "trace_ec57676cd044",
+    "trace_40adf28e2100",
+    "trace_2a11691fdbd8",
+    "trace_711c70617f76",
+    "trace_b549cceaad35",
+    "trace_d04cc4b51790",
+    "trace_5b73b6026f42",
+    "trace_0ea5b607f4af",
+    "trace_2356d7eac7b8",
+    "trace_9ed219703433",
+    "trace_88c39f73ee1d",
+    "trace_99a81849c58b",
+    "trace_ed80c326712d",
+    "trace_12e8d9619e24",
+    "trace_eead4c1408a2",
+    "trace_bd8c8e63103a",
+    "trace_a48a99808ba3",
+    "trace_dfcc0f9c8666",
+    "trace_25e91550c301",
+    "trace_0de1205ffdc0",
+    "trace_0dfac210601e",
+    "trace_5af283ee54fa",
+    "trace_3d9769bde0c9",
+    "trace_b2e8c58d39dd",
+    "trace_10d4ce99403f",
+    "trace_8d459dfc871e",
+    "trace_248d41485390",
+    "trace_19ebdf8abdd3",
+    "trace_b1c603beccf7",
+    "trace_80cdd4a2f10e",
+    "trace_1d612e5822b9",
+    "trace_43a53c57a0c0",
+    "trace_90ff3cfc1eb2",
+    "trace_76edd402fb5e",
+    "trace_65b8fa7b36a2",
+    "trace_1106dd4aa975",
+    "trace_2661fb949332",
+    "trace_0a96b48d0256",
+    "trace_d3aab0576128",
+    "trace_bd8c8e63103a",
+    "trace_ec57676cd044",
+    "trace_8d459dfc871e",
+    "trace_0dfac210601e",
+    "trace_0de1205ffdc0",
+    "trace_3e3bd4ca01f1",
+    "trace_9ed219703433",
+    "trace_2661fb949332",
+    "trace_88c39f73ee1d",
+    "trace_dfcc0f9c8666",
+    "trace_12e8d9619e24",
+    "trace_f8591ddb5d9b",
+    "trace_a0e214420cff",
+    "trace_248d41485390",
+    "trace_b2e8c58d39dd",
+    "trace_5f136011c046",
+    "trace_15f040b5e0cc",
+    "trace_9de2fda99499",
+    "trace_1d612e5822b9",
+    "trace_2a11691fdbd8",
+    "trace_a48a99808ba3",
+    "trace_711c70617f76",
+    "trace_43a53c57a0c0",
+    "trace_ed80c326712d",
+    "trace_5af283ee54fa",
+    "trace_1106dd4aa975",
+    "trace_d3aab0576128",
+    "trace_65b8fa7b36a2",
+    "trace_eead4c1408a2",
+    "trace_0ea5b607f4af",
+    "trace_3d9769bde0c9",
+    "trace_0ccc3c7fcc00",
+    "trace_10d4ce99403f",
+    "trace_b1c603beccf7",
+    "trace_90ff3cfc1eb2",
+    "trace_53b12eb36b0b",
+    "trace_c0033de55c56",
+    "trace_80cdd4a2f10e",
+    "trace_8a964341af48",
+    "trace_b549cceaad35",
+    "trace_25e91550c301",
+    "trace_19ebdf8abdd3",
+    "trace_0a96b48d0256",
+    "trace_99a81849c58b",
+    "trace_76edd402fb5e",
+    "trace_5b73b6026f42",
+    "trace_d04cc4b51790",
+    "trace_2356d7eac7b8",
+    "trace_40adf28e2100"
+  ],
+  "measurement_card_ids": [
+    "mcard_4f1d92707635",
+    "mcard_7198d2b8433d",
+    "mcard_7a9506d00240",
+    "mcard_a0416315366a",
+    "mcard_cadbacd53c3b",
+    "mcard_d1f230e98401"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_a6c4f2ca2d24",
+    "mechcard_053611d8f411",
+    "mechcard_2439f77ff59e",
+    "mechcard_ed14cb094137",
+    "mechcard_0cbfa06ce769",
+    "mechcard_953a629a90f4",
+    "mechcard_baa13959f054"
+  ],
+  "recipe_card_ids": [
+    "recipe_16635a791ebf",
+    "recipe_94df80ccc63f",
+    "recipe_e5a20ba9fdd8",
+    "recipe_f2178b23025f"
+  ],
+  "claim_card_ids": [
+    "claim_4124a410dad5",
+    "claim_bdc99e3d16c7",
+    "claim_765f4274cdb6",
+    "claim_27621905bb31",
+    "claim_7b528c444351",
+    "claim_db962c1ce68f",
+    "claim_012bfa5cec15"
+  ],
+  "design_rule_card_ids": [
+    "drule_2126fde3e90e",
+    "drule_0c4444067b9a",
+    "drule_c1257e136a29",
+    "drule_28a866e563dd"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_a60932ed5cca",
+    "comp_ac2bbf66f3b7"
+  ],
+  "failure_case_card_ids": [
+    "fail_953850e255e7"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_31c4b49c3415",
+    "mat_6cad8a40c7cb"
+  ],
+  "dossier_ids": [
+    "dossier_aed71e2409b5",
+    "dossier_0359b6eec668"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MOFs such as MOF-5, MOF-74, ZIF-68 and UiO-66 generally require high temperature or pressure because they lack effective epoxide and CO2 activation sites.",
+    "The paper proposes a design rule that porous MOFs combining HBD groups, N-rich units and micropores should be effective for mild CO2 conversion.",
+    "Zn(dobdc)(datz) was versatile for different epoxides and could be recycled for six runs with no loss of catalytic performance."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.077460",
+  "updated_at": "2026-04-24T00:19:48.077464",
+  "raw_path": "相关文献/Lan 等 - 2021 - Novel HBD-Containing Zn (dobdc) (datz) as efficien.pdf",
+  "authors": [
+    "Lan"
+  ]
+}

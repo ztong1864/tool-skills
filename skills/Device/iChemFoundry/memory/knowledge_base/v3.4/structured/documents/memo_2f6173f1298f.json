@@ -1,0 +1,190 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_2f6173f1298f",
+  "paper_id": "9daa86d6b3c0",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "Xe"
+  ],
+  "one_line_summary": "[Zn2(dmtrz)2(btec)(H2O)2] shows decomposition_temperature = 530.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "decomposition_temperature = 530.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "dinuclear [Zn2(dmtrz)2(H2O)] subunit with μ2-H2O bridge and non-coplanar dmtrz rings → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "2D layer framework constructed from dinuclear [Zn2(dmtrz)2(H2O)] subunits and btec anions → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] choose or design suitable ligands during MOF construction → is described as the most important strategy for obtaining targeted structures and properties"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce aromatic carboxylate coligands into trz-based metal complexes under hydrothermal synthesis → produces a series of novel 3D topological frameworks unexpectedly"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] prepare trz-based complexes with aromatic acid as coligand: only limited such complexes have been reported to date"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_b9bdc2c70358",
+    "trace_52d135585de8",
+    "trace_da0c07e2450e",
+    "trace_3eae838ac307",
+    "trace_e9c730e800a3",
+    "trace_f33902a30584",
+    "trace_f1c9cd0a3978",
+    "trace_fb82d8157f02",
+    "trace_56f1446d8859",
+    "trace_c0d139abb6f2",
+    "trace_272e9aa367d7",
+    "trace_05d0565b012b",
+    "trace_6447085af5d4",
+    "trace_f78bd64f5a09",
+    "trace_06d1e214590f",
+    "trace_1849b7e0adb4",
+    "trace_524e131c20f9",
+    "trace_d3c6d9ca2d6c",
+    "trace_6076754d3eba",
+    "trace_698e88596722",
+    "trace_07035667b737",
+    "trace_4e07992107bb",
+    "trace_84c30b41f985",
+    "trace_af1e6bb8e43c",
+    "trace_a697297e5b0f",
+    "trace_56cf63eaa3a9",
+    "trace_2b14c6ab4e72",
+    "trace_1da085435800",
+    "trace_dc99db7dcb00",
+    "trace_df3253009cbe",
+    "trace_955187fcf93d",
+    "trace_5f5530710351",
+    "trace_06618ec11f9c",
+    "trace_fb97b0fea895",
+    "trace_f1b127d8f0cf",
+    "trace_914c9ecaa47c",
+    "trace_90fdf3758b38",
+    "trace_acb94ae79e43",
+    "trace_f736c8499ec8",
+    "trace_f0b51a152e29",
+    "trace_2eac47ef6d53",
+    "trace_cd34b9baba58",
+    "trace_57f8b6331f9a",
+    "trace_459c80214a3b",
+    "trace_b0a59b2247b6",
+    "trace_524e131c20f9",
+    "trace_a697297e5b0f",
+    "trace_698e88596722",
+    "trace_1849b7e0adb4",
+    "trace_df3253009cbe",
+    "trace_56f1446d8859",
+    "trace_56cf63eaa3a9",
+    "trace_c0d139abb6f2",
+    "trace_84c30b41f985",
+    "trace_f33902a30584",
+    "trace_2eac47ef6d53",
+    "trace_06618ec11f9c",
+    "trace_fb97b0fea895",
+    "trace_f0b51a152e29",
+    "trace_f1b127d8f0cf",
+    "trace_57f8b6331f9a",
+    "trace_6076754d3eba",
+    "trace_6447085af5d4",
+    "trace_3eae838ac307",
+    "trace_459c80214a3b",
+    "trace_f78bd64f5a09",
+    "trace_f1c9cd0a3978",
+    "trace_fb82d8157f02",
+    "trace_cd34b9baba58",
+    "trace_af1e6bb8e43c",
+    "trace_05d0565b012b",
+    "trace_acb94ae79e43",
+    "trace_5f5530710351",
+    "trace_4e07992107bb",
+    "trace_2b14c6ab4e72",
+    "trace_da0c07e2450e",
+    "trace_914c9ecaa47c",
+    "trace_52d135585de8",
+    "trace_272e9aa367d7",
+    "trace_e9c730e800a3",
+    "trace_07035667b737",
+    "trace_dc99db7dcb00",
+    "trace_b9bdc2c70358",
+    "trace_b0a59b2247b6",
+    "trace_90fdf3758b38",
+    "trace_955187fcf93d",
+    "trace_f736c8499ec8",
+    "trace_06d1e214590f",
+    "trace_d3c6d9ca2d6c",
+    "trace_1da085435800"
+  ],
+  "measurement_card_ids": [
+    "mcard_fd9bdfec4638"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_b655e4cb9e97",
+    "mechcard_64d79c2d6eb6",
+    "mechcard_06b2b0134cab",
+    "mechcard_25fa851c0ad0"
+  ],
+  "recipe_card_ids": [
+    "recipe_bd3373479c91",
+    "recipe_37f4cb909372"
+  ],
+  "claim_card_ids": [
+    "claim_c51cbd3e4a45",
+    "claim_f41dd8653103",
+    "claim_9fc27901f79c",
+    "claim_40fde9727822",
+    "claim_665a38b3b97b",
+    "claim_ad9a75ccdeb6",
+    "claim_3e8211d25e1e"
+  ],
+  "design_rule_card_ids": [
+    "drule_98c8f27e6d37",
+    "drule_ec15da943f3b",
+    "drule_bbb1135f918f",
+    "drule_30fe8be31b75"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_07dca78df745"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c02aa1e4e21f",
+    "mat_24c7d563bd19",
+    "mat_ddfcf079d6d1"
+  ],
+  "dossier_ids": [
+    "dossier_cd04efd3ea49",
+    "dossier_5d1831176996",
+    "dossier_49f2d2f9b1c4"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Aromatic polycarboxylate coligands are presented as key structure-directing components that tune metal-trz cluster nuclearity and network connectivity.",
+    "Trz-based complexes with aromatic acid coligands remain limited because synthesis often yields insoluble, intractable polycrystalline powders.",
+    "Compound 2 crystallizes in monoclinic C2/c as an infinite 2D layer built from dinuclear [Zn2(dmtrz)2(H2O)] subunits and btec anions."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.157687",
+  "updated_at": "2026-04-24T00:19:50.157695",
+  "raw_path": "相关文献/Zn-均苯三甲酸Zeitschrift anorg allge chemie - 2013 - Huang - Synthesis  Structures  and Luminescent Properties of two 3 .pdf"
+}

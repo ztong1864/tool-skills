@@ -1,0 +1,28 @@
+S28
+ CH 3).
+(4) Reaction of ( S,S)-5ba with 20 mol% of Cu Br and 50 mol% of ZnBr 2 (lrz-8-7):
+(R)-4ba PhN
+C8H17-nPh
+OHPh
+(S,S)-5baPh
+HH
+C8H17-nZnBr 2(50 mol%)
+toluene, 110oC, 8 h
+53%, 98% eeCuBr (20 mol%)
+
+The reaction of CuBr (6.5 mg, 0.04 mmol, 98% from Acros), ZnBr 2 (23.9 mg,
+0.1 mmol), ( S,S)-5ba (93.9 mg, 0.2 mmol, 98%)  and toluene (1 mL) afforded ( R)-4ba
+(23.7 mg, 53%) (eluent: petroleum ether)  as a liquid: 98% ee (HPLC conditions:
+Chiralcel OD-H column, hexane/ i-PrOH = 100/0, 0.7 mL/min, λ = 254 nm,  tR(major)
+= 8.6 min, tR(minor) = 9.6 min). 1H NMR (300 MHz, CDCl 3) δ = 7.40-7.22 (m, 4 H,
+Ar-H), 7.19-7.10 (m, 1 H, Ar-H), 6.12 (dt, J1 = 6.3 Hz,  J2 = 3.1 Hz, 1 H, one proton
+from CH=C=CH), 5.56 (q, J = 6.6 Hz, 1 H, one proton from CH=C=CH), 2.12 (qd, J1
+= 7.5 Hz, J2 = 3.0 Hz, 2 H, CH 2), 1.54-1.04 (m, 12 H, CH 2×6), 0.87 (t, J = 6.6 Hz, 3 H,
+CH 3).
+References:
+1. Periasamy, M.; Sanjeevakumar, N.; Dalai,  M.; Gurubrahamam, R.; Reddy, P. O.
+Org. Lett.  2012 , 14, 2932.
+2. Kuang, J.; Ma, S. J. Am. Chem. Soc.  2010 , 132, 1786.
+3. a) V . K.-Y . Lo, Y . Liu, M.-K. Wong, C.-M. Che, Org. Lett, 2006 , 8, 1529. b) V . K.
+Y . Lo, M.-K. Wong, C.-M. Che, Org. Lett. 2008 , 10, 517; c) V . K.-Y . Lo, C.-Y .
+Zhou, M.-K. Wong, C.-M. Che, Chem. Commun.  2010 , 46, 213.

@@ -1,0 +1,569 @@
+[
+  {
+    "candidate_id": "eb958bb25d56b2d38e9ce3873cab1827ef6d1050",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "page_id": "s (1)_page_006",
+    "paper_id": "s (1)",
+    "reaction_id": "R1",
+    "reaction_key_guess": "hex-5-yn-1-ol_dodecanal_CuBr2-(S)-3a_130C",
+    "reactant_smiles": [
+      "CCCCC#CCO",
+      "CCCCCCCCCCCC=O",
+      "CuBr2",
+      "(S)-3a"
+    ],
+    "product_smiles": [
+      "CCCCCCCCCCCC=C=CCCCCCO"
+    ],
+    "conditions_texts": [
+      "1,4-dioxane",
+      "130 °C",
+      "12 h",
+      "CuBr2",
+      "(S)-3a"
+    ],
+    "additional_info_texts": [
+      "Following the Typical Procedure I",
+      "yield: 0.1363 g (51%)",
+      "88% ee",
+      "HPLC: Chiralcel PA-2 column, n-hexane/i-PrOH (200:1)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains detailed synthetic procedures with specific reaction conditions, yields, and enantioselectivities for asymmetric alkynylation reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "f3a1b63ba494355383dedaae05ede88ba2d9884a",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "page_id": "s (1)_page_006",
+    "paper_id": "s (1)",
+    "reaction_id": "R2",
+    "reaction_key_guess": "hex-5-yn-1-ol_dodecanal_CuBr2-(S)-3b_130C",
+    "reactant_smiles": [
+      "CCCCC#CCO",
+      "CCCCCCCCCCCC=O",
+      "CuBr2",
+      "(S)-3b"
+    ],
+    "product_smiles": [
+      "CCCCCCCCCCCC=C=CCCCCCO"
+    ],
+    "conditions_texts": [
+      "1,4-dioxane",
+      "130 °C",
+      "12 h",
+      "CuBr2",
+      "(S)-3b"
+    ],
+    "additional_info_texts": [
+      "Following the Typical Procedure I",
+      "yield: 0.1508 g (57%)",
+      "93% ee",
+      "HPLC: Chiralcel PA-2 column, n-hexane/i-PrOH (200:1)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains detailed synthetic procedures with specific reaction conditions, yields, and enantioselectivities for asymmetric alkynylation reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "09f0daf1f14bfb1ce37c9db925e51b8440a5f328",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "page_id": "s (1)_page_006",
+    "paper_id": "s (1)",
+    "reaction_id": "R3",
+    "reaction_key_guess": "hex-5-yn-1-ol_dodecanal_CuBr2-(S)-3b_gram_scale",
+    "reactant_smiles": [
+      "CCCCC#CCO",
+      "CCCCCCCCCCCC=O",
+      "CuBr2",
+      "(S)-3b"
+    ],
+    "product_smiles": [
+      "CCCCCCCCCCCC=C=CCCCCCO"
+    ],
+    "conditions_texts": [
+      "1,4-dioxane",
+      "130 °C",
+      "12 h",
+      "CuBr2",
+      "(S)-3b",
+      "gram-scale"
+    ],
+    "additional_info_texts": [
+      "To a flame-dried Schlenk tube",
+      "yield: 1.4561 g (55%)",
+      "97% ee",
+      "HPLC: Chiralcel PA-2 column, n-hexane/i-PrOH (200:1)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains detailed synthetic procedures with specific reaction conditions, yields, and enantioselectivities for asymmetric alkynylation reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "7c8df9827486b36d70309e9ba586839690717629",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "page_id": "s (1)_page_006",
+    "paper_id": "s (1)",
+    "reaction_id": "R4",
+    "reaction_key_guess": "hept-6-yn-1-ol_dodecanal_CuBr2-(S)-3a_130C",
+    "reactant_smiles": [
+      "CCCCCC#CCO",
+      "CCCCCCCCCCCC=O",
+      "CuBr2",
+      "(S)-3a"
+    ],
+    "product_smiles": [
+      "CCCCCCCCCCCC=C=CCCCCCCO"
+    ],
+    "conditions_texts": [
+      "1,4-dioxane",
+      "130 °C",
+      "12 h",
+      "CuBr2",
+      "(S)-3a"
+    ],
+    "additional_info_texts": [
+      "Following the Typical Procedure I",
+      "yield: 0.1303 g (46%)",
+      "87% ee",
+      "HPLC: Chiralcel PA-2 column, n-hexane/i-PrOH (200:1)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains detailed synthetic procedures with specific reaction conditions, yields, and enantioselectivities for asymmetric alkynylation reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "38087c62db32984f57dc0ceeb10783a8e38aedcb",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "page_id": "s (1)_page_006",
+    "paper_id": "s (1)",
+    "reaction_id": "R5",
+    "reaction_key_guess": "hept-6-yn-1-ol_dodecanal_CuBr2-(S)-3b_130C",
+    "reactant_smiles": [
+      "CCCCCC#CCO",
+      "CCCCCCCCCCCC=O",
+      "CuBr2",
+      "(S)-3b"
+    ],
+    "product_smiles": [
+      "CCCCCCCCCCCC=C=CCCCCCCO"
+    ],
+    "conditions_texts": [
+      "1,4-dioxane",
+      "130 °C",
+      "12 h",
+      "CuBr2",
+      "(S)-3b"
+    ],
+    "additional_info_texts": [
+      "Following the Typical Procedure I",
+      "yield: 0.1447 g (52%)",
+      "96% ee",
+      "HPLC: Chiralcel PA-2 column, n-hexane/i-PrOH (200:1)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains detailed synthetic procedures with specific reaction conditions, yields, and enantioselectivities for asymmetric alkynylation reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "48f00a20075609dfb130b6870ec4a530a46867fc",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "page_id": "s (1)_page_008",
+    "paper_id": "s (1)",
+    "reaction_id": "ATA1",
+    "reaction_key_guess": "CuBr2/(S)-3a-catalyzed asymmetric allenylation of benzaldehyde with prop-2-yn-1-ol",
+    "reactant_smiles": [
+      "O=Cc1ccccc1",
+      "OCC#C"
+    ],
+    "product_smiles": [
+      "OCC=C=Cc1ccccc1"
+    ],
+    "conditions_texts": [
+      "CuBr2 (0.5 mmol), (S)-3a (1.0 mmol), 1,4-dioxane, N2 atmosphere, 70 °C, 46.5 h"
+    ],
+    "additional_info_texts": [
+      "Yield: 45%, 95% ee, [α]D20 –224.2 (c 1.035, CHCl3)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.7,
+      "keep": true,
+      "keep_reason": "Describes asymmetric alkynylation/allenylation reaction procedures with specific conditions, yields, and ee values",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "7a5aa2cecbc202dd5777f980abad3c2e9b71ac22",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "page_id": "s (1)_page_008",
+    "paper_id": "s (1)",
+    "reaction_id": "ATA2",
+    "reaction_key_guess": "CuBr2/(S)-3b-catalyzed asymmetric allenylation of benzaldehyde with prop-2-yn-1-ol",
+    "reactant_smiles": [
+      "O=Cc1ccccc1",
+      "OCC#C"
+    ],
+    "product_smiles": [
+      "OCC=C=Cc1ccccc1"
+    ],
+    "conditions_texts": [
+      "CuBr2 (0.5 mmol), (S)-3b (1.0 mmol), 1,4-dioxane, N2 atmosphere, 70 °C, 46.5 h"
+    ],
+    "additional_info_texts": [
+      "Yield: 37%, 98% ee, [α]D20 –245.2 (c 1.100, CHCl3)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.7,
+      "keep": true,
+      "keep_reason": "Describes asymmetric alkynylation/allenylation reaction procedures with specific conditions, yields, and ee values",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "255333776fb45f7ff9c285ed08b429658e0d371f",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "page_id": "s (1)_page_008",
+    "paper_id": "s (1)",
+    "reaction_id": "ATA3",
+    "reaction_key_guess": "CuBr2/(S)-3a-catalyzed asymmetric allenylation of 4-bromobenzaldehyde with pent-4-yn-1-ol",
+    "reactant_smiles": [
+      "O=Cc1ccc(Br)cc1",
+      "OCCCC#C"
+    ],
+    "product_smiles": [
+      "OCCCC=C=Cc1ccc(Br)cc1"
+    ],
+    "conditions_texts": [
+      "CuBr2 (0.5 mmol), (S)-3a (1.0 mmol), 1,4-dioxane, 70 °C, 44.5 h"
+    ],
+    "additional_info_texts": [
+      "Yield: 51%, 90% ee, [α]D20 –209.0 (c 1.02, CHCl3)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.7,
+      "keep": true,
+      "keep_reason": "Describes asymmetric alkynylation/allenylation reaction procedures with specific conditions, yields, and ee values",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "33e62c5e2fa211c3ca2729990f9a5923ed899e1c",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "page_id": "s (1)_page_008",
+    "paper_id": "s (1)",
+    "reaction_id": "ATA4",
+    "reaction_key_guess": "CuBr2/(S)-3b-catalyzed asymmetric allenylation of 4-bromobenzaldehyde with pent-4-yn-1-ol",
+    "reactant_smiles": [
+      "O=Cc1ccc(Br)cc1",
+      "OCCCC#C"
+    ],
+    "product_smiles": [
+      "OCCCC=C=Cc1ccc(Br)cc1"
+    ],
+    "conditions_texts": [
+      "CuBr2 (0.5 mmol), (S)-3b (1.0 mmol), 1,4-dioxane, 70 °C, 45.5 h"
+    ],
+    "additional_info_texts": [
+      "Yield: 41%, 94% ee, [α]D20 –241.5 (c 0.995, CHCl3)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.7,
+      "keep": true,
+      "keep_reason": "Describes asymmetric alkynylation/allenylation reaction procedures with specific conditions, yields, and ee values",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "935b4d3fa1f7fcdfcc246040bc0ff542ad899996",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "page_id": "s (1)_page_008",
+    "paper_id": "s (1)",
+    "reaction_id": "ATA5",
+    "reaction_key_guess": "CuBr2/(S)-3b-catalyzed asymmetric alkynylation of 2-ethylbutanal with hex-5-yn-1-ol",
+    "reactant_smiles": [
+      "CCC(O)(CC)C=O",
+      "OCCCC#C"
+    ],
+    "product_smiles": [
+      "OCCCCCC#C"
+    ],
+    "conditions_texts": [
+      "CuBr2 (0.2 mmol), (S)-3b (1 mmol), 1,4-dioxane, 130 °C, 12 h"
+    ],
+    "additional_info_texts": [
+      "Yield: 53%, 99% ee, [α]D20 –73.6 (c 0.975, CHCl3)"
+    ],
+    "triage": {
+      "doc_type": "PROCEDURE",
+      "usefulness_score": 0.7,
+      "keep": true,
+      "keep_reason": "Describes asymmetric alkynylation/allenylation reaction procedures with specific conditions, yields, and ee values",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "d4b4069271387ac1dafc2a5ad5d198bc7996f8bf",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "page_id": "s (1)_page_009",
+    "paper_id": "s (1)",
+    "reaction_id": "1",
+    "reaction_key_guess": "asymmetric allenylation of 4-methylbenzaldehyde with pent-4-yn-1-ol using (S)-3a catalyst",
+    "reactant_smiles": [],
+    "product_smiles": [],
+    "conditions_texts": [
+      "1,4-dioxane (3 mL)",
+      "70 °C",
+      "46.5 h",
+      "CuBr2 (0.5 mmol)",
+      "(S)-3a (1.0 mmol)",
+      "Typical Procedure II"
+    ],
+    "additional_info_texts": [
+      "yield: 0.0920 g (49%)",
+      "76% ee",
+      "HPLC: Chiralcel OJ-H column, n-hexane/i-PrOH (80:1)"
+    ],
+    "triage": {
+      "doc_type": "OPTIMIZATION_TABLE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains comparative reaction data with yields and ee values for ATA/EATA reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "14ba7ea368c6e872d42f01f63493334e14c2692e",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "page_id": "s (1)_page_009",
+    "paper_id": "s (1)",
+    "reaction_id": "2",
+    "reaction_key_guess": "asymmetric allenylation of 4-methylbenzaldehyde with pent-4-yn-1-ol using (S)-3b catalyst",
+    "reactant_smiles": [],
+    "product_smiles": [],
+    "conditions_texts": [
+      "1,4-dioxane (3 mL)",
+      "70 °C",
+      "47.5 h",
+      "CuBr2 (0.5 mmol)",
+      "(S)-3b (1.0 mmol)",
+      "Typical Procedure II"
+    ],
+    "additional_info_texts": [
+      "yield: 0.1046 g (56%)",
+      "90% ee",
+      "HPLC: Chiralcel OJ-H column, n-hexane/i-PrOH (50:1)"
+    ],
+    "triage": {
+      "doc_type": "OPTIMIZATION_TABLE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains comparative reaction data with yields and ee values for ATA/EATA reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "4220d7cd42ee908ba89429381ae6edc257769d12",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "page_id": "s (1)_page_009",
+    "paper_id": "s (1)",
+    "reaction_id": "3",
+    "reaction_key_guess": "asymmetric allenylation of 4-methylbenzaldehyde with pent-4-yn-1-ol using (S)-3b catalyst and altered stoichiometry",
+    "reactant_smiles": [],
+    "product_smiles": [],
+    "conditions_texts": [
+      "1,4-dioxane (3 mL)",
+      "70 °C",
+      "42 h",
+      "CuBr2 (0.5 mmol)",
+      "(S)-3b (1.4 mmol)",
+      "Starting material ratio 1c/2e/(S)-3b = 1:1.4:1.4",
+      "Typical Procedure II"
+    ],
+    "additional_info_texts": [
+      "yield: 0.0778 g (41%)",
+      "93% ee",
+      "HPLC: Chiralcel OJ-H column, n-hexane/i-PrOH (50:1)"
+    ],
+    "triage": {
+      "doc_type": "OPTIMIZATION_TABLE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains comparative reaction data with yields and ee values for ATA/EATA reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "f245c16356870685900dbdc3d9430cdec61efdd3",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "page_id": "s (1)_page_009",
+    "paper_id": "s (1)",
+    "reaction_id": "4",
+    "reaction_key_guess": "asymmetric allenylation of 4-nitrobenzaldehyde with prop-2-yn-1-ol using (S)-3a catalyst",
+    "reactant_smiles": [],
+    "product_smiles": [],
+    "conditions_texts": [
+      "1,4-dioxane (3 mL)",
+      "70 °C",
+      "43 h",
+      "CuBr2 (0.5 mmol)",
+      "(S)-3a (1.0 mmol)",
+      "Typical Procedure II"
+    ],
+    "additional_info_texts": [
+      "yield: 0.1041 g (47%)",
+      "95% ee",
+      "HPLC: Chiralcel OJ-H column, n-hexane/i-PrOH (90:10)"
+    ],
+    "triage": {
+      "doc_type": "OPTIMIZATION_TABLE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains comparative reaction data with yields and ee values for ATA/EATA reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "candidate_id": "cbce86bda7ce6b2f7620854b6a733519fa9dea5b",
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "text_path": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "page_id": "s (1)_page_009",
+    "paper_id": "s (1)",
+    "reaction_id": "5",
+    "reaction_key_guess": "asymmetric allenylation of 4-nitrobenzaldehyde with prop-2-yn-1-ol using (S)-3b catalyst",
+    "reactant_smiles": [],
+    "product_smiles": [],
+    "conditions_texts": [
+      "1,4-dioxane (3 mL)",
+      "70 °C",
+      "43 h",
+      "CuBr2 (0.5 mmol)",
+      "(S)-3b (1.0 mmol)",
+      "Typical Procedure III"
+    ],
+    "additional_info_texts": [
+      "yield: 0.0852 g (39%)",
+      "96% ee",
+      "HPLC: Chiralcel OJ-H column, n-hexane/i-PrOH (90:10)"
+    ],
+    "triage": {
+      "doc_type": "OPTIMIZATION_TABLE",
+      "usefulness_score": 0.9,
+      "keep": true,
+      "keep_reason": "Contains comparative reaction data with yields and ee values for ATA/EATA reactions",
+      "drop_reason": "",
+      "suspected_system_tag": true
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    }
+  }
+]

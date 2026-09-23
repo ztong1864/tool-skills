@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_49b266e4654e",
+  "canonical_material_id": "mat_70adc65753e5",
+  "canonical_name": "SBA-15",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_8dbc8bced1e6",
+    "mcard_4c8ebb924b08"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_3a09aca6e2b0",
+    "mechcard_7666ea3936dd"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "e7bb127fff1a"
+  ],
+  "evidence_trace_ids": [
+    "trace_52b100258bbc",
+    "trace_402b80257310",
+    "trace_1373fa5c9975"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:45:11.759022",
+  "updated_at": "2026-04-23T22:45:11.759333"
+}

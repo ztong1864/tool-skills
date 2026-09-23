@@ -1,0 +1,37 @@
+S10
+ (CH 2)9CH3
+3be+ +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv2eCH3(CH 2)9toluene, 130 ℃
+9.0 h, 58%1bF3CCHO
+F3C
+
+The reaction of ZnI 2 (256 mg, 0.80 mmol), 4-brom obenzaldehyde (311 mg, 1.79
+mmol), 1-dodecyne 1b (165 mg, 0.99 mmol), and mor pholine (122 mg, 1.40 mmol) in
+3 mL of toluene afforded 3be (187 mg, 58%) as a liquid (eluent: petroleum ether): 1H
+NMR (300 MHz, CDCl 3) δ 7.54 (d, J = 8.1 Hz, 2 H), 7.37 (d, J = 8.1 Hz, 2 H),
+6.20-6.10 (m, 1 H) 5.69-5.58 (m, 1 H), 2.23-2.07 (m, 2 H), 1.55-1.42 (m, 2 H),
+1.41-1.18 (m, 14 H), 0.88 (t, J = 6.6 Hz, 3 H);  13C NMR (75 MHz, CDCl 3) δ 206.1,
+139.1, 128.4 (q, J = 32.0 Hz ), 126.6, 125.4 (q, J = 3.75 Hz) 124.3 (q, J = 270.0 Hz)
+95.7, 93.8, 31.9, 29.62, 29.58, 29.4, 29.3, 29.2, 29.0, 28.5, 22.7, 14.1;  MS (EI) m/z (%)
+324 (M+, 4.24), 129 (100); IR (neat) 2927, 2856, 1949, 1616, 1461, 1325, 1169, 1122,
+1067, 1017 cm-1; HRMS (EI) calcd for C 20H27F3 (M+): 324.2065. Found: 324.2061.
+(9) Synthesis of 1-phenyl undeca-1,2-dien-4-ol (5a)
++ PhCHO +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv4a 2a
+5aHO
+C7H15toluene, 130 ℃Ph
+OH
+C7H15 7.8 h, 62%
+
+The reaction of ZnI 2 (257 mg, 0.80 mmol), benzal dehyde (191 mg, 1.80 mmol),
+dec-1-yn-3-ol 4a (154 mg, 1.00 mmol), and morpho line (122 mg, 1.40 mmol) in 8 mL
+of toluene afforded 5a (152 mg, 62%) as a liquid as a pair of diastereoisomer (eluent:
+petroleum ether/ethyl acetate = 20:1, then 10:1): 1H NMR (300 MHz, CDCl 3) δ
+7.40-7.24 (m, 4 H), 7.24-7.14 (m, 1 H), 6.35-6.25 (m, 1 H), 5.75-5.60 (m, 1 H),
+4.35-4.20 (m, 1 H), 2.04 (brs, 1H), 1.72-1.55 (m, 2 H), 1.53-1.38 (m, 2 H), 1.38-1.20

@@ -1,0 +1,92 @@
+{
+  "rule:constraint-json-is-internal--appliesTo--artifact:constraint-json": {
+    "from": "rule:constraint-json-is-internal",
+    "id": "rule:constraint-json-is-internal--appliesTo--artifact:constraint-json",
+    "relation_type": "appliesTo",
+    "to": "artifact:constraint-json"
+  },
+  "rule:no-device-start-without-explicit-start-request--appliesTo--task-step:create-device-task": {
+    "from": "rule:no-device-start-without-explicit-start-request",
+    "id": "rule:no-device-start-without-explicit-start-request--appliesTo--task-step:create-device-task",
+    "relation_type": "appliesTo",
+    "to": "task-step:create-device-task"
+  },
+  "rule:no-device-task-without-user-approval--appliesTo--checkpoint:approve-device-task-creation": {
+    "from": "rule:no-device-task-without-user-approval",
+    "id": "rule:no-device-task-without-user-approval--appliesTo--checkpoint:approve-device-task-creation",
+    "relation_type": "appliesTo",
+    "to": "checkpoint:approve-device-task-creation"
+  },
+  "rule:no-device-task-without-user-approval--appliesTo--task-step:create-device-task": {
+    "from": "rule:no-device-task-without-user-approval",
+    "id": "rule:no-device-task-without-user-approval--appliesTo--task-step:create-device-task",
+    "relation_type": "appliesTo",
+    "to": "task-step:create-device-task"
+  },
+  "rule:monitoring-is-read-only--appliesTo--artifact:device-monitor-result": {
+    "from": "rule:monitoring-is-read-only",
+    "id": "rule:monitoring-is-read-only--appliesTo--artifact:device-monitor-result",
+    "relation_type": "appliesTo",
+    "to": "artifact:device-monitor-result"
+  },
+  "rule:monitoring-is-read-only--appliesTo--task-step:monitor-device-task": {
+    "from": "rule:monitoring-is-read-only",
+    "id": "rule:monitoring-is-read-only--appliesTo--task-step:monitor-device-task",
+    "relation_type": "appliesTo",
+    "to": "task-step:monitor-device-task"
+  },
+  "rule:resource-snapshot-is-source-of-truth--appliesTo--task-step:verify-and-fill-resources": {
+    "from": "rule:resource-snapshot-is-source-of-truth",
+    "id": "rule:resource-snapshot-is-source-of-truth--appliesTo--task-step:verify-and-fill-resources",
+    "relation_type": "appliesTo",
+    "to": "task-step:verify-and-fill-resources"
+  },
+  "rule:risk-review-after-planning-output--appliesTo--task-step:recommend-experiment-conditions": {
+    "from": "rule:risk-review-after-planning-output",
+    "id": "rule:risk-review-after-planning-output--appliesTo--task-step:recommend-experiment-conditions",
+    "relation_type": "appliesTo",
+    "to": "task-step:recommend-experiment-conditions"
+  },
+  "rule:risk-review-after-planning-output--appliesTo--task-step:calculate-reagent-amounts": {
+    "from": "rule:risk-review-after-planning-output",
+    "id": "rule:risk-review-after-planning-output--appliesTo--task-step:calculate-reagent-amounts",
+    "relation_type": "appliesTo",
+    "to": "task-step:calculate-reagent-amounts"
+  },
+  "rule:risk-review-after-planning-output--appliesTo--task-step:generate-numbered-steps": {
+    "from": "rule:risk-review-after-planning-output",
+    "id": "rule:risk-review-after-planning-output--appliesTo--task-step:generate-numbered-steps",
+    "relation_type": "appliesTo",
+    "to": "task-step:generate-numbered-steps"
+  },
+  "rule:show-confirmable-artifacts-before-continuing--appliesTo--artifact:amount-table": {
+    "from": "rule:show-confirmable-artifacts-before-continuing",
+    "id": "rule:show-confirmable-artifacts-before-continuing--appliesTo--artifact:amount-table",
+    "relation_type": "appliesTo",
+    "to": "artifact:amount-table"
+  },
+  "rule:show-confirmable-artifacts-before-continuing--appliesTo--artifact:device-protocol-json": {
+    "from": "rule:show-confirmable-artifacts-before-continuing",
+    "id": "rule:show-confirmable-artifacts-before-continuing--appliesTo--artifact:device-protocol-json",
+    "relation_type": "appliesTo",
+    "to": "artifact:device-protocol-json"
+  },
+  "rule:show-confirmable-artifacts-before-continuing--appliesTo--artifact:numbered-experiment-steps": {
+    "from": "rule:show-confirmable-artifacts-before-continuing",
+    "id": "rule:show-confirmable-artifacts-before-continuing--appliesTo--artifact:numbered-experiment-steps",
+    "relation_type": "appliesTo",
+    "to": "artifact:numbered-experiment-steps"
+  },
+  "rule:show-confirmable-artifacts-before-continuing--appliesTo--artifact:recommendation-table": {
+    "from": "rule:show-confirmable-artifacts-before-continuing",
+    "id": "rule:show-confirmable-artifacts-before-continuing--appliesTo--artifact:recommendation-table",
+    "relation_type": "appliesTo",
+    "to": "artifact:recommendation-table"
+  },
+  "rule:stop-on-skill-failure--appliesTo--agent-flow:fdu-experiment-to-device-task": {
+    "from": "rule:stop-on-skill-failure",
+    "id": "rule:stop-on-skill-failure--appliesTo--agent-flow:fdu-experiment-to-device-task",
+    "relation_type": "appliesTo",
+    "to": "agent-flow:fdu-experiment-to-device-task"
+  }
+}

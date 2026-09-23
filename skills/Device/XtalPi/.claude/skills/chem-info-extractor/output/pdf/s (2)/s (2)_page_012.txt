@@ -1,0 +1,22 @@
+S12
+ 3.75-3.65 (m, 2 H, NCH 2), 2.00 (qd,  J1 = 6.8 Hz, J2 = 2.8 Hz, 2 H, CH 2), 1.45 (s, 9 H,
+t-Bu), 1.43-1.25 (m, 12 H, (CH 2)6), 0.88 (t, J = 6.8 Hz, 3 H, Me); 13C NMR (100 MHz,
+CDCl 3) δ 203.2, 155.7, 94.0, 89.0, 79.2, 39.3, 31.8, 29.4, 29.2, 29.0, 28.7, 28.3, 22.6,
+14.1.
+5. Preparation of ( Ra)-tert-butyl (pentadeca-2,3-dienyl)carbamate ( Ra)-4cd.
+(zjs-3-101)
+
+The reaction of CuBr 2 (45.2 mg, 0.2 mmol), 1c (233.5 mg, 1.5 mmol), ( S)-3 (253.3
+mg, 1.0 mmol), and 2d (275.9 mg, 1.5 mmol) in dioxane (3.0 mL) afforded ( Ra)-4cd
+(239.2 mg, 74%) (eluent: petroleum ether/ethyl  acetate = 100/1) as a liquid: 96% ee
+(HPLC conditions: Chiralcel AD-R column, MeOH/H 2O = 90/10, 0.5 mL/min, λ =
+214 nm, tR(major) = 27.8 min, tR(minor) = 38.0 min); [ α]D20 = -50.4 ( c = 1.00,
+CHCl 3)); 1H NMR (400 MHz, CDCl 3) δ 5.28-5.21 (m, 1 H, one proton of CH=C=CH),
+5.17-5.14 (m, 1 H, one proton of CH=C=CH), 4.75 (bs, 1 H, NH), 3.75-3.60 (m, 2 H,
+NCH 2), 2.00 (qd,  J1 = 6.8 Hz, J2 = 2.8 Hz, 2 H, CH 2), 1.45 (s, 9 H, t-Bu), 1.43-1.26
+(m, 18 H, (CH 2)9), 0.88 (t, J = 6.8 Hz, 3 H, Me); 13C NMR (100 MHz, CDCl 3) δ 203.1,
+155.6, 93.9, 89.0, 79.0, 39.2, 31.8, 29.6, 29.5, 29. 4, 29.2, 29.0, 28.6, 28.3, 22.6, 14.0;
+IR (neat) ν (cm-1) 3352, 2924, 2854, 1965, 1699, 1503, 1460, 1389, 1366, 1247, 1168,
+1053; MS (EI) m/z (%): 267 ((M-tBu+H)+, 72.62), 57 (100);  HRMS calcd for
+C16H29NO 2 [(M-tBu+H)+]: 267.2198, found: 267.2203.
+6. Preparation of ( Ra)-tert-butyl (5-ethylhepta- 2,3-dienyl)carbamate ( Ra)-4ce.

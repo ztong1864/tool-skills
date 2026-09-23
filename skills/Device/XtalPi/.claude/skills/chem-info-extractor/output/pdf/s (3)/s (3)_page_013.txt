@@ -1,0 +1,21 @@
+S13
+ CH 2×5), 0.87 (t, J = 6.8 Hz, 3 H, CH 3); 13C NMR (100 MHz, CDCl 3) δ = 205.4, 137.3,
+134.5, 129.7, 126.6, 126.4, 124.7, 95.6, 93.7, 31.8, 29.4, 29.3, 29.2, 29.0, 28.6, 22.7, 14.1.
+(7) Preparation of ( R)-1-(4-fluorophenyl)undeca-1,2-diene ( R-4bf)
+ (lrz-7-195,
+lrz-7-196):
+
+Conditions A : The reaction of ZnBr 2 (115.7 mg, 0.5 mmol, 98% from Alfa), CuBr
+(30.3 mg, 0.2 mmol, 98% from Acros), ( S)-3 (258.4 mg, 1.0 mmol, 98%), 1b (211.7
+mg, 1.5 mmol, 98%)/toluene (2 mL), and 2f (249.0 mg, 2.0 mmol)/toluene (1 mL)
+afforded ( R)-4bf (139.9 mg, 57%) (eluent: petrol eum ether) as a liquid: 92% ee
+(HPLC conditions: Chiralcel OJ-H column, hexane/ i-PrOH = 100/0, 0.6 mL/min, λ =
+214 nm,  tR(major) = 8.9 min, tR(minor) = 10.3 min); [ α]D21 = -187.8 ( c = 1.02, CHCl 3);
+1H NMR (300 MHz, CDCl 3) δ = 7.32-7.16 (m, 2 H, Ar-H), 7.04-6.90 (m, 2 H, Ar-H),
+6.09 (dt, J1 = 6.6 Hz, J2 = 3.0 Hz, 1 H, one proton from CH=C=CH), 5.56 (q, J = 6.8
+Hz, 1 H, one proton from CH=C=CH), 2.12 (qd, J1 = 7.0 Hz, J2 = 3.0 Hz, 2 H, CH 2),
+1.53-1.13 (m, 12 H, CH 2×6), 0.87 (t, J = 6.8 Hz, 3 H, CH 3); 13C NMR (75 MHz,
+CDCl 3) δ = 204.9 (d, J = 2.9 Hz), 161.7 (d, J = 243.9 Hz), 131.1 (d, J = 3.2 Hz), 127.9
+(d, J = 8.6 Hz), 115.4 (d, J = 21.8 Hz), 95.3, 93.6, 31.9, 29.4, 29.3, 29.2, 29.1, 28.7,
+22.7, 14.1; 19F NMR (282 MHz, CDCl 3) δ = -116.6; MS (EI) m/z (%): 246 (M+, 3.44),
+175 (M+-C5H11, 3.77), 148 (100); IR (neat): v = 2926, 2855, 1950, 1599, 1509, 1230,

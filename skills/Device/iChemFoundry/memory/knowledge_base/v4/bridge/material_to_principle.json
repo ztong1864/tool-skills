@@ -1,0 +1,1892 @@
+{
+  "_meta": {
+    "version": "v4",
+    "description": "Maps dossier_id/tuple_id -> embodied principles",
+    "last_updated": "2026-05-24T01:10:28.969265",
+    "stats": {
+      "total_materials": 100,
+      "with_principles": 100
+    }
+  },
+  "tuple_e07ec4abc8b7": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.82,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.82,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.82,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_e7d3e8b61fec": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.63,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.63,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.63,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_113763872476": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_d7f6a8b6bf74": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_b3bd66200202": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.56,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.56,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.56,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_c44295832a77": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.727,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.727,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.727,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_442ce5836b28": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_bb17aaf90160": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.89,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.89,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.89,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_2c9dc674735f": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.79,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.89,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.9,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_4facf11a4e5a": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_04daf1641f89": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.75,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.75,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.75,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_9d57bb5fff99": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_abac68f4c448": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.79,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.79,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.79,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_102419e77ab2": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_b86c032e0002": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_928c2a26c246": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.77,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.77,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_b206a0fb9470": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.63,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.63,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_78a3d52a90aa": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.76,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.76,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_34319c07e45f": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.61,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.61,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_0ebf883c7958": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.74,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.74,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_776d3e31958a": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.62,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.62,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_ee0d9eb5babb": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.83,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.83,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_f21594136d37": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.6,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.6,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_ee88f7f8e6c8": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.87,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.87,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_3fb2b9d89aa0": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_28c2b2c3b9a6",
+        "principle_name": "syn_triazole_induced_v_ligand_conformation",
+        "task_id": "gas_separation",
+        "confidence": 0.3,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_09cd9ede6d28": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.7,
+        "match_reason": "equilibrium_selectivity_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_934bdbe92bbc": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.69,
+        "match_reason": "equilibrium_selectivity_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_937b33f00094": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.8,
+        "match_reason": "equilibrium_selectivity_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_d03265b1ef58": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.56,
+        "match_reason": "equilibrium_selectivity_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_37826e37192a": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "gas_separation",
+        "confidence": 0.82,
+        "match_reason": "equilibrium_selectivity_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_7448565f7b7d": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.75,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.75,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_23adae400fc2": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.86,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.86,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_c99cf38fe837": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.743,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.743,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_5937fd31fcc1": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_aa54b31e5764": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.62,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.62,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_8d34fe4be617": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.62,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.62,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_a96d8033c5b7": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.88,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.88,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_44cfa61eb9a5": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.88,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.88,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_9d876d05e753": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.723,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.723,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_487ee0d6508a": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.82,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.82,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_4886a2c0a287": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_8aea25dbeffb": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.63,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.63,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_6bc0736f9127": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.653,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.653,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_8e1e3dda0331": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_30b38976dcfc": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_019ad6898ab3",
+        "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+        "task_id": "CO2_capture",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_capture",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "equilibrium_approach_reduces_dynamic_selectivity"
+  },
+  "tuple_673d502a2fba": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_9b0bab116831": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_8d79c6d84c61": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.753,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_3542c9b00629": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.61,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_4fe776cb23bc": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.84,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_0bccd9669226": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.743,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_5f9b0fc86318": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.84,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_1b2bce3ca722": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.69,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_fbbc9652185f": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.94,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_6e696019cdc5": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.84,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_38ed5125072a": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.75,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_256dbeb99b9c": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_1cb8148ce8ac": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.94,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_a90e0410ea2b": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.82,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_551898700ec5": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "CO2_N2_separation",
+        "confidence": 0.82,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_c43f6ba41c2c": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_6be930740ae5": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_c176dfd3e6d1": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_df119a4ce7bf": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.61,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.61,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_f838734f6bc5": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_07763afa12e4": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_41ad6913c38b": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_f16776ad00d1": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_b9c0dc09cdd6": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_b843105dd0f6": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_21c2b659f56c": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.89,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.89,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_47d359e54b8b": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_b3f31cadbafd",
+        "principle_name": "selective_co2_removal_enables_xe_recycling",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "principle_id": "mprin_f8664a10f48d",
+        "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+        "task_id": "Xe_Kr_separation",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "selective_co2_removal_enables_xe_recycling"
+  },
+  "tuple_72499de109ff": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "gas_separation",
+        "confidence": 0.7899999999999999,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_e105c85d2900": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "CO2_capture",
+        "confidence": 0.94,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_7dfa215935b9": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "gas_separation",
+        "confidence": 0.89,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_f519707437cd": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H2_CO2_separation",
+        "confidence": 0.71,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_0b10d302547c": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "gas_separation",
+        "confidence": 0.7899999999999999,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_e6371a3d721f": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "gas_separation",
+        "confidence": 0.95,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_1004d9678377": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "CO2_capture",
+        "confidence": 0.89,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_ec4a73b30c90": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H2_CO2_separation",
+        "confidence": 0.94,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_80047f01ca9e": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "gas_separation",
+        "confidence": 0.95,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_f8892116831c": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H2_CO2_separation",
+        "confidence": 0.7899999999999999,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_f560fa3ec137": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H2_C2H4_separation",
+        "confidence": 0.94,
+        "match_reason": "kinetic_separation_topology"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_ad5f7201628d": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_0f6eff4f1e07": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_40101ed39757": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.82,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.82,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_439906e1cf62": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.733,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.733,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_0cf2cedd3d40": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_7637933ce805": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_be4bf6d5e204": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_a162e9c8baab": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_5e838929312b": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_bce9cccca848": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_237eabb0a2aa": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_8ff8defc6c89": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_883b8c1a5789": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_655a5dee43b1": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_ba61bb25502c": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.81,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.81,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "tuple_68e6467b4bb9": {
+    "embodied_principles": [
+      {
+        "principle_id": "mprin_e6a4d661d741",
+        "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C2H4_C2H6_separation",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "confinement_induced_translation_rotation_coupled_diffusion"
+  },
+  "dossier_zif8": {
+    "embodied_principles": [
+      {
+        "principle_id": "p_principle_window_sieving_kinetic_separation",
+        "principle_name": "window_sieving_kinetic_separation",
+        "task_id": "C3H6_C3H8_separation",
+        "confidence": 0.95,
+        "match_reason": "principle_declared_verified"
+      }
+    ],
+    "applicable_levers": [],
+    "primary_mechanism": "window_sieving_kinetic_separation"
+  }
+}

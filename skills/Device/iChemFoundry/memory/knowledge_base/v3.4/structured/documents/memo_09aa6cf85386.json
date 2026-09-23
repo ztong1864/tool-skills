@@ -1,0 +1,128 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_09aa6cf85386",
+  "paper_id": "3fdc7853db6d",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [],
+  "one_line_summary": "[Zn(bpdc)(H2O)2] shows thermal_stability_decomposition_onset = 300.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_decomposition_onset = 300.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "two-fold interpenetrated (12,3)-network topology → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use the H2bpdc ligand as a linker in metal-organic coordination polymer design → enables flexible and diverse conformations and coordination modes for framework construction"
+    },
+    {
+      "title": "Comparison",
+      "body": "bpdc2- ligand after coordination with Zn2+ vs free bpdc2- ligand: winner=tie on luminescence properties"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_54e3896e7afe",
+    "trace_d8255f582ad9",
+    "trace_357df59e09c1",
+    "trace_d6210e443230",
+    "trace_ec2faa72cd17",
+    "trace_135259b0de0c",
+    "trace_c34af14e778d",
+    "trace_32cca40d1bcb",
+    "trace_9a8659b7dcca",
+    "trace_e07400657f08",
+    "trace_748c4debbefd",
+    "trace_0b37aab946da",
+    "trace_53a2358f7bec",
+    "trace_20c10db3a778",
+    "trace_5a78eb24abb5",
+    "trace_8ad6b7f222d7",
+    "trace_bcdcf10e0250",
+    "trace_78edf1418939",
+    "trace_935ec45d1cf0",
+    "trace_1c6931a5b67d",
+    "trace_7f6c9f2ae622",
+    "trace_068205c4a0e2",
+    "trace_c6ae589e6079",
+    "trace_c4b759e50799",
+    "trace_068205c4a0e2",
+    "trace_32cca40d1bcb",
+    "trace_78edf1418939",
+    "trace_357df59e09c1",
+    "trace_d6210e443230",
+    "trace_c4b759e50799",
+    "trace_20c10db3a778",
+    "trace_8ad6b7f222d7",
+    "trace_c6ae589e6079",
+    "trace_1c6931a5b67d",
+    "trace_e07400657f08",
+    "trace_54e3896e7afe",
+    "trace_9a8659b7dcca",
+    "trace_0b37aab946da",
+    "trace_748c4debbefd",
+    "trace_5a78eb24abb5",
+    "trace_c34af14e778d",
+    "trace_ec2faa72cd17",
+    "trace_bcdcf10e0250",
+    "trace_935ec45d1cf0",
+    "trace_7f6c9f2ae622",
+    "trace_53a2358f7bec",
+    "trace_135259b0de0c",
+    "trace_d8255f582ad9"
+  ],
+  "measurement_card_ids": [
+    "mcard_418d5c5d1efc"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_0885209e4490"
+  ],
+  "recipe_card_ids": [
+    "recipe_9c476049e62d",
+    "recipe_4e4eaba63d29",
+    "recipe_44bb8d9adf2a"
+  ],
+  "claim_card_ids": [
+    "claim_a60e9689caa5",
+    "claim_ebfb19f1fed4",
+    "claim_954ed30687b3",
+    "claim_b11595f25bf0",
+    "claim_a36c357e6b91",
+    "claim_cab42ce5d842",
+    "claim_188cd8aecf02",
+    "claim_c65757b2dca5"
+  ],
+  "design_rule_card_ids": [
+    "drule_ab601681e32f"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_5249deccc6bf"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_b200dbfa450a"
+  ],
+  "dossier_ids": [
+    "dossier_f855a999a635"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Variable-temperature PXRD indicates the framework remains intact below 300 °C, but TGA shows loss of two water molecules at 180–210 °C.",
+    "The complex shows strong solid-state fluorescence at 450 nm, and coordination to Zn2+ does not significantly change the bpdc2− ligand emission.",
+    "The μ3-bpdc2− ligand links Zn(II) centers into a 3D chiral framework containing intertwined right-handed 31 helical chains with 1.6638 nm pitch."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.613900",
+  "updated_at": "2026-04-24T00:19:51.613903",
+  "raw_path": "相关文献/一个二重穿插的三维配位聚合...O)_2]_n的合成与表征_刘宏文.pdf"
+}

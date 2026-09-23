@@ -1,0 +1,74 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_0fa1e6d62b9c",
+  "paper_id": "234cd07539aa",
+  "raw_path": "相关文献/Zn-IPA-F.pdf",
+  "title": "IPA-F",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H4/C2H6 separation",
+  "normalized_task_id": "C2H4_C2H6_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "BUT-315-a",
+    "CAU-1-OH",
+    "MAF-49",
+    "Th-1",
+    "MOF-808",
+    "MAC-4",
+    "BUT-315a",
+    "ZJU-120",
+    "MOF-76",
+    "JNU-2",
+    "HOF-1",
+    "BUT-315",
+    "PCN-250",
+    "NKMOF-8-Br",
+    "TKL-105",
+    "NKU-200-Tb"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Zr",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "DOBDC",
+    "BDC",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "DABCO"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Separation and Purification Technology 354 (2025) 128696\nAvailable online 6 July 2024\n1383-5866/© 2024 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:39:12.352558"
+}

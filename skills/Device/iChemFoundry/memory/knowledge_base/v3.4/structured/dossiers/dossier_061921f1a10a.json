@@ -1,0 +1,70 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_061921f1a10a",
+  "canonical_material_id": "mat_ce4dc3da4892",
+  "canonical_name": "HAF-2",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_aa0cb4c1673d",
+  "pillar_id": "pil_7e52db4a0e67",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_3df21f25bc6e",
+    "mcard_f59b483f9a52",
+    "mcard_e2f2e468600b",
+    "mcard_53a9e0f8eca0",
+    "mcard_e2b9944f7c75",
+    "mcard_bfdf8dcadca9",
+    "mcard_35756660841e",
+    "mcard_407c41a0b346",
+    "mcard_ae622bb36f96",
+    "mcard_25db31652e8b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_eb4133348e53",
+    "mechcard_a9ae7fd76c87",
+    "mechcard_68eddc566398",
+    "mechcard_caf95a774029",
+    "mechcard_47c96572bc5d"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_5555a6261743",
+    "claim_8d25286a83f3"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_adce5c240760",
+    "fail_c63ab9c40230"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "a5f035406a01",
+    "9d7addf6cc90",
+    "99cce61e0b82"
+  ],
+  "evidence_trace_ids": [
+    "trace_40fef8fcc8a3",
+    "trace_77f71f70cb0a",
+    "trace_c97e4dd81b33",
+    "trace_dccfc2882b32",
+    "trace_943db962f1fe",
+    "trace_a6e5d81a298e",
+    "trace_125080694c20"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:10:17.239343",
+  "updated_at": "2026-04-28T13:48:02.884801"
+}

@@ -1,0 +1,43 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_8fc575442493",
+  "canonical_material_id": "mat_ee3d631fd112",
+  "canonical_name": "[Mn6(ttpm)3]-5DMF-3H2O",
+  "metal_element": "Mn",
+  "node_signature_id": "node_94d663739c67",
+  "primary_linker_id": "lig_3a4ab85f578a",
+  "pillar_id": null,
+  "topology": "gar",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_bc72b906395f"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "09e67f192def"
+  ],
+  "evidence_trace_ids": [
+    "trace_87cd16c889ad"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:25:45.951140",
+  "updated_at": "2026-04-23T20:25:45.951193"
+}

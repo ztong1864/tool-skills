@@ -1,0 +1,65 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_eea09ed42350",
+  "paper_id": "bc92a6860fda",
+  "raw_path": "相关文献/Tian 等 - 2025 - A scalable ultramicroporous metal-organic framewor.pdf",
+  "title": "A scalable ultramicroporous metal-organic framewor",
+  "authors": [
+    "Tian"
+  ],
+  "year": 2025,
+  "doi": null,
+  "journal": null,
+  "task_type": "C3H6/C3H8 separation",
+  "normalized_task_id": "C3H6_C3H8_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "Kr"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UTSA-400",
+    "NCU-20",
+    "KAUST-7",
+    "HAF-1",
+    "MAF-60",
+    "NTU-85",
+    "HIAM-301",
+    "ZU-609",
+    "NTU-85-WNT"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "BTC"
+  ],
+  "mentioned_topologies": [
+    "dia",
+    "sql"
+  ],
+  "key_sections": {
+    "results_summary": "•ARTICLES•\nhttps://doi.org/10.1007/s11426-025-2822-7\nA scalable ultramicroporous metal-organic framework for highly\neffective propylene/propane separation at elevated temperatures\nWen-Jiang Tian\n1, Di"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:06:23.545243"
+}

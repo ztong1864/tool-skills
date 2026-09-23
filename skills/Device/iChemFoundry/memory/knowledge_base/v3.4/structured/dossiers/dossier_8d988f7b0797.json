@@ -1,0 +1,63 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_8d988f7b0797",
+  "canonical_material_id": "mat_d340aa8a100f",
+  "canonical_name": "[Co2(mbdc)(ATAZ)2(H2O)2]n-nH2O",
+  "metal_element": "Co",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_e69c0f88c3ee",
+  "pillar_id": "pil_c20375b20ec1",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_b1c1e06507d3",
+    "mechcard_ba9e7dcf2191",
+    "mechcard_2b1e391703e0",
+    "mechcard_76b1e88e8e28"
+  ],
+  "recipe_card_ids": [
+    "recipe_e44d5385d2a7",
+    "recipe_a9a6d7feb72a",
+    "recipe_51748611ffa9",
+    "recipe_4a6ccabdeefd"
+  ],
+  "claim_card_ids": [
+    "claim_340a6bfd07b7",
+    "claim_429771766451",
+    "claim_1430b96ced4a",
+    "claim_811159076f83",
+    "claim_7855fcf5b6ea"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "c1a5d8e02c30",
+    "fa7473797f58"
+  ],
+  "evidence_trace_ids": [
+    "trace_a326b53022e7",
+    "trace_9cc59142bb1c",
+    "trace_7f1fc6bd0c2b",
+    "trace_782f79aef367",
+    "trace_5599f523c501",
+    "trace_78c9c89af2e3",
+    "trace_e53137e1bbec",
+    "trace_4dc4bfc7744f"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:52:21.416810",
+  "updated_at": "2026-04-23T23:02:08.670904"
+}

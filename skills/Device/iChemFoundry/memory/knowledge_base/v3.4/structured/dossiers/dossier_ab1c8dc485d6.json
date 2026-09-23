@@ -1,0 +1,70 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_ab1c8dc485d6",
+  "canonical_material_id": "mat_7929c7c83df1",
+  "canonical_name": "Zn-FA-TRZ",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_9b529ca41c80",
+  "pillar_id": "pil_ceaaf3444275",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_c2c3dbece610",
+    "mcard_220641ad3620"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_bf1488ae90d7",
+    "mechcard_748421143877",
+    "mechcard_bfaf67c4c1f4",
+    "mechcard_d7f62158a4ad",
+    "mechcard_f59bf3f65bf2"
+  ],
+  "recipe_card_ids": [
+    "recipe_288e8c74d118",
+    "recipe_0845d576e442"
+  ],
+  "claim_card_ids": [
+    "claim_98f26cfcf1e6",
+    "claim_b6d7013f5365",
+    "claim_e1057bc47d10",
+    "claim_134e19e0b2b0"
+  ],
+  "design_rule_card_ids": [
+    "drule_4cf8395672e9",
+    "drule_1ac2c2c7f485",
+    "drule_3d6d5aad1c30",
+    "drule_6663d8a7f65d"
+  ],
+  "failure_case_card_ids": [
+    "fail_b6fa9391de16"
+  ],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "6b310008b988",
+    "1cdb348c09d0",
+    "3e1294c811a4"
+  ],
+  "evidence_trace_ids": [
+    "trace_e5c70badbef2",
+    "trace_c7fb584c7c0c",
+    "trace_c361eed9e177",
+    "trace_6053aae7ba94",
+    "trace_a9694b504ff9",
+    "trace_adf32db1bc52",
+    "trace_ba4b4da1a33b",
+    "trace_9556a4b05920",
+    "trace_26375df9c937"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:51:29.331768",
+  "updated_at": "2026-04-24T00:18:48.412491"
+}

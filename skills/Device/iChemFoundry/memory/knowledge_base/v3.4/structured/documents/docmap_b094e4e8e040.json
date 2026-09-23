@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_b094e4e8e040",
+  "paper_id": "8199cbc71be5",
+  "raw_path": "相关文献/氮唑相关文献_Zeng - 2014 - Solvothermal Synthesis, Crystal Structure and Lumi.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "AJC-16165"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "In summary, by employing 5-amino-1H-tetrazole and 1,4-\nbenzenedicarboxylate organic ligands, we have constructed a",
+    "results_summary": "ASIAN JOURNAL OF CHEMISTRY\nASIAN JOURNAL OF CHEMISTRY\nhttp://dx.doi.org/10.14233/ajchem.2014.17859\nINTRODUCTION\nAttention has been focused on the rapidly expanding field\nof supramolecular chemistry an"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:47:51.035271"
+}

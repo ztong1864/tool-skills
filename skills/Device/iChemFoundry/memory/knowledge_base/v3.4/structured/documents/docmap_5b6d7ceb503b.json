@@ -1,0 +1,77 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_5b6d7ceb503b",
+  "paper_id": "34af98065e7b",
+  "raw_path": "相关文献/Lan 等 - 2020 - A novel water-stable MOF Zn(Py)(Atz) as heterogene.pdf",
+  "title": "A novel water-stable MOF Zn(Py)(Atz) as heterogene",
+  "authors": [
+    "Lan"
+  ],
+  "year": 2020,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C2H4",
+    "C2H6"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ZnMOF-1-NH",
+    "MOF-1",
+    "MOF-205",
+    "UiO-67",
+    "DMOF-1",
+    "ZIF-8",
+    "UiO-66",
+    "IRMOF-3",
+    "UMCM-1-NH",
+    "BTC-2",
+    "MMPF-9",
+    "HKUST-1",
+    "IITKGP-9",
+    "ZIF-90",
+    "Amino-1",
+    "MMFC-2"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "TED",
+    "pyridine",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "nbo",
+    "acs",
+    "zif",
+    "hkust"
+  ],
+  "key_sections": {
+    "conclusion": "The novel Zn-based MOF catalyst with Lewis acid-base sites and\nmicropores was successfully constructed and thoroughly characterized.",
+    "results_summary": "Contents lists available at ScienceDirect\nJournal of CO2 Utilization\njournal homepage: www.elsevier.com/locate/jcou\nA novel water-stable MOF Zn(Py)(Atz) as heterogeneous catalyst for\nchemical conversi"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:00:46.528823"
+}

@@ -1,0 +1,105 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_5f3701e809fe",
+  "paper_id": "9a3286216110",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Paper 9a3286216110: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Failure",
+      "body": "[performance_regression] identify and refine residual electron density peaks inside the channel of the MOF crystal structure: the residual electron density peaks inside the channel could not be identified or further refined"
+    },
+    {
+      "title": "Author Claim",
+      "body": "PLATON analysis showed substantial porosity, with effective solvent-accessible volumes of 27.5% for 1 and 28.2% for 2."
+    },
+    {
+      "title": "Author Claim",
+      "body": "The Zn MOF [Zn(atz)(bdc)0.5] was synthesized hydrothermally at 150 °C for 72 h and isolated in 88.4% yield."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_d38dc91f888a",
+    "trace_833402047d57",
+    "trace_560da374f651",
+    "trace_49432722316d",
+    "trace_3386402d187c",
+    "trace_1f35631c4d9a",
+    "trace_3312f16a9853",
+    "trace_8e7f12211c20",
+    "trace_df5e380300e5",
+    "trace_f42029845888",
+    "trace_69c45c9eeca0",
+    "trace_e8ca65acc65b",
+    "trace_889b3f1fd2b3",
+    "trace_d0c41279466d",
+    "trace_69c45c9eeca0",
+    "trace_df5e380300e5",
+    "trace_e8ca65acc65b",
+    "trace_d38dc91f888a",
+    "trace_d0c41279466d",
+    "trace_8e7f12211c20",
+    "trace_f42029845888",
+    "trace_3312f16a9853",
+    "trace_560da374f651",
+    "trace_1f35631c4d9a",
+    "trace_49432722316d",
+    "trace_889b3f1fd2b3",
+    "trace_3386402d187c",
+    "trace_833402047d57"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_516582a0ae38",
+    "recipe_f6b1a5001b22",
+    "recipe_34e636895ca3",
+    "recipe_8e3844538a2d",
+    "recipe_29b5b490ebbf",
+    "recipe_3b507377d39f"
+  ],
+  "claim_card_ids": [
+    "claim_904b52cb08cd",
+    "claim_9dce088d14f9",
+    "claim_e2665ecbdbac",
+    "claim_901120cdf580",
+    "claim_3cd35b13fe04",
+    "claim_a04cbe4c7861",
+    "claim_bb01791031f7"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_e2be8c064cba"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_64d90fdebd09",
+    "mat_cc2b6c833bf0"
+  ],
+  "dossier_ids": [
+    "dossier_b86525dc0c87",
+    "dossier_f9ad396fca86"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "PLATON analysis showed substantial porosity, with effective solvent-accessible volumes of 27.5% for 1 and 28.2% for 2.",
+    "The Zn MOF [Zn(atz)(bdc)0.5] was synthesized hydrothermally at 150 °C for 72 h and isolated in 88.4% yield.",
+    "Two isostructural amine-functionalized 3D self-penetrating microporous MOFs were reported to exhibit high CO2 sorption selectivity."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.4,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.225647",
+  "updated_at": "2026-04-28T14:29:22.225652"
+}

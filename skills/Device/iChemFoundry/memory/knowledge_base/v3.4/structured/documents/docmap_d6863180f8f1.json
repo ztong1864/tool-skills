@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_d6863180f8f1",
+  "paper_id": "d9d19a39346c",
+  "raw_path": "相关文献/su2004.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "Kr"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Max-2200",
+    "FTIR-8400",
+    "Amino-1",
+    "MOF-5",
+    "CHE-0314164"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Fe",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "mof-5"
+  ],
+  "key_sections": {
+    "abstract": "An effective solvothermal procedure has been developed to synthesize the new three-dimensional\nmetal-organic framework, [ZnF(AmTAZ)]‚solvents, using either 3-amino-1,2,4-triazole (AmTAZ) or 3-amino-\n1,2,4-triazole-5-carboxylic acid (AmTAZAc) and a choice of several Zn(II) salts as starting materials. The",
+    "conclusion": "of the crystal data for (a)-(c) is given in Table 1.\nSelected bond distances and bond angles are listed in Table 2. Further",
+    "results_summary": "Exceptionally Stable, Hollow Tubular Metal-Organic\nArchitectures: Synthesis, Characterization, and Solid-State\nTransformation Study\nCheng-Yong Su,† Andrea M. Goforth, Mark D. Smith, P. J. Pellechia, a"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:45:21.152058"
+}

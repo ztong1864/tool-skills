@@ -1,0 +1,15 @@
+{
+  "run_at": "2026-05-23T23:08:24",
+  "stages": [
+    "P9"
+  ],
+  "papers_count": 260,
+  "total_elapsed_s": 509.5,
+  "stage_results": {
+    "P9": {
+      "name": "PrinciplePlaybook组织",
+      "elapsed_s": 509.5,
+      "result": "see detail"
+    }
+  }
+}

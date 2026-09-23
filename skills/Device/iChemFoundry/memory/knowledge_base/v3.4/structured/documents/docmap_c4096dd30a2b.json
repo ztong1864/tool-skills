@@ -1,0 +1,68 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_c4096dd30a2b",
+  "paper_id": "b693b8f886ee",
+  "raw_path": "相关文献/Xin 等 - 2022 - Effect of Fluorination on the Crystal Structure, S.pdf",
+  "title": "Effect of Fluorination on the Crystal Structure, S",
+  "authors": [
+    "Xin"
+  ],
+  "year": 2022,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Difluoro-4-methylbenzoic",
+    "Dimethyl-1",
+    "MAC-3",
+    "UiO-67"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "Ga",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine",
+    "terephthalate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "Three zinc(II) metal-organic frameworks (xF-MAC-3) have been synthesized by using Zn(II) salts, \n3,5-dimethyl-1H-1,2,4-triazole (Hdmtrz) and different fluorination degree carboxylate ligands, which are analogic",
+    "conclusion": "In conclusion, we synthesized three different fluorination \ndegree MOFs (xF-MAC-3) with pcu-b topology. Our studies",
+    "results_summary": "2022. 2  Vol. 41, No. 2                               Chinese  J.  Struct.  Chem.                                      2202049─056 \nARTICLE \n Effect of Fluorination on the Crystal Structure, Stability"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:25:38.849319"
+}

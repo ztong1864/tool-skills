@@ -1,0 +1,77 @@
+2536
+© Georg Thieme Verlag  Stuttgart · New York — Synthesis  2018 , 50, 2533–2545D. Ma et al. Paper Syn  thesis
+Finally, we applied this chemistry to the convenient
+synthesis of naturally occurring phlomic acid ( R)-9.10,15
+Starting from ( R)-4da, iodide ( R)-7 was obtained by the
+treatment of PPh3, imidazole, and I2.16 Then, the diester ( R)-
+8 was formed in 61% yield with 96% ee by alkylation with
+diethyl malonate in the presence of NaH as the base. By thetreatment with aqueous NaOH in MeOH, followed by heat-ing in AcOH at 120 °C, natural product phlomic acid [( R)-9]
+was obtained in 78% yield and 95% ee (Scheme 4C).
+As proposed in our previous work,
+9a the reaction be-
+tween the in situ generated alkynylmetal species IN-1  and
+the iminium ion 11 via 1,2-attack of the alkynyl entity from
+the back-side of the dimethylhydroxymethyl or diphenyl-hydroxymethyl group would generate propargylic amine(S,S)-12, which undergoes highly stereoselective CuBr
+2-me-
+diated intramolecular 1,5-hydride transfer followed by anti-
+β-elimination to deliver the R-allene unit. The reaction us-
+ing ( S)-dimethylprolinol may afford optically active propar-
+gylic amine ( S,S)-12 with higher de, resulting in higher ee
+for 1,3-disubstituted allenols (Scheme 5).
+In conclusion, we have developed a general allenylation
+of terminal alkynols with aliphatic or aromatic aldehydesusing ( S)-α,α-dimethylprolinol instead of ( S)-α,α-diphenyl-
+prolinol, affording a series of optically active 1,3-disubsti-tuted allenols with high enantioselectivity in one-pot. Thesynthetic potentials of these allenols prepared have alsobeen demonstrated by oxidation to aldehyde and conver-sion to amide, as well as a different approach for the natu-
+rally occurring phlomic acid.
+1H and 13C NMR spectra were recorded with a Bruker AM 300 MHz
+spectrometer. IR spectra were recorded on a PerkinElmer 983G in-strument. Elemental analyses were measured with a Carlo-ErbaEA1110 elementary analysis instrument. Mass spectrometry was per-formed with an HP 5989A system. High-resolution mass spectrome-try was taken with a Finnigan MAT 8430 or Bruker APEXIII instru-ment. CuBr
+2 was purchased from J & K. 1,4-Dioxane was distilled from
+Na using benzophenone as indicator under N2 before use. Et2O and
+THF were distilled from Na wire using benzophenone as indicator un-der N
+2 before use. CH2Cl2 and DMF were distilled from CaH2 under N2
+before use. Petroleum ether (PE) used had a boiling range of 60–90 °C.All liquid aldehydes were freshly distilled before use. Unless other-wise indicated, chemicals and solvents were purchased from com-mercial suppliers.
+(S)-α,α-Dimethylprolinol
+17 and oct-7-yn-1-ol ( 1f)12 were prepared
+following the literature methods.
+Synthesis of Optically Active 1,3-Disubstuted Allenols via Enanti-
+oselective Allenylation of Terminal Alkyne (EATA) Reaction Using (S)-α,α-Diphenylprolinol and ( S)-α,α-Dimethylprolinol
+Synthesis of ( R)-Pentadeca-2,3-dien-1-ol [( R)-4aa] Using ( S)-3b;
+Typical Procedure I
+To a flame-dried Schlenk tube with a polytetrafluoroethylene plug
+were added CuBr
+2 (0.0453 g, 0.2 mmol), ( S)-3b (0.1299 g, 1.0 mmol),
+prop-2-yn-1-ol ( 1a; 0.0846 g, 1.5 mmol, dissolved in 1.5 mL of 1,4-
+dioxane), and dodecanal ( 2a; 0.2762 g, 1.5 mmol, dissolved in 1.5 mL
+Scheme 4  Synthetic applicationsHO+NHO
+OPPh 3 (2 equiv)
+DEAD (2 equiv)
+THF, 0 °C to r.t., 12 hNO
+O
+91%, 95% eeHH
+95% eeHOH 20 mol% Fe(NO 3)3.9H2O
+20 mol% TEMPO
+20 mol% NaCl
+DCE, O 2, r.t., 4.5 hOH
+60%, 95% ee 95% ee
+(R)-4da (R)-6(R)-4ca (R)-5A: Oxidation
+B: Mitsunobu reaction
+2 equiv
+C: Synthesis of Phlomic acid
+HO IPPh 3 (1.2 equiv)
+imidazole (1.2 equiv)
+I2 (1.2 equiv)
+CH2Cl2, 5 °C, 20 minH H
+97% ee
+COOMeMeOOCNaH (1.4 equiv)
+CH2(CO 2Me) 2 (1.5 equiv)
+96% ee
+ 61% yield from ( R)-4daH(1) NaOH (aq, 2.2 N), MeOH
+     100 °C, 2.5 h
+HOOCH
+(3) AcOH, 120 °C, 29 h
+ 95% ee(R)-4da (R)-7
+(R)-8
+phlomic acid78% (R)-9DMF, r.t.
+(2) aq HCl
+n-C11H23nn-C11H23nn-C11H23nn-C11H23n
+n-C11H23nn-C11H23nn-C11H23n
+n-C11H23n

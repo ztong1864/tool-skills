@@ -1,0 +1,78 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_5532c2ec3a76",
+  "canonical_material_id": "mat_e92c445c8a2a",
+  "canonical_name": "CALF-20M-w",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_b29f17904941",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_4c9725925ba0",
+    "mcard_62f8c9f7296d",
+    "mcard_a9e6d082c3d1",
+    "mcard_8047022f9d48",
+    "mcard_18ce758946f3",
+    "mcard_d138060ad5a4"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_e3202e86d907",
+    "mechcard_036c68f298d5",
+    "mechcard_9fd6b1ecc8e2",
+    "mechcard_656f0f25021c",
+    "mechcard_6b5d3bcd3682",
+    "mechcard_4a5a8a0fcaf7"
+  ],
+  "recipe_card_ids": [
+    "recipe_57f92260fcd2",
+    "recipe_c0458ff71d5b",
+    "recipe_51689688eedc",
+    "recipe_5e157c470cbd"
+  ],
+  "claim_card_ids": [
+    "claim_ba82a06a7d22"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_c680a6dedaac",
+    "fail_6ae2a0c7a8b9"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "c6c12319f7ad",
+    "8fafae7223b5"
+  ],
+  "evidence_trace_ids": [
+    "trace_2888a4a00f52",
+    "trace_28875622cb75",
+    "trace_8101720c20e7",
+    "trace_e9ba9890b1fb",
+    "trace_f51153e94153",
+    "trace_099d87dc3b97",
+    "trace_52bac52202ba",
+    "trace_d381fb736a8f",
+    "trace_bec1ad4dd6c8",
+    "trace_22979dc24a41",
+    "trace_f1e247678f8f",
+    "trace_424e98d7cbe6",
+    "trace_7fc18f38860f",
+    "trace_84986b61f133",
+    "trace_3f7fec6991f2",
+    "trace_ad69145a2567"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:22:13.624442",
+  "updated_at": "2026-04-23T22:14:00.002952"
+}

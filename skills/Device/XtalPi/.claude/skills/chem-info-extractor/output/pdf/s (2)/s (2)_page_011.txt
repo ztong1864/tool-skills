@@ -1,0 +1,22 @@
+S11
+ (cm-1) 3354, 2925, 2854, 1965, 1696, 1503, 1458, 1389, 1366, 1247, 1167; MS (EI)
+m/z (%): 225 ((M-tBu+H)+, 34.93), 57 (100);  HRMS calcd for C 13H23NO 2
+[(M-tBu+H)+]: 225.1729, found: 225.1732.
+4. Preparation of ( Ra)-tert-butyl (dodeca-2,3-dienyl)carbamate ( Ra)-4cc at 70 oC.
+(tangy-1-113)
+
+Typical Procedure II : To a flame-dried Schlenk t ube with a rubber plug were
+added CuBr 2 (45.2 mg, 0.2 mmol), ( S)-3 (254.1 mg, 1.0 mmol), 1c (231.9 mg, 1.5
+mmol)/dioxane (1.5 mL), and 2c (214.1 mg, 1.5 mmol)/dioxane (1.5 mL) sequentially
+under nitrogen atmosphere (For an apparatu s, see Fig. S4). The reaction mixture was
+then stirred in an oil bath preheated at 70 oC for 24 h as monitored by TLC (eluent:
+petroleum ether/ethyl acetate = 10/1). The resulting mixture was diluted with ether
+(30 mL) and washed with an aqueous soluti on of hydrochloric acid (3 M, 20 mL). The
+organic layer was separated and the aqueous layer was extracted with ether (20 mL). The combined organic layer was washed with brine and dried over anhydrous Na
+2SO 4.
+After filtration and evaporation, the residue  was purified by chromatography (eluent:
+petroleum ether/ethyl acetate = 100/1) on silica gel to afford ( Ra)-4cc (153.6 mg, 54%)
+as a liquid: 98% ee (HPLC conditions: Chiralcel AD-R column, MeOH/H 2O = 85/15,
+1.0 mL/min, λ = 214 nm, tR(major) = 12.4 min, tR(minor) = 16.1 min); [ α]D20 = -55.2
+(c = 0.91, CHCl 3)); 1H NMR (400 MHz, CDCl 3) δ 5.29-5.22 (m, 1 H, one proton of
+CH=C=CH), 5.17-5.15 (m, 1 H, one proton  of CH=C=CH), 4.63 (bs, 1 H, NH),

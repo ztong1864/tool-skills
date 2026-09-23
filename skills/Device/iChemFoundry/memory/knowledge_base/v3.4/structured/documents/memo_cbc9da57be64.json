@@ -1,0 +1,86 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_cbc9da57be64",
+  "paper_id": "653921058bc6",
+  "title": "Poly[bis(μ 3 -3-amino-1,2,4-triazolato)",
+  "year": 2007,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "C2H4"
+  ],
+  "one_line_summary": "Design rule: choose glutaric acid and 3-amino-1,2,4-triazole as bridging ligands",
+  "key_insights": [
+    {
+      "title": "Design Rule",
+      "body": "[positive] choose glutaric acid and 3-amino-1,2,4-triazole as bridging ligands → supports construction of the targeted extended coordination framework"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use high-symmetry ligands → may yield novel structures"
+    },
+    {
+      "title": "Author Claim",
+      "body": "The framework contains two distinct Zn sites: one four-coordinated and one five-coordinated by triazolate N and glutarate O donors."
+    },
+    {
+      "title": "Author Claim",
+      "body": "Binuclear Zn units are linked by glutarate and 3-amino-1,2,4-triazolate ligands to build the extended 3D polymer."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_76bfd806c001",
+    "trace_ce2b9d398ee4",
+    "trace_68468251b5d5",
+    "trace_865868764229",
+    "trace_0f9758548c23",
+    "trace_08773b1315a0",
+    "trace_76bfd806c001",
+    "trace_08773b1315a0",
+    "trace_ce2b9d398ee4",
+    "trace_865868764229",
+    "trace_0f9758548c23",
+    "trace_68468251b5d5"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_d5bcb5bc6032",
+    "claim_cc0d037ecda7",
+    "claim_63c94357012a",
+    "claim_c99b20a1abed",
+    "claim_b1341b2f42e4",
+    "claim_5e963b90b221"
+  ],
+  "design_rule_card_ids": [
+    "drule_903ab3d2ccb0",
+    "drule_d8df1e7551b0"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_d29c1fc6c9b9"
+  ],
+  "dossier_ids": [
+    "dossier_7e2f30b5f9c2"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The framework contains two distinct Zn sites: one four-coordinated and one five-coordinated by triazolate N and glutarate O donors.",
+    "Binuclear Zn units are linked by glutarate and 3-amino-1,2,4-triazolate ligands to build the extended 3D polymer.",
+    "Ligand design is presented as crucial for constructing specific inorganic coordination polymeric complexes."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.4,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.500994",
+  "updated_at": "2026-04-24T00:19:49.500996",
+  "raw_path": "相关文献/Zheng 等 - 2007 - Poly[bis(μ 3 -3-amino-1,2,4-triazolato).pdf",
+  "authors": [
+    "Zheng"
+  ]
+}

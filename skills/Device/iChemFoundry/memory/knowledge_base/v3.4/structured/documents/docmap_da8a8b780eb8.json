@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_da8a8b780eb8",
+  "paper_id": "2051063a5ece",
+  "raw_path": "相关文献/c4cp04898a.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": false,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "ZSM-516",
+    "ZSM-5",
+    "POLY-4"
+  ],
+  "mentioned_metals": [
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "The diﬀusion coeﬃcients and activation energies of diﬀusion\nwere calculated for longer n-alkanes (n-C8–n-C16) in silicalite.",
+    "results_summary": "This journal is ©the Owner Societies 2015\nPhys. Chem. Chem. Phys., 2015, 17, 1943--1948 | 1943\nCite this: Phys.Chem.Chem.Phys.,\n2015, 17, 1943\nMolecular dynamics simulations of longer\nn-alkanes in sil"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:42:26.857841"
+}

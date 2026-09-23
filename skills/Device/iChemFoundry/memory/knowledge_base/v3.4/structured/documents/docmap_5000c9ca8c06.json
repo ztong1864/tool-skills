@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_5000c9ca8c06",
+  "paper_id": "fa7473797f58",
+  "raw_path": "相关文献/zhang2015.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Mn",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "imidazolate",
+    "terephthalate"
+  ],
+  "mentioned_topologies": [
+    "pcu"
+  ],
+  "key_sections": {
+    "results_summary": "Full Terms & Conditions of access and use can be found at\nhttp://www.tandfonline.com/action/journalInformation?journalCode=lsrt20\nDownload by: [University of California Santa Barbara]\nDate: 16 March 2"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:00:11.011458"
+}

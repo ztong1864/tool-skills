@@ -1,0 +1,10 @@
+- S70 -
+HPLC Profile  of 7
+
+
+No. Ret.Time
+(min)  Height
+(mAU)  Rel.Area
+(%)
+1 13.97  520.2  87.62
+2 25.11  103.2  12.38

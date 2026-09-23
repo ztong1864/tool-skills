@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_79ea4df6d91c",
+  "canonical_material_id": "mat_af240a81df74",
+  "canonical_name": "Na3H3Btp-2.75H2O",
+  "metal_element": "Na",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_839e29822a38",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_f2934b4c75c6",
+    "mcard_7b5d9540a194",
+    "mcard_c81b25074160"
+  ],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 0.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "mechanism",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "03314ed46af4"
+  ],
+  "evidence_trace_ids": [
+    "trace_a563dc2d8e2d"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:04:28.937782",
+  "updated_at": "2026-04-23T18:04:28.937990"
+}

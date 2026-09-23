@@ -1,0 +1,76 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_8bedd120a9be",
+  "paper_id": "b5d313a80058",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "H2"
+  ],
+  "one_line_summary": "Paper b5d313a80058: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Failure",
+      "body": "[performance_regression] determine explicit positions of free solvent molecules in Zn(PZDC)(ATZ) crystal structure: free solvent molecules could not be modeled explicitly because they were highly disordered"
+    },
+    {
+      "title": "Author Claim",
+      "body": "The crystal structure of Zn(PZDC)(ATZ) includes highly disordered free solvent molecules that could not be explicitly modeled."
+    },
+    {
+      "title": "Author Claim",
+      "body": "Zn(PZDC)(ATZ) contains large solvent-accessible voids that account for 21.7% of the unit-cell volume."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_d045479356c2",
+    "trace_b0f7b3b0a21d",
+    "trace_9f28c7f78652",
+    "trace_8581676f4128",
+    "trace_a2ef3eebbeaf",
+    "trace_1aad0a76717d",
+    "trace_8581676f4128",
+    "trace_b0f7b3b0a21d",
+    "trace_9f28c7f78652",
+    "trace_a2ef3eebbeaf",
+    "trace_1aad0a76717d",
+    "trace_d045479356c2"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_d6ab107d3b3f",
+    "claim_307de6b4bc17",
+    "claim_4dc45fea0188",
+    "claim_b27fc1e0acd0"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_ce77b7a83b3e"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_5ba5e2253555"
+  ],
+  "dossier_ids": [
+    "dossier_8acd318ae0fc"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The crystal structure of Zn(PZDC)(ATZ) includes highly disordered free solvent molecules that could not be explicitly modeled.",
+    "Zn(PZDC)(ATZ) contains large solvent-accessible voids that account for 21.7% of the unit-cell volume.",
+    "The use of SQUEEZE to identify void space indicates porosity in Zn(PZDC)(ATZ) despite unresolved guest solvent positions."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.2,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.209477",
+  "updated_at": "2026-04-28T14:29:22.209481"
+}

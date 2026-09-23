@@ -1,0 +1,56 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_7657bb95a969",
+  "paper_id": "08169a547bbc",
+  "raw_path": "相关文献/molecular-self-gating-inside-a-zeolite-catalyst.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "C3H8",
+    "C2H6",
+    "Xe"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "MOF-5",
+    "SAPO-42",
+    "DNL-6",
+    "SAPO-34",
+    "ZSM-25"
+  ],
+  "mentioned_metals": [
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "BPDC"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "mof-5"
+  ],
+  "key_sections": {
+    "abstract": "Diffusion is a ubiquitous process that is strongly\ncorrelated with concentration. Based on developed three-dimensional",
+    "results_summary": "Molecular Self-Gating Inside a Zeolite Catalyst\nZhiqiang Liu,*,⊥Caiyi Lou,⊥Jiamin Yuan, Xiaomin Tang, Yuzhou Fan, Ji Qi, Rui Zhang, Peng Peng,\nGuoliang Liu, Shutao Xu,* and Anmin Zheng*\nCite This: J. "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:25:04.382535"
+}

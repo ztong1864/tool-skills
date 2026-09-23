@@ -1,0 +1,208 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_7828022ee96e",
+  "paper_id": "fd9300073a96",
+  "title": "",
+  "year": null,
+  "doi": "10.1126/science.aax8666",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "H2",
+    "C3H6",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "SIFSIX-3-Ni shows selectivity_C2H6/CO2 = 5.0 dimensionless for C2H6",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "gas_uptake (unspecified_gas) = 2.0 mmol/g at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "selectivity_C2H6/C2H4 (C2H6) = 2.0 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "selectivity_C2H6/CO2 (C2H6) = 5.0 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "four_electronegative_F_atoms_from_independent_SiF6_2-_anions → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "unusual pore chemistry → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] tune pore size and chemistry within pillared square-lattice to primitive-cubic coordination networks → provides tunable pore size and chemistry for sorption design"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] combine two physisorbents in a tandem-packed sorbent bed to capture C2H2 and C2H6 synergistically → can in principle produce polymer-grade (>99.9%) C2H4 via physisorption"
+    },
+    {
+      "title": "Comparison",
+      "body": "GCMC adsorption energy vs experimental adsorption energy: winner=subject_b on adsorption_energy_value"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_c8693b4f641c",
+    "trace_a9a909ea4fe8",
+    "trace_94803616a742",
+    "trace_48b16913308e",
+    "trace_ca81b38c352f",
+    "trace_22e5b7ccf1a9",
+    "trace_6b67d6532540",
+    "trace_9913e1e38999",
+    "trace_f8f6fb1f47f0",
+    "trace_2aeace5451a8",
+    "trace_56d1a6563267",
+    "trace_8a1bb60b166b",
+    "trace_4d133090fcab",
+    "trace_16f31e1a0b5b",
+    "trace_d4498a92f15a",
+    "trace_59c22c3f42ba",
+    "trace_1606dd991eb9",
+    "trace_bcbec0ebeefe",
+    "trace_38366b00387c",
+    "trace_59149042a3ad",
+    "trace_553b731cd423",
+    "trace_c5b8af81e69f",
+    "trace_30697c4f5686",
+    "trace_62e1998656ec",
+    "trace_586bc5192a0d",
+    "trace_87d74ac1fbaa",
+    "trace_45f2b764d09e",
+    "trace_e0a88efc58b8",
+    "trace_58960f839c5f",
+    "trace_e89778e13242",
+    "trace_7a5e1942d203",
+    "trace_c94c9cb1e25a",
+    "trace_3909a46a698c",
+    "trace_bee91128de64",
+    "trace_0a0033eb7826",
+    "trace_ea13663b3996",
+    "trace_36e35c4ab8fa",
+    "trace_6ff7b385c376",
+    "trace_6daafe41fe8e",
+    "trace_0721957a0de3",
+    "trace_eaeda1498fb3",
+    "trace_56d1a6563267",
+    "trace_58960f839c5f",
+    "trace_c5b8af81e69f",
+    "trace_e0a88efc58b8",
+    "trace_94803616a742",
+    "trace_30697c4f5686",
+    "trace_0721957a0de3",
+    "trace_59c22c3f42ba",
+    "trace_45f2b764d09e",
+    "trace_0a0033eb7826",
+    "trace_bcbec0ebeefe",
+    "trace_59149042a3ad",
+    "trace_2aeace5451a8",
+    "trace_a9a909ea4fe8",
+    "trace_553b731cd423",
+    "trace_6daafe41fe8e",
+    "trace_3909a46a698c",
+    "trace_d4498a92f15a",
+    "trace_6b67d6532540",
+    "trace_62e1998656ec",
+    "trace_48b16913308e",
+    "trace_bee91128de64",
+    "trace_22e5b7ccf1a9",
+    "trace_586bc5192a0d",
+    "trace_38366b00387c",
+    "trace_e89778e13242",
+    "trace_9913e1e38999",
+    "trace_36e35c4ab8fa",
+    "trace_f8f6fb1f47f0",
+    "trace_8a1bb60b166b",
+    "trace_eaeda1498fb3",
+    "trace_7a5e1942d203",
+    "trace_4d133090fcab",
+    "trace_ca81b38c352f",
+    "trace_6ff7b385c376",
+    "trace_1606dd991eb9",
+    "trace_c8693b4f641c",
+    "trace_16f31e1a0b5b",
+    "trace_87d74ac1fbaa",
+    "trace_ea13663b3996",
+    "trace_c94c9cb1e25a"
+  ],
+  "measurement_card_ids": [
+    "mcard_bbe8b873c481",
+    "mcard_d81e2339f947",
+    "mcard_9ea2414f6632",
+    "mcard_4f30b3c361d3",
+    "mcard_88eea4ad2624",
+    "mcard_cd87885253e2",
+    "mcard_0f20eaa69657",
+    "mcard_21786ad31c94"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_c520d4f27e0c",
+    "mechcard_aa3ab4669024",
+    "mechcard_c7c863f7572b",
+    "mechcard_45ce7a57e089",
+    "mechcard_280329f6e531",
+    "mechcard_9e56d325650b"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_01ea230fc110",
+    "claim_086f3a48acad",
+    "claim_02e06ca9253b",
+    "claim_55e29437d29e",
+    "claim_91ea9532f0d9",
+    "claim_d32983115138",
+    "claim_4fb5cb47715c",
+    "claim_4de387475e36"
+  ],
+  "design_rule_card_ids": [
+    "drule_00c64e47c1ff",
+    "drule_ca346de05b98",
+    "drule_bcf76ccc9a72",
+    "drule_a32c027c57e8"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_695232c27f7c",
+    "comp_a5c25c7164ae",
+    "comp_9bc3e77057b2",
+    "comp_3111a56710b7",
+    "comp_9ad6e50cd68a"
+  ],
+  "failure_case_card_ids": [
+    "fail_f6ca9ec6b40e",
+    "fail_92f7b81eaac5",
+    "fail_1f26f41e0925"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_2a37d8237da0",
+    "mat_f07adecbd1d4",
+    "mat_fd0c80909cfa"
+  ],
+  "dossier_ids": [
+    "dossier_5888252ea3a9",
+    "dossier_291b52bf3074",
+    "dossier_552d63514f45"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Adding SIFSIX-3-Ni, an ultraselective CO2 sorbent, should remove trace CO2 from four-component feeds and extend the process to one-step quaternary separation.",
+    "SIFSIX-3-Ni is CO2-selective at low pressure: below 0.2 bar and 298 K, CO2 has the highest uptake among the gases tested.",
+    "At 298 K and 1 bar, TIFSIX-2-Cu-i adsorbs less C2H6 (2.1 mmol/g) than C2H4 (2.6), CO2 (4.3), and C2H2 (4.1), confirming it is not C2H6-selective."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.353760",
+  "updated_at": "2026-04-24T00:19:47.353763",
+  "raw_path": "相关文献/10.1126@science.aax8666.pdf.pdf"
+}

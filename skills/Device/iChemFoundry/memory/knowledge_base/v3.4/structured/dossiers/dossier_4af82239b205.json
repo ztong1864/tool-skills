@@ -1,0 +1,67 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_4af82239b205",
+  "canonical_material_id": "mat_0f05f7e78fd7",
+  "canonical_name": "[Zn2(trz)2(btdb)]⋅4DMF",
+  "metal_element": "Zn",
+  "node_signature_id": "node_5f3e8b084fd4",
+  "primary_linker_id": "lig_9b529ca41c80",
+  "pillar_id": "pil_dad6c7a9a8c7",
+  "topology": "(4,4)-grid layer",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_3ea188198642",
+    "mcard_2f24bce5b2cb",
+    "mcard_28bcc1a56014",
+    "mcard_5d21441dc2e9",
+    "mcard_e818445f2061",
+    "mcard_0c3831daf482",
+    "mcard_900790d2e48d",
+    "mcard_b04e5a2e2beb"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_ed9b833ce108",
+    "mechcard_61f5dc34f934",
+    "mechcard_0f0c08caa8d1"
+  ],
+  "recipe_card_ids": [
+    "recipe_6d7137bde6fd"
+  ],
+  "claim_card_ids": [
+    "claim_6d4eb8ef98e6",
+    "claim_7e40ce11decc",
+    "claim_1540e68cb572",
+    "claim_ee2ceacb581d"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "6613653bbccc"
+  ],
+  "evidence_trace_ids": [
+    "trace_f98b3f4a47d1",
+    "trace_d38d1b77d922",
+    "trace_a90f3afddb01",
+    "trace_787298e3af3a",
+    "trace_ac698141bca8",
+    "trace_25b03a73848d",
+    "trace_72dc409593df",
+    "trace_d7fbda2f36c9",
+    "trace_45f93cea55eb",
+    "trace_cb963c4a81a6"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:04:51.521702",
+  "updated_at": "2026-04-23T21:05:23.766151"
+}

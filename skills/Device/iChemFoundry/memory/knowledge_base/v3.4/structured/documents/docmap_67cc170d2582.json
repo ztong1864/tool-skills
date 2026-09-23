@@ -1,0 +1,63 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_67cc170d2582",
+  "paper_id": "c6c12319f7ad",
+  "raw_path": "相关文献/Wang 等 - 2024 - Tailoring Hydrophobicity and Pore Environment in P.pdf",
+  "title": "Tailoring Hydrophobicity and Pore Environment in P",
+  "authors": [
+    "Wang"
+  ],
+  "year": 2024,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CHE-1048773",
+    "MOF-801",
+    "CALF-20",
+    "MOF-5",
+    "ECCS-2025633",
+    "NU-220"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Al",
+    "Zr",
+    "In",
+    "V",
+    "Ce",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "mof-5"
+  ],
+  "key_sections": {
+    "abstract": "CALF-20, a Zn-triazolate-based metal−organic framework\n(MOF), is one of the most promising adsorbent materials for CO2",
+    "conclusion": "from the water−water potential energy analysis\n(Figures S50 and S51). On the other hand, CALF-20M-w and",
+    "results_summary": "Tailoring Hydrophobicity and Pore Environment in Physisorbents\nfor Improved Carbon Dioxide Capture under High Humidity\nXiaoliang Wang, Maytham Alzayer, Arthur J. Shih, Saptasree Bose, Haomiao Xie, Sim"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:14:36.733245"
+}

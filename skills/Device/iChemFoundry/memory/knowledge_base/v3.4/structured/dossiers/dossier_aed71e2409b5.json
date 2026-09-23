@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_aed71e2409b5",
+  "canonical_material_id": "mat_6cad8a40c7cb",
+  "canonical_name": "Zn2(H2dobdc)(datz)2-1.5DMF",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_778e367a7182",
+  "pillar_id": "pil_1cb405cd71cd",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_592e28b755c4"
+  ],
+  "recipe_card_ids": [
+    "recipe_f2178b23025f",
+    "recipe_bc42e7a4862e"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [
+    "drule_645f34eefd89"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "d3f7c46a759d",
+    "a8e30ce28b53"
+  ],
+  "evidence_trace_ids": [
+    "trace_3b2a097bf505",
+    "trace_1d612e5822b9",
+    "trace_765e0acff5ef"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:08:56.831048",
+  "updated_at": "2026-04-23T22:14:52.177258"
+}

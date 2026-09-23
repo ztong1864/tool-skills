@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_752a444d8205",
+  "canonical_material_id": "mat_3a9b6a4e9635",
+  "canonical_name": "[Zn2(HBDC)2(dmtrz)2]-2H2O-CH3NH2",
+  "metal_element": "Zn",
+  "node_signature_id": "node_c113f986d907",
+  "primary_linker_id": "lig_3e32edade6ca",
+  "pillar_id": "pil_e8414fc161af",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_f7606efcb4d4"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "79ccfb53a022",
+    "7053ffe8885e"
+  ],
+  "evidence_trace_ids": [
+    "trace_ecaaecec8773"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:22:51.300795",
+  "updated_at": "2026-04-28T13:54:31.120611"
+}

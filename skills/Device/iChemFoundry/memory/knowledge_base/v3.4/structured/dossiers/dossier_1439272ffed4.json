@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_1439272ffed4",
+  "canonical_material_id": "mat_299c8578f5a7",
+  "canonical_name": "zeolitic/porous-MAFs",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": "lig_d6fdce0980bf",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_405638966ff6"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_cce6f210f6f0",
+    "mechcard_8e05c1ab32c6"
+  ],
+  "recipe_card_ids": [
+    "recipe_a7e7919eb710"
+  ],
+  "claim_card_ids": [
+    "claim_538f10c82141"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "4b169130f161"
+  ],
+  "evidence_trace_ids": [
+    "trace_306632740e59",
+    "trace_d30e1308a611",
+    "trace_040bc0667ecd"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:14:56.823000",
+  "updated_at": "2026-04-23T20:15:38.816238"
+}

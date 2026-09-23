@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_6a122ba105aa",
+  "canonical_material_id": "mat_83b8cb1faa82",
+  "canonical_name": "[Cu2(phen)2(ox)(H2O)2](NO3)2",
+  "metal_element": "Cu",
+  "node_signature_id": "node_dce145c0af35",
+  "primary_linker_id": "lig_5360b37c5130",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_65e0c7c3823b"
+  ],
+  "claim_card_ids": [
+    "claim_01689e21dd0d"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "b3e6c07b82b5"
+  ],
+  "evidence_trace_ids": [
+    "trace_2c51cecfb5fd"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-24T00:02:37.975734",
+  "updated_at": "2026-04-24T00:03:09.141120"
+}

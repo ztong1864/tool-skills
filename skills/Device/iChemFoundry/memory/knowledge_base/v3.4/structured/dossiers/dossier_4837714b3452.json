@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_4837714b3452",
+  "canonical_material_id": "mat_2c62cb9b4b2a",
+  "canonical_name": "[Zn5(tmaH)4(trz)2(H2O)4]",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_9b529ca41c80",
+  "pillar_id": null,
+  "topology": "3d network",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_ff2b403048db"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_ebd82fc763a3",
+    "mechcard_6b2b16f3c0a9"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_12ce62240ec1"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "39219513efa5"
+  ],
+  "evidence_trace_ids": [
+    "trace_503caa11af9f",
+    "trace_5bf7de81fd80",
+    "trace_8a8b15de75f5"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T23:57:00.716421",
+  "updated_at": "2026-04-23T23:57:14.061057"
+}

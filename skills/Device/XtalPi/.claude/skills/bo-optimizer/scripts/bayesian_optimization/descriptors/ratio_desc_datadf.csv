@@ -1,0 +1,14 @@
+,dummy
+0 equiv,0
+0.1 eq (10 mol%),0
+0.1 eq (TEMPO 0.02 mmol : substrate 0.2 mmol = 10 mol%),0
+0.1 eq (TEMPO 0.05 mmol / substrate 0.5 mmol),0
+0.1 equiv (10 mol%),0
+1.0 equiv.,0
+10 mol%,0
+10 mol% (0.1 equiv relative to 0.2 mmol substrate),0
+20 mol%,0
+Fe(NO3)3·9H2O (5 mol%),0
+Redox stoichiometry shown: Fe2+ + 2 H+ + NO2- -> Fe3+ + NO + H2O (implies Fe2+:H+:NO2- = 1:2:1 for that step),0
+TEMPO 2.5 equiv; NaCl 1.0 equiv; NaNO3 1.0 equiv,0
+eq_0.1,0

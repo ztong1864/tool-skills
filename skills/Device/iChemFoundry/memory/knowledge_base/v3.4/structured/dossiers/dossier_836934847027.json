@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_836934847027",
+  "canonical_material_id": "mat_f6430b68ab2a",
+  "canonical_name": "TYUT-ATZ",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_63a39f87f1c2",
+  "pillar_id": "pil_63a39f87f1c2",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_fd039b29a75c"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_8c3ced393674",
+    "mechcard_e83a8e2f336d"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_575c71545955"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "b33f5192881b"
+  ],
+  "evidence_trace_ids": [
+    "trace_40d7432943f6",
+    "trace_c0049ae3032f",
+    "trace_c22339fe8b5a"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:32:16.261493",
+  "updated_at": "2026-04-23T20:33:19.895537"
+}

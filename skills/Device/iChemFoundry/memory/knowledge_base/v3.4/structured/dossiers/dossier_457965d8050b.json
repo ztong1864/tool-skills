@@ -1,0 +1,43 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_457965d8050b",
+  "canonical_material_id": "mat_10055d823a0a",
+  "canonical_name": "1-MeOH",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_7cd9271fffc6"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "bfbed74e28fe"
+  ],
+  "evidence_trace_ids": [
+    "trace_ab761a015da4"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:33:25.169215",
+  "updated_at": "2026-04-23T22:33:25.169270"
+}

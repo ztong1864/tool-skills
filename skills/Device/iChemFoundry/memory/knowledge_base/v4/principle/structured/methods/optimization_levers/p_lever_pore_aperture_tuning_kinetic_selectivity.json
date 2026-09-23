@@ -1,0 +1,70 @@
+{
+  "TYPE_TAG": "OptimizationLever",
+  "id": "p_lever_pore_aperture_tuning_kinetic_selectivity",
+  "name": "tune_pore_aperture_kinetic_selectivity",
+  "display_name_zh": "调节孔径以匹配动力学直径",
+  "trigger_diagnosis": {
+    "symptom_type": "kinetic_selectivity_insufficient"
+  },
+  "intervention": {
+    "control_variable_ids": [
+      "p_var_linker_length",
+      "p_var_pillar_length",
+      "p_var_substituent_size"
+    ],
+    "operation_template_zh": "将孔窗调节到 [d_small+0.1, d_large-0.1] Å 区间",
+    "concrete_actions": [
+      "缩短柱撑体（替换BPY为DABCO）→ 窗口缩小~2Å",
+      "在配体上引入-CH3/-F位阻基团 → 有效窗口缩小0.5-1.0Å",
+      "换更小拓扑（pcu→nbo或sql）→ 整体孔尺寸下移"
+    ]
+  },
+  "expected_effect": {
+    "direction": "increase",
+    "metric": "kinetic_selectivity",
+    "magnitude_qualifier": "strong"
+  },
+  "side_effects": [
+    {
+      "metric": "diffusion_speed",
+      "direction": "decrease",
+      "magnitude": "linear"
+    },
+    {
+      "metric": "loading_capacity",
+      "direction": "decrease"
+    }
+  ],
+  "tradeoff_analysis_zh": "选择性vs容量/速率为hard trade-off；建议先用PORMAKE枚举窗口在目标范围且BET>阈值的组合。",
+  "derived_from_principle_ids": [
+    "p_principle_window_sieving_kinetic_separation"
+  ],
+  "anti_pattern_principle_ids": [
+    "p_counter_reverse_kinetic_selectivity_high_loading"
+  ],
+  "applicable_task_ids": [
+    "C3H6_C3H8_separation",
+    "C2H4_C2H6_separation"
+  ],
+  "material_kb_query_template": {
+    "object": "CandidateCompositionTuple",
+    "where": [
+      {
+        "field": "topology",
+        "op": "in",
+        "value": [
+          "sod",
+          "lta",
+          "gis",
+          "rho",
+          "nbo"
+        ]
+      }
+    ]
+  },
+  "confidence": 0.9,
+  "verified_examples": [
+    "ZIF-8 (Yang 2024)",
+    "KAUST-7"
+  ]
+}

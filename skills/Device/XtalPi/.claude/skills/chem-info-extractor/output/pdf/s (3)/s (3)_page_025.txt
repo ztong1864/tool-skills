@@ -1,0 +1,22 @@
+S25
+ 1-((1 S)-1-phenyl-2-undecyn-1-yl)- α,α-diphenylprolinol (( S,S)-5ba) in eq. 1 of
+Scheme 2 (yjt-12-62):
+
+To an oven-dried Schlenk tube were a dded CuBr (29.6 mg, 0.2 mmol, 98% from
+Alfa) inside a glove box. ( S)-3 (258.3 mg, 1.0 mmol, 98%), 1b (213.0 mg, 1.5 mmol,
+98%)/toluene (2 mL), and 2a (212.8 mg, 2.0 mmol) /toluene (1 mL) were then added
+sequentially under an argon atmosphere. The Schlenk tube was then equipped with a
+condenser and placed in a pre-heated oil bath at 110 oC with stirring for 5 h. After
+cooling to room temperature, the crude re action mixture was filtrated through a short
+pad of silica gel eluted with  ether (20 mL). After evapor ation, the residue was purified
+by chromatography on silica ge l (eluent: petroleum ether → petroleum ether/ethyl
+ether = 100/1) to afford ( R)-4ba (18.9 mg, 8%) and ( S,S)-5ba3 (341.6 mg, 71%) both
+as liquid.
+(R)-4ba: 98% ee (HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH =
+100/0, 0.7 mL/min, λ = 254 nm,  tR(major) = 8.5 min, tR(minor) = 9.9 min); 1H NMR
+(300 MHz, CDCl 3) δ = 7.35-7.23 (m, 4 H, Ar-H), 7.23- 7.12 (m, 1 H, Ar-H), 6.12 (dt,
+J1 = 6.3 Hz, J2 = 2.9 Hz, 1 H, one proton from CH=C=CH), 5.56 (q, J = 6.6 Hz, 1 H,
+one proton from CH=C=CH), 2.12 (qd, J1 = 7.1 Hz, J2 = 2.9 Hz, 2 H, CH 2), 1.57-1.15
+(m, 12 H, CH 2×6), 0.87 (t, J = 6.6 Hz, 3 H, CH 3).
+(S,S)-5ba: [α]D20 = -58.7 ( c = 1.85, CHCl 3); 1H NMR (300 MHz, CDCl 3) δ =
+7.80 (d,  J = 8.1 Hz, 2 H, Ar-H), 7.61 (d,  J = 7.8 Hz, 2 H, Ar-H), 7.35-7.05 (m, 11 H,

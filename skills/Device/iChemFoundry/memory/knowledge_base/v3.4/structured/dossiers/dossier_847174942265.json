@@ -1,0 +1,57 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_847174942265",
+  "canonical_material_id": "mat_80f81aa68047",
+  "canonical_name": "Zn2(daTz)2SO4",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_ddce74877ea3",
+  "pillar_id": "pil_7e52db4a0e67",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_ebcf825fc2d9",
+    "mechcard_5d20c5cb5d37",
+    "mechcard_c956d222b014",
+    "mechcard_a6dab40c0f28",
+    "mechcard_7488557035b1",
+    "mechcard_68c6cb685063"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_95828f6c3e4f",
+    "claim_8c6b56088659"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_2b3445ec998a"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "97fd14a47cac"
+  ],
+  "evidence_trace_ids": [
+    "trace_cf814940e423",
+    "trace_4010a93d007a",
+    "trace_9fea18278585",
+    "trace_d8fa28455144",
+    "trace_c5416a46acf7",
+    "trace_dad487c7f5cd"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:47:32.479005",
+  "updated_at": "2026-04-23T20:48:01.194840"
+}

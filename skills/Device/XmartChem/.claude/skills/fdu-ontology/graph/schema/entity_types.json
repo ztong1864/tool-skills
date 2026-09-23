@@ -1,0 +1,15 @@
+{
+  "entity_types": [
+    "AgentFlow",
+    "Checkpoint",
+    "Condition",
+    "DataArtifact",
+    "DeviceAction",
+    "ExecutionRule",
+    "Instrument",
+    "Process",
+    "Property",
+    "Resource",
+    "TaskStep"
+  ]
+}

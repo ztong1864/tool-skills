@@ -1,0 +1,359 @@
+[
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-588d8bd65fdd",
+    "process_json": {
+      "src_layout_code": "W2-1:1",
+      "resource_type": "DHP30_V2",
+      "substance": "三氟甲磺酸铋 Bi(OTf)3",
+      "add_weight": 3.281,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-16d2b88baa68",
+    "process_json": {
+      "src_layout_code": "W2-3:0",
+      "resource_type": "DHP30_V2",
+      "substance": "(S)-(+)-α,α-二苯基脯氨醇",
+      "add_weight": 30.4,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 2,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-e04b5d7074aa",
+    "process_json": {
+      "src_layout_code": "W2-1:0",
+      "resource_type": "DHP30_V2",
+      "substance": "5A MS",
+      "add_weight": 20.0,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 3,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-9090766cb91c",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 4,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-ea0aead851f4",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 5,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-7a12fd193460",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-60288aa01785",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 7,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-f6ba72c1ca9d",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 8,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-58ddd8d08bf4",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-a2bd29eb9e8f",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.6,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 10,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-c95c9b9d98e0",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-b821063b62c7",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 20,
+    "unit_row": 12,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:20",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  }
+]

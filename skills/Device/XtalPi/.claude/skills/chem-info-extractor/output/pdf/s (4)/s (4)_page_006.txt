@@ -1,0 +1,35 @@
+S6
+ (300 MHz, CDCl 3) δ 7.38-7.27 (m, 4 H), 7.23-7.14 (m, 1 H), 6.15-6.07 (m, 1 H),
+5.61-5.50 (m, 1 H), 2.20-2.05 (m, 2 H), 1.54- 1.43 (m, 2 H), 1.42-1.20 (m, 10 H), 0.87
+(t, J = 6.6 Hz, 3 H); 13C NMR (75 MHz, CDCl 3) δ 205.2, 135.2, 128.5, 126.6, 95.1,
+94.5, 31.9, 29.4, 29.3, 29.19, 29.17, 2 8.8, 22.7, 14.1; MS (EI) m/z 228 (M+, 4.81), 130
+(100); IR (neat): 2959, 2926, 2853, 1949, 1599, 1494, 1460 cm-1.
+(2) Synthesis of 1-(4-chlorophenyl)undeca-1,2-diene (3ab)
+(CH 2)7CH3
+3ab+ +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv2bCH3(CH 2)7toluene, 130 ℃
+6.7 h, 52%1aClCHO
+Cl
+
+The reaction of ZnI 2 (255 mg, 0.80 mmol), 4-chlo robenzaldehyde (254 mg, 1.81
+mmol), 1-decyne 1a (136 mg, 0.99 mmol), and morpholine (122 mg, 1.40 mmol) in 3
+mL of toluene afforded 3ab (134 mg, 52%) as a liquid (eluent: petroleum ether): 1H
+NMR (300 MHz, CDCl 3) δ 7.31-7.22 (m, 2 H), 7.22-7.15 (m, 2 H), 6.15-6.00 (m, 1 H)
+5.63-5.50 (m, 1 H), 2.20-2.03 (m, 2 H), 1.53- 1.41 (m, 2 H), 1.40-1.18 (m, 10 H), 0.88
+(t, J = 6.3 Hz, 3 H); 13C NMR (75 MHz, CDCl 3) δ 205.2, 133.7, 132.1, 128.6, 127.7,
+95.5, 93.7, 31.8, 29.4, 29.3, 29.2, 29.1, 28.6, 22.7, 14.1; MS (EI) m/z 264 (M+(37Cl),
+0.19), 262 (M+(35Cl), 0.51), 129 (100); IR (neat): 2954, 2926, 2854, 1949, 1709, 1592,
+1490, 1461, 1383, 1092, 1013 cm-1; HRMS (EI) calcd for C 17H2335Cl (M+): 262.1488.
+Found: 262.1489 .
+(3) Synthesis of 1-(4-bromophenyl)undeca-1,2-diene  (3ac)
+(CH 2)7CH3
+3ac+ +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv2cCH3(CH 2)7toluene, 130 ℃
+6.8 h, 53%1aBrCHO
+Br

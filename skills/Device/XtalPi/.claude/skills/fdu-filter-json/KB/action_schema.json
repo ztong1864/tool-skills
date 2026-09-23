@@ -1,0 +1,30 @@
+{
+  "unit_type": "exp_filtering_samples",
+  "defaults": {
+    "layout_code": "T-3:0",
+    "layout_code_ref": "T-3:A1",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "ori_layout_code": null,
+    "unit_column": 0,
+    "unit_row": 0,
+    "quick_cap": 1,
+    "use_tip_type": "",
+    "custom": {
+      "unit": "mL",
+      "unitOptions": [
+        "μL",
+        "mL",
+        "L"
+      ],
+      "step": {
+        "add_volume": 0.1
+      }
+    },
+    "dst": {
+      "resource_type": "TTS2TCP_V2",
+      "tray_QR_code": "TTS2TCP_V2_01"
+    }
+  }
+}

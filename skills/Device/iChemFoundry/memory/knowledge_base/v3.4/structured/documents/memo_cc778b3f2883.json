@@ -1,0 +1,146 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_cc778b3f2883",
+  "paper_id": "7b72d2604f90",
+  "title": "Zn Metal–Organic Framework with High Stability and",
+  "year": 2022,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "GUPT-1 shows IAST_selectivity_CO2/N2 = 118.0 dimensionless for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "Qst_CO2 (CO2) = 37.01 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "IAST_selectivity_CO2/N2 (CO2) = 118.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "-NH2 groups and C···O interactions → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "Lewis basic -NH2 groups inside channels → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] incorporate -NH2 functional groups into microporous MOFs → improves CO2 adsorption selectivity derived from the atmosphere"
+    },
+    {
+      "title": "Comparison",
+      "body": "DFT-D static binding energy of CO2 on activated GUPT-1 vs experimental adsorption enthalpy (Qst) of CO2 on activated GUPT-1: winner=tie on CO2_binding_energy"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_ddb09a240356",
+    "trace_bdc7bbf62c5b",
+    "trace_5c1d352e7f45",
+    "trace_2de3f7154f4e",
+    "trace_3704fe2a453d",
+    "trace_e0b7e12278e7",
+    "trace_c9975ce429e3",
+    "trace_e8f69e886420",
+    "trace_217bb1046243",
+    "trace_f1ab837f92cf",
+    "trace_1533aee5330f",
+    "trace_f1cef2d72ec8",
+    "trace_65530018c22e",
+    "trace_e80a6e25ca32",
+    "trace_651786dbaa46",
+    "trace_3ca67dfcd1c1",
+    "trace_987c5716ec66",
+    "trace_82e5d4f2cacf",
+    "trace_a0325e2633f1",
+    "trace_47937c7f78ad",
+    "trace_b9ccae7122cd",
+    "trace_fd6cc0a442f6",
+    "trace_ec431ce1435c",
+    "trace_e8f69e886420",
+    "trace_3ca67dfcd1c1",
+    "trace_fd6cc0a442f6",
+    "trace_a0325e2633f1",
+    "trace_f1ab837f92cf",
+    "trace_217bb1046243",
+    "trace_e0b7e12278e7",
+    "trace_f1cef2d72ec8",
+    "trace_ddb09a240356",
+    "trace_65530018c22e",
+    "trace_987c5716ec66",
+    "trace_82e5d4f2cacf",
+    "trace_bdc7bbf62c5b",
+    "trace_ec431ce1435c",
+    "trace_1533aee5330f",
+    "trace_3704fe2a453d",
+    "trace_c9975ce429e3",
+    "trace_5c1d352e7f45",
+    "trace_2de3f7154f4e",
+    "trace_b9ccae7122cd",
+    "trace_47937c7f78ad",
+    "trace_651786dbaa46",
+    "trace_e80a6e25ca32"
+  ],
+  "measurement_card_ids": [
+    "mcard_a887211c7d94",
+    "mcard_4281e96d8167"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_22d672216d96",
+    "mechcard_2f793652b050",
+    "mechcard_9e5a099e9a09"
+  ],
+  "recipe_card_ids": [
+    "recipe_2d28dc37563b"
+  ],
+  "claim_card_ids": [
+    "claim_0cdc8d871dc1",
+    "claim_59a83d63be1f",
+    "claim_47501982c4aa",
+    "claim_10c7ccf69204",
+    "claim_e86600bfae59",
+    "claim_20e8722760ac"
+  ],
+  "design_rule_card_ids": [
+    "drule_cac23d7f5847"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_bb563d152192"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_a67a6caada41"
+  ],
+  "dossier_ids": [
+    "dossier_c66e921a8a7d"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "CO2 binding in GUPT-1 occurs at two sites: electrostatic interactions with channel −NH2 groups and C···O contacts to pyromellitic acid O atoms.",
+    "DFT-D gives a CO2 static binding energy of 38.49 kJ mol−1, close to the experimental Qst of 37.01 kJ mol−1.",
+    "The C···O interaction distances for adsorbed CO2 in GUPT-1 are 2.877–2.880 Å, supporting specific host–guest contacts."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.447675",
+  "updated_at": "2026-04-24T00:19:49.447679",
+  "raw_path": "相关文献/Zhang 等 - 2022 - Zn Metal–Organic Framework with High Stability and.pdf",
+  "authors": [
+    "Zhang"
+  ]
+}

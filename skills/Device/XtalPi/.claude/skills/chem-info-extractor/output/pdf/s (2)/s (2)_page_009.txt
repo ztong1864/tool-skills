@@ -1,0 +1,22 @@
+S9
+ (m, 2 H, ArH ), 7.30 (d, J = 7.8 Hz, 2 H, ArH ), 5.21-5.12 (m, 1 H, one proton of
+CH=C=CH), 5.11-5.01 (m, 1 H, one  proton of CH=C=CH), 4.85 (t, J = 5.9 Hz, 1 H,
+NH), 3.60-3.50 (m, 2 H, NCH 2), 2.42 (s, 3 H, CH 3), 1.98-1.82 (m, 1 H, CH from Cy),
+1.73-1.53 (m, 5 H, five protons from Cy), 1.32 -0.89 (m, 5 H, five protons from Cy);
+13C NMR (75 MHz, CDCl 3) δ 202.3, 143.3, 137.0, 129.6, 127.0, 100.4, 88.4, 42.0,
+36.7, 32.8, 32.7, 25.9, 25.8, 21.4; IR (neat) ν (cm-1) 3284, 2924, 2850, 1962, 1598,
+1495, 1418, 1329, 1161, 1094; MS (EI) m/z (%): 305 (M+, 1.14), 91 (100).
+
+The following compounds  (Ra)-4bb~(Ra)-4fa were prepared at 130 oC according to
+the Typical Procedure I  or at 70 oC according to the Typical Procedure II  (see page
+S11) and their corresponding racemic enantiomers were prepared by following the
+same procedure using racemic diphenylprolinol rac-3.
+
+2. Preparation of ( Ra)-N-(6-methylhepta-2,3-dienyl)benzamide ( Ra)-4bb.
+(hx-11-51)
+
+The reaction of CuBr 2 (44.9 mg, 0.2 mmol), 1b (238.4 mg, 1.5 mmol), ( S)-3 (254.3
+mg, 1.0 mmol), and 2b (129.9 mg, 1.5 mmol) in dioxa ne (3.0 mL) afforded ( Ra)-4bb
+(136.8 mg, 59%) (eluent: petroleum ether/ethyl  acetate = 5/1) as a liquid: 93% ee
+(HPLC conditions: Chiralcel AY-H column, hexane/ i-PrOH = 90/10, 1.0 mL/min, λ =
+214 nm, tR(major) = 9.8 min, tR(minor) = 11.2 min); [ α]D20 = -92.5 ( c = 0.78, CHCl 3);

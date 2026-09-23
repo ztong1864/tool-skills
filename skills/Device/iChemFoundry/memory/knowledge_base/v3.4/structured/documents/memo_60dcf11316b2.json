@@ -1,0 +1,239 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_60dcf11316b2",
+  "paper_id": "70cdcc23a105",
+  "title": "One-step ethylene purification from ternary mixtur",
+  "year": 2022,
+  "doi": null,
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "Milli-Zn-ATA shows thermal_decomposition_temperature = 320.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "IAST_selectivity_C2H6/C2H4 (C2H6) = 2.0 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Qst_C2H4 (C2H4) = 27.7 K at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Qst_C2H2 (C2H2) = 28.3 K at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "ultramicroporous_honeycomb_like_framework → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "nitrogen_abundant_ATA_linker → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] engineer pore shape and pore size to create synergistic molecular shape/size matching sites → enables simultaneous recognition and capture of C2H6 and C2H2, supporting one-step ternary C2 separation"
+    },
+    {
+      "title": "Comparison",
+      "body": "Zn-ATA vs ZJNU-7: winner=subject_a on IAST_selectivity_for_10:90_C2H6/C2H4_and_1:99_C2H2/C2H4_at_1_bar"
+    },
+    {
+      "title": "Comparison",
+      "body": "Zn-ATA vs UPC-612: winner=subject_a on C2H6_capacity_mmol_per_g"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_813500d07768",
+    "trace_268b4b665b3c",
+    "trace_c3833f301dfe",
+    "trace_fa9960a2cb5d",
+    "trace_aa7b7b7ebdbf",
+    "trace_c9137969ef99",
+    "trace_0e3268c5f6dd",
+    "trace_aa548fb90d6f",
+    "trace_91198de5541a",
+    "trace_f764a1a711e1",
+    "trace_58b67666d62b",
+    "trace_9f85fa18b8c5",
+    "trace_74dcaa48f863",
+    "trace_a30f5e4526e3",
+    "trace_c7a98fb0f45e",
+    "trace_30cac735516b",
+    "trace_e1adfad7ccde",
+    "trace_4926b030aaf4",
+    "trace_41f8280bdaa4",
+    "trace_5aa6b7990c2b",
+    "trace_b61a0c8d5206",
+    "trace_c6e63bdf4e1d",
+    "trace_d80433783eca",
+    "trace_506c69283dec",
+    "trace_d7046db019c5",
+    "trace_a7a4984bffee",
+    "trace_1ef44695fa58",
+    "trace_863a28458782",
+    "trace_02fe559aaede",
+    "trace_469a004657a1",
+    "trace_30e9e01388ff",
+    "trace_e5415fe94bd0",
+    "trace_ddcdef36035b",
+    "trace_c2a39d690dec",
+    "trace_f0834fcf9460",
+    "trace_0e2ffeb19b62",
+    "trace_9634652c6221",
+    "trace_a1d8461c1cf1",
+    "trace_64d12504768f",
+    "trace_b55e260defd3",
+    "trace_875f174de016",
+    "trace_11cc2565283b",
+    "trace_05cf3c308e75",
+    "trace_aedccd8e907f",
+    "trace_112bc3242955",
+    "trace_8942b1af3140",
+    "trace_113cd32d921e",
+    "trace_8fddf0151249",
+    "trace_5450aeee79a7",
+    "trace_f7370c65a1d6",
+    "trace_481e4c1b0bac",
+    "trace_a8d831e91b15",
+    "trace_49371ba06a30",
+    "trace_00a3705e7c62",
+    "trace_76d734095b9f",
+    "trace_96a22a0f0ffa",
+    "trace_d83e905a5d70",
+    "trace_8ebac5e13857",
+    "trace_8c2b6677f66b",
+    "trace_112bc3242955",
+    "trace_a30f5e4526e3",
+    "trace_481e4c1b0bac",
+    "trace_c9137969ef99",
+    "trace_e5415fe94bd0",
+    "trace_f7370c65a1d6",
+    "trace_f0834fcf9460",
+    "trace_74dcaa48f863",
+    "trace_30cac735516b",
+    "trace_05cf3c308e75",
+    "trace_113cd32d921e",
+    "trace_506c69283dec",
+    "trace_5aa6b7990c2b",
+    "trace_a7a4984bffee",
+    "trace_91198de5541a",
+    "trace_875f174de016",
+    "trace_aa7b7b7ebdbf",
+    "trace_d83e905a5d70",
+    "trace_863a28458782",
+    "trace_f764a1a711e1",
+    "trace_c6e63bdf4e1d",
+    "trace_8942b1af3140",
+    "trace_c2a39d690dec",
+    "trace_aedccd8e907f",
+    "trace_8c2b6677f66b",
+    "trace_4926b030aaf4",
+    "trace_00a3705e7c62",
+    "trace_e1adfad7ccde",
+    "trace_96a22a0f0ffa",
+    "trace_8fddf0151249",
+    "trace_02fe559aaede",
+    "trace_0e2ffeb19b62",
+    "trace_0e3268c5f6dd",
+    "trace_aa548fb90d6f",
+    "trace_8ebac5e13857",
+    "trace_76d734095b9f",
+    "trace_c7a98fb0f45e",
+    "trace_9634652c6221",
+    "trace_268b4b665b3c",
+    "trace_9f85fa18b8c5",
+    "trace_469a004657a1",
+    "trace_11cc2565283b",
+    "trace_a8d831e91b15",
+    "trace_64d12504768f",
+    "trace_c3833f301dfe",
+    "trace_d7046db019c5",
+    "trace_b61a0c8d5206",
+    "trace_58b67666d62b",
+    "trace_ddcdef36035b",
+    "trace_d80433783eca",
+    "trace_b55e260defd3",
+    "trace_5450aeee79a7",
+    "trace_813500d07768",
+    "trace_1ef44695fa58",
+    "trace_a1d8461c1cf1",
+    "trace_fa9960a2cb5d",
+    "trace_41f8280bdaa4",
+    "trace_30e9e01388ff",
+    "trace_49371ba06a30"
+  ],
+  "measurement_card_ids": [
+    "mcard_4524b14fb9f1",
+    "mcard_5b4e0ca8cbd3",
+    "mcard_b6538a7333a0",
+    "mcard_83733c0b6330",
+    "mcard_9c2fe949536b",
+    "mcard_455248ae3f54",
+    "mcard_57909530bedd",
+    "mcard_06f74fa07014",
+    "mcard_e6925b6243fd"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_5700d03a8bfe",
+    "mechcard_6cd446dcbe7b",
+    "mechcard_bc394607b9ea"
+  ],
+  "recipe_card_ids": [
+    "recipe_8cb4c4ca0b54"
+  ],
+  "claim_card_ids": [
+    "claim_6decee26bb7e",
+    "claim_1468cb30d77b",
+    "claim_38115f6155ae",
+    "claim_6e6b43106304",
+    "claim_f39ae652030e",
+    "claim_b01691cbfb6c",
+    "claim_8c2a863a30ea",
+    "claim_3b01dc6d7016"
+  ],
+  "design_rule_card_ids": [
+    "drule_6defe6404062"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_0da7efd1e0d7",
+    "comp_ff897fa2d725",
+    "comp_7570cfe932bc"
+  ],
+  "failure_case_card_ids": [
+    "fail_d137c7978414",
+    "fail_b35bafae3542"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_940dd8f78c3c"
+  ],
+  "dossier_ids": [
+    "dossier_fada311ee414"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Zn-ATA combines IAST selectivities of about 2 for both C2H6/C2H4 and C2H2/C2H4, outperforming state-of-the-art materials.",
+    "A prior synergistic packed-bed sorbent approach produced only 0.32 mmol g−1 C2H4 per cycle, indicating modest productivity.",
+    "Kinetic and molecular-sieving materials are inadequate for ternary C2 separation because they preferentially adsorb C2H4 over C2H6."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.749889",
+  "updated_at": "2026-04-24T00:19:47.749895",
+  "raw_path": "相关文献/Ding 等 - 2022 - One-step ethylene purification from ternary mixtur.pdf",
+  "authors": [
+    "Ding"
+  ]
+}

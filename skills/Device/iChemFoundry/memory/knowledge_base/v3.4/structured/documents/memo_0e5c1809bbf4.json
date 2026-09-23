@@ -1,0 +1,195 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_0e5c1809bbf4",
+  "paper_id": "819514b3add8",
+  "title": "Selective gas adsorption and fluorescence sensing",
+  "year": 2017,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "CH4",
+    "C2H4",
+    "C2H6"
+  ],
+  "one_line_summary": "[H2N(CH3)2]-Zn(NDC)(atz)-H2O shows thermal_stability_limit = 573.15 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 20.87 cm3/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CH4_uptake (CH4) = 1.55 cm3/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 25.98 cm3/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "N-rich auxiliary ligand Hatz → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "amine_groups → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce amino groups into MOF systems using an N-rich auxiliary ligand such as 1H-tetrazol-5-amine → CO2 adsorption capacity is reported to be significantly promoted"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a mixed-ligand strategy with multiple organic ligands → structure and functions of the material can be greatly enriched"
+    },
+    {
+      "title": "Comparison",
+      "body": "MOF 1 vs MIL-125(Ti): winner=subject_a on CO2/CH4_selectivity_at_298K"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_221456d43927",
+    "trace_68a341a3d6b9",
+    "trace_dbb4493ac1db",
+    "trace_b65aa8bd0c00",
+    "trace_3009a23f0179",
+    "trace_607d5f367d73",
+    "trace_aa9bac595dba",
+    "trace_e8e0e159c8b3",
+    "trace_057e4785752d",
+    "trace_a04d6ceb28c0",
+    "trace_1d5619f3efc9",
+    "trace_70107ef398e1",
+    "trace_27aacfbe83fd",
+    "trace_883d2c7eadb1",
+    "trace_b938dd6efeac",
+    "trace_7816cf08709d",
+    "trace_61e0560aae56",
+    "trace_7fbba92d70e2",
+    "trace_83fed3a18f69",
+    "trace_80b0fcd999b7",
+    "trace_6d1e83f4d7fd",
+    "trace_e7ca3c2f775b",
+    "trace_6d41cb8193a7",
+    "trace_1f5ccc81eddd",
+    "trace_9bea4f4b0bfa",
+    "trace_5c16b658b11a",
+    "trace_5a8ea8f95149",
+    "trace_9a8a8e6dbcc6",
+    "trace_e508d2140e67",
+    "trace_abab9bec18a4",
+    "trace_0c55c66afcba",
+    "trace_0ec44b517482",
+    "trace_75145124cfd9",
+    "trace_2c9fdb3b8d59",
+    "trace_4c0abc524b44",
+    "trace_2fe5a3acd596",
+    "trace_bdc855f5f558",
+    "trace_d87f8e07e33b",
+    "trace_150a2d4894df",
+    "trace_0c779da19364",
+    "trace_6d41cb8193a7",
+    "trace_e7ca3c2f775b",
+    "trace_9a8a8e6dbcc6",
+    "trace_150a2d4894df",
+    "trace_9bea4f4b0bfa",
+    "trace_607d5f367d73",
+    "trace_27aacfbe83fd",
+    "trace_a04d6ceb28c0",
+    "trace_1d5619f3efc9",
+    "trace_3009a23f0179",
+    "trace_4c0abc524b44",
+    "trace_e8e0e159c8b3",
+    "trace_6d1e83f4d7fd",
+    "trace_7816cf08709d",
+    "trace_1f5ccc81eddd",
+    "trace_5a8ea8f95149",
+    "trace_0ec44b517482",
+    "trace_e508d2140e67",
+    "trace_75145124cfd9",
+    "trace_2c9fdb3b8d59",
+    "trace_70107ef398e1",
+    "trace_0c779da19364",
+    "trace_221456d43927",
+    "trace_2fe5a3acd596",
+    "trace_83fed3a18f69",
+    "trace_057e4785752d",
+    "trace_d87f8e07e33b",
+    "trace_b938dd6efeac",
+    "trace_abab9bec18a4",
+    "trace_bdc855f5f558",
+    "trace_b65aa8bd0c00",
+    "trace_aa9bac595dba",
+    "trace_883d2c7eadb1",
+    "trace_68a341a3d6b9",
+    "trace_80b0fcd999b7",
+    "trace_5c16b658b11a",
+    "trace_dbb4493ac1db",
+    "trace_7fbba92d70e2",
+    "trace_61e0560aae56",
+    "trace_0c55c66afcba"
+  ],
+  "measurement_card_ids": [
+    "mcard_c4f7f1b774cd",
+    "mcard_256496477d9b",
+    "mcard_c6973fb5e2fa",
+    "mcard_dcfdcf0a76b6",
+    "mcard_338b3498f590",
+    "mcard_01b93388b60d",
+    "mcard_4b800fdcb930",
+    "mcard_8d7d5346cd43",
+    "mcard_37165e5c2cc9"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_7529a0374d69",
+    "mechcard_0df717151b1b"
+  ],
+  "recipe_card_ids": [
+    "recipe_a85a03987591",
+    "recipe_62f2ed19f66f"
+  ],
+  "claim_card_ids": [
+    "claim_dc706352de26",
+    "claim_e898d6a31e47",
+    "claim_4bbbac37191d",
+    "claim_3ff4d1ace6c6",
+    "claim_75b0916208b5",
+    "claim_974b9ae1cb5b",
+    "claim_11e8b15b8cea",
+    "claim_caaa764b998d"
+  ],
+  "design_rule_card_ids": [
+    "drule_dc0ae9fff0d1",
+    "drule_4a64c07e2a44"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_4d8c574660f3"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_e67fb04601ea",
+    "mat_c3758f66e17f"
+  ],
+  "dossier_ids": [
+    "dossier_1800e5a9b99d",
+    "dossier_eac77ff0d297"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "A mixed-ligand route produced bi-functional Zn-MOF 1, [H2N(CH3)2]·Zn(NDC)(atz)·H2O, with a 3D two-fold interpenetrated framework.",
+    "The framework is robust, remaining stable up to 300 °C and after 12 h immersion in solvents including DMF, methanol, and nitrobenzene.",
+    "Selective CO2 adsorption is attributed to amine functionality from the N-rich ligand, consistent with amino groups promoting CO2 uptake in MOFs."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.302617",
+  "updated_at": "2026-04-24T00:19:48.302619",
+  "raw_path": "相关文献/Liu 等 - 2017 - Selective gas adsorption and fluorescence sensing .pdf",
+  "authors": [
+    "Liu"
+  ]
+}

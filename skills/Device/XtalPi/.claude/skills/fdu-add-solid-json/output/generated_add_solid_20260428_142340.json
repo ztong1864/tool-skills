@@ -1,0 +1,28 @@
+{
+  "layout_code": "T-3:9",
+  "substance": "",
+  "resource_type": "TTR2T",
+  "tray_QR_code": "TTR2T_01",
+  "QR_code": "",
+  "unit_column": 0,
+  "unit_row": 0,
+  "unit_type": "exp_add_solid",
+  "unit_id": "unit-027d87c0a54e",
+  "process_json": {
+    "src_layout_code": "T-3:9",
+    "resource_type": "",
+    "substance": "5A MS",
+    "add_weight": 20.0,
+    "offset": 2.1,
+    "custom": {
+      "unit": "mg",
+      "unitOptions": [
+        "mg",
+        "g"
+      ],
+      "step": {
+        "offset": 0.525
+      }
+    }
+  }
+}

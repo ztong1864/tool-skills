@@ -1,0 +1,57 @@
+{
+  "steps": {
+    "remove_seal_primer1": {"type": "action", "device": "XPeel", "action": "Remove Seal", "containers": ["Primer1 in 'XPeel:Nest' GetMyOwnContainer"]},
+    "remove_seal_pcr_plate1": {"type": "action", "device": "XPeel", "action": "Remove Seal", "containers": ["PCR_Plate1 in 'XPeel:Nest' GetMyOwnContainer"]},
+    "remove_seal_pcr_plate2": {"type": "action", "device": "XPeel", "action": "Remove Seal", "containers": ["PCR_Plate2 in 'XPeel:Nest' GetMyOwnContainer"]},
+    "remove_seal_cell_plate1": {"type": "action", "device": "XPeel", "action": "Remove Seal", "containers": ["Cell_Plate1 in 'XPeel:Nest' GetMyOwnContainer"]},
+
+    "evo_load_primer1": {"type": "action", "device": "FreedomEVO", "action": "Load", "containers": ["Primer1 in 'FreedomEVO:Nest 1' GetMyOwnContainer"]},
+    "evo_load_pcr_plate1": {"type": "action", "device": "FreedomEVO", "action": "Load", "containers": ["PCR_Plate1 in 'FreedomEVO:Nest 1' GetMyOwnContainer"]},
+    "evo_load_pcr_plate2": {"type": "action", "device": "FreedomEVO", "action": "Load", "containers": ["PCR_Plate2 in 'FreedomEVO:Nest 1' GetMyOwnContainer"]},
+    "evo_run_inheco": {"type": "action", "device": "FreedomEVO", "action": "RunScript", "params": {"ScriptName": "LYY_chenwanyi_inheco.esc", "MaximumOperationTime": "00:20:00"}, "containers": []},
+    "evo_run_pcr_mix": {"type": "action", "device": "FreedomEVO", "action": "RunScript", "params": {"ScriptName": "AI_Pre_Plasmid_PCR_1_Plate.esc", "MaximumOperationTime": "00:50:00"}, "containers": ["Primer1 in 'FreedomEVO:Nest 1' GetMyOwnContainer", "PCR_Plate1 in 'FreedomEVO:Nest 2' GetMyOwnContainer", "Tips_Liha50_1 in 'FreedomEVO:Nest 3' GetMyOwnContainer", "Tips_MCA50_1 in 'FreedomEVO:Nest 5' ends 'FreedomEVO:Waste' GetMyOwnContainer"]},
+    "evo_run_dpni": {"type": "action", "device": "FreedomEVO", "action": "RunScript", "params": {"ScriptName": "AI_addDpnI.esc", "MaximumOperationTime": "00:50:00"}, "containers": ["PCR_Plate1 in 'FreedomEVO:Nest 1' GetMyOwnContainer", "Tips_Liha10_1 in 'FreedomEVO:Nest 3' GetMyOwnContainer"]},
+    "evo_run_pre_transforming": {"type": "action", "device": "FreedomEVO", "action": "RunScript", "params": {"ScriptName": "AI_Pre_Transforming.esc", "MaximumOperationTime": "00:50:00"}, "containers": ["PCR_Plate1 in 'FreedomEVO:Nest 1' GetMyOwnContainer", "PCR_Plate2 in 'FreedomEVO:Nest 2' GetMyOwnContainer", "Tips_Liha50_2 in 'FreedomEVO:Nest 3' GetMyOwnContainer", "Tips_Liha50_3 in 'FreedomEVO:Nest 4' GetMyOwnContainer"]},
+    "evo_run_add_lb": {"type": "action", "device": "FreedomEVO", "action": "RunScript", "params": {"ScriptName": "AI_AddLB.esc", "MaximumOperationTime": "00:50:00"}, "containers": ["PCR_Plate2 in 'FreedomEVO:Nest 1' GetMyOwnContainer", "Cell_Plate1 in 'FreedomEVO:Nest 2' GetMyOwnContainer", "Tips_Liha50_4 in 'FreedomEVO:Nest 3' GetMyOwnContainer"]},
+
+    "seal_primer1_alps": {"type": "action", "device": "ALPS3000", "action": "Seal", "containers": ["Primer1 in 'ALPS3000:Nest' GetMyOwnContainer"]},
+    "seal_pcr_plate1_alps": {"type": "action", "device": "ALPS3000", "action": "Seal", "containers": ["PCR_Plate1 in 'ALPS3000:Nest' GetMyOwnContainer"]},
+    "seal_pcr_plate2_alps": {"type": "action", "device": "ALPS3000", "action": "Seal", "containers": ["PCR_Plate2 in 'ALPS3000:Nest' GetMyOwnContainer"]},
+    "seal_cell_plate1_kbs": {"type": "action", "device": "KBSWasp_sealer", "action": "Seal", "containers": ["Cell_Plate1 in 'KBSWasp_sealer:Nest' GetMyOwnContainer"]},
+
+    "cytomat_2c450_load_primer1": {"type": "action", "device": "Cytomat_2C450", "action": "Load", "containers": ["Primer1 GetMyOwnContainer"]},
+    "cytomat_2c450_load_pcr_plate1": {"type": "action", "device": "Cytomat_2C450", "action": "Load", "containers": ["PCR_Plate1 GetMyOwnContainer"]},
+    "cytomat_2c450_load_pcr_plate2": {"type": "action", "device": "Cytomat_2C450", "action": "Load", "containers": ["PCR_Plate2 GetMyOwnContainer"]},
+    "cytomat_24h_load_tips_liha50_1": {"type": "action", "device": "Cytomat_24H", "action": "Load", "containers": ["Tips_Liha50_1 GetMyOwnContainer"]},
+    "cytomat_24h_load_tips_liha10_1": {"type": "action", "device": "Cytomat_24H", "action": "Load", "containers": ["Tips_Liha10_1 GetMyOwnContainer"]},
+    "cytomat_24h_load_tips_liha50_2_3": {"type": "action", "device": "Cytomat_24H", "action": "Load", "containers": ["Tips_Liha50_2 GetMyOwnContainer", "Tips_Liha50_3 GetMyOwnContainer"]},
+    "cytomat_24h_load_tips_liha50_4": {"type": "action", "device": "Cytomat_24H", "action": "Load", "containers": ["Tips_Liha50_4 GetMyOwnContainer"]},
+    "cytomat_24h_load_tips_liha200_1": {"type": "action", "device": "Cytomat_24H", "action": "Load", "containers": ["Tips_Liha200_1 GetMyOwnContainer"]},
+    "cytomat_24h_load_balance_pcr": {"type": "action", "device": "Cytomat_24H", "action": "Load", "containers": ["Balance_PCR GetMyOwnContainer"]},
+    "cytomat_10h_load_cell_plate1": {"type": "action", "device": "Cytomat_10H", "action": "Load", "containers": ["Cell_Plate1 GetMyOwnContainer"]},
+    "cytomat_10c_load_8well_plates": {"type": "action", "device": "CYTOMAT_10C", "action": "Load", "containers": ["8Well_Plate_1 'Lidded' GetMyOwnContainer", "8Well_Plate_2 'Lidded' GetMyOwnContainer", "8Well_Plate_3 'Lidded' GetMyOwnContainer", "8Well_Plate_4 'Lidded' GetMyOwnContainer"]},
+
+    "centrifugeloader_load_pcr_plate1_bucket1": {"type": "action", "device": "CentrifugeLoader", "action": "Load", "containers": ["PCR_Plate1 in 'CentrifugeLoader:Bucket 1' GetMyOwnContainer"]},
+    "centrifugeloader_load_balance_pcr_bucket2": {"type": "action", "device": "CentrifugeLoader", "action": "Load", "containers": ["Balance_PCR in 'CentrifugeLoader:Bucket 2' GetMyOwnContainer"]},
+    "centrifugeloader_spin_pcr": {"type": "action", "device": "CentrifugeLoader", "action": "Spin", "params": {"VelocityPercent": "50", "AccelerationPercent": "50", "DecelerationPercent": "50", "SpinDuration": "00:01:00", "Duration": "00:01:01"}, "containers": ["PCR_Plate1 in 'CentrifugeLoader:Bucket 1' GetMyOwnContainer", "Balance_PCR in 'CentrifugeLoader:Bucket 2' GetMyOwnContainer"]},
+
+    "atc1_load_pcr_plate1": {"type": "action", "device": "ATC_1", "reference_device": "ATC-family", "action": "Load", "variant": "ATC_1", "containers": ["PCR_Plate1 in 'ATC_1:Nest' GetMyOwnContainer"]},
+    "atc1_run_pcr": {"type": "action", "device": "ATC_1", "reference_device": "ATC-family", "action": "Run Protocol", "variant": "ATC_1", "params": {"ProtocolName": "AI_PCR.xml", "CustomCoverTemperature": "105", "MaximumOperationDuration": "01:30:00"}, "containers": ["PCR_Plate1 in 'ATC_1:Nest' GetMyOwnContainer"]},
+    "atc2_load_pcr_plate1": {"type": "action", "device": "ATC_2", "reference_device": "ATC-family", "action": "Load", "variant": "ATC_2", "containers": ["PCR_Plate1 in 'ATC_2:Nest' GetMyOwnContainer"]},
+    "atc2_run_dpni": {"type": "action", "device": "ATC_2", "reference_device": "ATC-family", "action": "Run Protocol", "variant": "ATC_2", "params": {"ProtocolName": "AI_DpnI.xml", "CustomCoverTemperature": "45", "MaximumOperationDuration": "01:30:00"}, "containers": ["PCR_Plate1 in 'ATC_2:Nest' GetMyOwnContainer"]},
+    "atc2_load_pcr_plate2": {"type": "action", "device": "ATC_2", "reference_device": "ATC-family", "action": "Load", "variant": "ATC_2", "containers": ["PCR_Plate2 in 'ATC_2:Nest' GetMyOwnContainer"]},
+    "atc2_run_transformation": {"type": "action", "device": "ATC_2", "reference_device": "ATC-family", "action": "Run Protocol", "variant": "ATC_2", "params": {"ProtocolName": "AI_DH5a_transformation.xml", "CustomCoverTemperature": "30", "MaximumOperationDuration": "01:30:00"}, "containers": ["PCR_Plate2 in 'ATC_2:Nest' GetMyOwnContainer"]},
+
+    "tos1_load_cell_plate1": {"type": "action", "device": "CYTOMAT_2_Tos1", "reference_device": "CYTOMAT_2_Tos-family", "action": "Load", "variant": "CYTOMAT_2_Tos1", "containers": ["Cell_Plate1 GetMyOwnContainer"]},
+    "tos1_set_shake_900": {"type": "action", "device": "CYTOMAT_2_Tos1", "reference_device": "CYTOMAT_2_Tos-family", "action": "Set Shake Speeds", "variant": "CYTOMAT_2_Tos1", "params": {"Tower1Speed": "900", "Tower2Speed": "900"}},
+    "tos1_incubate_cell_plate1_1h": {"type": "action", "device": "CYTOMAT_2_Tos1", "reference_device": "CYTOMAT_2_Tos-family", "action": "Incubate", "variant": "CYTOMAT_2_Tos1", "params": {"Duration": "01:00:00"}, "containers": ["Cell_Plate1 GetMyOwnContainer"]},
+
+    "rotanta_load_cell_plate1": {"type": "action", "device": "Rotanta460", "action": "Load", "containers": ["Cell_Plate1 in 'Rotanta460:Rotor Nest 1' GetMyOwnContainer", "Balance_DWP1 in 'Rotanta460:Rotor Nest 2' GetMyOwnContainer", "Balance_DWP2 in 'Rotanta460:Rotor Nest 3' GetMyOwnContainer", "Balance_DWP3 in 'Rotanta460:Rotor Nest 4' GetMyOwnContainer"]},
+    "rotanta_run_cell_plate1": {"type": "action", "device": "Rotanta460", "action": "Run", "params": {"SpinDuration": "00:05:00", "RPM": "4000", "RCF": "3756", "Temperature": "20", "Duration": "00:10:00"}, "containers": ["Cell_Plate1 in 'Rotanta460:Rotor Nest 1' GetMyOwnContainer", "Balance_DWP1 in 'Rotanta460:Rotor Nest 2' GetMyOwnContainer", "Balance_DWP2 in 'Rotanta460:Rotor Nest 3' GetMyOwnContainer", "Balance_DWP3 in 'Rotanta460:Rotor Nest 4' GetMyOwnContainer"]},
+    "staging_load_balance_dwps": {"type": "action", "device": "Staging_Nests", "action": "Load", "containers": ["Balance_DWP1 GetMyOwnContainer", "Balance_DWP2 GetMyOwnContainer", "Balance_DWP3 GetMyOwnContainer"]},
+
+    "fluent_load_cell_plate1": {"type": "action", "device": "Fluent", "action": "Load", "containers": ["Cell_Plate1 in 'Fluent:Nest 1' GetMyOwnContainer"]},
+    "fluent_load_spreading_deck": {"type": "action", "device": "Fluent", "action": "Load", "containers": ["Cell_Plate1 in 'Fluent:Nest 1' GetMyOwnContainer", "Tips_Liha200_1 in 'Fluent:Nest 3' GetMyOwnContainer", "8Well_Plate_1 'Lidded' in 'Fluent:Nest 5' GetMyOwnContainer", "8Well_Plate_2 'Lidded' in 'Fluent:Nest 6' GetMyOwnContainer", "8Well_Plate_3 'Lidded' in 'Fluent:Nest 7' GetMyOwnContainer", "8Well_Plate_4 'Lidded' in 'Fluent:Nest 8' GetMyOwnContainer"]},
+    "fluent_run_spreading": {"type": "action", "device": "Fluent", "action": "RunMethod", "params": {"MethodName": "ZFL_ZZW_Tubu_afterTranform_8well_plate", "MaximumOperationTime": "00:30:00"}, "containers": []}
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_a0e14d1ad38c",
+  "paper_id": "c200d37114d8",
+  "raw_path": "相关文献/loading-driven-diffusion-pathway-selectivity-in-zeolites-with-continuum-intersecting-channels.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "SSZ-13",
+    "ZSM-5-Based",
+    "SCM-15",
+    "ZSM-5",
+    "ZSM-12",
+    "ZSM-11",
+    "SAPO-34"
+  ],
+  "mentioned_metals": [
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "The diffusion processes in zeolites are important for heterogeneous catalysis. Herein,\nwe show that unique zeolites with “continuum intersecting channels” (e.g., BEC, POS, and SOV), in",
+    "conclusion": "can be drawn inside\nPOS and SOV, which switches from one channel to the other\n(Figure 2b,c,e,f). The diffusion trajectory can also show the",
+    "results_summary": "Loading-Driven Diffusion Pathway Selectivity in Zeolites with\nContinuum Intersecting Channels\nWei Rao, Xiaomin Tang, Kaifeng Lin, Xianzhu Xu, Hongqiang Xia, Yanqiu Jiang,* Zhiqiang Liu,*\nand Anmin Zhe"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:22:35.848267"
+}

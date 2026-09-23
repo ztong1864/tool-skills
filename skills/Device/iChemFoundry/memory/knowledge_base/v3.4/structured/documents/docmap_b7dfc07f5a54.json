@@ -1,0 +1,73 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_b7dfc07f5a54",
+  "paper_id": "b612f8927383",
+  "raw_path": "相关文献/Zhai 等 - 2012 - High CO2 and H2 Uptake in an Anionic Porous Framew.pdf",
+  "title": "High CO2 and H2 Uptake in an Anionic Porous Framew",
+  "authors": [
+    "Zhai"
+  ],
+  "year": 2012,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "PCN-6",
+    "MOF-747",
+    "ZIF-8",
+    "MOF-177",
+    "MOF-1",
+    "CPF-8",
+    "SBU-2",
+    "MOF-74",
+    "SNU-1",
+    "MOF-747a",
+    "CPM-6",
+    "MOF-74-Zn",
+    "SBU-1",
+    "CPF-13"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Ni",
+    "Mg",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "NDC",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "BPDC",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif"
+  ],
+  "key_sections": {
+    "results_summary": "High CO2 and H2 Uptake in an Anionic Porous Framework with\nAmino-Decorated Polyhedral Cages\nQuan-Guo Zhai,†,‡ Qipu Lin,† Tao Wu,† Le Wang,† Shou-Tian Zheng,§ Xianhui Bu,§,*\nand Pingyun Feng†,*\n†Depart"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:37:36.547240"
+}

@@ -1,0 +1,3 @@
+display_name: Reference Script Skill Miner
+short_description: Extract reusable Momentum skill rules from validated reference scripts.
+default_prompt: Analyze this reference Momentum script and propose reusable skill updates.

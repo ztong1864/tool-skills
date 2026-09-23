@@ -1,0 +1,92 @@
+{
+  "task-step:calculate-reagent-amounts--requiresInput--artifact:constraint-json": {
+    "from": "task-step:calculate-reagent-amounts",
+    "id": "task-step:calculate-reagent-amounts--requiresInput--artifact:constraint-json",
+    "relation_type": "requiresInput",
+    "to": "artifact:constraint-json"
+  },
+  "task-step:calculate-reagent-amounts--requiresInput--artifact:recommendation-table": {
+    "from": "task-step:calculate-reagent-amounts",
+    "id": "task-step:calculate-reagent-amounts--requiresInput--artifact:recommendation-table",
+    "relation_type": "requiresInput",
+    "to": "artifact:recommendation-table"
+  },
+  "task-step:convert-plan-to-step-json--requiresInput--artifact:experiment-plan-md": {
+    "from": "task-step:convert-plan-to-step-json",
+    "id": "task-step:convert-plan-to-step-json--requiresInput--artifact:experiment-plan-md",
+    "relation_type": "requiresInput",
+    "to": "artifact:experiment-plan-md"
+  },
+  "task-step:create-device-task--requiresInput--artifact:device-protocol-json": {
+    "from": "task-step:create-device-task",
+    "id": "task-step:create-device-task--requiresInput--artifact:device-protocol-json",
+    "relation_type": "requiresInput",
+    "to": "artifact:device-protocol-json"
+  },
+  "task-step:monitor-device-task--requiresInput--artifact:device-submit-result": {
+    "from": "task-step:monitor-device-task",
+    "id": "task-step:monitor-device-task--requiresInput--artifact:device-submit-result",
+    "relation_type": "requiresInput",
+    "to": "artifact:device-submit-result"
+  },
+  "task-step:generate-numbered-steps--requiresInput--artifact:constraint-json": {
+    "from": "task-step:generate-numbered-steps",
+    "id": "task-step:generate-numbered-steps--requiresInput--artifact:constraint-json",
+    "relation_type": "requiresInput",
+    "to": "artifact:constraint-json"
+  },
+  "task-step:merge-step-json--requiresInput--artifact:experiment-plan-md": {
+    "from": "task-step:merge-step-json",
+    "id": "task-step:merge-step-json--requiresInput--artifact:experiment-plan-md",
+    "relation_type": "requiresInput",
+    "to": "artifact:experiment-plan-md"
+  },
+  "task-step:orchestrate-device-protocol--requiresInput--artifact:verified-step-json": {
+    "from": "task-step:orchestrate-device-protocol",
+    "id": "task-step:orchestrate-device-protocol--requiresInput--artifact:verified-step-json",
+    "relation_type": "requiresInput",
+    "to": "artifact:verified-step-json"
+  },
+  "task-step:parse-experiment-request--requiresInput--artifact:user-experiment-request": {
+    "from": "task-step:parse-experiment-request",
+    "id": "task-step:parse-experiment-request--requiresInput--artifact:user-experiment-request",
+    "relation_type": "requiresInput",
+    "to": "artifact:user-experiment-request"
+  },
+  "task-step:parse-experiment-request--requiresInput--artifact:reaction-space-table": {
+    "from": "task-step:parse-experiment-request",
+    "id": "task-step:parse-experiment-request--requiresInput--artifact:reaction-space-table",
+    "relation_type": "requiresInput",
+    "to": "artifact:reaction-space-table"
+  },
+  "task-step:recommend-experiment-conditions--requiresInput--artifact:constraint-json": {
+    "from": "task-step:recommend-experiment-conditions",
+    "id": "task-step:recommend-experiment-conditions--requiresInput--artifact:constraint-json",
+    "relation_type": "requiresInput",
+    "to": "artifact:constraint-json"
+  },
+  "task-step:recommend-experiment-conditions--requiresInput--artifact:reaction-space-table": {
+    "from": "task-step:recommend-experiment-conditions",
+    "id": "task-step:recommend-experiment-conditions--requiresInput--artifact:reaction-space-table",
+    "relation_type": "requiresInput",
+    "to": "artifact:reaction-space-table"
+  },
+  "task-step:verify-and-fill-resources--requiresInput--artifact:merged-step-json": {
+    "from": "task-step:verify-and-fill-resources",
+    "id": "task-step:verify-and-fill-resources--requiresInput--artifact:merged-step-json",
+    "relation_type": "requiresInput",
+    "to": "artifact:merged-step-json"
+  },
+  "task-step:write-experiment-plan--requiresInput--artifact:amount-table": {
+    "from": "task-step:write-experiment-plan",
+    "id": "task-step:write-experiment-plan--requiresInput--artifact:amount-table",
+    "relation_type": "requiresInput",
+    "to": "artifact:amount-table"
+  },
+  "task-step:write-experiment-plan--requiresInput--artifact:numbered-experiment-steps": {
+    "from": "task-step:write-experiment-plan",
+    "id": "task-step:write-experiment-plan--requiresInput--artifact:numbered-experiment-steps",
+    "relation_type": "requiresInput",
+    "to": "artifact:numbered-experiment-steps"
+  }
+}

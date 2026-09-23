@@ -1,0 +1,43 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_f27db6dfe7cd",
+  "paper_id": "ee80b65b2eff",
+  "raw_path": "相关文献/Wang 等 - 2017 - A Flexible Porous MOF Exhibiting Reversible Breath.pdf",
+  "title": "A Flexible Porous MOF Exhibiting Reversible Breath",
+  "authors": [
+    "Wang"
+  ],
+  "year": 2017,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "z Inorganic Chemistry\nA Flexible Porous MOF Exhibiting Reversible Breathing\nBehavior through Single-Crystal to Single-Crystal\nTransformation\nLin Wang,[a] Wei-Wei He,[b] Zhao-Quan Yao,[a] and Tong-Lian"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:12:15.365054"
+}

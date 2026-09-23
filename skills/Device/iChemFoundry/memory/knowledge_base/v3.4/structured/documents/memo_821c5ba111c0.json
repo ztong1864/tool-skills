@@ -1,0 +1,182 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_821c5ba111c0",
+  "paper_id": "bcfc40db266f",
+  "title": "Adsorption of Iodine Based on a Tetrazolate Framew",
+  "year": 2016,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "one_line_summary": "tetrazolate-framework shows Langmuir_surface_area = 321.7 m2/g for N2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "Langmuir_surface_area (N2) = 321.7 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 27.0 cm3/g at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "BET_surface_area (N2) = 229.7 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "microporous framework → porosity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "microporous cage with octahedral cavity → porosity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a mixed-ligand strategy combining btc and azole ligands to build cage-based MOFs → enables cage-based structures that can enrich or encapsulate guest molecules"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs zeolite 13X: winner=subject_a on iodine_loading_mass_increase_wt_fraction"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] increase temperature until organic ligands decompose: the whole framework collapses upon ligand decomposition"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_dd091d47296f",
+    "trace_e248ea0a1287",
+    "trace_08cc90ea3736",
+    "trace_a1bd3e638557",
+    "trace_730302808280",
+    "trace_aedcf430633e",
+    "trace_b64c8f0c978b",
+    "trace_d9282278da15",
+    "trace_cf3e89b53142",
+    "trace_f18a711c2964",
+    "trace_272f443259d3",
+    "trace_998975529ecc",
+    "trace_ca5baafca17c",
+    "trace_dcea2203d1a5",
+    "trace_b23ad888de3b",
+    "trace_1bd745f90303",
+    "trace_6dbd5a29a999",
+    "trace_b5e71d20a06c",
+    "trace_6a5b1d7538a5",
+    "trace_d2802da8b912",
+    "trace_7f00fb1c785f",
+    "trace_3d9d47ef1e22",
+    "trace_e310bd2fab4c",
+    "trace_095ac780359a",
+    "trace_1dfa97d9399d",
+    "trace_283d8d0e7399",
+    "trace_29535fa30b8e",
+    "trace_109fd705bff3",
+    "trace_ab2ea3f2914b",
+    "trace_07086365f4f4",
+    "trace_4ccc6341f313",
+    "trace_cd4ac746d6cc",
+    "trace_e310bd2fab4c",
+    "trace_1bd745f90303",
+    "trace_ab2ea3f2914b",
+    "trace_f18a711c2964",
+    "trace_07086365f4f4",
+    "trace_29535fa30b8e",
+    "trace_e248ea0a1287",
+    "trace_3d9d47ef1e22",
+    "trace_7f00fb1c785f",
+    "trace_998975529ecc",
+    "trace_aedcf430633e",
+    "trace_cd4ac746d6cc",
+    "trace_272f443259d3",
+    "trace_1dfa97d9399d",
+    "trace_cf3e89b53142",
+    "trace_b23ad888de3b",
+    "trace_6a5b1d7538a5",
+    "trace_095ac780359a",
+    "trace_a1bd3e638557",
+    "trace_109fd705bff3",
+    "trace_ca5baafca17c",
+    "trace_dcea2203d1a5",
+    "trace_283d8d0e7399",
+    "trace_dd091d47296f",
+    "trace_d2802da8b912",
+    "trace_4ccc6341f313",
+    "trace_d9282278da15",
+    "trace_b5e71d20a06c",
+    "trace_08cc90ea3736",
+    "trace_6dbd5a29a999",
+    "trace_730302808280",
+    "trace_b64c8f0c978b"
+  ],
+  "measurement_card_ids": [
+    "mcard_a04b579240d1",
+    "mcard_05e7407d2115",
+    "mcard_427b64b811b7",
+    "mcard_833fca736c42",
+    "mcard_ea8211846413"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_88ae3a362208",
+    "mechcard_5e2b2555f602",
+    "mechcard_e6be5cd24562",
+    "mechcard_3439f9b028f7"
+  ],
+  "recipe_card_ids": [
+    "recipe_2de356105314",
+    "recipe_eddc6edc2683",
+    "recipe_fa51c0f931c3",
+    "recipe_0d289e6a3a6f"
+  ],
+  "claim_card_ids": [
+    "claim_3c16d76a2dce",
+    "claim_d40d1f50e1da",
+    "claim_f9d6e11ab3f4",
+    "claim_a7f77b366aa7",
+    "claim_bf26ba9fcd4d",
+    "claim_1f636e5dc344",
+    "claim_10bf219e7f87"
+  ],
+  "design_rule_card_ids": [
+    "drule_08a47d2321a0"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_b2cfb517fab9"
+  ],
+  "failure_case_card_ids": [
+    "fail_67b12b9d2a0f"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_a67a6caada41",
+    "mat_c214a9603588",
+    "mat_6cd4b6552c81"
+  ],
+  "dossier_ids": [
+    "dossier_dfe64aa520a3",
+    "dossier_c66e921a8a7d",
+    "dossier_18f10bdef1d7"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Activated 1 exhibits modest surface area and CO2 uptake, with BET and Langmuir areas of 229.7 and 321.7 m2 g−1 and CO2 uptake of 27 cm3 g−1 at 0 °C, 1 bar.",
+    "After solvent exchange and activation, the framework retained crystallinity and showed permanent porosity with a reversible type-I N2 isotherm.",
+    "The btc/azole mixed-ligand strategy is presented as an effective way to build cage-based MOFs for enriching or encapsulating guest molecules."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.010941",
+  "updated_at": "2026-04-24T00:19:48.010946",
+  "raw_path": "相关文献/Jiang 等 - 2016 - Adsorption of Iodine Based on a Tetrazolate Framew.pdf",
+  "authors": [
+    "Jiang"
+  ]
+}

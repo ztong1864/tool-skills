@@ -1,0 +1,153 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_e3b977d8d1c8",
+  "paper_id": "5bd6d1cae658",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "N2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "Paper 5bd6d1cae658: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "dual-site adsorption behavior → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "dual-site adsorption behavior → uptake"
+    },
+    {
+      "title": "Author Claim",
+      "body": "Single-gas adsorption on HIAM-210 at 298 K was modeled using a dual-site Langmuir-Freundlich isotherm, indicating two classes of adsorption sites were considered."
+    },
+    {
+      "title": "Author Claim",
+      "body": "HIAM-210 crystallizes in the monoclinic Pm space group with unit cell parameters a = 18.0460 Å, b = 9.8055 Å, c = 24.994 Å, and β = 110.269°."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_9b1a38146ad3",
+    "trace_9471cc02deef",
+    "trace_a9c2474e532f",
+    "trace_cd05b2af1679",
+    "trace_0f435b588279",
+    "trace_714a1163ae61",
+    "trace_28659fa45cc9",
+    "trace_5d7ab33c622c",
+    "trace_d6f3407815e5",
+    "trace_6f29d4916368",
+    "trace_b2a70cfe5a4a",
+    "trace_2fbdb3823933",
+    "trace_c9a2109649f4",
+    "trace_c721a81bbb89",
+    "trace_f7a44591d520",
+    "trace_967a6ccaea6d",
+    "trace_b973c4a86275",
+    "trace_8911d2d78187",
+    "trace_27d444fde4b0",
+    "trace_33b8bb542342",
+    "trace_23406a3cf478",
+    "trace_c93d2d88cecc",
+    "trace_7637df108ab0",
+    "trace_6149eeb3fb0a",
+    "trace_f089b2d2abe2",
+    "trace_2f562a40ea59",
+    "trace_bea90e78b772",
+    "trace_930d8b0564b7",
+    "trace_3272023ecc0f",
+    "trace_dca58290d67c",
+    "trace_a6ae29e18e67",
+    "trace_20a5161fe08b",
+    "trace_f2d11078fbc9",
+    "trace_c1586083c475",
+    "trace_955d88ec102b",
+    "trace_be573eb76a53",
+    "trace_d6f3407815e5",
+    "trace_2f562a40ea59",
+    "trace_714a1163ae61",
+    "trace_28659fa45cc9",
+    "trace_8911d2d78187",
+    "trace_f7a44591d520",
+    "trace_dca58290d67c",
+    "trace_bea90e78b772",
+    "trace_23406a3cf478",
+    "trace_a6ae29e18e67",
+    "trace_6f29d4916368",
+    "trace_6149eeb3fb0a",
+    "trace_20a5161fe08b",
+    "trace_b973c4a86275",
+    "trace_3272023ecc0f",
+    "trace_b2a70cfe5a4a",
+    "trace_930d8b0564b7",
+    "trace_2fbdb3823933",
+    "trace_5d7ab33c622c",
+    "trace_0f435b588279",
+    "trace_cd05b2af1679",
+    "trace_7637df108ab0",
+    "trace_be573eb76a53",
+    "trace_c9a2109649f4",
+    "trace_955d88ec102b",
+    "trace_9b1a38146ad3",
+    "trace_9471cc02deef",
+    "trace_c721a81bbb89",
+    "trace_967a6ccaea6d",
+    "trace_f2d11078fbc9",
+    "trace_27d444fde4b0",
+    "trace_a9c2474e532f",
+    "trace_c1586083c475",
+    "trace_33b8bb542342",
+    "trace_c93d2d88cecc",
+    "trace_f089b2d2abe2"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_c7321b649b2d",
+    "mechcard_1fe24030e339",
+    "mechcard_d73a178b536c"
+  ],
+  "recipe_card_ids": [
+    "recipe_db5447ba0b4e",
+    "recipe_e068ba7a4fd8"
+  ],
+  "claim_card_ids": [
+    "claim_684e2ba08422",
+    "claim_265057444645",
+    "claim_c7bba4f659bb",
+    "claim_82fac6f23df6",
+    "claim_c24ab2226401",
+    "claim_144648d20e25",
+    "claim_d444e4773a74",
+    "claim_7d36f17b7b43"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_53b8365ae9fa",
+    "mat_591084892e17"
+  ],
+  "dossier_ids": [
+    "dossier_c457d2f681b2",
+    "dossier_b6f983ce91c2"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Single-gas adsorption on HIAM-210 at 298 K was modeled using a dual-site Langmuir-Freundlich isotherm, indicating two classes of adsorption sites were considered.",
+    "HIAM-210 crystallizes in the monoclinic Pm space group with unit cell parameters a = 18.0460 Å, b = 9.8055 Å, c = 24.994 Å, and β = 110.269°.",
+    "Activated HIAM-210 was obtained by methanol Soxhlet exchange followed by activation at 373 K under dynamic vacuum for 12 h."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.6,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.247364",
+  "updated_at": "2026-04-28T14:29:22.247369"
+}

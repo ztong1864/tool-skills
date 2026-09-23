@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_551bbc45ed19",
+  "canonical_material_id": "mat_be953ae2224d",
+  "canonical_name": "Zn2(datrz)2CO3-180",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_fe15e8824562",
+  "pillar_id": null,
+  "topology": "dma",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_8c214b69b4ae",
+    "mechcard_bf3321abc862",
+    "mechcard_5b8c6c352250",
+    "mechcard_52ecbc767538",
+    "mechcard_31d4b14ff737"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_e21fbd086091"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "8eeb28d8abfa"
+  ],
+  "evidence_trace_ids": [
+    "trace_a9428612d137",
+    "trace_677a1c278269",
+    "trace_3c2d939a3638",
+    "trace_41d5fed24fa8",
+    "trace_0d6872edb537"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:26:00.377411",
+  "updated_at": "2026-04-23T21:26:32.868621"
+}

@@ -1,0 +1,81 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_c746d071e336",
+  "paper_id": "0c2479715990",
+  "raw_path": "相关文献/aax8666_chen_sm.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "TIFSIX-2-Cu-i",
+    "ZJU-30",
+    "UTSA-33",
+    "UTSA-35",
+    "SIFSIX-3",
+    "UTSA-30",
+    "SFSIX-3-Ni",
+    "ZIF-8",
+    "SBMOF-1",
+    "TJT-100",
+    "ZIF-7",
+    "IRMOF-8",
+    "TIFSIX-2-Cu-iand",
+    "UTSA-38",
+    "MAF-49",
+    "SDU-5541",
+    "TIFSIX-2",
+    "SBMOF-2",
+    "PCN-250",
+    "TIFSIX-2-Cu",
+    "SIFSIX-3-Ni"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "In",
+    "Ti",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "DOBDC",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif"
+  ],
+  "key_sections": {
+    "conclusion": "of SIFSIX-3-Ni, TIFSIX-2-Cu-i and Zn-atz-ipa. \n \n \nSBETa \n298 K uptakeb \nLow loading Qstc \nIAST selectivityd",
+    "results_summary": "science.sciencemag.org/content/366/6462/241/suppl/DC1 \n \n \n \n \nSupplementary Materials for \n \nSynergistic sorbent separation for one-step ethylene                                    \npurification from"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:39:36.552212"
+}

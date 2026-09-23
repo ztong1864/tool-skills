@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_cbc9da57be64",
+  "paper_id": "653921058bc6",
+  "raw_path": "相关文献/Zheng 等 - 2007 - Poly[bis(μ 3 -3-amino-1,2,4-triazolato).pdf",
+  "title": "Poly[bis(μ 3 -3-amino-1,2,4-triazolato)",
+  "authors": [
+    "Zheng"
+  ],
+  "year": 2007,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "C2H4"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": false,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "ORTEP-3"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "In",
+    "V",
+    "Mo"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "azolate"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "metal-organic papers\nm1252\nZheng et al.\n\u0001 [Zn2(C5H6O4)(C2H3N4)2]\ndoi:10.1107/S1600536807014882\nActa Cryst. (2007). E63, m1252–m1253\nActa Crystallographica Section E\nStructure Reports\nOnline\nISSN 1600-"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:07:49.813915"
+}

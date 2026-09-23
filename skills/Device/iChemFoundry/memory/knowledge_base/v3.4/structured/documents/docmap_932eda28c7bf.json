@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_932eda28c7bf",
+  "paper_id": "d0656fee58b5",
+  "raw_path": "相关文献/Zn-苯三甲酸-yang2008-Three Zn(II)-triazole-H3btc complexes regulated by mixed ligands.pdf",
+  "title": "Three Zn(II)-triazole-H3btc complexes regulated by mixed ligands",
+  "authors": [
+    "Yang"
+  ],
+  "year": 2008,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "TED",
+    "carboxylate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Three Zn(II)-triazole-H3btc complexes regulated by mixed ligands\nprotonation upon stepwise crystallization†\nEn-Cui Yang,a Zhong-Yi Liu,a Xiu-Guang Wang,a Stuart R. Battenb and Xiao-Jun Zhao*a\nReceived"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:25:12.758747"
+}

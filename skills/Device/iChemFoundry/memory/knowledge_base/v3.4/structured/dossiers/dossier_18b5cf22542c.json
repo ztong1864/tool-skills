@@ -1,0 +1,97 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_18b5cf22542c",
+  "canonical_material_id": "mat_0d79f0789157",
+  "canonical_name": "ZU-301",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_a02862591682",
+  "pillar_id": null,
+  "topology": "sod",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_de000f91a3db",
+    "mcard_14123aa7a80d",
+    "mcard_14710628d269",
+    "mcard_de1f18d96c7e",
+    "mcard_d70b4efa8aa7",
+    "mcard_4c7df989a035",
+    "mcard_506f21e53cb5"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_83df8d4d30b3",
+    "mechcard_d209b6f7c87d",
+    "mechcard_b2082a6b8c94",
+    "mechcard_1855c563b28d",
+    "mechcard_9ec2a22962ae",
+    "mechcard_2b4c5751a478",
+    "mechcard_aabf539b959c",
+    "mechcard_ec6e1b9ba978",
+    "mechcard_3fd5329db499",
+    "mechcard_b2bcfee536e0",
+    "mechcard_24cf39b83bae"
+  ],
+  "recipe_card_ids": [
+    "recipe_261363fe90ea",
+    "recipe_463fe14c0b9a",
+    "recipe_e70a9bb72711",
+    "recipe_c48a39b324e1"
+  ],
+  "claim_card_ids": [
+    "claim_7e27b998a1c2",
+    "claim_52a581ca43de",
+    "claim_284c8ad74ae0",
+    "claim_5143ce40e9e7",
+    "claim_539b44c7df91",
+    "claim_682f53c0fed7",
+    "claim_87f3c3fea458"
+  ],
+  "design_rule_card_ids": [
+    "drule_fa0357dc6407"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "509de9186208",
+    "fc50783c6918",
+    "4ebb439e73d2",
+    "80889541cbf7",
+    "4b169130f161",
+    "97fd14a47cac",
+    "a3ea5d899378",
+    "ffba90254f37"
+  ],
+  "evidence_trace_ids": [
+    "trace_8ae845934cd3",
+    "trace_3f888dc6948f",
+    "trace_0b7e72df1369",
+    "trace_11b52f832d42",
+    "trace_ffd0723c330d",
+    "trace_7ae442673c3f",
+    "trace_8c2e8ae2e9a3",
+    "trace_92386c52ae4a",
+    "trace_8dca2b5a8566",
+    "trace_b517c10a3c56",
+    "trace_eea8b3cbe4ac",
+    "trace_06aed7ae2606",
+    "trace_3ce1fc299e6d",
+    "trace_5f8de744eade",
+    "trace_8a0ed3916012",
+    "trace_b8b3b5108101",
+    "trace_205652b21077",
+    "trace_29c3b18d121e",
+    "trace_2a905fc65f34",
+    "trace_ca51687de614"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T16:56:51.516188",
+  "updated_at": "2026-04-23T23:07:06.880741"
+}

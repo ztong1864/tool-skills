@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_78aa3d64ccce",
+  "canonical_material_id": "mat_50c9f8d76dd0",
+  "canonical_name": "Eu3+@1-and-Tb3+@1",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_7897cd3f0161",
+    "mechcard_68f4eab1defe"
+  ],
+  "recipe_card_ids": [
+    "recipe_c8ad9b21caf0"
+  ],
+  "claim_card_ids": [
+    "claim_5e475cb2e1d4"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "b2a9adbbc4b4"
+  ],
+  "evidence_trace_ids": [
+    "trace_0ec3c5d85600",
+    "trace_b4eed91e1706",
+    "trace_83f0fb0eca58"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T23:13:03.429794",
+  "updated_at": "2026-04-23T23:13:16.037506"
+}

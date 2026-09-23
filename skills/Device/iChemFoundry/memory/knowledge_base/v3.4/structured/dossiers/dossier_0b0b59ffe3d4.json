@@ -1,0 +1,61 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_0b0b59ffe3d4",
+  "canonical_material_id": "mat_b2ec870993b8",
+  "canonical_name": "FJU-40-NH2",
+  "metal_element": "Zn",
+  "node_signature_id": "node_c113f986d907",
+  "primary_linker_id": "lig_dc432c2ddefc",
+  "pillar_id": "pil_9b529ca41c80",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_9fb909d0ca30",
+    "mcard_80f32931919e"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_9958c70046b6",
+    "mechcard_c98ff36310af",
+    "mechcard_ae5d10716378",
+    "mechcard_fb443deb9dc2"
+  ],
+  "recipe_card_ids": [
+    "recipe_ae5b75d6a57e",
+    "recipe_e0acc46a7e4f"
+  ],
+  "claim_card_ids": [
+    "claim_91f21e00eef7",
+    "claim_e7e73bea27b3",
+    "claim_8801401c4f68"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "9c7fd9f72c5c",
+    "25907edd8ee8"
+  ],
+  "evidence_trace_ids": [
+    "trace_01ddfd41c757",
+    "trace_1c55dd50e219",
+    "trace_5827cb9abd8a",
+    "trace_c7f21963c317",
+    "trace_c2a04b09983e",
+    "trace_6e4edfe56cb7",
+    "trace_f3baef9c94e8",
+    "trace_5673f4c33185"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:15:34.147893",
+  "updated_at": "2026-04-23T23:11:30.234176"
+}

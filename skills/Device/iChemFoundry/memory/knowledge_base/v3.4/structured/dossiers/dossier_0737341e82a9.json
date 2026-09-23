@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_0737341e82a9",
+  "canonical_material_id": "mat_92870c408036",
+  "canonical_name": "Zn2(dobpdc)",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_dc5b88a30b08",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_dc8916080740"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_a040896b157c"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "40718dae876e"
+  ],
+  "evidence_trace_ids": [
+    "trace_30a4eb485080"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:09:05.598888",
+  "updated_at": "2026-04-23T22:09:05.599333"
+}

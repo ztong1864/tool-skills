@@ -1,0 +1,227 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_f753f6f1eeb7",
+  "paper_id": "c4a33fca36cb",
+  "title": "Synthesis and characterization of two new triazola",
+  "year": 2011,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "[Zn2(trz)2(tar)]n(2) shows thermal_stability = 300.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "weight_loss = 60.33 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "thermal_stability = 300.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "intercluster_connectivity_with_86.6_degree_dihedral → unknown"
+    },
+    {
+      "title": "Mechanism",
+      "body": "five-membered_rings_from_tartrate_coordination → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] adjust the initial pH by adding 0.5 mL NaOH → 0.5 mL NaOH is suitable for formation of the final products, while no NaOH gives only a small amount of white powder or liquid and 1.0-2.0 mL gives a different white powder instead of compounds 1 or 2"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use flexible aliphatic carboxylate ligands together with trz as mixed ligands → framework assembly is inclined toward unique high-dimensional frameworks with multicarboxylate-bridged polynuclear cluster SBUs"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 2, [Zn2(trz)2(tar)]n vs compound 1, [Zn(trz)(Hsuc)]n: winner=subject_a on thermal_stability"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 2, [Zn2(trz)2(tar)]n vs compound 1, [Zn(trz)(Hsuc)]n: winner=subject_a on framework_dimensionality"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_4feeeecc3697",
+    "trace_8a4fb82aed96",
+    "trace_0b5b8ac3f1c9",
+    "trace_bb23ad84be9e",
+    "trace_321a7098c378",
+    "trace_be6eb2a745ad",
+    "trace_eb68a194015f",
+    "trace_7f57693b6a76",
+    "trace_bff494c1c3bc",
+    "trace_a035c091650b",
+    "trace_790fe6b1aafe",
+    "trace_a0057c8b52b7",
+    "trace_1e92e021be33",
+    "trace_96b4d8de1078",
+    "trace_83ef44118eaa",
+    "trace_417814bdf03f",
+    "trace_8debf4f5255b",
+    "trace_a98ae184e9f9",
+    "trace_08bfc090f0e5",
+    "trace_6e1bfb0cc390",
+    "trace_867505915105",
+    "trace_412928cdc8a2",
+    "trace_759a192aafd4",
+    "trace_6dcb6dd5476b",
+    "trace_382470f41378",
+    "trace_d3a66ec4e0ae",
+    "trace_b2b19e22ce4a",
+    "trace_9301fa917538",
+    "trace_da2e438f7e7d",
+    "trace_b56c78589abf",
+    "trace_37dd08952a16",
+    "trace_1d9b1ea630b9",
+    "trace_aacc953328ee",
+    "trace_d98b55d2d148",
+    "trace_3283623bcc1e",
+    "trace_cb55c4e409a3",
+    "trace_49726bb6369c",
+    "trace_5f9d323186a8",
+    "trace_00bfccbd326a",
+    "trace_07566b7f1b4b",
+    "trace_91b5598ee414",
+    "trace_f45857f42f15",
+    "trace_325fa76578e3",
+    "trace_d1a4d9d24e16",
+    "trace_7bc67ad89c4e",
+    "trace_39b5a704c511",
+    "trace_2e96f1024b97",
+    "trace_f45ba8c3b2ab",
+    "trace_f54faa30a8cc",
+    "trace_9ad82e666371",
+    "trace_b50990fffc27",
+    "trace_9afc01427cb3",
+    "trace_a0f0c3139cdf",
+    "trace_72bf965e967b",
+    "trace_e678653b5757",
+    "trace_325fa76578e3",
+    "trace_37dd08952a16",
+    "trace_b2b19e22ce4a",
+    "trace_49726bb6369c",
+    "trace_6dcb6dd5476b",
+    "trace_00bfccbd326a",
+    "trace_417814bdf03f",
+    "trace_a0057c8b52b7",
+    "trace_a0f0c3139cdf",
+    "trace_1d9b1ea630b9",
+    "trace_0b5b8ac3f1c9",
+    "trace_d1a4d9d24e16",
+    "trace_790fe6b1aafe",
+    "trace_7f57693b6a76",
+    "trace_f54faa30a8cc",
+    "trace_1e92e021be33",
+    "trace_bb23ad84be9e",
+    "trace_39b5a704c511",
+    "trace_5f9d323186a8",
+    "trace_d3a66ec4e0ae",
+    "trace_83ef44118eaa",
+    "trace_da2e438f7e7d",
+    "trace_759a192aafd4",
+    "trace_cb55c4e409a3",
+    "trace_3283623bcc1e",
+    "trace_aacc953328ee",
+    "trace_a98ae184e9f9",
+    "trace_b50990fffc27",
+    "trace_07566b7f1b4b",
+    "trace_e678653b5757",
+    "trace_f45ba8c3b2ab",
+    "trace_eb68a194015f",
+    "trace_412928cdc8a2",
+    "trace_f45857f42f15",
+    "trace_2e96f1024b97",
+    "trace_6e1bfb0cc390",
+    "trace_b56c78589abf",
+    "trace_8debf4f5255b",
+    "trace_08bfc090f0e5",
+    "trace_9301fa917538",
+    "trace_321a7098c378",
+    "trace_4feeeecc3697",
+    "trace_382470f41378",
+    "trace_8a4fb82aed96",
+    "trace_867505915105",
+    "trace_bff494c1c3bc",
+    "trace_be6eb2a745ad",
+    "trace_91b5598ee414",
+    "trace_a035c091650b",
+    "trace_9ad82e666371",
+    "trace_d98b55d2d148",
+    "trace_96b4d8de1078",
+    "trace_9afc01427cb3",
+    "trace_7bc67ad89c4e",
+    "trace_72bf965e967b"
+  ],
+  "measurement_card_ids": [
+    "mcard_e44e63b4a3d0",
+    "mcard_f2c545eca3f3"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_05b4983ee99a",
+    "mechcard_18ad8170a2f9",
+    "mechcard_67588e541a27",
+    "mechcard_6d8bbd10ed2f",
+    "mechcard_3c499032a5b5",
+    "mechcard_48bde14884d9",
+    "mechcard_a044ea3495de",
+    "mechcard_f0f450a1ecc4"
+  ],
+  "recipe_card_ids": [
+    "recipe_483972071e65"
+  ],
+  "claim_card_ids": [
+    "claim_93378ba00aaa",
+    "claim_23f82899873a",
+    "claim_936542a17de4",
+    "claim_a37205b7d3b1",
+    "claim_a9236dd108b2",
+    "claim_b21d732ab992",
+    "claim_611baa75818f"
+  ],
+  "design_rule_card_ids": [
+    "drule_c1c6af053d6e",
+    "drule_6461ef0ad8e7"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_eff0843f24ba",
+    "comp_639b436133d3",
+    "comp_4e6bbe887546"
+  ],
+  "failure_case_card_ids": [
+    "fail_b07f3c56a660",
+    "fail_8afba5fb40c2"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_6fb94aa5140f",
+    "mat_ab148aaf9a53",
+    "mat_432e6ffe0730"
+  ],
+  "dossier_ids": [
+    "dossier_7154659ddaaa",
+    "dossier_dd37812d2819",
+    "dossier_7b4fa66d10ef"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Product formation is controlled mainly by metal/ligand ratio and initial pH; these two variables determine the quality and formation of the final products.",
+    "Compound 1 is favored at a Zn:trz:H2suc ratio of 1:2:2, whereas no compound 1 forms at 1:1:1 under the same reaction conditions.",
+    "Compound 2 exhibits a unique 3D pillared-layered framework, with Zn(II) in five-coordinate trigonal bipyramidal geometry bound to tartrate and three trz ligands."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.215045",
+  "updated_at": "2026-04-24T00:19:50.215050",
+  "raw_path": "相关文献/Zn-琥珀酸.酒石酸-Ren 等 - 2011 - Synthesis and characterization of two new triazola.pdf",
+  "authors": [
+    "Zn-琥珀酸.酒石酸-Ren"
+  ]
+}

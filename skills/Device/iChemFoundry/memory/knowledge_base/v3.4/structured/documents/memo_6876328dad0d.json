@@ -1,0 +1,209 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_6876328dad0d",
+  "paper_id": "8bf7f8c8aa14",
+  "title": "A Highly Stable Framework of Crystalline Zinc Phos",
+  "year": 2018,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "NTOU-4a shows thermal_stability_temperature = 400.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "Hg2+_removal_capacity_in_aqueous_solution (Hg2+) = 277.0 mg/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Hg2+_removal_capacity_in_seawater (Hg2+) = 282.0 mg/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "chemical_stability_duration (dimethylformamide) = 120.0 h at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "red-emitting framework probe → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "HTDA_and_BDC_ligand_incorporation_into_metallophosphite_structure → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce phosphite oxyanions together with rigid BDC linkers, soft metal ions, and triazole ligands → enables formation of mixed-ligand terephthalate-metallophosphite frameworks without organic templates or space-filling counterions"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] incorporate 1H-1,2,4-triazole-3,5-diamine (HTDA) and 1,4-benzenedicarboxylate (BDC) ligands into metallophosphite structures → yields a new class of frameworks reported to have high framework stabilities"
+    },
+    {
+      "title": "Comparison",
+      "body": "Hg2+ vs Cd2+: winner=subject_a on adsorption_by_the_title_compound_from_aqueous_mixture"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_9cc333475995",
+    "trace_dc58afc26754",
+    "trace_c3ec168443a3",
+    "trace_d77cfb2d9ccd",
+    "trace_2f575f5d925e",
+    "trace_3eaa885a7ca3",
+    "trace_35b37629fad9",
+    "trace_5ea9a7785d39",
+    "trace_bef81720fbf6",
+    "trace_22d61bf609ef",
+    "trace_6ad6b007e6f7",
+    "trace_b90f9d48b42b",
+    "trace_949b7c20f41f",
+    "trace_6e3c33d78f54",
+    "trace_c126aa36cbe3",
+    "trace_761291e3f4d5",
+    "trace_ddabf359176b",
+    "trace_2ad73daaed48",
+    "trace_d58447400d6a",
+    "trace_dd202dbd219b",
+    "trace_d73c85ec5e8c",
+    "trace_95e3c5559016",
+    "trace_0b6e7fec28fa",
+    "trace_6e51a9935ad3",
+    "trace_4be9a8b879dc",
+    "trace_2a1ca2d28626",
+    "trace_1022fb00fb00",
+    "trace_1bd659c2b415",
+    "trace_5673d68315af",
+    "trace_bf7a18a6788b",
+    "trace_5692e3bfac8d",
+    "trace_81ca0e6abb5e",
+    "trace_fb814f59bb19",
+    "trace_766e460394f2",
+    "trace_90586cd322a7",
+    "trace_7db9411e9a34",
+    "trace_72d15c34f29a",
+    "trace_27ff4b817f62",
+    "trace_5fb7924fc909",
+    "trace_1d96e7559dd4",
+    "trace_3668f211231f",
+    "trace_fc1dac9d1d5b",
+    "trace_bcb29fd600c0",
+    "trace_512087245f36",
+    "trace_ff53a87e0b06",
+    "trace_e26a46ae1db0",
+    "trace_9bbf7cd56715",
+    "trace_5fa6fd5e8c55",
+    "trace_27ff4b817f62",
+    "trace_c126aa36cbe3",
+    "trace_2a1ca2d28626",
+    "trace_ff53a87e0b06",
+    "trace_d58447400d6a",
+    "trace_22d61bf609ef",
+    "trace_fc1dac9d1d5b",
+    "trace_5ea9a7785d39",
+    "trace_81ca0e6abb5e",
+    "trace_bcb29fd600c0",
+    "trace_2ad73daaed48",
+    "trace_6ad6b007e6f7",
+    "trace_512087245f36",
+    "trace_bef81720fbf6",
+    "trace_5fa6fd5e8c55",
+    "trace_7db9411e9a34",
+    "trace_949b7c20f41f",
+    "trace_1d96e7559dd4",
+    "trace_95e3c5559016",
+    "trace_dc58afc26754",
+    "trace_ddabf359176b",
+    "trace_1bd659c2b415",
+    "trace_35b37629fad9",
+    "trace_5fb7924fc909",
+    "trace_761291e3f4d5",
+    "trace_0b6e7fec28fa",
+    "trace_e26a46ae1db0",
+    "trace_72d15c34f29a",
+    "trace_1022fb00fb00",
+    "trace_b90f9d48b42b",
+    "trace_6e3c33d78f54",
+    "trace_fb814f59bb19",
+    "trace_4be9a8b879dc",
+    "trace_bf7a18a6788b",
+    "trace_9cc333475995",
+    "trace_3668f211231f",
+    "trace_766e460394f2",
+    "trace_d77cfb2d9ccd",
+    "trace_5673d68315af",
+    "trace_d73c85ec5e8c",
+    "trace_6e51a9935ad3",
+    "trace_5692e3bfac8d",
+    "trace_9bbf7cd56715",
+    "trace_c3ec168443a3",
+    "trace_90586cd322a7",
+    "trace_2f575f5d925e",
+    "trace_dd202dbd219b",
+    "trace_3eaa885a7ca3"
+  ],
+  "measurement_card_ids": [
+    "mcard_f01fc83bf052",
+    "mcard_d70788a75271",
+    "mcard_c95194eb884a",
+    "mcard_ff698d2e2a8b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_2a9992a38003",
+    "mechcard_e81cde947ac5",
+    "mechcard_470fc84ea80b",
+    "mechcard_7b0a6d49d256"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_45a302511a47",
+    "claim_1b0f2a45afb5",
+    "claim_c47ea3c41ba5",
+    "claim_aeae2cd99383",
+    "claim_e9b631610368",
+    "claim_70fe2256f1eb",
+    "claim_6dfcd1688f38",
+    "claim_04de2694aa7f"
+  ],
+  "design_rule_card_ids": [
+    "drule_a69d58f9a880",
+    "drule_48ab985ba936"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_303dcbf375ae",
+    "comp_4c4bc8093945"
+  ],
+  "failure_case_card_ids": [
+    "fail_e251f715807f",
+    "fail_071bd7c3977d"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_1c6a1364ccad",
+    "mat_5c68b669f6ff",
+    "mat_408c4b35008a"
+  ],
+  "dossier_ids": [
+    "dossier_fac31e006ff7",
+    "dossier_360c06a04b83",
+    "dossier_10a598d9ed7d"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Incorporating HTDA and BDC into metallophosphite structures is presented as a design route to high framework stability in NTOU-4 and NTOU-4a.",
+    "Framework stability differs between the isostructural zinc and cobalt analogues, indicating metal identity affects robustness.",
+    "The zinc compound shows high stability: up to 400 °C in air and resistance to seawater, pH 3-11 aqueous media, and boiling organic solvents."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.929961",
+  "updated_at": "2026-04-24T00:19:48.929965",
+  "raw_path": "相关文献/Wang 等 - 2018 - A Highly Stable Framework of Crystalline Zinc Phos.pdf",
+  "authors": [
+    "Wang"
+  ]
+}

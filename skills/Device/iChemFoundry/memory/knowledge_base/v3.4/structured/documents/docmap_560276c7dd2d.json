@@ -1,0 +1,65 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_560276c7dd2d",
+  "paper_id": "7d1015d4b98c",
+  "raw_path": "相关文献/Zn-SO4-anion-controlled-assembly-of-a-silver-responsive-bifunctional-coordination-polymer-with-detection-and-large-adsorption.pdf",
+  "title": "SO4-anion-controlled-assembly-of-a-silver-responsive-bifunctional-coordination-polymer-with-detection-and-large-adsorption",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "SBA-15"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Al",
+    "Mg",
+    "Cd",
+    "In",
+    "Ga",
+    "V",
+    "Mo",
+    "Ce",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "carboxylate",
+    "pyridine",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "sql"
+  ],
+  "key_sections": {
+    "abstract": "The recognition and adsorption of silver ions (Ag+)\nfrom industrial wastewater are necessary but still challenging. Herein,",
+    "results_summary": "Anion-Controlled Assembly of a Silver-Responsive Bifunctional\nCoordination Polymer with Detection and Large Adsorption\nCapacity\nHan-Xu Sun, Jie Zhou,* Zhen Zhang, Shu-yu Wang, Xue Chen, Li-Jia Zhao, L"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:48:01.325108"
+}

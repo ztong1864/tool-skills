@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_8502babc3e74",
+  "paper_id": "a4c5917133a0",
+  "raw_path": "/Users/weiji-feng/project/MOFDiscoveryAgent/相关文献/Ling 等 - 2012 - Novel Iso-Reticular Zn(II) Metal–Organic Framework-1.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MAC-4",
+    "MAC-4-OH"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "1\nElectronic Supplementary Information (ESI) for:  \n \nNovel Iso-Reticular Zn(II) Metal-Organic Frameworks \nconstructed by Trinuclear-Triangular and Paddle-Wheel Units: \nSynthesis, Structure and Gas Ad"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-28T13:38:10.366039"
+}

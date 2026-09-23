@@ -1,0 +1,84 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_58858cceefb1",
+  "canonical_material_id": "mat_2790822bec46",
+  "canonical_name": "ZIF-4",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_15639eb2a5ae",
+    "mcard_9188cdc32dff",
+    "mcard_c904c9b7c1f0",
+    "mcard_56f1d8a085ab",
+    "mcard_4038c80e79a2"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_7161640d9b51",
+    "mechcard_68386109d94b",
+    "mechcard_53c889730c30",
+    "mechcard_2ef473ee6a76",
+    "mechcard_042178aa26dd",
+    "mechcard_d3e9db7f4baf",
+    "mechcard_71254c3d7e46",
+    "mechcard_d04b3b7b4c06",
+    "mechcard_5b7a8b3da875",
+    "mechcard_6b2ef2a0ff1b",
+    "mechcard_4517a5616b62",
+    "mechcard_38e2ee38aab8"
+  ],
+  "recipe_card_ids": [
+    "recipe_4a5aa1623b96",
+    "recipe_fd155da3ecd5"
+  ],
+  "claim_card_ids": [
+    "claim_6aab0fc28e14"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_dc4a2d0e6292",
+    "fail_ad4ca3a48439"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "e4f2dd03ed6d",
+    "f70ee3da2e06"
+  ],
+  "evidence_trace_ids": [
+    "trace_320c9b84d53f",
+    "trace_e86af4f0bd1e",
+    "trace_6d245ea88223",
+    "trace_19ffebae968d",
+    "trace_5a7f028ea80c",
+    "trace_c9b13018c1f3",
+    "trace_83a161ba949d",
+    "trace_ad47b6238521",
+    "trace_66cc60dda24c",
+    "trace_3658d7d3c98f",
+    "trace_a77237da226a",
+    "trace_7c20690b050c",
+    "trace_004d344961ce",
+    "trace_50617bb8f36a",
+    "trace_f64caa44aaf6",
+    "trace_d394bbf9c9b4",
+    "trace_8bcf6a43b6f6",
+    "trace_5303e8e243bf",
+    "trace_924fd1d998bc"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:04:55.194405",
+  "updated_at": "2026-04-23T22:29:15.173290"
+}

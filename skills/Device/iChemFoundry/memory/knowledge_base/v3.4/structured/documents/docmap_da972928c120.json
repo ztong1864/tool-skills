@@ -1,0 +1,64 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_da972928c120",
+  "paper_id": "47bd0617ba03",
+  "raw_path": "相关文献/Nguyen 等 - 2022 - Separation of CO2 and N2 on a hydrophobic metal or.pdf",
+  "title": "Separation of CO2 and N2 on a hydrophobic metal or",
+  "authors": [
+    "Nguyen"
+  ],
+  "year": 2022,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UTSA-16",
+    "Framework-20",
+    "IRMOF-0",
+    "CALF-20",
+    "Compendium-2018",
+    "MOF-177",
+    "ZSM-5",
+    "MOF-74",
+    "MOF-5",
+    "MOF-199"
+  ],
+  "mentioned_metals": [
+    "Mg",
+    "In",
+    "Ti",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "tricarboxylate"
+  ],
+  "mentioned_topologies": [
+    "mof-5"
+  ],
+  "key_sections": {
+    "results_summary": "Chemical Engineering Journal 442 (2022) 136263\nAvailable online 8 April 2022\n1385-8947/© 2022 Elsevier B.V. All rights reserved.\nSeparation of CO2 and N2 on a hydrophobic metal organic framework \nCALF"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:36:58.609934"
+}

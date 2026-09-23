@@ -1,0 +1,242 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_764a8004c382",
+  "paper_id": "a81a4cda2196",
+  "title": "Construction of a zeolite A-type multivariate meta",
+  "year": 2021,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "Xe"
+  ],
+  "one_line_summary": "BUT-25 shows thermal_stability = 310.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "thermal_stability = 310.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "formate pillars in pillared-layer structure → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "spectral_overlap_enabling_forster_energy_transfer → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] replace oxygen anions with imidazole linkers having two N–Zn bonds at a similar angle → produces a series of zeolite-type MOFs known as ZIFs"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] tune the steric index of imidazolate linkers → allows synthesis of ZIFs with various pore sizes and topologies"
+    },
+    {
+      "title": "Comparison",
+      "body": "BUT-27 detection limits for Fe3+ and Cr2O7 2− vs US-EPA minimum values for Fe3+ and Cr2O7 2− in drinking water: winner=subject_a on detection_limit"
+    },
+    {
+      "title": "Comparison",
+      "body": "BUT-27 vs BUT-26: winner=subject_a on framework outcome after linker insertion into BUT-25"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] use one-pot synthesis to obtain mixed-linker zeolitic MOFs combining multiple linkers such as carboxylate and imidazolate: mixed-linker zeolitic MOFs are rarely obtained"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_a07cb70f1cbf",
+    "trace_fb1f3e7f970b",
+    "trace_b07c0eaeadd1",
+    "trace_e98e8c537e24",
+    "trace_9b1ac38432c2",
+    "trace_79d298aed89e",
+    "trace_2fec869ffc24",
+    "trace_f078b6668586",
+    "trace_bc85ecf2e3d6",
+    "trace_7d97a910cd32",
+    "trace_feb5fe3b4dbc",
+    "trace_62e4a4c2585a",
+    "trace_48e6ff491c26",
+    "trace_01cc91c5704b",
+    "trace_18c012ff9cb3",
+    "trace_f2aed16d10ad",
+    "trace_cb9d8f92c9e2",
+    "trace_cca18043b579",
+    "trace_dd6a8bfa50e5",
+    "trace_b412b8e866e2",
+    "trace_310fb7784484",
+    "trace_e0206c9b2788",
+    "trace_982fa405d838",
+    "trace_e365ce95bf51",
+    "trace_809f7149d373",
+    "trace_04786db20880",
+    "trace_ca77c4f3b124",
+    "trace_b58ad4c51a0d",
+    "trace_949a47e01ce0",
+    "trace_9e14d4c72e1d",
+    "trace_56fec9883b0f",
+    "trace_1c023889af95",
+    "trace_3162f787d98b",
+    "trace_4df16f8fb3fd",
+    "trace_d04dbf9fc1be",
+    "trace_778311702536",
+    "trace_74cb7d3f49ab",
+    "trace_96dedc1b9eeb",
+    "trace_ba2e6239c4e7",
+    "trace_a6381acf7556",
+    "trace_26883e93ed0b",
+    "trace_51c558320231",
+    "trace_dbd1ebe183e5",
+    "trace_1be467b3ff4e",
+    "trace_75e16e26e75e",
+    "trace_fa4f09cdcc13",
+    "trace_d49c75382869",
+    "trace_2744ff40b7b6",
+    "trace_d7aba524752e",
+    "trace_66b92cd62d69",
+    "trace_1e591d72dd28",
+    "trace_2d84b7d2e489",
+    "trace_97aad7501042",
+    "trace_e4b752dfa23f",
+    "trace_d94a8571936b",
+    "trace_8107d48a3326",
+    "trace_56fbd513f22c",
+    "trace_1f2265e5a10b",
+    "trace_8a7085469859",
+    "trace_89ce77baf0c8",
+    "trace_5fe9ee0421bc",
+    "trace_949a47e01ce0",
+    "trace_2744ff40b7b6",
+    "trace_97aad7501042",
+    "trace_ca77c4f3b124",
+    "trace_8107d48a3326",
+    "trace_ba2e6239c4e7",
+    "trace_fa4f09cdcc13",
+    "trace_b58ad4c51a0d",
+    "trace_d04dbf9fc1be",
+    "trace_1c023889af95",
+    "trace_e98e8c537e24",
+    "trace_dd6a8bfa50e5",
+    "trace_18c012ff9cb3",
+    "trace_04786db20880",
+    "trace_cca18043b579",
+    "trace_9b1ac38432c2",
+    "trace_bc85ecf2e3d6",
+    "trace_26883e93ed0b",
+    "trace_cb9d8f92c9e2",
+    "trace_8a7085469859",
+    "trace_dbd1ebe183e5",
+    "trace_e365ce95bf51",
+    "trace_2fec869ffc24",
+    "trace_1be467b3ff4e",
+    "trace_56fec9883b0f",
+    "trace_66b92cd62d69",
+    "trace_d7aba524752e",
+    "trace_89ce77baf0c8",
+    "trace_e4b752dfa23f",
+    "trace_62e4a4c2585a",
+    "trace_778311702536",
+    "trace_4df16f8fb3fd",
+    "trace_f2aed16d10ad",
+    "trace_a07cb70f1cbf",
+    "trace_a6381acf7556",
+    "trace_51c558320231",
+    "trace_e0206c9b2788",
+    "trace_f078b6668586",
+    "trace_809f7149d373",
+    "trace_79d298aed89e",
+    "trace_b07c0eaeadd1",
+    "trace_b412b8e866e2",
+    "trace_d94a8571936b",
+    "trace_310fb7784484",
+    "trace_1e591d72dd28",
+    "trace_2d84b7d2e489",
+    "trace_01cc91c5704b",
+    "trace_3162f787d98b",
+    "trace_9e14d4c72e1d",
+    "trace_fb1f3e7f970b",
+    "trace_feb5fe3b4dbc",
+    "trace_74cb7d3f49ab",
+    "trace_982fa405d838",
+    "trace_96dedc1b9eeb",
+    "trace_d49c75382869",
+    "trace_7d97a910cd32",
+    "trace_75e16e26e75e",
+    "trace_5fe9ee0421bc",
+    "trace_56fbd513f22c",
+    "trace_48e6ff491c26",
+    "trace_1f2265e5a10b"
+  ],
+  "measurement_card_ids": [
+    "mcard_184805ae48d1"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_3da16d08e825",
+    "mechcard_5ddcf1756cb0",
+    "mechcard_52321659c4c3",
+    "mechcard_0c07c822adee",
+    "mechcard_b4b18442cfbd",
+    "mechcard_40e8e3cbbe9e",
+    "mechcard_31984a49cbcf",
+    "mechcard_251eb11b1e22",
+    "mechcard_bfe9c0b1e209"
+  ],
+  "recipe_card_ids": [
+    "recipe_96917fb823ef",
+    "recipe_86e31b73d714",
+    "recipe_fdd936df1bf3"
+  ],
+  "claim_card_ids": [
+    "claim_ddf6fbc3154a",
+    "claim_07560e5288dc",
+    "claim_1eba237be2ad",
+    "claim_6092cf662cd6",
+    "claim_c45f5ae92a24",
+    "claim_77d4dbbf216e",
+    "claim_9d4c4875d9a1"
+  ],
+  "design_rule_card_ids": [
+    "drule_7ef96142c06b",
+    "drule_dedfb1516974",
+    "drule_093a6774150b"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_680c1a9ddce4",
+    "comp_ab0fa1b90b9d"
+  ],
+  "failure_case_card_ids": [
+    "fail_7bcfc1453558"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c9787ddbda34",
+    "mat_455b7e9f6af3"
+  ],
+  "dossier_ids": [
+    "dossier_fca3a321c80e",
+    "dossier_acad84153ee5"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Introducing isophthalate into 2D double-layered BUT-25 converted it into 3D BUT-27 containing three linkers: ATZ−, IPA2−, and HCOO−.",
+    "Mixed-linker zeolitic MOFs are rarely obtained by one-pot synthesis because competing pathways tend to generate diverse products.",
+    "BUT-27 achieves low detection limits of 0.19 μM for Fe3+ and 0.26 μM for Cr2O7 2−, below US-EPA minimum values."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.821410",
+  "updated_at": "2026-04-24T00:19:48.821414",
+  "raw_path": "相关文献/Talha 等 - 2021 - Construction of a zeolite A-type multivariate meta.pdf",
+  "authors": [
+    "Talha"
+  ]
+}

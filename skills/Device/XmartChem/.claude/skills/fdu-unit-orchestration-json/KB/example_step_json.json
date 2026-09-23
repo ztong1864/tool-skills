@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-04-16-15-27-07",
+  "steps": [
+    {
+      "step_index": 1,
+      "unit_type": "exp_add_solid",
+      "downstream_skill": "fdu-add-solid-json",
+      "instruction": "向 T-3:0 加入 5 mg PdCl2",
+      "skill_input": {
+        "layout_code": "T-3:0",
+        "unit_column": 0,
+        "unit_row": 0,
+        "substance": "PdCl2",
+        "add_weight": 5,
+        "unit": "mg"
+      }
+    }
+  ]
+}

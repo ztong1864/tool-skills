@@ -1,0 +1,28 @@
+{
+  "bundle_version": "0.1.0",
+  "training_scope": "all_known_indication",
+  "created_at_utc": "2026-04-15T13:12:00.134270+00:00",
+  "feature_config": {
+    "embed_dim": 128,
+    "radius": 2,
+    "n_bits": 2048,
+    "negative_ratio": 5,
+    "random_state": 42
+  },
+  "model_config": {
+    "input_dim": 384,
+    "hidden_layer_sizes": [
+      128,
+      32
+    ],
+    "device": "cuda"
+  },
+  "counts": {
+    "candidate_drugs": 6945,
+    "indication_rows": 6811,
+    "blocked_rows": 19030,
+    "training_rows": 40866,
+    "indication_diseases": 957,
+    "drug_protein_edges": 23788
+  }
+}

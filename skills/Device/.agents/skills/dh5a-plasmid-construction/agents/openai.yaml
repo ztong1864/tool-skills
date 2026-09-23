@@ -1,0 +1,3 @@
+display_name: DH5a Experiment Protocols
+short_description: Generate the two-stage DH5a plasmid construction workflow as independent Momentum scripts.
+default_prompt: Generate the complete DH5a plasmid construction workflow.

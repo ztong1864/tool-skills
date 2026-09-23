@@ -1,0 +1,46 @@
+{
+  "process:fdu-device-submit": {
+    "description": "Used when the Agent already has device protocol JSON and needs to create a device task through the FDU device API. Device task creation requires explicit user confirmation, starting execution requires an additional explicit user request, and read-only monitoring may follow after the task exists.",
+    "document": "graph/canonical/entities/processes/FduDeviceSubmitProcess.md",
+    "entity_type": "Process",
+    "id": "process:fdu-device-submit",
+    "name": "FDU device task creation"
+  },
+  "process:fdu-experiment-to-device-task": {
+    "agent_flow_id": "agent-flow:fdu-experiment-to-device-task",
+    "description": "Default end-to-end Agent process from user experiment target to confirmed FDU device task creation, with optional read-only monitoring after the task exists. It guides skill selection, data artifacts, user checkpoints, and safety rules.",
+    "document": "graph/canonical/entities/processes/FduExperimentToDeviceTaskProcess.md",
+    "entity_type": "Process",
+    "id": "process:fdu-experiment-to-device-task",
+    "name": "FDU experiment target to device task"
+  },
+  "process:fdu-plan-generation": {
+    "agent_flow_id": "agent-flow:fdu-experiment-to-device-task",
+    "description": "Used to generate recommended conditions, reagent amounts, numbered steps, and a Chinese experiment plan from a user experiment target or reaction space.",
+    "document": "graph/canonical/entities/processes/FduPlanGenerationProcess.md",
+    "entity_type": "Process",
+    "id": "process:fdu-plan-generation",
+    "name": "FDU experiment plan generation"
+  },
+  "process:fdu-risk-review": {
+    "description": "Cross-cutting guard process that checks reaction feasibility, safety risk, device capability, and action boundaries after recommendation, amount calculation, and numbered step generation produce planning artifacts, before user confirmation.",
+    "document": "graph/canonical/entities/processes/FduRiskReviewProcess.md",
+    "entity_type": "Process",
+    "id": "process:fdu-risk-review",
+    "name": "FDU risk review"
+  },
+  "process:fdu-protocol-orchestration": {
+    "description": "Used to convert verified and resource-filled step JSON into device-executable protocol JSON.",
+    "document": "graph/canonical/entities/processes/FduProtocolOrchestrationProcess.md",
+    "entity_type": "Process",
+    "id": "process:fdu-protocol-orchestration",
+    "name": "FDU protocol orchestration"
+  },
+  "process:fdu-resource-verify": {
+    "description": "Used to refresh resource snapshots, verify required resources in step JSON, and backfill real resource information into step JSON.",
+    "document": "graph/canonical/entities/processes/FduResourceVerifyProcess.md",
+    "entity_type": "Process",
+    "id": "process:fdu-resource-verify",
+    "name": "FDU resource verification and backfill"
+  }
+}

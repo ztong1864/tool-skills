@@ -1,0 +1,78 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_552d63514f45",
+  "canonical_material_id": "mat_f07adecbd1d4",
+  "canonical_name": "TIFSIX-2-Cu-i",
+  "metal_element": "Cu",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_72b81abb45d1",
+  "pillar_id": "pil_09f17fdccf37",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_0f20eaa69657",
+    "mcard_88eea4ad2624",
+    "mcard_21786ad31c94",
+    "mcard_cd87885253e2",
+    "mcard_c20c83706ace",
+    "mcard_f64570072b7f",
+    "mcard_dfeb4bb8d718",
+    "mcard_1f00a2fdfc9a"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_9e56d325650b",
+    "mechcard_280329f6e531",
+    "mechcard_8ac1f9c78d73",
+    "mechcard_7d49989a5b81",
+    "mechcard_7327274808de",
+    "mechcard_25aebff01a28",
+    "mechcard_decda4afa050",
+    "mechcard_9b6548b2c6e7"
+  ],
+  "recipe_card_ids": [
+    "recipe_446a69be4556",
+    "recipe_fe2f59046995",
+    "recipe_d91c71dd8fba"
+  ],
+  "claim_card_ids": [
+    "claim_02e06ca9253b",
+    "claim_d85e6c26a093"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_6f13e0a6bfaf"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "fd9300073a96",
+    "5fdf9f5f0fbd",
+    "0c2479715990"
+  ],
+  "evidence_trace_ids": [
+    "trace_30697c4f5686",
+    "trace_853669730c4a",
+    "trace_bcbec0ebeefe",
+    "trace_ee38c06bdc44",
+    "trace_c3a30d46014f",
+    "trace_6cd5c0cfd809",
+    "trace_b882e265107c",
+    "trace_e31ca62c2b48",
+    "trace_0493c6c4cdbc",
+    "trace_6876ac10ea08",
+    "trace_b2251c501b16",
+    "trace_632d28b41289"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:03:45.535036",
+  "updated_at": "2026-04-23T21:47:47.818770"
+}

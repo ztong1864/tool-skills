@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_27cff28cff32",
+  "canonical_material_id": "mat_744814ff5326",
+  "canonical_name": "{[Zn(atz)(C2O4)0.5]H2O}n",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_63a39f87f1c2",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_5b06d2cf1e8b"
+  ],
+  "claim_card_ids": [
+    "claim_ad211f3db5a6"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "bb5e40031d43"
+  ],
+  "evidence_trace_ids": [
+    "trace_f9c4b998cde6"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:07:27.310408",
+  "updated_at": "2026-04-23T20:07:46.942971"
+}

@@ -1,0 +1,221 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_8e9a7765ba70",
+  "paper_id": "12b2852ac256",
+  "title": "Green and Scalable Preparation of an Isomeric CALF",
+  "year": 2025,
+  "doi": null,
+  "normalized_task_id": "C3H6_C3H8_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "C3H6",
+    "C3H8",
+    "C2H2"
+  ],
+  "one_line_summary": "NCU-20 shows C3H6_uptake = 94.41 cm3/g for C3H6",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "uptake_ratio_C3H6/C3H8 (C3H6) = 22.2 dimensionless at 0.5 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "C3H6_uptake (C3H6) = 91.62 cm3/g at 0.5 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "water_immersion_stability_duration (H2O) = 8.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "contracted_and_proper_pore_aperture → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "contracted_pore_size_4.2_x_4.7_A2 → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] contract the pore aperture from the larger CALF-20-like window to a 4.2 × 4.7 Å2 window as in NCU-20 → enables molecular sieving of C3H6 over C3H8 and raises the C3H6/C3H8 uptake ratio to 22.2 versus 1.25 for CALF-20 at 0.5 bar"
+    },
+    {
+      "title": "Comparison",
+      "body": "NCU-20 at 353 K vs HOF-FJU-1 at 333 K: winner=subject_a on C3H6_productivity_cm3_cm-3"
+    },
+    {
+      "title": "Comparison",
+      "body": "NCU-20 vs CALF-20: winner=subject_a on C3H6/C3H8_uptake_ratio"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_3b7a55cf6a43",
+    "trace_0681630d6e06",
+    "trace_21a501c28608",
+    "trace_83a8d91e0989",
+    "trace_a890851f96a1",
+    "trace_6d9cccf6ed98",
+    "trace_40699f638c65",
+    "trace_10d8e3b5b196",
+    "trace_6caec394e85e",
+    "trace_940cc26c9877",
+    "trace_8bdd7394f634",
+    "trace_4dcab1bdbd04",
+    "trace_5903c9b505f1",
+    "trace_2537d867e484",
+    "trace_973929f341bb",
+    "trace_e7e95cbcfc94",
+    "trace_889c0b8b0d53",
+    "trace_1d43ae0a7e61",
+    "trace_1a92ef341cbd",
+    "trace_fb1a25b2ab5f",
+    "trace_fd0bb5fef3bd",
+    "trace_997699c5ebcb",
+    "trace_44e948fb62c9",
+    "trace_8f5412528f8f",
+    "trace_4374580ee297",
+    "trace_f7578f2777a4",
+    "trace_1b0565936d74",
+    "trace_9869718d0c7c",
+    "trace_e7e00239625c",
+    "trace_c8e1bb570b48",
+    "trace_0bad9ac8dac5",
+    "trace_b4e9de0af627",
+    "trace_34cc1e163c2e",
+    "trace_077de82e3351",
+    "trace_11720f614c84",
+    "trace_dd48979b5af5",
+    "trace_f2497a058ed3",
+    "trace_5ceeef1f50fa",
+    "trace_45b2451bdcf6",
+    "trace_b0a2b036066a",
+    "trace_6135fa42061c",
+    "trace_0aed8ef97d89",
+    "trace_e70838c21100",
+    "trace_299f3efa2cfd",
+    "trace_4ae80ed3b1c2",
+    "trace_e4eb2f22c671",
+    "trace_aaa14f3a4d6a",
+    "trace_4e7a3036b6c1",
+    "trace_22049a4c7068",
+    "trace_10e03c322148",
+    "trace_e7e00239625c",
+    "trace_0681630d6e06",
+    "trace_1b0565936d74",
+    "trace_6d9cccf6ed98",
+    "trace_f7578f2777a4",
+    "trace_889c0b8b0d53",
+    "trace_21a501c28608",
+    "trace_e4eb2f22c671",
+    "trace_1d43ae0a7e61",
+    "trace_5903c9b505f1",
+    "trace_fb1a25b2ab5f",
+    "trace_4374580ee297",
+    "trace_10d8e3b5b196",
+    "trace_1a92ef341cbd",
+    "trace_b4e9de0af627",
+    "trace_6caec394e85e",
+    "trace_077de82e3351",
+    "trace_a890851f96a1",
+    "trace_4e7a3036b6c1",
+    "trace_940cc26c9877",
+    "trace_2537d867e484",
+    "trace_4dcab1bdbd04",
+    "trace_aaa14f3a4d6a",
+    "trace_973929f341bb",
+    "trace_997699c5ebcb",
+    "trace_0aed8ef97d89",
+    "trace_299f3efa2cfd",
+    "trace_0bad9ac8dac5",
+    "trace_10e03c322148",
+    "trace_45b2451bdcf6",
+    "trace_e70838c21100",
+    "trace_40699f638c65",
+    "trace_e7e95cbcfc94",
+    "trace_44e948fb62c9",
+    "trace_b0a2b036066a",
+    "trace_f2497a058ed3",
+    "trace_8bdd7394f634",
+    "trace_5ceeef1f50fa",
+    "trace_4ae80ed3b1c2",
+    "trace_34cc1e163c2e",
+    "trace_8f5412528f8f",
+    "trace_11720f614c84",
+    "trace_fd0bb5fef3bd",
+    "trace_6135fa42061c",
+    "trace_3b7a55cf6a43",
+    "trace_c8e1bb570b48",
+    "trace_dd48979b5af5",
+    "trace_9869718d0c7c",
+    "trace_22049a4c7068",
+    "trace_83a8d91e0989"
+  ],
+  "measurement_card_ids": [
+    "mcard_b208be93aa1d",
+    "mcard_97724e2ed78c",
+    "mcard_14c78cfdab3f",
+    "mcard_5732174477f8",
+    "mcard_5b552ab3b601",
+    "mcard_0f3de5c373cb",
+    "mcard_fe6f228bfd29",
+    "mcard_ab6c1737288f",
+    "mcard_2c929b49426a"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_feea414b5361",
+    "mechcard_cf202921b0bd",
+    "mechcard_5b363575db5e"
+  ],
+  "recipe_card_ids": [
+    "recipe_e71f17701be0",
+    "recipe_56779d1afe16"
+  ],
+  "claim_card_ids": [
+    "claim_572661827328",
+    "claim_951a4ac6726f",
+    "claim_dca57bab2a2d",
+    "claim_0ec7265d0e66",
+    "claim_7b31d1752870",
+    "claim_c8b155e88101",
+    "claim_10826cf81870",
+    "claim_fd9007972943"
+  ],
+  "design_rule_card_ids": [
+    "drule_2746f2a76d67"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_15f4199a6fc9",
+    "comp_228b65583c30",
+    "comp_64d98a158195",
+    "comp_be8f4983caf8"
+  ],
+  "failure_case_card_ids": [
+    "fail_26291d0c9223"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_3ebfe9fc5062",
+    "mat_5d0f1475c3a5"
+  ],
+  "dossier_ids": [
+    "dossier_324b931dfd99",
+    "dossier_e6fe52d5a64e"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "C3H6 diffusion in NCU-20 is limited at 298 K (D/r2 = 2.32 × 10−5 s−1) but improves to 1.17 × 10−4 and 1.43 × 10−4 s−1 at 323 and 353 K.",
+    "Breakthrough tests gave 65.39 cm3 cm−3 productivity of >99.5% pure C3H6 from an equimolar C3H6/C3H8 mixture.",
+    "Diffusion barriers favor propylene sieving: ΔE is 21.8 kJ mol−1 for C3H6 but 99.1 kJ mol−1 for C3H8, indicating strong hindrance for propane."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.716197",
+  "updated_at": "2026-04-24T00:19:47.716204",
+  "raw_path": "相关文献/Deng 等 - 2025 - Green and Scalable Preparation of an Isomeric CALF.pdf",
+  "authors": [
+    "Deng"
+  ]
+}

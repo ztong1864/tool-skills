@@ -1,0 +1,99 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_a08711cc288e",
+  "paper_id": "9a4d07d3bef9",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "Design rule: use moisture-tolerant sorbents for CO2 capture under humid conditions",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "assembly_of_ionic_liquid_molecule_layers → uptake"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use moisture-tolerant sorbents for CO2 capture under humid conditions → sorbents remain stable while capturing CO2 under humid conditions"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] tune pore size and framework functionality in pillar-layered Zn-triazolate-dicarboxylate frameworks → associated with high CO2/CH4 and C2 hydrocarbons/CH4 selectivity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_b8e27476d9f8",
+    "trace_ee5801a38085",
+    "trace_440e87ec34d4",
+    "trace_55b82d13f2f8",
+    "trace_00212752d48b",
+    "trace_8a5f3a6d2015",
+    "trace_2746341cbaf0",
+    "trace_e98dfb0f7f4b",
+    "trace_7d9057b61b09",
+    "trace_440e87ec34d4",
+    "trace_2746341cbaf0",
+    "trace_55b82d13f2f8",
+    "trace_e98dfb0f7f4b",
+    "trace_8a5f3a6d2015",
+    "trace_7d9057b61b09",
+    "trace_b8e27476d9f8",
+    "trace_ee5801a38085",
+    "trace_00212752d48b"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_e103e1947f65"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_97742d63d2e3",
+    "claim_79de970b5cfc",
+    "claim_12dae247bf1d",
+    "claim_8ff4ee077500",
+    "claim_7d48a416c2e3",
+    "claim_b535c445a2ac"
+  ],
+  "design_rule_card_ids": [
+    "drule_5b062aa8c743",
+    "drule_57d97a98186c"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_90bcdc4bb678",
+    "mat_7475a70e83ac",
+    "mat_1b85b1862d4e",
+    "mat_ab148aaf9a53"
+  ],
+  "dossier_ids": [
+    "dossier_465f13185c14",
+    "dossier_2ecf3011f026",
+    "dossier_92f0465768df",
+    "dossier_7b4fa66d10ef"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Changing the dicarboxylate linker from Fuma to BDC markedly lowers the reported separation metrics, indicating linker choice only partially preserves performance.",
+    "Zn2(TRZ)2(Fuma) shows much stronger 50/50 CO2 capture performance than Zn2(TRZ)2(BDC), with values of 3.92 vs 1.52 under the reported test conditions.",
+    "Using mixed-linker MOFs is proposed as a strategy for carbon and hydrocarbon capture under moist conditions."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.6,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.206395",
+  "updated_at": "2026-04-24T00:19:47.206397",
+  "raw_path": "相关文献/1-s2.0-S0016236122036171-mmc1.pdf"
+}

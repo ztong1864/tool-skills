@@ -1,0 +1,79 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_14912815ea6e",
+  "canonical_material_id": "mat_398100fdfee2",
+  "canonical_name": "CAU-10-H",
+  "metal_element": "Al",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_8a740618f45e",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_37a7304d2665",
+    "mcard_1445b6a1d71b",
+    "mcard_66b435cd7cfc",
+    "mcard_d05b53c55e50",
+    "mcard_f95fe5d7ea9f",
+    "mcard_bfc0195d41c1",
+    "mcard_eb9c55fd5b58",
+    "mcard_0dec0290c8ec",
+    "mcard_8e91de791b52",
+    "mcard_b578619a8720",
+    "mcard_efdb7dcd8fd6",
+    "mcard_290bb06f9d19"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_d2a192ca5bcf",
+    "mechcard_75b700e520de",
+    "mechcard_23b48af7dbf1",
+    "mechcard_84096b331817",
+    "mechcard_057db3bfb363"
+  ],
+  "recipe_card_ids": [
+    "recipe_b86fbe7a1571",
+    "recipe_8936d9016b6f"
+  ],
+  "claim_card_ids": [
+    "claim_d2e85342389a",
+    "claim_3dec28595e77",
+    "claim_8c7e2e13ba83"
+  ],
+  "design_rule_card_ids": [
+    "drule_571931815e53"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "3e1294c811a4"
+  ],
+  "evidence_trace_ids": [
+    "trace_a519bfbf5794",
+    "trace_c40c803753e2",
+    "trace_6ec105fee799",
+    "trace_77f0648fbacc",
+    "trace_240e10db035d",
+    "trace_90e813702343",
+    "trace_96ae9bca69d3",
+    "trace_993da0307ab2",
+    "trace_61360d292d41",
+    "trace_0a551fad811b",
+    "trace_31dab5beeeca",
+    "trace_6dff0ed1040c",
+    "trace_a344a014a056",
+    "trace_a6fc1f20e1cd",
+    "trace_35e1b696989a",
+    "trace_3679d9345eb7"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-24T00:18:48.413391",
+  "updated_at": "2026-04-24T00:19:25.534367"
+}

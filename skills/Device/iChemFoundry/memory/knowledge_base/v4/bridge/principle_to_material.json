@@ -1,0 +1,1854 @@
+{
+  "_meta": {
+    "version": "v4",
+    "description": "Maps principle_id -> verified MaterialKB dossiers",
+    "last_updated": "2026-05-24T01:10:28.969181",
+    "stats": {
+      "total_principles": 12,
+      "with_material_mapping": 6
+    }
+  },
+  "mprin_019ad6898ab3": {
+    "principle_name": "equilibrium_approach_reduces_dynamic_selectivity",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "dossier_c35e851facc1",
+        "tuple_id": "tuple_e07ec4abc8b7",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": null,
+        "confidence": 0.82,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_551bbc45ed19",
+        "tuple_id": "tuple_e7d3e8b61fec",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "dma",
+        "confidence": 0.63,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_113763872476",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_d7f6a8b6bf74",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_0430db31dc9e",
+        "tuple_id": "tuple_b3bd66200202",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": null,
+        "confidence": 0.56,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_bda9fa3510f3",
+        "tuple_id": "tuple_c44295832a77",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "{4·6·8}{4·6^2·8^3}",
+        "confidence": 0.727,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_442ce5836b28",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_37372b218884",
+        "tuple_id": "tuple_bb17aaf90160",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "square-grid",
+        "confidence": 0.89,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_acad84153ee5",
+        "tuple_id": "tuple_2c9dc674735f",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "lta",
+        "confidence": 0.79,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_4facf11a4e5a",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_061921f1a10a",
+        "tuple_id": "tuple_04daf1641f89",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": null,
+        "confidence": 0.75,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_9d57bb5fff99",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_e6fe52d5a64e",
+        "tuple_id": "tuple_abac68f4c448",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": null,
+        "confidence": 0.79,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_102419e77ab2",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_b86c032e0002",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_47365a237127",
+        "tuple_id": "tuple_928c2a26c246",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.77,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_c2405694d42a",
+        "tuple_id": "tuple_b206a0fb9470",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "4.8^2",
+        "confidence": 0.63,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_50b9da7102c8",
+        "tuple_id": "tuple_78a3d52a90aa",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "(3,4,6)-connected (3.72)2(32.4.73)(32.4.76.86)",
+        "confidence": 0.76,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_5b34d44c3714",
+        "tuple_id": "tuple_34319c07e45f",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.61,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_0d75e1751aab",
+        "tuple_id": "tuple_0ebf883c7958",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.74,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_28f12f83655f",
+        "tuple_id": "tuple_776d3e31958a",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.62,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_d2e48df4dfb6",
+        "tuple_id": "tuple_ee0d9eb5babb",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "hexagonal grid",
+        "confidence": 0.83,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_8d988f7b0797",
+        "tuple_id": "tuple_f21594136d37",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.6,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_1a9a6f72ac95",
+        "tuple_id": "tuple_ee88f7f8e6c8",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.87,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_c3954e4eadce",
+        "tuple_id": "tuple_3fb2b9d89aa0",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_1c91cef534df",
+        "tuple_id": "tuple_09cd9ede6d28",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.7,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_180cf0fc4f84",
+        "tuple_id": "tuple_934bdbe92bbc",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "centered hexagonal network",
+        "confidence": 0.69,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_4de6df7d0c36",
+        "tuple_id": "tuple_937b33f00094",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "pcu",
+        "confidence": 0.8,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_f80af8322cac",
+        "tuple_id": "tuple_d03265b1ef58",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.56,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_bf3d87c96899",
+        "tuple_id": "tuple_37826e37192a",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "lon",
+        "confidence": 0.82,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_33d2092f7eb1",
+        "tuple_id": "tuple_7448565f7b7d",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.75,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_3a06fd0a4e2d",
+        "tuple_id": "tuple_23adae400fc2",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.86,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_ebb68a7ba391",
+        "tuple_id": "tuple_c99cf38fe837",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.743,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_69f8ebded29b",
+        "tuple_id": "tuple_5937fd31fcc1",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_5c3a37e243c7",
+        "tuple_id": "tuple_aa54b31e5764",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.62,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_f35d86a9d4d2",
+        "tuple_id": "tuple_8d34fe4be617",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.62,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_b33fdea38af5",
+        "tuple_id": "tuple_a96d8033c5b7",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.88,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_66f7da93c626",
+        "tuple_id": "tuple_44cfa61eb9a5",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.88,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_c30a2308db2d",
+        "tuple_id": "tuple_9d876d05e753",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.723,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_e3cedd28f2f0",
+        "tuple_id": "tuple_487ee0d6508a",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.82,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_4886a2c0a287",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_847174942265",
+        "tuple_id": "tuple_8aea25dbeffb",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.63,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_442cf1e1cf3d",
+        "tuple_id": "tuple_6bc0736f9127",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.653,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_8e1e3dda0331",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      },
+      {
+        "dossier_id": "dossier_69f8ebded29b",
+        "tuple_id": "tuple_30b38976dcfc",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "equilibrium_selectivity_task"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 45,
+      "task_coverage": [
+        "CO2_capture",
+        "C3H6_C3H8_separation",
+        "gas_separation"
+      ]
+    }
+  },
+  "mprin_28c2b2c3b9a6": {
+    "principle_name": "syn_triazole_induced_v_ligand_conformation",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "dossier_47365a237127",
+        "tuple_id": "tuple_928c2a26c246",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.77,
+        "match_reason": "ligand_conformation_task"
+      },
+      {
+        "dossier_id": "dossier_c2405694d42a",
+        "tuple_id": "tuple_b206a0fb9470",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "4.8^2",
+        "confidence": 0.63,
+        "match_reason": "ligand_conformation_task"
+      },
+      {
+        "dossier_id": "dossier_50b9da7102c8",
+        "tuple_id": "tuple_78a3d52a90aa",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "(3,4,6)-connected (3.72)2(32.4.73)(32.4.76.86)",
+        "confidence": 0.76,
+        "match_reason": "ligand_conformation_task"
+      },
+      {
+        "dossier_id": "dossier_5b34d44c3714",
+        "tuple_id": "tuple_34319c07e45f",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.61,
+        "match_reason": "ligand_conformation_task"
+      },
+      {
+        "dossier_id": "dossier_0d75e1751aab",
+        "tuple_id": "tuple_0ebf883c7958",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.74,
+        "match_reason": "ligand_conformation_task"
+      },
+      {
+        "dossier_id": "dossier_28f12f83655f",
+        "tuple_id": "tuple_776d3e31958a",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.62,
+        "match_reason": "ligand_conformation_task"
+      },
+      {
+        "dossier_id": "dossier_d2e48df4dfb6",
+        "tuple_id": "tuple_ee0d9eb5babb",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "hexagonal grid",
+        "confidence": 0.83,
+        "match_reason": "ligand_conformation_task"
+      },
+      {
+        "dossier_id": "dossier_8d988f7b0797",
+        "tuple_id": "tuple_f21594136d37",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.6,
+        "match_reason": "ligand_conformation_task"
+      },
+      {
+        "dossier_id": "dossier_1a9a6f72ac95",
+        "tuple_id": "tuple_ee88f7f8e6c8",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": null,
+        "confidence": 0.87,
+        "match_reason": "ligand_conformation_task"
+      },
+      {
+        "dossier_id": "dossier_c3954e4eadce",
+        "tuple_id": "tuple_3fb2b9d89aa0",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "ligand_conformation_task"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 10,
+      "task_coverage": [
+        "gas_separation"
+      ]
+    }
+  },
+  "mprin_2b9de9463ebe": {
+    "principle_name": "ir_peak_absence_indicates_carboxylate_deprotonation",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "",
+        "tuple_id": "",
+        "material_id": "",
+        "task_id": "characterization",
+        "topology": "",
+        "confidence": 0.5,
+        "match_reason": "characterization_principle_no_direct_material_mapping"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 0,
+      "task_coverage": [
+        "characterization"
+      ]
+    }
+  },
+  "mprin_3bcebc0a803b": {
+    "principle_name": "low_hausner_ratio_high_flowability_powder_handling",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "",
+        "tuple_id": "",
+        "material_id": "",
+        "task_id": "material_shaping",
+        "topology": "",
+        "confidence": 0.5,
+        "match_reason": "processing_principle_no_direct_material_mapping"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 0,
+      "task_coverage": [
+        "material_shaping"
+      ]
+    }
+  },
+  "mprin_404fa465010f": {
+    "principle_name": "aua_force_center_shifted_united_atom_representation",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "",
+        "tuple_id": "",
+        "material_id": "",
+        "task_id": "simulation",
+        "topology": "",
+        "confidence": 0.5,
+        "match_reason": "simulation_methodology_no_direct_material_mapping"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 0,
+      "task_coverage": [
+        "simulation"
+      ]
+    }
+  },
+  "mprin_90c18a7c41d7": {
+    "principle_name": "uniform_spherical_particle_same_size_model",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "",
+        "tuple_id": "",
+        "material_id": "",
+        "task_id": "modeling",
+        "topology": "",
+        "confidence": 0.5,
+        "match_reason": "modeling_assumption_no_direct_material_mapping"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 0,
+      "task_coverage": [
+        "modeling"
+      ]
+    }
+  },
+  "mprin_98e690e76b95": {
+    "principle_name": "hydroxyl_nest_gas_enrichment_microenvironment_control",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "",
+        "tuple_id": "",
+        "material_id": "",
+        "task_id": "catalysis",
+        "topology": "",
+        "confidence": 0.5,
+        "match_reason": "catalysis_principle_no_direct_material_mapping"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 0,
+      "task_coverage": [
+        "catalysis"
+      ]
+    }
+  },
+  "mprin_b3f31cadbafd": {
+    "principle_name": "selective_co2_removal_enables_xe_recycling",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "dossier_33d2092f7eb1",
+        "tuple_id": "tuple_7448565f7b7d",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.75,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_3a06fd0a4e2d",
+        "tuple_id": "tuple_23adae400fc2",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.86,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_ebb68a7ba391",
+        "tuple_id": "tuple_c99cf38fe837",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.743,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_69f8ebded29b",
+        "tuple_id": "tuple_5937fd31fcc1",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_5c3a37e243c7",
+        "tuple_id": "tuple_aa54b31e5764",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.62,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_f35d86a9d4d2",
+        "tuple_id": "tuple_8d34fe4be617",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.62,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_b33fdea38af5",
+        "tuple_id": "tuple_a96d8033c5b7",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.88,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_66f7da93c626",
+        "tuple_id": "tuple_44cfa61eb9a5",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.88,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_c30a2308db2d",
+        "tuple_id": "tuple_9d876d05e753",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.723,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_e3cedd28f2f0",
+        "tuple_id": "tuple_487ee0d6508a",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.82,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_4886a2c0a287",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_847174942265",
+        "tuple_id": "tuple_8aea25dbeffb",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": null,
+        "confidence": 0.63,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_442cf1e1cf3d",
+        "tuple_id": "tuple_6bc0736f9127",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.653,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_8e1e3dda0331",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_69f8ebded29b",
+        "tuple_id": "tuple_30b38976dcfc",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_673d502a2fba",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_9b0bab116831",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_0b0b59ffe3d4",
+        "tuple_id": "tuple_8d79c6d84c61",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": null,
+        "confidence": 0.753,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_48fb2619ba2e",
+        "tuple_id": "tuple_3542c9b00629",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": null,
+        "confidence": 0.61,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_2ff6043c3112",
+        "tuple_id": "tuple_4fe776cb23bc",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": "5-nodal (3,4,6,7,8)-connected",
+        "confidence": 0.84,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_cec950ccf9a9",
+        "tuple_id": "tuple_0bccd9669226",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": null,
+        "confidence": 0.743,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_a2b530e1c445",
+        "tuple_id": "tuple_5f9b0fc86318",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": null,
+        "confidence": 0.84,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_cc6746fcfecf",
+        "tuple_id": "tuple_1b2bce3ca722",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": null,
+        "confidence": 0.69,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_725d23109bd9",
+        "tuple_id": "tuple_fbbc9652185f",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": "(5,6)-connected net",
+        "confidence": 0.94,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_f9ad396fca86",
+        "tuple_id": "tuple_6e696019cdc5",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": null,
+        "confidence": 0.84,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_cf2b13668b16",
+        "tuple_id": "tuple_38ed5125072a",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": null,
+        "confidence": 0.75,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_256dbeb99b9c",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_e02a92b0c5b9",
+        "tuple_id": "tuple_1cb8148ce8ac",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": null,
+        "confidence": 0.94,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_dc2861f93ced",
+        "tuple_id": "tuple_a90e0410ea2b",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": null,
+        "confidence": 0.82,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_aa3ccaae8a90",
+        "tuple_id": "tuple_551898700ec5",
+        "material_id": "",
+        "task_id": "CO2_N2_separation",
+        "topology": "novel",
+        "confidence": 0.82,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_c43f6ba41c2c",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_6be930740ae5",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_c176dfd3e6d1",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_48fb2619ba2e",
+        "tuple_id": "tuple_df119a4ce7bf",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": null,
+        "confidence": 0.61,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_f838734f6bc5",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_07763afa12e4",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_41ad6913c38b",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_f16776ad00d1",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_b9c0dc09cdd6",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_b843105dd0f6",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "dossier_0d3d4eb948f5",
+        "tuple_id": "tuple_21c2b659f56c",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": null,
+        "confidence": 0.89,
+        "match_reason": "co2_xe_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_47d359e54b8b",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "co2_xe_task"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 42,
+      "task_coverage": [
+        "Xe_Kr_separation",
+        "CO2_N2_separation",
+        "CO2_capture"
+      ]
+    }
+  },
+  "mprin_d41d8cd98f00": {
+    "principle_name": "excitation_dependent_ligand_centered_photoluminescence_shift",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "",
+        "tuple_id": "",
+        "material_id": "",
+        "task_id": "sensing",
+        "topology": "",
+        "confidence": 0.5,
+        "match_reason": "sensing_principle_no_direct_material_mapping"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 0,
+      "task_coverage": [
+        "sensing"
+      ]
+    }
+  },
+  "mprin_e6a4d661d741": {
+    "principle_name": "confinement_induced_translation_rotation_coupled_diffusion",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "dossier_6829f41999d2",
+        "tuple_id": "tuple_72499de109ff",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "sod",
+        "confidence": 0.7899999999999999,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_18b5cf22542c",
+        "tuple_id": "tuple_e105c85d2900",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "sod",
+        "confidence": 0.94,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_acad84153ee5",
+        "tuple_id": "tuple_7dfa215935b9",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "lta",
+        "confidence": 0.89,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_e63e5af2591f",
+        "tuple_id": "tuple_f519707437cd",
+        "material_id": "",
+        "task_id": "C2H2_CO2_separation",
+        "topology": "nbo",
+        "confidence": 0.71,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_acad84153ee5",
+        "tuple_id": "tuple_2c9dc674735f",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "lta",
+        "confidence": 0.89,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_267554472d5d",
+        "tuple_id": "tuple_0b10d302547c",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "sod",
+        "confidence": 0.7899999999999999,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_49c2520e10b6",
+        "tuple_id": "tuple_e6371a3d721f",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "sod",
+        "confidence": 0.95,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_acad84153ee5",
+        "tuple_id": "tuple_1004d9678377",
+        "material_id": "",
+        "task_id": "CO2_capture",
+        "topology": "lta",
+        "confidence": 0.89,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_49c2520e10b6",
+        "tuple_id": "tuple_ec4a73b30c90",
+        "material_id": "",
+        "task_id": "C2H2_CO2_separation",
+        "topology": "sod",
+        "confidence": 0.94,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_18b5cf22542c",
+        "tuple_id": "tuple_80047f01ca9e",
+        "material_id": "",
+        "task_id": "gas_separation",
+        "topology": "sod",
+        "confidence": 0.95,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_6829f41999d2",
+        "tuple_id": "tuple_f8892116831c",
+        "material_id": "",
+        "task_id": "C2H2_CO2_separation",
+        "topology": "sod",
+        "confidence": 0.7899999999999999,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_acad84153ee5",
+        "tuple_id": "tuple_f560fa3ec137",
+        "material_id": "",
+        "task_id": "C2H2_C2H4_separation",
+        "topology": "lta",
+        "confidence": 0.94,
+        "match_reason": "kinetic_separation_topology"
+      },
+      {
+        "dossier_id": "dossier_c35e851facc1",
+        "tuple_id": "tuple_e07ec4abc8b7",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": null,
+        "confidence": 0.82,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "dossier_551bbc45ed19",
+        "tuple_id": "tuple_e7d3e8b61fec",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "dma",
+        "confidence": 0.63,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_113763872476",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_d7f6a8b6bf74",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "dossier_0430db31dc9e",
+        "tuple_id": "tuple_b3bd66200202",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": null,
+        "confidence": 0.56,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "dossier_bda9fa3510f3",
+        "tuple_id": "tuple_c44295832a77",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "{4·6·8}{4·6^2·8^3}",
+        "confidence": 0.727,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_442ce5836b28",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "dossier_37372b218884",
+        "tuple_id": "tuple_bb17aaf90160",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "square-grid",
+        "confidence": 0.89,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_4facf11a4e5a",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "dossier_061921f1a10a",
+        "tuple_id": "tuple_04daf1641f89",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": null,
+        "confidence": 0.75,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_9d57bb5fff99",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "dossier_e6fe52d5a64e",
+        "tuple_id": "tuple_abac68f4c448",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": null,
+        "confidence": 0.79,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_102419e77ab2",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_b86c032e0002",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_ad5f7201628d",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_0f6eff4f1e07",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "dossier_fada311ee414",
+        "tuple_id": "tuple_40101ed39757",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "hcb",
+        "confidence": 0.82,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "dossier_dc774dd2ee8d",
+        "tuple_id": "tuple_439906e1cf62",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": null,
+        "confidence": 0.733,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_0cf2cedd3d40",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_7637933ce805",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_be4bf6d5e204",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_a162e9c8baab",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_5e838929312b",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_bce9cccca848",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_237eabb0a2aa",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_8ff8defc6c89",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_883b8c1a5789",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_655a5dee43b1",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "dossier_3a3cab688f80",
+        "tuple_id": "tuple_ba61bb25502c",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "crs",
+        "confidence": 0.81,
+        "match_reason": "kinetic_separation_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_68e6467b4bb9",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "kinetic_separation_task"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 42,
+      "task_coverage": [
+        "C3H6_C3H8_separation",
+        "C2H2_C2H4_separation",
+        "C2H4_C2H6_separation",
+        "gas_separation",
+        "C2H2_CO2_separation",
+        "CO2_capture"
+      ]
+    }
+  },
+  "mprin_f8664a10f48d": {
+    "principle_name": "trace_abundance_cryogenic_recovery_penalty",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_c43f6ba41c2c",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_6be930740ae5",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_c176dfd3e6d1",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "dossier_48fb2619ba2e",
+        "tuple_id": "tuple_df119a4ce7bf",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": null,
+        "confidence": 0.61,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_f838734f6bc5",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_07763afa12e4",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_41ad6913c38b",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_f16776ad00d1",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_b9c0dc09cdd6",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_b843105dd0f6",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "dossier_0d3d4eb948f5",
+        "tuple_id": "tuple_21c2b659f56c",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": null,
+        "confidence": 0.89,
+        "match_reason": "xe_kr_task"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_47d359e54b8b",
+        "material_id": "",
+        "task_id": "Xe_Kr_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "xe_kr_task"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 12,
+      "task_coverage": [
+        "Xe_Kr_separation"
+      ]
+    }
+  },
+  "p_principle_window_sieving_kinetic_separation": {
+    "principle_name": "window_sieving_kinetic_separation",
+    "verified_in_dossiers": [
+      {
+        "dossier_id": "dossier_c35e851facc1",
+        "tuple_id": "tuple_e07ec4abc8b7",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "unknown",
+        "confidence": 0.82,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_551bbc45ed19",
+        "tuple_id": "tuple_e7d3e8b61fec",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "dma",
+        "confidence": 0.63,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_113763872476",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_d7f6a8b6bf74",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_0430db31dc9e",
+        "tuple_id": "tuple_b3bd66200202",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "unknown",
+        "confidence": 0.56,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_bda9fa3510f3",
+        "tuple_id": "tuple_c44295832a77",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "{4·6·8}{4·6^2·8^3}",
+        "confidence": 0.727,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_442ce5836b28",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_37372b218884",
+        "tuple_id": "tuple_bb17aaf90160",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "square-grid",
+        "confidence": 0.89,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_acad84153ee5",
+        "tuple_id": "tuple_2c9dc674735f",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "lta",
+        "confidence": 0.9,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_4facf11a4e5a",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_061921f1a10a",
+        "tuple_id": "tuple_04daf1641f89",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "unknown",
+        "confidence": 0.75,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_9d57bb5fff99",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_e6fe52d5a64e",
+        "tuple_id": "tuple_abac68f4c448",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "unknown",
+        "confidence": 0.79,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_102419e77ab2",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_b86c032e0002",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_ad5f7201628d",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_0f6eff4f1e07",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_fada311ee414",
+        "tuple_id": "tuple_40101ed39757",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "hcb",
+        "confidence": 0.82,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_dc774dd2ee8d",
+        "tuple_id": "tuple_439906e1cf62",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "unknown",
+        "confidence": 0.733,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_0cf2cedd3d40",
+        "material_id": "",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_7637933ce805",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_be4bf6d5e204",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_a162e9c8baab",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_5e838929312b",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_bce9cccca848",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_237eabb0a2aa",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_8ff8defc6c89",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_883b8c1a5789",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_655a5dee43b1",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "pcu",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_3a3cab688f80",
+        "tuple_id": "tuple_ba61bb25502c",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "crs",
+        "confidence": 0.81,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "",
+        "tuple_id": "tuple_68e6467b4bb9",
+        "material_id": "",
+        "task_id": "C2H4_C2H6_separation",
+        "topology": "sql",
+        "confidence": 0.3,
+        "match_reason": "window_sieving_verified"
+      },
+      {
+        "dossier_id": "dossier_zif8",
+        "tuple_id": "",
+        "material_id": "mat_zif8",
+        "task_id": "C3H6_C3H8_separation",
+        "topology": "",
+        "confidence": 0.95,
+        "match_reason": "principle_declared_verified"
+      }
+    ],
+    "coverage_stats": {
+      "total_mapped": 32,
+      "task_coverage": [
+        "C2H4_C2H6_separation",
+        "C3H6_C3H8_separation"
+      ]
+    }
+  }
+}

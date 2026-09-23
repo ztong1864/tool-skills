@@ -1,0 +1,29 @@
+S7
+ The reaction of ZnI 2 (255 mg, 0.80 mmol), 4-bromobe nzaldehyde (333 mg, 1.80
+mmol), 1-decyne 1a (138 mg, 1.00 mmol), and morpholine (122 mg, 1.40 mmol) in 3
+mL of toluene afforded 3ac (163 mg, 53%) as a liquid (eluent: petrol eum ether): 1H
+NMR (300 MHz, CDCl 3) δ 7.41 (d, J = 8.3 Hz, 2 H), 7.15 (d, J = 8.3 Hz, 2 H),
+6.10-6.03 (m, 1 H), 5.62-5.52 (m, 1 H), 2.18-2.07 (m, 2 H), 1.53-1.41 (m, 2 H),
+1.39-1.20 (m, 10 H), 0.88 (t, J = 6.3 Hz, 3 H);  13C NMR (75 MHz, CDCl 3) δ 205.3,
+134.2, 131.6, 128.1, 120.2, 95.6, 93.8, 31.9, 29.4, 29.3, 29.2, 29.1, 28.6, 22.7, 14.1;
+MS (EI) m/z (%) 308 (M+(81Br), 0.39), 306 (M+(79Br), 0.39), 129 (100); IR (neat)
+2957, 2925, 2854, 1949, 1487, 1461, 1383, 1070, 1009 cm-1; Anal. calcd for C 17H23Br:
+(%) C 66.45, H 7.54; Found: C 66.39, H 7.72; HRMS (EI) calcd for C 17H2381Br (M+):
+308.0963. Found: 308.0963 .
+(4) Synthesis of 1-(3-thienyl)undeca-1,2-diene (3ad)
++ +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv2dCH3(CH 2)7
+toluene, 130 ℃
+13.7 h, 30%1a(CH 2)7CH3
+3adS SCHO
+
+The reaction of ZnI 2 (256 mg, 0.80 mmol), thiophe ne-3-carbalde hyde (203 mg,
+1.81 mmol), 1-decyne 1a (138 mg, 1.00 mmol), and morpholine (122 mg, 1.40 mmol)
+in 3 mL of toluene afforded 3ad (70 mg, 30%) as a liquid (eluent: petroleum ether):
+1H NMR (300 MHz, CDCl 3) δ 7.26-7.16 (m, 1 H), 7.05 (d, J = 5.1 Hz, 1 H), 7.01 (s, 1
+H), 6.25-6.13 (m, 1 H), 5.55-5.43 (m, 1 H), 2.2 8-2.03 (m, 2 H), 1.50-1.40 (m, 2 H),
+1.38-1.20 (m, 10 H), 0.88 (t, J = 6.3 Hz, 3 H); 13C NMR (75 MHz, CDCl 3) δ 205.4,
+136.6, 126.3, 125.6, 120.0, 94.2, 89.1, 31.9, 29.4, 29.3, 29.2, 29.1, 28.8, 22.7, 14.1;

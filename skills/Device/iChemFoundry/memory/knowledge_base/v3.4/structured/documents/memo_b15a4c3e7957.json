@@ -1,0 +1,164 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_b15a4c3e7957",
+  "paper_id": "bb5e40031d43",
+  "title": "3D Pillar-Layered Zn(II) Compound with 6-Connected",
+  "year": 2014,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "{[Zn(atz)(C2O4)0.5]H2O}n shows thermal_stability_temperature = 620.15 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_temperature = 620.15 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "pore_volume_ratio = 28.6 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "intramolecular_hydrogen_bonding_between_amino_and_carboxylate_groups → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "intraligand_charge_transfer → stability"
+    },
+    {
+      "title": "Comparison",
+      "body": "nitrobenzene vs other solvents: winner=subject_a on luminescence_quenching_of_desolvated_compound_1"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs free Hatz ligand: winner=subject_a on emission_spectrum_and_luminescence_intensity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_f9c4b998cde6",
+    "trace_8e14d6cd7004",
+    "trace_fd28fb7e1610",
+    "trace_a3bfe603115e",
+    "trace_60a56574a609",
+    "trace_7ddc1602613f",
+    "trace_69fe34add2c3",
+    "trace_82fd5974e4e3",
+    "trace_6d24c1f057b4",
+    "trace_cb039f6ec577",
+    "trace_a4148c14d9c1",
+    "trace_7fbf16c92ea2",
+    "trace_2fadbd02f9a7",
+    "trace_559115eca96d",
+    "trace_e0c07f9ae1b0",
+    "trace_b89a7af53311",
+    "trace_f7e554e87300",
+    "trace_146ca6a66875",
+    "trace_35ec22350520",
+    "trace_01fac70a90a1",
+    "trace_8d3b5e074de4",
+    "trace_2069435f6515",
+    "trace_03ca0facc9a3",
+    "trace_41580ed7d80c",
+    "trace_9834b5e4970b",
+    "trace_1bf236d72e24",
+    "trace_9b2cb613bb83",
+    "trace_34280cda7805",
+    "trace_7ea8450da416",
+    "trace_3413c2747b9d",
+    "trace_a92c932ff471",
+    "trace_2d8012500a5b",
+    "trace_4e76c3dbcacc",
+    "trace_39c504bf0f90",
+    "trace_fd28fb7e1610",
+    "trace_8d3b5e074de4",
+    "trace_1bf236d72e24",
+    "trace_2069435f6515",
+    "trace_82fd5974e4e3",
+    "trace_a3bfe603115e",
+    "trace_3413c2747b9d",
+    "trace_a4148c14d9c1",
+    "trace_03ca0facc9a3",
+    "trace_4e76c3dbcacc",
+    "trace_7fbf16c92ea2",
+    "trace_7ddc1602613f",
+    "trace_35ec22350520",
+    "trace_8e14d6cd7004",
+    "trace_41580ed7d80c",
+    "trace_559115eca96d",
+    "trace_a92c932ff471",
+    "trace_01fac70a90a1",
+    "trace_f7e554e87300",
+    "trace_6d24c1f057b4",
+    "trace_b89a7af53311",
+    "trace_f9c4b998cde6",
+    "trace_69fe34add2c3",
+    "trace_39c504bf0f90",
+    "trace_2d8012500a5b",
+    "trace_9834b5e4970b",
+    "trace_60a56574a609",
+    "trace_9b2cb613bb83",
+    "trace_146ca6a66875",
+    "trace_e0c07f9ae1b0",
+    "trace_2fadbd02f9a7",
+    "trace_cb039f6ec577",
+    "trace_34280cda7805",
+    "trace_7ea8450da416"
+  ],
+  "measurement_card_ids": [
+    "mcard_3636445161bd",
+    "mcard_670863de0c18"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_13e33d98df8f",
+    "mechcard_04d3b6178442"
+  ],
+  "recipe_card_ids": [
+    "recipe_5b06d2cf1e8b",
+    "recipe_1c496ee1c6e3",
+    "recipe_f1e8610276e1"
+  ],
+  "claim_card_ids": [
+    "claim_f4080da074c0",
+    "claim_cd70c22c1799",
+    "claim_ca929da9c7a3",
+    "claim_e3fc4b0946b9",
+    "claim_75a4a67fc6e3",
+    "claim_30393dc32634",
+    "claim_ad211f3db5a6"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [
+    "comp_0ef1278c9736",
+    "comp_574d9ffebbc4"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_744814ff5326",
+    "mat_3888ee0e9c8c"
+  ],
+  "dossier_ids": [
+    "dossier_27cff28cff32",
+    "dossier_4de6df7d0c36"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "atz− ligands bridge Zn(II) into 2D layers, and C2O42− pillars connect these layers into the 3D framework; intramolecular H-bonding further consolidates the structure.",
+    "Single-crystal XRD shows compound 1 is a 3D porous pillar-layer framework with 6-connected pcu topology in the monoclinic P21/c space group.",
+    "TGA indicates an 8.12% mass loss at 110–145 °C from lattice water removal, after which the framework remains stable up to 347 °C."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.482434",
+  "updated_at": "2026-04-24T00:19:49.482437",
+  "raw_path": "相关文献/Zhao 等 - 2014 - 3D Pillar-Layered Zn(II) Compound with 6-Connected.pdf",
+  "authors": [
+    "Zhao"
+  ]
+}

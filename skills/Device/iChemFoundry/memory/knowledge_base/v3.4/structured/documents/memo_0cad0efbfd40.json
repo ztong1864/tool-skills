@@ -1,0 +1,160 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_0cad0efbfd40",
+  "paper_id": "86a7c025866c",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "[Zn2(dmtrz)2(H2O)]-subunit shows CO2/N2_selectivity_50_50 = 11974.0 dimensionless for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "CO2_isosteric_heat (CO2) = 26.5 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2/CO_selectivity_50_50 (CO2) = 110.0 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2/N2_selectivity_15_85 (CO2) = 681.0 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "methyl-functionalized pore environment and suitable pore size → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "preferential CO2 binding sites probed by GCMC simulations → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] incorporate methyl groups on ligands in Zn-dmtrz-mip → strong host-guest interactions for CO2 are observed"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] load CO2 gas molecules into activated Zn-dmtrz-mip for single-crystal structure determination: high-quality single-crystal data of activated Zn-dmtrz-mip with CO2 gas molecules could not be obtained despite extensive attempts"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_e8316a310556",
+    "trace_eff98ab10ae0",
+    "trace_77710174f9b6",
+    "trace_0889aa492792",
+    "trace_369e3804f187",
+    "trace_5ac9835d999b",
+    "trace_1e516b473fc8",
+    "trace_cafa616fec51",
+    "trace_f9b57040278c",
+    "trace_3c19c38e6bf8",
+    "trace_5d2d3e295890",
+    "trace_2c1dd461861c",
+    "trace_34668ffa0d93",
+    "trace_d4f365a63593",
+    "trace_c93566c55358",
+    "trace_d536a7fa9617",
+    "trace_0f14e6c6018c",
+    "trace_527a2e5f8788",
+    "trace_cf1305ba1bd6",
+    "trace_30e1b6b0d25e",
+    "trace_f788cf8d3096",
+    "trace_2368a2250176",
+    "trace_7deadc5fb3db",
+    "trace_c77ee6c991ee",
+    "trace_3818f501e29e",
+    "trace_f788cf8d3096",
+    "trace_eff98ab10ae0",
+    "trace_c77ee6c991ee",
+    "trace_5ac9835d999b",
+    "trace_e8316a310556",
+    "trace_34668ffa0d93",
+    "trace_cf1305ba1bd6",
+    "trace_1e516b473fc8",
+    "trace_527a2e5f8788",
+    "trace_d4f365a63593",
+    "trace_2368a2250176",
+    "trace_3c19c38e6bf8",
+    "trace_369e3804f187",
+    "trace_2c1dd461861c",
+    "trace_7deadc5fb3db",
+    "trace_0889aa492792",
+    "trace_77710174f9b6",
+    "trace_3818f501e29e",
+    "trace_f9b57040278c",
+    "trace_d536a7fa9617",
+    "trace_cafa616fec51",
+    "trace_c93566c55358",
+    "trace_5d2d3e295890",
+    "trace_30e1b6b0d25e",
+    "trace_0f14e6c6018c"
+  ],
+  "measurement_card_ids": [
+    "mcard_f5b4585e99cd",
+    "mcard_8ea95bea48db",
+    "mcard_09c684c5baed",
+    "mcard_d6a4bd5c4619",
+    "mcard_36ff1da62c34",
+    "mcard_7b05cd98475d",
+    "mcard_2706cce51ea4",
+    "mcard_38ed2bec62f1",
+    "mcard_c1a1071b0803",
+    "mcard_fbe510950c82",
+    "mcard_fcae645d3c19",
+    "mcard_fdb58853dbec"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_97bd7bd42250",
+    "mechcard_407ef1e2db2e",
+    "mechcard_77eac9ad2a8f"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_f921560bf3da",
+    "claim_c9875864aba4",
+    "claim_e1fe168a9ebc",
+    "claim_4c349b7d288e",
+    "claim_2194aeb90f6f",
+    "claim_ad2c2067853e",
+    "claim_119898784a7b",
+    "claim_f767b2388998"
+  ],
+  "design_rule_card_ids": [
+    "drule_2782c28114bb"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_f187f79b2337"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_24c7d563bd19"
+  ],
+  "dossier_ids": [
+    "dossier_5d1831176996"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Zn-dmtrz-mip also delivers CO2/CO selectivities of 110.0 for 50/50 and 50.8 for 10/90 mixtures, outperforming many reported MOFs.",
+    "Breakthrough tests achieved 99.9% N2, CH4, and CO product purity and 99.5% CO2 recovery, confirming effective binary and ternary separations.",
+    "Under dry, 30% RH, and 50% RH feeds, CO2 uptake stayed nearly constant at 43.6, 45.9, and 44.9 cm3 g−1, indicating humidity-tolerant separation."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.453080",
+  "updated_at": "2026-04-24T00:19:50.453084",
+  "raw_path": "相关文献/Zn-间苯二甲酸.pdf"
+}

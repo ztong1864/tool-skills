@@ -1,0 +1,88 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_f63fcb621136",
+  "paper_id": "b002da0f0c54",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "H2"
+  ],
+  "one_line_summary": "Paper b002da0f0c54: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Comparison",
+      "body": "activated framework 1a vs solid H2tda ligand: winner=tie on solid_state_luminescence_spectrum"
+    },
+    {
+      "title": "Comparison",
+      "body": "activated framework 2a vs solid H2bpdc ligand: winner=tie on solid_state_luminescence_spectrum"
+    },
+    {
+      "title": "Author Claim",
+      "body": "Activated solids 1a and 2a are luminescent and can respond to metal ions in water, with PL spectra recorded versus Cd(NO3)2 and Fe(NO3)3 concentration."
+    },
+    {
+      "title": "Author Claim",
+      "body": "Compounds 1a and 2a show measurable thermal stability, evidenced by reported TGA curves for both activated materials."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_6b0b640db038",
+    "trace_4a26bb19caff",
+    "trace_c0f789eae378",
+    "trace_7ef42d019476",
+    "trace_6770ef93dd34",
+    "trace_3152e70245f9",
+    "trace_a3ca193cf785",
+    "trace_ecdd0df95606",
+    "trace_89f54e509a2d",
+    "trace_9f954619b396",
+    "trace_a7fa16c32445",
+    "trace_6b0b640db038",
+    "trace_89f54e509a2d",
+    "trace_a7fa16c32445",
+    "trace_7ef42d019476",
+    "trace_a3ca193cf785",
+    "trace_4a26bb19caff",
+    "trace_ecdd0df95606",
+    "trace_6770ef93dd34",
+    "trace_c0f789eae378",
+    "trace_3152e70245f9",
+    "trace_9f954619b396"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_a214d3190078",
+    "claim_2e2615fe6033",
+    "claim_31c104dbbf2f",
+    "claim_5cc079fc8e11",
+    "claim_6f931868a0c3",
+    "claim_84b76d8e3271"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [
+    "comp_cb6c4ccf5254",
+    "comp_bb5bf2fd0066"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [],
+  "dossier_ids": [],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Activated solids 1a and 2a are luminescent and can respond to metal ions in water, with PL spectra recorded versus Cd(NO3)2 and Fe(NO3)3 concentration.",
+    "Compounds 1a and 2a show measurable thermal stability, evidenced by reported TGA curves for both activated materials.",
+    "Both 1a and 2a exhibit TNT-dependent luminescence changes in CH3OH, indicating potential nitroaromatic sensing behavior under methanolic conditions."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.2,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.232026",
+  "updated_at": "2026-04-28T14:29:22.232031"
+}

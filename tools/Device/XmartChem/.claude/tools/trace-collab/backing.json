@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "type": "sdk_python",
+  "module_path": "trace_collab.py",
+  "attr": "SERVER"
+}

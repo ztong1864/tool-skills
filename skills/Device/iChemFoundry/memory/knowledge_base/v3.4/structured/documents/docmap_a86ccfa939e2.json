@@ -1,0 +1,74 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_a86ccfa939e2",
+  "paper_id": "585d1cd3111b",
+  "raw_path": "相关文献/Danaci 等 - 2023 - Charting the CO2 capture performance of a phase-ch.pdf",
+  "title": "Charting the CO2 capture performance of a phase-ch",
+  "authors": [
+    "Danaci"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H8",
+    "C2H4"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UTSA-16",
+    "CALF-20",
+    "MOF-74",
+    "MOF-5",
+    "ELM-11",
+    "MIL-53",
+    "HKUST-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Ni",
+    "Fe",
+    "Al",
+    "Mn",
+    "Mg",
+    "In",
+    "V",
+    "Ce",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "BPDC",
+    "azolate",
+    "pyridine",
+    "terephthalate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "hkust",
+    "mof-5"
+  ],
+  "key_sections": {
+    "abstract": "Metal-organic frameworks (MOFs) that display step-shaped adsorption isotherms, i.e., \nphase-change MOFs, represent a relatively small subset of all known MOFs. Yet, they",
+    "results_summary": "1 \nCharting the CO2 capture performance of a phase-change metal-\norganic framework in a pressure-vacuum swing adsorption process \nDavid Danaci,1* Elena Pulidori,2 Luca Bernazzani,2 Camille Petit,1 Mar"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:23:47.612357"
+}

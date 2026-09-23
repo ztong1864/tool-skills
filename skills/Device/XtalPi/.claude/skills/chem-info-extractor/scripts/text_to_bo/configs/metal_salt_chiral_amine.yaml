@@ -1,0 +1,71 @@
+schema_id: metal_salt_chiral_amine
+
+target_scope:
+  reaction_family: ATA/EATA asymmetric alkynylation/allenylation
+  description: >
+    At page triage, keep ATA/EATA asymmetric alkynylation/allenylation pages,
+    even when their exact reagents are outside the current BO allowed values.
+    Drop non-ATA/EATA chemistry such as aerobic oxidation, hydrolysis,
+    protection/deprotection, reductions, substrate preparation, and workup.
+    The allowed values below are applied later as BO-space validation.
+  allowed_values:
+    metal_salt_1:
+      - CuI
+      - CuBr
+      - AgOTf
+    metal_salt_2:
+      - none
+      - AgOTf
+    chiral_amine:
+      - dp_prolinol
+      - silyl_dp_prolinol
+      - bis_3_5_dimethylphenyl_prolinol
+      - bis_3_5_bistrifluoromethylphenyl_prolinol
+      - binaphthyl_prolinol
+    molecular_sieve:
+      - none
+      - 4A MS 20.00 mg
+    solvent:
+      - DCE
+      - TFE
+      - toluene
+      - Dioxane
+
+normalization:
+  metal_salt_alias:
+    CuI: CuI
+    copper(I) iodide: CuI
+    copper iodide: CuI
+    CuBr: CuBr
+    copper(I) bromide: CuBr
+    copper bromide: CuBr
+    AgOTf: AgOTf
+    silver triflate: AgOTf
+    AuSIPrNTf2: AuSIPrNTf2
+    gold AuSIPrNTf2: AuSIPrNTf2
+  chiral_amine_alias:
+    dp_prolinol: dp_prolinol
+    diphenylprolinol: dp_prolinol
+    silyl_dp_prolinol: silyl_dp_prolinol
+    silyl diphenylprolinol: silyl_dp_prolinol
+    bis_3_5_dimethylphenyl_prolinol: bis_3_5_dimethylphenyl_prolinol
+    bis 3 5 dimethylphenyl prolinol: bis_3_5_dimethylphenyl_prolinol
+    bis_3_5_bistrifluoromethylphenyl_prolinol: bis_3_5_bistrifluoromethylphenyl_prolinol
+    bis 3 5 bistrifluoromethylphenyl prolinol: bis_3_5_bistrifluoromethylphenyl_prolinol
+    binaphthyl_prolinol: binaphthyl_prolinol
+    binaphthyl prolinol: binaphthyl_prolinol
+  molecular_sieve_alias:
+    none: none
+    4A MS 20.00 mg: 4A MS 20.00 mg
+    4A molecular sieve 20 mg: 4A MS 20.00 mg
+    4A molecular sieves 20 mg: 4A MS 20.00 mg
+  solvent_alias:
+    DCE: DCE
+    1,2-dichloroethane: DCE
+    TFE: TFE
+    trifluoroethanol: TFE
+    toluene: toluene
+    MeCN: MeCN
+    acetonitrile: MeCN
+    Dioxane: Dioxane
+    1,4-dioxane: Dioxane

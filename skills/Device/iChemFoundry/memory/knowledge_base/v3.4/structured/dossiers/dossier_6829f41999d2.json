@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_6829f41999d2",
+  "canonical_material_id": "mat_34418fb2ca59",
+  "canonical_name": "MAF-3",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_adf1838ff29a",
+  "pillar_id": null,
+  "topology": "sod",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_746a9f3445f9",
+    "mechcard_7877f0c345ce"
+  ],
+  "recipe_card_ids": [
+    "recipe_adc084c73462"
+  ],
+  "claim_card_ids": [
+    "claim_113348a0eecd",
+    "claim_324d8411666c"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_44d39e1531ce"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "4b169130f161",
+    "09e67f192def",
+    "ffba90254f37"
+  ],
+  "evidence_trace_ids": [
+    "trace_6deba1b0beb0",
+    "trace_3b398df6a3fe",
+    "trace_72b4dd3330ec"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:14:56.831458",
+  "updated_at": "2026-04-23T23:07:06.882204"
+}

@@ -1,0 +1,57 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_6f2748bdd7db",
+  "paper_id": "2d345c000268",
+  "raw_path": "相关文献/Zn-H4betc-A stable, pillar-layer metal–organic framework.pdf",
+  "title": "H4betc-A stable, pillar-layer metal–organic framework",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "C3H8",
+    "C2H6"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": false,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MOF-74",
+    "MOF-5",
+    "PCN-100"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Cd",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "mof-5"
+  ],
+  "key_sections": {
+    "results_summary": "6406 | Chem. Commun., 2014, 50, 6406--6408\nThis journal is ©The Royal Society of Chemistry 2014\nCite this: Chem. Commun., 2014,\n50, 6406\nA stable, pillar-layer metal–organic framework\ncontaining uncoo"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:37:39.759911"
+}

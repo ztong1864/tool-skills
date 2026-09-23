@@ -1,0 +1,78 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_37372b218884",
+  "canonical_material_id": "mat_a6746cf21f1e",
+  "canonical_name": "ELM-12",
+  "metal_element": "Cu",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_67ce9be50436",
+  "pillar_id": null,
+  "topology": "square-grid",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_d2cb4e4a638d",
+    "mcard_1ca5df41b4f2",
+    "mcard_5d6c4b1b8842",
+    "mcard_c8c80fcc0e96",
+    "mcard_319aa8c6ed66",
+    "mcard_3fff919eac29"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_846fc1958ae3",
+    "mechcard_73dedbfd2751",
+    "mechcard_277510d7c233",
+    "mechcard_ede5941409e5",
+    "mechcard_2ed9c9957b78",
+    "mechcard_e4e82a4ef7a5",
+    "mechcard_5135d2fafe3f",
+    "mechcard_b391f0b88f3d"
+  ],
+  "recipe_card_ids": [
+    "recipe_8d803b894f8b",
+    "recipe_269b1bbd99f2",
+    "recipe_1a15f6df3801",
+    "recipe_e8e7a409db3f"
+  ],
+  "claim_card_ids": [
+    "claim_b3fda2ad3b8d",
+    "claim_ac90f43e9163",
+    "claim_5eab04b2c251"
+  ],
+  "design_rule_card_ids": [
+    "drule_e92c8798babf"
+  ],
+  "failure_case_card_ids": [
+    "fail_32e19f9b2701"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "cd232c378576"
+  ],
+  "evidence_trace_ids": [
+    "trace_7586f4ea7fa7",
+    "trace_8de95eacecac",
+    "trace_5ac258ba91cd",
+    "trace_5b91b1300b5f",
+    "trace_933ad9107e2b",
+    "trace_890e757ef9d1",
+    "trace_13fa02ca89a1",
+    "trace_7b41c2e79db6",
+    "trace_369162531ea6",
+    "trace_551b39bedaf1",
+    "trace_6d6db7d8fbf0",
+    "trace_9f98cee6ab25",
+    "trace_0d677a32ef4b",
+    "trace_2f0f1d7d8025"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:08:37.507477",
+  "updated_at": "2026-04-23T18:09:12.937960"
+}

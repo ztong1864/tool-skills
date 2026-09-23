@@ -1,0 +1,64 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_61c55bcb9b42",
+  "canonical_material_id": "mat_7167dcec2d97",
+  "canonical_name": "MAC-20-I",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_2f609f2094b4",
+  "pillar_id": "pil_2a7913e16c40",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_328b077970fa",
+    "mechcard_aea4e487b16a",
+    "mechcard_8440589f19aa",
+    "mechcard_8651a440da52",
+    "mechcard_17d26ab36821",
+    "mechcard_96a746adeddf",
+    "mechcard_4f493675d9bf",
+    "mechcard_26be7dc4fcf0",
+    "mechcard_a57d8f9d0928",
+    "mechcard_940e4b6ab5e9"
+  ],
+  "recipe_card_ids": [
+    "recipe_27ebc3bd7356"
+  ],
+  "claim_card_ids": [
+    "claim_0e03355a648a"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "d3cb3f2fb120",
+    "6cff4bbbe500",
+    "c2ce30b6259c",
+    "94e80a9c0ffd"
+  ],
+  "evidence_trace_ids": [
+    "trace_3e87aaa38269",
+    "trace_5067afd6a012",
+    "trace_2b8c5d4f3941",
+    "trace_a18068bf1381",
+    "trace_48e8d3e4efb2",
+    "trace_df62eb3bac9a",
+    "trace_195734f28088",
+    "trace_21d34a5e7480",
+    "trace_33f395db5f28",
+    "trace_8c64391d098f",
+    "trace_fd94e36f13d1"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:01:10.188845",
+  "updated_at": "2026-04-28T13:57:56.219807"
+}

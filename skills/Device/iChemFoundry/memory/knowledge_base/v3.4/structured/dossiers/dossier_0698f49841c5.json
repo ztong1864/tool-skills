@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_0698f49841c5",
+  "canonical_material_id": "mat_d0c2c46d54a2",
+  "canonical_name": "Ag@CPs4",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_b1776aa8b6bd",
+    "mechcard_e368bd8cde7a"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_c6deac2b5be2"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "7d1015d4b98c"
+  ],
+  "evidence_trace_ids": [
+    "trace_23868114c386",
+    "trace_55611a4a40d5"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:53:19.528190",
+  "updated_at": "2026-04-23T20:53:49.603447"
+}

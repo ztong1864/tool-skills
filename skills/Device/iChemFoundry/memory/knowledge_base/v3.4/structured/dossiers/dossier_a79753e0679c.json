@@ -1,0 +1,56 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_a79753e0679c",
+  "canonical_material_id": "mat_b877caea5e5d",
+  "canonical_name": "KAUST-7",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_f7ca7d6a4991",
+    "mcard_aace908b9df9",
+    "mcard_7aa4e0d22f8c",
+    "mcard_8ad84ad9e9e4"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_50bd02448634",
+    "mechcard_6c44b29d2ab5",
+    "mechcard_c260a169a02f"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "cd232c378576",
+    "bc92a6860fda",
+    "930aff59a5dd"
+  ],
+  "evidence_trace_ids": [
+    "trace_05ad03ef8826",
+    "trace_0074f4d819e3",
+    "trace_a210729ab6f8",
+    "trace_bb90ef50a759",
+    "trace_cc4a7c9f3c2f",
+    "trace_82cf7f5f4cb5"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:08:37.506672",
+  "updated_at": "2026-04-23T20:41:18.034168"
+}

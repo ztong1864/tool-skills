@@ -1,0 +1,41 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_8bedd120a9be",
+  "paper_id": "b5d313a80058",
+  "raw_path": "/Users/weiji-feng/project/MOFDiscoveryAgent/相关文献/Li 等 - 2019 - The design of a novel and resistant Zn(PZDC)(ATZ) -2.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": false,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Supporting Information \nThe Design of Novel and Resistant Zn(PZDC)(ATZ) MOF Catalyst for Chemical \nFixation of CO2 under solvent-free Conditions\nYixing Li, Xiao Zhang, Ping Xu, Zimin Jiang, Jianmin Su"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-28T13:36:18.490545"
+}

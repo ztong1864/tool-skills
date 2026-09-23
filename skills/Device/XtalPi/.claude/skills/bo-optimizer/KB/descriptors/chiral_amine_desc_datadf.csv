@@ -1,0 +1,22 @@
+,MolWt,MolLogP,TPSA,NumHDonors,NumHAcceptors,NumRotatableBonds,RingCount,AromaticRingCount,HeavyAtomCount,FractionCSP3,NumChiralCenters
+(S)-(+)-1-(2-Pyrrolidinylmethyl)pyrrolidine,154.26,0.834,15.27,1,2,2,2,0,11,1.0,1
+(S)-pyrrolidin-3-ol,87.12,-0.659,32.26,2,2,0,1,0,6,1.0,1
+(S)-pyrrolidin-3-ol hydrochloride,123.58,-0.238,32.26,2,2,0,1,0,7,1.0,1
+(S)-2-(pyrrolidin-2-yl)propan-2-ol,129.2,0.509,32.26,2,2,1,1,0,9,1.0,1
+"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",253.35,2.675,32.26,2,2,3,3,2,19,0.294,1
+"(S)-Bis(3,5-bis(trifluoromethyl)phenyl)(pyrrolidin-2-yl)methanol",525.33,6.75,32.26,2,2,3,3,2,35,0.429,1
+"(S)-Bis(3,5-dimethylphenyl)(pyrrolidin-2-yl)methanol",309.45,3.908,32.26,2,2,3,3,2,23,0.429,1
+(S)-Pyrrolidin-2-yldi-p-tolylmethanol,281.4,3.291,32.26,2,2,3,3,2,21,0.368,1
+(S)-Bis(4-methoxyphenyl)(pyrrolidin-2-yl)methanol,313.4,2.692,50.72,2,4,5,3,2,23,0.368,1
+(S)-Pyrrolidin-2-ylbis(4-(trifluoromethyl)phenyl)methanol,389.34,4.712,32.26,2,2,3,3,2,27,0.368,1
+(S)-Di(naphthalen-2-yl)(pyrrolidin-2-yl)methanol,353.47,4.981,32.26,2,2,3,5,4,27,0.2,1
+"(S)-(–)-α,α-Diphenyl-2-pyrrolidinemethanol trimethylsilyl ether",325.53,4.534,21.26,1,2,5,3,2,23,0.4,1
+(S)-2-(Methoxydiphenylmethyl)pyrrolidine,267.37,3.329,21.26,1,2,4,3,2,20,0.333,1
+L-Prolinanilide,190.25,1.377,41.13,2,2,2,2,1,14,0.364,1
+L-Prolinamide,114.15,-0.776,55.12,2,2,1,1,0,8,0.8,1
+(S)-Pyrrolidine-2-carboxamide monohydrochloride,150.61,-0.355,55.12,2,2,1,1,0,9,0.8,1
+"(R)-N-(2,6-dimethylphenyl)piperidine-2-carboxamide",232.33,2.384,41.13,2,2,2,2,1,17,0.5,1
+methyl L-prolinate hydrochloride,165.62,0.333,38.33,1,3,1,1,0,10,0.833,1
+4-Hydroxy-L-proline methyl ester hydrochloride,181.62,-0.696,58.56,2,4,1,1,0,11,0.833,2
+(R)-piperidin-2-ylmethanol,115.18,0.121,32.26,2,2,1,1,0,8,1.0,1
+tert-Butyl (3R)-3-(hydroxymethyl)piperazine-1-carboxylate,216.28,0.188,61.8,2,4,1,1,0,15,0.9,1

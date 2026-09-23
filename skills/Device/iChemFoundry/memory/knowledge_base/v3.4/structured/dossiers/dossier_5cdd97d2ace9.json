@@ -1,0 +1,68 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_5cdd97d2ace9",
+  "canonical_material_id": "mat_fd2965d8c912",
+  "canonical_name": "MIL-120(Al)-AP",
+  "metal_element": "Al",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_19a28b360c27",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_a296a462f8e0",
+    "mcard_a03bc99f49a5",
+    "mcard_5c28da775304",
+    "mcard_ad8ccdd39d26",
+    "mcard_67c1470f2db4",
+    "mcard_bf774a4d5af4",
+    "mcard_3067e96e3a2f"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_da4f53cde00e",
+    "mechcard_8166faad24f6",
+    "mechcard_fdd1ec2ec828",
+    "mechcard_fe668622f479"
+  ],
+  "recipe_card_ids": [
+    "recipe_866aca79b5a8",
+    "recipe_82a96eb1a1f4"
+  ],
+  "claim_card_ids": [
+    "claim_89a303e6b456",
+    "claim_067470812dc2"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "cccbb8ebbffc"
+  ],
+  "evidence_trace_ids": [
+    "trace_0afacb591ce0",
+    "trace_881dd91af596",
+    "trace_d81039549caa",
+    "trace_0cf646a036d9",
+    "trace_c358754bef9e",
+    "trace_e68bff162fc4",
+    "trace_c7aa2fcd3629",
+    "trace_c2243d4b0356",
+    "trace_5dcf7e557c97",
+    "trace_487278e121d7",
+    "trace_491f22851c66",
+    "trace_1b8c1a9ee5d6"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:26:48.003301",
+  "updated_at": "2026-04-23T17:27:33.635804"
+}

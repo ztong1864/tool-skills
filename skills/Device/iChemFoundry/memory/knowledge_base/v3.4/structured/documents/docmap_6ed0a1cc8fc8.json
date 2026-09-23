@@ -1,0 +1,74 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_6ed0a1cc8fc8",
+  "paper_id": "bfa7c9affeb8",
+  "raw_path": "相关文献/氮唑相关文献_Zhang 等 - 2022 - Zn Metal–Organic Framework with High Stability and.pdf",
+  "title": "Zn Metal–Organic Framework with High Stability and",
+  "authors": [
+    "氮唑相关文献_Zhang"
+  ],
+  "year": 2022,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "II-3",
+    "ZIF-8",
+    "MIL-101",
+    "FTS-7",
+    "Benzene-1",
+    "MIL-53",
+    "GUT-3",
+    "MIL-47",
+    "GUPT-1",
+    "OLEX-2"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Al",
+    "Cr",
+    "Mn",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "tricarboxylate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif",
+    "hkust"
+  ],
+  "key_sections": {
+    "abstract": "By the employment of 5-amino-1H-tetrazole and pyromellitic acid\nligands to assemble with Zn2+ ions, a three-dimensional3,4-connect fry network\n{[Zn2(HATZ)(ATZ)2(PMA)0.5]·(H2O)5}n (GUPT-1, HATZ = 5-amino-1H-",
+    "results_summary": "Zn Metal−Organic Framework with High Stability and Sorption\nSelectivity for CO2\nShuhua Zhang,* Zhonghang Chen, Tao Zhou, and Guangzhao Li*\nCite This: Organometallics 2022, 41, 829−835\nRead Online\nACCE"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:49:21.630604"
+}

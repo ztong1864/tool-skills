@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_5cd6337d564c",
+  "paper_id": "6f6e2157a8fd",
+  "raw_path": "相关文献/Cd-PO4-trzAngew Chem Int Ed - 2025 - Sarkar - Near‐Zero Thermal Expansion in Coordination Polymer Cd 1 2 4‐Triazole 2 H2PO4 2.pdf",
+  "title": "PO4-trzAngew Chem Int Ed - 2025 - Sarkar - Near‐Zero Thermal Expansion in Coordination Polymer Cd 1 2 4‐Triazole 2 H2PO4 2",
+  "authors": [
+    "Cd"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "DK-8000",
+    "SPring-8"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Ni",
+    "Fe",
+    "Mn",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "BDC",
+    "TED",
+    "carboxylate",
+    "tricarboxylate"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "abstract": "Zero thermal expansion is a rare but desirable physical property for materials. Here, we report an unprecedented",
+    "conclusion": "In summary, we have identiﬁed a volumetric nZTE in a\nmonoclinic CP material, Cd-Tz, that manifest in a frustrated",
+    "results_summary": "Research Article\nHow to cite: Angew. Chem. Int. Ed. 2025, 64, e202503365\ndoi.org/10.1002/anie.202503365\nCrystal Engineering\nNear-Zero Thermal Expansion in Coordination Polymer\nCd(1,2,4-Triazole)2(H2PO"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:12:26.862060"
+}

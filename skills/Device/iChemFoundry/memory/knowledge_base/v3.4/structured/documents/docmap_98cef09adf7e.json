@@ -1,0 +1,92 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_98cef09adf7e",
+  "paper_id": "09e67f192def",
+  "raw_path": "相关文献/Zhang 等 - 2012 - Metal Azolate Frameworks From Crystal Engineering to Functional Materials.pdf",
+  "title": "Metal Azolate Frameworks From Crystal Engineering to Functional Materials",
+  "authors": [
+    "Zhang"
+  ],
+  "year": 2012,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H8",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MAF-4",
+    "MAF-26",
+    "MAF-2",
+    "MAF-5",
+    "ZIF-839",
+    "MAF-24",
+    "MIL-100",
+    "Dipyridyl-1",
+    "MOF-5",
+    "MAF-3",
+    "MAF-6",
+    "MAF-7",
+    "MAF-25",
+    "ZIF-739",
+    "MAF-47-x"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Mn",
+    "Cd",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "benzimidazolate",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "pyridine",
+    "azolate",
+    "imidazolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "dia",
+    "mog",
+    "acs",
+    "nia",
+    "mof-5",
+    "nbo",
+    "bcu",
+    "pcu",
+    "sod",
+    "zif",
+    "sql"
+  ],
+  "key_sections": {
+    "conclusion": "1028\nAuthor Information\n1029\nBiographies\n1029\nAcknowledgment\n1029\nReferences\n1029\n1. INTRODUCTION\nCrystal engineering of coordination polymers with structure-",
+    "results_summary": "Published:\nSeptember 22, 2011\nr 2011 American Chemical Society\n1001\ndx.doi.org/10.1021/cr200139g | Chem. Rev. 2012, 112, 1001–1033\nREVIEW\npubs.acs.org/CR\nMetal Azolate Frameworks: From Crystal Enginee"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:45:41.672341"
+}

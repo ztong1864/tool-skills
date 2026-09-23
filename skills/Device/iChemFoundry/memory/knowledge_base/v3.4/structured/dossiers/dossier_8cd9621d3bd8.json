@@ -1,0 +1,51 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_8cd9621d3bd8",
+  "canonical_material_id": "mat_d4c2d16e00c4",
+  "canonical_name": "ZnMOF-1-48h",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_fafd6459b5a4",
+    "mcard_52ee7845547c"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_02d0d82fbc83",
+    "mechcard_3be9b4e0d3f7"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_c9f486b282ea",
+    "claim_6365337a49e4"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "de406c62e157"
+  ],
+  "evidence_trace_ids": [
+    "trace_a74b6b891648",
+    "trace_a51b3a85d05c",
+    "trace_70acdcb5ca53",
+    "trace_9ce54fcce0ad"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:35:23.488405",
+  "updated_at": "2026-04-23T20:36:04.226990"
+}

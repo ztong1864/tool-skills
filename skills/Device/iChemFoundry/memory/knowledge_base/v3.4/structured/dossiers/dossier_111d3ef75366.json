@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_111d3ef75366",
+  "canonical_material_id": "mat_0a47ba0f89b1",
+  "canonical_name": "[Zn2.5(trz)(Hbtc)2(H2O)2]",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_9b529ca41c80",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_00899f4074f5"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_693acf36a786",
+    "mechcard_a16851258742"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_aeb23f79691f",
+    "claim_fc0d1339b943"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "d0656fee58b5"
+  ],
+  "evidence_trace_ids": [
+    "trace_76261f4d5dbc",
+    "trace_15b2b6a09633",
+    "trace_7e8bebc34556"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:28:05.107374",
+  "updated_at": "2026-04-23T21:28:37.859532"
+}

@@ -1,0 +1,7 @@
+S103
+
+H
+C8H17-nm-MeOC 6H4
+H(HPLC conditions)
+(Total)(PeakNo) (PeakName) (R.Time)(Analysis Results)
+(PerCent) (PeakArea) (PeakHeight)

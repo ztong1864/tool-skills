@@ -1,0 +1,22 @@
+S19
+ acetate = 50/1) as a liquid: 94% ee (HPL C conditions: Chiralcel PC-4 column,
+MeOH/H 2O = 82/18, 0.7 mL/min, λ = 214 nm, tR(minor) = 19.9 min, tR(major) = 21.0
+min); [α]D29.5 = -61.8 ( c = 1.02, CHCl 3); 1H NMR (400 MHz, CDCl 3) δ 5.24-5.04 (m,
+2 H, CH=C=CH), 3.74 (s, 6 H, 2 × CH 3), 3.51 (t, J = 7.6 Hz, 1 H, CH), 2.64-2.51 (m,
+2 H, CH 2), 2.00-1.86 (m, 2 H, CH 2), 1.41-1.19 (m, 12 H, 6 × CH 2), 0.88 (t, J = 7.0 Hz,
+3 H, CH 3); 13C NMR (100 MHz, CDCl 3) δ 203.9, 169.34, 169.28, 93.0, 87.3, 52.4,
+51.2, 31.8, 29.4, 29.2, 29.1, 29.0, 28.7, 28.0, 22.6, 14.0; IR (neat) ν (cm-1) 2954, 2925,
+2854, 1965, 1738, 1436, 1340, 1261, 1230, 1152, 1081, 1040; MS (EI) m/z (%): 296 (M
++, 4.51), 138 (100); HRMS calcd. for C 17H28O4 (M+): 296.1988; Found: 296.1992.
+(2) Preparation of ( R)-methyl tetradeca-4,5-dienoate ( Ra)-5.4 (hanyl-3-81)
+
+To a Schlenk tube were added Li Cl (145.0 mg, purity = 98%, 3.36 mmol),
+(Ra)-4dc (499.6 mg, 1.68 mmol), DMSO (9.0 mL), and  H2O (119.5 mg, 6.72 mmol)
+sequentially. The Schlenk tube was then equi pped with a condenser and heasated with
+stirring with a preheated 180 oC oil bath. The reaction was complete after being
+stirred for 1.5 h as monitored by TLC. Then the resulting mixture was diluted with
+ethyl acetate (20 mL) and quenched with H 2O (7.0 mL). The organic layer was
+separated, washed with H 2O (3 × 10 mL) and brine (3 × 10 mL), and dried over
+anhydrous Na 2SO 4. After filtration and evaporat ion, the residue was purified by
+chromatography (eluent: petroleum ether/ethy l acetate = 50/1) on silica gel to afford
+(Ra)-5 (301.0 mg, 75%) as a liquid: 95% ee (HPLC conditions: Chiralcel OD-H

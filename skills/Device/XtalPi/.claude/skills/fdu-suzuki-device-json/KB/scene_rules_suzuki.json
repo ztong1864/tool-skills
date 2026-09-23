@@ -1,0 +1,87 @@
+{
+  "scene_name": "suzuki_coupling",
+  "version": "0.1.0",
+  "supported_reaction_type": "suzuki",
+  "description": "Scene-level rules for generating a final device-executable JSON for a Suzuki coupling workflow.",
+  "keywords": [
+    "suzuki",
+    "cross-coupling",
+    "偶联",
+    "铃木",
+    "c-c bond",
+    "碳碳键"
+  ],
+  "aliases": {
+    "aryl_halide": [
+      "4-bromoacetophenone",
+      "4-溴苯乙酮"
+    ],
+    "boronic_acid": [
+      "phenylboronic acid",
+      "苯硼酸"
+    ],
+    "catalyst": [
+      "PdCl2",
+      "palladium chloride",
+      "氯化钯"
+    ],
+    "base": [
+      "K2CO3",
+      "potassium carbonate",
+      "碳酸钾"
+    ],
+    "solvent": [
+      "DMF",
+      "N,N-dimethylformamide"
+    ],
+    "internal_standard": [
+      "internal standard",
+      "联苯",
+      "biphenyl"
+    ],
+    "product": [
+      "4-phenylacetophenone",
+      "4-苯基苯乙酮"
+    ]
+  },
+  "defaults": {
+    "aryl_halide_mmol": 0.1,
+    "aryl_halide_mmol_range": [0.08, 0.12],
+    "boronic_acid_equiv": 1.1,
+    "boronic_acid_equiv_range": [1.0, 1.2],
+    "base_equiv": 2.0,
+    "base_equiv_range": [1.5, 3.0],
+    "catalyst_mol_percent": 5.0,
+    "catalyst_mol_percent_cap": 10.0,
+    "reaction_total_volume_mL": 0.8,
+    "reaction_total_volume_range_mL": [0.67, 1.0],
+    "reaction_temperature_C": 25,
+    "reaction_duration_s": 28800,
+    "rotation_speed_rpm": 650,
+    "post_homogenize_duration_s": 300,
+    "internal_standard_volume_mL": 0.1,
+    "filtered_aliquot_mL": 0.05,
+    "solvent_minimum_step_mL": 0.01,
+    "prefer_internal_standard": true,
+    "prepare_filtered_hplc_sample": true
+  },
+  "molecular_weights": {
+    "PdCl2": 177.32
+  },
+  "selection_policy": {
+    "prefer_stock_solution": true,
+    "prefer_dmf_for_reaction_stage": true,
+    "prefer_exact_alias_match": true
+  },
+  "workflow": [
+    "add catalyst",
+    "add aryl halide stock",
+    "add boronic acid stock",
+    "add base solution",
+    "add solvent if needed",
+    "main stirring",
+    "add internal standard if available",
+    "homogenize",
+    "filter aliquot"
+  ]
+}

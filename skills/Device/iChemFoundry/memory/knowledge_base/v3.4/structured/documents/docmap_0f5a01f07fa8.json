@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_0f5a01f07fa8",
+  "paper_id": "8fafae7223b5",
+  "raw_path": "相关文献/ja3c11671_si_001.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CALF-20",
+    "NU-220",
+    "LTA-4"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Supplementary Information \nTailoring \nHydrophobicity \nand \nPore \nEnvironment \nin \nPhysisorbents for Improved Carbon Dioxide Capture under \nHigh Humidity \nXiaoliang Wang1, Maytham Alzayer2, Arthur J. S"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:08:27.236858"
+}

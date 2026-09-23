@@ -1,0 +1,24 @@
+{
+  "fiji": {
+    "path": null,
+    "use_relative_path": true,
+    "relative_path": "../Fiji.app",
+    "memory": "4G",
+    "headless": true,
+    "auto_download": false
+  },
+  "analysis": {
+    "default_threshold_method": "otsu",
+    "default_dark_background": true,
+    "calibration": {
+      "pixel_width": 1.0,
+      "pixel_height": 1.0,
+      "unit": "pixel"
+    }
+  },
+  "output": {
+    "save_json": true,
+    "save_images": false,
+    "verbose": false
+  }
+}

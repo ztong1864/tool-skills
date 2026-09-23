@@ -1,0 +1,237 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_c111ef869e61",
+  "paper_id": "94d0484540b0",
+  "title": "Construction of a zeolite A-type multivariate meta",
+  "year": 2021,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "Xe"
+  ],
+  "one_line_summary": "BUT-25 shows thermal_decomposition_onset = 310.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "thermal_decomposition_onset = 310.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "formate pillars connecting honeycomb layers → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "excitation-light absorption overlap → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use imidazolate linkers to build MOFs with zeolite topology → enables formation of zeolite-type MOFs"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce a dicarboxylate linker with a 120° angle such as isophthalate in post-synthetic linker exchange of BUT-25 → enables successful structural transformation to a new zeolite-type framework"
+    },
+    {
+      "title": "Comparison",
+      "body": "BUT-26 vs BUT-27: winner=tie on Zn coordination environment"
+    },
+    {
+      "title": "Comparison",
+      "body": "BUT-26 formed from BUT-25 using H2TDC linker with 148° angle vs BUT-27 formed from BUT-25 using H2IPA linker with 120° angle: winner=tie on structural outcome after linker exchange"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] add H2IPA linker with a 120° angle to BUT-25 while aiming to form a pillared-layer structure: the linker partially replaces the ATZ linker instead of preserving a pillared-layer motif"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_8d265fcc3005",
+    "trace_e8ae63cf94fe",
+    "trace_205141ab0d04",
+    "trace_5a855c22c887",
+    "trace_3628db8c51e2",
+    "trace_d7d13726f904",
+    "trace_cf4d18c97245",
+    "trace_df92ef953ca4",
+    "trace_8c57b555784f",
+    "trace_a578661638d3",
+    "trace_1e6fb2ef340e",
+    "trace_87416549d8d2",
+    "trace_9c62c324efad",
+    "trace_edbfc118075b",
+    "trace_d4877960d236",
+    "trace_0522d18d893d",
+    "trace_e62bfce4336d",
+    "trace_dedb9224356b",
+    "trace_24fba9b36b43",
+    "trace_b9d5266dd811",
+    "trace_f7b6dbd9080e",
+    "trace_e3167d538a81",
+    "trace_492db3e3e356",
+    "trace_748646d0d2ba",
+    "trace_95bb94ab6f7b",
+    "trace_a4468af1685e",
+    "trace_22bef164de2a",
+    "trace_d011fcf5ff07",
+    "trace_450af1ead037",
+    "trace_7d8476a2602e",
+    "trace_e23ef842cfe8",
+    "trace_35ef4528c601",
+    "trace_6c73f3d2c3c0",
+    "trace_10f2ddd96666",
+    "trace_16ca73c93a90",
+    "trace_7875d4e6ee0f",
+    "trace_6f8b444962b1",
+    "trace_f7e7d334e424",
+    "trace_481fd0517a2f",
+    "trace_e754f2db1a4f",
+    "trace_b29ac52135a3",
+    "trace_619dd46c19bd",
+    "trace_10fd82e476af",
+    "trace_e9a165ed11c0",
+    "trace_b3ab08ffa919",
+    "trace_436ad41ca217",
+    "trace_b8ea95ee63ed",
+    "trace_3c18f052901d",
+    "trace_d4180a5eb333",
+    "trace_9ece555d03de",
+    "trace_46d03ae57e5b",
+    "trace_e9f07073aac6",
+    "trace_49b5c47d325a",
+    "trace_4756e15ccc96",
+    "trace_ce68f0edb416",
+    "trace_8fed5e683772",
+    "trace_e9318948be7b",
+    "trace_492db3e3e356",
+    "trace_3c18f052901d",
+    "trace_a4468af1685e",
+    "trace_10fd82e476af",
+    "trace_95bb94ab6f7b",
+    "trace_8d265fcc3005",
+    "trace_df92ef953ca4",
+    "trace_6c73f3d2c3c0",
+    "trace_8fed5e683772",
+    "trace_f7e7d334e424",
+    "trace_d4877960d236",
+    "trace_e3167d538a81",
+    "trace_e9f07073aac6",
+    "trace_450af1ead037",
+    "trace_35ef4528c601",
+    "trace_d011fcf5ff07",
+    "trace_9c62c324efad",
+    "trace_10f2ddd96666",
+    "trace_edbfc118075b",
+    "trace_e9318948be7b",
+    "trace_e8ae63cf94fe",
+    "trace_49b5c47d325a",
+    "trace_7d8476a2602e",
+    "trace_b3ab08ffa919",
+    "trace_e23ef842cfe8",
+    "trace_748646d0d2ba",
+    "trace_0522d18d893d",
+    "trace_5a855c22c887",
+    "trace_8c57b555784f",
+    "trace_b8ea95ee63ed",
+    "trace_e754f2db1a4f",
+    "trace_d4180a5eb333",
+    "trace_b29ac52135a3",
+    "trace_f7b6dbd9080e",
+    "trace_22bef164de2a",
+    "trace_ce68f0edb416",
+    "trace_3628db8c51e2",
+    "trace_7875d4e6ee0f",
+    "trace_205141ab0d04",
+    "trace_9ece555d03de",
+    "trace_87416549d8d2",
+    "trace_dedb9224356b",
+    "trace_b9d5266dd811",
+    "trace_a578661638d3",
+    "trace_619dd46c19bd",
+    "trace_1e6fb2ef340e",
+    "trace_e9a165ed11c0",
+    "trace_4756e15ccc96",
+    "trace_24fba9b36b43",
+    "trace_e62bfce4336d",
+    "trace_6f8b444962b1",
+    "trace_436ad41ca217",
+    "trace_d7d13726f904",
+    "trace_481fd0517a2f",
+    "trace_cf4d18c97245",
+    "trace_16ca73c93a90",
+    "trace_46d03ae57e5b"
+  ],
+  "measurement_card_ids": [
+    "mcard_4ba6b0f8269a"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_83c830e5ef2a",
+    "mechcard_1c4fb5cebece",
+    "mechcard_52eba8fc57db",
+    "mechcard_ce4b611982cb",
+    "mechcard_3e68faa941c3",
+    "mechcard_70be699726f0",
+    "mechcard_f02d225d9ac4",
+    "mechcard_a6d06871fa37"
+  ],
+  "recipe_card_ids": [
+    "recipe_6710cf90c381",
+    "recipe_4f8d95a6225b",
+    "recipe_0bc6f75be310",
+    "recipe_5d7380f34a91"
+  ],
+  "claim_card_ids": [
+    "claim_94bf30ac8ddd",
+    "claim_c23fa1c60684",
+    "claim_092c1a17158d",
+    "claim_764904e30dfb",
+    "claim_71b98a877ec3",
+    "claim_96070a0ecdd7",
+    "claim_c9ac56e978be"
+  ],
+  "design_rule_card_ids": [
+    "drule_3cbf09775e75",
+    "drule_a04abf4bb91c",
+    "drule_80642abd7a2c",
+    "drule_7c4541711910",
+    "drule_4b11491d406b"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_d64fbf88d839",
+    "comp_8511ff8ae174"
+  ],
+  "failure_case_card_ids": [
+    "fail_677694c227d1",
+    "fail_b203b02993a7"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c9787ddbda34",
+    "mat_455b7e9f6af3"
+  ],
+  "dossier_ids": [
+    "dossier_fca3a321c80e",
+    "dossier_acad84153ee5"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Compared with 148° H2TDC, 120° H2IPA does not preserve the pillared-layer motif; it partially replaces ATZ− because the smaller angle disfavors pillared layers.",
+    "One-pot synthesis of mixed carboxylate/imidazolate zeolitic MOFs is rarely successful because competing products tend to form.",
+    "BUT-27, a 3D zeolite A-type MOF with LTA topology, was synthesized from BUT-25 by post-synthetic linker exchange via single-crystal-to-single-crystal transformation."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:52.029152",
+  "updated_at": "2026-04-24T00:19:52.029158",
+  "raw_path": "相关文献/氮唑相关文献_Talha 等 - 2021 - Construction of a zeolite A-type multivariate meta.pdf",
+  "authors": [
+    "氮唑相关文献_Talha"
+  ]
+}

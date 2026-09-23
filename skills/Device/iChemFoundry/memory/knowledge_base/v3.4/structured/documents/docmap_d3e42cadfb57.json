@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_d3e42cadfb57",
+  "paper_id": "40538d8f41b8",
+  "raw_path": "相关文献/c3cp52653d.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": false,
+  "has_comparison_tables": true,
+  "has_synthesis_section": false,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "POLY-4",
+    "ZSM-5"
+  ],
+  "mentioned_metals": [
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "MIM"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "Classical molecular dynamics simulations were performed to\ninvestigate diﬀusion of a range n-alkanes in the straight and",
+    "results_summary": "19024\nPhys. Chem. Chem. Phys., 2013, 15, 19024--19030\nThis journal is c the Owner Societies 2013\nCite this: Phys.Chem.Chem.Phys.,2013,\n15, 19024\nMolecular dynamics simulations of longer n-alkanes\nin s"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:40:08.260851"
+}

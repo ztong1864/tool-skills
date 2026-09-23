@@ -1,0 +1,29 @@
+{
+  "layout_code": "T-3:17",
+  "substance": "",
+  "resource_type": "TTR2T",
+  "tray_QR_code": "TTR2T_01",
+  "QR_code": "",
+  "unit_column": 0,
+  "unit_row": 0,
+  "unit_type": "exp_pipetting",
+  "unit_id": "unit-b74566b74dbe",
+  "process_json": {
+    "src_layout_code": "N1-2:0",
+    "resource_type": "SB125TC",
+    "substance": "乙腈",
+    "add_volume": 0.5,
+    "disable_LLDSensitivity": false,
+    "custom": {
+      "unit": "mL",
+      "unitOptions": [
+        "μL",
+        "mL",
+        "L"
+      ],
+      "step": {
+        "add_volume": 0.01
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_aab785c78e96",
+  "canonical_material_id": "mat_1442f06ffec7",
+  "canonical_name": "[Zn2(TRZ)2(L)]",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_ceaaf3444275",
+  "pillar_id": "pil_9b529ca41c80",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_3f096b307513"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_e12f6889b52e"
+  ],
+  "recipe_card_ids": [
+    "recipe_c6980870a065"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 0.5,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "25907edd8ee8"
+  ],
+  "evidence_trace_ids": [
+    "trace_5a188c9e2b8a",
+    "trace_e42f2a4f5b59"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T23:11:30.236509",
+  "updated_at": "2026-04-23T23:11:30.236682"
+}

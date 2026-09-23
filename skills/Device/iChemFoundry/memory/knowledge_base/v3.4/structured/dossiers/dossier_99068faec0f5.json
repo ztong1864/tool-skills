@@ -1,0 +1,67 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_99068faec0f5",
+  "canonical_material_id": "mat_a1fe856f00e9",
+  "canonical_name": "Zn5(COO)2(TZ)4",
+  "metal_element": "Zn",
+  "node_signature_id": "node_bc4bea787632",
+  "primary_linker_id": "lig_389719aa176c",
+  "pillar_id": "pil_13c4998a4a40",
+  "topology": "pcu",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_4c1cde2e502b",
+    "mcard_d65a93227e1b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_abb0d0d8999e",
+    "mechcard_23049c615646",
+    "mechcard_4544e256514c",
+    "mechcard_ff7f1e703796",
+    "mechcard_73cdf0eddd52",
+    "mechcard_a96216fbbd97",
+    "mechcard_7dacdd65c529"
+  ],
+  "recipe_card_ids": [
+    "recipe_dd330d4f2505",
+    "recipe_34f62e273681",
+    "recipe_7afe822696b8"
+  ],
+  "claim_card_ids": [
+    "claim_abdcc63ab014",
+    "claim_eeaef467b7b0",
+    "claim_7900bcc6c35c",
+    "claim_a2793e13625f"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "6dce67f7e059",
+    "b2a9adbbc4b4"
+  ],
+  "evidence_trace_ids": [
+    "trace_8c97158c9b3f",
+    "trace_af92410a82c4",
+    "trace_e2ebe211d371",
+    "trace_1bd77999f368",
+    "trace_d73921f6918f",
+    "trace_9bfb56a28186",
+    "trace_1a7f1779ef70",
+    "trace_0a125c0da491",
+    "trace_7d81327c3acd"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:39:38.086306",
+  "updated_at": "2026-04-23T23:13:16.036607"
+}

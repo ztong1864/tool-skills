@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_d4a723a8848d",
+  "paper_id": "ddc984c6572e",
+  "raw_path": "相关文献/Luo 等 - 2013 - Framework isomers controlled by the speed of cryst.pdf",
+  "title": "Framework isomers controlled by the speed of cryst",
+  "authors": [
+    "Luo"
+  ],
+  "year": 2013,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "BDC"
+  ],
+  "mentioned_topologies": [
+    "dia"
+  ],
+  "key_sections": {
+    "results_summary": "ISSN 1477-9226\nDalton\nTransactions\nAn international journal of inorganic chemistry\nwww.rsc.org/dalton\nVolume 42 | Number 38 | 14 October 2013 | Pages 13767–14032\nCOVER ARTICLE\nLuo, Luo et al. \nFramewo"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:29:32.805499"
+}

@@ -1,0 +1,54 @@
+{
+  "checkpoint:approve-device-task-creation": {
+    "after_step_id": "task-step:orchestrate-device-protocol",
+    "blocking_rule_id": "rule:no-device-task-without-user-approval",
+    "entity_type": "Checkpoint",
+    "id": "checkpoint:approve-device-task-creation",
+    "name": "Approve device task creation",
+    "question": "Please confirm whether to create the device task from the generated protocol JSON.",
+    "required": true,
+    "resume_step_id": "task-step:create-device-task",
+    "shown_artifact_ids": [
+      "artifact:device-protocol-json"
+    ]
+  },
+  "checkpoint:review-amounts": {
+    "after_step_id": "task-step:calculate-reagent-amounts",
+    "blocking_rule_id": "rule:show-confirmable-artifacts-before-continuing",
+    "entity_type": "Checkpoint",
+    "id": "checkpoint:review-amounts",
+    "name": "Review reagent amounts",
+    "question": "Please confirm the calculated reagent amounts before generating numbered experiment steps.",
+    "required": true,
+    "resume_step_id": "task-step:generate-numbered-steps",
+    "shown_artifact_ids": [
+      "artifact:amount-table"
+    ]
+  },
+  "checkpoint:review-numbered-steps": {
+    "after_step_id": "task-step:generate-numbered-steps",
+    "blocking_rule_id": "rule:show-confirmable-artifacts-before-continuing",
+    "entity_type": "Checkpoint",
+    "id": "checkpoint:review-numbered-steps",
+    "name": "Review numbered experiment steps",
+    "question": "Please confirm step order, time, temperature, and workup before writing the experiment plan.",
+    "required": true,
+    "resume_step_id": "task-step:write-experiment-plan",
+    "shown_artifact_ids": [
+      "artifact:numbered-experiment-steps"
+    ]
+  },
+  "checkpoint:review-recommendations": {
+    "after_step_id": "task-step:recommend-experiment-conditions",
+    "blocking_rule_id": "rule:show-confirmable-artifacts-before-continuing",
+    "entity_type": "Checkpoint",
+    "id": "checkpoint:review-recommendations",
+    "name": "Review recommendation table",
+    "question": "Please confirm which recommended experiment combinations should continue to amount calculation.",
+    "required": true,
+    "resume_step_id": "task-step:calculate-reagent-amounts",
+    "shown_artifact_ids": [
+      "artifact:recommendation-table"
+    ]
+  }
+}

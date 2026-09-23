@@ -1,0 +1,77 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_e03b50b33525",
+  "paper_id": "c2ce30b6259c",
+  "raw_path": "相关文献/Zn-5-（2H-四唑-5-基）间苯二甲酸.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "H2 storage",
+  "normalized_task_id": "H2_storage",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MCF-82",
+    "MAC-20-I",
+    "SHF-61",
+    "MIL-88",
+    "MAC-18",
+    "MAC-20-II",
+    "MAC-19",
+    "BO-14",
+    "UiO-66",
+    "MAC-17",
+    "MIL-53",
+    "SY-2",
+    "MAC-19-I",
+    "MAC-20",
+    "HMOF-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Mn",
+    "Mg",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "DOBDC",
+    "BTC",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "DABCO"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "INORGANIC  \nCHEMISTRY\nF R O N T I E R S\nVolume 8 | Number 7 | 7 April 2021\nrsc.li/frontiers-inorganic INORGANIC CHEMISTRY\nFRONTIERS\nRESEARCH ARTICLE\nCite this: Inorg. Chem. Front., 2021,\n8, 1666\nRecei"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:22:33.848659"
+}

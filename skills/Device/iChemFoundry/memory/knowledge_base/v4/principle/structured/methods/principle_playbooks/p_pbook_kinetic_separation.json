@@ -1,0 +1,29 @@
+{
+  "TYPE_TAG": "PrinciplePlaybook",
+  "id": "p_pbook_kinetic_separation",
+  "name": "kinetic_separation_design_playbook",
+  "mechanism_archetype": "kinetic_separation",
+  "display_name_zh": "动力学分离设计Playbook",
+  "applicable_to_task_ids": [
+    "C3H6_C3H8_separation",
+    "C2H4_C2H6_separation",
+    "n_butane_isobutane"
+  ],
+  "core_principle_ids": [
+    "p_principle_window_sieving_kinetic_separation"
+  ],
+  "recommended_levers_ordered": [
+    "p_lever_pore_aperture_tuning_kinetic_selectivity"
+  ],
+  "screening_protocol_id": "p_diag_kinetic_selectivity_root_cause",
+  "must_check_anti_patterns": [
+    "p_counter_reverse_kinetic_selectivity_high_loading"
+  ],
+  "evaluation_metrics": [
+    "kinetic_selectivity",
+    "diffusion_time_constant",
+    "working_capacity"
+  ],
+  "supporting_task_playbook_ids": [],
+  "confidence": 0.9
+}

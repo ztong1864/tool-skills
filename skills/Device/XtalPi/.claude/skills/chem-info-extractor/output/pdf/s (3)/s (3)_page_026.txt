@@ -1,0 +1,22 @@
+S26
+ Ar-H), 4.74 (s, 1 H, OH), 4.43 (dd, J1 = 9.2 Hz, J2 = 4.7 Hz, 1 H, CH C(OH)Ph 2), 4.02
+(s, 1 H, CHC ≡C), 2.82 (q, J = 8.5 Hz, 1 H, one H from CH 2), 2.54-2.43 (m, 1 H, one
+H form CH 2), 2.36 (td, J1 = 6.7 Hz, J2 = 1.9 Hz, 2 H, CH 2), 1.97-1.80 (m, 1 H, one H
+from CH 2), 1.80-1.45 (m, 7 H, one H from CH 2 and CH 2×3), 1.45-1.20 (m, 8 H,
+CH 2×4), 0.89 (t, J = 6.5 Hz, 3 H, CH 3); 13C NMR (75 MHz, CDCl 3) δ = 148.0, 146.6,
+139.8, 128.3, 128.0, 127.92, 127.90, 127.1, 126.5, 126.2, 125.4, 87.7, 77.8, 75.8, 67.8, 57.3, 49.1, 31.9, 29.9, 29.4, 29.2, 29.1, 28.9, 24.2, 22.7, 18.8, 14.1; MS (ESI): m/z
+518(M+K
++), 502 (M+Na+), 480 (M+H+); IR (neat): v = 3392, 2926, 2855, 1600, 1493,
+1449, 1376, 1174, 1032 cm-1; HRMS calcd for C 34H41NO [M+]: 479.3188, found:
+479.3189.
+(2) Reaction of ( S,S)-5ba with 50 mol% of ZnBr 2 in eq. 2 of Scheme 2 (lrz-8-5):
+
+Typical procedural for the conversion of (S,S)-5ba to (R)-4ba: To an
+oven-dried Schlenk tu be was added ZnBr 2 (24.3 mg, 0.1 mmol, 98%  from Alfa) inside
+a glove box. The Schlenk tube was then ta ken out of the glove box and heated the
+ZnBr 2 until melting under vacuum with a h eating gun. After cooling to room
+temperature, ( S,S)-5ba (93.8 mg, 0.2 mmol, 98%)  and toluene (1 mL) were then
+added under argon atmosphere. The Schlenk tu be was then equipped with a condenser
+and placed in a pre-he ated oil bath at 110 oC with stirring for 8 h. After cooling to
+room temperature, the crude reaction mixture was filtered through a short pad of silica
+gel and eluted with ether (10 mL). After evaporation, 31% of the propargylic amine

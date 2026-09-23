@@ -1,0 +1,7 @@
+S113
+
+H
+(CH 2)2CH2ClPh
+H(HPLC conditions)
+(Total)(PeakNo) (PeakName) (R.Time)(Analysis Results)
+(PerCent) (PeakArea) (PeakHeight)

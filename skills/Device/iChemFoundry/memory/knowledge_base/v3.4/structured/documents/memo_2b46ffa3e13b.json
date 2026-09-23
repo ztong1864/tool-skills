@@ -1,0 +1,152 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_2b46ffa3e13b",
+  "paper_id": "bc94c5cb3329",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "Xe"
+  ],
+  "one_line_summary": "CUPMOF-5 shows IAST_selectivity_CO2/Xe = 220000000.0 dimensionless for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "IAST_selectivity_CO2/N2 (CO2) = 10000000.0 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "IAST_selectivity_CO2/Xe (CO2) = 220000000.0 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 75.5 cm3/g at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "rigid_framework → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "gcmc_simulation_model → selectivity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_9ce6415c7b79",
+    "trace_fa871cab8e08",
+    "trace_64f0eb7a4286",
+    "trace_22142bd81e7a",
+    "trace_648af1d1c735",
+    "trace_5f07fbc53c86",
+    "trace_81050e454193",
+    "trace_e7ccccdffd20",
+    "trace_b3e8425eef28",
+    "trace_5d69ff168a00",
+    "trace_ac9756484cfe",
+    "trace_34735329e669",
+    "trace_b20dcb1b3438",
+    "trace_f46ed1494d9d",
+    "trace_8da08a093caa",
+    "trace_189620591208",
+    "trace_279b4bb265c4",
+    "trace_6ee115a8d744",
+    "trace_e359d55f30da",
+    "trace_7d209aef8f2e",
+    "trace_0812a451b073",
+    "trace_2a7edb23d24f",
+    "trace_76d3b0b3429b",
+    "trace_82c34b4597b4",
+    "trace_c55f92e9b6a8",
+    "trace_c554812cf7b6",
+    "trace_aeac017c1085",
+    "trace_44f3c5da0c0a",
+    "trace_a6723138102f",
+    "trace_fbfae82bcfce",
+    "trace_058d391967bf",
+    "trace_e11012682bdc",
+    "trace_fbfae82bcfce",
+    "trace_5f07fbc53c86",
+    "trace_9ce6415c7b79",
+    "trace_648af1d1c735",
+    "trace_fa871cab8e08",
+    "trace_189620591208",
+    "trace_5d69ff168a00",
+    "trace_22142bd81e7a",
+    "trace_279b4bb265c4",
+    "trace_e7ccccdffd20",
+    "trace_44f3c5da0c0a",
+    "trace_aeac017c1085",
+    "trace_6ee115a8d744",
+    "trace_b20dcb1b3438",
+    "trace_81050e454193",
+    "trace_c554812cf7b6",
+    "trace_c55f92e9b6a8",
+    "trace_8da08a093caa",
+    "trace_82c34b4597b4",
+    "trace_2a7edb23d24f",
+    "trace_76d3b0b3429b",
+    "trace_b3e8425eef28",
+    "trace_0812a451b073",
+    "trace_058d391967bf",
+    "trace_64f0eb7a4286",
+    "trace_e11012682bdc",
+    "trace_a6723138102f",
+    "trace_ac9756484cfe",
+    "trace_e359d55f30da",
+    "trace_f46ed1494d9d",
+    "trace_34735329e669",
+    "trace_7d209aef8f2e"
+  ],
+  "measurement_card_ids": [
+    "mcard_b06aa5bc3e58",
+    "mcard_b6f247cb14b7",
+    "mcard_76b6ec78a690",
+    "mcard_5d5bedb9fd72"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_0b08e62cf88e",
+    "mechcard_fa1f6af5df13"
+  ],
+  "recipe_card_ids": [
+    "recipe_0fdca4ea4483",
+    "recipe_765b970aa59c"
+  ],
+  "claim_card_ids": [
+    "claim_5dd7238b37d7",
+    "claim_701aec504494",
+    "claim_805fc4b4e1ad",
+    "claim_8b97b9c62bc9",
+    "claim_a81725e38e9a",
+    "claim_49b2ab159c36",
+    "claim_fe6c176b5f63"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_8f3f6511ec86",
+    "mat_5350678493a5"
+  ],
+  "dossier_ids": [
+    "dossier_a744aa9459ff",
+    "dossier_7fa45a262db8"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The reported CO2/Xe selectivity is thermodynamic and IAST-based, so its applicability to multicomponent breakthrough conditions is conditional.",
+    "Adsorption-site and binding analyses relied on rigid-framework GCMC and single-guest locate simulations using Coulomb and LJ potentials.",
+    "CUPMOF-5 shows a CO2 uptake of 75.5 cm3 g−1 at 100 kPa under pure CO2 flow."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.503688",
+  "updated_at": "2026-04-24T00:19:50.503735",
+  "raw_path": "相关文献/anie202407840-sup-0001-misc_information.pdf"
+}

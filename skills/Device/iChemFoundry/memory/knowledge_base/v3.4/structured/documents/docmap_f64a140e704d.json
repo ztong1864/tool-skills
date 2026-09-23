@@ -1,0 +1,70 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_f64a140e704d",
+  "paper_id": "a2bbb951fd66",
+  "raw_path": "相关文献/Ho 和 Paesani - 2023 - Elucidating the Competitive Adsorption of H2O and .pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ZIF-90",
+    "CALF-20",
+    "UiO-66",
+    "IRMOF-1",
+    "MOF-74",
+    "SIFSIX-3-M",
+    "DMOF-1",
+    "NU-1500-Cr"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Al",
+    "Cr",
+    "Mg",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "TED",
+    "carboxylate",
+    "BPDC",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "In light of the pressing need for efficient carbon capture solutions, our\nstudy investigates the simultaneous adsorption of water (H2O) and carbon dioxide\n(CO2) as a function of relative humidity in CALF-20, a highly scalable and stable metal−",
+    "conclusion": "can be drawn from Figure\n2B, where the solid and dashed lines represent the OW−OW\nRDFs in the presence (solid line) and absence (dashed line) of",
+    "results_summary": "Elucidating the Competitive Adsorption of H2O and CO2 in CALF-20:\nNew Insights for Enhanced Carbon Capture Metal−Organic\nFrameworks\nChing-Hwa Ho* and Francesco Paesani*\nCite This: ACS Appl. Mater. Int"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:48:31.260151"
+}

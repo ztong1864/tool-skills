@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_2c15cbf0b2c2",
+  "canonical_material_id": "mat_d2e6a2d94c2f",
+  "canonical_name": "VPPE",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_923492955cf3",
+    "mcard_3f7c9837f58b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_adcb4c9c3154",
+    "mechcard_c9e6ca832f32",
+    "mechcard_5d7dead3d056",
+    "mechcard_3c70ea27fe47"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "b2bd48fc9577"
+  ],
+  "evidence_trace_ids": [
+    "trace_cea1ae73384b",
+    "trace_2060eed37d25",
+    "trace_3dd6739e2d5d",
+    "trace_f70c85d25c95",
+    "trace_5afdb01faa54"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:07:47.434213",
+  "updated_at": "2026-04-23T17:07:47.434689"
+}

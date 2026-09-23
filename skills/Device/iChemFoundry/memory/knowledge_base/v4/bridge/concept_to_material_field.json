@@ -1,0 +1,84 @@
+{
+  "_meta": {
+    "version": "v4",
+    "description": "Maps concept_id -> MaterialKB object type + field path",
+    "last_updated": ""
+  },
+  "p_feat_pore_window": [
+    {
+      "object_type": "TopologyCompatibilityCard",
+      "field": "geometric_constraints.window_diameter_angstrom"
+    },
+    {
+      "object_type": "MaterialDossier",
+      "field": "structural_features.window_diameter"
+    },
+    {
+      "object_type": "RecipeTemplateCard",
+      "field": "expected_pore_aperture"
+    }
+  ],
+  "p_quant_kinetic_diameter": [
+    {
+      "object_type": "lookup_table",
+      "field": "kinetic_diameter_table",
+      "note": "see shared/kinetic_diameter_table.json"
+    }
+  ],
+  "p_quant_self_diffusion_coefficient": [
+    {
+      "object_type": "MeasurementCard",
+      "field": "value",
+      "filter": "measurement_family=diffusion"
+    }
+  ],
+  "p_quant_iast_selectivity": [
+    {
+      "object_type": "MeasurementCard",
+      "field": "value",
+      "filter": "measurement_family=selectivity"
+    }
+  ],
+  "p_quant_isosteric_heat": [
+    {
+      "object_type": "MeasurementCard",
+      "field": "value",
+      "filter": "measurement_family=qst"
+    }
+  ],
+  "p_quant_bet_surface_area": [
+    {
+      "object_type": "MeasurementCard",
+      "field": "value",
+      "filter": "measurement_family=porosity AND property_type=bet"
+    }
+  ],
+  "p_var_pillar_length": [
+    {
+      "object_type": "PillarSignature",
+      "field": "molecular_length_angstrom"
+    }
+  ],
+  "p_var_linker_length": [
+    {
+      "object_type": "LigandSignature",
+      "field": "molecular_length_angstrom"
+    }
+  ],
+  "p_var_metal_node_type": [
+    {
+      "object_type": "NodeSignature",
+      "field": "metal_element"
+    }
+  ],
+  "p_var_topology": [
+    {
+      "object_type": "TopologyCompatibilityCard",
+      "field": "topology_code"
+    },
+    {
+      "object_type": "CandidateCompositionTuple",
+      "field": "topology"
+    }
+  ]
+}

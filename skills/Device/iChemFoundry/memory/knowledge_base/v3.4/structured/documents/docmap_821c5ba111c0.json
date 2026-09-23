@@ -1,0 +1,60 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_821c5ba111c0",
+  "paper_id": "bcfc40db266f",
+  "raw_path": "相关文献/Jiang 等 - 2016 - Adsorption of Iodine Based on a Tetrazolate Framew.pdf",
+  "title": "Adsorption of Iodine Based on a Tetrazolate Framew",
+  "authors": [
+    "Jiang"
+  ],
+  "year": 2016,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": false,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Framework-8",
+    "Fd-3"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Mn",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "imidazolate",
+    "tricarboxylate"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "A three-dimensional tetrazolate framework was\nsynthesized with solvothermal reaction. Single-crystal X-ray",
+    "results_summary": "Adsorption of Iodine Based on a Tetrazolate Framework with\nMicroporous Cages and Mesoporous Cages\nZhi-Qiang Jiang,†,‡ Fei Wang,†\nand Jian Zhang*,†\n†State Key Laboratory of Structural Chemistry, Fujian"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:58:54.602823"
+}

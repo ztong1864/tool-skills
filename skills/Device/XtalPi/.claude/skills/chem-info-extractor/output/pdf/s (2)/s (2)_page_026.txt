@@ -1,0 +1,23 @@
+S26
+ 9 × CH 2), 0.88 (t, J = 6.8 Hz, 3 H, CH 3); 13C NMR (100 MHz, CDCl 3) δ 204.0,
+174.0, 91.4, 89.7, 51.4, 33.3, 31.9, 29.65, 29.61, 29.5, 29.3, 29.2, 29.1, 28.9, 28.3, 24.2, 22.7, 14.1; IR (neat, cm
+-1): 2923, 2853, 1962, 1741, 1458, 1437, 1364, 1242,
+1199, 1154, 1061, 1018; MS (EI) m/z (%): 294 (M+, 2.11), 80 (100).
+(2) Preparation of ( R)-octadeca-5,6-dienoic acid (laballenic acid) (Ra)-7.
+(jxg-1-66)
+
+
+To a round bottom flask, KOH (140.8 mg, 2.5 mmol), mixed solvent (5 mL,
+MeOH/H 2O = 4/1 by volume), and ( Ra)-4hd (294.7 mg, 1 mmol)/mixed solvent (5
+mL, MeOH/H 2O = 4/1 by volume) were added se quentially. The resulting mixture
+was then stirred at 60 oC. After 2 h as monitored by TLC, the reaction was complete.
+HCl (3 M, 1 mL) was added dropwise after th e mixture was cooled with an ice bath.
+MeOH was removed by rotary  evaporation. 30 mL of CH 2Cl2 and water were added.
+The organic layer was separated, and th e aqueous layer was extracted with CH 2Cl2
+(15 mL × 3). The combined organic phase was washed with brine and dried over anhydrous Na
+2SO 4. After filtration and evaporat ion, the residue was purified by
+chromatography on silica gel to afford ( Ra)-7 (257.6 mg, 92%) (eluent: petroleum
+ether/ethyl acetate = 10/1 to 2/1) as a liquid:6 93% ee (determined after esterification;
+HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/0, 0.5 mL/min, λ =
+214 nm, tR(major) = 21.7 min, tR(minor) = 21.0 min); [ α]D27.0 = -50.6 ( c = 1.025,
+CHCl 3); 1H NMR (400 MHz, CDCl 3) δ 10.99 (br s, 1 H, COOH) 5.15-5.01 (m, 2 H,

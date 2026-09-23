@@ -1,0 +1,40 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_8c1432c79184",
+  "canonical_material_id": "mat_a851f78ad01c",
+  "canonical_name": "Zn/Ni(ox)(dmiz)2",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_5360b37c5130",
+  "pillar_id": "pil_83977598992c",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "d87085de1c1d"
+  ],
+  "evidence_trace_ids": [],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:31:53.401410",
+  "updated_at": "2026-04-23T22:31:53.401420"
+}

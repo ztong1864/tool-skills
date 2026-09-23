@@ -1,0 +1,72 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_b4658eb4240b",
+  "paper_id": "ed2e02bdfbe8",
+  "raw_path": "相关文献/toward-the-next-generation-of-permanently-porous-materials-halogen-bonded-organic-frameworks.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "HOF-102",
+    "Methyl-2",
+    "COF-5",
+    "UiO-66",
+    "IRMOF-1",
+    "MOF-74",
+    "HKUST-1",
+    "Tetra-1",
+    "HOF-103"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Mn",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine",
+    "terephthalate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "hkust"
+  ],
+  "key_sections": {
+    "abstract": "Halogen bonding has emerged as a reliable and intuitive\nhandle in crystal engineering, providing predictable, noncovalent",
+    "results_summary": "Toward the Next Generation of Permanently Porous Materials:\nHalogen-Bonded Organic Frameworks\nMichael P. Moghadasnia, Brian J. Eckstein, Hannah R. Martin, Jesus U. Paredes,\nand C. Michael McGuirk*\nCit"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:45:43.396086"
+}

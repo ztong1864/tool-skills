@@ -1,0 +1,40 @@
+{
+  "TYPE_TAG": "MechanismPrinciple",
+  "id": "p_principle_window_sieving_kinetic_separation",
+  "name": "window_sieving_kinetic_separation",
+  "display_name_zh": "孔窗筛分动力学分离",
+  "principle_type": "mechanism",
+  "one_line_summary": "When pore window diameter sits between kinetic diameters of two guests, the smaller passes orders-of-magnitude faster.",
+  "one_line_summary_zh": "当孔窗直径介于两种客体的动力学直径之间时，小分子通过速率比大分子快1-3数量级，实现动力学分离。",
+  "core_concepts": [
+    "p_feat_pore_window",
+    "p_quant_kinetic_diameter",
+    "p_quant_self_diffusion_coefficient"
+  ],
+  "applicable_task_archetypes": [
+    "kinetic_separation",
+    "size_exclusion"
+  ],
+  "task_examples": [
+    "C3H6_C3H8_separation",
+    "C2H4_C2H6_separation"
+  ],
+  "counter_principle_ids": [
+    "p_counter_reverse_kinetic_selectivity_high_loading"
+  ],
+  "verified_in_materials": [
+    {
+      "material_id": "mat_zif8",
+      "task_id": "C3H6_C3H8_separation",
+      "dossier_id": "dossier_zif8",
+      "confidence": 0.95
+    }
+  ],
+  "confidence": 0.92,
+  "maturity": "established",
+  "is_production": true,
+  "source_papers": [
+    "62abef84986f",
+    "9fbde6b04aa6"
+  ]
+}

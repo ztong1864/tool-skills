@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_91cf1d29b07e",
+  "paper_id": "943305fdca28",
+  "raw_path": "相关文献/Zn-SO4-hydrothermal-and-structural-chemistry-of-the-zinc(ii)-and-cadmium(ii)-1-2-4-triazolate-systems.pdf",
+  "title": "SO4-hydrothermal-and-structural-chemistry-of-the-zinc(ii)-and-cadmium(ii)-1-2-4-triazolate-systems",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "C3H6",
+    "C2H4",
+    "Kr"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CHE-0604527",
+    "MCM-41"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "azolate",
+    "pyridine",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "conclusion": "of Crystallographic Data for the Structures of [Zn(trz)2] (1), [Zn(trz)Br] (2), [Zn2(trz)3(OH)]‚3H2O (3‚3H2O), [Zn2(trz)(OH)(SO4)]\n(4), [Cd3(trz)3F2(OH)]‚3H2O (5‚3H2O), [Cd2(trz)2Cl2(H2O)] (6), [Cd3(trz)3Br3] (7), [Cd2(trz)3I] (8), [Cd3(trz)5(NO3)(H2O)]‚H2O (9‚H2O), and\n[Cd8(trz)4(SO4)5(OH)2(H2O)] (10)",
+    "results_summary": "Hydrothermal and Structural Chemistry of the Zinc(II)- and\nCadmium(II)-1,2,4-Triazolate Systems\nWayne Ouellette, Bruce S. Hudson, and Jon Zubieta*\nDepartment of Chemistry, Syracuse UniVersity, Syracus"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:48:39.964199"
+}

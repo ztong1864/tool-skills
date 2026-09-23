@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_9e8decce3281",
+  "paper_id": "40b04428835f",
+  "raw_path": "相关文献/Singh 等 - 2023 - Preferential CO 2 adsorption by an ultr.pdf",
+  "title": "Preferential CO 2 adsorption by an ultr",
+  "authors": [
+    "Singh"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CALF-20",
+    "MAF-7"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Ni",
+    "Fe",
+    "Mn",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "azolate"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "This journal is © The Royal Society of Chemistry 2023\nChem. Commun., 2023, 59, 5559–5562 |  5559\nCite this: Chem. Commun., 2023,\n59, 5559\nPreferential CO2 adsorption by an ultra-\nmicroporous zinc-amin"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:54:34.962086"
+}

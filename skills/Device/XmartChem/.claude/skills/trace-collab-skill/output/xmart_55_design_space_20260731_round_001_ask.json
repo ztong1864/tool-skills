@@ -1,0 +1,2397 @@
+{
+  "project": {
+    "project_id": "xmart_55_design_space_20260731",
+    "reaction_name": "untitled_reaction",
+    "objective_name": "yield",
+    "goal": "maximize",
+    "batch_size": 6,
+    "planner_name": "atlas",
+    "seed": 7,
+    "reaction_scope": "",
+    "evidence_file": "evidence_cards.jsonl",
+    "controller_mode": "agentic",
+    "agent_config_path": "configs/agent_bo.yaml",
+    "planner_use_descriptors": false,
+    "created_at": "2026-07-31T09:31:51.078982+00:00",
+    "updated_at": "2026-07-31T09:32:01.346833+00:00",
+    "metadata": {}
+  },
+  "round_id": "round_001",
+  "recommendations": [
+    {
+      "round_id": "round_001",
+      "recommendation_id": "round_001_rec_001",
+      "rank": 1,
+      "status": "pending",
+      "candidate": {
+        "Additive": "LaCl3",
+        "Solvent": "CHCl3",
+        "TEMPO derivative": "3",
+        "M(NO3)3": "Fe(NO3)3.9H2O",
+        "Component ratio": "6/5/10",
+        "Solvent volume": "3 mL",
+        "Temperature": "50 C"
+      },
+      "rationale": "TRACE selected this condition as an anchor using direct_bo_pick under lab ask/tell mode. Batch strategy: planner_anchor_diversity. Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch. Strong anchor with a halide/lanthanide additive and moderately polar chlorinated solvent; useful as the main BO reference in an empty-history setting. Risk note: Chemically plausible but still unvalidated; no prior outcome data. Chemically plausible anchor-like experiment: fixed Fe(NO3)3 with LaCl3 in CHCl3 is consistent with a conservative first-round BO choice. However, it offers limited exploration because only the TEMPO derivative varies, and the additive/solvent pairing is relatively narrow and potentially non-generalizable. Acceptable as a baseline pending result, but a small amount of coverage diversity would be valuable in subsequent rounds.",
+      "planner_name": "atlas",
+      "batch_role": "anchor",
+      "batch_role_reason": "Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch.",
+      "batch_slot": {
+        "batch_slot_id": 1,
+        "batch_role": "anchor",
+        "batch_role_reason": "Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch.",
+        "batch_slot_purpose": "Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch.",
+        "batch_slot_rationale": "Strong anchor with a halide/lanthanide additive and moderately polar chlorinated solvent; useful as the main BO reference in an empty-history setting.",
+        "batch_slot_risk_note": "Chemically plausible but still unvalidated; no prior outcome data.",
+        "batch_slot_evidence_refs": [
+          "bo_rank_1",
+          "descriptor_signal_anchor"
+        ],
+        "batch_slot_varied_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "batch_slot_controlled_variables": [
+          "M(NO3)3",
+          "Component ratio",
+          "Solvent volume",
+          "Temperature"
+        ]
+      },
+      "batch_contract": {
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_rationale": "Iteration 1 has no observations, so the batch should function as a bounded TRACE portfolio: keep the BO top-1 anchor, then add chemically diverse challengers that span base strength, solvent polarity/proticity, and TEMPO electronics without collapsing into near-duplicates. This maximizes early information gain and gives a balanced first read on main effects and interactions under the fixed Fe(NO3)3 / 6/5/10 / 3 mL / 50 C conditions.",
+        "global_constraints": [
+          "Use only admissible candidates from the provided pool.",
+          "Keep M(NO3)3 fixed as Fe(NO3)3.9H2O and preserve the static controlled conditions exactly.",
+          "Avoid repeated or near-repeated chemical neighborhoods; prefer orthogonal coverage across additive class, solvent class, and TEMPO derivative.",
+          "Retain the planner anchor as one batch member because there is no history yet and BO top-1 should be preserved.",
+          "No oracle assumptions: all candidates remain pending until measured."
+        ],
+        "slots": [
+          {
+            "slot_id": 1,
+            "role": "anchor",
+            "candidate_index": 0,
+            "purpose": "Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Strong anchor with a halide/lanthanide additive and moderately polar chlorinated solvent; useful as the main BO reference in an empty-history setting.",
+            "risk_note": "Chemically plausible but still unvalidated; no prior outcome data.",
+            "evidence_refs": [
+              "bo_rank_1",
+              "descriptor_signal_anchor"
+            ]
+          },
+          {
+            "slot_id": 2,
+            "role": "diversity_challenger",
+            "candidate_index": 9,
+            "purpose": "Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Sc(NO3)3_xH2O in acetone with TEMPO 4 tests a distinct ionic/polar environment and a different TEMPO electronics/size profile, likely informative for interaction sensitivity.",
+            "risk_note": "Higher coordination/solvation burden may change speciation; informative even if low yielding.",
+            "evidence_refs": [
+              "bo_rank_10",
+              "descriptor_signal_full_contrast"
+            ]
+          },
+          {
+            "slot_id": 3,
+            "role": "diversity_challenger",
+            "candidate_index": 3,
+            "purpose": "Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "NH4NO3 in EtOH with TEMPO 2 offers a protic, highly hydrogen-bonding regime and a low-charge additive, which should reveal whether the reaction tolerates or benefits from protic media.",
+            "risk_note": "Potentially suppressive due to protic solvent and weakly basic additive; valuable as an information-rich contrast.",
+            "evidence_refs": [
+              "bo_rank_4",
+              "coverage_insight_broad_probe"
+            ]
+          },
+          {
+            "slot_id": 4,
+            "role": "diversity_challenger",
+            "candidate_index": 1,
+            "purpose": "Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoSO4 in CCl4 with TEMPO 3 is a strong contrast to the anchor in both additive and solvent descriptors, probing whether a non-donor medium is detrimental or unexpectedly beneficial.",
+            "risk_note": "CCl4 is chemically extreme and may be unproductive; still useful as a boundary condition.",
+            "evidence_refs": [
+              "bo_rank_2",
+              "descriptor_contrast_to_anchor"
+            ]
+          },
+          {
+            "slot_id": 5,
+            "role": "diversity_challenger",
+            "candidate_index": 6,
+            "purpose": "Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "RbBO2 in Et2O with TEMPO 3 tests a basic borate in a moderately coordinating ether, expanding coverage across additive class and solvent donor strength while remaining synthetically reasonable.",
+            "risk_note": "May be limited by solubility; nonetheless offers a distinct mechanistic probe.",
+            "evidence_refs": [
+              "bo_rank_7",
+              "descriptor_signal_additive_solvent_contrast"
+            ]
+          },
+          {
+            "slot_id": 6,
+            "role": "diversity_challenger",
+            "candidate_index": 7,
+            "purpose": "Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoCl2 in Toluene with TEMPO 6 covers a less polar, aromatic solvent and a different additive family, helping determine whether the active window shifts toward low-polarity media or remains in polar solvents.",
+            "risk_note": "Low polarity may limit mass transfer or salt dissolution; useful as a negative/diagnostic point.",
+            "evidence_refs": [
+              "bo_rank_8",
+              "descriptor_signal_full_contrast"
+            ]
+          }
+        ]
+      },
+      "batch_validation_report": {
+        "status": "valid",
+        "issues": [],
+        "repairs": [],
+        "fallback_used": false
+      },
+      "selection_trace": {
+        "action": "direct_bo_pick",
+        "batch_size": 6,
+        "pool_size": 12,
+        "strategy": "planner_anchor_diversity",
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_roles": [
+          "anchor",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger"
+        ],
+        "selected_candidate_indices": [
+          0,
+          9,
+          3,
+          1,
+          6,
+          7
+        ],
+        "batch_validation_report": {
+          "status": "valid",
+          "issues": [],
+          "repairs": [],
+          "fallback_used": false
+        }
+      },
+      "controller_action": "direct_bo_pick",
+      "requested_controller_action": "direct_bo_pick",
+      "action_package": {
+        "schema_version": "compat_v1",
+        "intent": "exploit",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "focus_variables": [],
+        "window_rounds": 0,
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "requested_execution_action": "direct_bo_pick",
+        "executed_execution_action": "direct_bo_pick"
+      },
+      "controller_plan": {
+        "intervention_type": "bo_direct",
+        "action_schema_version": "compat_v1",
+        "requested_execution_action": "direct_bo_pick",
+        "intent": "balance",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "use_subspace": false,
+        "focus_variables": [],
+        "window_rounds": 0,
+        "candidate_probe_include": [],
+        "candidate_probe_reasoning": "",
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "action_package": {
+          "schema_version": "compat_v1",
+          "intent": "exploit",
+          "shortlist_policy": "plain",
+          "repeat_policy": "allow",
+          "selection_policy": "bo_top1",
+          "verification_policy": "normal",
+          "focus_policy": "full_space",
+          "focus_variables": [],
+          "window_rounds": 0,
+          "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+          "raw_requested_execution_action": "direct_bo_pick",
+          "normalized_requested_execution_action": "direct_bo_pick",
+          "action_normalization_reason": "raw_requested_action",
+          "requested_execution_action": "direct_bo_pick",
+          "executed_execution_action": "direct_bo_pick"
+        },
+        "executed_execution_action": "direct_bo_pick",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "fallback_reason": null
+      },
+      "semantic_assessment": {
+        "risk_level": "low",
+        "plausibility_score": 0.62,
+        "novelty_score": 0.41,
+        "soft_comment": "Chemically plausible anchor-like experiment: fixed Fe(NO3)3 with LaCl3 in CHCl3 is consistent with a conservative first-round BO choice. However, it offers limited exploration because only the TEMPO derivative varies, and the additive/solvent pairing is relatively narrow and potentially non-generalizable. Acceptable as a baseline pending result, but a small amount of coverage diversity would be valuable in subsequent rounds.",
+        "suggested_bias": [
+          "favor_anchor",
+          "maintain_chemical_plausibility",
+          "add_controlled_coverage",
+          "avoid_near_duplicates"
+        ]
+      },
+      "verification_pass": null,
+      "descriptor_profile": {
+        "Additive": {
+          "value": "LaCl3",
+          "source": "collaborator:additive_desc",
+          "numeric_descriptor_count": 8,
+          "descriptors": {
+            "lattice_energy": 4411.2485,
+            "r+_in_crystal": 103.0,
+            "r+_thermo": 122.0,
+            "r-_thermo": 168.0,
+            "z+": 3.0,
+            "z-": 1.0
+          }
+        },
+        "Solvent": {
+          "value": "CHCl3",
+          "source": "collaborator:solvent_desc",
+          "numeric_descriptor_count": 20,
+          "descriptors": {
+            "A": 0.42,
+            "AN": 23.1,
+            "B": 0.73,
+            "DI": 0.8,
+            "DN": 4.0,
+            "ES": 0.4
+          }
+        },
+        "TEMPO derivative": {
+          "value": "3",
+          "source": "collaborator:tempo_desc",
+          "numeric_descriptor_count": 120,
+          "descriptors": {
+            "<r^2>": 1931.2963,
+            "<r^2>-atom0": 13.4216,
+            "<r^2>-atom1": 1.2673,
+            "Bond_dipole_bond0": 0.0031,
+            "Chem_potential": -0.1266,
+            "Cond_Fukui+_atom0": 0.2832
+          }
+        }
+      },
+      "descriptor_contrast_to_anchor": {},
+      "descriptor_signal": {
+        "profiled_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "contrasted_variables": [],
+        "has_descriptor_contrast": false
+      },
+      "evidence_refs": [],
+      "created_at": "2026-07-31T09:32:02.440957+00:00",
+      "result": "",
+      "failure_reason": "",
+      "notes": ""
+    },
+    {
+      "round_id": "round_001",
+      "recommendation_id": "round_001_rec_002",
+      "rank": 2,
+      "status": "pending",
+      "candidate": {
+        "Additive": "Sc(NO3)3_xH2O",
+        "Solvent": "acetone",
+        "TEMPO derivative": "4",
+        "M(NO3)3": "Fe(NO3)3.9H2O",
+        "Component ratio": "6/5/10",
+        "Solvent volume": "3 mL",
+        "Temperature": "50 C"
+      },
+      "rationale": "TRACE selected this condition as a diversity challenger using direct_bo_pick under lab ask/tell mode. Batch strategy: planner_anchor_diversity. Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible. Sc(NO3)3_xH2O in acetone with TEMPO 4 tests a distinct ionic/polar environment and a different TEMPO electronics/size profile, likely informative for interaction sensitivity. Risk note: Higher coordination/solvation burden may change speciation; informative even if low yielding. Descriptor contrast relative to the planner anchor: Additive LaCl3 -> Sc(NO3)3_xH2O shifts lattice_energy, r+_thermo; Solvent CHCl3 -> acetone shifts ε0, DN. Chemically plausible and internally consistent with the fixed Fe(NO3)3·9H2O / 50 C / acetone setup. Sc(III) nitrate additive is a reasonable Lewis-acid co-additive to test, but this is somewhat conservative given the all-zero history and could miss coverage of more diverse additive classes. The choice is acceptable as an initial anchor, though not especially exploratory.",
+      "planner_name": "atlas",
+      "batch_role": "diversity_challenger",
+      "batch_role_reason": "Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible.",
+      "batch_slot": {
+        "batch_slot_id": 2,
+        "batch_role": "diversity_challenger",
+        "batch_role_reason": "Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible.",
+        "batch_slot_purpose": "Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible.",
+        "batch_slot_rationale": "Sc(NO3)3_xH2O in acetone with TEMPO 4 tests a distinct ionic/polar environment and a different TEMPO electronics/size profile, likely informative for interaction sensitivity.",
+        "batch_slot_risk_note": "Higher coordination/solvation burden may change speciation; informative even if low yielding.",
+        "batch_slot_evidence_refs": [
+          "bo_rank_10",
+          "descriptor_signal_full_contrast"
+        ],
+        "batch_slot_varied_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "batch_slot_controlled_variables": [
+          "M(NO3)3",
+          "Component ratio",
+          "Solvent volume",
+          "Temperature"
+        ]
+      },
+      "batch_contract": {
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_rationale": "Iteration 1 has no observations, so the batch should function as a bounded TRACE portfolio: keep the BO top-1 anchor, then add chemically diverse challengers that span base strength, solvent polarity/proticity, and TEMPO electronics without collapsing into near-duplicates. This maximizes early information gain and gives a balanced first read on main effects and interactions under the fixed Fe(NO3)3 / 6/5/10 / 3 mL / 50 C conditions.",
+        "global_constraints": [
+          "Use only admissible candidates from the provided pool.",
+          "Keep M(NO3)3 fixed as Fe(NO3)3.9H2O and preserve the static controlled conditions exactly.",
+          "Avoid repeated or near-repeated chemical neighborhoods; prefer orthogonal coverage across additive class, solvent class, and TEMPO derivative.",
+          "Retain the planner anchor as one batch member because there is no history yet and BO top-1 should be preserved.",
+          "No oracle assumptions: all candidates remain pending until measured."
+        ],
+        "slots": [
+          {
+            "slot_id": 1,
+            "role": "anchor",
+            "candidate_index": 0,
+            "purpose": "Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Strong anchor with a halide/lanthanide additive and moderately polar chlorinated solvent; useful as the main BO reference in an empty-history setting.",
+            "risk_note": "Chemically plausible but still unvalidated; no prior outcome data.",
+            "evidence_refs": [
+              "bo_rank_1",
+              "descriptor_signal_anchor"
+            ]
+          },
+          {
+            "slot_id": 2,
+            "role": "diversity_challenger",
+            "candidate_index": 9,
+            "purpose": "Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Sc(NO3)3_xH2O in acetone with TEMPO 4 tests a distinct ionic/polar environment and a different TEMPO electronics/size profile, likely informative for interaction sensitivity.",
+            "risk_note": "Higher coordination/solvation burden may change speciation; informative even if low yielding.",
+            "evidence_refs": [
+              "bo_rank_10",
+              "descriptor_signal_full_contrast"
+            ]
+          },
+          {
+            "slot_id": 3,
+            "role": "diversity_challenger",
+            "candidate_index": 3,
+            "purpose": "Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "NH4NO3 in EtOH with TEMPO 2 offers a protic, highly hydrogen-bonding regime and a low-charge additive, which should reveal whether the reaction tolerates or benefits from protic media.",
+            "risk_note": "Potentially suppressive due to protic solvent and weakly basic additive; valuable as an information-rich contrast.",
+            "evidence_refs": [
+              "bo_rank_4",
+              "coverage_insight_broad_probe"
+            ]
+          },
+          {
+            "slot_id": 4,
+            "role": "diversity_challenger",
+            "candidate_index": 1,
+            "purpose": "Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoSO4 in CCl4 with TEMPO 3 is a strong contrast to the anchor in both additive and solvent descriptors, probing whether a non-donor medium is detrimental or unexpectedly beneficial.",
+            "risk_note": "CCl4 is chemically extreme and may be unproductive; still useful as a boundary condition.",
+            "evidence_refs": [
+              "bo_rank_2",
+              "descriptor_contrast_to_anchor"
+            ]
+          },
+          {
+            "slot_id": 5,
+            "role": "diversity_challenger",
+            "candidate_index": 6,
+            "purpose": "Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "RbBO2 in Et2O with TEMPO 3 tests a basic borate in a moderately coordinating ether, expanding coverage across additive class and solvent donor strength while remaining synthetically reasonable.",
+            "risk_note": "May be limited by solubility; nonetheless offers a distinct mechanistic probe.",
+            "evidence_refs": [
+              "bo_rank_7",
+              "descriptor_signal_additive_solvent_contrast"
+            ]
+          },
+          {
+            "slot_id": 6,
+            "role": "diversity_challenger",
+            "candidate_index": 7,
+            "purpose": "Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoCl2 in Toluene with TEMPO 6 covers a less polar, aromatic solvent and a different additive family, helping determine whether the active window shifts toward low-polarity media or remains in polar solvents.",
+            "risk_note": "Low polarity may limit mass transfer or salt dissolution; useful as a negative/diagnostic point.",
+            "evidence_refs": [
+              "bo_rank_8",
+              "descriptor_signal_full_contrast"
+            ]
+          }
+        ]
+      },
+      "batch_validation_report": {
+        "status": "valid",
+        "issues": [],
+        "repairs": [],
+        "fallback_used": false
+      },
+      "selection_trace": {
+        "action": "direct_bo_pick",
+        "batch_size": 6,
+        "pool_size": 12,
+        "strategy": "planner_anchor_diversity",
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_roles": [
+          "anchor",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger"
+        ],
+        "selected_candidate_indices": [
+          0,
+          9,
+          3,
+          1,
+          6,
+          7
+        ],
+        "batch_validation_report": {
+          "status": "valid",
+          "issues": [],
+          "repairs": [],
+          "fallback_used": false
+        }
+      },
+      "controller_action": "direct_bo_pick",
+      "requested_controller_action": "direct_bo_pick",
+      "action_package": {
+        "schema_version": "compat_v1",
+        "intent": "exploit",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "focus_variables": [],
+        "window_rounds": 0,
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "requested_execution_action": "direct_bo_pick",
+        "executed_execution_action": "direct_bo_pick"
+      },
+      "controller_plan": {
+        "intervention_type": "bo_direct",
+        "action_schema_version": "compat_v1",
+        "requested_execution_action": "direct_bo_pick",
+        "intent": "balance",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "use_subspace": false,
+        "focus_variables": [],
+        "window_rounds": 0,
+        "candidate_probe_include": [],
+        "candidate_probe_reasoning": "",
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "action_package": {
+          "schema_version": "compat_v1",
+          "intent": "exploit",
+          "shortlist_policy": "plain",
+          "repeat_policy": "allow",
+          "selection_policy": "bo_top1",
+          "verification_policy": "normal",
+          "focus_policy": "full_space",
+          "focus_variables": [],
+          "window_rounds": 0,
+          "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+          "raw_requested_execution_action": "direct_bo_pick",
+          "normalized_requested_execution_action": "direct_bo_pick",
+          "action_normalization_reason": "raw_requested_action",
+          "requested_execution_action": "direct_bo_pick",
+          "executed_execution_action": "direct_bo_pick"
+        },
+        "executed_execution_action": "direct_bo_pick",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "fallback_reason": null
+      },
+      "semantic_assessment": {
+        "risk_level": "low",
+        "plausibility_score": 0.82,
+        "novelty_score": 0.48,
+        "soft_comment": "Chemically plausible and internally consistent with the fixed Fe(NO3)3·9H2O / 50 C / acetone setup. Sc(III) nitrate additive is a reasonable Lewis-acid co-additive to test, but this is somewhat conservative given the all-zero history and could miss coverage of more diverse additive classes. The choice is acceptable as an initial anchor, though not especially exploratory.",
+        "suggested_bias": [
+          "retain as planner anchor",
+          "avoid overcommitting to closely related scandium salts in the next round",
+          "consider broader additive coverage after the first measurement"
+        ]
+      },
+      "verification_pass": null,
+      "descriptor_profile": {
+        "Additive": {
+          "value": "Sc(NO3)3_xH2O",
+          "source": "collaborator:additive_desc",
+          "numeric_descriptor_count": 8,
+          "descriptors": {
+            "lattice_energy": 4505.2629,
+            "r+_in_crystal": 75.0,
+            "r+_thermo": 83.0,
+            "r-_thermo": 200.0,
+            "z+": 3.0,
+            "z-": 1.0
+          }
+        },
+        "Solvent": {
+          "value": "acetone",
+          "source": "collaborator:solvent_desc",
+          "numeric_descriptor_count": 20,
+          "descriptors": {
+            "A": 0.25,
+            "AN": 12.5,
+            "B": 0.81,
+            "DI": 0.69,
+            "DN": 17.0,
+            "ES": 0.78
+          }
+        },
+        "TEMPO derivative": {
+          "value": "4",
+          "source": "collaborator:tempo_desc",
+          "numeric_descriptor_count": 120,
+          "descriptors": {
+            "<r^2>": 1931.1984,
+            "<r^2>-atom0": 13.3157,
+            "<r^2>-atom1": 10.1897,
+            "Bond_dipole_bond0": 0.1741,
+            "Chem_potential": -0.125,
+            "Cond_Fukui+_atom0": 0.2595
+          }
+        }
+      },
+      "descriptor_contrast_to_anchor": {
+        "Additive": {
+          "from": "LaCl3",
+          "to": "Sc(NO3)3_xH2O",
+          "shared_numeric_descriptor_count": 8,
+          "l2_distance": 115.5885,
+          "top_descriptor_deltas": {
+            "lattice_energy": 94.0144,
+            "r+_thermo": -39.0,
+            "r-_thermo": 32.0,
+            "z/r_-": 32.0,
+            "r+_in_crystal": -28.0
+          }
+        },
+        "Solvent": {
+          "from": "CHCl3",
+          "to": "acetone",
+          "shared_numeric_descriptor_count": 20,
+          "l2_distance": 24.1096,
+          "top_descriptor_deltas": {
+            "ε0": 16.59,
+            "DN": 13.0,
+            "AN": -10.6,
+            "δp": 3.56,
+            "ET": 3.1
+          }
+        },
+        "TEMPO derivative": {
+          "from": "3",
+          "to": "4",
+          "shared_numeric_descriptor_count": 120,
+          "l2_distance": 49.5094,
+          "top_descriptor_deltas": {
+            "Molecular_volumn": -39.6428,
+            "total_ESP-atom1": -18.099,
+            "max_ESP_atom1": -14.5295,
+            "LUMO_ODI-atom1": 9.4531,
+            "<r^2>-atom1": 8.9224
+          }
+        }
+      },
+      "descriptor_signal": {
+        "profiled_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "contrasted_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "has_descriptor_contrast": true
+      },
+      "evidence_refs": [],
+      "created_at": "2026-07-31T09:32:02.440957+00:00",
+      "result": "",
+      "failure_reason": "",
+      "notes": ""
+    },
+    {
+      "round_id": "round_001",
+      "recommendation_id": "round_001_rec_003",
+      "rank": 3,
+      "status": "pending",
+      "candidate": {
+        "Additive": "NH4NO3",
+        "Solvent": "EtOH",
+        "TEMPO derivative": "2",
+        "M(NO3)3": "Fe(NO3)3.9H2O",
+        "Component ratio": "6/5/10",
+        "Solvent volume": "3 mL",
+        "Temperature": "50 C"
+      },
+      "rationale": "TRACE selected this condition as a diversity challenger using direct_bo_pick under lab ask/tell mode. Batch strategy: planner_anchor_diversity. Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity. NH4NO3 in EtOH with TEMPO 2 offers a protic, highly hydrogen-bonding regime and a low-charge additive, which should reveal whether the reaction tolerates or benefits from protic media. Risk note: Potentially suppressive due to protic solvent and weakly basic additive; valuable as an information-rich contrast. Descriptor contrast relative to the planner anchor: Additive LaCl3 -> NH4NO3 shifts lattice_energy, z/r_+; Solvent CHCl3 -> EtOH shifts ε0, DN. Chemically plausible and operationally well-formed for a first-round ask/tell trial. Fe(NO3)3·9H2O is a sensible fixed anchor, NH4NO3 is a defensible additive, and EtOH at 50 C is compatible with a conservative starting screen. Main limitation is low novelty: this is a single-point probe in a very sparse, fully unexplored space, so it is better viewed as a baseline anchor than an information-rich coverage move. If direct execution is chosen, keep it; if reranking is available, prioritize one complementary solvent/additive variant for contrast rather than a near-duplicate.",
+      "planner_name": "atlas",
+      "batch_role": "diversity_challenger",
+      "batch_role_reason": "Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity.",
+      "batch_slot": {
+        "batch_slot_id": 3,
+        "batch_role": "diversity_challenger",
+        "batch_role_reason": "Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity.",
+        "batch_slot_purpose": "Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity.",
+        "batch_slot_rationale": "NH4NO3 in EtOH with TEMPO 2 offers a protic, highly hydrogen-bonding regime and a low-charge additive, which should reveal whether the reaction tolerates or benefits from protic media.",
+        "batch_slot_risk_note": "Potentially suppressive due to protic solvent and weakly basic additive; valuable as an information-rich contrast.",
+        "batch_slot_evidence_refs": [
+          "bo_rank_4",
+          "coverage_insight_broad_probe"
+        ],
+        "batch_slot_varied_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "batch_slot_controlled_variables": [
+          "M(NO3)3",
+          "Component ratio",
+          "Solvent volume",
+          "Temperature"
+        ]
+      },
+      "batch_contract": {
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_rationale": "Iteration 1 has no observations, so the batch should function as a bounded TRACE portfolio: keep the BO top-1 anchor, then add chemically diverse challengers that span base strength, solvent polarity/proticity, and TEMPO electronics without collapsing into near-duplicates. This maximizes early information gain and gives a balanced first read on main effects and interactions under the fixed Fe(NO3)3 / 6/5/10 / 3 mL / 50 C conditions.",
+        "global_constraints": [
+          "Use only admissible candidates from the provided pool.",
+          "Keep M(NO3)3 fixed as Fe(NO3)3.9H2O and preserve the static controlled conditions exactly.",
+          "Avoid repeated or near-repeated chemical neighborhoods; prefer orthogonal coverage across additive class, solvent class, and TEMPO derivative.",
+          "Retain the planner anchor as one batch member because there is no history yet and BO top-1 should be preserved.",
+          "No oracle assumptions: all candidates remain pending until measured."
+        ],
+        "slots": [
+          {
+            "slot_id": 1,
+            "role": "anchor",
+            "candidate_index": 0,
+            "purpose": "Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Strong anchor with a halide/lanthanide additive and moderately polar chlorinated solvent; useful as the main BO reference in an empty-history setting.",
+            "risk_note": "Chemically plausible but still unvalidated; no prior outcome data.",
+            "evidence_refs": [
+              "bo_rank_1",
+              "descriptor_signal_anchor"
+            ]
+          },
+          {
+            "slot_id": 2,
+            "role": "diversity_challenger",
+            "candidate_index": 9,
+            "purpose": "Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Sc(NO3)3_xH2O in acetone with TEMPO 4 tests a distinct ionic/polar environment and a different TEMPO electronics/size profile, likely informative for interaction sensitivity.",
+            "risk_note": "Higher coordination/solvation burden may change speciation; informative even if low yielding.",
+            "evidence_refs": [
+              "bo_rank_10",
+              "descriptor_signal_full_contrast"
+            ]
+          },
+          {
+            "slot_id": 3,
+            "role": "diversity_challenger",
+            "candidate_index": 3,
+            "purpose": "Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "NH4NO3 in EtOH with TEMPO 2 offers a protic, highly hydrogen-bonding regime and a low-charge additive, which should reveal whether the reaction tolerates or benefits from protic media.",
+            "risk_note": "Potentially suppressive due to protic solvent and weakly basic additive; valuable as an information-rich contrast.",
+            "evidence_refs": [
+              "bo_rank_4",
+              "coverage_insight_broad_probe"
+            ]
+          },
+          {
+            "slot_id": 4,
+            "role": "diversity_challenger",
+            "candidate_index": 1,
+            "purpose": "Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoSO4 in CCl4 with TEMPO 3 is a strong contrast to the anchor in both additive and solvent descriptors, probing whether a non-donor medium is detrimental or unexpectedly beneficial.",
+            "risk_note": "CCl4 is chemically extreme and may be unproductive; still useful as a boundary condition.",
+            "evidence_refs": [
+              "bo_rank_2",
+              "descriptor_contrast_to_anchor"
+            ]
+          },
+          {
+            "slot_id": 5,
+            "role": "diversity_challenger",
+            "candidate_index": 6,
+            "purpose": "Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "RbBO2 in Et2O with TEMPO 3 tests a basic borate in a moderately coordinating ether, expanding coverage across additive class and solvent donor strength while remaining synthetically reasonable.",
+            "risk_note": "May be limited by solubility; nonetheless offers a distinct mechanistic probe.",
+            "evidence_refs": [
+              "bo_rank_7",
+              "descriptor_signal_additive_solvent_contrast"
+            ]
+          },
+          {
+            "slot_id": 6,
+            "role": "diversity_challenger",
+            "candidate_index": 7,
+            "purpose": "Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoCl2 in Toluene with TEMPO 6 covers a less polar, aromatic solvent and a different additive family, helping determine whether the active window shifts toward low-polarity media or remains in polar solvents.",
+            "risk_note": "Low polarity may limit mass transfer or salt dissolution; useful as a negative/diagnostic point.",
+            "evidence_refs": [
+              "bo_rank_8",
+              "descriptor_signal_full_contrast"
+            ]
+          }
+        ]
+      },
+      "batch_validation_report": {
+        "status": "valid",
+        "issues": [],
+        "repairs": [],
+        "fallback_used": false
+      },
+      "selection_trace": {
+        "action": "direct_bo_pick",
+        "batch_size": 6,
+        "pool_size": 12,
+        "strategy": "planner_anchor_diversity",
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_roles": [
+          "anchor",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger"
+        ],
+        "selected_candidate_indices": [
+          0,
+          9,
+          3,
+          1,
+          6,
+          7
+        ],
+        "batch_validation_report": {
+          "status": "valid",
+          "issues": [],
+          "repairs": [],
+          "fallback_used": false
+        }
+      },
+      "controller_action": "direct_bo_pick",
+      "requested_controller_action": "direct_bo_pick",
+      "action_package": {
+        "schema_version": "compat_v1",
+        "intent": "exploit",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "focus_variables": [],
+        "window_rounds": 0,
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "requested_execution_action": "direct_bo_pick",
+        "executed_execution_action": "direct_bo_pick"
+      },
+      "controller_plan": {
+        "intervention_type": "bo_direct",
+        "action_schema_version": "compat_v1",
+        "requested_execution_action": "direct_bo_pick",
+        "intent": "balance",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "use_subspace": false,
+        "focus_variables": [],
+        "window_rounds": 0,
+        "candidate_probe_include": [],
+        "candidate_probe_reasoning": "",
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "action_package": {
+          "schema_version": "compat_v1",
+          "intent": "exploit",
+          "shortlist_policy": "plain",
+          "repeat_policy": "allow",
+          "selection_policy": "bo_top1",
+          "verification_policy": "normal",
+          "focus_policy": "full_space",
+          "focus_variables": [],
+          "window_rounds": 0,
+          "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+          "raw_requested_execution_action": "direct_bo_pick",
+          "normalized_requested_execution_action": "direct_bo_pick",
+          "action_normalization_reason": "raw_requested_action",
+          "requested_execution_action": "direct_bo_pick",
+          "executed_execution_action": "direct_bo_pick"
+        },
+        "executed_execution_action": "direct_bo_pick",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "fallback_reason": null
+      },
+      "semantic_assessment": {
+        "risk_level": "low",
+        "plausibility_score": 0.79,
+        "novelty_score": 0.42,
+        "soft_comment": "Chemically plausible and operationally well-formed for a first-round ask/tell trial. Fe(NO3)3·9H2O is a sensible fixed anchor, NH4NO3 is a defensible additive, and EtOH at 50 C is compatible with a conservative starting screen. Main limitation is low novelty: this is a single-point probe in a very sparse, fully unexplored space, so it is better viewed as a baseline anchor than an information-rich coverage move. If direct execution is chosen, keep it; if reranking is available, prioritize one complementary solvent/additive variant for contrast rather than a near-duplicate.",
+        "suggested_bias": [
+          "keep_anchor",
+          "prefer_first_round_baseline",
+          "avoid_near_duplicates",
+          "add_coverage_if_batch_allows"
+        ]
+      },
+      "verification_pass": null,
+      "descriptor_profile": {
+        "Additive": {
+          "value": "NH4NO3",
+          "source": "collaborator:additive_desc",
+          "numeric_descriptor_count": 8,
+          "descriptors": {
+            "lattice_energy": 646.2851,
+            "r+_in_crystal": 136.0,
+            "r+_thermo": 136.0,
+            "r-_thermo": 200.0,
+            "z+": 1.0,
+            "z-": 1.0
+          }
+        },
+        "Solvent": {
+          "value": "EtOH",
+          "source": "collaborator:solvent_desc",
+          "numeric_descriptor_count": 20,
+          "descriptors": {
+            "A": 0.66,
+            "AN": 37.9,
+            "B": 0.45,
+            "DI": 0.69,
+            "DN": 19.2,
+            "ES": 0.8
+          }
+        },
+        "TEMPO derivative": {
+          "value": "2",
+          "source": "collaborator:tempo_desc",
+          "numeric_descriptor_count": 120,
+          "descriptors": {
+            "<r^2>": 1677.6549,
+            "<r^2>-atom0": 13.4667,
+            "<r^2>-atom1": 1.1795,
+            "Bond_dipole_bond0": 0.0014,
+            "Chem_potential": -0.1203,
+            "Cond_Fukui+_atom0": 0.2781
+          }
+        }
+      },
+      "descriptor_contrast_to_anchor": {
+        "Additive": {
+          "from": "LaCl3",
+          "to": "NH4NO3",
+          "shared_numeric_descriptor_count": 8,
+          "l2_distance": 3766.6132,
+          "top_descriptor_deltas": {
+            "lattice_energy": -3764.9634,
+            "z/r_+": 95.3333,
+            "r+_in_crystal": 33.0,
+            "r-_thermo": 32.0,
+            "z/r_-": 32.0
+          }
+        },
+        "Solvent": {
+          "from": "CHCl3",
+          "to": "EtOH",
+          "shared_numeric_descriptor_count": 20,
+          "l2_distance": 32.7178,
+          "top_descriptor_deltas": {
+            "ε0": 19.69,
+            "DN": 15.2,
+            "AN": 14.8,
+            "ET": 12.8,
+            "δh": 6.69
+          }
+        },
+        "TEMPO derivative": {
+          "from": "3",
+          "to": "2",
+          "shared_numeric_descriptor_count": 120,
+          "l2_distance": 268.568,
+          "top_descriptor_deltas": {
+            "<r^2>": -253.6414,
+            "Molecular_volumn": -63.3475,
+            "area_pSurface": -49.5984,
+            "area_nSurface": 29.4489,
+            "Molecular_all_surface_area": -20.1421
+          }
+        }
+      },
+      "descriptor_signal": {
+        "profiled_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "contrasted_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "has_descriptor_contrast": true
+      },
+      "evidence_refs": [],
+      "created_at": "2026-07-31T09:32:02.440957+00:00",
+      "result": "",
+      "failure_reason": "",
+      "notes": ""
+    },
+    {
+      "round_id": "round_001",
+      "recommendation_id": "round_001_rec_004",
+      "rank": 4,
+      "status": "pending",
+      "candidate": {
+        "Additive": "CoSO4",
+        "Solvent": "CCl4",
+        "TEMPO derivative": "3",
+        "M(NO3)3": "Fe(NO3)3.9H2O",
+        "Component ratio": "6/5/10",
+        "Solvent volume": "3 mL",
+        "Temperature": "50 C"
+      },
+      "rationale": "TRACE selected this condition as a diversity challenger using direct_bo_pick under lab ask/tell mode. Batch strategy: planner_anchor_diversity. Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments. CoSO4 in CCl4 with TEMPO 3 is a strong contrast to the anchor in both additive and solvent descriptors, probing whether a non-donor medium is detrimental or unexpectedly beneficial. Risk note: CCl4 is chemically extreme and may be unproductive; still useful as a boundary condition. Descriptor contrast relative to the planner anchor: Additive LaCl3 -> CoSO4 shifts lattice_energy, z/r_-; Solvent CHCl3 -> CCl4 shifts AN, ET. Plausible first-shot condition set, but the candidate is partially out-of-distribution on additive chemistry: CoSO4 with Fe(NO3)3.9H2O is chemically reasonable as a metal-salt pairing, yet CCl4 is a relatively nonpolar, weakly coordinating solvent that may suppress activation or solubilization depending on the substrate system. TEMPO derivative 3 at 50 C is a conservative anchor choice, but without any prior observations this should be treated as a baseline rather than a strong exploitation move. Overall the proposal is acceptable for execution, though I would favor keeping it as a single anchor point while planning adjacent solvent/additive coverage in later rounds.",
+      "planner_name": "atlas",
+      "batch_role": "diversity_challenger",
+      "batch_role_reason": "Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments.",
+      "batch_slot": {
+        "batch_slot_id": 4,
+        "batch_role": "diversity_challenger",
+        "batch_role_reason": "Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments.",
+        "batch_slot_purpose": "Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments.",
+        "batch_slot_rationale": "CoSO4 in CCl4 with TEMPO 3 is a strong contrast to the anchor in both additive and solvent descriptors, probing whether a non-donor medium is detrimental or unexpectedly beneficial.",
+        "batch_slot_risk_note": "CCl4 is chemically extreme and may be unproductive; still useful as a boundary condition.",
+        "batch_slot_evidence_refs": [
+          "bo_rank_2",
+          "descriptor_contrast_to_anchor"
+        ],
+        "batch_slot_varied_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "batch_slot_controlled_variables": [
+          "M(NO3)3",
+          "Component ratio",
+          "Solvent volume",
+          "Temperature"
+        ]
+      },
+      "batch_contract": {
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_rationale": "Iteration 1 has no observations, so the batch should function as a bounded TRACE portfolio: keep the BO top-1 anchor, then add chemically diverse challengers that span base strength, solvent polarity/proticity, and TEMPO electronics without collapsing into near-duplicates. This maximizes early information gain and gives a balanced first read on main effects and interactions under the fixed Fe(NO3)3 / 6/5/10 / 3 mL / 50 C conditions.",
+        "global_constraints": [
+          "Use only admissible candidates from the provided pool.",
+          "Keep M(NO3)3 fixed as Fe(NO3)3.9H2O and preserve the static controlled conditions exactly.",
+          "Avoid repeated or near-repeated chemical neighborhoods; prefer orthogonal coverage across additive class, solvent class, and TEMPO derivative.",
+          "Retain the planner anchor as one batch member because there is no history yet and BO top-1 should be preserved.",
+          "No oracle assumptions: all candidates remain pending until measured."
+        ],
+        "slots": [
+          {
+            "slot_id": 1,
+            "role": "anchor",
+            "candidate_index": 0,
+            "purpose": "Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Strong anchor with a halide/lanthanide additive and moderately polar chlorinated solvent; useful as the main BO reference in an empty-history setting.",
+            "risk_note": "Chemically plausible but still unvalidated; no prior outcome data.",
+            "evidence_refs": [
+              "bo_rank_1",
+              "descriptor_signal_anchor"
+            ]
+          },
+          {
+            "slot_id": 2,
+            "role": "diversity_challenger",
+            "candidate_index": 9,
+            "purpose": "Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Sc(NO3)3_xH2O in acetone with TEMPO 4 tests a distinct ionic/polar environment and a different TEMPO electronics/size profile, likely informative for interaction sensitivity.",
+            "risk_note": "Higher coordination/solvation burden may change speciation; informative even if low yielding.",
+            "evidence_refs": [
+              "bo_rank_10",
+              "descriptor_signal_full_contrast"
+            ]
+          },
+          {
+            "slot_id": 3,
+            "role": "diversity_challenger",
+            "candidate_index": 3,
+            "purpose": "Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "NH4NO3 in EtOH with TEMPO 2 offers a protic, highly hydrogen-bonding regime and a low-charge additive, which should reveal whether the reaction tolerates or benefits from protic media.",
+            "risk_note": "Potentially suppressive due to protic solvent and weakly basic additive; valuable as an information-rich contrast.",
+            "evidence_refs": [
+              "bo_rank_4",
+              "coverage_insight_broad_probe"
+            ]
+          },
+          {
+            "slot_id": 4,
+            "role": "diversity_challenger",
+            "candidate_index": 1,
+            "purpose": "Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoSO4 in CCl4 with TEMPO 3 is a strong contrast to the anchor in both additive and solvent descriptors, probing whether a non-donor medium is detrimental or unexpectedly beneficial.",
+            "risk_note": "CCl4 is chemically extreme and may be unproductive; still useful as a boundary condition.",
+            "evidence_refs": [
+              "bo_rank_2",
+              "descriptor_contrast_to_anchor"
+            ]
+          },
+          {
+            "slot_id": 5,
+            "role": "diversity_challenger",
+            "candidate_index": 6,
+            "purpose": "Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "RbBO2 in Et2O with TEMPO 3 tests a basic borate in a moderately coordinating ether, expanding coverage across additive class and solvent donor strength while remaining synthetically reasonable.",
+            "risk_note": "May be limited by solubility; nonetheless offers a distinct mechanistic probe.",
+            "evidence_refs": [
+              "bo_rank_7",
+              "descriptor_signal_additive_solvent_contrast"
+            ]
+          },
+          {
+            "slot_id": 6,
+            "role": "diversity_challenger",
+            "candidate_index": 7,
+            "purpose": "Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoCl2 in Toluene with TEMPO 6 covers a less polar, aromatic solvent and a different additive family, helping determine whether the active window shifts toward low-polarity media or remains in polar solvents.",
+            "risk_note": "Low polarity may limit mass transfer or salt dissolution; useful as a negative/diagnostic point.",
+            "evidence_refs": [
+              "bo_rank_8",
+              "descriptor_signal_full_contrast"
+            ]
+          }
+        ]
+      },
+      "batch_validation_report": {
+        "status": "valid",
+        "issues": [],
+        "repairs": [],
+        "fallback_used": false
+      },
+      "selection_trace": {
+        "action": "direct_bo_pick",
+        "batch_size": 6,
+        "pool_size": 12,
+        "strategy": "planner_anchor_diversity",
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_roles": [
+          "anchor",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger"
+        ],
+        "selected_candidate_indices": [
+          0,
+          9,
+          3,
+          1,
+          6,
+          7
+        ],
+        "batch_validation_report": {
+          "status": "valid",
+          "issues": [],
+          "repairs": [],
+          "fallback_used": false
+        }
+      },
+      "controller_action": "direct_bo_pick",
+      "requested_controller_action": "direct_bo_pick",
+      "action_package": {
+        "schema_version": "compat_v1",
+        "intent": "exploit",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "focus_variables": [],
+        "window_rounds": 0,
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "requested_execution_action": "direct_bo_pick",
+        "executed_execution_action": "direct_bo_pick"
+      },
+      "controller_plan": {
+        "intervention_type": "bo_direct",
+        "action_schema_version": "compat_v1",
+        "requested_execution_action": "direct_bo_pick",
+        "intent": "balance",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "use_subspace": false,
+        "focus_variables": [],
+        "window_rounds": 0,
+        "candidate_probe_include": [],
+        "candidate_probe_reasoning": "",
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "action_package": {
+          "schema_version": "compat_v1",
+          "intent": "exploit",
+          "shortlist_policy": "plain",
+          "repeat_policy": "allow",
+          "selection_policy": "bo_top1",
+          "verification_policy": "normal",
+          "focus_policy": "full_space",
+          "focus_variables": [],
+          "window_rounds": 0,
+          "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+          "raw_requested_execution_action": "direct_bo_pick",
+          "normalized_requested_execution_action": "direct_bo_pick",
+          "action_normalization_reason": "raw_requested_action",
+          "requested_execution_action": "direct_bo_pick",
+          "executed_execution_action": "direct_bo_pick"
+        },
+        "executed_execution_action": "direct_bo_pick",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "fallback_reason": null
+      },
+      "semantic_assessment": {
+        "risk_level": "medium",
+        "plausibility_score": 0.62,
+        "novelty_score": 0.54,
+        "soft_comment": "Plausible first-shot condition set, but the candidate is partially out-of-distribution on additive chemistry: CoSO4 with Fe(NO3)3.9H2O is chemically reasonable as a metal-salt pairing, yet CCl4 is a relatively nonpolar, weakly coordinating solvent that may suppress activation or solubilization depending on the substrate system. TEMPO derivative 3 at 50 C is a conservative anchor choice, but without any prior observations this should be treated as a baseline rather than a strong exploitation move. Overall the proposal is acceptable for execution, though I would favor keeping it as a single anchor point while planning adjacent solvent/additive coverage in later rounds.",
+        "suggested_bias": [
+          "keep_as_anchor",
+          "prioritize_coverage_next",
+          "avoid_overconfident_exploitation",
+          "monitor_solubility_and_phase_behavior"
+        ]
+      },
+      "verification_pass": {
+        "status": "caution",
+        "confidence": "high",
+        "risk_flags": [
+          "semantic_assessment_is_directionally_reasonable_but_should_not_be_over-read_as_support_for_yield",
+          "solvent_CCl4_is_weakly_coordinating_and_may_limit_solubility_or_activation",
+          "no_prior_observations_or_history_make_plausibility_and_novelty_scores_uncalibrated"
+        ],
+        "evidence_refs": [
+          "candidate_fields: Additive=CoSO4, Solvent=CCl4, TEMPO derivative=3, M(NO3)3=Fe(NO3)3.9H2O, ratio=6/5/10, 50 C",
+          "semantic_assessment.soft_comment",
+          "decision_context.iteration=1",
+          "decision_context.observations=0",
+          "verification_rules: prefer caution over fail_soft"
+        ],
+        "suggested_action": "add_caution",
+        "reasoning": "The selected candidate is internally consistent with the allowed design space and the semantic assessment is plausible. However, the assessment should be treated as a baseline-only read because there are no prior observations, no history, and no calibrated evidence for the stated plausibility/novelty scores. The main caveat is the solvent choice: CCl4 is chemically plausible but weakly coordinating and potentially solubility-limiting, which could suppress reactivity depending on the substrate system. The controller's choice of direct BO in full space is also consistent with an empty search state, so no replacement or reranking is warranted at this stage.",
+        "verification_policy": "normal"
+      },
+      "descriptor_profile": {
+        "Additive": {
+          "value": "CoSO4",
+          "source": "collaborator:additive_desc",
+          "numeric_descriptor_count": 8,
+          "descriptors": {
+            "lattice_energy": 2855.6,
+            "r+_in_crystal": 75.0,
+            "r+_thermo": 82.0,
+            "r-_thermo": 218.0,
+            "z+": 2.0,
+            "z-": 2.0
+          }
+        },
+        "Solvent": {
+          "value": "CCl4",
+          "source": "collaborator:solvent_desc",
+          "numeric_descriptor_count": 20,
+          "descriptors": {
+            "A": 0.09,
+            "AN": 8.6,
+            "B": 0.34,
+            "DI": 0.82,
+            "DN": 0.0,
+            "ES": 0.1
+          }
+        },
+        "TEMPO derivative": {
+          "value": "3",
+          "source": "collaborator:tempo_desc",
+          "numeric_descriptor_count": 120,
+          "descriptors": {
+            "<r^2>": 1931.2963,
+            "<r^2>-atom0": 13.4216,
+            "<r^2>-atom1": 1.2673,
+            "Bond_dipole_bond0": 0.0031,
+            "Chem_potential": -0.1266,
+            "Cond_Fukui+_atom0": 0.2832
+          }
+        }
+      },
+      "descriptor_contrast_to_anchor": {
+        "Additive": {
+          "from": "LaCl3",
+          "to": "CoSO4",
+          "shared_numeric_descriptor_count": 8,
+          "l2_distance": 1558.3355,
+          "top_descriptor_deltas": {
+            "lattice_energy": -1555.6485,
+            "z/r_-": -59.0,
+            "r-_thermo": 50.0,
+            "r+_thermo": -40.0,
+            "r+_in_crystal": -28.0
+          }
+        },
+        "Solvent": {
+          "from": "CHCl3",
+          "to": "CCl4",
+          "shared_numeric_descriptor_count": 20,
+          "l2_distance": 16.9449,
+          "top_descriptor_deltas": {
+            "AN": -14.5,
+            "ET": -6.7,
+            "DN": -4.0,
+            "ε0": -2.57,
+            "δh": -2.5
+          }
+        }
+      },
+      "descriptor_signal": {
+        "profiled_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "contrasted_variables": [
+          "Additive",
+          "Solvent"
+        ],
+        "has_descriptor_contrast": true
+      },
+      "evidence_refs": [],
+      "created_at": "2026-07-31T09:32:02.440957+00:00",
+      "result": "",
+      "failure_reason": "",
+      "notes": ""
+    },
+    {
+      "round_id": "round_001",
+      "recommendation_id": "round_001_rec_005",
+      "rank": 5,
+      "status": "pending",
+      "candidate": {
+        "Additive": "RbBO2",
+        "Solvent": "Et2O",
+        "TEMPO derivative": "3",
+        "M(NO3)3": "Fe(NO3)3.9H2O",
+        "Component ratio": "6/5/10",
+        "Solvent volume": "3 mL",
+        "Temperature": "50 C"
+      },
+      "rationale": "TRACE selected this condition as a diversity challenger using direct_bo_pick under lab ask/tell mode. Batch strategy: planner_anchor_diversity. Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor. RbBO2 in Et2O with TEMPO 3 tests a basic borate in a moderately coordinating ether, expanding coverage across additive class and solvent donor strength while remaining synthetically reasonable. Risk note: May be limited by solubility; nonetheless offers a distinct mechanistic probe. Descriptor contrast relative to the planner anchor: Additive LaCl3 -> RbBO2 shifts lattice_energy, z/r_+; Solvent CHCl3 -> Et2O shifts AN, DN. Chemically plausible as an initial anchor: Fe(NO3)3·9H2O is fixed, RbBO2 is a reasonable alkali borate additive, and Et2O at 50 C may provide a differentiated polarity/coordination environment. Main caveat is that this is a single unverified point in a large space, so it is better as a baseline than a high-confidence exploitation choice. The TEMPO derivative choice may matter substantially, but with no prior observations this should be treated as one informative probe rather than a strongly optimized selection.",
+      "planner_name": "atlas",
+      "batch_role": "diversity_challenger",
+      "batch_role_reason": "Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor.",
+      "batch_slot": {
+        "batch_slot_id": 5,
+        "batch_role": "diversity_challenger",
+        "batch_role_reason": "Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor.",
+        "batch_slot_purpose": "Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor.",
+        "batch_slot_rationale": "RbBO2 in Et2O with TEMPO 3 tests a basic borate in a moderately coordinating ether, expanding coverage across additive class and solvent donor strength while remaining synthetically reasonable.",
+        "batch_slot_risk_note": "May be limited by solubility; nonetheless offers a distinct mechanistic probe.",
+        "batch_slot_evidence_refs": [
+          "bo_rank_7",
+          "descriptor_signal_additive_solvent_contrast"
+        ],
+        "batch_slot_varied_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "batch_slot_controlled_variables": [
+          "M(NO3)3",
+          "Component ratio",
+          "Solvent volume",
+          "Temperature"
+        ]
+      },
+      "batch_contract": {
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_rationale": "Iteration 1 has no observations, so the batch should function as a bounded TRACE portfolio: keep the BO top-1 anchor, then add chemically diverse challengers that span base strength, solvent polarity/proticity, and TEMPO electronics without collapsing into near-duplicates. This maximizes early information gain and gives a balanced first read on main effects and interactions under the fixed Fe(NO3)3 / 6/5/10 / 3 mL / 50 C conditions.",
+        "global_constraints": [
+          "Use only admissible candidates from the provided pool.",
+          "Keep M(NO3)3 fixed as Fe(NO3)3.9H2O and preserve the static controlled conditions exactly.",
+          "Avoid repeated or near-repeated chemical neighborhoods; prefer orthogonal coverage across additive class, solvent class, and TEMPO derivative.",
+          "Retain the planner anchor as one batch member because there is no history yet and BO top-1 should be preserved.",
+          "No oracle assumptions: all candidates remain pending until measured."
+        ],
+        "slots": [
+          {
+            "slot_id": 1,
+            "role": "anchor",
+            "candidate_index": 0,
+            "purpose": "Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Strong anchor with a halide/lanthanide additive and moderately polar chlorinated solvent; useful as the main BO reference in an empty-history setting.",
+            "risk_note": "Chemically plausible but still unvalidated; no prior outcome data.",
+            "evidence_refs": [
+              "bo_rank_1",
+              "descriptor_signal_anchor"
+            ]
+          },
+          {
+            "slot_id": 2,
+            "role": "diversity_challenger",
+            "candidate_index": 9,
+            "purpose": "Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Sc(NO3)3_xH2O in acetone with TEMPO 4 tests a distinct ionic/polar environment and a different TEMPO electronics/size profile, likely informative for interaction sensitivity.",
+            "risk_note": "Higher coordination/solvation burden may change speciation; informative even if low yielding.",
+            "evidence_refs": [
+              "bo_rank_10",
+              "descriptor_signal_full_contrast"
+            ]
+          },
+          {
+            "slot_id": 3,
+            "role": "diversity_challenger",
+            "candidate_index": 3,
+            "purpose": "Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "NH4NO3 in EtOH with TEMPO 2 offers a protic, highly hydrogen-bonding regime and a low-charge additive, which should reveal whether the reaction tolerates or benefits from protic media.",
+            "risk_note": "Potentially suppressive due to protic solvent and weakly basic additive; valuable as an information-rich contrast.",
+            "evidence_refs": [
+              "bo_rank_4",
+              "coverage_insight_broad_probe"
+            ]
+          },
+          {
+            "slot_id": 4,
+            "role": "diversity_challenger",
+            "candidate_index": 1,
+            "purpose": "Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoSO4 in CCl4 with TEMPO 3 is a strong contrast to the anchor in both additive and solvent descriptors, probing whether a non-donor medium is detrimental or unexpectedly beneficial.",
+            "risk_note": "CCl4 is chemically extreme and may be unproductive; still useful as a boundary condition.",
+            "evidence_refs": [
+              "bo_rank_2",
+              "descriptor_contrast_to_anchor"
+            ]
+          },
+          {
+            "slot_id": 5,
+            "role": "diversity_challenger",
+            "candidate_index": 6,
+            "purpose": "Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "RbBO2 in Et2O with TEMPO 3 tests a basic borate in a moderately coordinating ether, expanding coverage across additive class and solvent donor strength while remaining synthetically reasonable.",
+            "risk_note": "May be limited by solubility; nonetheless offers a distinct mechanistic probe.",
+            "evidence_refs": [
+              "bo_rank_7",
+              "descriptor_signal_additive_solvent_contrast"
+            ]
+          },
+          {
+            "slot_id": 6,
+            "role": "diversity_challenger",
+            "candidate_index": 7,
+            "purpose": "Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoCl2 in Toluene with TEMPO 6 covers a less polar, aromatic solvent and a different additive family, helping determine whether the active window shifts toward low-polarity media or remains in polar solvents.",
+            "risk_note": "Low polarity may limit mass transfer or salt dissolution; useful as a negative/diagnostic point.",
+            "evidence_refs": [
+              "bo_rank_8",
+              "descriptor_signal_full_contrast"
+            ]
+          }
+        ]
+      },
+      "batch_validation_report": {
+        "status": "valid",
+        "issues": [],
+        "repairs": [],
+        "fallback_used": false
+      },
+      "selection_trace": {
+        "action": "direct_bo_pick",
+        "batch_size": 6,
+        "pool_size": 12,
+        "strategy": "planner_anchor_diversity",
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_roles": [
+          "anchor",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger"
+        ],
+        "selected_candidate_indices": [
+          0,
+          9,
+          3,
+          1,
+          6,
+          7
+        ],
+        "batch_validation_report": {
+          "status": "valid",
+          "issues": [],
+          "repairs": [],
+          "fallback_used": false
+        }
+      },
+      "controller_action": "direct_bo_pick",
+      "requested_controller_action": "direct_bo_pick",
+      "action_package": {
+        "schema_version": "compat_v1",
+        "intent": "exploit",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "focus_variables": [],
+        "window_rounds": 0,
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "requested_execution_action": "direct_bo_pick",
+        "executed_execution_action": "direct_bo_pick"
+      },
+      "controller_plan": {
+        "intervention_type": "bo_direct",
+        "action_schema_version": "compat_v1",
+        "requested_execution_action": "direct_bo_pick",
+        "intent": "balance",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "use_subspace": false,
+        "focus_variables": [],
+        "window_rounds": 0,
+        "candidate_probe_include": [],
+        "candidate_probe_reasoning": "",
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "action_package": {
+          "schema_version": "compat_v1",
+          "intent": "exploit",
+          "shortlist_policy": "plain",
+          "repeat_policy": "allow",
+          "selection_policy": "bo_top1",
+          "verification_policy": "normal",
+          "focus_policy": "full_space",
+          "focus_variables": [],
+          "window_rounds": 0,
+          "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+          "raw_requested_execution_action": "direct_bo_pick",
+          "normalized_requested_execution_action": "direct_bo_pick",
+          "action_normalization_reason": "raw_requested_action",
+          "requested_execution_action": "direct_bo_pick",
+          "executed_execution_action": "direct_bo_pick"
+        },
+        "executed_execution_action": "direct_bo_pick",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "fallback_reason": null
+      },
+      "semantic_assessment": {
+        "risk_level": "low",
+        "plausibility_score": 0.76,
+        "novelty_score": 0.58,
+        "soft_comment": "Chemically plausible as an initial anchor: Fe(NO3)3·9H2O is fixed, RbBO2 is a reasonable alkali borate additive, and Et2O at 50 C may provide a differentiated polarity/coordination environment. Main caveat is that this is a single unverified point in a large space, so it is better as a baseline than a high-confidence exploitation choice. The TEMPO derivative choice may matter substantially, but with no prior observations this should be treated as one informative probe rather than a strongly optimized selection.",
+        "suggested_bias": [
+          "keep as planner anchor",
+          "avoid near-duplicate repeats until a result is seen",
+          "if batch allows, pair with a contrasting solvent/additive only in later rounds"
+        ]
+      },
+      "verification_pass": null,
+      "descriptor_profile": {
+        "Additive": {
+          "value": "RbBO2",
+          "source": "collaborator:additive_desc",
+          "numeric_descriptor_count": 8,
+          "descriptors": {
+            "lattice_energy": 686.0217,
+            "r+_in_crystal": 161.0,
+            "r+_thermo": 149.0,
+            "r-_thermo": 165.0,
+            "z+": 1.0,
+            "z-": 1.0
+          }
+        },
+        "Solvent": {
+          "value": "Et2O",
+          "source": "collaborator:solvent_desc",
+          "numeric_descriptor_count": 20,
+          "descriptors": {
+            "A": 0.12,
+            "AN": 3.9,
+            "B": 0.34,
+            "DI": 0.68,
+            "DN": 19.2,
+            "ES": 0.26
+          }
+        },
+        "TEMPO derivative": {
+          "value": "3",
+          "source": "collaborator:tempo_desc",
+          "numeric_descriptor_count": 120,
+          "descriptors": {
+            "<r^2>": 1931.2963,
+            "<r^2>-atom0": 13.4216,
+            "<r^2>-atom1": 1.2673,
+            "Bond_dipole_bond0": 0.0031,
+            "Chem_potential": -0.1266,
+            "Cond_Fukui+_atom0": 0.2832
+          }
+        }
+      },
+      "descriptor_contrast_to_anchor": {
+        "Additive": {
+          "from": "LaCl3",
+          "to": "RbBO2",
+          "shared_numeric_descriptor_count": 8,
+          "l2_distance": 3727.3537,
+          "top_descriptor_deltas": {
+            "lattice_energy": -3725.2268,
+            "z/r_+": 108.3333,
+            "r+_in_crystal": 58.0,
+            "r+_thermo": 27.0,
+            "r-_thermo": -3.0
+          }
+        },
+        "Solvent": {
+          "from": "CHCl3",
+          "to": "Et2O",
+          "shared_numeric_descriptor_count": 20,
+          "l2_distance": 25.0433,
+          "top_descriptor_deltas": {
+            "AN": -19.2,
+            "DN": 15.2,
+            "ET": -4.6,
+            "δ": -1.61,
+            "δd": -1.61
+          }
+        }
+      },
+      "descriptor_signal": {
+        "profiled_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "contrasted_variables": [
+          "Additive",
+          "Solvent"
+        ],
+        "has_descriptor_contrast": true
+      },
+      "evidence_refs": [],
+      "created_at": "2026-07-31T09:32:02.440957+00:00",
+      "result": "",
+      "failure_reason": "",
+      "notes": ""
+    },
+    {
+      "round_id": "round_001",
+      "recommendation_id": "round_001_rec_006",
+      "rank": 6,
+      "status": "pending",
+      "candidate": {
+        "Additive": "CoCl2",
+        "Solvent": "Toluene",
+        "TEMPO derivative": "6",
+        "M(NO3)3": "Fe(NO3)3.9H2O",
+        "Component ratio": "6/5/10",
+        "Solvent volume": "3 mL",
+        "Temperature": "50 C"
+      },
+      "rationale": "TRACE selected this condition as a diversity challenger using direct_bo_pick under lab ask/tell mode. Batch strategy: planner_anchor_diversity. Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime. CoCl2 in Toluene with TEMPO 6 covers a less polar, aromatic solvent and a different additive family, helping determine whether the active window shifts toward low-polarity media or remains in polar solvents. Risk note: Low polarity may limit mass transfer or salt dissolution; useful as a negative/diagnostic point. Descriptor contrast relative to the planner anchor: Additive LaCl3 -> CoCl2 shifts lattice_energy, r+_thermo; Solvent CHCl3 -> Toluene shifts AN, ET. Chemically plausible first probe: CoCl2 and Fe(NO3)3·9H2O in toluene at 50 C with TEMPO derivative 6 is a reasonable, non-duplicative anchor. Main risk is that the solvent/catalyst pairing may not be sufficiently activating for this substrate family, so yield may remain low if the active regime prefers a more polar medium or a different additive class. As a standalone BO candidate it is acceptable, but I would not yet over-commit; pair it later with a sparse contrast around solvent/additive class if the first data point is weak.",
+      "planner_name": "atlas",
+      "batch_role": "diversity_challenger",
+      "batch_role_reason": "Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime.",
+      "batch_slot": {
+        "batch_slot_id": 6,
+        "batch_role": "diversity_challenger",
+        "batch_role_reason": "Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime.",
+        "batch_slot_purpose": "Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime.",
+        "batch_slot_rationale": "CoCl2 in Toluene with TEMPO 6 covers a less polar, aromatic solvent and a different additive family, helping determine whether the active window shifts toward low-polarity media or remains in polar solvents.",
+        "batch_slot_risk_note": "Low polarity may limit mass transfer or salt dissolution; useful as a negative/diagnostic point.",
+        "batch_slot_evidence_refs": [
+          "bo_rank_8",
+          "descriptor_signal_full_contrast"
+        ],
+        "batch_slot_varied_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "batch_slot_controlled_variables": [
+          "M(NO3)3",
+          "Component ratio",
+          "Solvent volume",
+          "Temperature"
+        ]
+      },
+      "batch_contract": {
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_rationale": "Iteration 1 has no observations, so the batch should function as a bounded TRACE portfolio: keep the BO top-1 anchor, then add chemically diverse challengers that span base strength, solvent polarity/proticity, and TEMPO electronics without collapsing into near-duplicates. This maximizes early information gain and gives a balanced first read on main effects and interactions under the fixed Fe(NO3)3 / 6/5/10 / 3 mL / 50 C conditions.",
+        "global_constraints": [
+          "Use only admissible candidates from the provided pool.",
+          "Keep M(NO3)3 fixed as Fe(NO3)3.9H2O and preserve the static controlled conditions exactly.",
+          "Avoid repeated or near-repeated chemical neighborhoods; prefer orthogonal coverage across additive class, solvent class, and TEMPO derivative.",
+          "Retain the planner anchor as one batch member because there is no history yet and BO top-1 should be preserved.",
+          "No oracle assumptions: all candidates remain pending until measured."
+        ],
+        "slots": [
+          {
+            "slot_id": 1,
+            "role": "anchor",
+            "candidate_index": 0,
+            "purpose": "Preserve the BO top-ranked candidate as the exploitation anchor and reference point for the first batch.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Strong anchor with a halide/lanthanide additive and moderately polar chlorinated solvent; useful as the main BO reference in an empty-history setting.",
+            "risk_note": "Chemically plausible but still unvalidated; no prior outcome data.",
+            "evidence_refs": [
+              "bo_rank_1",
+              "descriptor_signal_anchor"
+            ]
+          },
+          {
+            "slot_id": 2,
+            "role": "diversity_challenger",
+            "candidate_index": 9,
+            "purpose": "Probe a high-polarity, Lewis-acidic additive/solvent pairing that contrasts sharply with the anchor while staying chemically plausible.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "Sc(NO3)3_xH2O in acetone with TEMPO 4 tests a distinct ionic/polar environment and a different TEMPO electronics/size profile, likely informative for interaction sensitivity.",
+            "risk_note": "Higher coordination/solvation burden may change speciation; informative even if low yielding.",
+            "evidence_refs": [
+              "bo_rank_10",
+              "descriptor_signal_full_contrast"
+            ]
+          },
+          {
+            "slot_id": 3,
+            "role": "diversity_challenger",
+            "candidate_index": 3,
+            "purpose": "Test a protic-solvent condition with a weakly basic ammonium salt additive to separate solvent donor/proticity effects from simple basicity.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "NH4NO3 in EtOH with TEMPO 2 offers a protic, highly hydrogen-bonding regime and a low-charge additive, which should reveal whether the reaction tolerates or benefits from protic media.",
+            "risk_note": "Potentially suppressive due to protic solvent and weakly basic additive; valuable as an information-rich contrast.",
+            "evidence_refs": [
+              "bo_rank_4",
+              "coverage_insight_broad_probe"
+            ]
+          },
+          {
+            "slot_id": 4,
+            "role": "diversity_challenger",
+            "candidate_index": 1,
+            "purpose": "Explore a low-donor, halogen-rich solvent regime with a metal sulfate additive to test sensitivity to poor donor environments.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoSO4 in CCl4 with TEMPO 3 is a strong contrast to the anchor in both additive and solvent descriptors, probing whether a non-donor medium is detrimental or unexpectedly beneficial.",
+            "risk_note": "CCl4 is chemically extreme and may be unproductive; still useful as a boundary condition.",
+            "evidence_refs": [
+              "bo_rank_2",
+              "descriptor_contrast_to_anchor"
+            ]
+          },
+          {
+            "slot_id": 5,
+            "role": "diversity_challenger",
+            "candidate_index": 6,
+            "purpose": "Sample a weakly polar ether solvent with an alkali borate additive to cover a different base/ionic regime than the anchor.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "RbBO2 in Et2O with TEMPO 3 tests a basic borate in a moderately coordinating ether, expanding coverage across additive class and solvent donor strength while remaining synthetically reasonable.",
+            "risk_note": "May be limited by solubility; nonetheless offers a distinct mechanistic probe.",
+            "evidence_refs": [
+              "bo_rank_7",
+              "descriptor_signal_additive_solvent_contrast"
+            ]
+          },
+          {
+            "slot_id": 6,
+            "role": "diversity_challenger",
+            "candidate_index": 7,
+            "purpose": "Add an aromatic nonpolar solvent condition with a transition-metal chloride additive to span a distinct solvency and coordination regime.",
+            "varied_variables": [
+              "Additive",
+              "Solvent",
+              "TEMPO derivative"
+            ],
+            "controlled_variables": [
+              "M(NO3)3",
+              "Component ratio",
+              "Solvent volume",
+              "Temperature"
+            ],
+            "rationale": "CoCl2 in Toluene with TEMPO 6 covers a less polar, aromatic solvent and a different additive family, helping determine whether the active window shifts toward low-polarity media or remains in polar solvents.",
+            "risk_note": "Low polarity may limit mass transfer or salt dissolution; useful as a negative/diagnostic point.",
+            "evidence_refs": [
+              "bo_rank_8",
+              "descriptor_signal_full_contrast"
+            ]
+          }
+        ]
+      },
+      "batch_validation_report": {
+        "status": "valid",
+        "issues": [],
+        "repairs": [],
+        "fallback_used": false
+      },
+      "selection_trace": {
+        "action": "direct_bo_pick",
+        "batch_size": 6,
+        "pool_size": 12,
+        "strategy": "planner_anchor_diversity",
+        "batch_strategy": "planner_anchor_diversity",
+        "batch_roles": [
+          "anchor",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger",
+          "diversity_challenger"
+        ],
+        "selected_candidate_indices": [
+          0,
+          9,
+          3,
+          1,
+          6,
+          7
+        ],
+        "batch_validation_report": {
+          "status": "valid",
+          "issues": [],
+          "repairs": [],
+          "fallback_used": false
+        }
+      },
+      "controller_action": "direct_bo_pick",
+      "requested_controller_action": "direct_bo_pick",
+      "action_package": {
+        "schema_version": "compat_v1",
+        "intent": "exploit",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "focus_variables": [],
+        "window_rounds": 0,
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "requested_execution_action": "direct_bo_pick",
+        "executed_execution_action": "direct_bo_pick"
+      },
+      "controller_plan": {
+        "intervention_type": "bo_direct",
+        "action_schema_version": "compat_v1",
+        "requested_execution_action": "direct_bo_pick",
+        "intent": "balance",
+        "shortlist_policy": "plain",
+        "repeat_policy": "allow",
+        "selection_policy": "bo_top1",
+        "verification_policy": "normal",
+        "focus_policy": "full_space",
+        "use_subspace": false,
+        "focus_variables": [],
+        "window_rounds": 0,
+        "candidate_probe_include": [],
+        "candidate_probe_reasoning": "",
+        "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+        "action_package": {
+          "schema_version": "compat_v1",
+          "intent": "exploit",
+          "shortlist_policy": "plain",
+          "repeat_policy": "allow",
+          "selection_policy": "bo_top1",
+          "verification_policy": "normal",
+          "focus_policy": "full_space",
+          "focus_variables": [],
+          "window_rounds": 0,
+          "reasoning": "Iteration 1 has zero observations, zero history, and no stagnation. Coverage is empty across all active dimensions, so the best controller mode is to let BO operate in full space without premature narrowing, reranking, or focused filtering. This preserves maximal information gain while keeping the planner anchor unconstrained for the first batch.",
+          "raw_requested_execution_action": "direct_bo_pick",
+          "normalized_requested_execution_action": "direct_bo_pick",
+          "action_normalization_reason": "raw_requested_action",
+          "requested_execution_action": "direct_bo_pick",
+          "executed_execution_action": "direct_bo_pick"
+        },
+        "executed_execution_action": "direct_bo_pick",
+        "raw_requested_execution_action": "direct_bo_pick",
+        "normalized_requested_execution_action": "direct_bo_pick",
+        "action_normalization_reason": "raw_requested_action",
+        "fallback_reason": null
+      },
+      "semantic_assessment": {
+        "risk_level": "medium",
+        "plausibility_score": 0.66,
+        "novelty_score": 0.58,
+        "soft_comment": "Chemically plausible first probe: CoCl2 and Fe(NO3)3·9H2O in toluene at 50 C with TEMPO derivative 6 is a reasonable, non-duplicative anchor. Main risk is that the solvent/catalyst pairing may not be sufficiently activating for this substrate family, so yield may remain low if the active regime prefers a more polar medium or a different additive class. As a standalone BO candidate it is acceptable, but I would not yet over-commit; pair it later with a sparse contrast around solvent/additive class if the first data point is weak.",
+        "suggested_bias": [
+          "retain as anchor",
+          "prioritize initial coverage",
+          "avoid near-duplicate Co/Fe + toluene variants until one data point is measured",
+          "if possible, contrast with one more polar solvent in later batch"
+        ]
+      },
+      "verification_pass": {
+        "status": "caution",
+        "confidence": "high",
+        "risk_flags": [
+          "semantic_assessment_supported",
+          "first_iteration_no_history",
+          "no_identity_mismatch_detected",
+          "no_candidate_replacement"
+        ],
+        "evidence_refs": [
+          "candidate",
+          "semantic_assessment",
+          "search_space_meta.valid_values_per_col",
+          "search_space_meta.fixed_conditions",
+          "controller_plan"
+        ],
+        "suggested_action": "add_caution",
+        "reasoning": "The selected candidate is chemically and schema-plausible: CoCl2 and Fe(NO3)3.9H2O are both valid additive/fixed-condition entries, Toluene is a valid solvent, TEMPO derivative 6 is allowed, and the static/controlled conditions are internally consistent. The semantic assessment is reasonable but should be treated as provisional: the plausibility and novelty scores are unsupported by observations because iteration 1 has zero history and no evidence cards or oracle feedback. Main caveat is not a validity issue but an inference-strength issue: claims about being a good anchor and about likely solvent activation are plausible yet unverified. No candidate replacement is needed; the appropriate action is to keep the candidate and attach caution that the assessment is heuristic and information state is empty.",
+        "verification_policy": "normal"
+      },
+      "descriptor_profile": {
+        "Additive": {
+          "value": "CoCl2",
+          "source": "collaborator:additive_desc",
+          "numeric_descriptor_count": 8,
+          "descriptors": {
+            "lattice_energy": 2503.248,
+            "r+_in_crystal": 75.0,
+            "r+_thermo": 82.0,
+            "r-_thermo": 168.0,
+            "z+": 2.0,
+            "z-": 1.0
+          }
+        },
+        "Solvent": {
+          "value": "Toluene",
+          "source": "collaborator:solvent_desc",
+          "numeric_descriptor_count": 20,
+          "descriptors": {
+            "A": 0.13,
+            "AN": 1.8,
+            "B": 0.54,
+            "DI": 0.86,
+            "DN": 0.1,
+            "ES": 0.2
+          }
+        },
+        "TEMPO derivative": {
+          "value": "6",
+          "source": "collaborator:tempo_desc",
+          "numeric_descriptor_count": 120,
+          "descriptors": {
+            "<r^2>": 2541.2231,
+            "<r^2>-atom0": 13.4482,
+            "<r^2>-atom1": 1.112,
+            "Bond_dipole_bond0": 0.015,
+            "Chem_potential": -0.1234,
+            "Cond_Fukui+_atom0": 0.2776
+          }
+        }
+      },
+      "descriptor_contrast_to_anchor": {
+        "Additive": {
+          "from": "LaCl3",
+          "to": "CoCl2",
+          "shared_numeric_descriptor_count": 8,
+          "l2_distance": 1908.6254,
+          "top_descriptor_deltas": {
+            "lattice_energy": -1908.0005,
+            "r+_thermo": -40.0,
+            "r+_in_crystal": -28.0,
+            "z+": -1.0,
+            "z/r_+": 0.3333
+          }
+        },
+        "Solvent": {
+          "from": "CHCl3",
+          "to": "Toluene",
+          "shared_numeric_descriptor_count": 20,
+          "l2_distance": 22.4992,
+          "top_descriptor_deltas": {
+            "AN": -21.3,
+            "ET": -5.2,
+            "DN": -3.9,
+            "ε0": -2.43,
+            "δh": -1.81
+          }
+        },
+        "TEMPO derivative": {
+          "from": "3",
+          "to": "6",
+          "shared_numeric_descriptor_count": 120,
+          "l2_distance": 646.267,
+          "top_descriptor_deltas": {
+            "<r^2>": 609.9268,
+            "Molecular_volumn": 168.9155,
+            "Molecular_all_surface_area": 85.6204,
+            "vari_ESP_atom1": 69.7129,
+            "area_pSurface": 43.5752
+          }
+        }
+      },
+      "descriptor_signal": {
+        "profiled_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "contrasted_variables": [
+          "Additive",
+          "Solvent",
+          "TEMPO derivative"
+        ],
+        "has_descriptor_contrast": true
+      },
+      "evidence_refs": [],
+      "created_at": "2026-07-31T09:32:02.440957+00:00",
+      "result": "",
+      "failure_reason": "",
+      "notes": ""
+    }
+  ],
+  "trace_path": "runs/lab_projects/xmart_55_design_space_20260731/trace_round_001.jsonl",
+  "recommendations_json_path": "runs/lab_projects/xmart_55_design_space_20260731/recommendations_round_001.json",
+  "recommendations_csv_path": "runs/lab_projects/xmart_55_design_space_20260731/recommendations_round_001.csv",
+  "third_party_log_path": "runs/lab_projects/xmart_55_design_space_20260731/logs/third_party.log",
+  "oracle_evaluation_disabled": true,
+  "controller_mode": "agentic",
+  "planner_use_descriptors": false,
+  "planner_descriptor_eligibility": {
+    "eligible": true,
+    "enabled_variables": [
+      "Additive",
+      "Solvent",
+      "TEMPO derivative"
+    ],
+    "missing_descriptor_variables": [],
+    "ignored_continuous_variables": [],
+    "mode": "all_active_categorical_variables_require_complete_numeric_descriptors"
+  }
+}

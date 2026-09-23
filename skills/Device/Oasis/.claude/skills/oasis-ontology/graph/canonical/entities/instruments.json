@@ -1,0 +1,37 @@
+{
+  "instrument:a--6428f965": {
+    "entity_type": "Instrument",
+    "id": "instrument:a--6428f965",
+    "name": "移液站A"
+  },
+  "instrument:a--7408e264": {
+    "entity_type": "Instrument",
+    "id": "instrument:a--7408e264",
+    "name": "高内涵仪A"
+  },
+  "instrument:item--0e00f1c1": {
+    "entity_type": "Instrument",
+    "id": "instrument:item--0e00f1c1",
+    "name": "孵育"
+  },
+  "instrument:item--68b616ee": {
+    "entity_type": "Instrument",
+    "id": "instrument:item--68b616ee",
+    "name": "常温孵育"
+  },
+  "instrument:item--8788d5b2": {
+    "entity_type": "Instrument",
+    "id": "instrument:item--8788d5b2",
+    "name": "移液"
+  },
+  "instrument:item--c5a99375": {
+    "entity_type": "Instrument",
+    "id": "instrument:item--c5a99375",
+    "name": "成像"
+  },
+  "instrument:item--f4abdfc7": {
+    "entity_type": "Instrument",
+    "id": "instrument:item--f4abdfc7",
+    "name": "洗板"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_00b12c1e4694",
+  "paper_id": "45f9abb3ad1c",
+  "raw_path": "相关文献/两个4-连接配位网络的锌(...合物的合成、结构和荧光性质_卢文贯.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": false,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "pyridine"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "abstract": "Reactions of 5-amino-tetrazole\n(HATz) and 4-pyridinecarboxylic acid\n(HPyc) with ZnSO4·7H2O or\nZn(NO3)2·6H2O under N,N′-dimethylformamide (DMF) solvothermal condition, yielded two new Zn髤coordination",
+    "results_summary": "收稿日期：2013-01-27。收修改稿日期：2013-03-26。\n国家自然科学基金(No.21071099)和2012 年广东省大学生创新训练计划资助项目。\n＊通讯联系人。E-mail：lwg@sgu.edu.cn；会员登记号：S06N6397M1204。\n两个4-连接配位网络的锌髤配位聚合物的合成、结构和荧光性质\n卢文贯＊\n刘宏文\n殷旭光\n蓝路梅\n刘克美\n刘海瑶\n黄\n静\n吴琪欣\n廖彩兰\n(韶"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:10:33.242984"
+}

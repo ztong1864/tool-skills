@@ -1,0 +1,40 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_615114e4214b",
+  "canonical_material_id": "mat_0a450422d8c4",
+  "canonical_name": "[Cu(tz)]",
+  "metal_element": "Cu",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_13a831874352",
+  "pillar_id": null,
+  "topology": "sql-a",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "09e67f192def"
+  ],
+  "evidence_trace_ids": [],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:25:45.934878",
+  "updated_at": "2026-04-23T20:25:45.934886"
+}

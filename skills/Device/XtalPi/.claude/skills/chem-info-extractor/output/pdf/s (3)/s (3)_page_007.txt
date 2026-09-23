@@ -1,0 +1,23 @@
+S7
+ inside a glove box. The Schlenk tube was th en taken out of the glove box and heated
+until the inorganic salts melting under vac uum with a heating gun. After cooling to
+room temperature, ( S)-3 (259.0 mg, 1.0 mmol, 98%), 1b (212.9 mg, 1.5 mmol,
+98%) /dioxane (2 mL), and 2a (212.7 mg, 2.0 mmol)/dioxane (1 mL) were then added
+sequentially under an argon atmosphere. The Schlenk tube was then equipped with a
+condenser and placed in a pre-heated oil bath at 120 oC with stirring for 13 h. After
+cooling to room temperature, the crude reaction mixture was filtered through a short
+pad of silica gel eluted with  ether (20 mL). After evapor ation, the residue was purified
+by chromatography on silica gel to afford ( R)-4ba (114.6 mg, 50%) (eluent: petroleum
+ether) as a liquid: 98% ee (HPLC co nditions: Chiralcel OD-H column, hexane/ i-PrOH
+= 100/0, 0.7 mL/min, λ = 254 nm,  tR(major) = 5.7 min, tR(minor) = 6.6 min); [ α]D20 =
+-232.1 ( c = 0.94, CHCl 3); 1H NMR (300 MHz, CDCl 3) δ = 7.34-7.24 (m, 4 H, Ar-H),
+7.22-7.11 (m, 1 H, Ar-H), 6.12 (dt, J1 = 6.3 Hz, J2 = 3.1 Hz, 1 H, one proton from
+CH=C=CH), 5.56 (q, J = 6.7 Hz, 1 H, one proton from CH=C=CH), 2.12 (qd, J1 = 6.9
+Hz, J2 = 3.0 Hz, 2 H, CH 2), 1.56-1.15 (m, 12 H, CH 2×6), 0.88 (t, J = 6.6 Hz, 3 H,
+CH 3); 13C NMR (75 MHz, CDCl 3) δ = 205.1, 135.1, 128.5, 126.6, 126.5, 95.1, 94.5,
+31.9, 29.4, 29.3, 29.19, 29.16, 28.8, 22.7, 14.1.
+This following compounds (( R)-4bb- (R)-4fj in Table 2 were prepared according
+to the  Typical Procedure for conditions A or B . The corresponding racemic
+compounds were prepared according to our early report.2
+(3) Preparation of ( R)-1-(4-bromophenyl)undeca-1,2-diene ( R-4bb) (nsj-6-42,
+nsj-6-43):

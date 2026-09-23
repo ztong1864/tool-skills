@@ -1,0 +1,3600 @@
+[
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-42206f9b1d7a",
+    "process_json": {
+      "src_layout_code": "W1-3:1",
+      "resource_type": "DHP30_V2",
+      "substance": "4A MS",
+      "add_weight": 20.0,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-f48cb2249ac5",
+    "process_json": {
+      "src_layout_code": "W1-3:1",
+      "resource_type": "DHP30_V2",
+      "substance": "4A MS",
+      "add_weight": 20.0,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-0ecdea260b94",
+    "process_json": {
+      "src_layout_code": "W1-3:1",
+      "resource_type": "DHP30_V2",
+      "substance": "4A MS",
+      "add_weight": 20.0,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-4da2e4df6832",
+    "process_json": {
+      "src_layout_code": "W1-3:1",
+      "resource_type": "DHP30_V2",
+      "substance": "4A MS",
+      "add_weight": 20.0,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-d029639b1f13",
+    "process_json": {
+      "src_layout_code": "W1-3:1",
+      "resource_type": "DHP30_V2",
+      "substance": "4A MS",
+      "add_weight": 20.0,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-4fd4eb30c8b9",
+    "process_json": {
+      "src_layout_code": "W1-3:1",
+      "resource_type": "DHP30_V2",
+      "substance": "4A MS",
+      "add_weight": 20.0,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-049696fbef84",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 1.596,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-8efef193e354",
+    "process_json": {
+      "src_layout_code": "W1-3:1",
+      "resource_type": "DHP30_V2",
+      "substance": "4A MS",
+      "add_weight": 20.0,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-19737b748e7e",
+    "process_json": {
+      "src_layout_code": "W1-4:0",
+      "resource_type": "DHP30_V2",
+      "substance": "CuBr（溴化亚铜）",
+      "add_weight": 0.717,
+      "offset": 0.08,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.02
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 0,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-5b215b31456a",
+    "process_json": {
+      "src_layout_code": "W1-3:1",
+      "resource_type": "DHP30_V2",
+      "substance": "4A MS",
+      "add_weight": 20.0,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-6febc7f95b48",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 1.596,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-0ec6b57baded",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 1.117,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-7b0d74717399",
+    "process_json": {
+      "src_layout_code": "W2-5:0",
+      "resource_type": "DHP30_V2",
+      "substance": "CuI（碘化亚铜）",
+      "add_weight": 0.952,
+      "offset": 0.08,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.02
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-7ed0daa3032b",
+    "process_json": {
+      "src_layout_code": "W1-4:0",
+      "resource_type": "DHP30_V2",
+      "substance": "CuBr（溴化亚铜）",
+      "add_weight": 0.717,
+      "offset": 0.08,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.02
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-becaa4e4e6cc",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 1.596,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-b28f76611656",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 1.117,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-9566074e4e48",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 37.61,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-f0ed8acf137d",
+    "process_json": {
+      "src_layout_code": "W2-5:0",
+      "resource_type": "DHP30_V2",
+      "substance": "CuI（碘化亚铜）",
+      "add_weight": 0.952,
+      "offset": 0.08,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.02
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-d8d6b7819f71",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 32.09,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 1,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-5c0fca87ac26",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 1.126,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 2,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-ee6e6bdcaa05",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 1.126,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 2,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-6a9e39e141b8",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 1.596,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 2,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-52556c7b15f9",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 1.126,
+      "offset": 0.05,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.0125
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 3,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-11fefdbae0f5",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 33.77,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 3,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-9dc97a2ba126",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 33.77,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 3,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-15bf0ea06611",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 33.77,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 3,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-a465d783a611",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 33.77,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 3,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-743f1046ddae",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 37.13,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 3,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-a5eafc1d199f",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 37.13,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 3,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-bbfe5f718658",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 37.61,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 3,
+    "unit_type": "exp_add_solid",
+    "unit_id": "unit-65f0f30da738",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_weight": 32.09,
+      "offset": 2.1,
+      "custom": {
+        "unit": "mg",
+        "unitOptions": [
+          "mg",
+          "g"
+        ],
+        "step": {
+          "offset": 0.525
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-c7aae7650d06",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-528334f23da8",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-31b30312450e",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-c3ad4b19c140",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-70416f529c62",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-98e682653bbc",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-613b904256d8",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-b836c66632c2",
+    "process_json": {
+      "src_layout_code": null,
+      "resource_type": null,
+      "substance": null,
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-205da9ce27f0",
+    "process_json": {
+      "src_layout_code": "T-9:3",
+      "resource_type": "TT40TC",
+      "substance": "Dioxane二噁烷",
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 4,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-38742b56d64c",
+    "process_json": {
+      "src_layout_code": "T-9:1",
+      "resource_type": "TT40TC",
+      "substance": "DCE（二氯乙烷）",
+      "add_volume": 1.0,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.05
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-8c12b0baf6ad",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-9fb00115ef3c",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-f662acb4bf5f",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-2fec09ac89fc",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-e15eb7ffcd10",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-08dc995302ef",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-20e4a7f1d154",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-e950bf0936d0",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-13e3b55c0305",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 5,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-6f740107c7d0",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1800,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-a28d0ae59678",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-4021e4fa2aa8",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-60343ece7ec9",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-e7569adc14a1",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-ab18e4ad7b28",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-06ec88037d2e",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-0e0f5a35e94a",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-bccbc34659e2",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-deccb8ba4e3e",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 6,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-13057a7b8496",
+    "process_json": {
+      "src_layout_code": "T-9:5",
+      "resource_type": "TT40TC",
+      "substance": "正壬醛",
+      "add_volume": 0.020640000000000002,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-b170df666c23",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-51797652be7b",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-00a2902f47e8",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-c5a832005a80",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-5b34f8b787c5",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-e32a0b680222",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-2ceb522301cd",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-fbc5dff7e641",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-e61e5f5e3e20",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 7,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-1d7b43be0a13",
+    "process_json": {
+      "src_layout_code": "T-9:4",
+      "resource_type": "TT40TC",
+      "substance": "苯乙炔",
+      "add_volume": 0.01098,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.005
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-4f556b722903",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-648e62c37ee9",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-618edd25461f",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-8205d75739e1",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-3d3fdef7461f",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-7cd343727938",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-81043ed918ab",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-dfd726fbc82c",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-d00423f79e2b",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 8,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-5999692c254c",
+    "process_json": {
+      "temperature": 70,
+      "reaction_duration": 86400,
+      "is_wait": true,
+      "rotation_speed": 500,
+      "still_tem": 70,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-028dca31fecd",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-9bcf95e24215",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-a6b004286955",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-2d6a8c08d218",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-3ff6dc50c746",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-9db5045582c2",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-018775029bc6",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-d629235df2bb",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-c8925db018a0",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 9,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-cfd3b47fa080",
+    "process_json": {
+      "src_layout_code": "N1-1:0",
+      "resource_type": "SB125TC",
+      "substance": "联苯 0.5 mol/L in ACN",
+      "add_volume": 0.2,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-32664abe89f8",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-07ab397712b4",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-ae54f86df5c5",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-28a6961865d5",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-65c995a2f60c",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-1cc0927cfdc0",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-222df4bf6f41",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-8125c70d267b",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-252ee24def5e",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 10,
+    "unit_type": "exp_pipetting",
+    "unit_id": "unit-c02ebfcfe03b",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "resource_type": "SB125TC",
+      "substance": "乙腈",
+      "add_volume": 0.5,
+      "disable_LLDSensitivity": false,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "μL",
+          "mL",
+          "L"
+        ],
+        "step": {
+          "add_volume": 0.01
+        }
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-6e56dc00b015",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-e7d0ed9f2007",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-ba9fda985dcf",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-4076eff6913b",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-8f56afd986a7",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-7a58aade87ef",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-ce95fda3350a",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-5d9b7c3f3568",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-fa0f7c554e42",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 11,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-bd914c669d2a",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 300,
+      "is_wait": false,
+      "rotation_speed": 800,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 18,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-de4f0df75528",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 19,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-9fb50410a6f8",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 20,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-48fab6d7245a",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 21,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-8eba5cdd3cc7",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 22,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-16528f7875ff",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 26,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-da979f0c8c08",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 27,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-8aa12438b369",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 28,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-1de93589291a",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 29,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-be1e65bdd5b3",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "substance": "",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "unit_column": 30,
+    "unit_row": 12,
+    "unit_type": "exp_magnetic_stirrer",
+    "unit_id": "unit-f67875315f88",
+    "process_json": {
+      "temperature": 25,
+      "reaction_duration": 1200,
+      "is_wait": true,
+      "rotation_speed": 0,
+      "still_tem": 25,
+      "custom": {
+        "step": {
+          "rotation_speed": 50,
+          "temperature": 1
+        },
+        "unit": ""
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:18",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 18,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:18",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:19",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 19,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:19",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:20",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 20,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:20",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:21",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 21,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:21",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:22",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 22,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:22",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:26",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 26,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:26",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:27",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 27,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:27",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:28",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 28,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:28",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:29",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 29,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:29",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  },
+  {
+    "layout_code": "T-3:30",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "unit_column": 30,
+    "unit_row": 13,
+    "unit_type": "exp_high_filtering_samples",
+    "process_json": {
+      "src_layout_code": "N1-2:0",
+      "add_volume": 0.02,
+      "custom": {
+        "unit": "mL",
+        "unitOptions": [
+          "mL",
+          "μL",
+          "L"
+        ]
+      },
+      "dilute_volume": 0.8,
+      "substance": "乙腈",
+      "quick_cap": 1,
+      "dst": {
+        "pos": "W3-5:30",
+        "resource_type": "TTS2TCP_V2",
+        "tray_QR_code": "TTS2TCP_V2_01"
+      }
+    }
+  }
+]

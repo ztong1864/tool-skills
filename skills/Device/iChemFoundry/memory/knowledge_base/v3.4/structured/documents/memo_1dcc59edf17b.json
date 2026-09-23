@@ -1,0 +1,194 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_1dcc59edf17b",
+  "paper_id": "327e4c63e7dd",
+  "title": "A zinc(II) metal–organic framework based on triazo",
+  "year": 2011,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "C2H2"
+  ],
+  "one_line_summary": "{[Zn2(HBDC)2(dmtrz)2]-guest}n shows Langmuir_surface_area = 807.8 m2/g for N2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "22DMB_uptake (22DMB) = 6.3 wt% at 0.091 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "n-HEX_uptake (n-HEX) = 13.4 wt% at 0.091 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "22DMB_uptake (22DMB) = 3.5 wt% at 0.993 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "adsorption_desorption_interaction_with_n-HEX_and_3MP → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "SBU-2_counteracts_breathing_of_SBU-1 → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] adjust the layer distance in similar pillar-layer MOF structures → separation target can be tuned to achieve different separation purposes"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs [Zn2(BDC)2(dabco)]n: winner=subject_b on framework_breathing_peak_shift_in_benzene"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs [Zn2(BDC)2(dabco)]n: winner=subject_b on BET_surface_area"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_907ff3db5fbd",
+    "trace_ec0be7d2eb5e",
+    "trace_d3b20ddaeea1",
+    "trace_347d0c7c97eb",
+    "trace_c1ef5d241a46",
+    "trace_55f961d30614",
+    "trace_66f0d00ae625",
+    "trace_a2e0408d70cc",
+    "trace_e23ab6e03ed8",
+    "trace_d7f159b83017",
+    "trace_67b92be0364b",
+    "trace_4a5c97cbd0f6",
+    "trace_41d477ad31cf",
+    "trace_ddc464d6f04e",
+    "trace_2226f43da604",
+    "trace_59d8cf3141a1",
+    "trace_2d478ec0c9eb",
+    "trace_8b1bf488965f",
+    "trace_50db09ac9a15",
+    "trace_6ee2c2dac088",
+    "trace_ccbecbb2e6ce",
+    "trace_83f169ed3762",
+    "trace_c7b5cc842db9",
+    "trace_69b9a021cc00",
+    "trace_42f810ab4d05",
+    "trace_132c80e5f614",
+    "trace_21f9139ec167",
+    "trace_40c6874073a9",
+    "trace_1187d754ffe5",
+    "trace_67ead34510df",
+    "trace_3a8d130f4187",
+    "trace_11999317342d",
+    "trace_34fba5b609ce",
+    "trace_8aca9304d793",
+    "trace_b5db0aaf0f71",
+    "trace_8eb4e950bcc3",
+    "trace_0b2fbbc3b6f5",
+    "trace_72ae81cbb212",
+    "trace_8aca9304d793",
+    "trace_83f169ed3762",
+    "trace_d3b20ddaeea1",
+    "trace_40c6874073a9",
+    "trace_c7b5cc842db9",
+    "trace_1187d754ffe5",
+    "trace_3a8d130f4187",
+    "trace_2226f43da604",
+    "trace_2d478ec0c9eb",
+    "trace_a2e0408d70cc",
+    "trace_67ead34510df",
+    "trace_907ff3db5fbd",
+    "trace_55f961d30614",
+    "trace_50db09ac9a15",
+    "trace_34fba5b609ce",
+    "trace_21f9139ec167",
+    "trace_8eb4e950bcc3",
+    "trace_59d8cf3141a1",
+    "trace_41d477ad31cf",
+    "trace_0b2fbbc3b6f5",
+    "trace_e23ab6e03ed8",
+    "trace_8b1bf488965f",
+    "trace_d7f159b83017",
+    "trace_11999317342d",
+    "trace_c1ef5d241a46",
+    "trace_132c80e5f614",
+    "trace_ec0be7d2eb5e",
+    "trace_72ae81cbb212",
+    "trace_b5db0aaf0f71",
+    "trace_6ee2c2dac088",
+    "trace_ddc464d6f04e",
+    "trace_66f0d00ae625",
+    "trace_42f810ab4d05",
+    "trace_ccbecbb2e6ce",
+    "trace_69b9a021cc00",
+    "trace_4a5c97cbd0f6",
+    "trace_67b92be0364b",
+    "trace_347d0c7c97eb"
+  ],
+  "measurement_card_ids": [
+    "mcard_c33252722416",
+    "mcard_abd2907c50ca",
+    "mcard_04f4e7f9d5ef",
+    "mcard_1fec655a438d",
+    "mcard_2fc734a8b582",
+    "mcard_0473291aa93f",
+    "mcard_b8e7a29c9d61",
+    "mcard_b82c94cd7c3b",
+    "mcard_8032200de115",
+    "mcard_b2ce3839568c",
+    "mcard_e1cef59d1890"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_1b0b5f45a806",
+    "mechcard_1147ebf0f93f",
+    "mechcard_cb4668fc1805"
+  ],
+  "recipe_card_ids": [
+    "recipe_bb0ed403b854"
+  ],
+  "claim_card_ids": [
+    "claim_9407fcde8503",
+    "claim_dea367f0139a",
+    "claim_444658aabfc2",
+    "claim_4a55040413d1",
+    "claim_df8d06c5fc6f",
+    "claim_e4440db1f54e",
+    "claim_f811402a2787",
+    "claim_d5d4c67162f3"
+  ],
+  "design_rule_card_ids": [
+    "drule_c4e4a603255a"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_97c07920090c",
+    "comp_a33b18b51a3b",
+    "comp_9d9aac02e0bd"
+  ],
+  "failure_case_card_ids": [
+    "fail_1f03e68d8ed6"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c07f018810cb"
+  ],
+  "dossier_ids": [
+    "dossier_eb47da81ff0e"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Compound 1 shows only slight breathing: the maximum PXRD peak shift in benzene is 0.081, much smaller than >0.21 for [Zn2(BDC)2(dabco)]n.",
+    "The Zn-based 3D pcu MOF {[Zn2(HBDC)2(dmtrz)2]guest}n selectively adsorbs linear n-hexane and monobranched 3-methylpentane over dibranched 2,2-dimethylbutane.",
+    "Alkane isomers are predicted to adsorb along linker-defined pore walls, unlike gases that preferentially adsorb near metal clusters."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.197763",
+  "updated_at": "2026-04-24T00:19:48.197769",
+  "raw_path": "相关文献/Ling 等 - 2011 - A zinc(II) metal–organic framework based on triazo.pdf",
+  "authors": [
+    "Ling"
+  ]
+}

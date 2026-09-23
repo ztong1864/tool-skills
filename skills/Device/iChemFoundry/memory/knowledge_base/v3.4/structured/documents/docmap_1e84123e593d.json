@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_1e84123e593d",
+  "paper_id": "adc30d5190af",
+  "raw_path": "相关文献/park2006.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4",
+    "Kr"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": false,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CHE-0221934",
+    "DMR-0452444",
+    "Eng-38"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Fe",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "DABCO",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "conclusion": "We have synthesized three new three-dimensional MOFs\nbased on the Zn2+ ion, 1,2,4-triazole, and BDC under",
+    "results_summary": "Hydrothermal Synthesis and Structural Characterization of Novel\nZn-Triazole-Benzenedicarboxylate Frameworks\nHyunsoo Park,*,† David M. Moureau,† and John B. Parise*,†,‡,§\nDepartment of Chemistry, Depar"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:32:21.037343"
+}

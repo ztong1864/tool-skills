@@ -1,0 +1,347 @@
+{
+  "timestamp": "2026-07-03-10-54-27",
+  "summary": {
+    "total_steps": 9,
+    "valid": 5,
+    "invalid": 4
+  },
+  "details": [
+    {
+      "step_index": 1,
+      "unit_type": "exp_add_solid",
+      "instruction": "向 T-3:20 加入 1.596 mg ZnI2",
+      "substance": "ZnI2",
+      "matches_count": 0,
+      "available_count": 0,
+      "is_valid": false,
+      "validation_message": "",
+      "quantity_validation": null,
+      "resource_info": null,
+      "available_resources": []
+    },
+    {
+      "step_index": 2,
+      "unit_type": "exp_add_solid",
+      "instruction": "向 T-3:20 加入 30.4 mg (S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",
+      "substance": "(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",
+      "matches_count": 0,
+      "available_count": 0,
+      "is_valid": false,
+      "validation_message": "",
+      "quantity_validation": null,
+      "resource_info": null,
+      "available_resources": []
+    },
+    {
+      "step_index": 3,
+      "unit_type": "exp_add_solid",
+      "instruction": "向 T-3:20 加入 20 mg 4A MS",
+      "substance": "4A MS",
+      "matches_count": 0,
+      "available_count": 0,
+      "is_valid": false,
+      "validation_message": "",
+      "quantity_validation": null,
+      "resource_info": null,
+      "available_resources": []
+    },
+    {
+      "step_index": 4,
+      "unit_type": "exp_pipetting",
+      "instruction": "向 T-3:20 加入 1 mL 乙腈",
+      "substance": "乙腈",
+      "matches_count": 1,
+      "available_count": 1,
+      "is_valid": true,
+      "validation_message": "体积验证通过：请求 1.0 mL，可用 90.0 mL",
+      "quantity_validation": {
+        "type": "volume",
+        "requested": {
+          "value": 1.0,
+          "unit": "mL"
+        },
+        "available": {
+          "value": 90.0,
+          "unit": "mL"
+        },
+        "is_valid": true,
+        "message": "体积验证通过：请求 1.0 mL，可用 90.0 mL"
+      },
+      "resource_info": {
+        "layout_code": "N1-2:0",
+        "working_code": "",
+        "source_layout_code": "N1-2:0",
+        "resource_type": "SB125TC",
+        "substance": "乙腈",
+        "unit": "mL",
+        "initial_volume": 30.0,
+        "available_volume": 90.0,
+        "initial_weight": 0.0,
+        "available_weight": 0.0,
+        "tray_QR_code": "SB125TC_02",
+        "QR_code": "",
+        "chemical_id": 24,
+        "status": 0
+      },
+      "available_resources": [
+        {
+          "layout_code": "N1-2:0",
+          "working_code": "",
+          "source_layout_code": "N1-2:0",
+          "resource_type": "SB125TC",
+          "substance": "乙腈",
+          "unit": "mL",
+          "initial_volume": 30.0,
+          "available_volume": 90.0,
+          "initial_weight": 0.0,
+          "available_weight": 0.0,
+          "tray_QR_code": "SB125TC_02",
+          "QR_code": "",
+          "chemical_id": 24,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "step_index": 6,
+      "unit_type": "exp_pipetting",
+      "instruction": "向 T-3:20 加入 10.98 uL 苯乙炔",
+      "substance": "苯乙炔",
+      "matches_count": 1,
+      "available_count": 1,
+      "is_valid": true,
+      "validation_message": "体积验证通过：请求 0.01098 mL，可用 18.08 mL",
+      "quantity_validation": {
+        "type": "volume",
+        "requested": {
+          "value": 10.98,
+          "unit": "uL"
+        },
+        "available": {
+          "value": 18.08,
+          "unit": "mL"
+        },
+        "is_valid": true,
+        "message": "体积验证通过：请求 0.01098 mL，可用 18.08 mL"
+      },
+      "resource_info": {
+        "layout_code": "T-9:4",
+        "working_code": "",
+        "source_layout_code": "T-9:4",
+        "resource_type": "TT40TC",
+        "substance": "苯乙炔",
+        "unit": "mL",
+        "initial_volume": 20.0,
+        "available_volume": 18.08,
+        "initial_weight": 0.0,
+        "available_weight": 0.0,
+        "tray_QR_code": "TT40TC_01",
+        "QR_code": "",
+        "chemical_id": 63,
+        "status": 0
+      },
+      "available_resources": [
+        {
+          "layout_code": "T-9:4",
+          "working_code": "",
+          "source_layout_code": "T-9:4",
+          "resource_type": "TT40TC",
+          "substance": "苯乙炔",
+          "unit": "mL",
+          "initial_volume": 20.0,
+          "available_volume": 18.08,
+          "initial_weight": 0.0,
+          "available_weight": 0.0,
+          "tray_QR_code": "TT40TC_01",
+          "QR_code": "",
+          "chemical_id": 63,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "step_index": 7,
+      "unit_type": "exp_pipetting",
+      "instruction": "向 T-3:20 加入 20.64 uL 正壬醛",
+      "substance": "正壬醛",
+      "matches_count": 1,
+      "available_count": 1,
+      "is_valid": true,
+      "validation_message": "体积验证通过：请求 0.020640000000000002 mL，可用 8.16 mL",
+      "quantity_validation": {
+        "type": "volume",
+        "requested": {
+          "value": 20.64,
+          "unit": "uL"
+        },
+        "available": {
+          "value": 8.16,
+          "unit": "mL"
+        },
+        "is_valid": true,
+        "message": "体积验证通过：请求 0.020640000000000002 mL，可用 8.16 mL"
+      },
+      "resource_info": {
+        "layout_code": "T-9:5",
+        "working_code": "",
+        "source_layout_code": "T-9:5",
+        "resource_type": "TT40TC",
+        "substance": "正壬醛",
+        "unit": "mL",
+        "initial_volume": 20.0,
+        "available_volume": 8.16,
+        "initial_weight": 0.0,
+        "available_weight": 0.0,
+        "tray_QR_code": "TT40TC_01",
+        "QR_code": "",
+        "chemical_id": 133,
+        "status": 0
+      },
+      "available_resources": [
+        {
+          "layout_code": "T-9:5",
+          "working_code": "",
+          "source_layout_code": "T-9:5",
+          "resource_type": "TT40TC",
+          "substance": "正壬醛",
+          "unit": "mL",
+          "initial_volume": 20.0,
+          "available_volume": 8.16,
+          "initial_weight": 0.0,
+          "available_weight": 0.0,
+          "tray_QR_code": "TT40TC_01",
+          "QR_code": "",
+          "chemical_id": 133,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "step_index": 9,
+      "unit_type": "exp_pipetting",
+      "instruction": "向 T-3:20 加入 0.2 mL 联苯内标溶液",
+      "substance": "联苯内标溶液",
+      "matches_count": 0,
+      "available_count": 0,
+      "is_valid": false,
+      "validation_message": "",
+      "quantity_validation": null,
+      "resource_info": null,
+      "available_resources": []
+    },
+    {
+      "step_index": 10,
+      "unit_type": "exp_pipetting",
+      "instruction": "向 T-3:20 加入 0.6 mL 乙腈",
+      "substance": "乙腈",
+      "matches_count": 1,
+      "available_count": 1,
+      "is_valid": true,
+      "validation_message": "体积验证通过：请求 0.6 mL，可用 90.0 mL",
+      "quantity_validation": {
+        "type": "volume",
+        "requested": {
+          "value": 0.6,
+          "unit": "mL"
+        },
+        "available": {
+          "value": 90.0,
+          "unit": "mL"
+        },
+        "is_valid": true,
+        "message": "体积验证通过：请求 0.6 mL，可用 90.0 mL"
+      },
+      "resource_info": {
+        "layout_code": "N1-2:0",
+        "working_code": "",
+        "source_layout_code": "N1-2:0",
+        "resource_type": "SB125TC",
+        "substance": "乙腈",
+        "unit": "mL",
+        "initial_volume": 30.0,
+        "available_volume": 90.0,
+        "initial_weight": 0.0,
+        "available_weight": 0.0,
+        "tray_QR_code": "SB125TC_02",
+        "QR_code": "",
+        "chemical_id": 24,
+        "status": 0
+      },
+      "available_resources": [
+        {
+          "layout_code": "N1-2:0",
+          "working_code": "",
+          "source_layout_code": "N1-2:0",
+          "resource_type": "SB125TC",
+          "substance": "乙腈",
+          "unit": "mL",
+          "initial_volume": 30.0,
+          "available_volume": 90.0,
+          "initial_weight": 0.0,
+          "available_weight": 0.0,
+          "tray_QR_code": "SB125TC_02",
+          "QR_code": "",
+          "chemical_id": 24,
+          "status": 0
+        }
+      ]
+    },
+    {
+      "step_index": 13,
+      "unit_type": "exp_high_filtering_samples",
+      "instruction": "从 T-3:20 取 0.02 mL 到 W3-5:20 用 0.8 mL 乙腈 稀释",
+      "substance": "乙腈",
+      "matches_count": 1,
+      "available_count": 1,
+      "is_valid": true,
+      "validation_message": "体积验证通过：请求 0.8 mL，可用 90.0 mL (dilute_substance=乙腈, layout_code=T-3:20)",
+      "quantity_validation": {
+        "type": "volume",
+        "requested": {
+          "value": 0.8,
+          "unit": "mL"
+        },
+        "available": {
+          "value": 90.0,
+          "unit": "mL"
+        },
+        "is_valid": true,
+        "message": "体积验证通过：请求 0.8 mL，可用 90.0 mL"
+      },
+      "resource_info": {
+        "layout_code": "N1-2:0",
+        "working_code": "",
+        "source_layout_code": "N1-2:0",
+        "resource_type": "SB125TC",
+        "substance": "乙腈",
+        "unit": "mL",
+        "initial_volume": 30.0,
+        "available_volume": 90.0,
+        "initial_weight": 0.0,
+        "available_weight": 0.0,
+        "tray_QR_code": "SB125TC_02",
+        "QR_code": "",
+        "chemical_id": 24,
+        "status": 0
+      },
+      "available_resources": [
+        {
+          "layout_code": "N1-2:0",
+          "working_code": "",
+          "source_layout_code": "N1-2:0",
+          "resource_type": "SB125TC",
+          "substance": "乙腈",
+          "unit": "mL",
+          "initial_volume": 30.0,
+          "available_volume": 90.0,
+          "initial_weight": 0.0,
+          "available_weight": 0.0,
+          "tray_QR_code": "SB125TC_02",
+          "QR_code": "",
+          "chemical_id": 24,
+          "status": 0
+        }
+      ]
+    }
+  ]
+}

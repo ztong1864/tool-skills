@@ -1,0 +1,214 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_3ab518259391",
+  "paper_id": "28c83b15b1b5",
+  "title": "H2IPA",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "MAC-4-OH shows Langmuir_surface_area = 1151.0 m2/g for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "Langmuir_surface_area = 496.0 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "micropore_volume = 0.4 cm3/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "BET_surface_area = 339.0 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "1D zig-zag open channels along the a axis → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "additional active site → uptake"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] pre-functionalize the MAC-4 framework channels with hydroxyl groups to form MAC-4-OH → CO2 uptake is significantly enhanced in MAC-4-OH relative to MAC-4 despite lower surface area"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use metal-cluster-based secondary building units as mononodes and vary or pre-functionalize the organic linkers → enables successful synthesis of various porous MOFs and functionalized MOFs"
+    },
+    {
+      "title": "Comparison",
+      "body": "activated MAC-4-OH vs MAC-4: winner=subject_a on CO2_zero_coverage_Qst_kJ_per_mol"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_b48ef4760100",
+    "trace_ebee201b0e73",
+    "trace_8687734e7a1a",
+    "trace_c8f50e5a6454",
+    "trace_565730feb6bf",
+    "trace_2822056a4f47",
+    "trace_331a053c7f50",
+    "trace_5a6285a3da2f",
+    "trace_ec68659f9c1c",
+    "trace_c3234b47e257",
+    "trace_9ae156295e70",
+    "trace_cb1a5ca51310",
+    "trace_4bd38271f333",
+    "trace_ed5925c91d8d",
+    "trace_c097434a721c",
+    "trace_b444d171feae",
+    "trace_6ca55b00e305",
+    "trace_a6a757e01733",
+    "trace_0bf6fb7cb3ca",
+    "trace_e6cd7fe6ab41",
+    "trace_65f50dd9be22",
+    "trace_847562415f52",
+    "trace_9f3b119b43e5",
+    "trace_705bcd1abc03",
+    "trace_89e0cd0ae487",
+    "trace_a87c9bc33e9b",
+    "trace_187b7d8560b4",
+    "trace_e2c89e1a138c",
+    "trace_9e3335b44f3f",
+    "trace_7d2c505c16c6",
+    "trace_e05c511ae797",
+    "trace_a7bde784600c",
+    "trace_07a30fa2fa5c",
+    "trace_b99b8c1882e3",
+    "trace_c9fb5d93e985",
+    "trace_717bf5ed0938",
+    "trace_b475b2a654b3",
+    "trace_08126b86f93c",
+    "trace_103d789d9529",
+    "trace_b49be5808646",
+    "trace_c120f0db681a",
+    "trace_2218f6946518",
+    "trace_d9a17a46f119",
+    "trace_6daf5a24eb96",
+    "trace_54870c8d11be",
+    "trace_f9a145f8e88a",
+    "trace_c120f0db681a",
+    "trace_cb1a5ca51310",
+    "trace_847562415f52",
+    "trace_5a6285a3da2f",
+    "trace_8687734e7a1a",
+    "trace_c8f50e5a6454",
+    "trace_9ae156295e70",
+    "trace_b444d171feae",
+    "trace_54870c8d11be",
+    "trace_e6cd7fe6ab41",
+    "trace_c3234b47e257",
+    "trace_ed5925c91d8d",
+    "trace_4bd38271f333",
+    "trace_a87c9bc33e9b",
+    "trace_2218f6946518",
+    "trace_b475b2a654b3",
+    "trace_89e0cd0ae487",
+    "trace_a6a757e01733",
+    "trace_6ca55b00e305",
+    "trace_705bcd1abc03",
+    "trace_331a053c7f50",
+    "trace_c097434a721c",
+    "trace_e05c511ae797",
+    "trace_f9a145f8e88a",
+    "trace_ec68659f9c1c",
+    "trace_d9a17a46f119",
+    "trace_9f3b119b43e5",
+    "trace_6daf5a24eb96",
+    "trace_0bf6fb7cb3ca",
+    "trace_565730feb6bf",
+    "trace_b48ef4760100",
+    "trace_b99b8c1882e3",
+    "trace_a7bde784600c",
+    "trace_c9fb5d93e985",
+    "trace_ebee201b0e73",
+    "trace_9e3335b44f3f",
+    "trace_187b7d8560b4",
+    "trace_65f50dd9be22",
+    "trace_717bf5ed0938",
+    "trace_08126b86f93c",
+    "trace_07a30fa2fa5c",
+    "trace_b49be5808646",
+    "trace_e2c89e1a138c",
+    "trace_103d789d9529",
+    "trace_7d2c505c16c6",
+    "trace_2822056a4f47"
+  ],
+  "measurement_card_ids": [
+    "mcard_c2be68c26ec7",
+    "mcard_b6ab5ace372e",
+    "mcard_bfc4ffc73686",
+    "mcard_60fb3d7bab8a",
+    "mcard_842b90ffdc12",
+    "mcard_257d7a7f4704",
+    "mcard_03b73d813b2a",
+    "mcard_ee3d1bcbbb46",
+    "mcard_4232e6e82789"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_854596b969f1",
+    "mechcard_707eccd2c931",
+    "mechcard_08d61e1be5b2",
+    "mechcard_e80152286ee6",
+    "mechcard_e926e0a0244e",
+    "mechcard_1b93f980acfd",
+    "mechcard_ded41c384c5a",
+    "mechcard_e542ecbb162e",
+    "mechcard_bef214413160",
+    "mechcard_b204b84febad"
+  ],
+  "recipe_card_ids": [
+    "recipe_8164cfbc2782"
+  ],
+  "claim_card_ids": [
+    "claim_e00540d60eee",
+    "claim_784720f41542",
+    "claim_8884843fe75d",
+    "claim_5108dcb08364",
+    "claim_5cd577238010",
+    "claim_7f15c451ef07",
+    "claim_0057bad8eb87"
+  ],
+  "design_rule_card_ids": [
+    "drule_b8a5ad826eda",
+    "drule_670dbb525f1f"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_5588f72ddcf0",
+    "comp_4f6ab6f71c49",
+    "comp_6d06982df129"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_7d242cd548d4",
+    "mat_b7d2292f059b"
+  ],
+  "dossier_ids": [
+    "dossier_47365a237127",
+    "dossier_4715e51e1956"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Using metal-cluster SBUs as mononodes, combined with linker variation or pre-functionalization, is presented as an efficient route to porous and functionalized MOFs.",
+    "The higher CO2 uptake of MAC-4-OH is attributed to electrostatic attractive interactions introduced by channel hydroxyl groups.",
+    "In MAC-4, dmtrz ligands and a μ3-OH bridge form a trinuclear-triangular [Zn3(dmtrz)3(OH)(O2C)2] secondary building unit."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.742626",
+  "updated_at": "2026-04-24T00:19:49.742630",
+  "raw_path": "相关文献/Zn-H2IPA.pdf",
+  "authors": [
+    "Zn"
+  ]
+}

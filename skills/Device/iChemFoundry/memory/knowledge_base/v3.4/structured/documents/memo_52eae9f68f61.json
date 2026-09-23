@@ -1,0 +1,223 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_52eae9f68f61",
+  "paper_id": "49b2ebb2b8e4",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Crystalline-Zinc-Phosphite shows thermal_stability_temperature = 400.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "chemical_stability_seawater_water_acid_base_and_boiling_organic_solvents = 120.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Hg2+_removal_capacity_aqueous_solution (Hg2+) = 277.0 mg/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Hg2+_removal_capacity_seawater (Hg2+) = 282.0 mg/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "weaker Co-N and Co-O bonding relative to Zn analogue → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "organic_ligand_N_and_O_atoms → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] incorporate HTDA triazole-diamine and BDC ligands into a metallophosphite framework → yields NTOU-4 and NTOU-4a as high-framework-stability mixed-ligand terephthalate-metallophosphite solids"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use hydro(solvo)thermal heating of terephthalates, phosphite high-valence units, and soft Lewis acid-base pairs of zinc cations with nitrogen-donor triazolates → provides an alternative route to stable crystalline mixed-ligand terephthalate-metallophosphite structures without organic templates or space-filling counters"
+    },
+    {
+      "title": "Comparison",
+      "body": "NTOU-4 zinc framework vs NTOU-4a cobalt framework: winner=subject_a on framework_stability"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_04ca728af8e1",
+    "trace_3586ea570da5",
+    "trace_a2b215a7ac58",
+    "trace_1ec7b8824c38",
+    "trace_167d18147cdb",
+    "trace_f78e2eef750e",
+    "trace_897c8df8f4e1",
+    "trace_1b42c27438d0",
+    "trace_32d4b623500d",
+    "trace_5ff5c243ef99",
+    "trace_d79dfc82588c",
+    "trace_ddae7976fe94",
+    "trace_0c1add905e59",
+    "trace_100c7add2176",
+    "trace_dfbe09cd51f8",
+    "trace_8053c9a46f4f",
+    "trace_defb2227af6b",
+    "trace_43e903ad8c62",
+    "trace_7e448cd3b849",
+    "trace_1e5c2ff8d7e0",
+    "trace_8ae437ddb4bd",
+    "trace_7f26cd2a38e0",
+    "trace_3856c12aa13b",
+    "trace_2d9216dec54d",
+    "trace_84eb1493a82f",
+    "trace_d63534dd2a85",
+    "trace_cb151536c151",
+    "trace_a0b7ae1f86ad",
+    "trace_c5afb0ce48a0",
+    "trace_647efd3de195",
+    "trace_aac4ab21d052",
+    "trace_f47772034c6a",
+    "trace_4fd63b89dd83",
+    "trace_2b32dce97f5a",
+    "trace_2b5fdd2b5629",
+    "trace_a320fd89c98e",
+    "trace_c99e209bb556",
+    "trace_6702defca964",
+    "trace_0782c63ba171",
+    "trace_b31605657835",
+    "trace_86c37e9f82ec",
+    "trace_9c463ff5a31f",
+    "trace_adb77065fa38",
+    "trace_4b6f9cad9bc1",
+    "trace_114629d8c627",
+    "trace_d3c77ba743f3",
+    "trace_9b98896e3b22",
+    "trace_46279da43d89",
+    "trace_9dfa84b34f18",
+    "trace_135e483c6d77",
+    "trace_a2a90984a839",
+    "trace_bf0dbb277fbe",
+    "trace_8cbaeba154c0",
+    "trace_d93c7b4d939b",
+    "trace_2b32dce97f5a",
+    "trace_6702defca964",
+    "trace_86c37e9f82ec",
+    "trace_32d4b623500d",
+    "trace_04ca728af8e1",
+    "trace_c99e209bb556",
+    "trace_aac4ab21d052",
+    "trace_a2a90984a839",
+    "trace_d63534dd2a85",
+    "trace_cb151536c151",
+    "trace_3586ea570da5",
+    "trace_f78e2eef750e",
+    "trace_2b5fdd2b5629",
+    "trace_1e5c2ff8d7e0",
+    "trace_4b6f9cad9bc1",
+    "trace_0782c63ba171",
+    "trace_3856c12aa13b",
+    "trace_114629d8c627",
+    "trace_ddae7976fe94",
+    "trace_2d9216dec54d",
+    "trace_dfbe09cd51f8",
+    "trace_7f26cd2a38e0",
+    "trace_7e448cd3b849",
+    "trace_a320fd89c98e",
+    "trace_0c1add905e59",
+    "trace_b31605657835",
+    "trace_8053c9a46f4f",
+    "trace_100c7add2176",
+    "trace_8cbaeba154c0",
+    "trace_4fd63b89dd83",
+    "trace_135e483c6d77",
+    "trace_1ec7b8824c38",
+    "trace_897c8df8f4e1",
+    "trace_d3c77ba743f3",
+    "trace_9dfa84b34f18",
+    "trace_647efd3de195",
+    "trace_c5afb0ce48a0",
+    "trace_46279da43d89",
+    "trace_43e903ad8c62",
+    "trace_d93c7b4d939b",
+    "trace_a0b7ae1f86ad",
+    "trace_bf0dbb277fbe",
+    "trace_9c463ff5a31f",
+    "trace_8ae437ddb4bd",
+    "trace_adb77065fa38",
+    "trace_167d18147cdb",
+    "trace_a2b215a7ac58",
+    "trace_84eb1493a82f",
+    "trace_1b42c27438d0",
+    "trace_9b98896e3b22",
+    "trace_defb2227af6b",
+    "trace_d79dfc82588c",
+    "trace_5ff5c243ef99",
+    "trace_f47772034c6a"
+  ],
+  "measurement_card_ids": [
+    "mcard_d08cf42a2dcd",
+    "mcard_c53de1560935",
+    "mcard_5788e6c2b8c9",
+    "mcard_7213ced3d240",
+    "mcard_2a0631bace0c"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_a32e514f327e",
+    "mechcard_2a75a0bb6142",
+    "mechcard_29c49f8acdfb",
+    "mechcard_ec4106264c1a",
+    "mechcard_d6748157cba8"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_c1481986ae4b",
+    "claim_871a7c54f95f",
+    "claim_52cb215076ab",
+    "claim_486c2f27e7de",
+    "claim_caede82cd41f",
+    "claim_622005b74549",
+    "claim_4156ff0efd28"
+  ],
+  "design_rule_card_ids": [
+    "drule_34c71f842420",
+    "drule_865f3adcf175"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_036a2bf7f57d",
+    "comp_cac3c3955e59"
+  ],
+  "failure_case_card_ids": [
+    "fail_a7c8f0e7a91d",
+    "fail_5447c4c8f353"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_1c6a1364ccad",
+    "mat_144bdef588b3",
+    "mat_408c4b35008a",
+    "mat_5c68b669f6ff",
+    "mat_45c8e89cac9c"
+  ],
+  "dossier_ids": [
+    "dossier_2d8445fea9c8",
+    "dossier_fac31e006ff7",
+    "dossier_360c06a04b83",
+    "dossier_2184005b63da",
+    "dossier_10a598d9ed7d"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "TGA mass losses from 420-800 °C for NTOU-4 and 390-800 °C for NTOU-4a are lower than calculated, likely because PIII oxidizes to PV during decomposition.",
+    "NTOU-4 retains structural integrity up to 400 °C in air, while NTOU-4a remains intact only up to 350 °C, showing the Zn framework is more thermally stable than the Co analogue.",
+    "NTOU-4 selectively removes, recovers, and turn-on senses toxic Hg2+ in water, while no adsorption is observed for Cr3+, Cd2+, Na+, or Cs+."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.433852",
+  "updated_at": "2026-04-24T00:19:51.433856",
+  "raw_path": "相关文献/wang2018.pdf.pdf"
+}

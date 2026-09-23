@@ -1,0 +1,73 @@
+{
+  "protocol_id": "dh5a_clone_expression_bradford",
+  "experiment_name": "克隆挑取、表达、裂解与 Bradford 检测",
+  "experiment_description": "完整 DH5a 质粒构建实验的后段独立脚本，从抗性板挑取克隆，经过转接培养和 IPTG 诱导表达后进行裂解、裂解液转移及 Bradford 蛋白检测。",
+  "overview_prompt": "生成 DH5a 克隆挑取、诱导表达、裂解与 Bradford 检测实验脚本。",
+  "stages": [
+    {
+      "id": "stage6_pick_clone",
+      "title": "第六步：挑取克隆并过夜培养",
+      "source_text": "将 Cell_Plate2 撕膜并放置到 Fluent，加载 Liha200 枪头和四块八孔抗性板，运行挑克隆程序。结束后封膜 Cell_Plate2，在 Tos1 中以 800 转培养 15 小时；枪头和八孔板分别转移到暂存位置。",
+      "substeps": [
+        {"id": "pick_clone_load", "text": "将 Cell_Plate2 撕膜并与 Liha200 枪头、四块八孔板加载到 Fluent。", "code_steps": ["unseal_cell_plate2", "fluent_load_cell_plate2", "fluent_load_pick_clone_deck"]},
+        {"id": "pick_clone_run", "text": "运行 ZFL_AI_pickolo8well_1plate 挑克隆程序。", "code_steps": ["fluent_run_pick_clone"]},
+        {"id": "pick_clone_incubate", "text": "封膜 Cell_Plate2，设置 Tos1 转速为 800 并培养 15 小时。", "code_steps": ["seal_cell_plate2_kbs", "tos1_set_800", "tos1_load_cell_plate2", "tos1_incubate_cell_plate2_15h"]},
+        {"id": "pick_clone_cleanup", "text": "将 Liha200 枪头放入 Cytomat_24H，将四块八孔板放入 Cytomat_10H。", "code_steps": ["cytomat24_load_liha200_2", "cytomat10h_load_8well_plates"]}
+      ]
+    },
+    {
+      "id": "stage7_transfer",
+      "title": "第七步：转接克隆并扩增培养",
+      "source_text": "将 Cell_Plate2 和 Cell_Plate3 分别撕膜并加载到 FreedomEVO，使用 MCA50 枪头运行 AI_Transfer.esc。Cell_Plate3 封膜后在 Tos1 中以 800 转培养 2 小时，Cell_Plate2 封膜后转移到 Cytomat_10H。",
+      "substeps": [
+        {"id": "transfer_prepare", "text": "撕膜并加载 Cell_Plate2 与 Cell_Plate3。", "code_steps": ["unseal_cell_plate2", "evo_load_cell_plate2_nest1", "unseal_cell_plate3", "evo_load_cell_plate3_nest2"]},
+        {"id": "transfer_run", "text": "运行 AI_Transfer.esc，将克隆转接至 Cell_Plate3，MCA50 枪头进入 Waste。", "code_steps": ["evo_run_transfer"]},
+        {"id": "transfer_incubate", "text": "封膜 Cell_Plate3，并以 800 转培养 2 小时。", "code_steps": ["seal_cell_plate3_kbs", "tos1_set_800", "tos1_load_cell_plate3", "tos1_incubate_cell_plate3_2h"]},
+        {"id": "transfer_store_source", "text": "封膜 Cell_Plate2 并转移到 Cytomat_10H。", "code_steps": ["seal_cell_plate2_kbs", "cytomat10h_load_cell_plate2"]}
+      ]
+    },
+    {
+      "id": "stage8_add_iptg",
+      "title": "第八步：加入 IPTG 并诱导表达",
+      "source_text": "将 Cell_Plate3 和装有 IPTG 的 PCR_Template 撕膜并加载到 FreedomEVO，运行 AI_Add_IPTG.esc。Cell_Plate3 封膜后以 800 转培养 4 小时；PCR_Template 封膜暂存，Liha50 枪头转移到 Cytomat_24H。",
+      "substeps": [
+        {"id": "iptg_prepare", "text": "撕膜并加载 Cell_Plate3、PCR_Template 和 Liha50 枪头。", "code_steps": ["unseal_cell_plate3", "evo_load_cell_plate3_nest2", "unseal_pcr_template", "evo_load_iptg_deck"]},
+        {"id": "iptg_run", "text": "运行 AI_Add_IPTG.esc 加入 IPTG。", "code_steps": ["evo_run_add_iptg"]},
+        {"id": "iptg_incubate", "text": "封膜 Cell_Plate3，并以 800 转培养 4 小时。", "code_steps": ["seal_cell_plate3_kbs", "tos1_set_800", "tos1_load_cell_plate3", "tos1_incubate_cell_plate3_4h"]},
+        {"id": "iptg_cleanup", "text": "封膜并暂存 PCR_Template，转移使用后的 Liha50 枪头。", "code_steps": ["seal_pcr_template_alps", "cytomat10h_load_pcr_template", "cytomat24_load_liha50_5"]}
+      ]
+    },
+    {
+      "id": "stage9_add_lysis",
+      "title": "第九步：加入裂解液",
+      "source_text": "将 Cell_Plate3 和裂解试剂板 03_AX_Reaction1 撕膜并加载到 FreedomEVO，运行 AI_Add_Lysis.esc。Cell_Plate3 封膜后以 800 转培养 20 分钟；裂解试剂板封膜暂存，Liha200 枪头转移到 Cytomat_24H。",
+      "substeps": [
+        {"id": "lysis_prepare", "text": "撕膜并加载 Cell_Plate3、03_AX_Reaction1 和 Liha200 枪头。", "code_steps": ["unseal_cell_plate3", "evo_load_cell_plate3_nest2", "unseal_ax_reaction1", "evo_load_lysis_deck"]},
+        {"id": "lysis_run", "text": "运行 AI_Add_Lysis.esc 加入裂解液。", "code_steps": ["evo_run_add_lysis"]},
+        {"id": "lysis_incubate", "text": "封膜 Cell_Plate3，并以 800 转培养 20 分钟。", "code_steps": ["seal_cell_plate3_alps", "tos1_set_800", "tos1_load_cell_plate3", "tos1_incubate_cell_plate3_20m"]},
+        {"id": "lysis_cleanup", "text": "封膜并暂存裂解试剂板，转移使用后的 Liha200 枪头。", "code_steps": ["seal_ax_reaction1_alps", "cytomat10h_load_ax_reaction1", "cytomat24_load_liha200_3"]}
+      ]
+    },
+    {
+      "id": "stage10_lysis_transfer",
+      "title": "第十步：转移裂解产物",
+      "source_text": "将 Cell_Plate3 撕膜，与新的 PCR_Plate3 加载到 FreedomEVO，使用 MCA200 枪头运行 AI_Lysis_transfer.esc。结束后封膜并暂存 Cell_Plate3，将 PCR_Plate3 转移到 FreedomEVO Nest 5 等待检测。",
+      "substeps": [
+        {"id": "lysis_transfer_prepare", "text": "撕膜 Cell_Plate3，并加载 Cell_Plate3、PCR_Plate3。", "code_steps": ["unseal_cell_plate3", "evo_load_lysis_transfer_deck"]},
+        {"id": "lysis_transfer_run", "text": "运行 AI_Lysis_transfer.esc 将裂解产物转移至 PCR_Plate3，MCA200 枪头进入 Waste。", "code_steps": ["evo_run_lysis_transfer"]},
+        {"id": "lysis_transfer_finish", "text": "封膜并暂存 Cell_Plate3，将 PCR_Plate3 转移到 FreedomEVO Nest 5。", "code_steps": ["seal_cell_plate3_alps", "cytomat10h_load_cell_plate3", "evo_load_pcr_plate3_nest5"]}
+      ]
+    },
+    {
+      "id": "stage11_bradford_detection",
+      "title": "第十一步：进行 Bradford 检测",
+      "source_text": "将 AX Buffer 撕膜并加载到 FreedomEVO，使用 PCR_Plate3 裂解产物、BMG 检测板和 MCA50 枪头运行 AI_Bradford_1Plate.esc。随后封膜暂存 Buffer 和 PCR_Plate3，BMG 板经旋转后进入 Clariostar 读数，再旋转并转移到暂存位。",
+      "substeps": [
+        {"id": "bradford_prepare", "text": "撕膜并加载 03_AX_Buffer。", "code_steps": ["unseal_ax_buffer", "evo_load_ax_buffer_nest3"]},
+        {"id": "bradford_run", "text": "运行 AI_Bradford_1Plate.esc 配置检测板，MCA50 枪头进入 Waste。", "code_steps": ["evo_run_bradford_pcr3"]},
+        {"id": "bradford_store_sources", "text": "分别封膜并暂存 03_AX_Buffer 和 PCR_Plate3。", "code_steps": ["seal_ax_buffer_alps", "cytomat10h_load_ax_buffer", "seal_pcr_plate3_alps", "cytomat10h_load_pcr_plate3"]},
+        {"id": "bradford_read", "text": "旋转 BMG 板，运行 Clariostar Bradford 读数，随后再次旋转并暂存。", "code_steps": ["rotate_bmg_before_read", "clariostar_run_bradford", "rotate_bmg_after_read", "staging_load_bmg_plate1"]}
+      ]
+    }
+  ]
+}

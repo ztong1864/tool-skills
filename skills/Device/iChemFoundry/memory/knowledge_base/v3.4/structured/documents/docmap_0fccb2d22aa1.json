@@ -1,0 +1,37 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_0fccb2d22aa1",
+  "paper_id": "d7d931748afa",
+  "raw_path": "/Users/weiji-feng/project/MOFDiscoveryAgent/相关文献/Luo 等 - 2013 - Framework isomers controlled by the speed of cryst-1.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": false,
+  "has_comparison_tables": false,
+  "has_synthesis_section": false,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "Triazol-3-amine"
+  ],
+  "mentioned_metals": [
+    "Zn"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Supporting Information \n \nFramework isomers controlled by the speed of crystallization: different \naggregation fashions of Zn(II) and 1,2,4-Triazol-3-amine, distinct \n(3,4)-connected self-penetrating "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-28T13:43:32.201315"
+}

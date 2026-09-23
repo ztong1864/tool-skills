@@ -1,0 +1,51 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_679bd7e89db8",
+  "canonical_material_id": "mat_9425c8ee5c75",
+  "canonical_name": "Co-Tz",
+  "metal_element": "Co",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_13a831874352",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_3a4c584bdafa"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_b127fac4fc53",
+    "mechcard_6ca6dbe23c83",
+    "mechcard_747e2809acea"
+  ],
+  "recipe_card_ids": [
+    "recipe_0fe711d4f6eb"
+  ],
+  "claim_card_ids": [
+    "claim_e1e5fd778b30"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "5250c7918a49"
+  ],
+  "evidence_trace_ids": [
+    "trace_360a2405e16e",
+    "trace_645feca922b9",
+    "trace_9abc11162ba4",
+    "trace_b87e95f7865b"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:48:24.061067",
+  "updated_at": "2026-04-23T18:48:55.853388"
+}

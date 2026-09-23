@@ -1,0 +1,69 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_50b9da7102c8",
+  "canonical_material_id": "mat_35f8208aaf01",
+  "canonical_name": "Zn-TAZ",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_5e4353cf59e2",
+  "pillar_id": null,
+  "topology": "(3,4,6)-connected (3.72)2(32.4.73)(32.4.76.86)",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_d95fc2c7c717",
+    "mcard_7a9f41bb2609",
+    "mcard_226273b12435",
+    "mcard_fe245470b8e0"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_cdbb0665e279",
+    "mechcard_87912443ba90",
+    "mechcard_19edcf22db60",
+    "mechcard_17f47c24d33b",
+    "mechcard_12fe17cec228",
+    "mechcard_cd485627ade8"
+  ],
+  "recipe_card_ids": [
+    "recipe_1666866a25bb"
+  ],
+  "claim_card_ids": [
+    "claim_e47947faccb9"
+  ],
+  "design_rule_card_ids": [
+    "drule_3cbbb2f2d03e",
+    "drule_5a29a6c55dd1"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "99abd74c416a",
+    "5ec53d505118",
+    "6a5b1f4fd296",
+    "8447b81d8a48",
+    "dc6fb3fab588"
+  ],
+  "evidence_trace_ids": [
+    "trace_8962575936fa",
+    "trace_c197644fd88b",
+    "trace_9a71abd04824",
+    "trace_51ab194d780a",
+    "trace_615b8e76a5c8",
+    "trace_e5d6e18f5739",
+    "trace_f2b9fa082686",
+    "trace_75b5bf5f1bf7",
+    "trace_4218ebc9f31b",
+    "trace_ccff2aea9ded",
+    "trace_167df2f72ae6"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:26:41.689339",
+  "updated_at": "2026-04-28T13:29:57.858869"
+}

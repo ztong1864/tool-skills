@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_cd368eb232bf",
+  "paper_id": "3642cdd42737",
+  "raw_path": "相关文献/s10450-020-00277-6.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "Xe"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "ZIF-8",
+    "ZSM-5",
+    "SAPO-34",
+    "ZIF-4",
+    "MIL-47"
+  ],
+  "mentioned_metals": [
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "This paper provides a general overview of the phenomenon of guest diffusion in nanoporous materials. It introduces the",
+    "conclusion": "and conclusions\nThere are two main stimuli that promote a steadily growing \ninterest in the elucidation of guest diffusion in nanoporous",
+    "results_summary": "Vol.:(0123456789)\n1 3\nAdsorption (2021) 27:267–281 \nhttps://doi.org/10.1007/s10450-020-00277-6\nDiffusion in nanopores: inspecting the grounds\nJörg Kärger1   · Douglas M. Ruthven2 · Rustem Valiullin1\nR"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:38:00.256585"
+}

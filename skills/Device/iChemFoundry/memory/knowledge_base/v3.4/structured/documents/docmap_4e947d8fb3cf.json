@@ -1,0 +1,54 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_4e947d8fb3cf",
+  "paper_id": "05f5cdef9b49",
+  "raw_path": "相关文献/Liu 等 - 2022 - A {Zn 5 } cluster‐based metal–organic f.pdf",
+  "title": "A {Zn 5 } cluster‐based metal–organic f",
+  "authors": [
+    "Liu"
+  ],
+  "year": 2022,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "C2H6"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Cr",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "dia"
+  ],
+  "key_sections": {
+    "abstract": "It is important to develop sensors that can be easily fabricated for the\ndetection of harmful industrial wastes and nitroaromatic explosives to reduce",
+    "results_summary": "R E S E A R C H A R T I C L E\nA {Zn5} cluster-based metal–organic framework:\nMultifunctional detection of Ag+, Cr2O7\n2\u0001, and\n2,4,6-trinitrophenol (TNP)\nHan-Fu Liu1\n|\nYe Tao1\n|\nTai-Xue Wu1\n|\nHai-Ye Li1"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:26:32.311407"
+}

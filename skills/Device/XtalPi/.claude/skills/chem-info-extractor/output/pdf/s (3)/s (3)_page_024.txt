@@ -1,0 +1,21 @@
+S24
+ C=C=CCH 2O), 2.08-1.90 (m, 1 H, CH  from Cy), 1.82-1.56 (m, 5 H,  protons from Cy),
+1.37-1.00 (m, 5 H, protons from Cy); 13C NMR (75 MHz, CDCl 3) δ = 203.9, 138.2,
+128.2, 127.7, 127.5, 97.8, 89.2, 71.5, 68.7, 36.9, 33.0, 32.9, 26.0, 25.9.
+(15) Synthesis of (R)-4bi on one gram scale. (Lrz-8-15).
+
+Conditions B : The reaction of ZnBr 2 (460.7 mg, 2 mmol, 98% from Alfa), CuBr
+(118.2 mg, 0.8 mmol, 98% from Acros), ( S)-3 (1035 mg, 4.0 mmol, 98%), 1b (847.1
+mg, 6.1 mmol, 98%)/dioxane (8 mL), and 2i (1089 mg, 8.0 mmol)/dioxane (4 mL)
+afforded ( R)-4bi (490.1 mg, 47%) (eluent: petroleum ether/ethyl acetate = 100:1) as a
+liquid: 97% ee (HPLC c onditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/1,
+0.8 mL/min, λ = 214 nm,  tR(major) = 5.6 min, tR(minor) = 6.4 min); [ α]D25 = -219.3 ( c
+= 1.01, CHCl 3); 1H NMR (300 MHz, CDCl 3) δ = 7.20 (t, J = 7.8 Hz, 1 H, Ar-H),
+6.92-6.81 (m, 2 H, Ar-H), 6.73 (dd, J1 = 8.0 Hz, J2 = 2.6 Hz, 1 H, Ar-H), 6.09 (dt, J1 =
+6.3 Hz, J2 = 3.1 Hz, 1 H, one proton from CH=C=CH), 5.56 (q, J = 6.7 Hz, 1 H, one
+proton from CH=C=CH), 3.80 (s, 3 H, OCH 3), 2.12 (qd, J1 = 7.1 Hz, J2 = 3.0 Hz, 2 H,
+CH 2), 1.55-1.10 (m, 12 H, CH 2×6), 0.87 (t, J = 6.6 Hz, 3 H, CH 3); 13C NMR (100
+MHz, CDCl 3) δ = 205.2, 159.8, 136.7, 129.4, 119.3, 1 12.4, 111.7, 95.2, 94.5, 55.1,
+31.8, 29.4, 29.3, 29.19, 29.16, 28.7, 22.7, 14.1.
+3. Control Experiments in Scheme 2.
+(1) Preparation of ( R)-1-phenyltrideca-1,2-diene ( R-4ba) and (2 S)-

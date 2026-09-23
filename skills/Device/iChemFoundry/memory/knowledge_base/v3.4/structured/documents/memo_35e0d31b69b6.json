@@ -1,0 +1,130 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_35e0d31b69b6",
+  "paper_id": "4358ab539332",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "[Zn1.5(pbdc)(ATAZ)(OH)] shows framework_collapse_onset_temperature = 360.0 K for N2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "framework_collapse_onset_temperature (N2) = 360.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_no_weight_loss_until (N2) = 360.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "trinuclear {Zn3(ATAZ)2(OH)2} units acting as 6-connected nodes → porosity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "framework remains intact up to 360 C under N2 → stability"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] heat compound 1 above 360 °C: compound 1 rapidly loses weight and the framework collapses"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_d20684fc1e50",
+    "trace_3a5b54e5afad",
+    "trace_d3afce7567f3",
+    "trace_023d732459b7",
+    "trace_9c9139e37151",
+    "trace_86b69f84ddc6",
+    "trace_34aeaef094b0",
+    "trace_31385f4c87a4",
+    "trace_27e96705ee22",
+    "trace_b417bc0760d6",
+    "trace_0404607ff6fa",
+    "trace_23b634f8e9e0",
+    "trace_b3430f16ed0b",
+    "trace_3a5fea8f09a4",
+    "trace_a7c009e1b0e1",
+    "trace_4de2da9078da",
+    "trace_0b6da588e619",
+    "trace_cd8fc41bcf6f",
+    "trace_780e3c8acd2d",
+    "trace_1dba270ce0cf",
+    "trace_e2ff00b2a82f",
+    "trace_ba2ebd09c6cc",
+    "trace_c3a42b342b45",
+    "trace_23b634f8e9e0",
+    "trace_cd8fc41bcf6f",
+    "trace_4de2da9078da",
+    "trace_27e96705ee22",
+    "trace_0404607ff6fa",
+    "trace_c3a42b342b45",
+    "trace_780e3c8acd2d",
+    "trace_ba2ebd09c6cc",
+    "trace_9c9139e37151",
+    "trace_023d732459b7",
+    "trace_31385f4c87a4",
+    "trace_86b69f84ddc6",
+    "trace_e2ff00b2a82f",
+    "trace_34aeaef094b0",
+    "trace_1dba270ce0cf",
+    "trace_d20684fc1e50",
+    "trace_d3afce7567f3",
+    "trace_b3430f16ed0b",
+    "trace_3a5fea8f09a4",
+    "trace_0b6da588e619",
+    "trace_a7c009e1b0e1",
+    "trace_3a5b54e5afad",
+    "trace_b417bc0760d6"
+  ],
+  "measurement_card_ids": [
+    "mcard_46fe612f8392",
+    "mcard_db358f3bcd8f"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_afa4bc7078e1",
+    "mechcard_59d25a5c74c1",
+    "mechcard_011a9c9610eb"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_086ea2ceacf8",
+    "claim_10c80f39feeb",
+    "claim_26e3f8e03713",
+    "claim_c8360edd07d0",
+    "claim_42f75fb3af36",
+    "claim_6b58d5a937eb",
+    "claim_65d81ffea421",
+    "claim_a7374dc3f542"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_2176530f7ae3"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_1ec864dc2610"
+  ],
+  "dossier_ids": [
+    "dossier_73cae9dfb6f4"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "A trinuclear {Zn3(ATAZ)2(OH)2} cluster is the key building unit; ATAZ links these units into 2D sheets and pbdc pillars connect the sheets into the final 3D framework.",
+    "Compound 1, [Zn1.5(pbdc)(ATAZ)(OH)]n, was synthesized via in situ aminotriazole ligand formation and confirmed by elemental, thermal, single-crystal and powder XRD analyses.",
+    "Zn(II) induces unexpected ring opening of 7-hydroxy-5-methyl-1,3,4-triazaindolizine to generate the 3-amino-1,2,4-triazole ligand in situ."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.6,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.243471",
+  "updated_at": "2026-04-24T00:19:48.243474",
+  "raw_path": "相关文献/Liu 和 Niu - 2013 - Hydrothermal in situ ligand synthesis and self-ass.pdf"
+}

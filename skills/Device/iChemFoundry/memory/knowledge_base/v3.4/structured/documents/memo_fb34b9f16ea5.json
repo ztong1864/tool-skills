@@ -1,0 +1,184 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_fb34b9f16ea5",
+  "paper_id": "6baaaba11f24",
+  "title": "A Flexible Porous MOF Exhibiting Reversible Breath",
+  "year": 2017,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "H2"
+  ],
+  "one_line_summary": "[ZnL(Hatz)]+ shows decomposition_temperature = 350.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "free_volume = 35.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "water_removal_temperature (H2O) = 120.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "decomposition_temperature = 350.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "transformation triggered by water vapor exposure → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "strong hydrogen bonding between water molecules and framework causing ligand conformational variation → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[negative] remove guest molecules from [ZnL(Hatz)]·NO3·2H2O to form 1′ → desolvation causes a significant structural contraction and a red shift of the main emission peak by about 23 nm with markedly decreased luminescent intensity"
+    },
+    {
+      "title": "Comparison",
+      "body": "desolvated framework 1′ vs guest-containing framework 1: winner=subject_a on framework_contraction"
+    },
+    {
+      "title": "Comparison",
+      "body": "desolvated framework 1′ vs pristine sample 1: winner=subject_a on emission_peak_wavelength"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_e650adbf3bd9",
+    "trace_e15296fb3e7b",
+    "trace_8a315119cba8",
+    "trace_4aa80973bb4a",
+    "trace_7c52f7815808",
+    "trace_55097464e024",
+    "trace_5811c09f7642",
+    "trace_034d1e7c6c7b",
+    "trace_0f5a7aa0004c",
+    "trace_6a79e2c18831",
+    "trace_b8c4df05e8c7",
+    "trace_81e94b73ef50",
+    "trace_8af25626d519",
+    "trace_02c2c67b9e3a",
+    "trace_01d49d4aa020",
+    "trace_0302a7d72e6f",
+    "trace_4bd68a7cd642",
+    "trace_f83af3c4c8b8",
+    "trace_5f4a02234229",
+    "trace_239322a1f330",
+    "trace_f7b60bee9483",
+    "trace_3bd5080fc150",
+    "trace_3a54eaaa13f4",
+    "trace_8a1b1c6e0536",
+    "trace_a6549b74f3b1",
+    "trace_26e41f50e917",
+    "trace_91dedbc5f9fd",
+    "trace_48ed5069715b",
+    "trace_4dbf79330fe6",
+    "trace_60fa703f3051",
+    "trace_0f5657676c24",
+    "trace_c4af49f6f26b",
+    "trace_e95a048c4479",
+    "trace_6c9f0ea4ec5d",
+    "trace_9f6f0d4da820",
+    "trace_d699a8e0b7ad",
+    "trace_156588fb0e83",
+    "trace_a6549b74f3b1",
+    "trace_c4af49f6f26b",
+    "trace_0f5a7aa0004c",
+    "trace_6a79e2c18831",
+    "trace_26e41f50e917",
+    "trace_5f4a02234229",
+    "trace_3bd5080fc150",
+    "trace_48ed5069715b",
+    "trace_034d1e7c6c7b",
+    "trace_01d49d4aa020",
+    "trace_156588fb0e83",
+    "trace_4bd68a7cd642",
+    "trace_6c9f0ea4ec5d",
+    "trace_f83af3c4c8b8",
+    "trace_8a1b1c6e0536",
+    "trace_7c52f7815808",
+    "trace_91dedbc5f9fd",
+    "trace_4dbf79330fe6",
+    "trace_d699a8e0b7ad",
+    "trace_f7b60bee9483",
+    "trace_3a54eaaa13f4",
+    "trace_b8c4df05e8c7",
+    "trace_e15296fb3e7b",
+    "trace_e650adbf3bd9",
+    "trace_4aa80973bb4a",
+    "trace_0f5657676c24",
+    "trace_8af25626d519",
+    "trace_60fa703f3051",
+    "trace_0302a7d72e6f",
+    "trace_8a315119cba8",
+    "trace_81e94b73ef50",
+    "trace_55097464e024",
+    "trace_9f6f0d4da820",
+    "trace_5811c09f7642",
+    "trace_02c2c67b9e3a",
+    "trace_e95a048c4479",
+    "trace_239322a1f330"
+  ],
+  "measurement_card_ids": [
+    "mcard_642a97dda103",
+    "mcard_518149e3f484",
+    "mcard_36f70087b01b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_a4b6cd963d21",
+    "mechcard_ae23c9173e78",
+    "mechcard_7d1023374eca",
+    "mechcard_2b5059885cc8"
+  ],
+  "recipe_card_ids": [
+    "recipe_789ee66c4796",
+    "recipe_faaa9bfad595",
+    "recipe_b1b65df437e8"
+  ],
+  "claim_card_ids": [
+    "claim_c701bedec682",
+    "claim_f6343c15f163",
+    "claim_fd5dd618408c",
+    "claim_b347a6244e88",
+    "claim_f3ee4ff67ae2",
+    "claim_ff6b4e478e9a",
+    "claim_cb688b9514ee"
+  ],
+  "design_rule_card_ids": [
+    "drule_29cc5b0f8688"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_3838da087095",
+    "comp_1ff16dda1ad7"
+  ],
+  "failure_case_card_ids": [
+    "fail_1f31b61bc756"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_9d19140ea013",
+    "mat_2b8c31033891"
+  ],
+  "dossier_ids": [
+    "dossier_e696dc86159d",
+    "dossier_3d3d5d1bd7ba"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MOF 1 undergoes reversible single-crystal-to-single-crystal breathing upon desolvation/resolvation, with responsive luminescence and visible color change.",
+    "TGA/PXRD show channel H2O is completely removed above 120 °C, while the host framework decomposes only above 350 °C.",
+    "The framework has about 35% free volume after guest removal, and channel water is hydrogen-bonded to –COO− and –NH2 groups, helping stabilize the structure."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:52.042252",
+  "updated_at": "2026-04-24T00:19:52.042255",
+  "raw_path": "相关文献/氮唑相关文献_Wang 等 - 2017 - A Flexible Porous MOF Exhibiting Reversible Breath.pdf",
+  "authors": [
+    "氮唑相关文献_Wang"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "type": "mcp_http",
+  "url": "https://scp.intern-ai.org.cn/api/v1/mcp/29/SciToolAgent-Bio",
+  "size_gated": true,
+  "credential": {
+    "ref": "scitoolagent-bio",
+    "header": "SCP-HUB-API-KEY",
+    "prefix": "",
+    "required": true
+  }
+}

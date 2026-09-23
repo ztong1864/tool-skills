@@ -1,0 +1,78 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_3d3d5d1bd7ba",
+  "canonical_material_id": "mat_9d19140ea013",
+  "canonical_name": "ZnL(Hatz)",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_d20caec3b48a",
+  "pillar_id": "pil_63a39f87f1c2",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_b808810db247",
+    "mcard_e08c1ab23c14",
+    "mcard_eb60f6783205",
+    "mcard_642a97dda103",
+    "mcard_518149e3f484",
+    "mcard_36f70087b01b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_aa70b8f50e3b",
+    "mechcard_d963e6446db0",
+    "mechcard_7d1023374eca",
+    "mechcard_a4b6cd963d21",
+    "mechcard_ae23c9173e78"
+  ],
+  "recipe_card_ids": [
+    "recipe_1153c2954ddb",
+    "recipe_faaa9bfad595",
+    "recipe_789ee66c4796",
+    "recipe_b1b65df437e8"
+  ],
+  "claim_card_ids": [
+    "claim_09cb3787ab32",
+    "claim_dfaef8c90864",
+    "claim_761c241bd418",
+    "claim_cb688b9514ee",
+    "claim_b347a6244e88",
+    "claim_f3ee4ff67ae2",
+    "claim_f6343c15f163",
+    "claim_fd5dd618408c"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "ee80b65b2eff",
+    "6baaaba11f24"
+  ],
+  "evidence_trace_ids": [
+    "trace_df6b1ce60052",
+    "trace_ae814d7cfc5d",
+    "trace_8af25626d519",
+    "trace_01d49d4aa020",
+    "trace_884c84fe2567",
+    "trace_c08cb828a51b",
+    "trace_55097464e024",
+    "trace_5f4a02234229",
+    "trace_0f5657676c24",
+    "trace_fee4c165a2f6",
+    "trace_034d1e7c6c7b",
+    "trace_0302a7d72e6f",
+    "trace_f83af3c4c8b8"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:14:12.544008",
+  "updated_at": "2026-04-23T23:48:47.501809"
+}

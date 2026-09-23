@@ -1,0 +1,59 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_0b4fc2d93c89",
+  "paper_id": "b995768c76e0",
+  "raw_path": "相关文献/Zn-CO3-Angew Chem Int Ed - 2024 - Zhao - Exhaled Anesthetic Xenon Regeneration by Gas Separation Using a Metal Organic Framework.pdf",
+  "title": "CO3-Angew Chem Int Ed - 2024 - Zhao - Exhaled Anesthetic Xenon Regeneration by Gas Separation Using a Metal Organic Framework",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "Xe"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MOF-5",
+    "NbOFFIVE-1-Ni",
+    "MOF-5a",
+    "CUPMOF-5"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Ni",
+    "Al",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "TED",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "mof-5"
+  ],
+  "key_sections": {
+    "abstract": "Noble gas xenon (Xe) is an excellent anes-\nthetic gas, but its rarity, high cost and constrained\nproduction prohibits wide use in medicine. Here, we",
+    "conclusion": "This work demonstrated that the successful use of crystal\nengineering to deliberately target an ultra-microporous",
+    "results_summary": "MOFs for Anesthetic Regeneration Very Important Paper\nExhaled Anesthetic Xenon Regeneration by Gas Separation Using a\nMetal–Organic Framework with Sorbent-Sorbate Induced-Fit\nLi Zhao+, Xiaowan Peng+, "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:28:37.207901"
+}

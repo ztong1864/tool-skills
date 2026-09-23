@@ -1,0 +1,22 @@
+S16
+ 1.72-1.56 (m, 1 H, CH), 0.910 (d, J = 6.6 Hz, 3 H, Me), 0.906 (d, J = 6.6 Hz, 3 H,
+Me); 13C NMR (75 MHz, CDCl 3) δ 204.6, 169.3, 169.2, 91.3, 86.6, 52.4, 51.3, 38.2,
+28.3, 28.0, 22.09, 22.06; IR (neat) ν (cm-1) 2956, 2927, 2869, 1964, 1754, 1739, 1436,
+1342, 1271, 1232, 1154, 1044; MS (EI) m/z (%): 240 (M+, 27.06), 97 (100);  HRMS
+calcd for C 13H20O4 [M+]: 240.1362, found: 240.1362.
+10. Preparation of ( Ra)-dimethyl 2-(pentadeca -2,3-dienyl)malonate ( Ra)-4dd.
+(ty-1-68)
+
+The reaction of CuBr 2 (45.1 mg, 0.2 mmol), 1d (255.8 mg, 1.5 mmol), ( S)-3 (253.8
+mg, 1.0 mmol), and 2d (277.1 mg, 1.5 mmol) in dioxa ne (3.0 mL) afforded ( Ra)-4dd
+(170.4 mg, 50%) (eluent: petroleum ether/ethyl  acetate = 100/1) as a liquid: 94% ee
+(HPLC conditions: Chiralcel PC-4 column, MeOH/H 2O = 82/18, 0.7 mL/min, λ = 214
+nm, tR(minor) = 37.5 min, tR(major) = 39.7 min); [ α]D26 = -49.9 ( c = 1.00, CHCl 3); 1H
+NMR (400 MHz, CDCl 3) δ 5.19-5.06 (m, 2 H, CH=C=C H), 3.74 (s, 6 H, Me × 2),
+3.51 (t, J = 7.4 Hz, 1 H, CH), 2.63-2.53 (m, 2 H, CH 2), 1.98-1.90 (m, 2 H, CH 2),
+1.42-1.24 (m, 18 H, (CH 2)9), 0.88 (t, J = 6.6 Hz, 3 H, Me); 13C NMR (100 MHz,
+CDCl 3) δ 203.9, 169.4, 169.3, 93.0, 87.3, 52.5, 51.2, 31.9, 29.6, 29.5, 29.3, 29.15,
+29.07, 28.8, 28.0, 22.7, 14.1; IR (neat) ν (cm-1) 2923, 2853, 1964, 1755, 1738, 1436,
+1340, 1262, 1230, 1151, 1080, 1041; MS (EI) m/z (%): 338 (M+, 5.34), 138 (100);
+HRMS calcd for C 20H34O4 [M+]: 338.2457, found: 338.2458.
+11. Preparation of ( Ra)-phenyltrideca-3,4-diene ( Ra)-4eg.  (hx-11-74)

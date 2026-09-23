@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_82004c50f2e8",
+  "canonical_material_id": "mat_5f01bbb840da",
+  "canonical_name": "ZSM-5-zeolite",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_c87ac25787fb",
+    "mcard_ea9e8e51b5ea",
+    "mcard_61c9b9f0c69b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_8226144e6fb7"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "62abef84986f"
+  ],
+  "evidence_trace_ids": [
+    "trace_95b052ae70bc",
+    "trace_3394ee492490"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T23:40:03.647845",
+  "updated_at": "2026-04-23T23:40:03.648038"
+}

@@ -1,0 +1,112 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_791f52ac61bc",
+  "paper_id": "1b118e60d7ac",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Design rule: replace DMF with DEF under otherwise identical synthesis conditions",
+  "key_insights": [
+    {
+      "title": "Design Rule",
+      "body": "[neutral] replace DMF with DEF under otherwise identical synthesis conditions → a different phase, 1′, is isolated instead of 1"
+    },
+    {
+      "title": "Comparison",
+      "body": "synthesis using DEF vs synthesis using DMF: winner=tie on resulting_framework_phase"
+    },
+    {
+      "title": "Author Claim",
+      "body": "MOF 1 remains crystalline after N2 adsorption and after vapor-phase adsorption of n-hexane, 3-methylpentane, and 2,2-dimethylbutane, as PXRD matches simulated data."
+    },
+    {
+      "title": "Author Claim",
+      "body": "Hexane isomer separation on a column packed with 1 at 50 °C gives residence times of ~1.9 min for 22DMB, ~2.9 min for 3MP, and ~3.5 min for n-HEX."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_79e6fe63a6b1",
+    "trace_9f9619320b0e",
+    "trace_511b47a7f998",
+    "trace_f35db6d8cf1b",
+    "trace_033f3939cecb",
+    "trace_74ed39e58d41",
+    "trace_288212bccccd",
+    "trace_0161285534aa",
+    "trace_159aaff8a569",
+    "trace_69ed8e33f815",
+    "trace_345c3b5c8432",
+    "trace_f1e8abe20429",
+    "trace_0fb0aec01401",
+    "trace_d5927c089d60",
+    "trace_1e78a5255b31",
+    "trace_a4aeec40f023",
+    "trace_2ee26af95161",
+    "trace_efde38cb0a0a",
+    "trace_345c3b5c8432",
+    "trace_9f9619320b0e",
+    "trace_79e6fe63a6b1",
+    "trace_f1e8abe20429",
+    "trace_288212bccccd",
+    "trace_2ee26af95161",
+    "trace_511b47a7f998",
+    "trace_74ed39e58d41",
+    "trace_033f3939cecb",
+    "trace_a4aeec40f023",
+    "trace_159aaff8a569",
+    "trace_d5927c089d60",
+    "trace_f35db6d8cf1b",
+    "trace_69ed8e33f815",
+    "trace_0161285534aa",
+    "trace_1e78a5255b31",
+    "trace_efde38cb0a0a",
+    "trace_0fb0aec01401"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_b44f7f621f23"
+  ],
+  "claim_card_ids": [
+    "claim_f17cde923053",
+    "claim_797833ec70d5",
+    "claim_5b70c2d2cf4c",
+    "claim_cd0b5bf3eae6",
+    "claim_ea8dad50adb0",
+    "claim_b1d4ec8c223c",
+    "claim_37f6a0ccedf3"
+  ],
+  "design_rule_card_ids": [
+    "drule_8793b8bcd9b4"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_73081a03de4c"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_49b018308311"
+  ],
+  "dossier_ids": [
+    "dossier_6456b28a16d9"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MOF 1 remains crystalline after N2 adsorption and after vapor-phase adsorption of n-hexane, 3-methylpentane, and 2,2-dimethylbutane, as PXRD matches simulated data.",
+    "Hexane isomer separation on a column packed with 1 at 50 °C gives residence times of ~1.9 min for 22DMB, ~2.9 min for 3MP, and ~3.5 min for n-HEX.",
+    "Separation efficiency is uneven: 22DMB shows 0 efficiency, while 3MP and n-HEX show efficiencies of 1.4 and 0.6, respectively."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.6,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.215338",
+  "updated_at": "2026-04-28T14:29:22.215343"
+}

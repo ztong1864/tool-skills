@@ -1,0 +1,14 @@
+- S73 - HPLC Profile  of R-2aa (using unpurified p ropargyl amine intermediate)
+
+0.0 1.3 2.5 3.8 5.0 6.3 7.5 8.8 10.0-5.010.020.030.040.050.0JGJ901 #15 [modified by user] ZQH98 UV_VIS_3
+mAU
+min1 - 4.897
+2 - 5.243WVL:254 nm
+
+No. Ret.Time
+(min)  Height
+(mAU)  Area
+(mAU*min)  Rel.Area
+(%)
+1 4.897  43.212  4.756  82.48
+2 5.243  8.647  1.010  17.52

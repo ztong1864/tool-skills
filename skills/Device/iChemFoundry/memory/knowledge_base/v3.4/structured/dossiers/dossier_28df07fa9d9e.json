@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_28df07fa9d9e",
+  "canonical_material_id": "mat_817de4cee4b5",
+  "canonical_name": "[Zn(atz)(nic)]",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_63a39f87f1c2",
+  "pillar_id": "pil_e821ba1edb9d",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_8dd1f5f48ce4"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_446cabe35388"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "24731d45e39f",
+    "1e03e8a24ac5"
+  ],
+  "evidence_trace_ids": [
+    "trace_38bf9fdf0da8"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:23:20.920130",
+  "updated_at": "2026-04-23T23:43:28.508417"
+}

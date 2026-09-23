@@ -1,0 +1,62 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_a013b73e223c",
+  "paper_id": "ad4930c0a0d3",
+  "raw_path": "相关文献/Yang 等 - 2025 - Solvent-Induced Topological Variation in Zn-Triazo.pdf",
+  "title": "Solvent-Induced Topological Variation in Zn-Triazo",
+  "authors": [
+    "Yang"
+  ],
+  "year": 2025,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CALF-20"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "In",
+    "Ga",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "pyridine",
+    "azolate",
+    "imidazolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "The exploration of the solvent effect on metal−\norganic framework (MOF) structure is crucial for promoting their",
+    "results_summary": "Solvent-Induced Topological Variation in Zn-Triazolate-\nDicarboxylate Pillared-Layer Frameworks for Multicomponent\nEthylene Purification\nRong Yang,‡ Jian-Wei Cao,‡ Tao Zhang,‡ Weize Wang, Yu Wang, Jua"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:31:22.967705"
+}

@@ -1,0 +1,11 @@
+{
+  "skill_input": {
+    "layout_code": "T-3:30",
+    "unit_column": 30,
+    "unit_row": 3,
+    "substance": "(S)-2-(Methoxydiphenylmethyl)pyrrolidine",
+    "add_weight": 32.09,
+    "unit": "mg"
+  },
+  "resource_info": null
+}

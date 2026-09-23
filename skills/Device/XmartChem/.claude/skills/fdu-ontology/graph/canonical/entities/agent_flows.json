@@ -1,0 +1,22 @@
+{
+  "agent-flow:fdu-experiment-to-device-task": {
+    "description": "Guides the Agent from a user experiment target through recommendation, amount calculation, plan generation, resource verification, protocol orchestration, confirmed device task creation, and optional read-only task monitoring.",
+    "entity_type": "AgentFlow",
+    "entry_process_id": "process:fdu-experiment-to-device-task",
+    "id": "agent-flow:fdu-experiment-to-device-task",
+    "name": "FDU experiment target to device task",
+    "start_step_id": "task-step:parse-experiment-request",
+    "steps": [
+      "task-step:parse-experiment-request",
+      "task-step:recommend-experiment-conditions",
+      "task-step:calculate-reagent-amounts",
+      "task-step:generate-numbered-steps",
+      "task-step:write-experiment-plan",
+      "task-step:merge-step-json",
+      "task-step:verify-and-fill-resources",
+      "task-step:orchestrate-device-protocol",
+      "task-step:create-device-task",
+      "task-step:monitor-device-task"
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_aa5024ad95ac",
+  "paper_id": "625603ff8379",
+  "raw_path": "相关文献/Zn-H2bdc.pdf",
+  "title": "H2bdc",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MOF-177"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "BPDC",
+    "azolate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "Two \nmetal-organic \nframeworks, \n[Zn2(atrz)2(bpdc)]·0.5H2O \n(1) \nand \n[Zn2(mtrz)2(azdc)]·DMA·CH3OH·H2O \n(2),",
+    "conclusion": "of the \ncrystallographic data are presented in Table 1, and selected bond lengths and angles \nare given in Table S1. \n \n2.5. Gas sorption measurements",
+    "results_summary": "Accepted Manuscript\nPore-size tuning in pillared-layer metal-organic framework with self-penetrated\nrob net for selective gas adsorption and efficient dyes adsorption in aqueous\nsolution\nJie Liu, Yuhu"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:36:04.311169"
+}

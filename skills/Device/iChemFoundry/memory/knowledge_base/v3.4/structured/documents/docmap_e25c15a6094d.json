@@ -1,0 +1,36 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_e25c15a6094d",
+  "paper_id": "f849bda00a63",
+  "raw_path": "相关文献/Su 等 - Exceptionally Stable and Hollow Tubular Metal-Orga.pdf",
+  "title": "Exceptionally Stable and Hollow Tubular Metal-Orga",
+  "authors": [
+    "Su"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [],
+  "mentioned_metals": [],
+  "mentioned_linkers": [
+    "TED"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "S1\nSupporting Materials\nExceptionally Stable and Hollow Tubular Metal-Organic Architectures:\nSynthesis, Characterization and Solid-State Transformation Study\nCheng-Yong Su, Andrea M. Goforth, Mark D. "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:57:26.980814"
+}

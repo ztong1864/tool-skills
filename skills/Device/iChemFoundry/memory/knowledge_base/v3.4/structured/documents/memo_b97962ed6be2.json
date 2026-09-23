@@ -1,0 +1,78 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_b97962ed6be2",
+  "paper_id": "b2c6560d9efc",
+  "title": "HPO4-aitenneite2012-Poly[(l3-hydrogenphosphato)(4H-1,2,4",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Paper b2c6560d9efc: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Author Claim",
+      "body": "Hydrogen bonding helps organize the framework, including an N3-H3···O2 contact of 2.8427(15) Å with a 175° angle."
+    },
+    {
+      "title": "Author Claim",
+      "body": "The compound is identified as poly[(µ3-hydrogenphosphato)(4H-1,2,4-triazole-κN1)zinc], indicating a polymeric zinc hydrogenphosphate-triazole framework."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_83fd6cb5bfbe",
+    "trace_b7b9e6236062",
+    "trace_4f90949a51b3",
+    "trace_8de9f2d492fe",
+    "trace_0b8a6d1884a4",
+    "trace_6e0f17fd96f7",
+    "trace_ef7b1abe5584",
+    "trace_ef7b1abe5584",
+    "trace_83fd6cb5bfbe",
+    "trace_4f90949a51b3",
+    "trace_b7b9e6236062",
+    "trace_6e0f17fd96f7",
+    "trace_0b8a6d1884a4",
+    "trace_8de9f2d492fe"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_2c6e89bada7a",
+    "claim_c330fd6d1e5f",
+    "claim_f62595a44edc",
+    "claim_f94e2f104385",
+    "claim_1133ac6db387",
+    "claim_ced06b5a4864"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_1f94091c9a02"
+  ],
+  "dossier_ids": [
+    "dossier_dc4d149891b0"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Hydrogen bonding helps organize the framework, including an N3-H3···O2 contact of 2.8427(15) Å with a 175° angle.",
+    "The compound is identified as poly[(µ3-hydrogenphosphato)(4H-1,2,4-triazole-κN1)zinc], indicating a polymeric zinc hydrogenphosphate-triazole framework.",
+    "A second strong hydrogen bond, O4-H4···O1, measures 2.5978(12) Å with a 164° angle, supporting supramolecular connectivity."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.2,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.788348",
+  "updated_at": "2026-04-24T00:19:49.788350",
+  "raw_path": "相关文献/Zn-HPO4-aitenneite2012-Poly[(l3-hydrogenphosphato)(4H-1,2,4.pdf",
+  "authors": [
+    "Zn"
+  ]
+}

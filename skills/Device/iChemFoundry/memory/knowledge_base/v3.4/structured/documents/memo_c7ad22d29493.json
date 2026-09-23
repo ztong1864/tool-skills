@@ -1,0 +1,128 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_c7ad22d29493",
+  "paper_id": "9a91aa096117",
+  "title": "Framework Enabling Benchmark Inverse Selective CO2",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H2"
+  ],
+  "one_line_summary": "Design rule: evaluate fixed-bed 50/50 CO2/C2H2 adsorbers using separation potential qΔ rather than selectivity al",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "adsorption energetics with paired and single guest molecules → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] evaluate fixed-bed 50/50 CO2/C2H2 adsorbers using separation potential qΔ rather than selectivity alone → provides a more appropriate performance metric because fixed-bed separations depend on both selectivity and uptake capacity"
+    },
+    {
+      "title": "Author Claim",
+      "body": "CO2 adsorption in Zn-ox-trz and Zn-ox-mtz is best described by a dual-site Langmuir model, indicating two distinct adsorption sites A and B."
+    },
+    {
+      "title": "Author Claim",
+      "body": "Zn-ox-trz shows stronger cooperative binding at higher loading, with 2CO2 adsorption energy reaching -28.95 kJ mol-1 versus -19.30 kJ mol-1 for 2C2H2."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_5993b50e0293",
+    "trace_edee9a6788ed",
+    "trace_8fe8a304cfd3",
+    "trace_88e683467732",
+    "trace_b04a737a50b4",
+    "trace_e00c7d2340d2",
+    "trace_f8daab70aa5d",
+    "trace_5827717cda57",
+    "trace_dc71e76bfec6",
+    "trace_5fd2c688abcb",
+    "trace_ddb9c5d19b42",
+    "trace_da7764d5df12",
+    "trace_9272195b3dbd",
+    "trace_3eac03306634",
+    "trace_0925635c1a8c",
+    "trace_bc04eb8d483c",
+    "trace_64bdce7c6100",
+    "trace_abe72a59686a",
+    "trace_8b12d53a05cc",
+    "trace_4be4e5f26042",
+    "trace_2664b8cb1a6f",
+    "trace_1e531e32f165",
+    "trace_da7764d5df12",
+    "trace_1e531e32f165",
+    "trace_b04a737a50b4",
+    "trace_5827717cda57",
+    "trace_88e683467732",
+    "trace_9272195b3dbd",
+    "trace_8fe8a304cfd3",
+    "trace_5fd2c688abcb",
+    "trace_edee9a6788ed",
+    "trace_8b12d53a05cc",
+    "trace_5993b50e0293",
+    "trace_abe72a59686a",
+    "trace_e00c7d2340d2",
+    "trace_f8daab70aa5d",
+    "trace_3eac03306634",
+    "trace_ddb9c5d19b42",
+    "trace_bc04eb8d483c",
+    "trace_4be4e5f26042",
+    "trace_0925635c1a8c",
+    "trace_64bdce7c6100",
+    "trace_2664b8cb1a6f",
+    "trace_dc71e76bfec6"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_3298f3ba4c85"
+  ],
+  "recipe_card_ids": [
+    "recipe_2d9c1bb17bb2",
+    "recipe_0e329db855ab"
+  ],
+  "claim_card_ids": [
+    "claim_86ed8d170d07",
+    "claim_d2211553e68a",
+    "claim_7e03a2de0fa1",
+    "claim_0e79116fd0e7",
+    "claim_073444463ca9",
+    "claim_48d0c7e1165b",
+    "claim_d9be72c1984f"
+  ],
+  "design_rule_card_ids": [
+    "drule_7b66ec0653e1"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_fe3b9102ce95",
+    "mat_58ca62c07e23"
+  ],
+  "dossier_ids": [
+    "dossier_3b0cd31b7c9e",
+    "dossier_d9ec16304ba2"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "CO2 adsorption in Zn-ox-trz and Zn-ox-mtz is best described by a dual-site Langmuir model, indicating two distinct adsorption sites A and B.",
+    "Zn-ox-trz shows stronger cooperative binding at higher loading, with 2CO2 adsorption energy reaching -28.95 kJ mol-1 versus -19.30 kJ mol-1 for 2C2H2.",
+    "In Zn-ox-mtz, C2H2 adsorption is unfavorable in simulation: Eads(C2H2) is +28.95 kJ mol-1, while CO2 remains favorable at -9.65 kJ mol-1."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.105410",
+  "updated_at": "2026-04-24T00:19:49.105414",
+  "raw_path": "相关文献/Yang 等 - Framework Enabling Benchmark Inverse Selective CO2.pdf",
+  "authors": [
+    "Yang"
+  ]
+}

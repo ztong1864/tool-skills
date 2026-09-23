@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_b97962ed6be2",
+  "paper_id": "b2c6560d9efc",
+  "raw_path": "相关文献/Zn-HPO4-aitenneite2012-Poly[(l3-hydrogenphosphato)(4H-1,2,4.pdf",
+  "title": "HPO4-aitenneite2012-Poly[(l3-hydrogenphosphato)(4H-1,2,4",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": false,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "ORTEP-3"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Fe",
+    "Mg",
+    "In",
+    "V",
+    "Mo"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "azolate"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Poly[(l3-hydrogenphosphato)(4H-1,2,4-\ntriazole-jN1)zinc]\nHafid Aitenneite,a* Abdeslam El Bouari,a Said Sebti,b\nMohamed Saadi,c Lahcen El Ammarid and Karim Adile\naLaboratoire de Chimie des Mate´riaux S"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:38:30.046323"
+}

@@ -1,0 +1,88 @@
+{
+  "system": "XtalPi",
+  "workflow": "ata_protocol",
+  "execution_mode": "batch",
+  "tasks": [
+    {
+      "step_id": 1,
+      "description": "称量固体试剂",
+      "actions": [
+        {
+          "action": "add_solid",
+          "reagent": "CuI",
+          "amount": 0.952,
+          "unit": "mg"
+        },
+        {
+          "action": "add_solid",
+          "reagent": "(S)-1-(2-吡咯烷甲基) 吡咯烷",
+          "amount": 18.51,
+          "unit": "mg"
+        },
+        {
+          "action": "add_solid",
+          "reagent": "4A MS",
+          "amount": 20,
+          "unit": "mg"
+        }
+      ]
+    },
+    {
+      "step_id": 2,
+      "description": "加入溶剂",
+      "actions": [
+        {
+          "action": "add_liquid",
+          "reagent": "DMSO",
+          "amount": 1000,
+          "unit": "μL"
+        }
+      ]
+    },
+    {
+      "step_id": 3,
+      "description": "加入底物",
+      "actions": [
+        {
+          "action": "add_liquid",
+          "reagent": "Phenylacetylene",
+          "amount": 63.1,
+          "unit": "μL"
+        },
+        {
+          "action": "add_liquid",
+          "reagent": "Nonanal",
+          "amount": 19.5,
+          "unit": "μL"
+        }
+      ]
+    },
+    {
+      "step_id": 4,
+      "description": "反应控制",
+      "actions": [
+        {
+          "action": "reaction_control",
+          "temperature": 25,
+          "duration": 12,
+          "unit_temp": "C",
+          "unit_duration": "h"
+        }
+      ]
+    },
+    {
+      "step_id": 5,
+      "description": "后处理",
+      "actions": [
+        {
+          "action": "filter",
+          "description": "过滤除去分子筛"
+        },
+        {
+          "action": "concentrate",
+          "description": "浓缩"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+S24
+ 4.15-4.07 (m, 2 H, OCH 2), 2.08-1.94 (m, 2 H, CH 2), 1.53-1.15 (m, 13 H, OH and 6 ×
+CH 2), 0.88 (t,  J = 6.8 Hz, 3 H, CH 3).
+(6) Synthesis of ( R)-dimethyl 2-(2,3-dodecadienyl)maloate ( Ra)-4dc (yq-11-88)
+
+To a flame-dried 100 mL Schlenk bottle were added DMAP (122.4 mg, 1 mmol),
+anhydrous NEt 3 (2.1 mL, d = 0.726 g/mL, 1.515 g, 12 mmol), ( Ra)-4gc (1.8209 mg,
+10 mmol, 98% ee), and dry DC M (30 mL) sequentially under Ar atmosphere at room
+temperature. MsCl (0.9 mL, d =1.475, 1.33 g, 0. 6 mmol) was added dropwise within
+10 min via a syringe at 0 oC. The resulting mixt ure was stirred at 0 oC for 1 h and
+quenched with sat. NaHCO 3 (aq., 5 mL). DCM (50 mL) was added and the organic
+layer was washed sequentially with water (3 × 10 mL) and brine (3 × 10 mL), and
+dried over anhydrous Na 2SO 4. After filtration and evaporation, the residue was used
+in the next step without further purification.
+To another flame-dried Schlenk bottl e were added NaH (480.7 mg, 12 mmol, 60%
+in mineral oil) and dry THF (30 mL). Dimethyl malonate (2.3 mL, d = 1.151 g/mL,
+2.64 g, 12 mmol) were then added dropwise within 5 min via a syringe at Ar
+atmosphere at room temperature. The resu lting mixture was allo wed to stir for 30
+min at rt. The crude mesylate prepared a bove was then dissolved in 10 mL of dry
+THF and added dropwise within 5 h via a sy ringe pump (2 mL/hou r) at rt. After 12.4
+h, the reaction was complete as monitored by TLC, quenched with H 2O (5 mL), and

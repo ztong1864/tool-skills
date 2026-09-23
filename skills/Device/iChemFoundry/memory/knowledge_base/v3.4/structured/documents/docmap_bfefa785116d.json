@@ -1,0 +1,50 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_bfefa785116d",
+  "paper_id": "a73000c53af6",
+  "raw_path": "相关文献/Zn-草酸-Anewthree-dimensionalZn2+coordinationpolymerconstructedfrom.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ca",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "pcu"
+  ],
+  "key_sections": {
+    "conclusion": "In summary, we employed a mixed ligand of ox and trz to construct a\nnew 3-D Zn2+ CP under the solvothermal conditions. The trz molecules",
+    "results_summary": "A new three-dimensional Zn2+ coordination polymer constructed from\noxalate and 1,2,4-triazolate\nYan-Ning Wang a,b, Wan-Chun Zhu a,⁎⁎, Qi-Sheng Huo a,b, Jie-Hui Yu a,b,⁎, Ji-Qing Xu a,b\na College of Ch"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:26:57.436592"
+}

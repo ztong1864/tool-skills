@@ -1,0 +1,12 @@
+- S2 - 1. Comparison of  the Allene Syntheses
+Table S1. Comparison of the Allene Synthesis Using Three  Different Protocols
+
+
+a Isolated yield.
+
+2. Calculations of C -H Bond Dissociation Energies and Computed Structures
+All DFT calculations were carried out  with th e Gaussian 03 program package.4 The geometry optimization of
+all the minima and transition states  were performed at (U)B3LYP5 level  of theory with the 6-31G(d)6 basis se t.
+The vibrational frequencies were computed at the same level of the ory to check wheth er every  optimized
+structure is an energy minimum and to evaluate its zero-point vibration energy (ZPE). The bond dissociation
+energies  were computed based on the following scheme.

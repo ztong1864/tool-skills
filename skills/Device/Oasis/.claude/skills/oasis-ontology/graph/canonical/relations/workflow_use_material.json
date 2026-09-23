@@ -1,0 +1,14 @@
+{
+  "rel:useMaterial:bodipy-day1:bm": {
+    "from": "workflow:3a202bba-f1fc-6af4-738d-10afee900175",
+    "id": "rel:useMaterial:bodipy-day1:bm",
+    "relation_type": "useMaterial",
+    "to": "material:bm-bsa-medium"
+  },
+  "rel:useMaterial:bodipy-day1:fm": {
+    "from": "workflow:3a202bba-f1fc-6af4-738d-10afee900175",
+    "id": "rel:useMaterial:bodipy-day1:fm",
+    "relation_type": "useMaterial",
+    "to": "material:fm-ffas-medium"
+  }
+}

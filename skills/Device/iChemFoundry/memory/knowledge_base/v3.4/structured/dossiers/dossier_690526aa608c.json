@@ -1,0 +1,57 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_690526aa608c",
+  "canonical_material_id": "mat_6c521acbaa4e",
+  "canonical_name": "nbo-a-[Cu(detz)]",
+  "metal_element": "Cu",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_c7e2fde2f764",
+  "pillar_id": null,
+  "topology": "nbo-a",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_9ff2ca113101",
+    "mcard_1727b97706b5"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_275368e330a5",
+    "mechcard_4bf68a0afc68",
+    "mechcard_0cddfb0cfd7b",
+    "mechcard_37c2014fc5e8",
+    "mechcard_9a2c0366a32d"
+  ],
+  "recipe_card_ids": [
+    "recipe_fde6a26f0ccd",
+    "recipe_4e6177f928ca"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "09e67f192def"
+  ],
+  "evidence_trace_ids": [
+    "trace_51e4d7b4d4f4",
+    "trace_5884ba9a7f62",
+    "trace_7197c8a1ed84",
+    "trace_b55cf50caef8",
+    "trace_cf23da6cd5eb",
+    "trace_74e8367661c4",
+    "trace_e55aef406a18"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:25:45.924939",
+  "updated_at": "2026-04-23T20:25:45.925286"
+}

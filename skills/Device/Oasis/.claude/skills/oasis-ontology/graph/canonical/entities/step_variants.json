@@ -1,0 +1,890 @@
+{
+  "step-variant:step-type:item--08fd4fd2:159d9b54": {
+    "display_step_dev_type_name": "高内涵仪A",
+    "display_step_name": "成像",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--08fd4fd2:159d9b54",
+    "step_type_id": "step-type:item--08fd4fd2",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "C:\\\\Protocols\\\\BODIPY.HTS"
+      }
+    }
+  },
+  "step-variant:step-type:item--08fd4fd2:c9490f92": {
+    "display_step_dev_type_name": "成像",
+    "display_step_name": "成像",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--08fd4fd2:c9490f92",
+    "step_type_id": "step-type:item--08fd4fd2",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "C:\\\\Protocols\\\\cxc-foci-demo.HTS"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:08e1d757": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:08e1d757",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveIn_6"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:198d5d0d": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液，药板加载",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:198d5d0d",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "BODIPY_D1_MoveInMedPlateToP10"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:1bf4bc16": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:1bf4bc16",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveIn_Med1"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:1e4e2480": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:1e4e2480",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInCellPlate1"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:2236564a": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:2236564a",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "BODIPY_DAY2"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:2a184c7c": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:2a184c7c",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInTips"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:2c2115c8": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "多聚甲醛",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:2c2115c8",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddPOM"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:3596bbe9": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:3596bbe9",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOut_2"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:36a646f0": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液加染色，关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:36a646f0",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddNucleusDye"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:38ee43e9": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液开盖，回收一抗",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:38ee43e9",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "RecoverPrimaryAntibody"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:391ff4cb": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:391ff4cb",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutCellPlate2"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:3b8e2110": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:3b8e2110",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutCellPlate3"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:3c81dc6b": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液吸培养基加染色液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:3c81dc6b",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddMitoTracker"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:40ed0301": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液加二抗，关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:40ed0301",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddSecondaryAntibody"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:4d1c5b59": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液吸染色液加固定液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:4d1c5b59",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddPFA_1"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:4d488ec2": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液染色缓冲，关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:4d488ec2",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddDyeBuffer"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:509e8884": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:509e8884",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveIn_3"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:51589cbb": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:51589cbb",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "DemoAddMedcineToCellPlate"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:5690ad99": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:5690ad99",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInCellPlate3"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:597ca03a": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:597ca03a",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOut_Med1"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:5c03e544": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液，加药刺激",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:5c03e544",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "BODIPY_D1_AddMedicineToCellPlate_Demo"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:5cd103e6": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:5cd103e6",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInCellPlate9"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:5def2e29": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液加Triton，关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:5def2e29",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddTriton"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:5f9a2559": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:5f9a2559",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddMedicine_9Plates_Day2"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:69d56983": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:69d56983",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOut_4"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:72872804": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:72872804",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutCellPlate1"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:7480d43b": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液加通透液，关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:7480d43b",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddTriton_1"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:769cb510": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:769cb510",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInCellPlate7"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:78643b2e": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "细胞板开盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:78643b2e",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "OpenLid"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:7b2429fc": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:7b2429fc",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutDilutionPlate"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:7f0fcbfa": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:7f0fcbfa",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddMedicine_9Plates_Merge"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:824c548d": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:824c548d",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInCellPlate2"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:849c0fdb": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:849c0fdb",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInCellPlate6"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:87b7713a": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:87b7713a",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInCellPlate5"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:969019dc": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:969019dc",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveIn_2"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:977d3c7b": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:977d3c7b",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutCellPlate9"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:99a4fcaa": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:99a4fcaa",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "DemoMoveOutMedPlateToP8_1017"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:99be124a": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液，药板退出",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:99be124a",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "BODIPY_D1_MoveOutMedPlateToP8"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:9ab38e76": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液染色，关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:9ab38e76",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddDye"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:9cb7fe11": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:9cb7fe11",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOut_3"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:a20acec4": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:a20acec4",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddMedicine_9Plates"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:a321e93d": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "Hoechst",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:a321e93d",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddHoechst"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:a4d4ba70": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "细胞板关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:a4d4ba70",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "CloseLid"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:a90b7edb": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:a90b7edb",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutCellPlate5"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:a9166400": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:a9166400",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutCellPlate4"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:ab01e007": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:ab01e007",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutTips"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:ad836390": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:ad836390",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutCellPlate7"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:ae6b14f5": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液开盖，回收二抗",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:ae6b14f5",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "RecoverSecondaryAntibody"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:b3b9089d": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:b3b9089d",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInDilutionPlate"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:b44baff2": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:b44baff2",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOut_6"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:b68b0b18": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:b68b0b18",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInCellPlate4"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:b8055b4e": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液加一抗，关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:b8055b4e",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddPrimaryAntibody"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:b9847f25": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:b9847f25",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddPFA"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:bb5d0317": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:bb5d0317",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveInCellPlate8"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:bb772883": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:bb772883",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutCellPlate8"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:be2abbf4": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液加BSA，关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:be2abbf4",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddBSA"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:be97a4f1": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:be97a4f1",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddMedicine_6Plates"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:c1160496": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移液加混合染色液，关盖",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:c1160496",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddMixedDye"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:ce2e08e5": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:ce2e08e5",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveIn_4"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:d2e20a5e": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "细胞板给药",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:d2e20a5e",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "AddMedicineToCellPlate"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:e39ee223": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:e39ee223",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOutCellPlate6"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:e7c22bf0": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:e7c22bf0",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOut_5"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:ebd9c457": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:ebd9c457",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveIn_5"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:edcb06b3": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移出工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:edcb06b3",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveOut_1"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:f4953c0d": {
+    "display_step_dev_type_name": "移液",
+    "display_step_name": "移入工作站",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:f4953c0d",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MoveIn_1"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:faa29e0c": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:faa29e0c",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "MedicinePlateDilution"
+      }
+    }
+  },
+  "step-variant:step-type:item--1195f0ed:fe25e467": {
+    "display_step_dev_type_name": "移液站A",
+    "display_step_name": "移液",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--1195f0ed:fe25e467",
+    "step_type_id": "step-type:item--1195f0ed",
+    "variant_signature": {
+      "editable_params": {
+        "protocol": "DemoMoveInMedPlateToP6_1017"
+      }
+    }
+  },
+  "step-variant:step-type:item--42699905:1d9004d0": {
+    "display_step_dev_type_name": "洗板",
+    "display_step_name": "洗板PBS",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--42699905:1d9004d0",
+    "step_type_id": "step-type:item--42699905",
+    "variant_signature": {
+      "editable_params": {
+        "endColumn": 8,
+        "protocol": "20220901",
+        "startColumn": 1
+      }
+    }
+  },
+  "step-variant:step-type:item--f3a1f689:2376e397": {
+    "display_step_dev_type_name": null,
+    "display_step_name": "调度-等待",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:item--f3a1f689:2376e397",
+    "step_type_id": "step-type:item--f3a1f689",
+    "variant_signature": {
+      "editable_params": {}
+    }
+  },
+  "step-variant:step-type:v2--b4f1cc3e:24823af7": {
+    "display_step_dev_type_name": "孵育",
+    "display_step_name": "孵育",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:v2--b4f1cc3e:24823af7",
+    "step_type_id": "step-type:v2--b4f1cc3e",
+    "variant_signature": {
+      "editable_params": {
+        "DelayTime": 30
+      }
+    }
+  },
+  "step-variant:step-type:v2--b4f1cc3e:854903d8": {
+    "display_step_dev_type_name": "常温孵育",
+    "display_step_name": "常温孵育",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:v2--b4f1cc3e:854903d8",
+    "step_type_id": "step-type:v2--b4f1cc3e",
+    "variant_signature": {
+      "editable_params": {
+        "DelayTime": 10
+      }
+    }
+  },
+  "step-variant:step-type:v2--b4f1cc3e:a5454c2f": {
+    "display_step_dev_type_name": "孵育",
+    "display_step_name": "孵育",
+    "entity_type": "StepVariant",
+    "id": "step-variant:step-type:v2--b4f1cc3e:a5454c2f",
+    "step_type_id": "step-type:v2--b4f1cc3e",
+    "variant_signature": {
+      "editable_params": {
+        "DelayTime": 20
+      }
+    }
+  }
+}

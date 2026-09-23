@@ -1,0 +1,66 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_bb8d2add705b",
+  "paper_id": "fbf7094ee3a4",
+  "raw_path": "相关文献/Nguyen 等 - 2023 - Competitive CO2H2O Adsorption on CALF-20.pdf",
+  "title": "Competitive CO2H2O Adsorption on CALF-20",
+  "authors": [
+    "Nguyen"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MIL-160",
+    "MCM-41",
+    "CALF-20",
+    "MIL-101",
+    "MOF-64",
+    "MOF-74",
+    "MFC-1",
+    "HKUST-1",
+    "MFC-2"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Ni",
+    "Al",
+    "Cr",
+    "Mg",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "DOBDC",
+    "BDC",
+    "TED",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "hkust"
+  ],
+  "key_sections": {
+    "abstract": "7 \nThe equilibrium and breakthrough studies of the H2O adsorption and the competition of CO2/H2O \n8",
+    "conclusion": "of equations for the detailed column model \n21 \nComponent mass balance \n𝜕𝑦𝑖\n𝜕𝑡 + 𝑦𝑖\n𝑃\n𝜕𝑃\n𝜕𝑡− 𝑦𝑖\n𝑇\n𝜕𝑇\n𝜕𝑡 = 𝐷𝐿\n𝑇\n𝑃\n𝜕\n𝜕𝑧(𝑃\n𝑇\n𝜕𝑦𝑖\n𝜕𝑧) − 𝑇\n𝑃\n𝜕\n𝜕𝑧(𝑃𝑦𝑖\n𝑇𝑣) −𝑅𝑇\n𝑃\n1 −𝜀\n𝜀\n𝜕𝑞𝑖\n𝜕𝑡",
+    "results_summary": "1\nCompetitive CO2/H2O Adsorption on CALF-20  \n1 \nTai T. T. Nguyena†, Bhubesh Murugappan Balasubramaniama, Nicholas Fylstrab,  \n2 \nRacheal P. S.  Huynhb†, George K. H. Shimizub, Arvind Rajendrana* \n3 \n"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:41:33.822023"
+}

@@ -1,0 +1,62 @@
+{
+  "instrument:fdu-automation-platform--supportsAction--device-action:add-liquid": {
+    "from": "instrument:fdu-automation-platform",
+    "id": "instrument:fdu-automation-platform--supportsAction--device-action:add-liquid",
+    "relation_type": "supportsAction",
+    "to": "device-action:add-liquid"
+  },
+  "instrument:fdu-automation-platform--supportsAction--device-action:add-solid": {
+    "from": "instrument:fdu-automation-platform",
+    "id": "instrument:fdu-automation-platform--supportsAction--device-action:add-solid",
+    "relation_type": "supportsAction",
+    "to": "device-action:add-solid"
+  },
+  "instrument:fdu-automation-platform--supportsAction--device-action:filter": {
+    "from": "instrument:fdu-automation-platform",
+    "id": "instrument:fdu-automation-platform--supportsAction--device-action:filter",
+    "relation_type": "supportsAction",
+    "to": "device-action:filter"
+  },
+  "instrument:fdu-automation-platform--supportsAction--device-action:high-filter": {
+    "from": "instrument:fdu-automation-platform",
+    "id": "instrument:fdu-automation-platform--supportsAction--device-action:high-filter",
+    "relation_type": "supportsAction",
+    "to": "device-action:high-filter"
+  },
+  "instrument:fdu-automation-platform--supportsAction--device-action:reaction-control": {
+    "from": "instrument:fdu-automation-platform",
+    "id": "instrument:fdu-automation-platform--supportsAction--device-action:reaction-control",
+    "relation_type": "supportsAction",
+    "to": "device-action:reaction-control"
+  },
+  "instrument:fdu-filter-module--supportsAction--device-action:filter": {
+    "from": "instrument:fdu-filter-module",
+    "id": "instrument:fdu-filter-module--supportsAction--device-action:filter",
+    "relation_type": "supportsAction",
+    "to": "device-action:filter"
+  },
+  "instrument:fdu-high-filter-module--supportsAction--device-action:high-filter": {
+    "from": "instrument:fdu-high-filter-module",
+    "id": "instrument:fdu-high-filter-module--supportsAction--device-action:high-filter",
+    "relation_type": "supportsAction",
+    "to": "device-action:high-filter"
+  },
+  "instrument:fdu-liquid-handler--supportsAction--device-action:add-liquid": {
+    "from": "instrument:fdu-liquid-handler",
+    "id": "instrument:fdu-liquid-handler--supportsAction--device-action:add-liquid",
+    "relation_type": "supportsAction",
+    "to": "device-action:add-liquid"
+  },
+  "instrument:fdu-magnetic-stirrer--supportsAction--device-action:reaction-control": {
+    "from": "instrument:fdu-magnetic-stirrer",
+    "id": "instrument:fdu-magnetic-stirrer--supportsAction--device-action:reaction-control",
+    "relation_type": "supportsAction",
+    "to": "device-action:reaction-control"
+  },
+  "instrument:fdu-solid-dispenser--supportsAction--device-action:add-solid": {
+    "from": "instrument:fdu-solid-dispenser",
+    "id": "instrument:fdu-solid-dispenser--supportsAction--device-action:add-solid",
+    "relation_type": "supportsAction",
+    "to": "device-action:add-solid"
+  }
+}

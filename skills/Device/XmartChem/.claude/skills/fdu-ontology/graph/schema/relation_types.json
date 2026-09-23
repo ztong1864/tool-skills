@@ -1,0 +1,18 @@
+{
+  "relation_types": [
+    "appliesTo",
+    "containsAction",
+    "createsOutput",
+    "hasCondition",
+    "hasProperty",
+    "nextStep",
+    "pausesAt",
+    "requiresCondition",
+    "requiresInput",
+    "requiresResource",
+    "routesTo",
+    "startsWith",
+    "supportsAction",
+    "usesInstrument"
+  ]
+}

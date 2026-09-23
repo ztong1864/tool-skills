@@ -1,0 +1,80 @@
+{
+  "task-step:calculate-reagent-amounts--createsOutput--artifact:amount-table": {
+    "from": "task-step:calculate-reagent-amounts",
+    "id": "task-step:calculate-reagent-amounts--createsOutput--artifact:amount-table",
+    "relation_type": "createsOutput",
+    "to": "artifact:amount-table"
+  },
+  "task-step:convert-plan-to-step-json--createsOutput--artifact:single-plan-step-json": {
+    "from": "task-step:convert-plan-to-step-json",
+    "id": "task-step:convert-plan-to-step-json--createsOutput--artifact:single-plan-step-json",
+    "relation_type": "createsOutput",
+    "to": "artifact:single-plan-step-json"
+  },
+  "task-step:create-device-task--createsOutput--artifact:device-submit-result": {
+    "from": "task-step:create-device-task",
+    "id": "task-step:create-device-task--createsOutput--artifact:device-submit-result",
+    "relation_type": "createsOutput",
+    "to": "artifact:device-submit-result"
+  },
+  "task-step:monitor-device-task--createsOutput--artifact:device-monitor-result": {
+    "from": "task-step:monitor-device-task",
+    "id": "task-step:monitor-device-task--createsOutput--artifact:device-monitor-result",
+    "relation_type": "createsOutput",
+    "to": "artifact:device-monitor-result"
+  },
+  "task-step:generate-numbered-steps--createsOutput--artifact:numbered-experiment-steps": {
+    "from": "task-step:generate-numbered-steps",
+    "id": "task-step:generate-numbered-steps--createsOutput--artifact:numbered-experiment-steps",
+    "relation_type": "createsOutput",
+    "to": "artifact:numbered-experiment-steps"
+  },
+  "task-step:merge-step-json--createsOutput--artifact:merged-step-json": {
+    "from": "task-step:merge-step-json",
+    "id": "task-step:merge-step-json--createsOutput--artifact:merged-step-json",
+    "relation_type": "createsOutput",
+    "to": "artifact:merged-step-json"
+  },
+  "task-step:orchestrate-device-protocol--createsOutput--artifact:device-protocol-json": {
+    "from": "task-step:orchestrate-device-protocol",
+    "id": "task-step:orchestrate-device-protocol--createsOutput--artifact:device-protocol-json",
+    "relation_type": "createsOutput",
+    "to": "artifact:device-protocol-json"
+  },
+  "task-step:parse-experiment-request--createsOutput--artifact:constraint-json": {
+    "from": "task-step:parse-experiment-request",
+    "id": "task-step:parse-experiment-request--createsOutput--artifact:constraint-json",
+    "relation_type": "createsOutput",
+    "to": "artifact:constraint-json"
+  },
+  "task-step:recommend-experiment-conditions--createsOutput--artifact:recommendation-table": {
+    "from": "task-step:recommend-experiment-conditions",
+    "id": "task-step:recommend-experiment-conditions--createsOutput--artifact:recommendation-table",
+    "relation_type": "createsOutput",
+    "to": "artifact:recommendation-table"
+  },
+  "task-step:verify-and-fill-resources--createsOutput--artifact:resource-verification-report": {
+    "from": "task-step:verify-and-fill-resources",
+    "id": "task-step:verify-and-fill-resources--createsOutput--artifact:resource-verification-report",
+    "relation_type": "createsOutput",
+    "to": "artifact:resource-verification-report"
+  },
+  "task-step:verify-and-fill-resources--createsOutput--artifact:resource-snapshot": {
+    "from": "task-step:verify-and-fill-resources",
+    "id": "task-step:verify-and-fill-resources--createsOutput--artifact:resource-snapshot",
+    "relation_type": "createsOutput",
+    "to": "artifact:resource-snapshot"
+  },
+  "task-step:verify-and-fill-resources--createsOutput--artifact:verified-step-json": {
+    "from": "task-step:verify-and-fill-resources",
+    "id": "task-step:verify-and-fill-resources--createsOutput--artifact:verified-step-json",
+    "relation_type": "createsOutput",
+    "to": "artifact:verified-step-json"
+  },
+  "task-step:write-experiment-plan--createsOutput--artifact:experiment-plan-md": {
+    "from": "task-step:write-experiment-plan",
+    "id": "task-step:write-experiment-plan--createsOutput--artifact:experiment-plan-md",
+    "relation_type": "createsOutput",
+    "to": "artifact:experiment-plan-md"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "FDU Risk Review"
+  short_description: "Review planning-stage FDU experiment risk."
+  default_prompt: "Review the current FDU planning step for reaction feasibility, safety risk, device capability, and action boundary issues."

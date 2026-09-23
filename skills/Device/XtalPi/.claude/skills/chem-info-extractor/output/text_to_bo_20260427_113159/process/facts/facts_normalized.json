@@ -1,0 +1,505 @@
+[
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "record_id": "eb958bb25d56b2d38e9ce3873cab1827ef6d1050",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3a",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 51.0,
+    "notes": "Reaction of hex-5-yn-1-ol and dodecanal with CuBr2 and (S)-3a in 1,4-dioxane at 130°C for 12h. Product: (R)-Octadeca-5,6-dien-1-ol. 51% yield, 88% ee. | llm_normalize:Solvent '1,4-dioxane' normalized to common abbreviation 'Dioxane' per project guidelines; yield based on isolated product (51%) as specified in notes.",
+    "missing_fields": [],
+    "confidence": 0.95,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.0449 g, 0.2 mmol)",
+      "metal_salt_2": "",
+      "chiral_amine": "(S)-3a (0.2589 g, 1 mmol)",
+      "molecular_sieve": "",
+      "solvent": "1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.1363 g (51%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "record_id": "f3a1b63ba494355383dedaae05ede88ba2d9884a",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3b",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 57.0,
+    "notes": "HPLC: Chiralcel PA-2 column, n-hexane/i-PrOH (200:1), 1.0 mL/min, λ = 214 nm; tR (major) = 14.3 min, tR (minor) = 15.9 min; 93% ee | llm_normalize:Solvent '1,4-dioxane' normalized to common abbreviation 'Dioxane'; isolated yield 57% used.",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.9,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.0452 g, 0.2 mmol)",
+      "metal_salt_2": "null",
+      "chiral_amine": "(S)-3b (0.1290 g, 1 mmol)",
+      "molecular_sieve": "null",
+      "solvent": "in 1,4-di-oxane (3 mL)",
+      "yield_percent": "yield: 0.1508 g (57%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "record_id": "R3_hex-5-yn-1-ol_dodecanal_CuBr2-(S)-3b_gram_scale",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3b",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 55.0,
+    "notes": "Gram-scale synthesis; 130 °C for 12 h; purified by chromatography on silica gel (PE/EtOAc 10:1); [α]D20 –47.1 (c 1.065, CHCl3); 97% ee; colorless liquid; workup with Et2O and aq HCl, dried with anhyd Na2SO4 | llm_normalize:Solvent normalized to common abbreviation 'Dioxane' per project requirements. Yield is isolated (55%) from purified product.",
+    "missing_fields": [
+      "molecular_sieve"
+    ],
+    "confidence": 0.95,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.4476 g, 2.0 mmol)",
+      "metal_salt_2": "",
+      "chiral_amine": "(S)-3b (1.6336 g, 95% purity, 12 mmol)",
+      "molecular_sieve": "",
+      "solvent": "1,4-dioxane",
+      "yield_percent": "yield: 1.4561 g (55%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "record_id": "7c8df9827486b36d70309e9ba586839690717629",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3a",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 46.0,
+    "notes": "Reaction at 130°C for 12h, 87% ee, product (R)-Nonadeca-6,7-dien-1-ol [(R)-4ea] | llm_normalize:Solvent normalized to common abbreviation 'Dioxane' per project guidelines; chiral amine corrected to canonical '(S)-3a' (removed space from evidence); yield is isolated.",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.9,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.0452 g, 0.2 mmol)",
+      "metal_salt_2": "",
+      "chiral_amine": "( S)-3a (0.2587 g, 1 mmol)",
+      "molecular_sieve": "",
+      "solvent": "1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.1303 g (46%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_006.txt",
+    "record_id": "synthesis_2018_50_2538_4ea",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3b",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 52.0,
+    "notes": "Using (S)-3b, Following Typical Procedure I, 130°C, 12h, 96% ee, HPLC: Chiralcel PA-2 column, n-hexane/i-PrOH (200:1) | llm_normalize:Solvent '1,4-dioxane' normalized to common abbreviation 'Dioxane' per project guidelines; yield is isolated (52%).",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.9,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.0451 g, 0.2 mmol) in 1,4-dioxane (3 mL) at 130 °C for 12 h",
+      "metal_salt_2": "No second metal salt mentioned",
+      "chiral_amine": "(S)-3b (0.1284 g, 1 mmol)",
+      "molecular_sieve": "No molecular sieve mentioned",
+      "solvent": "1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.1447 g (52%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "record_id": "r_synthesis_r4cc_s3a",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3a",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 45.0,
+    "notes": "Reaction of prop-2-yn-1-ol (1c; 0.1733 g, 2 mmol) and benzaldehyde (2c; 0.1592 g, 1.5 mmol) with CuBr2 (0.1135 g, 0.5 mmol) and (S)-3a (0.2589 g, 1.0 mmol) in 1,4-dioxane at 70°C for 46.5 h. Product: (R)-4cc (pale yellow liquid). ee: 95%, [α]D20 –224.2 (c 1.035, CHCl3) | llm_normalize:Solvent normalized to common abbreviation 'Dioxane' per project guidelines; yield_percent reflects isolated yield (45%) as specified in evidence.",
+    "missing_fields": [],
+    "confidence": 0.95,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.1135 g, 0.5 mmol)",
+      "metal_salt_2": "",
+      "chiral_amine": "(S)-3a (0.2589 g, 1.0 mmol)",
+      "molecular_sieve": "",
+      "solvent": "1,4-dioxane",
+      "yield_percent": "yield: 0.0783 g (45%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "record_id": "7a5aa2cecbc202dd5777f980abad3c2e9b71ac22",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3b",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 37.0,
+    "notes": "N2 atmosphere, 70 °C, 46.5 h, 98% ee, [α]D20 –245.2 (c 1.100, CHCl3) | llm_normalize:Solvent normalized to common abbreviation 'Dioxane' per requirement; absent fields (metal_salt_2, molecular_sieve) set to null; yield taken as isolated value (37%)",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 1.0,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.1132 g, 0.5 mmol)",
+      "metal_salt_2": "none",
+      "chiral_amine": "(S)-3b (0.1296 g, 1.0 mmol)",
+      "molecular_sieve": "none",
+      "solvent": "1,4-dioxane",
+      "yield_percent": "37%"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "record_id": "255333776fb45f7ff9c285ed08b429658e0d371f",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3a",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 51.0,
+    "notes": "90% ee, [α]D20 –209.0 (c 1.02, CHCl3) | llm_normalize:metal_salt_1 normalized to canonical 'CuBr2'; chiral_amine normalized to '(S)-3a' (canonical short label per context); solvent normalized to common abbreviation 'Dioxane' (per project guidelines, preferred over '1,4-dioxane'); metal_salt_2 and molecular_sieve absent; yield_percent from isolated yield (51%) with no NMR yield present",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.95,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.1141 g, 0.5 mmol)",
+      "metal_salt_2": "Not mentioned in reaction conditions",
+      "chiral_amine": "( S)-3a (0.2580 g, 1 mmol)",
+      "molecular_sieve": "Not mentioned in procedure",
+      "solvent": "in 1,4-dioxane (3 mL) at 70 °C",
+      "yield_percent": "yield: 0.1300 g (51%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "record_id": "33e62c5e2fa211c3ca2729990f9a5923ed899e1c",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3b",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 41.0,
+    "notes": "Typical Procedure II; purity 97%; 94% ee; [α]D20 –241.5 (c 0.995, CHCl3) | llm_normalize:Solvent normalized to 'Dioxane' per common abbreviation list; chiral_amine corrected to canonical '(S)-3b' by removing space from evidence '( S)-3b'; yield is isolated (41% from 0.1065 g).",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.9,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.1131 g, 0.5 mmol)",
+      "metal_salt_2": "",
+      "chiral_amine": "( S)-3b (0.1290 g, 1 mmol)",
+      "molecular_sieve": "",
+      "solvent": "in 1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.1065 g (41%, purity 97%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_008.txt",
+    "record_id": "935b4d3fa1f7fcdfcc246040bc0ff542ad899996",
+    "paper_id": "s (1)",
+    "doc_type": "PROCEDURE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3b",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 53.0,
+    "notes": "99% ee, [α]D20 –73.6 (c 0.975, CHCl3) | llm_normalize:Solvent normalized to common abbreviation 'Dioxane' per project convention; metal_salt_2 and molecular_sieve absent (null); yield taken as isolated value (53% with mass specified).",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.95,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.0455 g, 0.2 mmol)",
+      "metal_salt_2": "",
+      "chiral_amine": "(S)-3b (0.1369 g, 1 mmol)",
+      "molecular_sieve": "",
+      "solvent": "in 1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.0980 g (53%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "record_id": "d4b4069271387ac1dafc2a5ad5d198bc7996f8bf",
+    "paper_id": "s (1)",
+    "doc_type": "OPTIMIZATION_TABLE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3a",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 49.0,
+    "notes": "Asymmetric allenylation using Typical Procedure II; HPLC: Chiralcel OJ-H, n-hexane/i-PrOH (80:1); 76% ee; reaction of pent-4-yn-1-ol with 4-methylbenzaldehyde | llm_normalize:Solvent normalized to 'Dioxane' as it matches the common abbreviation list (explicitly included) and aligns with paper's unique values; metal_salt_2 and molecular_sieve absent per evidence; yield_percent reflects isolated yield (49%) from experimental evidence.",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.95,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.1141 g, 0.5 mmol)",
+      "metal_salt_2": null,
+      "chiral_amine": "(S)-3a (0.2584 g, 1.0 mmol)",
+      "molecular_sieve": null,
+      "solvent": "1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.0920 g (49%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "record_id": "14ba7ea368c6e872d42f01f63493334e14c2692e",
+    "paper_id": "s (1)",
+    "doc_type": "OPTIMIZATION_TABLE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3b",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 56.0,
+    "notes": "Asymmetric allenylation of 4-methylbenzaldehyde with pent-4-yn-1-ol. Reaction conditions: 70°C, 47.5 h, Typical Procedure II. HPLC analysis: Chiralcel OJ-H column, n-hexane/i-PrOH (50:1), 1.0 mL/min, λ = 214 nm; tR (minor) = 32.5 min, tR (major) = 41.2 min; 90% ee. | llm_normalize:Solvent normalized to common abbreviation 'Dioxane' per requirement list; yield taken as isolated (56%); absent fields set to null.",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.95,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.1142 g, 0.5 mmol)",
+      "metal_salt_2": "none",
+      "chiral_amine": "(S)-3b (0.1293 g, 1.0 mmol)",
+      "molecular_sieve": "none",
+      "solvent": "1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.1046 g (56%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "record_id": "4220d7cd42ee908ba89429381ae6edc257769d12",
+    "paper_id": "s (1)",
+    "doc_type": "OPTIMIZATION_TABLE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3b",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 41.0,
+    "notes": "Reaction of pent-4-yn-1-ol with 4-methylbenzaldehyde using (S)-3b catalyst and altered stoichiometry (1c/2e/(S)-3b = 1:1.4:1.4), 70 °C for 42 h, 93% ee | llm_normalize:Solvent normalized to 'Dioxane' per common abbreviation list (vs. '1,4-dioxane' in evidence); yield is isolated (41%) per evidence. Metal salts and chiral amine matched canonical labels directly.",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.95,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.1130 g, 0.5 mmol)",
+      "metal_salt_2": "none mentioned",
+      "chiral_amine": "(S)-3b (0.1810 g, 1.4 mmol)",
+      "molecular_sieve": "none mentioned",
+      "solvent": "1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.0778 g (41%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "record_id": "f245c16356870685900dbdc3d9430cdec61efdd3",
+    "paper_id": "s (1)",
+    "doc_type": "OPTIMIZATION_TABLE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3a",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 47.0,
+    "notes": "HPLC: Chiralcel OJ-H column, n-hexane/i-PrOH (90:10); 95% ee; [α]D20 –317.6 (c 1.175, CHCl3) | llm_normalize:Solvent normalized to common abbreviation 'Dioxane' per requirement (from '1,4-dioxane' in evidence); yield is isolated (47%); other fields directly extracted from evidence.",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.9,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.1130 g, 0.5 mmol)",
+      "metal_salt_2": "null",
+      "chiral_amine": "(S)-3a (0.2590 g, 1 mmol)",
+      "molecular_sieve": "null",
+      "solvent": "in 1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.1041 g (47%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  },
+  {
+    "source_id": "D:\\Work\\ZJU\\FDU\\.claude\\skills\\chem-info-extractor\\output\\pdf\\s (1)\\s (1)_page_009.txt",
+    "record_id": "cbce86bda7ce6b2f7620854b6a733519fa9dea5b",
+    "paper_id": "s (1)",
+    "doc_type": "OPTIMIZATION_TABLE",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": "none",
+    "chiral_amine": "(S)-3b",
+    "molecular_sieve": "none",
+    "solvent": "Dioxane",
+    "yield_percent": 39.0,
+    "notes": "96% ee; HPLC: Chiralcel OJ-H column, n-hexane/i-PrOH (90:10); Typical Procedure III | llm_normalize:Metal salt 1: CuBr2 from explicit evidence. Metal salt 2: absent per record. Chiral amine: normalized from '( S)-3b' to canonical '(S)-3b'. Molecular sieve: absent per record. Solvent: normalized to 'Dioxane' per common abbreviation guidelines (1,4-dioxane equivalent). Yield: isolated yield 39% from mass-based evidence.",
+    "missing_fields": [
+      "metal_salt_2",
+      "molecular_sieve"
+    ],
+    "confidence": 0.95,
+    "evidence": {
+      "metal_salt_1": "CuBr2 (0.1130 g, 0.5 mmol)",
+      "metal_salt_2": "",
+      "chiral_amine": "( S)-3b (0.1287 g, 1 mmol)",
+      "molecular_sieve": "",
+      "solvent": "in 1,4-dioxane (3 mL)",
+      "yield_percent": "yield: 0.0852 g (39%)"
+    },
+    "meta": {
+      "cached": false,
+      "errors": []
+    },
+    "normalization_meta": {
+      "cached": false,
+      "errors": []
+    }
+  }
+]

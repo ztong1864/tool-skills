@@ -1,0 +1,191 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_9b1939b00e34",
+  "paper_id": "537a8fa3b41c",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "Xe"
+  ],
+  "one_line_summary": "[Zn2(dmtrz)2(btec)(H2O)2] shows decomposition_temperature = 530.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "decomposition_temperature = 530.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "guest-free dense 3D framework → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "2D layer framework built from dinuclear [Zn2(dmtrz)2(H2O)] subunits and btec anions → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce aromatic carboxylate coligands into trz-based metal complexes via hydrothermal synthesis → produces a series of novel 3D topological frameworks unexpectedly"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] choose or design a suitable ligand → is described as the most important strategy for constructing MOFs with targeted structures and properties"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] prepare trz-based complexes with aromatic acid as coligand: only limited trz-based complexes with aromatic acid as coligand have been reported"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_14b8f2eeca66",
+    "trace_86dd05e4d70f",
+    "trace_b045fe8ee5a9",
+    "trace_1663054204fe",
+    "trace_c29df5444f60",
+    "trace_a0b380e94a5d",
+    "trace_be99bf407d5e",
+    "trace_996ba5a119b0",
+    "trace_8adb853ecbd6",
+    "trace_bd09b6489a7b",
+    "trace_63abb14a6237",
+    "trace_268f7bf36b94",
+    "trace_5e7565a8d61c",
+    "trace_019819710485",
+    "trace_ea99dbf67b14",
+    "trace_8c1ecb705c00",
+    "trace_7fdd91f92fea",
+    "trace_a4aa12781923",
+    "trace_ede3288a3828",
+    "trace_e67b6f90c8c3",
+    "trace_874e0681f5ea",
+    "trace_c3a94043739d",
+    "trace_a7b58f1b8a3e",
+    "trace_e6339189fcc3",
+    "trace_4764a9ab9e01",
+    "trace_1aacd81075a6",
+    "trace_94b03ef55518",
+    "trace_5bfb04373398",
+    "trace_ee7f22926d48",
+    "trace_39bd7aa59018",
+    "trace_f5de2a85679b",
+    "trace_76e4f1d3918e",
+    "trace_6b44e9241e75",
+    "trace_c9067bdfd46c",
+    "trace_3153fdd1cd14",
+    "trace_1b74d275848d",
+    "trace_9ebdfdef530b",
+    "trace_2297adf1ac10",
+    "trace_def423338380",
+    "trace_64e9f26acf46",
+    "trace_37fdce72c77f",
+    "trace_fd2636ea06e9",
+    "trace_e86b5ea6fa57",
+    "trace_118327a7cbdb",
+    "trace_3407210a87b9",
+    "trace_5d6a2739e7f5",
+    "trace_f5de2a85679b",
+    "trace_268f7bf36b94",
+    "trace_def423338380",
+    "trace_e6339189fcc3",
+    "trace_6b44e9241e75",
+    "trace_ede3288a3828",
+    "trace_9ebdfdef530b",
+    "trace_5bfb04373398",
+    "trace_2297adf1ac10",
+    "trace_76e4f1d3918e",
+    "trace_c3a94043739d",
+    "trace_3153fdd1cd14",
+    "trace_37fdce72c77f",
+    "trace_fd2636ea06e9",
+    "trace_5e7565a8d61c",
+    "trace_b045fe8ee5a9",
+    "trace_996ba5a119b0",
+    "trace_86dd05e4d70f",
+    "trace_c9067bdfd46c",
+    "trace_14b8f2eeca66",
+    "trace_874e0681f5ea",
+    "trace_a0b380e94a5d",
+    "trace_ee7f22926d48",
+    "trace_7fdd91f92fea",
+    "trace_5d6a2739e7f5",
+    "trace_1663054204fe",
+    "trace_e67b6f90c8c3",
+    "trace_8adb853ecbd6",
+    "trace_94b03ef55518",
+    "trace_019819710485",
+    "trace_3407210a87b9",
+    "trace_be99bf407d5e",
+    "trace_1aacd81075a6",
+    "trace_118327a7cbdb",
+    "trace_4764a9ab9e01",
+    "trace_a7b58f1b8a3e",
+    "trace_ea99dbf67b14",
+    "trace_bd09b6489a7b",
+    "trace_e86b5ea6fa57",
+    "trace_a4aa12781923",
+    "trace_39bd7aa59018",
+    "trace_64e9f26acf46",
+    "trace_1b74d275848d",
+    "trace_8c1ecb705c00",
+    "trace_63abb14a6237",
+    "trace_c29df5444f60"
+  ],
+  "measurement_card_ids": [
+    "mcard_0513f666a1cf"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_55f01f58a2a0",
+    "mechcard_00ea0d6515ae"
+  ],
+  "recipe_card_ids": [
+    "recipe_1f32765ca276",
+    "recipe_5dccaf1e4ddd",
+    "recipe_5d8de84ed37d",
+    "recipe_bdd44921c21f"
+  ],
+  "claim_card_ids": [
+    "claim_3e0e7207b6ad",
+    "claim_d3fa4c9ee839",
+    "claim_e2d7136fb2f4",
+    "claim_20f52afbf97a",
+    "claim_e8255a33dc23",
+    "claim_3e052814af60",
+    "claim_ed418328cfd2",
+    "claim_bcc61448ff0a"
+  ],
+  "design_rule_card_ids": [
+    "drule_d9244990c80c",
+    "drule_53e16f68bf1c"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_36a2ac35722c"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c02aa1e4e21f",
+    "mat_7d242cd548d4",
+    "mat_ddfcf079d6d1"
+  ],
+  "dossier_ids": [
+    "dossier_cd04efd3ea49",
+    "dossier_49f2d2f9b1c4",
+    "dossier_4715e51e1956"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "In compound 1, dmtrz acts in a μ3-1,2,4 tridentate mode linking three Zn sites, while btrc bridges three Zn atoms across the channel.",
+    "Aromatic polycarboxylate coligands are presented as key structure-directing agents that tune metal-trz cluster nuclearity and network connectivity.",
+    "In compound 2, Zn is distorted octahedral with Zn–N/O distances of 2.015(6)-2.358(6) Å; the 2D layers stack into 3D via hydrogen bonds."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.902169",
+  "updated_at": "2026-04-24T00:19:50.902170",
+  "raw_path": "相关文献/huang2013.pdf.pdf"
+}

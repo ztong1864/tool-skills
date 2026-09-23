@@ -1,0 +1,22 @@
+S8
+ Synthesis of functionalized  axially chiral allenes ( Ra)-4aa~( Ra)-4fa.
+1. Preparation of ( Ra)-N-(4-cyclohexylbuta-2,3-dien yl)-4-methylbenzenesul-
+fonamide ( Ra)-4aa.  (hx-11-3)
+
+Typical Procedure I : To a flame-dried Schlenk tube with a polytetrafluoroethylene
+plug were added CuBr 2 (45.0 mg, 0.2 mmol), ( S)-3 (253.9 mg, 1.0 mmol), 1a (313.4
+mg, 1.5 mmol)/dioxane (1.5 mL), and 2a (167.8 mg, 1.5 mmol) /dioxane (1.5 mL)
+sequentially under nitrogen atmosphere. Th e Schlenk tube was then sealed by
+screwing a polytetrafluoroeth ylene plug tightly with th e outlet connected to the
+vacuum line and the nitrogen flow being clos ed (For an apparatus, see Fig. S3). The
+reaction was complete after being stir red in an oil bath preheated at 130 oC for 12 h as
+monitored by TLC (eluent: petroleum ether/ ethyl acetate = 5/1). Then the resulting
+mixture was diluted with ether (30 mL) a nd washed with an aqueous solution of
+hydrochloric acid (3 M, 20 mL). The orga nic layer was separated, and the aqueous
+layer was extracted with ether (20 mL). Th e combined organic layer was washed with
+brine and dried over anhydrous Na 2SO 4. After filtration and ev aporation, the residue
+was purified by chromatography (eluent: petrol eum ether/ethyl acetat e = 5/1) on silica
+gel to afford ( Ra)-4aa (180.0 mg, 59%) as a liquid:1 98% ee (HPLC conditions:
+Chiralcel AD-H column, hexane/ i-PrOH = 95/5, 0.5 mL/min, λ = 214 nm, tR(major) =
+34.1 min, tR(minor) = 35.6 min); [ α]D20 = -102.0 ( c = 1.05, CHCl 3) (reported value:
+99% ee; [ α]D20 = -105.5 (c = 1.07, CHCl 3)); 1H NMR (300 MHz, CDCl 3) δ 7.80-7.72

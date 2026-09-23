@@ -1,0 +1,224 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_644dc675f744",
+  "paper_id": "7eafab3ec2e2",
+  "title": "An amine-functionalized metal organic framework fo",
+  "year": 2009,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Zn2(C2O4)(C2N4H3)2(H2O)0.5 shows surface_area = 782.0 m2/g for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "pore_volume = 0.19 cm3/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "BET_surface_area (N2) = 104.0 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_upper_bound = 300.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "oxalate-pillared three-dimensional framework from Zn-aminotriazolate layers → unknown"
+    },
+    {
+      "title": "Mechanism",
+      "body": "CO2-amine interactions and small pores with overlapping attractive potentials → qst"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use 3-amino-1,2,4-triazole to build amine-functionalized micropores in Zn-MOFs → supports selective CO2 capture at low partial pressure through high CO2 adsorption energy and uptake together with lack of uptake for other gases"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] favor amine-functionalized microporous frameworks over large-pore MOFs for low-pressure CO2 capture → improves efficiency at lower pressures"
+    },
+    {
+      "title": "Comparison",
+      "body": "framework 1 vs reported related framework with different structure: winner=subject_a on porosity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_dff98f8959c5",
+    "trace_b324cc161496",
+    "trace_a03cb8af21fe",
+    "trace_b3f8204fefbd",
+    "trace_960bd2d4692b",
+    "trace_200659f9e3c8",
+    "trace_f0d2fb71b258",
+    "trace_50877a1ff432",
+    "trace_aca989c667b5",
+    "trace_205e9d1d0732",
+    "trace_3a41623d0442",
+    "trace_cb379f4c11c5",
+    "trace_611a6b1127d8",
+    "trace_1f226c389d49",
+    "trace_11b71f7f54a3",
+    "trace_622d1589866b",
+    "trace_8f1ee4d0b9c5",
+    "trace_2d2ac39a7a4c",
+    "trace_d6225fe62764",
+    "trace_31920a7cefd8",
+    "trace_9e78fa40f84d",
+    "trace_77744eba888b",
+    "trace_e894e1896e3c",
+    "trace_f5a3c61c4628",
+    "trace_6a8dd90fb4b8",
+    "trace_27bf9b179957",
+    "trace_c9eaf6214e9c",
+    "trace_17e57708853a",
+    "trace_714b975fbddd",
+    "trace_a691f986fa72",
+    "trace_80ac65e105a7",
+    "trace_e077f6477a30",
+    "trace_e30ad5cc153a",
+    "trace_b74d67c757ca",
+    "trace_64ed60b24b8d",
+    "trace_31750b8875d8",
+    "trace_5bfd9ba1e418",
+    "trace_361bf6d17d44",
+    "trace_4267a6b1b169",
+    "trace_d141d92da51b",
+    "trace_ce92faba6863",
+    "trace_80b3c071a0a0",
+    "trace_f9a22d21e918",
+    "trace_de34752e9169",
+    "trace_67fdc83b05ff",
+    "trace_e060a9481416",
+    "trace_d827322d0c22",
+    "trace_96eced90ac64",
+    "trace_ed23a63ba8f1",
+    "trace_f1b323e729ce",
+    "trace_bc537ee61a23",
+    "trace_c12ad67662ae",
+    "trace_b324cc161496",
+    "trace_e060a9481416",
+    "trace_9e78fa40f84d",
+    "trace_1f226c389d49",
+    "trace_de34752e9169",
+    "trace_17e57708853a",
+    "trace_64ed60b24b8d",
+    "trace_e30ad5cc153a",
+    "trace_5bfd9ba1e418",
+    "trace_aca989c667b5",
+    "trace_d827322d0c22",
+    "trace_e894e1896e3c",
+    "trace_80ac65e105a7",
+    "trace_a03cb8af21fe",
+    "trace_2d2ac39a7a4c",
+    "trace_622d1589866b",
+    "trace_3a41623d0442",
+    "trace_50877a1ff432",
+    "trace_bc537ee61a23",
+    "trace_f0d2fb71b258",
+    "trace_ed23a63ba8f1",
+    "trace_960bd2d4692b",
+    "trace_361bf6d17d44",
+    "trace_d141d92da51b",
+    "trace_4267a6b1b169",
+    "trace_f1b323e729ce",
+    "trace_f5a3c61c4628",
+    "trace_77744eba888b",
+    "trace_200659f9e3c8",
+    "trace_b3f8204fefbd",
+    "trace_ce92faba6863",
+    "trace_a691f986fa72",
+    "trace_27bf9b179957",
+    "trace_cb379f4c11c5",
+    "trace_c12ad67662ae",
+    "trace_dff98f8959c5",
+    "trace_67fdc83b05ff",
+    "trace_d6225fe62764",
+    "trace_e077f6477a30",
+    "trace_b74d67c757ca",
+    "trace_c9eaf6214e9c",
+    "trace_f9a22d21e918",
+    "trace_8f1ee4d0b9c5",
+    "trace_80b3c071a0a0",
+    "trace_6a8dd90fb4b8",
+    "trace_31920a7cefd8",
+    "trace_714b975fbddd",
+    "trace_11b71f7f54a3",
+    "trace_96eced90ac64",
+    "trace_205e9d1d0732",
+    "trace_611a6b1127d8",
+    "trace_31750b8875d8"
+  ],
+  "measurement_card_ids": [
+    "mcard_94d6b7bbadf5",
+    "mcard_2d60a52612b5",
+    "mcard_50bf0548801b",
+    "mcard_3d6c4ee6131b",
+    "mcard_8395f0f541dc",
+    "mcard_972245f99b23",
+    "mcard_96debbb48ecf"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_23efe595e207",
+    "mechcard_8ea38a8b9acf",
+    "mechcard_cc55f6e97df8",
+    "mechcard_315e2ced2131"
+  ],
+  "recipe_card_ids": [
+    "recipe_17be1cc92795"
+  ],
+  "claim_card_ids": [
+    "claim_29ef5af14369",
+    "claim_089d1c4551ee",
+    "claim_1496c107b84f",
+    "claim_b17fad007041",
+    "claim_8a7fd74ab581",
+    "claim_74533a1b843c",
+    "claim_a8792c5abad6"
+  ],
+  "design_rule_card_ids": [
+    "drule_65c46e0d3e99",
+    "drule_7c50b83ce0f7",
+    "drule_97c045a5f8fa"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_1a0c0ce41de8",
+    "comp_f440d2f7f450"
+  ],
+  "failure_case_card_ids": [
+    "fail_041727717955",
+    "fail_c7500759a8ec",
+    "fail_bd8b1b665692"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_e9e53e0a6ff3",
+    "mat_9afd4269fa58",
+    "mat_d8226443c7b7"
+  ],
+  "dossier_ids": [
+    "dossier_3c0da02da719",
+    "dossier_27f3728b17e5",
+    "dossier_f35d86a9d4d2"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The MOF contains narrow microporous channels of 3.5 × 4.0 Å along a, cross-linked by 3.9 × 2.1 Å channels and 3.0 × 1.6 Å slit windows.",
+    "The Zn aminotriazolato-oxalate framework shows rapid CO2 uptake at low pressure and a high enthalpy of adsorption, consistent with amine-lined micropores.",
+    "Aminotriazolate binds Zn through the three ring nitrogens, while free amino groups protrude into the pores in a zig-zag arrangement."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.904821",
+  "updated_at": "2026-04-24T00:19:48.904825",
+  "raw_path": "相关文献/Vaidhyanathan 等 - 2009 - An amine-functionalized metal organic framework fo.pdf",
+  "authors": [
+    "Vaidhyanathan"
+  ]
+}

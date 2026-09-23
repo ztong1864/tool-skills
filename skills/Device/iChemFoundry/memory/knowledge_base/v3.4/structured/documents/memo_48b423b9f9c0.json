@@ -1,0 +1,205 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_48b423b9f9c0",
+  "paper_id": "9c7fd9f72c5c",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "FJU-40-NH2 shows heat_and_water_resistance = 1.0 dimensionless for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "heat_and_water_resistance = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "robustness = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "CO2_partial_pressure_dependent_cage_loading → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "intramolecular_hydrogen_bonding_within_NH2-BDC_ligands → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] apply supercritical CO2 activation, freeze-drying treatment, or liquid/solvent exchange during activation → stabilizes porous frameworks during activation"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] insert neutral pillars or introduce large cationic guests into nonrobust MOFs → sustains MOF robustness with tunable porosity"
+    },
+    {
+      "title": "Comparison",
+      "body": "triazolate C-H groups in FJU-40-NH2 under low CO2 partial pressure vs amino groups in FJU-40-NH2 under low CO2 partial pressure: winner=subject_a on predominant_CO2_binding_site"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] insert neutral pillars or introduce large cationic guests into nonrobust MOFs to sustain robustness: pore volume is reduced"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_0c1d1fcbf8ff",
+    "trace_01ddfd41c757",
+    "trace_62d415555fb1",
+    "trace_c7f21963c317",
+    "trace_c2a04b09983e",
+    "trace_bd611cbb42a3",
+    "trace_78a3bcc3f81f",
+    "trace_c33766d6d4cd",
+    "trace_9285147ba246",
+    "trace_8cd8bed3ed38",
+    "trace_5827cb9abd8a",
+    "trace_aa961c18d3eb",
+    "trace_12c5581e2a9f",
+    "trace_a466dad606ed",
+    "trace_26b48841ffe5",
+    "trace_655e38f17c8f",
+    "trace_f8f8e3d30f0c",
+    "trace_5009e5ad804e",
+    "trace_0f61f710076c",
+    "trace_ea231be3eeab",
+    "trace_b38ecaec67d8",
+    "trace_1c55dd50e219",
+    "trace_be57c0375422",
+    "trace_2954f5743dcb",
+    "trace_d3b7db7304ef",
+    "trace_2eaec4d28e2f",
+    "trace_a1e47f9c925d",
+    "trace_06659c73587f",
+    "trace_f3baef9c94e8",
+    "trace_6465088f0b8d",
+    "trace_4f357d771eb2",
+    "trace_7979bcff7fa0",
+    "trace_0e1bef6a3a95",
+    "trace_513083eb152c",
+    "trace_90d4dfd25f0e",
+    "trace_0fd85c8b163a",
+    "trace_d04abbc1e741",
+    "trace_597d1aa86512",
+    "trace_6e4edfe56cb7",
+    "trace_db25fadaefa8",
+    "trace_d46c705f9845",
+    "trace_3d623d1a9169",
+    "trace_d46c705f9845",
+    "trace_90d4dfd25f0e",
+    "trace_0e1bef6a3a95",
+    "trace_9285147ba246",
+    "trace_513083eb152c",
+    "trace_7979bcff7fa0",
+    "trace_c2a04b09983e",
+    "trace_5009e5ad804e",
+    "trace_1c55dd50e219",
+    "trace_2eaec4d28e2f",
+    "trace_06659c73587f",
+    "trace_aa961c18d3eb",
+    "trace_be57c0375422",
+    "trace_6465088f0b8d",
+    "trace_0fd85c8b163a",
+    "trace_d04abbc1e741",
+    "trace_8cd8bed3ed38",
+    "trace_12c5581e2a9f",
+    "trace_b38ecaec67d8",
+    "trace_78a3bcc3f81f",
+    "trace_f3baef9c94e8",
+    "trace_d3b7db7304ef",
+    "trace_f8f8e3d30f0c",
+    "trace_a1e47f9c925d",
+    "trace_0c1d1fcbf8ff",
+    "trace_c33766d6d4cd",
+    "trace_5827cb9abd8a",
+    "trace_01ddfd41c757",
+    "trace_6e4edfe56cb7",
+    "trace_a466dad606ed",
+    "trace_655e38f17c8f",
+    "trace_c7f21963c317",
+    "trace_2954f5743dcb",
+    "trace_bd611cbb42a3",
+    "trace_3d623d1a9169",
+    "trace_62d415555fb1",
+    "trace_26b48841ffe5",
+    "trace_db25fadaefa8",
+    "trace_ea231be3eeab",
+    "trace_0f61f710076c",
+    "trace_597d1aa86512",
+    "trace_4f357d771eb2"
+  ],
+  "measurement_card_ids": [
+    "mcard_9fb909d0ca30",
+    "mcard_80f32931919e"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_c98ff36310af",
+    "mechcard_9958c70046b6",
+    "mechcard_5089782f53a0",
+    "mechcard_fb443deb9dc2",
+    "mechcard_2f5963e043e8",
+    "mechcard_ae5d10716378"
+  ],
+  "recipe_card_ids": [
+    "recipe_f9b54a178bd2",
+    "recipe_c1294630070c",
+    "recipe_6f43f2c55937",
+    "recipe_ae5b75d6a57e"
+  ],
+  "claim_card_ids": [
+    "claim_e7e73bea27b3",
+    "claim_2c7d8807785d",
+    "claim_7e0fa40c75e2",
+    "claim_94fdcd5c496d",
+    "claim_91f21e00eef7",
+    "claim_5cb4f1d5facc",
+    "claim_8801401c4f68"
+  ],
+  "design_rule_card_ids": [
+    "drule_93b535a0f964",
+    "drule_5500f9fec15b",
+    "drule_9302672101f3",
+    "drule_7115bdd703b1"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_1c06e10e2acb"
+  ],
+  "failure_case_card_ids": [
+    "fail_db5bcc47e2b6"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_90bcdc4bb678",
+    "mat_ee10833eb3ad",
+    "mat_7fc4f5a99dfa",
+    "mat_c63e343080ac",
+    "mat_b2ec870993b8",
+    "mat_f44ec7199e43"
+  ],
+  "dossier_ids": [
+    "dossier_0b0b59ffe3d4",
+    "dossier_ce689e9f99a6",
+    "dossier_cd5090204390",
+    "dossier_2ecf3011f026",
+    "dossier_b572472b2c33",
+    "dossier_c03609f749a9"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Intramolecular hydrogen-bonding is presented as an efficient new design strategy to control MOF stability and robustness.",
+    "FJU-40-NH2 efficiently separates a CO2/N2 = 15:85 (v/v) mixture in a packed-bed column.",
+    "Under low CO2 partial pressure, triazolate C-H groups—not amino groups—are the predominant CO2 binding sites in FJU-40-NH2."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.185400",
+  "updated_at": "2026-04-24T00:19:50.185404",
+  "raw_path": "相关文献/Zn-对苯二甲酸-yao2016.pdf"
+}

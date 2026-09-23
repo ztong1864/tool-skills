@@ -1,0 +1,82 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_ae3930d18df2",
+  "paper_id": "0980bd5892a8",
+  "raw_path": "相关文献/Wei 等 - 2022 - Efficient Xe selective separation from XeKrN 2 m.pdf",
+  "title": "Efficient Xe selective separation from XeKrN 2 m",
+  "authors": [
+    "Wei"
+  ],
+  "year": 2022,
+  "doi": null,
+  "journal": null,
+  "task_type": "Xe/Kr separation",
+  "normalized_task_id": "Xe_Kr_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "Xe",
+    "Kr"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MOF-1",
+    "IRMOF-1",
+    "MOF-5",
+    "CALF-20-B",
+    "MOF-505",
+    "UIO-66",
+    "CROFOUR-1-Ni",
+    "MOF-801",
+    "CALF-20-A",
+    "CALF-20-MA",
+    "MOF-74",
+    "PCN-14",
+    "PAF-45",
+    "NbOFFIVE-2-Cu-i",
+    "Crofour-1-Ni",
+    "CALF-20-Raw",
+    "CALF-20-W",
+    "CALF-20-M",
+    "HKUST-1",
+    "SBMF-1",
+    "MOF-74-Co",
+    "CALF-20",
+    "MOF-74-M",
+    "MOF-2",
+    "Mil-100",
+    "MOF-74-Zn"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Al",
+    "Cr",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "hkust",
+    "mof-5"
+  ],
+  "key_sections": {
+    "results_summary": "Eﬃcient Xe selective separation from Xe/Kr/N2\nmixtures over a microporous CALF-20 framework†\nYi Wei,a Fengshi Qi,a Yunhe Li,a Xiubo Min,a Qi Wang,a Jiangliang Hu*b\nand Tianjun Sun\n*a\nCapture and separ"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:22:57.153193"
+}

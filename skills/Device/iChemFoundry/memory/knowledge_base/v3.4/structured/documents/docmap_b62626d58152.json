@@ -1,0 +1,59 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_b62626d58152",
+  "paper_id": "13ab371bdaeb",
+  "raw_path": "相关文献/Gao 等 - 2013 - Structures, luminescence and magnetic properties o.pdf",
+  "title": "Structures, luminescence and magnetic properties o",
+  "authors": [
+    "Gao"
+  ],
+  "year": 2013,
+  "doi": null,
+  "journal": null,
+  "task_type": "H2 storage",
+  "normalized_task_id": "H2_storage",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Cd-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Mn",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "pyridine",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "bcu"
+  ],
+  "key_sections": {
+    "results_summary": "Structures, luminescence and magnetic properties of three 3D\nlanthanide–zinc heterometallic coordination polymers based\non 3-amino-1,2,4-triazole and Oxalate\nJin-Ying Gao a, Ning Wang b, Xia-Hua Xiong"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:44:03.130271"
+}

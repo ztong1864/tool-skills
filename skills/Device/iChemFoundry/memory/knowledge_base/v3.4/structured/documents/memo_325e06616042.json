@@ -1,0 +1,225 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_325e06616042",
+  "paper_id": "6b310008b988",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "Zn-BDC-TRZ shows decomposition_temperature = 370.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "separation_time (C2H2/CO2) = 9.6 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "breakthrough_cycle_stability_cycles (CO2/C2H2) = 3.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "PXRD_structure_confirmation = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "framework with same Zn-1,2,4-triazolate 2D layer but different aromatic dicarboxylate pillars → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "aromaticity modulation strategy → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] tune pore size and pore environment by changing pillar ligands in a 2D-layer-based pillar-layered MOF → enables controllable adjustment of adsorption and separation performance"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] modulate pillar ligand aromaticity in isomorphic Zn-triazolate-dicarboxylate pillar-layered MOFs → selectivity can be shifted from C2H2-selective behavior to partial CO2-selective behavior and ultimately to complete inverse C2H2/CO2 separation"
+    },
+    {
+      "title": "Comparison",
+      "body": "Zn-BDC-TRZ vs Zn-MUC-TRZ: winner=subject_a on C2H2_CO2_separation_mode"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_c361eed9e177",
+    "trace_1cd46fbb80bc",
+    "trace_6053aae7ba94",
+    "trace_cfb2bbb5ede6",
+    "trace_87491f6b2912",
+    "trace_4df4fafebf40",
+    "trace_02533d777c81",
+    "trace_308d79a3cff2",
+    "trace_3a720ce7bc64",
+    "trace_172adb490de8",
+    "trace_2e35da1daa75",
+    "trace_9bf31af740ae",
+    "trace_0da492f4aa9d",
+    "trace_1f37c1180f84",
+    "trace_53bca830e856",
+    "trace_12ca9b0232b1",
+    "trace_ae6d9344daf6",
+    "trace_61d839c72899",
+    "trace_3fbbc87dea4a",
+    "trace_cefad271408b",
+    "trace_068157424cae",
+    "trace_3ed391c8b74d",
+    "trace_7bf68e4e435a",
+    "trace_575680becad6",
+    "trace_bd90d6a5fcd9",
+    "trace_9556a4b05920",
+    "trace_c5ef835371fa",
+    "trace_a6e5da2681d7",
+    "trace_bbd8e7025b77",
+    "trace_0de355a4a935",
+    "trace_ce2834675ef9",
+    "trace_f2ea22b7c5c2",
+    "trace_50d0f28439c3",
+    "trace_d10ff47847d6",
+    "trace_be9f577cffe2",
+    "trace_47a6fdc7cf96",
+    "trace_a63c75e010bd",
+    "trace_12ac8eb70931",
+    "trace_bf014f9a75d7",
+    "trace_e5f2c0eb2c78",
+    "trace_3e2201a44896",
+    "trace_461a3e06a798",
+    "trace_218b0842635c",
+    "trace_9123ab625e22",
+    "trace_e604a8d10426",
+    "trace_0e82ba1bcd0f",
+    "trace_bf65f1ae7803",
+    "trace_0880ffeb1406",
+    "trace_365d5707d255",
+    "trace_7bf68e4e435a",
+    "trace_cefad271408b",
+    "trace_12ca9b0232b1",
+    "trace_1cd46fbb80bc",
+    "trace_4df4fafebf40",
+    "trace_6053aae7ba94",
+    "trace_e604a8d10426",
+    "trace_53bca830e856",
+    "trace_9bf31af740ae",
+    "trace_ae6d9344daf6",
+    "trace_461a3e06a798",
+    "trace_a63c75e010bd",
+    "trace_218b0842635c",
+    "trace_308d79a3cff2",
+    "trace_1f37c1180f84",
+    "trace_575680becad6",
+    "trace_50d0f28439c3",
+    "trace_61d839c72899",
+    "trace_0da492f4aa9d",
+    "trace_47a6fdc7cf96",
+    "trace_3fbbc87dea4a",
+    "trace_172adb490de8",
+    "trace_3a720ce7bc64",
+    "trace_f2ea22b7c5c2",
+    "trace_ce2834675ef9",
+    "trace_bbd8e7025b77",
+    "trace_3e2201a44896",
+    "trace_87491f6b2912",
+    "trace_d10ff47847d6",
+    "trace_be9f577cffe2",
+    "trace_9123ab625e22",
+    "trace_02533d777c81",
+    "trace_c361eed9e177",
+    "trace_9556a4b05920",
+    "trace_0e82ba1bcd0f",
+    "trace_12ac8eb70931",
+    "trace_0880ffeb1406",
+    "trace_2e35da1daa75",
+    "trace_068157424cae",
+    "trace_cfb2bbb5ede6",
+    "trace_0de355a4a935",
+    "trace_bd90d6a5fcd9",
+    "trace_bf014f9a75d7",
+    "trace_bf65f1ae7803",
+    "trace_3ed391c8b74d",
+    "trace_a6e5da2681d7",
+    "trace_c5ef835371fa",
+    "trace_e5f2c0eb2c78",
+    "trace_365d5707d255"
+  ],
+  "measurement_card_ids": [
+    "mcard_4f4f2e491806",
+    "mcard_f4f60187a06c",
+    "mcard_d2226086c8e3",
+    "mcard_9113d373aefb",
+    "mcard_b057ccd68470",
+    "mcard_f4cec68d42e5"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_a8da985fd2b8",
+    "mechcard_bf1488ae90d7",
+    "mechcard_748421143877",
+    "mechcard_d6ba0abe13da",
+    "mechcard_648f5c7f3e3d",
+    "mechcard_f5fbe3b58b3f",
+    "mechcard_7f7c44b6118e",
+    "mechcard_af2e665ccd88",
+    "mechcard_162ea6388c95"
+  ],
+  "recipe_card_ids": [
+    "recipe_8d1f86680827",
+    "recipe_351dd8fd82bb",
+    "recipe_288e8c74d118"
+  ],
+  "claim_card_ids": [
+    "claim_98f26cfcf1e6",
+    "claim_717cdf44b151",
+    "claim_f5d5693af836",
+    "claim_b6d7013f5365",
+    "claim_17ce463289c4",
+    "claim_6ccbd6ed0f50"
+  ],
+  "design_rule_card_ids": [
+    "drule_f027d27baa1e",
+    "drule_4cf8395672e9",
+    "drule_cd3c5b5a6cec"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_de4a9d64ea57",
+    "comp_c8b2fd39ee81",
+    "comp_d31adf1f21dd",
+    "comp_8dd9268dddb5"
+  ],
+  "failure_case_card_ids": [
+    "fail_b11da306ea51",
+    "fail_f58649b70674"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_7929c7c83df1",
+    "mat_a4d8d80f51fb",
+    "mat_1905762d1991"
+  ],
+  "dossier_ids": [
+    "dossier_a2b530e1c445",
+    "dossier_ab1c8dc485d6",
+    "dossier_93b6d0123704"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Aromaticity modulation in isomorphic Zn-triazolate-dicarboxylate pillar-layered MOFs enables controllable inverse C2H2/CO2 adsorption and separation.",
+    "Inverse separation improves with increasing temperature, and one-step separation of a 50/50 C2H2/CO2 mixture yields C2H2 product with >99.99% purity at room temperature.",
+    "Breakthrough tests show Zn-FA-TRZ and Zn-MUC-TRZ follow common C2H2-selective separation, whereas Zn-BDC-TRZ gives prominent CO2-selective inverse C2H2/CO2 separation."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.871581",
+  "updated_at": "2026-04-24T00:19:47.871586",
+  "raw_path": "相关文献/H2FA1-s2.0-S1383586623018385-main.pdf"
+}

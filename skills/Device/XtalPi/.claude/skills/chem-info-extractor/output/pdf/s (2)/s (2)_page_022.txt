@@ -1,0 +1,21 @@
+S22
+ which was transferred to another Schlenk t ube with THF (2.0 mL). Then a solution of
+NaIO 4 (268.7 mg, 1.25 mmol) in water (1.0 mL) wa s added. After being stirred for 10
+h at room temperature,  the resulting mixture was dilu ted with ether (15.0 mL) and
+washed with brine (3 × 3 mL). The or ganic layer was sepa rated and dried over
+anhydrous Na 2SO 4. After filtration and evaporat ion, the residue was purified by
+chromatography (eluent: petroleum ether/ethy l acetate = 500/1) on silica gel to afford
+(Ra)-6 (82.6 mg, 69%) as a liquid: 95% ee (HPLC conditions: Chiralcel OD-H column,
+hexane/ i-PrOH = 95/5, 0.5 mL/min, λ = 214 nm, tR(minor) = 9.0 min, tR(major) =
+10.3 min); [ α]D26.0 = -130.9 ( c = 1.00, CHCl 3); 1H NMR (400 MHz, CDCl 3) δ 7.18 (dd,
+J1 = 15.4 Hz, J2 = 11.0 Hz, 1 H, =CH), 5.96-5.80 (m, 2 H, one proton of CH=C=CH
+and =CH), 5.44 (q, J = 6.4 Hz, 1 H, one proton of CH=C=CH), 3.73 (s, 3 H, Me),
+2.12-2.00 (m, 2 H, CH 2), 1.49-1.19 (m, 12 H, CH 2 × 6), 0.88 (t, J = 6.6 Hz, 3 H, Me);
+13C NMR (100 MHz, CDCl 3) δ 211.5, 167.1, 142.9, 118.8, 92.9, 92.8, 51.4, 31.8, 29.3,
+29.2, 29.0, 28.8, 28.0, 22.6, 14.0; IR (neat) ν (cm-1) 2924, 2854, 1942, 1719, 1628,
+1460, 1436, 1304, 1263, 1240, 1175, 1137, 1094, 1039, 1016; MS (EI) m/z (%): 236
+(M+, 4.79), 79 (100); HRMS calcd. for C 15H24O2 (M+): 236.1776; Found: 236.1773.
+(5) Preparation of ( R)-2,3-dodecadien-1-ol ( Ra)-4gc1 (yq-11-63, yq-11-71)
+
+To a flame-dried three-necked 250- mL round-bottom flask was added ZnBr 2
+powder (3.3341 g, 15 mmol) under an argon atmosphere. Then the flask was dried under vacuum with a heating gun for a bout 1 minute. After cooling to room

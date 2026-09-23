@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "type": "mcp_http",
+  "url": "https://scp.intern-ai.org.cn/api/v1/mcp/19/Thoth-Plan",
+  "credential": {
+    "ref": "thoth-plan",
+    "header": "SCP-HUB-API-KEY",
+    "prefix": "",
+    "required": true
+  },
+  "disallowed_tools": [
+    "execute_json"
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_92aa96bf23e5",
+  "paper_id": "bff26f8ebf7c",
+  "title": "",
+  "year": null,
+  "doi": "10.1016/j.poly.2019.05.003",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4"
+  ],
+  "one_line_summary": "[Zn2(mtrz)2(azdc)]-DMA-CH3OH-H2O shows guest_release_temperature = 170.0 K for MeOH/DMA/H2O",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "N2_uptake (N2) = 2.4 cm3/g at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "guest_release_temperature (MeOH/DMA/H2O) = 170.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "guest_water_weight_loss (H2O) = 1.7 wt% at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "retains crystallinity upon solvent removal and thermal treatment; fairly rigid and robust framework → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "pore_size_exclusion → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] adjust dicarboxylate pillar size together with 3-substituted triazolate substituents → produces diverse and drastically distinct framework structures"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] replace H2bdc dicarboxylate pillar with the longer H2azdc pillar in Zn-triazolate pillared-layer MOFs → channel entrances and interlayer distance are enlarged; pore-size tuning is achieved through pillar length variation"
+    },
+    {
+      "title": "Comparison",
+      "body": "MOF 2 vs MOF 1: winner=subject_a on N2_uptake_at_1_bar_273K"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_566cb8009bca",
+    "trace_b33d768494bd",
+    "trace_226fce668f9a",
+    "trace_476238ee8532",
+    "trace_c10d6126a3ce",
+    "trace_2b9d5e0bb468",
+    "trace_c5889f1ff4b0",
+    "trace_fe0e2fc98c8c",
+    "trace_e545a0a8ee34",
+    "trace_c58b4bdb7468",
+    "trace_3a1824b96add",
+    "trace_466c265c280d",
+    "trace_8a52327a0d23",
+    "trace_dc4d0c964c5e",
+    "trace_fe6b58833036",
+    "trace_94c5d9b9a324",
+    "trace_268b894baf22",
+    "trace_f346e979439e",
+    "trace_ba4a65fe2d2c",
+    "trace_b819c9344ffa",
+    "trace_eb6ed54b5e72",
+    "trace_c6f107710674",
+    "trace_3bc31a760966",
+    "trace_cadfdbd071ae",
+    "trace_3b7c60a1e331",
+    "trace_b4e71d5fa41c",
+    "trace_d6c0fe7a8800",
+    "trace_96eefda6ff83",
+    "trace_d6f71e130dbf",
+    "trace_d6b012c40f79",
+    "trace_febbc0abb8fe",
+    "trace_5348dbc2ecb1",
+    "trace_7539b988d35b",
+    "trace_697b73b877d5",
+    "trace_7ff5ee85ccea",
+    "trace_c847296e8c03",
+    "trace_7590ec5210dd",
+    "trace_35afe788d14f",
+    "trace_7f4fcb3e7fbe",
+    "trace_763b29d896c8",
+    "trace_814ea3ad52b0",
+    "trace_36786a2d4e7d",
+    "trace_3bb5f9440f7f",
+    "trace_28a0da406501",
+    "trace_915b18618792",
+    "trace_78592efcbfc8",
+    "trace_d6c0fe7a8800",
+    "trace_28a0da406501",
+    "trace_35afe788d14f",
+    "trace_dc4d0c964c5e",
+    "trace_36786a2d4e7d",
+    "trace_f346e979439e",
+    "trace_476238ee8532",
+    "trace_915b18618792",
+    "trace_814ea3ad52b0",
+    "trace_fe6b58833036",
+    "trace_b4e71d5fa41c",
+    "trace_7ff5ee85ccea",
+    "trace_78592efcbfc8",
+    "trace_3a1824b96add",
+    "trace_d6b012c40f79",
+    "trace_b819c9344ffa",
+    "trace_ba4a65fe2d2c",
+    "trace_5348dbc2ecb1",
+    "trace_febbc0abb8fe",
+    "trace_566cb8009bca",
+    "trace_cadfdbd071ae",
+    "trace_d6f71e130dbf",
+    "trace_c10d6126a3ce",
+    "trace_3bc31a760966",
+    "trace_c847296e8c03",
+    "trace_c6f107710674",
+    "trace_268b894baf22",
+    "trace_466c265c280d",
+    "trace_94c5d9b9a324",
+    "trace_96eefda6ff83",
+    "trace_3b7c60a1e331",
+    "trace_763b29d896c8",
+    "trace_7590ec5210dd",
+    "trace_8a52327a0d23",
+    "trace_c5889f1ff4b0",
+    "trace_e545a0a8ee34",
+    "trace_eb6ed54b5e72",
+    "trace_226fce668f9a",
+    "trace_fe0e2fc98c8c",
+    "trace_b33d768494bd",
+    "trace_3bb5f9440f7f",
+    "trace_c58b4bdb7468",
+    "trace_7f4fcb3e7fbe",
+    "trace_2b9d5e0bb468",
+    "trace_7539b988d35b",
+    "trace_697b73b877d5"
+  ],
+  "measurement_card_ids": [
+    "mcard_27064eda35d4",
+    "mcard_85971b0aa186",
+    "mcard_abc3715dff7b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_1d01931b46a3",
+    "mechcard_dc64e96692be",
+    "mechcard_1309d8dc33be",
+    "mechcard_c01d65fb9075",
+    "mechcard_b5e3dabb9118",
+    "mechcard_937a579e6636",
+    "mechcard_a628f1ebabfe"
+  ],
+  "recipe_card_ids": [
+    "recipe_0ab5af766507"
+  ],
+  "claim_card_ids": [
+    "claim_1b41d90d7205",
+    "claim_50f06f8adc44",
+    "claim_17dea5ac9b6a",
+    "claim_a6dda27a1169",
+    "claim_ecfcae7563b4",
+    "claim_0be74478bec5"
+  ],
+  "design_rule_card_ids": [
+    "drule_c87b0a12afeb",
+    "drule_0206bb49ba68"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_e371d8530833",
+    "comp_f5c9c27969f9"
+  ],
+  "failure_case_card_ids": [
+    "fail_ab94dea7e169",
+    "fail_c44e354a6dec"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_0931994f8abf",
+    "mat_ef0d639fd39a"
+  ],
+  "dossier_ids": [
+    "dossier_cec950ccf9a9",
+    "dossier_cf2b13668b16"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MOF 2, with the longer pillar and suitable pore size, shows selective CO2 uptake and effective selective dye adsorption in water via size exclusion.",
+    "Length mismatch between interlayer Zn···Zn distances and pillar lengths prevents formation of the common primitive cubic pcu framework.",
+    "Replacing H2bdc with longer H2azdc enlarges channels from about 12.7×6.4 to 18.2×6.9 Å2 and raises solvent-accessible volume from 27.8% to 45.6%."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.299968",
+  "updated_at": "2026-04-24T00:19:47.299971",
+  "raw_path": "相关文献/10.1016@j.poly.2019.05.003.pdf.pdf"
+}

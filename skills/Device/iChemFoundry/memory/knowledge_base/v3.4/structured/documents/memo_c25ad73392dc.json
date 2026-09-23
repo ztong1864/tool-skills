@@ -1,0 +1,220 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_c25ad73392dc",
+  "paper_id": "853299a980a3",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4"
+  ],
+  "one_line_summary": "CPF-13 shows Qst_CO2_maximum_loading = 26.5 K for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "selectivity_CO2/N2 (CO2) = 9.5 dimensionless at 0.15 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 3.62 mmol/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 3.62 mmol/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "mixed triazole-carboxylate trigonal bipyramidal SBU-2 → porosity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "NH2 reactive surface sites → qst"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] incorporate amine-bearing DATRZ ligands into the framework → expected to improve CO2 affinity and support stronger CO2 sorption/selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] match pore size and window dimensions to the size of CO2 and use efficient pore architectures such as MOP cages → improves CO2 uptake potential for small gas molecules"
+    },
+    {
+      "title": "Comparison",
+      "body": "CPF-13 vs other charged MOFs under ambient conditions: winner=subject_a on CO2_uptake_at_ambient_conditions"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_89a131678998",
+    "trace_c5c907476a8c",
+    "trace_c9178f346d21",
+    "trace_76d71fc5550b",
+    "trace_651b5e29f4e6",
+    "trace_6da5acb11046",
+    "trace_8f7d3d3fa611",
+    "trace_b00d6202bb3a",
+    "trace_1eb0a045eef9",
+    "trace_379af4c9dbff",
+    "trace_3631927e7d85",
+    "trace_57cb7e3cc405",
+    "trace_6f95247522ec",
+    "trace_f6e48f0c0aa7",
+    "trace_3682a6e88597",
+    "trace_c3cef80dce32",
+    "trace_7104256fc5eb",
+    "trace_1ce12052e4c0",
+    "trace_eddd9c688dad",
+    "trace_14ae5bda0202",
+    "trace_34ef5a4ce1fe",
+    "trace_3385241f0d07",
+    "trace_b6a298006ba6",
+    "trace_159e83aa3258",
+    "trace_428f351345df",
+    "trace_2be759ab7c4f",
+    "trace_0b0f7a8c376b",
+    "trace_dcb78360905a",
+    "trace_cddc16dabc0e",
+    "trace_6f576363e016",
+    "trace_77522028de12",
+    "trace_bca2d10554bd",
+    "trace_09120d01ade8",
+    "trace_d895d14596f8",
+    "trace_46dff61933bf",
+    "trace_e224155a8ed0",
+    "trace_bd00f759b273",
+    "trace_ce02c34da17a",
+    "trace_7c57e6530099",
+    "trace_42fcf0fd7ddf",
+    "trace_382b526cebc1",
+    "trace_8f00b2f194f4",
+    "trace_52e920d448b0",
+    "trace_ce336f0b86d9",
+    "trace_b97eb74e563d",
+    "trace_f73e8ceb1980",
+    "trace_8afa6ac6767b",
+    "trace_d83696ed83a0",
+    "trace_5395c791d944",
+    "trace_eb693d519621",
+    "trace_a9dd0ce7a849",
+    "trace_b97eb74e563d",
+    "trace_eddd9c688dad",
+    "trace_3385241f0d07",
+    "trace_428f351345df",
+    "trace_89a131678998",
+    "trace_3682a6e88597",
+    "trace_1ce12052e4c0",
+    "trace_7c57e6530099",
+    "trace_ce336f0b86d9",
+    "trace_3631927e7d85",
+    "trace_eb693d519621",
+    "trace_7104256fc5eb",
+    "trace_8afa6ac6767b",
+    "trace_09120d01ade8",
+    "trace_b00d6202bb3a",
+    "trace_34ef5a4ce1fe",
+    "trace_8f7d3d3fa611",
+    "trace_ce02c34da17a",
+    "trace_f73e8ceb1980",
+    "trace_77522028de12",
+    "trace_d83696ed83a0",
+    "trace_d895d14596f8",
+    "trace_14ae5bda0202",
+    "trace_b6a298006ba6",
+    "trace_1eb0a045eef9",
+    "trace_0b0f7a8c376b",
+    "trace_2be759ab7c4f",
+    "trace_52e920d448b0",
+    "trace_379af4c9dbff",
+    "trace_a9dd0ce7a849",
+    "trace_dcb78360905a",
+    "trace_8f00b2f194f4",
+    "trace_e224155a8ed0",
+    "trace_5395c791d944",
+    "trace_6da5acb11046",
+    "trace_6f95247522ec",
+    "trace_cddc16dabc0e",
+    "trace_c9178f346d21",
+    "trace_6f576363e016",
+    "trace_57cb7e3cc405",
+    "trace_c3cef80dce32",
+    "trace_382b526cebc1",
+    "trace_46dff61933bf",
+    "trace_f6e48f0c0aa7",
+    "trace_bd00f759b273",
+    "trace_76d71fc5550b",
+    "trace_bca2d10554bd",
+    "trace_651b5e29f4e6",
+    "trace_159e83aa3258",
+    "trace_c5c907476a8c",
+    "trace_42fcf0fd7ddf"
+  ],
+  "measurement_card_ids": [
+    "mcard_2dabed408a6a",
+    "mcard_3ee8010a01a2",
+    "mcard_12469ca49ebb",
+    "mcard_dc4e68e436a3",
+    "mcard_e89217b42202",
+    "mcard_14088c6e6f11",
+    "mcard_39cdcd22d9e6"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_7c2f173857d4",
+    "mechcard_1596f5c351c7",
+    "mechcard_ac07214793ec"
+  ],
+  "recipe_card_ids": [
+    "recipe_24fe90bc40ed",
+    "recipe_1b8b8aef894b"
+  ],
+  "claim_card_ids": [
+    "claim_7e20dfc985a6",
+    "claim_3a84009ef96d",
+    "claim_1773124b597c",
+    "claim_09aa1594f350",
+    "claim_87663b910a86",
+    "claim_15876b488383",
+    "claim_cdd12e381012",
+    "claim_8c9272e5a2cc"
+  ],
+  "design_rule_card_ids": [
+    "drule_7de459f8523d",
+    "drule_28f0843ffc96",
+    "drule_962ff64c3cb9"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_a7fa62ce569a",
+    "comp_968a0db438bc",
+    "comp_a23d24ba764a"
+  ],
+  "failure_case_card_ids": [
+    "fail_6b12dbb17def",
+    "fail_a0302245c228"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c50637bf54a2",
+    "mat_5ba0721e8492"
+  ],
+  "dossier_ids": [
+    "dossier_725d23109bd9",
+    "dossier_e1ce8dffa213"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "CPF-13 is a permanently microporous material with a type I isotherm, 1008 m2/g Langmuir area, 642 m2/g BET area, and 0.350 cm3/g micropore volume.",
+    "CPF-13 shows high H2 uptake plus high CO2/N2 and CO2/CH4 selectivity, indicating strong gas sorption and separation performance.",
+    "The framework remains stable after solvent removal up to about 300 °C, with only guest loss observed from 40 to 220 °C in TGA."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.498782",
+  "updated_at": "2026-04-24T00:19:51.498787",
+  "raw_path": "相关文献/zhai2012.pdf.pdf"
+}

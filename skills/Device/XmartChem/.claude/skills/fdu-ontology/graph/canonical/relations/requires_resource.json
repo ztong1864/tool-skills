@@ -1,0 +1,26 @@
+{
+  "device-action:add-liquid--requiresResource--resource:device-location": {
+    "from": "device-action:add-liquid",
+    "id": "device-action:add-liquid--requiresResource--resource:device-location",
+    "relation_type": "requiresResource",
+    "to": "resource:device-location"
+  },
+  "device-action:add-liquid--requiresResource--resource:liquid-reagent": {
+    "from": "device-action:add-liquid",
+    "id": "device-action:add-liquid--requiresResource--resource:liquid-reagent",
+    "relation_type": "requiresResource",
+    "to": "resource:liquid-reagent"
+  },
+  "device-action:add-solid--requiresResource--resource:device-location": {
+    "from": "device-action:add-solid",
+    "id": "device-action:add-solid--requiresResource--resource:device-location",
+    "relation_type": "requiresResource",
+    "to": "resource:device-location"
+  },
+  "device-action:add-solid--requiresResource--resource:solid-reagent": {
+    "from": "device-action:add-solid",
+    "id": "device-action:add-solid--requiresResource--resource:solid-reagent",
+    "relation_type": "requiresResource",
+    "to": "resource:solid-reagent"
+  }
+}

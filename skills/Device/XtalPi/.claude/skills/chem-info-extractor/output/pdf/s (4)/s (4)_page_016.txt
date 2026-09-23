@@ -1,0 +1,29 @@
+S16
+ 10:1): 1H NMR (300 MHz, CDCl 3) δ 7.84-7.68 (m, 2 H), 7.35-7.05 (m, 7 H), [6.13
+(dd, J = 6.3, 2.1 Hz 0.44 H), 6.04 (dd, J = 6.3, 2.7 Hz 0.45 H)], [5.45 (t, J = 6.0 Hz,
+0.46 H), 5.38 (t, J = 6.3 Hz, 0.45 H)], [5.16 (d, J = 8.1 Hz 0.46 H), 5.00 (d, J = 8.4 Hz
+0.43 H)],  3.97-3.80 (m, 1 H), 2.39 (d, J = 4.8 Hz, 3 H), 1.70-1.45 (m, 2 H), 1.45-1.05
+(m, 10 H), 0.85 (t, J = 6.8 Hz, 3 H); 13C NMR (75 MHz, CDCl 3) δ [203.6, 203.4],
+[143.1, 143.0], [138.0, 137.8], 133.4, [ 129.5, 129.4], [128.56, 128.50], [127.25,
+127.17], 127.08, [126.76, 126.73], [97.99, 97.53], [97.28, 96.88], [52.8, 52.5], [36.2,
+36.0], 31.6, [29.1, 29.0], 25.3, 22.5, 21.4, 14.0; MS (EI) m/z (%) 397 (M+, 4.03), 282
+(100); IR (neat) 3275, 3062, 3032, 2926, 2855, 1952, 1598, 1495, 1458, 1328, 1159,
+1093, 1069 cm-1; HRMS (EI) calcd for C 24H31NO 2S (M+): 397.2076. Found:
+397.2077.
+(5) Synthesis of N-(2-methyluntrica-3,4-dien-6-yl)  p-tolylsulfonamide (7f)
+toluene, 150 ℃+ +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv62 fC7H15
+TsHN
+9.6 h, 49%NHTs
+C7H15CHO
+7f
+To a dried reaction tube was added ZnI 2 (256 mg, 0.80 mmol). This reaction tube
+was dried under vacuum with a heating gun. Then N-(dec-1-yn-3-yl)
+4-methylbenzenesulfonamide 6 (306 mg, 1.00 mmol), isobut yraldehyde (130 mg, 1.81
+mmol), morpholine (121 mg, 1.39 mmol), and toluene (5 mL) were added
+sequentially  into a dried reaction tube with a screw cap under an argon atmosphere.
+The resulting mixture s ealed with the screw cap was stirred at 150 ℃. When the
+reaction was complete as monitored by TLC, the reaction mixture was cooled to room

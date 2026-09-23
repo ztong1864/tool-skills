@@ -1,0 +1,151 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_6ed0a1cc8fc8",
+  "paper_id": "bfa7c9affeb8",
+  "title": "Zn Metal–Organic Framework with High Stability and",
+  "year": 2022,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "CO2@MOF shows IAST_selectivity_CO2/N2 = 118.0 dimensionless for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "IAST_selectivity_CO2/N2 (CO2) = 118.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Qst_CO2 (CO2) = 37.01 kJ/mol at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "NH2_groups_inside_channels → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "NH2_groups_and_C···O_interaction_sites → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] incorporate -NH2 functional groups into microporous MOFs → improves CO2 adsorption selectivity derived from the atmosphere"
+    },
+    {
+      "title": "Comparison",
+      "body": "DFT-D calculated static binding energy of CO2 on activated GUPT-1 vs experimental adsorption enthalpy (Qst) of CO2 on activated GUPT-1: winner=tie on CO2_binding_energy_agreement"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_b1a4997af644",
+    "trace_af00dcb00a8e",
+    "trace_791e64117f29",
+    "trace_497a320b470c",
+    "trace_4cc2ce40199e",
+    "trace_df061ef01369",
+    "trace_ab3718a53c4d",
+    "trace_e2205b40e6f5",
+    "trace_80fa2cfcaae3",
+    "trace_59311eb4bca6",
+    "trace_1802b66a307a",
+    "trace_0dd69cab5285",
+    "trace_87bccc6ffbd6",
+    "trace_21c17b1d2c9b",
+    "trace_0609c6bc5e84",
+    "trace_6fd171925f7a",
+    "trace_631fda7f6fda",
+    "trace_add4ce535d86",
+    "trace_7679d5be0fdf",
+    "trace_a6236ee9fd49",
+    "trace_34318ba9e9fa",
+    "trace_c99e85a633cb",
+    "trace_62aa4c9484c1",
+    "trace_150a00d83302",
+    "trace_e2205b40e6f5",
+    "trace_4cc2ce40199e",
+    "trace_150a00d83302",
+    "trace_631fda7f6fda",
+    "trace_497a320b470c",
+    "trace_ab3718a53c4d",
+    "trace_a6236ee9fd49",
+    "trace_af00dcb00a8e",
+    "trace_80fa2cfcaae3",
+    "trace_add4ce535d86",
+    "trace_62aa4c9484c1",
+    "trace_0609c6bc5e84",
+    "trace_1802b66a307a",
+    "trace_791e64117f29",
+    "trace_6fd171925f7a",
+    "trace_0dd69cab5285",
+    "trace_7679d5be0fdf",
+    "trace_34318ba9e9fa",
+    "trace_21c17b1d2c9b",
+    "trace_59311eb4bca6",
+    "trace_df061ef01369",
+    "trace_87bccc6ffbd6",
+    "trace_b1a4997af644",
+    "trace_c99e85a633cb"
+  ],
+  "measurement_card_ids": [
+    "mcard_d690958f32a8",
+    "mcard_ca0111c219c5"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_9a0286b36227",
+    "mechcard_9807744ff391",
+    "mechcard_f99a20bba3ce",
+    "mechcard_2e61d50bfb60"
+  ],
+  "recipe_card_ids": [
+    "recipe_36a084c6beb9"
+  ],
+  "claim_card_ids": [
+    "claim_e83a38f0f82c",
+    "claim_a8fbcf03b00a",
+    "claim_ae0ef8f73ec6",
+    "claim_1b9a443c7e88",
+    "claim_480206704a97",
+    "claim_56fdeb5228bf"
+  ],
+  "design_rule_card_ids": [
+    "drule_044295a65d50"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_db618787df91"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_5c28b7149661",
+    "mat_a67a6caada41"
+  ],
+  "dossier_ids": [
+    "dossier_e98193a71077",
+    "dossier_c66e921a8a7d"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The reported CO2/N2 selectivity was derived for activated GUPT-1 after activation at 393 K using IAST from single-component isotherms, so it is model-based and activation-dependent.",
+    "Simulations identify two CO2 binding modes in GUPT-1: electrostatic interaction with exposed -NH2 groups and C···O contacts with pyromellitic acid O atoms.",
+    "Activated GUPT-1 shows high CO2/N2 adsorption selectivity of 118 under ambient conditions at 1 bar."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:52.107072",
+  "updated_at": "2026-04-24T00:19:52.107077",
+  "raw_path": "相关文献/氮唑相关文献_Zhang 等 - 2022 - Zn Metal–Organic Framework with High Stability and.pdf",
+  "authors": [
+    "氮唑相关文献_Zhang"
+  ]
+}

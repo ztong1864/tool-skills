@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_62296dd84d11",
+  "canonical_material_id": "mat_14baa4fb13a1",
+  "canonical_name": "[Cu2(phen)2(C2O4)(H2O)2](NO3)2",
+  "metal_element": "Cu",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_27090a4f91c9",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_60fb7229a912",
+    "mechcard_52a9504c909e",
+    "mechcard_28c555f8ab73",
+    "mechcard_63c1a92396a6"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_4fa85b27b15f",
+    "claim_068600ec9cb3",
+    "claim_585c1f7a1632"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "b3e6c07b82b5"
+  ],
+  "evidence_trace_ids": [
+    "trace_51e151a124ed",
+    "trace_b6f4f4ea3c30",
+    "trace_449deced584d",
+    "trace_db52b3655710"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-24T00:02:37.976923",
+  "updated_at": "2026-04-24T00:03:09.141732"
+}

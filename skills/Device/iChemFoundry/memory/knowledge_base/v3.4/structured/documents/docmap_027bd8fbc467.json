@@ -1,0 +1,76 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_027bd8fbc467",
+  "paper_id": "62abef84986f",
+  "raw_path": "相关文献/扩散综述.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2",
+    "Xe",
+    "Kr"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "SSZ-16",
+    "SSZ-13",
+    "SAPO-35",
+    "ZEO-1",
+    "SSZ-39",
+    "SSZ-27195",
+    "SCM-15",
+    "SBA-15",
+    "ZSM-5",
+    "HZSM-5",
+    "ZSM-25",
+    "ITQ-55",
+    "ITQ-4",
+    "Silicalite-1",
+    "VPI-5",
+    "DNL-6",
+    "SAPO-34",
+    "Butyldi-1-adamantylphosphine"
+  ],
+  "mentioned_metals": [
+    "Cu",
+    "Al",
+    "Sr",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "BPY",
+    "ATA",
+    "pyridine",
+    "TED"
+  ],
+  "mentioned_topologies": [
+    "sod",
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "This journal is © The Royal Society of Chemistry 2025\nChem. Soc. Rev.\nCite this: DOI: 10.1039/d5cs00613a\nConfinement eﬀects on molecular diﬀusion in\nzeolites: mechanisms and perspectives\nLei Zhao,†ab "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:20:47.593628"
+}

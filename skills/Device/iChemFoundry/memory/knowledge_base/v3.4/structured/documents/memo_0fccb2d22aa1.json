@@ -1,0 +1,55 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_0fccb2d22aa1",
+  "paper_id": "d7d931748afa",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [],
+  "one_line_summary": "Paper d7d931748afa: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Author Claim",
+      "body": "The speed of crystallization controls formation of framework isomers in Zn(II)/1,2,4-triazol-3-amine systems."
+    },
+    {
+      "title": "Author Claim",
+      "body": "Different aggregation fashions of Zn(II) and 1,2,4-triazol-3-amine produce distinct (3,4)-connected self-penetrating nets."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_375ff0698529",
+    "trace_a2c966977fdf",
+    "trace_375ff0698529",
+    "trace_a2c966977fdf"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_d1fbdddf5eb1",
+    "claim_026fc219e431",
+    "claim_83d2a9b8acd4",
+    "claim_deb0d266ff26"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [],
+  "dossier_ids": [],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The speed of crystallization controls formation of framework isomers in Zn(II)/1,2,4-triazol-3-amine systems.",
+    "Different aggregation fashions of Zn(II) and 1,2,4-triazol-3-amine produce distinct (3,4)-connected self-penetrating nets.",
+    "XRD patterns were compared after heating samples at 370 °C for one day with patterns simulated from single-crystal data to assess structural retention."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.2,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.249030",
+  "updated_at": "2026-04-28T14:29:22.249032"
+}

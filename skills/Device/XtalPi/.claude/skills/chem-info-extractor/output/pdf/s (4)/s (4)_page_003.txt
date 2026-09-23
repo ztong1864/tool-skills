@@ -1,0 +1,50 @@
+S3
+ Table S2. Amines screened for the ZnI 2 -promoted one-pot synthesis of 3aaa
++ +ZnI2(0.6 equiv)
+toluene, 150oC
+sealed with a screw capCH3(CH 2)7
+Ph(CH 2)7CH3
+1.5 equiv 1.5 equivPhCHO
+1a3aaamine
+
+
+entry amine
+ time (h)  NMR yield of 3aa
+(%)
+1
+N
+HH
+N
+O
+ 15 0
+2
+N
+HH
+N
+S
+ 15 0
+3
+ NH 2 30
+4
+NH 8.5 trace
+
+5
+NH
+ 8  0
+
+6
+HN NH 7.7 trace
+7
+N NH Ph16  16
+
+8
+NH HN 4.5 trace
+
+9
+NH O 2  36
+10 NH2
+NH2 8 0
+
+11b - 42 0
+a The reactions were carried out in 0.3 mmol scale in 0.9 mL of toluene. b 1.8 equiv
+of PhCHO and 0.8 equiv of ZnI 2 were used.

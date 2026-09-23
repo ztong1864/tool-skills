@@ -1,0 +1,80 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_07d3cca64830",
+  "canonical_material_id": "mat_e9b56221b81b",
+  "canonical_name": "MAC-4-D",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_09266f079316",
+  "pillar_id": "pil_e8414fc161af",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_9505cb0bea7e",
+    "mcard_26582fb34251",
+    "mcard_c757a331f6e4",
+    "mcard_71040df4063c",
+    "mcard_1ffbd5886b7b",
+    "mcard_0756e3f17341",
+    "mcard_6be586232009",
+    "mcard_bd05529b064d",
+    "mcard_81b6b729d75c",
+    "mcard_17d0d07903dc",
+    "mcard_6b0f2226b0f6",
+    "mcard_9c380ea71ca3",
+    "mcard_723991b39397",
+    "mcard_50ab70ac2716",
+    "mcard_fd3371158ae7",
+    "mcard_e61c6aad55b6",
+    "mcard_e5f3e7379282",
+    "mcard_8024d9b32422",
+    "mcard_72d72e50c10a",
+    "mcard_2f5d119678cc",
+    "mcard_d50a08b90e6e"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_354546976929",
+    "mechcard_4e447ae46cb8",
+    "mechcard_7d2f368095f2",
+    "mechcard_164014a1a164"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_a0d043b8ff7f",
+    "claim_cdf403339708",
+    "claim_f1803cc4247f"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "8a61649cf87e",
+    "beb388971362",
+    "f06b5fb682b1",
+    "cb0db3cfb790"
+  ],
+  "evidence_trace_ids": [
+    "trace_8e5d10c841bb",
+    "trace_3aa25c661174",
+    "trace_1435cfb4275c",
+    "trace_cc7926edb584",
+    "trace_f610d0e458ee",
+    "trace_1d8da8003fcc",
+    "trace_60657529c6e1",
+    "trace_e6af0a53b192"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:33:08.139230",
+  "updated_at": "2026-04-23T21:59:11.874754"
+}

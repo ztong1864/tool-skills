@@ -1,0 +1,13 @@
+{
+  "TYPE_TAG": "CounterPrinciple",
+  "id": "p_counter_reverse_kinetic_selectivity_high_loading",
+  "name": "reverse_kinetic_selectivity_high_loading",
+  "display_name_zh": "高载量下扩散选择性反转",
+  "one_line_summary_zh": "在ZIF-8等柔性框架中，C3H6在高分压下的有效扩散选择性可能反转——与\"小分子总是更快\"的直觉相反。",
+  "challenges_principle_ids": [
+    "p_principle_window_sieving_kinetic_separation"
+  ],
+  "trigger_conditions": "loading > 0.5 saturation AND framework_flexibility > threshold",
+  "mechanism": "高载量下窗口附近的分子-分子相互作用改变跳跃势垒序列",
+  "confidence": 0.85
+}

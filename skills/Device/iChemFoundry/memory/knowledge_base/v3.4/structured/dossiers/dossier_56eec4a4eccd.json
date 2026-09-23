@@ -1,0 +1,84 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_56eec4a4eccd",
+  "canonical_material_id": "mat_e263db83debc",
+  "canonical_name": "MAC-4-B",
+  "metal_element": "Zn",
+  "node_signature_id": "node_a4d4636b406a",
+  "primary_linker_id": "lig_e8414fc161af",
+  "pillar_id": "pil_f8938f41f0bd",
+  "topology": "crs",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_b1243ec339a5",
+    "mcard_a823bff56fcf",
+    "mcard_5ff99d098e13",
+    "mcard_fead682485ef",
+    "mcard_d96fb66a26dd",
+    "mcard_7ef6b3617198",
+    "mcard_e12fd2598ffd",
+    "mcard_db61d984f1ae",
+    "mcard_de036b5415e6",
+    "mcard_0a316e0025ea",
+    "mcard_d2f8ceb0538b",
+    "mcard_c76f9c64e491",
+    "mcard_85001ea8285b",
+    "mcard_f03fe47d541a",
+    "mcard_a26ccf25fe73",
+    "mcard_ebf938cafbf8",
+    "mcard_327896758d32",
+    "mcard_a1409851d724",
+    "mcard_bbe67400ae96",
+    "mcard_a9573eb3ca79"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_bda571a759a3",
+    "mechcard_43aa658e13dd",
+    "mechcard_245a720ee477",
+    "mechcard_9cea361d1f91",
+    "mechcard_ce417ab8f6fe",
+    "mechcard_280e1e932dde"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_b18be9198c47"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "8a61649cf87e",
+    "beb388971362",
+    "f06b5fb682b1",
+    "cb0db3cfb790"
+  ],
+  "evidence_trace_ids": [
+    "trace_d08a51fd4b30",
+    "trace_5f76eb130a3f",
+    "trace_3b1d7ad432bd",
+    "trace_9a3d4367eeac",
+    "trace_f0657133c7a3",
+    "trace_d3e3694a0867",
+    "trace_e3880c776137",
+    "trace_32449ce1ab1e",
+    "trace_d8d8aaad9fa3",
+    "trace_9f287eae7496",
+    "trace_36f3793e7cd5",
+    "trace_23a83f78ed5d",
+    "trace_cda3a10758ab"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:33:08.137820",
+  "updated_at": "2026-04-23T21:58:32.872888"
+}

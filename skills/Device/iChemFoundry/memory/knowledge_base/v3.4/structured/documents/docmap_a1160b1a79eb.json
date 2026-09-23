@@ -1,0 +1,87 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_a1160b1a79eb",
+  "paper_id": "122d7b4e0d01",
+  "raw_path": "相关文献/氮唑相关文献_Dinh 等 - 2020 - Isoreticular Three-Dimensional Kagome Metal–Organi.pdf",
+  "title": "Isoreticular Three-Dimensional Kagome Metal–Organi",
+  "authors": [
+    "氮唑相关文献_Dinh"
+  ],
+  "year": 2020,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CPM-63",
+    "MIL-125",
+    "TJT-100",
+    "MIL-88",
+    "MIL-142A",
+    "MOF-5-type",
+    "CPM-233",
+    "MOF-5",
+    "ZIF-68",
+    "MOF-74",
+    "MOF-74-Zn",
+    "MIL-142",
+    "IRMOF-74"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Fe",
+    "Zr",
+    "Mg",
+    "In",
+    "Ga",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "imidazolate",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "pyridine",
+    "azolate",
+    "DABCO",
+    "terephthalate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "mof-5",
+    "hkust",
+    "tbo",
+    "pcu",
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "Here, we report a double-bent-ligand strategy which addresses a commonly encountered challenge in the",
+    "conclusion": "of Gas Adsorption Performances of CPM-63m and CPM-63a\ngas uptake at RT (cm3/g)\nQst\n0 (−kJ/mol)\nMOF\nBET(m2/g)",
+    "results_summary": "Isoreticular Three-Dimensional Kagome Metal−Organic Frameworks\nwith Open-Nitrogen-Donor Pillars for Selective Gas Adsorption\nAndy Dinh, Huajun Yang, Fang Peng, Tony C. Nguyen, Anh Hong, Pingyun Feng, "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:30:06.424818"
+}

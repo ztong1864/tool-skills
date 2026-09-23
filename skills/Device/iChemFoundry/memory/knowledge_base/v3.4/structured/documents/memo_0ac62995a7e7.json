@@ -1,0 +1,163 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_0ac62995a7e7",
+  "paper_id": "ee237b02c72e",
+  "title": "New luminescent Zn(II) compound as a highly select",
+  "year": 2021,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "[Zn3(3-atrz)2(4-atrz)2(SO4)2] shows thermal_stability = 322.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "thermal_stability = 322.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "charge_transfer_between_aminotriazole_ligands → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "mixed_aminotriazole_coordination_modes → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select appropriate organic ligands, including isomorphic aminotriazole ligands, when constructing Zn(II) MOFs → enables construction of MOFs with desired structures and properties, including intense room-temperature luminescence and selective, sensitive Fe3+ detection"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs free 3-atrz ligand and free 4-atrz ligand: winner=subject_a on room-temperature emission profile under 340 nm excitation"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs previously reported Cd(II) MOF: winner=tie on Fe3+ detection sensitivity"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] heat compound 1 beyond its stable temperature range: the framework of compound 1 collapses upon further heating"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_e634318f60a3",
+    "trace_406ddfd03826",
+    "trace_0c7fe651de50",
+    "trace_13733f2812ae",
+    "trace_4aa668187d01",
+    "trace_fc04e59eb9d6",
+    "trace_00b20dc5d6d4",
+    "trace_af99cc5c2a1f",
+    "trace_11fd6f08e118",
+    "trace_90cc71a060b5",
+    "trace_6d6c9d9909a3",
+    "trace_1628383b7881",
+    "trace_3bfa28816331",
+    "trace_81386b404978",
+    "trace_3796a2a26999",
+    "trace_904a124c78bf",
+    "trace_506cd5ac35e7",
+    "trace_9e7092972b44",
+    "trace_eae5cf7d9a95",
+    "trace_e2025bc0a0e3",
+    "trace_c476537505fb",
+    "trace_3e090c91a07a",
+    "trace_4510172f1a64",
+    "trace_e0c5c7e9deab",
+    "trace_91db939ccf99",
+    "trace_f296a5b538ba",
+    "trace_3c627e0623e7",
+    "trace_10db53ad2178",
+    "trace_e1e4769c1078",
+    "trace_81386b404978",
+    "trace_00b20dc5d6d4",
+    "trace_3bfa28816331",
+    "trace_af99cc5c2a1f",
+    "trace_4aa668187d01",
+    "trace_eae5cf7d9a95",
+    "trace_91db939ccf99",
+    "trace_f296a5b538ba",
+    "trace_3e090c91a07a",
+    "trace_406ddfd03826",
+    "trace_6d6c9d9909a3",
+    "trace_3796a2a26999",
+    "trace_0c7fe651de50",
+    "trace_904a124c78bf",
+    "trace_3c627e0623e7",
+    "trace_e1e4769c1078",
+    "trace_e2025bc0a0e3",
+    "trace_e0c5c7e9deab",
+    "trace_10db53ad2178",
+    "trace_c476537505fb",
+    "trace_13733f2812ae",
+    "trace_90cc71a060b5",
+    "trace_fc04e59eb9d6",
+    "trace_506cd5ac35e7",
+    "trace_9e7092972b44",
+    "trace_11fd6f08e118",
+    "trace_1628383b7881",
+    "trace_e634318f60a3",
+    "trace_4510172f1a64"
+  ],
+  "measurement_card_ids": [
+    "mcard_f8b1c58a5387"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_bf88ea3c149e",
+    "mechcard_dd8fb01de5c1",
+    "mechcard_139521f2b8d1"
+  ],
+  "recipe_card_ids": [
+    "recipe_dff2b5a9b145",
+    "recipe_2fa09e50c1fa",
+    "recipe_8b2d34e30df3"
+  ],
+  "claim_card_ids": [
+    "claim_765949570be0",
+    "claim_d54392f362e1",
+    "claim_a813147f6829",
+    "claim_ae6f3611df34",
+    "claim_15273698eb0e",
+    "claim_014619619a1a",
+    "claim_90a8202e1b1f",
+    "claim_1769e3d9552e"
+  ],
+  "design_rule_card_ids": [
+    "drule_7c59a801dc7a"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_b5796dfc24e9",
+    "comp_32cd4082a839"
+  ],
+  "failure_case_card_ids": [
+    "fail_47d9df2a1c64"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_d3f210635fb9",
+    "mat_416062befb91"
+  ],
+  "dossier_ids": [
+    "dossier_17e498797cdd",
+    "dossier_82fe81c4bf2a"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "3-atrz bridges three Zn(II) ions while 4-atrz bridges two; together with sulfate linkers they build the 3D framework.",
+    "Fe3+ sensing is highly sensitive, with a Stern-Volmer constant Ksv of 4.22 × 10^3 M^-1, comparable to a reported Cd(II) MOF.",
+    "Compound 1 forms a trinuclear-subunit 3D framework that simplifies to a 6-connected pcu topology."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.885902",
+  "updated_at": "2026-04-24T00:19:49.885909",
+  "raw_path": "相关文献/Zn-SO4-Liu 等 - 2021 - New luminescent Zn(II) compound as a highly select.pdf",
+  "authors": [
+    "Zn-SO4-Liu"
+  ]
+}

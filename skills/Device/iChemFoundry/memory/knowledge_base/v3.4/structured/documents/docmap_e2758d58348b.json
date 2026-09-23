@@ -1,0 +1,77 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_e2758d58348b",
+  "paper_id": "5d8eca38aab2",
+  "raw_path": "相关文献/Hu 等 - 2024 - Wall-trapped acetylene tetramer in a metal-organic.pdf",
+  "title": "Wall-trapped acetylene tetramer in a metal-organic",
+  "authors": [
+    "Hu"
+  ],
+  "year": 2024,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2",
+    "Xe"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "TJE-1",
+    "ZNU-9",
+    "MOF-5-like",
+    "MOF-808",
+    "SNNU-505-Zn",
+    "IITKGP-30",
+    "NTUniv-59",
+    "SDMOF-1",
+    "MOF-5",
+    "MOF-303",
+    "MOF-808-Bzz",
+    "SNNU-98-Mn",
+    "ZJU-300",
+    "ZJU-194",
+    "NbU-1",
+    "UTSA-200"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Al",
+    "Mn",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "mof-5"
+  ],
+  "key_sections": {
+    "results_summary": "Separation and Purification Technology 343 (2024) 127143\nAvailable online 18 March 2024\n1383-5866/© 2024 Elsevier B.V. All rights reserved.\nWall-trapped acetylene tetramer in a metal-organic framework"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:52:04.335281"
+}

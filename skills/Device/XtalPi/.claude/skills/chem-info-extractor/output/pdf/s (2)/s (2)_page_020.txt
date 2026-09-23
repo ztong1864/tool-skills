@@ -1,0 +1,22 @@
+S20
+ column, hexane/ i-PrOH = 100/0, 0.8 mL/min, λ = 214 nm, tR(minor) = 12.7 min,
+tR(major) = 13.4 min); [ α]D26.0 = -52.4 ( c = 1.00, CHCl 3); 1H NMR (400M Hz, CDCl 3)
+δ 5.21-5.09 (m, 2 H, C=CH), 3.72-3.65 (s, 3 H, CO 2CH 3), 2.43 (t, J = 7.4 Hz, 2 H,
+COCH 2), 2.35-2.26 (m, 2 H, C=CCH 2), 2.03-2.19 (m, 2 H, C=CCH 2), 1.42-1.21 (m,
+12 H, 6×CH 2), 0.88 (t, J = 6.6 Hz, 3 H, CH 3); 13C NMR (100M Hz, CDCl 3) δ 203.6,
+173.6, 92.6, 89.4, 51.5, 33.2, 31.8, 29.4, 29.3, 29.1, 28.8, 23.8, 22.6, 14.1; IR (neat) ν
+(cm-1) 2954, 2924, 2854, 1963, 1699, 1458, 1436, 1362, 1298, 1254, 1224, 1197,
+1159, 1058, 1017; MS (EI) m/z (%): 238 (M+, 8.93), 80 (100); HRMS calcd. for
+C15H26O2 (M+): 238.1933; Found: 238.1930.
+(3) Preparation of ( R)-methyl tetradeca-4,5-dienoate ( Ra)-5.4 (hanyl-3-81)
+
+To a Schlenk tube were added Li Cl (145.0 mg, purity = 98%, 3.36 mmol),
+(Ra)-4dc (499.6 mg, 1.68 mmol), DMSO (9.0 mL), and  H2O (119.5 mg, 6.72 mmol)
+sequentially. The Schlenk tube was then e quipped with a condenser and heated in an
+oil bath preheated at 180 oC. The reaction was complete af ter being stirred for 1.5 h as
+monitored by TLC. Then the resulting mixtur e was diluted with ethyl acetate (20 mL)
+and quenched with H 2O (7.0 mL). The organic layer was separated, washed with H 2O
+(3 × 10 mL) and brine (3 × 10 mL ), and dried over anhydrous Na 2SO 4. After filtration
+and evaporation, the resi due was purified by chromato graphy (eluent: petroleum
+ether/ethyl acetate = 50/1) on silica gel to afford ( Ra)-5 (301.0 mg, 75%) as a liquid:
+95% ee (HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/0, 0.8

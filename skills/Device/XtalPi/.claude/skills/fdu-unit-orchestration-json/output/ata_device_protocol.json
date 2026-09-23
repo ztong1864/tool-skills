@@ -1,0 +1,130 @@
+{
+  "protocol_name": "ATA实验协议",
+  "version": "1.0",
+  "creation_time": "2024-09-18T10:38:00Z",
+  "equipment": "FounDryClaw Commercialエ工藝台",
+  "task_type": "ata_synthesis",
+  "parameters": {
+    "temperature": 25,
+    "pressure": "atmospheric",
+    "atmosphere": "nitrogen"
+  },
+  "liquid_hands": [
+    {
+      "name": "main",
+      "positions": [
+        "1",
+        "2",
+        "3"
+      ]
+    },
+    {
+      "name": "waste",
+      "positions": [
+        "W1"
+      ]
+    }
+  ],
+  "solid_dispensers": [
+    {
+      "name": "main",
+      "positions": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "stirrers": [
+    {
+      "name": "main",
+      "positions": [
+        "ST1"
+      ]
+    }
+  ],
+  "steps": [
+    {
+      "step_id": 1,
+      "action": "add_solid",
+      "equipment": "solid_dispenser",
+      "position": "S1",
+      "reagent": "CuI",
+      "amount": 0.952,
+      "unit": "mg"
+    },
+    {
+      "step_id": 2,
+      "action": "add_solid",
+      "equipment": "solid_dispenser",
+      "position": "S2",
+      "reagent": "(S)-1-(2-吡咯烷甲基) 吡咯烷",
+      "amount": 18.51,
+      "unit": "mg"
+    },
+    {
+      "step_id": 3,
+      "action": "add_solid",
+      "equipment": "solid_dispenser",
+      "position": "S3",
+      "reagent": "4A MS",
+      "amount": 20,
+      "unit": "mg"
+    },
+    {
+      "step_id": 4,
+      "action": "add_liquid",
+      "equipment": "liquid_handler",
+      "position": "1",
+      "reagent": "DMSO",
+      "amount": 1000,
+      "unit": "μL"
+    },
+    {
+      "step_id": 5,
+      "action": "add_liquid",
+      "equipment": "liquid_handler",
+      "position": "2",
+      "reagent": "Phenylacetylene",
+      "amount": 63.1,
+      "unit": "μL"
+    },
+    {
+      "step_id": 6,
+      "action": "add_liquid",
+      "equipment": "liquid_handler",
+      "position": "3",
+      "reagent": "Nonanal",
+      "amount": 19.5,
+      "unit": "μL"
+    },
+    {
+      "step_id": 7,
+      "action": "reaction_control",
+      "equipment": "stirrer",
+      "position": "ST1",
+      "temperature": 25,
+      "duration": 12,
+      "unit_temp": "C",
+      "unit_duration": "h"
+    },
+    {
+      "step_id": 8,
+      "action": "filter",
+      "equipment": "filter_module",
+      "position": "F1"
+    },
+    {
+      "step_id": 9,
+      "action": "concentrate",
+      "equipment": "concentrator",
+      "position": "C1"
+    }
+  ],
+  "safety_notes": [
+    "在氮气保护下操作",
+    "CuI为光敏物质，需避光保存",
+    "4A分子筛需预先活化",
+    "反应结束后需充分洗涤器壁"
+  ]
+}

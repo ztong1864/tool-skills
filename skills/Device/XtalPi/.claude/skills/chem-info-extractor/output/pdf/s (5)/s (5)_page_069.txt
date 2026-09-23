@@ -1,0 +1,15 @@
+- S69 - 5. Copies of HPLC Profiles
+
+HPLC Conditions of rac-7 and 7: chiralcel AD-H column , hexanes /i-PrOH  = 99/1,  flow rate 0.5 mL/min , 254
+nm, retention  time 14.0 min and 25.1 min (rac-7 was prepared by t he similar way of the synthesis of 7 except
+that racemic 6b was used)
+
+HPLC Profile  of rac -7
+
+
+No. Ret.Time
+(min)  Height
+(mAU)  Rel.Area
+(%)
+1 14.37  429.4  49.77
+2 25.79  306.1  50.23

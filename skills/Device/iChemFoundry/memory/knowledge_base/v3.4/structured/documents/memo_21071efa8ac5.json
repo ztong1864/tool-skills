@@ -1,0 +1,209 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_21071efa8ac5",
+  "paper_id": "6f8496567c7f",
+  "title": "A Zn(II) Pillared-Layer Ultramicroporous Metal-Org",
+  "year": 2024,
+  "doi": null,
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C2H2"
+  ],
+  "one_line_summary": "Zn-mipa-datz shows accessible_free_void_fraction = 30.7 wt% for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 4.98 mmol/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "C2H2_uptake (C2H2) = 2.23 mmol/g at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "adsorption_selectivity_C2H2/CO2 (C2H2) = 2.5 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "distribution of matching sites in the cavity → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "C2H2-matching cavity → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] distribute matching adsorption sites within ultramicropore cavities for C2H2/CO2 separation → improves discrimination between C2H2 and CO2 by increasing C2H2 affinity over CO2"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] expose abundant negative nitrogen atoms from diamino-triazolate on the pore surface → promotes stronger C2H2 binding than CO2 in Zn-mipa-datz"
+    },
+    {
+      "title": "Comparison",
+      "body": "C2H2 adsorption in Zn-mipa-datz vs CO2 adsorption in Zn-mipa-datz: winner=subject_a on adsorption_affinity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_d419a07d1c6c",
+    "trace_deb17a0a427f",
+    "trace_008ae7546bc2",
+    "trace_aae0092b33d0",
+    "trace_6d597366e408",
+    "trace_c53fc0c4d460",
+    "trace_e7927fd76482",
+    "trace_a3c0e7760787",
+    "trace_332704d17790",
+    "trace_60c427184cb4",
+    "trace_0ac369e23a43",
+    "trace_a00d3a71ea25",
+    "trace_9978325987a8",
+    "trace_937971aceee1",
+    "trace_c1404bc58d2a",
+    "trace_7df35eb9ba9b",
+    "trace_674e99fb5b79",
+    "trace_0209d441a14e",
+    "trace_bd079afc033d",
+    "trace_7b484fe7cc55",
+    "trace_8dbfc0352446",
+    "trace_342500051c25",
+    "trace_d677daec6624",
+    "trace_b6409ea34d09",
+    "trace_0ce13eca50ae",
+    "trace_ebf988a65029",
+    "trace_09c32af31b31",
+    "trace_88a87de5b8b5",
+    "trace_e10b4a7f86a3",
+    "trace_d12a259fa0c6",
+    "trace_c3320330c76e",
+    "trace_40751003146f",
+    "trace_ba5502e4d93d",
+    "trace_2aba6375abd7",
+    "trace_60f7e8b67d3c",
+    "trace_2be8369c5397",
+    "trace_897eea9e01de",
+    "trace_571dcee435df",
+    "trace_1daf429dc3cc",
+    "trace_9dfdb34023d4",
+    "trace_2f7e01a6944b",
+    "trace_94f6dbc1fa7c",
+    "trace_84a1e6e0180c",
+    "trace_311f3e65b2d7",
+    "trace_e6de4f3f2c05",
+    "trace_fdb3e2df7397",
+    "trace_60f7e8b67d3c",
+    "trace_9978325987a8",
+    "trace_84a1e6e0180c",
+    "trace_ba5502e4d93d",
+    "trace_60c427184cb4",
+    "trace_d419a07d1c6c",
+    "trace_0ac369e23a43",
+    "trace_897eea9e01de",
+    "trace_2be8369c5397",
+    "trace_e7927fd76482",
+    "trace_deb17a0a427f",
+    "trace_88a87de5b8b5",
+    "trace_7b484fe7cc55",
+    "trace_342500051c25",
+    "trace_7df35eb9ba9b",
+    "trace_c1404bc58d2a",
+    "trace_40751003146f",
+    "trace_937971aceee1",
+    "trace_b6409ea34d09",
+    "trace_1daf429dc3cc",
+    "trace_aae0092b33d0",
+    "trace_c53fc0c4d460",
+    "trace_09c32af31b31",
+    "trace_674e99fb5b79",
+    "trace_8dbfc0352446",
+    "trace_bd079afc033d",
+    "trace_a00d3a71ea25",
+    "trace_008ae7546bc2",
+    "trace_e6de4f3f2c05",
+    "trace_0ce13eca50ae",
+    "trace_c3320330c76e",
+    "trace_2aba6375abd7",
+    "trace_94f6dbc1fa7c",
+    "trace_6d597366e408",
+    "trace_d12a259fa0c6",
+    "trace_0209d441a14e",
+    "trace_d677daec6624",
+    "trace_332704d17790",
+    "trace_fdb3e2df7397",
+    "trace_9dfdb34023d4",
+    "trace_ebf988a65029",
+    "trace_a3c0e7760787",
+    "trace_e10b4a7f86a3",
+    "trace_2f7e01a6944b",
+    "trace_571dcee435df",
+    "trace_311f3e65b2d7"
+  ],
+  "measurement_card_ids": [
+    "mcard_843b1fe31260",
+    "mcard_6c07053e22d3",
+    "mcard_0ae9c46a3404",
+    "mcard_14e2a82fb352",
+    "mcard_212fac4093b1",
+    "mcard_16c8f9321dff"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_4ab2d0929797",
+    "mechcard_758cfd703592",
+    "mechcard_65c0665e9385"
+  ],
+  "recipe_card_ids": [
+    "recipe_d9f25ccc1cce",
+    "recipe_cf2c436b946c"
+  ],
+  "claim_card_ids": [
+    "claim_8182f3ed47d7",
+    "claim_6c29aaa5fde2",
+    "claim_fadfbc7dbe35",
+    "claim_0bd4e895abcf",
+    "claim_60cbb80970af",
+    "claim_a4d80e57d7eb",
+    "claim_1b868ee8e266"
+  ],
+  "design_rule_card_ids": [
+    "drule_6fb9a12fa327",
+    "drule_d85ef0b50adf",
+    "drule_b23a7072a45c"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_7c8beb2ff6d9",
+    "comp_ab45a4a3fe5c",
+    "comp_f10a366633f3",
+    "comp_427616ab1712"
+  ],
+  "failure_case_card_ids": [
+    "fail_736554be9059"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_7beea9fd3140"
+  ],
+  "dossier_ids": [
+    "dossier_ba447f04442b"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Open Lewis acidic metal sites can separate C2H2 from CO2, but their overly strong affinity makes C2H2 desorption difficult.",
+    "For C2H2/CO2 pairs with very similar properties, the distribution of matching sites in ultramicropore cavities is key to separation.",
+    "Dynamic breakthrough experiments validated the C2H2/CO2 separation performance of Zn-mipa-datz beyond static adsorption isotherms."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.079957",
+  "updated_at": "2026-04-24T00:19:49.079961",
+  "raw_path": "相关文献/Yang 等 - 2024 - A Zn(II) Pillared-Layer Ultramicroporous Metal-Org.pdf",
+  "authors": [
+    "Yang"
+  ]
+}

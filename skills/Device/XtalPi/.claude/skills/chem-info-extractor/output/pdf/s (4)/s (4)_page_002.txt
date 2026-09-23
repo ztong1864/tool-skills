@@ -1,0 +1,25 @@
+S2
+ Table S1. Solvent effect on the ZnI 2-promoted one-pot synthesis of 3aaa
++ +ZnI2 (0.6 equiv)
+solvent
+sealed with a screw capCH3(CH2)7
+PhN
+HO
+(CH 2)7CH3
+1.7 equiv 1.5 equivPhCHO
+1a3aa
+
+entry solvent temp
+(℃) time
+(h) NMR yield
+of 3aa (%)
+1 toluene  150 2.5 43
+2 chlorobenzene 150 2.5 27
+3 o-xylene 150 3 27
+4 CH 3NO 2  150 6 -
+5b CHCl 3 90 12 -
+6b DCE  90 12 -
+7 CH 3CN  120 22 -
+  a The reactions were carri ed out in 0.3 mmol scale in 0.9 mL of solvent. b The
+reaction proceeded at room temperature for 2 h, then at 60 ℃ for 2 h, and at 90 ℃ for
+12 h.

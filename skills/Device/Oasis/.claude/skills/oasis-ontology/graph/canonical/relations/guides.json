@@ -1,0 +1,26 @@
+{
+  "rel:guides:bm-fm-rules:screening": {
+    "from": "knowledge:bodipy-bm-fm-medium-rules",
+    "id": "rel:guides:bm-fm-rules:screening",
+    "relation_type": "guides",
+    "to": "process-bodipy-screening-experiment"
+  },
+  "rel:guides:bm-fm-rules:analysis": {
+    "from": "knowledge:bodipy-bm-fm-medium-rules",
+    "id": "rel:guides:bm-fm-rules:analysis",
+    "relation_type": "guides",
+    "to": "process-bodipy-image-analysis"
+  },
+  "rel:guides:oasis-lab-environment:new-experiment": {
+    "from": "knowledge:oasis-lab-environment-rules",
+    "id": "rel:guides:oasis-lab-environment:new-experiment",
+    "relation_type": "guides",
+    "to": "process-new-experiment-standard"
+  },
+  "rel:guides:oasis-lab-environment:bodipy-screening": {
+    "from": "knowledge:oasis-lab-environment-rules",
+    "id": "rel:guides:oasis-lab-environment:bodipy-screening",
+    "relation_type": "guides",
+    "to": "process-bodipy-screening-experiment"
+  }
+}

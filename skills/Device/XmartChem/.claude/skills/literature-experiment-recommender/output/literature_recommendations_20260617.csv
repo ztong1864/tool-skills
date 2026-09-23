@@ -1,0 +1,11 @@
+﻿substrate_a,substrate_b,catalyst,ligand,base,solvent,score,note
+4-溴甲苯,苯硼酸,Pd(PPh3)4,SPhos,K3PO4,"1,4-dioxane",12,经典Suzuki预催化剂；SPhos适合芳基卤化物偶联；K3PO4为常用温和碱；二氧六环是经典Suzuki溶剂
+4-溴甲苯,苯硼酸,Pd(PPh3)4,SPhos,Cs2CO3,"1,4-dioxane",11,经典Suzuki预催化剂；SPhos适合芳基卤化物偶联；Cs2CO3为强碱候选；二氧六环是经典Suzuki溶剂
+4-溴甲苯,苯硼酸,Pd(PPh3)4,SPhos,K3PO4,toluene/H2O,11,经典Suzuki预催化剂；SPhos适合芳基卤化物偶联；K3PO4为常用温和碱；甲苯/水利于硼酸转金属化
+4-溴甲苯,苯硼酸,Pd(PPh3)4,XPhos,K3PO4,"1,4-dioxane",11,经典Suzuki预催化剂；XPhos常用于交叉偶联；K3PO4为常用温和碱；二氧六环是经典Suzuki溶剂
+4-溴甲苯,苯硼酸,Pd2(dba)3,SPhos,K3PO4,"1,4-dioxane",11,常见Pd源，需配体协同；SPhos适合芳基卤化物偶联；K3PO4为常用温和碱；二氧六环是经典Suzuki溶剂
+4-溴甲苯,苯硼酸,Pd(PPh3)4,SPhos,Cs2CO3,toluene/H2O,10,经典Suzuki预催化剂；SPhos适合芳基卤化物偶联；Cs2CO3为强碱候选；甲苯/水利于硼酸转金属化
+4-溴甲苯,苯硼酸,Pd(PPh3)4,XPhos,Cs2CO3,"1,4-dioxane",10,经典Suzuki预催化剂；XPhos常用于交叉偶联；Cs2CO3为强碱候选；二氧六环是经典Suzuki溶剂
+4-溴甲苯,苯硼酸,Pd(PPh3)4,XPhos,K3PO4,toluene/H2O,10,经典Suzuki预催化剂；XPhos常用于交叉偶联；K3PO4为常用温和碱；甲苯/水利于硼酸转金属化
+4-溴甲苯,苯硼酸,Pd2(dba)3,SPhos,Cs2CO3,"1,4-dioxane",10,常见Pd源，需配体协同；SPhos适合芳基卤化物偶联；Cs2CO3为强碱候选；二氧六环是经典Suzuki溶剂
+4-溴甲苯,苯硼酸,Pd2(dba)3,SPhos,K3PO4,toluene/H2O,10,常见Pd源，需配体协同；SPhos适合芳基卤化物偶联；K3PO4为常用温和碱；甲苯/水利于硼酸转金属化

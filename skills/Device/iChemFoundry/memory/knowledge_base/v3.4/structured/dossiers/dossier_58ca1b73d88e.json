@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_58ca1b73d88e",
+  "canonical_material_id": "mat_fa59b9c79dd8",
+  "canonical_name": "化合物4-6",
+  "metal_element": "Cu",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_c956971548cd"
+  ],
+  "recipe_card_ids": [
+    "recipe_d55eb7e30394"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [
+    "drule_691595af91b9"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.5,
+    "design_rule": 1.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "1ea61295e3c3"
+  ],
+  "evidence_trace_ids": [
+    "trace_78dc4ab1d135",
+    "trace_fa46eeeb5839"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T23:45:01.890389",
+  "updated_at": "2026-04-23T23:45:37.060223"
+}

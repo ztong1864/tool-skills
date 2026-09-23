@@ -1,0 +1,242 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_bafbf93f0cfe",
+  "paper_id": "fc15206cdae2",
+  "title": "Two Novel Zinc(II) Metal–Organic Frameworks Based",
+  "year": 2011,
+  "doi": null,
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "Kr"
+  ],
+  "one_line_summary": "{Zn7(btc)4(dmtrz)2(H2O)5}n shows solvent_accessible_volume = 62.3 wt% for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "N2_uptake (N2) = 1.8 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 21.4 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "solvent_accessible_volume = 62.3 wt% at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "release of coordinated water → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "anion-dependent assembly → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use DMAC solvent during assembly of Zn-btc-dmtrz frameworks → DMAC enables assembly of compounds 1 and 2, whereas water, DMF, or DEF gave only unknown-phase powders"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] combine pyrazole or triazole donors with carboxylate ligands to build mixed-donor SBUs → enables construction of novel SBUs and can lead to novel porous MOFs under certain conditions"
+    },
+    {
+      "title": "Comparison",
+      "body": "MOF 2 vs HKUST-1 and H3[(Cu4Cl3)(BTTri)8]/en-H3[(Cu4Cl3)(BTTri)8]: winner=tie on CO2/N2_low_pressure_selectivity_by_slope_ratio"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_0142c277a354",
+    "trace_94ecdf628811",
+    "trace_60245446428b",
+    "trace_1c3ec255e6d8",
+    "trace_5367c6958a50",
+    "trace_0bdf127ff6b3",
+    "trace_c04ae2aa3758",
+    "trace_2efdf164b18b",
+    "trace_672b9b0ffc56",
+    "trace_e189501e2120",
+    "trace_7373fb43fe01",
+    "trace_124d7c8ba124",
+    "trace_6b1684c520e0",
+    "trace_0024790b72d8",
+    "trace_49f08ad06fe1",
+    "trace_b41f9b0cde8f",
+    "trace_76c7c9592713",
+    "trace_1f72b548435a",
+    "trace_091ff05799e3",
+    "trace_1e8bdb1b52f4",
+    "trace_e6741c6f83ab",
+    "trace_76a3b3e0c3fc",
+    "trace_1bb7d14ee3b5",
+    "trace_4e6440e9d055",
+    "trace_5957f9d5db6e",
+    "trace_f4fc2403a39d",
+    "trace_a243ae497e86",
+    "trace_c6cd44ce448b",
+    "trace_a26b4e8d3824",
+    "trace_07ec2591977e",
+    "trace_93e0eafe555f",
+    "trace_bb269e3e7f21",
+    "trace_2f0aa40c65e9",
+    "trace_50aaa496d215",
+    "trace_49fa876b14fe",
+    "trace_b1e6e696b5e8",
+    "trace_1590d73b0bb6",
+    "trace_fa6ff1e44f95",
+    "trace_2fbdc8672f74",
+    "trace_7bde3ca6d9ed",
+    "trace_63a172738937",
+    "trace_78dd468e0541",
+    "trace_595b0cc48233",
+    "trace_eb5c93ff760c",
+    "trace_79028768ca68",
+    "trace_f3a3f5c1f6b5",
+    "trace_e49ddec5e08a",
+    "trace_ff79dce8dab7",
+    "trace_03c44bc3c4e4",
+    "trace_b710180e9e87",
+    "trace_13ac044c9b59",
+    "trace_0df7a074531f",
+    "trace_46f5630b19be",
+    "trace_0e4f6cfce1ed",
+    "trace_bdf99a37bd97",
+    "trace_ea4bbe390a3c",
+    "trace_c4d36a7d7545",
+    "trace_80bf0a868b1a",
+    "trace_91c24a305918",
+    "trace_ad1711df657b",
+    "trace_76fa97a53203",
+    "trace_8bdc2954f824",
+    "trace_aef3f8e6f7f0",
+    "trace_77abe6985e7e",
+    "trace_0142c277a354",
+    "trace_091ff05799e3",
+    "trace_1c3ec255e6d8",
+    "trace_1f72b548435a",
+    "trace_aef3f8e6f7f0",
+    "trace_c6cd44ce448b",
+    "trace_fa6ff1e44f95",
+    "trace_77abe6985e7e",
+    "trace_672b9b0ffc56",
+    "trace_b710180e9e87",
+    "trace_ff79dce8dab7",
+    "trace_e6741c6f83ab",
+    "trace_76fa97a53203",
+    "trace_49fa876b14fe",
+    "trace_a243ae497e86",
+    "trace_0df7a074531f",
+    "trace_b1e6e696b5e8",
+    "trace_bdf99a37bd97",
+    "trace_f4fc2403a39d",
+    "trace_78dd468e0541",
+    "trace_03c44bc3c4e4",
+    "trace_ad1711df657b",
+    "trace_e49ddec5e08a",
+    "trace_46f5630b19be",
+    "trace_94ecdf628811",
+    "trace_5957f9d5db6e",
+    "trace_595b0cc48233",
+    "trace_13ac044c9b59",
+    "trace_1590d73b0bb6",
+    "trace_c04ae2aa3758",
+    "trace_76a3b3e0c3fc",
+    "trace_93e0eafe555f",
+    "trace_50aaa496d215",
+    "trace_60245446428b",
+    "trace_1bb7d14ee3b5",
+    "trace_0024790b72d8",
+    "trace_0bdf127ff6b3",
+    "trace_e189501e2120",
+    "trace_7373fb43fe01",
+    "trace_6b1684c520e0",
+    "trace_0e4f6cfce1ed",
+    "trace_76c7c9592713",
+    "trace_ea4bbe390a3c",
+    "trace_a26b4e8d3824",
+    "trace_1e8bdb1b52f4",
+    "trace_2efdf164b18b",
+    "trace_49f08ad06fe1",
+    "trace_f3a3f5c1f6b5",
+    "trace_63a172738937",
+    "trace_5367c6958a50",
+    "trace_124d7c8ba124",
+    "trace_79028768ca68",
+    "trace_bb269e3e7f21",
+    "trace_80bf0a868b1a",
+    "trace_8bdc2954f824",
+    "trace_c4d36a7d7545",
+    "trace_07ec2591977e",
+    "trace_eb5c93ff760c",
+    "trace_2f0aa40c65e9",
+    "trace_7bde3ca6d9ed",
+    "trace_91c24a305918",
+    "trace_b41f9b0cde8f",
+    "trace_2fbdc8672f74",
+    "trace_4e6440e9d055"
+  ],
+  "measurement_card_ids": [
+    "mcard_0f754545a1b2",
+    "mcard_308b0d9606d4",
+    "mcard_3d93ba571009",
+    "mcard_2bae995c86ed"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_97da6f91c6aa",
+    "mechcard_04ceaa1cd56a",
+    "mechcard_84135bdcd653",
+    "mechcard_c97ab25a79b3"
+  ],
+  "recipe_card_ids": [
+    "recipe_157d44ff840f",
+    "recipe_410243a19fad"
+  ],
+  "claim_card_ids": [
+    "claim_752f775caaa9",
+    "claim_5043160f35cb",
+    "claim_e3bbe05d4e6e",
+    "claim_3c8abb6479a5",
+    "claim_2141cf19e192",
+    "claim_60b39b049ed0",
+    "claim_032e5084f0ac"
+  ],
+  "design_rule_card_ids": [
+    "drule_3b8feb0669df",
+    "drule_9f2d0f429390"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_ec0705b2fe4c",
+    "comp_58f084e01cfc"
+  ],
+  "failure_case_card_ids": [
+    "fail_3cd76f97a9a4",
+    "fail_119be75e6161",
+    "fail_4ec3d42d432e"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_68e17171ea6b"
+  ],
+  "dossier_ids": [
+    "dossier_e02a92b0c5b9"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MOF 1 has limited thermal robustness: TGA shows continuous mass loss on heating, indicating low thermal stability after coordinated water is released.",
+    "Gas adsorption indicates MOF 2 is a potential microporous adsorbent for CO2/N2 separation at room temperature.",
+    "Pyrazole/triazole and carboxylate groups have compatible coordination geometries; the bent [M2(trz)2] motif provides space for carboxylates to form shared paddle-wheel SBUs."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.216279",
+  "updated_at": "2026-04-24T00:19:48.216284",
+  "raw_path": "相关文献/Ling 等 - 2011 - Two Novel Zinc(II) Metal–Organic Frameworks Based .pdf",
+  "authors": [
+    "Ling"
+  ]
+}

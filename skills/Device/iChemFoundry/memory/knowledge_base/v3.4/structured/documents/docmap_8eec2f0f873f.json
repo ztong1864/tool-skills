@@ -1,0 +1,74 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_8eec2f0f873f",
+  "paper_id": "fc50783c6918",
+  "raw_path": "相关文献/Hu 等 - 2024 - Efficient carbon dioxide capture from flue gas and.pdf",
+  "title": "Efficient carbon dioxide capture from flue gas and",
+  "authors": [
+    "Hu"
+  ],
+  "year": 2024,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2",
+    "Xe",
+    "Kr"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UTSA-16",
+    "ZU-301",
+    "MOF-808-Gly",
+    "MOF-808",
+    "CALF-20",
+    "SIFSIX-3-Cu",
+    "SIFSIX-2-Cu-i",
+    "USTA-16",
+    "MOF-1",
+    "Qc-5-Cu-sql",
+    "MOF-74",
+    "SIFSIX-3-Ni",
+    "MOF-505"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "BTC"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "sql"
+  ],
+  "key_sections": {
+    "results_summary": "Separation and Purification Technology 343 (2024) 127099\nAvailable online 13 March 2024\n1383-5866/© 2024 Elsevier B.V. All rights reserved.\nEfficient carbon dioxide capture from flue gas and natural g"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:50:40.661043"
+}

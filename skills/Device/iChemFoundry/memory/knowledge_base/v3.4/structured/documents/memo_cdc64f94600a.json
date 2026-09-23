@@ -1,0 +1,137 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_cdc64f94600a",
+  "paper_id": "2c0d01aac737",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "Kr"
+  ],
+  "one_line_summary": "Zn2(atz)2(CO3) shows Ar_pore_size_distribution = 87.0 K for Ar",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "alkaline_stability_pH_13 = 0.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Ar_pore_size_distribution (Ar) = 87.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "N2_adsorption_isotherm (N2) = 77.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "two_CO2_binding_sites_with_accessible_solvent_surface → selectivity"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] replace Hatz with Htrz in the synthesis: the synthesis produced an unknown nonporous product instead of the porous target material"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_3c5dbf203517",
+    "trace_cbefde20d7d4",
+    "trace_4a4e6b33114c",
+    "trace_df8ee012fadd",
+    "trace_1368b0f2420c",
+    "trace_99513686c022",
+    "trace_6fbabee91f44",
+    "trace_27a5cbd48bd7",
+    "trace_fb72e3f3c941",
+    "trace_d3932a85e088",
+    "trace_bb8d2ccff2dc",
+    "trace_3cc448fc3733",
+    "trace_5f5844050222",
+    "trace_8866d6c66a57",
+    "trace_f8da7cbec8e3",
+    "trace_6d12badcf681",
+    "trace_77a5a68280e2",
+    "trace_95efe3c5740c",
+    "trace_89575c65c638",
+    "trace_1557fc23a24e",
+    "trace_5359ea466aa9",
+    "trace_108ce55ba152",
+    "trace_53457d941f71",
+    "trace_1e5dd9a4e8dd",
+    "trace_535ee22c5c6b",
+    "trace_e3de0bbb7ba2",
+    "trace_5f5844050222",
+    "trace_77a5a68280e2",
+    "trace_6d12badcf681",
+    "trace_4a4e6b33114c",
+    "trace_99513686c022",
+    "trace_535ee22c5c6b",
+    "trace_95efe3c5740c",
+    "trace_1e5dd9a4e8dd",
+    "trace_3c5dbf203517",
+    "trace_f8da7cbec8e3",
+    "trace_108ce55ba152",
+    "trace_bb8d2ccff2dc",
+    "trace_5359ea466aa9",
+    "trace_53457d941f71",
+    "trace_1368b0f2420c",
+    "trace_6fbabee91f44",
+    "trace_fb72e3f3c941",
+    "trace_3cc448fc3733",
+    "trace_d3932a85e088",
+    "trace_89575c65c638",
+    "trace_e3de0bbb7ba2",
+    "trace_27a5cbd48bd7",
+    "trace_df8ee012fadd",
+    "trace_8866d6c66a57",
+    "trace_1557fc23a24e",
+    "trace_cbefde20d7d4"
+  ],
+  "measurement_card_ids": [
+    "mcard_ec7aafaf4f9a",
+    "mcard_5673d9ac6bce",
+    "mcard_eb8e4e92a422"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_16daebcce4aa"
+  ],
+  "recipe_card_ids": [
+    "recipe_1047aef0cd04"
+  ],
+  "claim_card_ids": [
+    "claim_3132b486beb1",
+    "claim_0f2f74148268",
+    "claim_c6c39f1fb7ed",
+    "claim_91ca89cefd77",
+    "claim_8581c6e1e30e",
+    "claim_ea71acf8a233"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_8ac7bda3526c",
+    "fail_fd934333ec45"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_aa5eb49a30e2"
+  ],
+  "dossier_ids": [
+    "dossier_8ea599db73b9"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Water adsorption thermodynamics of Zn2(atz)2(CO3) were analyzed by virial fitting, and Qst values for H2O vapor were derived from the isotherms.",
+    "Zn2(atz)2(CO3) shows limited chemical stability in strong base: after treatment at pH 13, no solid remained.",
+    "Zn2(atz)2(CO3) can be regenerated and reused in multicycle breakthrough tests under 40% RH by heating to 423 K in flowing He after each cycle."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.325402",
+  "updated_at": "2026-04-24T00:19:51.325404",
+  "raw_path": "相关文献/sc4c01172_si_001.pdf"
+}

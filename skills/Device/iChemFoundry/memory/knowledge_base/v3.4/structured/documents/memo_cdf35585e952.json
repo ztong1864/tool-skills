@@ -1,0 +1,228 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_cdf35585e952",
+  "paper_id": "a75f77b10e12",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "Kr"
+  ],
+  "one_line_summary": "{Zn7(btc)4(dmtrz)2(H2O)5}n shows solvent_accessible_volume = 62.3 dimensionless for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 21.4 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "air_stability_duration = 24.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "N2_uptake (N2) = 1.8 wt% at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "DMAC solvent in assembly → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "anion-dependent assembly → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use DMAC as the synthesis solvent for Zn-btc-dmtrz systems → DMAC enabled crystalline structures 1 and 2 based on triazole-carboxylate shared paddle-wheel units, whereas other tested solvents gave unknown-phase powders"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] replace H3btc with other carboxylate ligands under suitable conditions → can yield novel porous MOFs based on the special triazole-carboxylate units"
+    },
+    {
+      "title": "Comparison",
+      "body": "dihedral angle in [Zn2(O2C)(NN)2] SBU vs dihedral angle in bent [M2(trz)2] SBU: winner=tie on dihedral_angle_similarity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_de4236402038",
+    "trace_903f7691b303",
+    "trace_d68a20c434e1",
+    "trace_076f3c604cec",
+    "trace_fe9c91436f85",
+    "trace_3124e3f75b60",
+    "trace_3cd626444aa1",
+    "trace_4d839ac4e45f",
+    "trace_dffbb4369686",
+    "trace_7124e061409c",
+    "trace_b68cb0ec1273",
+    "trace_1ea49d8e8693",
+    "trace_1288c4e228ab",
+    "trace_69f0dd7ffa8b",
+    "trace_02782b340a90",
+    "trace_b3a994e85db0",
+    "trace_b76df1ba5479",
+    "trace_7c8955005430",
+    "trace_043c740d60f3",
+    "trace_8f3967396e36",
+    "trace_389fb6a4c9eb",
+    "trace_2baccad63ef4",
+    "trace_d367ad8c33d8",
+    "trace_1e9b7c1ad552",
+    "trace_43988e03f010",
+    "trace_4d9e7360d262",
+    "trace_4b8bcf6cb2e6",
+    "trace_156519df3ca2",
+    "trace_929ac488ce27",
+    "trace_37c601b8e8e5",
+    "trace_191be192ede3",
+    "trace_40a9184d60e1",
+    "trace_56dd05bb089f",
+    "trace_5abefc28a4fa",
+    "trace_282869f15b11",
+    "trace_16d0f43523e0",
+    "trace_36bec3aadc54",
+    "trace_9fb92ff24f37",
+    "trace_57a3fec5d3ed",
+    "trace_e9ce8066d955",
+    "trace_14675fc54584",
+    "trace_75bccf7a8cf3",
+    "trace_3da7dc28435c",
+    "trace_8e70aa907b90",
+    "trace_23e39e4f1a32",
+    "trace_5394d8806579",
+    "trace_a9cf7b948163",
+    "trace_ed2fe070bfec",
+    "trace_a1d94c7a9ac3",
+    "trace_40f83bedaf2c",
+    "trace_0edfd7463f91",
+    "trace_54145b9c185a",
+    "trace_682a54d21608",
+    "trace_f610c890d85d",
+    "trace_eb3914677b95",
+    "trace_8fa24fee051c",
+    "trace_f1ed2f2fa533",
+    "trace_8fa24fee051c",
+    "trace_43988e03f010",
+    "trace_37c601b8e8e5",
+    "trace_3124e3f75b60",
+    "trace_b3a994e85db0",
+    "trace_36bec3aadc54",
+    "trace_8e70aa907b90",
+    "trace_0edfd7463f91",
+    "trace_f610c890d85d",
+    "trace_1288c4e228ab",
+    "trace_b68cb0ec1273",
+    "trace_389fb6a4c9eb",
+    "trace_40a9184d60e1",
+    "trace_a9cf7b948163",
+    "trace_75bccf7a8cf3",
+    "trace_e9ce8066d955",
+    "trace_8f3967396e36",
+    "trace_7c8955005430",
+    "trace_a1d94c7a9ac3",
+    "trace_4b8bcf6cb2e6",
+    "trace_3cd626444aa1",
+    "trace_2baccad63ef4",
+    "trace_b76df1ba5479",
+    "trace_7124e061409c",
+    "trace_043c740d60f3",
+    "trace_57a3fec5d3ed",
+    "trace_5394d8806579",
+    "trace_54145b9c185a",
+    "trace_1ea49d8e8693",
+    "trace_dffbb4369686",
+    "trace_9fb92ff24f37",
+    "trace_eb3914677b95",
+    "trace_fe9c91436f85",
+    "trace_156519df3ca2",
+    "trace_282869f15b11",
+    "trace_903f7691b303",
+    "trace_191be192ede3",
+    "trace_16d0f43523e0",
+    "trace_56dd05bb089f",
+    "trace_1e9b7c1ad552",
+    "trace_02782b340a90",
+    "trace_3da7dc28435c",
+    "trace_4d9e7360d262",
+    "trace_f1ed2f2fa533",
+    "trace_ed2fe070bfec",
+    "trace_69f0dd7ffa8b",
+    "trace_076f3c604cec",
+    "trace_5abefc28a4fa",
+    "trace_929ac488ce27",
+    "trace_40f83bedaf2c",
+    "trace_d68a20c434e1",
+    "trace_14675fc54584",
+    "trace_d367ad8c33d8",
+    "trace_4d839ac4e45f",
+    "trace_de4236402038",
+    "trace_682a54d21608",
+    "trace_23e39e4f1a32"
+  ],
+  "measurement_card_ids": [
+    "mcard_b891915f7e04",
+    "mcard_7870d6608d5b",
+    "mcard_4664d927da3e",
+    "mcard_4a97fad90c94"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_6b2bff77b367",
+    "mechcard_4621bedeeb73",
+    "mechcard_c2002e5a7ce4",
+    "mechcard_56fbc0cff53d",
+    "mechcard_af9580d4fae3"
+  ],
+  "recipe_card_ids": [
+    "recipe_2b757624c2d7",
+    "recipe_6d62bb083b0b"
+  ],
+  "claim_card_ids": [
+    "claim_0e8096490d35",
+    "claim_108be7d5fad7",
+    "claim_b7e94cae8bbc",
+    "claim_e17f24d6d061",
+    "claim_a51a77e13c63",
+    "claim_c1e47b3f1e5d",
+    "claim_1289d7311773"
+  ],
+  "design_rule_card_ids": [
+    "drule_9a1181fa6247",
+    "drule_80c2223394c0",
+    "drule_7c7b85ea9247",
+    "drule_a17e1f98db39"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_b28b24c85d5c",
+    "comp_e98ab339e37d"
+  ],
+  "failure_case_card_ids": [
+    "fail_ad095b204394",
+    "fail_a523cc4c8b18",
+    "fail_4c367d796248"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_68e17171ea6b"
+  ],
+  "dossier_ids": [
+    "dossier_e02a92b0c5b9"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Pyrazole and carboxylate groups have similar coordination geometries and can be interchanged to build new SBUs; a [Zn4O(O2C)2(NN)4] unit parallels the classic Zn4O(O2C)6 cluster.",
+    "Two new porous Zn-MOFs, {Zn7(btc)4(dmtrz)2(H2O)5}n (1) and {[Zn6(btc)4(dmtrz)3]·3H3O·2H2O}n (2), were solvothermally synthesized from btc and dmtrz ligands.",
+    "The bending configuration of [M2(trz)2] can provide coordination space for carboxylates, enabling construction of novel triazole-carboxylate shared paddle-wheel SBUs."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.024114",
+  "updated_at": "2026-04-24T00:19:51.024118",
+  "raw_path": "相关文献/ling2011.pdf.pdf"
+}

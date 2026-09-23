@@ -1,0 +1,71 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_8d82474ab740",
+  "paper_id": "183091a2e8c1",
+  "raw_path": "相关文献/Zn-硝酸Angew Chem Int Ed - 2025 - Wang - Programmed Pore Engineering in an Isoreticular Triazole MOF Series for One‐Step Ethylene.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ZJU-197",
+    "ZSTU-31",
+    "ZSTU-32",
+    "NTU-65",
+    "Qc-5-Cu",
+    "MOF-74",
+    "MOF-2",
+    "ZSTU-30",
+    "NTU-67",
+    "ZNU-6",
+    "SIFSIX-3-Ni",
+    "SU-101-Bi"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Mg",
+    "In",
+    "Ga",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "DOBDC",
+    "BDC",
+    "TED"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "Ethylene (C2H4) puriﬁcation from CO2/C2H2/C2H4 ternary mixtures is industrially crucial yet remains highly",
+    "conclusion": "In summary, we have demonstrated a programmed pore-\nengineering strategy for isoreticular MOFs, in which the",
+    "results_summary": "Research Article\nHow to cite: Angew. Chem. Int. Ed. 2026, 65, e22675\ndoi.org/10.1002/anie.202522675\nGas Separation Hot Paper\nProgrammed Pore Engineering in an Isoreticular Triazole–MOF Series\nfor One-"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:16:29.203517"
+}

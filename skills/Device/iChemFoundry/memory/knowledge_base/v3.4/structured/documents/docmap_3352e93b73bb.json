@@ -1,0 +1,84 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_3352e93b73bb",
+  "paper_id": "987bc8a29237",
+  "raw_path": "相关文献/Zhang 等 - 2022 - Studies on the removal of phosphate in water throu.pdf",
+  "title": "Studies on the removal of phosphate in water throu",
+  "authors": [
+    "Zhang"
+  ],
+  "year": 2022,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "GUPT-2",
+    "MOF-500",
+    "GUT-3",
+    "CM-300",
+    "MIL-88B",
+    "OC-6",
+    "OLEX-2",
+    "UIO-66",
+    "II-3",
+    "ZIF-8",
+    "UiO-66",
+    "MOF-700",
+    "UIO-66-NH",
+    "MOF-500-P",
+    "MIL-88",
+    "MIL-101",
+    "UiO-66-NH",
+    "CM-150",
+    "UIO-66-Br",
+    "UIO-66-NO",
+    "MOF-600"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Fe",
+    "Al",
+    "Zr",
+    "Mn",
+    "Mg",
+    "In",
+    "V",
+    "Mo",
+    "Ce",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "BDC",
+    "TED",
+    "BPDC"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "dia",
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "A novel zinc-based metal–organic framework, {[Zn3(atz)2(pda)2]\u00012(H2O)}n (Zn-MOF;\nHatz is 5-aminote-1H-terazole; H2pda is malonic acid), was prepared using the solvothermal",
+    "conclusion": "In this study, a novel zinc-based MOF (Zn-MOF) was synthe-\nsized using low-cost, low-toxic zinc acetate dihydrate metal salt",
+    "results_summary": "ORIGINAL ARTICLE\nStudies on the removal of phosphate in water\nthrough adsorption using a novel Zn-MOF and its\nderived materials\nYujie Zhang a,b, Xinping Kang a, Penghu Guo a, Haijun Tan b,*, Shu-Hua Z"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:56:50.325881"
+}

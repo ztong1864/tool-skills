@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_19e2effb3ccc",
+  "paper_id": "03636bfd549e",
+  "raw_path": "相关文献/Zn-甲酸等-Lin 等。 - 2008 - Pillaring Zn-Triazolate Layers with Flexible Aliph.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "Kr"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "Solvothermal treatments of Zn(II) salts and 3-amino-1H-1,2,4-triazole in mixed water-dimethylformamide solvent",
+    "conclusion": "In summary, we have successfully synthesized a series of\nnew coordination polymers of Zn(II), 3-amino-1H-1,2,4-triaz-",
+    "results_summary": "Pillaring Zn-Triazolate Layers with Flexible Aliphatic\nDicarboxylates into Three-Dimensional Metal-Organic Frameworks\nYan-Yong Lin, Yue-Biao Zhang, Jie-Peng Zhang,* and Xiao-Ming Chen*\nMOE Key Laborat"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:15:57.394453"
+}

@@ -1,0 +1,37 @@
+{
+  "code": 1,
+  "message": "Ok",
+  "data": {
+    "f281ff6f-9766-473f-9941-2ddfc0ece878": [
+      {
+        "m": 0,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "c7bf6aff-5d29-4d81-9096-4a3336cd0e69": [
+      {
+        "m": 0,
+        "n": 1,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ]
+  },
+  "error": null,
+  "timestamp": 1778830070889,
+  "path": "/api/workflow/sub-workflow/3a15a704-4491-237f-ea81-6f298188cb9c/step-parameters"
+}

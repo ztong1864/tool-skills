@@ -1,0 +1,147 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_77c64d36ab46",
+  "paper_id": "54f9fbaf30b0",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "{[Zn(atz)(C2O4)0.5]-H2O}n shows thermal_stability_temperature = 347.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "pore_volume_ratio = 28.6 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_temperature = 347.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "intramolecular_hydrogen_bonding_between_amino_and_carboxylate_groups → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "intraligand_charge_transfer → stability"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_1bc8c3cba525",
+    "trace_705b336fe484",
+    "trace_0cea9a5b809c",
+    "trace_a0c4be46de18",
+    "trace_a4d9313815f7",
+    "trace_499e51a2e494",
+    "trace_a4bdd946268d",
+    "trace_82669514a7c5",
+    "trace_333295dc6d63",
+    "trace_c141373db5fb",
+    "trace_15d5e16a0c2c",
+    "trace_3eb7733abc20",
+    "trace_6fa4b2baeaf6",
+    "trace_955d8eecb1c0",
+    "trace_79aaedd88bd4",
+    "trace_1d7adcb486fa",
+    "trace_1d2cbd4d527d",
+    "trace_1ba14800ac5f",
+    "trace_934a359f6253",
+    "trace_41c2a03d6ed9",
+    "trace_2918b5b0aab4",
+    "trace_f4588824cf2d",
+    "trace_f4f9424ec4d3",
+    "trace_41db98b63ec9",
+    "trace_a8cc767d57d0",
+    "trace_f63783b58d09",
+    "trace_c647f6662fa4",
+    "trace_a739e1ecaea8",
+    "trace_988cce4ed683",
+    "trace_bcb49b674102",
+    "trace_5c8e5f2b861b",
+    "trace_3a76d3ab74bc",
+    "trace_9b0c0c967f6d",
+    "trace_b0eaf6f3ba58",
+    "trace_bcb49b674102",
+    "trace_f4f9424ec4d3",
+    "trace_1d2cbd4d527d",
+    "trace_c141373db5fb",
+    "trace_0cea9a5b809c",
+    "trace_1bc8c3cba525",
+    "trace_f63783b58d09",
+    "trace_934a359f6253",
+    "trace_a8cc767d57d0",
+    "trace_1d7adcb486fa",
+    "trace_a4d9313815f7",
+    "trace_5c8e5f2b861b",
+    "trace_988cce4ed683",
+    "trace_3a76d3ab74bc",
+    "trace_a0c4be46de18",
+    "trace_a4bdd946268d",
+    "trace_c647f6662fa4",
+    "trace_a739e1ecaea8",
+    "trace_41c2a03d6ed9",
+    "trace_333295dc6d63",
+    "trace_82669514a7c5",
+    "trace_2918b5b0aab4",
+    "trace_f4588824cf2d",
+    "trace_705b336fe484",
+    "trace_79aaedd88bd4",
+    "trace_15d5e16a0c2c",
+    "trace_1ba14800ac5f",
+    "trace_6fa4b2baeaf6",
+    "trace_3eb7733abc20",
+    "trace_955d8eecb1c0",
+    "trace_9b0c0c967f6d",
+    "trace_b0eaf6f3ba58",
+    "trace_41db98b63ec9",
+    "trace_499e51a2e494"
+  ],
+  "measurement_card_ids": [
+    "mcard_49b6ad3696d2",
+    "mcard_ebaf7fa3e1ce"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_809966999f3f",
+    "mechcard_6379bdf5ba43"
+  ],
+  "recipe_card_ids": [
+    "recipe_98ab94074e2d",
+    "recipe_23727d2b32fd"
+  ],
+  "claim_card_ids": [
+    "claim_bbfbebbffdbc",
+    "claim_03f293cd400d",
+    "claim_fbe8fc98b04b",
+    "claim_130628106784",
+    "claim_9768c6037c76",
+    "claim_bfe6275663db",
+    "claim_8e30345c6eae"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_3888ee0e9c8c"
+  ],
+  "dossier_ids": [
+    "dossier_4de6df7d0c36"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Single-crystal XRD shows compound 1 forms a 3D porous pillar-layer framework with 6-connected pcu topology in monoclinic P21/c.",
+    "Compound 1 decomposes above 347 °C, and the final residue is assigned to ZnO (observed 36.02%, calculated 38.48%).",
+    "TGA indicates an 8.12% mass loss at 110–145 °C from lattice water removal, while the desolvated framework remains stable up to 347 °C."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.533966",
+  "updated_at": "2026-04-24T00:19:51.533969",
+  "raw_path": "相关文献/zhao2014.pdf.pdf"
+}

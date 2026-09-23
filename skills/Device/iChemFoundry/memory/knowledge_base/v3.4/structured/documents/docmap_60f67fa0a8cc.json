@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_60f67fa0a8cc",
+  "paper_id": "6d91fe8710db",
+  "raw_path": "相关文献/Gao 等 - 2013 - Syntheses, structures, and photoluminescent proper.pdf",
+  "title": "Syntheses, structures, and photoluminescent proper",
+  "authors": [
+    "Gao"
+  ],
+  "year": 2013,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "Xe",
+    "Kr"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "tricarboxylate"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "for compounds 1–5\nComplex\n1\n2\n3\n4\n5\nEmpirical formula\nC9H8N4ZnO2\nC12H10N8Zn2O5\nC14H14N8Zn2O4\nC22H18N8Zn4O15",
+    "results_summary": "Cite this: CrystEngComm, 2013, 15, 3261\nReceived 10th January 2013,\nAccepted 14th February 2013\nSyntheses, structures, and photoluminescent properties\nof a series of zinc(II)–3-amino-1,2,4-triazolate\n"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:44:57.740482"
+}

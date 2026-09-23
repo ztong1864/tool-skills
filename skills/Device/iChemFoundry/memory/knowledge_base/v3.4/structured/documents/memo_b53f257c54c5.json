@@ -1,0 +1,193 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_b53f257c54c5",
+  "paper_id": "1f71b819131c",
+  "title": "Two isostructural amine-functionalized 3D self-pen",
+  "year": 2013,
+  "doi": null,
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2"
+  ],
+  "one_line_summary": "[M(atz)(bdc)0.5] shows framework_stability_limit = 420.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "BET_surface_area (CO2) = 377.9 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "framework_stability_limit = 420.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "adsorption_ratio_CO2/N2 (CO2) = 94.0 dimensionless at 0.162 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "highly_polar_pores_with_O_donors_NH2_phenyl_pi_and_electron_rich_atz → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "uncoordinated_carboxylate_oxygen_atoms_on_pore_walls → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] incorporate specific polar functional groups such as -NH2, -COOH, or -OH on ligands → augments CO2 adsorptive affinity and selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce amine groups and small sized pores in the framework → constructs an efficient CO2 selective sorption material"
+    },
+    {
+      "title": "Comparison",
+      "body": "the reported MOF CO2/N2 ratio vs many MOFs with highly polar functional sites in the pores: winner=subject_a on CO2/N2_selectivity_ratio"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_161c356a698d",
+    "trace_60619cb345da",
+    "trace_4111b65895c4",
+    "trace_a6f6cc0418f7",
+    "trace_893b973a479c",
+    "trace_1ceb95b14d13",
+    "trace_df624cea33c8",
+    "trace_9c8a6aee0feb",
+    "trace_59c56ffb9823",
+    "trace_25ef9969f65d",
+    "trace_9019a7f7d566",
+    "trace_b4a78756ab56",
+    "trace_2e4a889f6b91",
+    "trace_53bdb0f7ced7",
+    "trace_937104514552",
+    "trace_630ed261fb8c",
+    "trace_dd3131a47b82",
+    "trace_ddf35f3ae29a",
+    "trace_0b4f21f38d95",
+    "trace_00b14c37d797",
+    "trace_cbbbffc0bce6",
+    "trace_b75af4d552a8",
+    "trace_a6514ecc1e9f",
+    "trace_41475cdd9b34",
+    "trace_d7527966a6de",
+    "trace_a8ca0b12b365",
+    "trace_2ca223d8ef8a",
+    "trace_1acef33c5c25",
+    "trace_ba8d36b76866",
+    "trace_1c037866d32c",
+    "trace_1ceb708f31fd",
+    "trace_d116f81805b0",
+    "trace_2c9121f5879f",
+    "trace_08512598e031",
+    "trace_ed671a0771d8",
+    "trace_bc1b39aa2efe",
+    "trace_377f452660f8",
+    "trace_aad9a5e1aa0a",
+    "trace_22b108eb0791",
+    "trace_a62ea5f4da9e",
+    "trace_9019a7f7d566",
+    "trace_ba8d36b76866",
+    "trace_1c037866d32c",
+    "trace_dd3131a47b82",
+    "trace_630ed261fb8c",
+    "trace_377f452660f8",
+    "trace_60619cb345da",
+    "trace_4111b65895c4",
+    "trace_ddf35f3ae29a",
+    "trace_22b108eb0791",
+    "trace_aad9a5e1aa0a",
+    "trace_53bdb0f7ced7",
+    "trace_0b4f21f38d95",
+    "trace_a8ca0b12b365",
+    "trace_a6f6cc0418f7",
+    "trace_a62ea5f4da9e",
+    "trace_cbbbffc0bce6",
+    "trace_59c56ffb9823",
+    "trace_1ceb708f31fd",
+    "trace_b4a78756ab56",
+    "trace_d7527966a6de",
+    "trace_b75af4d552a8",
+    "trace_bc1b39aa2efe",
+    "trace_41475cdd9b34",
+    "trace_08512598e031",
+    "trace_a6514ecc1e9f",
+    "trace_1acef33c5c25",
+    "trace_00b14c37d797",
+    "trace_ed671a0771d8",
+    "trace_1ceb95b14d13",
+    "trace_df624cea33c8",
+    "trace_2ca223d8ef8a",
+    "trace_9c8a6aee0feb",
+    "trace_937104514552",
+    "trace_2e4a889f6b91",
+    "trace_25ef9969f65d",
+    "trace_2c9121f5879f",
+    "trace_161c356a698d",
+    "trace_d116f81805b0",
+    "trace_893b973a479c"
+  ],
+  "measurement_card_ids": [
+    "mcard_37a51129973c",
+    "mcard_5ba5eafa9aeb",
+    "mcard_86db58dfa0a7",
+    "mcard_79ac447f50fc",
+    "mcard_80c50660f8c7",
+    "mcard_4c434c10b970",
+    "mcard_4a24ad939c70",
+    "mcard_c406fe78df22",
+    "mcard_d004c7d99389"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_6519862a577e",
+    "mechcard_97fd05b929c5"
+  ],
+  "recipe_card_ids": [
+    "recipe_6bfc96b408fe",
+    "recipe_3e6f60501564"
+  ],
+  "claim_card_ids": [
+    "claim_860334283a1e",
+    "claim_960df1e041d8",
+    "claim_1069a67d5adf",
+    "claim_5ddfd8cf6f9e",
+    "claim_4d6463f82bc7",
+    "claim_fe3ca3449a6f",
+    "claim_9b6aaf73e107",
+    "claim_5b7f1ed1c616"
+  ],
+  "design_rule_card_ids": [
+    "drule_58442bd053f9",
+    "drule_80541f53fa9d"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_200c38eaa2bb"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_64d90fdebd09"
+  ],
+  "dossier_ids": [
+    "dossier_f9ad396fca86"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Despite porosity, H2 and N2 adsorption at 77 K and 1 atm is almost negligible, only 1.5 and 0.8 cm3 g−1, respectively.",
+    "Two isostructural 3D microporous MOFs, [M(atz)(bdc)0.5] with M = Zn or Co, were synthesized solvothermally in high yield.",
+    "Both MOFs show high thermal and chemical stability: TGA is stable to 405 °C and crystallinity is retained after 7 days in water."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.269189",
+  "updated_at": "2026-04-24T00:19:48.269192",
+  "raw_path": "相关文献/Liu 等 - 2013 - Two isostructural amine-functionalized 3D self-pen.pdf",
+  "authors": [
+    "Liu"
+  ]
+}

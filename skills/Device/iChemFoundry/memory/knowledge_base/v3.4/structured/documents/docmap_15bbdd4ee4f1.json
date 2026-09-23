@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_15bbdd4ee4f1",
+  "paper_id": "22272f44e8c7",
+  "raw_path": "相关文献/Zn-磷酸-Vaidhyanathan 等。 - 2012 - Competition and Cooperativity in Carbon Dioxide So.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "CO2 Capture Materials\nDOI: 10.1002/anie.201105109\nCompetition and Cooperativity in Carbon Dioxide Sorption by Amine-\nFunctionalized Metal–Organic Frameworks**\nRamanathan Vaidhyanathan, Simon S. Iremon"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:21:34.822853"
+}

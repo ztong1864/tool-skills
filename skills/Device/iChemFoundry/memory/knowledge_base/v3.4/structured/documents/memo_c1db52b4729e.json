@@ -1,0 +1,215 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_c1db52b4729e",
+  "paper_id": "5e115f0ab554",
+  "title": "Pillar-layer Zn–triazolate–dicarboxylate framework",
+  "year": 2023,
+  "doi": null,
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "C13H19N7O6Zn2 shows thermal_stability_temperature = 423.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "Qst_C2H4 (C2H4) = 22.72 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "water_resistance = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_temperature = 423.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "adjacent uncoordinated carboxylate-O atoms on pore surface → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "adjacent uncoordinated carboxylate-O atoms along channels → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce adjacent uncoordinated carboxylate-O atoms along the channels → promotes preferential recognition of C2H2 and C2H6 over C2H4"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a non-polar pore surface with smaller pore size → non-polar surface favors C2H6 while smaller pore size prefers C2H2"
+    },
+    {
+      "title": "Comparison",
+      "body": "HIAM-210 vs TJT-100: winner=subject_a on C2H2/C2H4_and_C2H6/C2H4_selectivities_for_C2H4/C2H6/C2H2_separation"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_7e16845f8ad1",
+    "trace_bff8252db8e7",
+    "trace_221ac016a77b",
+    "trace_93d603a5eb99",
+    "trace_469517723a50",
+    "trace_513bb791be9e",
+    "trace_fb90da151cf4",
+    "trace_59dcda6f7bf4",
+    "trace_a93078dbdbeb",
+    "trace_5b0c48faedb3",
+    "trace_a47026afb7d4",
+    "trace_55d1da2763e6",
+    "trace_a6dee4658974",
+    "trace_e3925478ea12",
+    "trace_319c87af4f9e",
+    "trace_10bf7f026ded",
+    "trace_5b633baf242d",
+    "trace_a532d5d307bf",
+    "trace_8ea32c339588",
+    "trace_09c64e47c3e1",
+    "trace_90eec44d05e8",
+    "trace_a90d294e2207",
+    "trace_f9f7ebdff63d",
+    "trace_0f636e81cbcf",
+    "trace_1dd3382b5d48",
+    "trace_dfe2dfe613af",
+    "trace_73f51c7bdf59",
+    "trace_5cf95f3de28f",
+    "trace_ba5c7dc8b5f8",
+    "trace_360f59f1211d",
+    "trace_1955de3e639b",
+    "trace_166ea0e301d0",
+    "trace_4ca227209f3c",
+    "trace_bc3ef8bef761",
+    "trace_fda7cae76b57",
+    "trace_2594949140a6",
+    "trace_ef3bd9353b00",
+    "trace_96cec98dfd57",
+    "trace_233ab075c3e2",
+    "trace_adfaada99ffd",
+    "trace_52a0a2d4e248",
+    "trace_ede2e5e169dc",
+    "trace_b11bf60a310d",
+    "trace_2e4682416184",
+    "trace_e81c59537a2a",
+    "trace_1ab6cd7a291c",
+    "trace_bc3ef8bef761",
+    "trace_96cec98dfd57",
+    "trace_5cf95f3de28f",
+    "trace_ede2e5e169dc",
+    "trace_73f51c7bdf59",
+    "trace_513bb791be9e",
+    "trace_a532d5d307bf",
+    "trace_2e4682416184",
+    "trace_166ea0e301d0",
+    "trace_09c64e47c3e1",
+    "trace_55d1da2763e6",
+    "trace_e3925478ea12",
+    "trace_a6dee4658974",
+    "trace_2594949140a6",
+    "trace_5b0c48faedb3",
+    "trace_93d603a5eb99",
+    "trace_8ea32c339588",
+    "trace_7e16845f8ad1",
+    "trace_0f636e81cbcf",
+    "trace_360f59f1211d",
+    "trace_a93078dbdbeb",
+    "trace_4ca227209f3c",
+    "trace_1dd3382b5d48",
+    "trace_1955de3e639b",
+    "trace_fb90da151cf4",
+    "trace_59dcda6f7bf4",
+    "trace_5b633baf242d",
+    "trace_bff8252db8e7",
+    "trace_adfaada99ffd",
+    "trace_b11bf60a310d",
+    "trace_469517723a50",
+    "trace_319c87af4f9e",
+    "trace_dfe2dfe613af",
+    "trace_ef3bd9353b00",
+    "trace_ba5c7dc8b5f8",
+    "trace_10bf7f026ded",
+    "trace_f9f7ebdff63d",
+    "trace_e81c59537a2a",
+    "trace_1ab6cd7a291c",
+    "trace_a90d294e2207",
+    "trace_a47026afb7d4",
+    "trace_90eec44d05e8",
+    "trace_221ac016a77b",
+    "trace_52a0a2d4e248",
+    "trace_233ab075c3e2",
+    "trace_fda7cae76b57"
+  ],
+  "measurement_card_ids": [
+    "mcard_45c4fca1d04e",
+    "mcard_b8d5a1039847",
+    "mcard_51fefa015565",
+    "mcard_d12a70761061",
+    "mcard_734d2f1caf9d",
+    "mcard_8a92721e8eaf",
+    "mcard_841f7e8b1fa1",
+    "mcard_697f709520eb",
+    "mcard_4f45ad4f5d8a",
+    "mcard_5791918ac9b9"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_dcb23b2e855f",
+    "mechcard_0f80d4683d7b",
+    "mechcard_068a56a8e281",
+    "mechcard_7af9e51251f7",
+    "mechcard_33693a62301a",
+    "mechcard_b52c903fe3e2",
+    "mechcard_bae29e0d8242"
+  ],
+  "recipe_card_ids": [
+    "recipe_3a8262a11ab6"
+  ],
+  "claim_card_ids": [
+    "claim_75265405e4ed",
+    "claim_f5843100c1b6",
+    "claim_30ebcb2cba6a",
+    "claim_423795056827",
+    "claim_aeec31e7e8f7",
+    "claim_ac6274050328",
+    "claim_dc59e04d7c3a"
+  ],
+  "design_rule_card_ids": [
+    "drule_1fe8cea56667",
+    "drule_15a305ed2fed",
+    "drule_034355b20ef7"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_d95058f8fc32"
+  ],
+  "failure_case_card_ids": [
+    "fail_66573fa25368"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_591084892e17"
+  ],
+  "dossier_ids": [
+    "dossier_c457d2f681b2"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Most MOFs with high C2H6/C2H4 selectivity have low C2H2 uptake, so they are insufficient for efficient one-step C2H2/C2H4/C2H6 separation.",
+    "Adjacent uncoordinated carboxylate-O sites act as strong binding sites, driving preferential adsorption of C2H6 and C2H2 over C2H4.",
+    "HIAM-210 combines a 4.02 Å pore size with a tailored pore environment, giving C2H2/C2H4 and C2H6/C2H4 selectivities of 2.0 each."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.384738",
+  "updated_at": "2026-04-24T00:19:48.384742",
+  "raw_path": "相关文献/Liu 等 - 2023 - Pillar-layer Zn–triazolate–dicarboxylate framework.pdf",
+  "authors": [
+    "Liu"
+  ]
+}

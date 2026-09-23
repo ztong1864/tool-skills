@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_3581f89fe13a",
+  "canonical_material_id": "mat_cd510915612d",
+  "canonical_name": "Na-SSZ-39(AEI-type)-zeolite",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": "aei",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_6f6a8d8a6058",
+    "mechcard_9dfae557c873",
+    "mechcard_ed3e94a008d6"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_591a9bb63504"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "e4f2dd03ed6d"
+  ],
+  "evidence_trace_ids": [
+    "trace_646e05496acd",
+    "trace_0f25d9406637",
+    "trace_7c50397eb2c6"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:04:55.191161",
+  "updated_at": "2026-04-23T22:05:21.168377"
+}

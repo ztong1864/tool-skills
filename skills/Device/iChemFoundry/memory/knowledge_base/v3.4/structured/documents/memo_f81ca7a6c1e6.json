@@ -1,0 +1,141 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_f81ca7a6c1e6",
+  "paper_id": "b3e6c07b82b5",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "Xe"
+  ],
+  "one_line_summary": "Design rule: introduce intramolecular and intermolecular hydrogen bonding together with aromatic ring stacking in",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "nitrate substitution and direct Cu-O coordination → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "hydrogen-bonded supramolecular assembly → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce intramolecular and intermolecular hydrogen bonding together with aromatic ring stacking in the crystal packing → complex stability increases"
+    },
+    {
+      "title": "Comparison",
+      "body": "[Cu(bipy)(C2O4)(NO3)]2(H2O)2 vs [Cu2(phen)2(C2O4)(H2O)2](NO3)2: winner=subject_a on Cu···O(nitrate) interaction distance"
+    },
+    {
+      "title": "Comparison",
+      "body": "[Cu2(phen)2(H2O)2(NO3)2] vs [Cu2(phen)2(C2O4)(H2O)2](NO3)2: winner=subject_a on nitrate coordination to Cu"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_2c51cecfb5fd",
+    "trace_c2b63525209b",
+    "trace_3932b1de1d12",
+    "trace_f8e6df2f3cb8",
+    "trace_f3cf003c005b",
+    "trace_29fe675b0461",
+    "trace_dd839d8b05c6",
+    "trace_e8bfcb37eea8",
+    "trace_4b427bc7e9e3",
+    "trace_0067fe77244a",
+    "trace_a9c695a3f3e8",
+    "trace_f67ba6b88da2",
+    "trace_df893c3cb07c",
+    "trace_f788f9d9db64",
+    "trace_b2832049f61d",
+    "trace_5b8d46b71eed",
+    "trace_a92212b438f5",
+    "trace_cdd0b78c5978",
+    "trace_5c02adda7a47",
+    "trace_51e151a124ed",
+    "trace_6487b517081b",
+    "trace_449deced584d",
+    "trace_db52b3655710",
+    "trace_b6f4f4ea3c30",
+    "trace_1d96208b2273",
+    "trace_1848fce87523",
+    "trace_f7c81d96061b",
+    "trace_f7c81d96061b",
+    "trace_f8e6df2f3cb8",
+    "trace_2c51cecfb5fd",
+    "trace_4b427bc7e9e3",
+    "trace_c2b63525209b",
+    "trace_b6f4f4ea3c30",
+    "trace_51e151a124ed",
+    "trace_5b8d46b71eed",
+    "trace_f3cf003c005b",
+    "trace_dd839d8b05c6",
+    "trace_1d96208b2273",
+    "trace_449deced584d",
+    "trace_6487b517081b",
+    "trace_cdd0b78c5978",
+    "trace_a92212b438f5",
+    "trace_0067fe77244a",
+    "trace_e8bfcb37eea8",
+    "trace_1848fce87523",
+    "trace_df893c3cb07c",
+    "trace_3932b1de1d12",
+    "trace_db52b3655710",
+    "trace_b2832049f61d",
+    "trace_f788f9d9db64",
+    "trace_a9c695a3f3e8",
+    "trace_f67ba6b88da2",
+    "trace_29fe675b0461",
+    "trace_5c02adda7a47"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_63c1a92396a6",
+    "mechcard_52a9504c909e",
+    "mechcard_28c555f8ab73",
+    "mechcard_60fb7229a912"
+  ],
+  "recipe_card_ids": [
+    "recipe_65e0c7c3823b"
+  ],
+  "claim_card_ids": [
+    "claim_4fa85b27b15f",
+    "claim_a77e666afcd2",
+    "claim_2bfbc1f279bc",
+    "claim_585c1f7a1632",
+    "claim_06869e66bdc8",
+    "claim_01689e21dd0d",
+    "claim_068600ec9cb3"
+  ],
+  "design_rule_card_ids": [
+    "drule_a52d91c9135d"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_70ae24b00b05",
+    "comp_84ffa7f210a8"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_83b8cb1faa82",
+    "mat_14baa4fb13a1"
+  ],
+  "dossier_ids": [
+    "dossier_6a122ba105aa",
+    "dossier_62296dd84d11"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Hydrogen bonding between coordinated water and nitrate links molecules into 1D infinite chains, and π-π stacking between phen ligands builds a 2D network.",
+    "In the complex, two Cu(II) ions are bridged by oxalate, and each Cu adopts a five-coordinate distorted square-pyramidal geometry.",
+    "IR and UV-vis data indicate phen coordinates through both N atoms; phen absorption bands shift and weaken after coordination due to reduced ring conjugation."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:52.138607",
+  "updated_at": "2026-04-24T00:19:52.138610",
+  "raw_path": "相关文献/草酸根桥联的双核铜髤配合物..._3)_2的合成及晶体结构_卢文贯.pdf"
+}

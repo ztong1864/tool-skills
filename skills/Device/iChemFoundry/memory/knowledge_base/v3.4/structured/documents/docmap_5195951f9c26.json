@@ -1,0 +1,62 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_5195951f9c26",
+  "paper_id": "99abd74c416a",
+  "raw_path": "相关文献/Das 等 - 2019 - Construction of a bifunctional Zn(II)–organic fram.pdf",
+  "title": "Construction of a bifunctional Zn(II)–organic fram",
+  "authors": [
+    "Das"
+  ],
+  "year": 2019,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C3H8"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Zn-1",
+    "MIL-101",
+    "MMPF-9",
+    "HKUST-1",
+    "MOF-505",
+    "UMCM-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Fe",
+    "Cr",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "dicarboxylate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "hkust",
+    "pcu"
+  ],
+  "key_sections": {
+    "results_summary": "INORGANIC  \nCHEMISTRY\nF R O N T I E R S\nVolume 7 | Number 1 | 7 January 2020\nrsc.li/frontiers-inorganic INORGANIC CHEMISTRY\nFRONTIERS\nRESEARCH ARTICLE\nCite this: Inorg. Chem. Front., 2020,\n7, 72\nRecei"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:27:01.105599"
+}

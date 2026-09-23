@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_948be66fa0ff",
+  "canonical_material_id": "mat_0d86f851dc17",
+  "canonical_name": "Structured-CALF-20",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_6e21cba6a035",
+    "mcard_fcd599571dee"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_b0d6809ce1ec",
+    "mechcard_f497f87f3d7a",
+    "mechcard_248fe5f1f286"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_6b6ee7b4d251",
+    "claim_be07d1f3ca6e"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "47bd0617ba03"
+  ],
+  "evidence_trace_ids": [
+    "trace_2c00e35a7018",
+    "trace_8d252a445a73",
+    "trace_00c99f81df9d",
+    "trace_e608c9daa981"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:40:36.604310",
+  "updated_at": "2026-04-23T18:41:33.608577"
+}

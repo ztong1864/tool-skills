@@ -1,0 +1,78 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_a4f2898e5636",
+  "paper_id": "be82c3858dd0",
+  "raw_path": "相关文献/氮唑相关文献_Li 等 - 2018 - An electrochemically neutralized energy-assisted l.pdf",
+  "title": "An electrochemically neutralized energy-assisted l",
+  "authors": [
+    "氮唑相关文献_Li"
+  ],
+  "year": 2018,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C2H4",
+    "C2H6"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "NEM-7",
+    "LIFM-38",
+    "NEM-7-Cu",
+    "MFM-202",
+    "FMF-202",
+    "UPC-21",
+    "MOF-1",
+    "MIL-101",
+    "UTSA-35",
+    "MOF-74",
+    "MIL-101-SO",
+    "UPC-33",
+    "FJU-1",
+    "ANPC-2",
+    "HKUST-1",
+    "ZU-16-Co"
+  ],
+  "mentioned_metals": [
+    "Cu",
+    "Co",
+    "Ni",
+    "Cr",
+    "Zr",
+    "Mn",
+    "Mg",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "DOBDC",
+    "PYZ",
+    "BDC",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "hkust"
+  ],
+  "key_sections": {
+    "results_summary": "rsc.li/materials-a\nJournal of\n Materials Chemistry A\nMaterials for energy and sustainability\nrsc.li/materials-a\nISSN 2050-7488\nCOMMUNICATION\nZhenhai Wen et al. \nAn electrochemically neutralized energy"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:36:05.038858"
+}

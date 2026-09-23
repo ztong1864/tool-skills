@@ -1,0 +1,9 @@
+{
+  "reaction_columns": [
+    "metal_salt_1",
+    "metal_salt_2",
+    "chiral_amine",
+    "molecular_sieve",
+    "solvent"
+  ]
+}

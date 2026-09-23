@@ -1,0 +1,491 @@
+"""
+Base REST tool class with common functionality for API integrations.
+
+This module provides a reusable base class for REST API tools that handles:
+- URL building with path parameter substitution
+- Query parameter construction
+- HTTP requests with retry logic
+- Standard error handling and response formatting
+"""
+
+import os
+import csv
+import io
+import requests
+import urllib.parse
+from typing import Any, Dict, Optional, Callable
+from .base_tool import BaseTool
+from .http_utils import request_with_retry
+
+
+class BaseRESTTool(BaseTool):
+    """
+    Base class for REST API tools with common HTTP request handling.
+
+    Provides reusable methods for:
+    - Building URLs with path parameters (e.g., {id}, {doi})
+    - Constructing query parameters
+    - Making HTTP requests with retry logic
+    - Standard error handling and response formatting
+
+    Subclasses should override:
+    - `_get_param_mapping()` - to customize parameter name mappings
+    - `_process_response()` - to customize response processing
+    - `_handle_special_endpoint()` - for endpoint-specific logic
+    """
+
+    def __init__(self, tool_config):
+        super().__init__(tool_config)
+        self.session = requests.Session()
+        self.timeout = 30
+        self.api_name = tool_config.get(
+            "name", self.__class__.__name__.replace("RESTTool", "")
+        )
+
+    def _get_param_mapping(self) -> Dict[str, str]:
+        """
+        Get parameter name mappings from argument names to API parameter names.
+
+        Reads ``fields.param_mapping`` from the tool config so pure config-driven
+        BaseRESTTool entries can rename query params without a Python subclass
+        (e.g. OData APIs needing {"filter": "$filter", "top": "$top"}).
+        Subclasses may still override to provide mappings in code.
+        Example: {"limit": "rows", "query": "q"}
+        """
+        return self.tool_config.get("fields", {}).get("param_mapping", {})
+
+    def _build_url(self, args: Dict[str, Any]) -> str:
+        """
+        Build URL by replacing path parameters like {id}, {doi}, {accession}.
+
+        Args:
+            args: Tool arguments dictionary
+
+        Returns:
+            Complete URL with path parameters substituted
+        """
+        url = self.tool_config["fields"]["endpoint"]
+
+        # Apply path_aliases: map alias → canonical name before substitution.
+        # Fix-R31B-3: an alias key left in `args` after this point leaked into
+        # _build_params as an unrecognized query param -- confirmed live this
+        # isn't just harmless noise: PostgREST-backed APIs (e.g. CPIC) try to
+        # parse every query key as a filter expression and 400 on it
+        # ("failed to parse filter"), breaking the whole request. Always pop
+        # the alias key once consulted, whether or not the canonical name was
+        # already present.
+        path_aliases = self.tool_config.get("fields", {}).get("path_aliases", {})
+        for alias, canonical in path_aliases.items():
+            if alias in args:
+                args.setdefault(canonical, args.pop(alias))
+
+        # Replace all path parameters from user args
+        for key, value in args.items():
+            placeholder = f"{{{key}}}"
+            if placeholder in url:
+                # URL encode to handle special characters (e.g., DOIs with slashes)
+                encoded_value = urllib.parse.quote(str(value), safe="")
+                url = url.replace(placeholder, encoded_value)
+
+        # Apply schema defaults for any remaining {param} placeholders
+        for key, prop in (
+            self.tool_config.get("parameter", {}).get("properties", {}).items()
+        ):
+            placeholder = f"{{{key}}}"
+            if placeholder in url and "default" in prop and prop["default"] is not None:
+                encoded_value = urllib.parse.quote(str(prop["default"]), safe="")
+                url = url.replace(placeholder, encoded_value)
+
+        return url
+
+    def _build_params(self, args: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Build query parameters from arguments.
+
+        Args:
+            args: Tool arguments dictionary
+
+        Returns:
+            Query parameters dictionary
+        """
+        params = {}
+        url_template = self.tool_config["fields"]["endpoint"]
+
+        # Add default params from config
+        default_params = self.tool_config.get("fields", {}).get("params", {})
+        params.update(default_params)
+
+        # Get param mapping for this API
+        param_mapping = self._get_param_mapping()
+
+        # Params handled client-side only (not sent to API)
+        client_only = (
+            {"limit"}
+            if self.tool_config.get("fields", {}).get("client_side_limit")
+            else set()
+        )
+
+        for key, value in args.items():
+            if (
+                key not in client_only
+                and f"{{{key}}}" not in url_template
+                and value is not None
+            ):
+                params[param_mapping.get(key, key)] = value
+
+        # Apply schema defaults for optional params not provided by the caller
+        for key, prop in (
+            self.tool_config.get("parameter", {}).get("properties", {}).items()
+        ):
+            if (
+                key in client_only
+                or key in params
+                or key in args
+                or f"{{{key}}}" in url_template
+            ):
+                continue
+            if "default" in prop and prop["default"] is not None:
+                params[param_mapping.get(key, key)] = prop["default"]
+
+        # Inject an API token from an environment variable into a query param
+        # when configured. Config: {"env_var": "WAQI_API_KEY", "param": "token"}.
+        # If the env var is unset the config default (e.g. a public "demo"
+        # token) is left in place, so this is a non-breaking opt-in.
+        auth_param_cfg = self.tool_config.get("fields", {}).get("auth_param")
+        if auth_param_cfg:
+            env_value = os.environ.get(auth_param_cfg.get("env_var", ""), "")
+            if env_value:
+                params[auth_param_cfg.get("param", "token")] = env_value
+
+        return params
+
+    def _process_response(
+        self, response: requests.Response, url: str
+    ) -> Dict[str, Any]:
+        """
+        Process successful API response.
+
+        Override this in subclasses for API-specific response handling.
+
+        Args:
+            response: HTTP response object
+            url: Request URL
+
+        Returns:
+            Processed response dictionary
+        """
+        fields = self.tool_config.get("fields", {})
+
+        # Some endpoints return CSV/TSV downloads rather than JSON. When
+        # ``fields.parse_csv`` is set, parse the delimited text into a list of
+        # dict records (one per data row, keyed by header) so consuming agents
+        # get structured data instead of an opaque string blob.
+        if fields.get("parse_csv"):
+            text = response.text
+            content_type = response.headers.get("content-type", "")
+            if "text/html" in content_type or text.strip().startswith(
+                ("<html", "<!DOCTYPE", "<HTML")
+            ):
+                return {
+                    "status": "error",
+                    "error": f"{self.api_name}: server returned an HTML page instead of CSV data. The requested resource may not exist.",
+                    "url": url,
+                }
+            delimiter = fields.get("csv_delimiter", ",")
+            reader = csv.DictReader(io.StringIO(text), delimiter=delimiter)
+            records = [dict(row) for row in reader]
+            return {
+                "status": "success",
+                "data": records,
+                "url": url,
+                "count": len(records),
+                "columns": list(reader.fieldnames or []),
+            }
+
+        try:
+            data = response.json()
+        except Exception:
+            text = response.text
+            # Detect HTML error pages returned instead of JSON/text data
+            content_type = response.headers.get("content-type", "")
+            if "text/html" in content_type or (
+                text.strip().startswith(("<html", "<!DOCTYPE", "<HTML"))
+            ):
+                return {
+                    "status": "error",
+                    "error": f"{self.api_name}: server returned an HTML page instead of data. The requested resource may not exist.",
+                    "url": url,
+                }
+            # Non-JSON response (e.g., BibTeX, plain text) - return as string
+            data = text
+
+        # Handle extract_path for nested data
+        extract_path = self.tool_config.get("fields", {}).get("extract_path")
+        if extract_path and isinstance(data, dict):
+            data = data.get(extract_path, data)
+
+        # Build result
+        result = {
+            "status": "success",
+            "data": data,
+            "url": url,
+        }
+
+        # Add count for lists
+        if isinstance(data, list):
+            result["count"] = len(data)
+
+        return result
+
+    @staticmethod
+    def _resolve_path(data: Any, path) -> Any:
+        """
+        Walk a list of dict keys / list indices into a decoded JSON payload.
+
+        Returns None if any step is missing, so callers can treat "not found"
+        and "explicitly null" alike (neither is usable as a total/row list).
+        """
+        current = data
+        for step in path or []:
+            if isinstance(step, int) and not isinstance(step, bool):
+                if not isinstance(current, (list, tuple)) or not (
+                    -len(current) <= step < len(current)
+                ):
+                    return None
+                current = current[step]
+            else:
+                if not isinstance(current, dict) or step not in current:
+                    return None
+                current = current[step]
+        return current
+
+    def _apply_pagination_disclosure(self, result: Dict[str, Any]) -> None:
+        """
+        Surface upstream truncation at the top level of the response.
+
+        Opt-in via ``fields.pagination_disclosure``; tools without the key are
+        untouched. Many APIs return a server-side page of a larger result set
+        and report the real total somewhere inside the payload (World Bank puts
+        ``{"page","pages","per_page","total"}`` at ``data[0]``; OData services
+        return ``@odata.count``). Left buried there, a partial answer is
+        indistinguishable from a complete one -- a country panel can lose a
+        whole country and still report ``status: success``.
+
+        Config keys (all paths are lists of dict keys / list indices into
+        ``result["data"]``)::
+
+            {
+              "total_path": [0, "total"],   # int: rows matching upstream
+              "rows_path": [1],             # list: rows actually returned
+              "page_path": [0, "page"],     # optional int
+              "pages_path": [0, "pages"],   # optional int
+              "more_hint": "How to fetch the rest."
+            }
+
+        Sets ``count`` to the real row count (not the length of an envelope),
+        plus ``total_available`` and an explicit ``truncated`` boolean so
+        "complete" and "partial" are never conflated. When truncated, adds a
+        top-level ``truncation_note`` naming the true total.
+        """
+        config = self.tool_config.get("fields", {}).get("pagination_disclosure")
+        if not config:
+            return
+
+        data = result.get("data")
+        total = self._resolve_path(data, config.get("total_path"))
+        rows = self._resolve_path(data, config.get("rows_path"))
+        if not isinstance(total, int) or isinstance(total, bool):
+            return
+        if not isinstance(rows, list):
+            return
+
+        returned = len(rows)
+        result["count"] = returned
+        result["total_available"] = total
+        result["truncated"] = returned < total
+        if returned >= total:
+            return
+
+        page = self._resolve_path(data, config.get("page_path"))
+        pages = self._resolve_path(data, config.get("pages_path"))
+        page_part = ""
+        if isinstance(page, int) and isinstance(pages, int):
+            page_part = f" This is page {page} of {pages}."
+        hint = config.get("more_hint", "")
+        result["truncation_note"] = (
+            f"Partial result: {returned} of {total} matching records were "
+            f"returned; {total - returned} are missing.{page_part} "
+            f"{hint}"
+        ).strip()
+
+    def _handle_special_endpoint(
+        self, url: str, response: requests.Response, arguments: Dict[str, Any]
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Handle special endpoints that need custom processing.
+
+        Override this for endpoint-specific logic (e.g., download endpoints).
+        Return None to use default processing.
+
+        Args:
+            url: Request URL
+            response: HTTP response object
+            arguments: Original arguments
+
+        Returns:
+            Custom result dictionary or None for default processing
+        """
+        return None
+
+    def run(self, arguments: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Execute the API request.
+
+        Args:
+            arguments: Tool arguments dictionary
+
+        Returns:
+            Result dictionary with status, data, url, and optional error info
+        """
+        url = None
+        try:
+            # Normalize case-sensitive params before building the request.
+            # Some backends (e.g. CPIC's PostgREST `name=eq.{name}` filter) only
+            # match lowercase values, so a capitalized input silently returns an
+            # empty success. `fields.lowercase_params` lists params to downcase.
+            lowercase_params = (
+                self.tool_config.get("fields", {}).get("lowercase_params") or []
+            )
+            if lowercase_params:
+                arguments = dict(arguments)
+                for key in lowercase_params:
+                    value = arguments.get(key)
+                    if isinstance(value, str):
+                        arguments[key] = value.lower()
+
+            # Fix-R30E-3: the mirror-image case -- CPIC's gene/allele tables
+            # store symbols uppercase (e.g. "CYP2D6"), so a lowercase or
+            # mixed-case input to `symbol=eq.{symbol}`/`genesymbol=eq.{...}`
+            # silently returns an empty success (confirmed live: "cyp2d6" ->
+            # 0 rows, "CYP2D6" -> 1). `fields.uppercase_params` lists params
+            # to upcase.
+            uppercase_params = (
+                self.tool_config.get("fields", {}).get("uppercase_params") or []
+            )
+            if uppercase_params:
+                arguments = dict(arguments)
+                for key in uppercase_params:
+                    value = arguments.get(key)
+                    if isinstance(value, str):
+                        arguments[key] = value.upper()
+
+            url = self._build_url(arguments)
+            params = self._build_params(arguments)
+
+            # Get custom headers from config (e.g., Accept: application/json)
+            custom_headers = dict(
+                self.tool_config.get("fields", {}).get("headers") or {}
+            )
+
+            # Inject API key from environment variable if auth_header is configured.
+            # Config format: {"env_var": "MY_API_KEY", "header": "x-api-key"}
+            auth_header_cfg = self.tool_config.get("fields", {}).get("auth_header")
+            if auth_header_cfg:
+                env_var = auth_header_cfg.get("env_var", "")
+                header_name = auth_header_cfg.get("header", "")
+                api_key = os.environ.get(env_var, "")
+                if not api_key:
+                    register_url = auth_header_cfg.get("register_url", "")
+                    register_hint = (
+                        f" Register at {register_url} to obtain a key."
+                        if register_url
+                        else ""
+                    )
+                    return {
+                        "status": "error",
+                        "error": (
+                            f"{self.api_name} requires an API key. "
+                            f"Set the {env_var} environment variable.{register_hint}"
+                        ),
+                    }
+                custom_headers[header_name] = api_key
+
+            response = request_with_retry(
+                self.session,
+                "GET",
+                url,
+                params=params,
+                headers=custom_headers,
+                timeout=self.timeout,
+                max_attempts=3,
+            )
+
+            # The echoed `url` is the endpoint only -- query params live in
+            # `params` and never appear in it, so a caller cannot tell what was
+            # actually requested (which page? which filter? which $top?) and
+            # cannot reproduce the call. `fields.echo_request_url` opts a tool
+            # into echoing the fully-resolved request URI instead. Guarded with
+            # getattr so stubbed responses in tests stay valid.
+            if self.tool_config.get("fields", {}).get("echo_request_url"):
+                url = getattr(response, "url", None) or url
+
+            # Check for errors (accept any 2xx success status)
+            if not (200 <= response.status_code < 300):
+                return {
+                    "status": "error",
+                    "error": f"{self.api_name} API error",
+                    "url": url,
+                    "status_code": response.status_code,
+                    "detail": (response.text or "")[:500],
+                }
+
+            # Try special endpoint handling first
+            special_result = self._handle_special_endpoint(url, response, arguments)
+            if special_result is not None:
+                return special_result
+
+            # Use default response processing
+            result = self._process_response(response, url)
+
+            # Client-side limit for APIs that return unbounded lists
+            if self.tool_config.get("fields", {}).get("client_side_limit"):
+                props = self.tool_config.get("parameter", {}).get("properties", {})
+                limit = arguments.get("limit", props.get("limit", {}).get("default"))
+                data = result.get("data")
+                if (
+                    limit is not None
+                    and isinstance(data, list)
+                    and len(data) > int(limit)
+                ):
+                    result["total_before_limit"] = len(data)
+                    result["data"] = data[: int(limit)]
+                    result["count"] = int(limit)
+
+            # Disclose server-side pagination/truncation at the top level for
+            # tools that opt in via `fields.pagination_disclosure`.
+            self._apply_pagination_disclosure(result)
+
+            # Fix-R32C-4/5: an exact-match backend (e.g. CPIC's PostgREST
+            # name=eq.{name}) silently returns status:success with an empty
+            # list for any name that isn't spelled/named exactly as the
+            # database stores it -- confirmed live for well-known aliases
+            # ("FK506" for tacrolimus) and spelling variants ("cyclosporin"
+            # vs the indexed "cyclosporine"), indistinguishable from "no PGx
+            # data exists for this drug". `fields.empty_result_note` lets a
+            # config surface the real constraint instead of a bare empty list.
+            empty_note = self.tool_config.get("fields", {}).get("empty_result_note")
+            if (
+                empty_note
+                and isinstance(result.get("data"), list)
+                and not result["data"]
+            ):
+                result["note"] = empty_note
+
+            return result
+
+        except Exception as e:
+            return {
+                "status": "error",
+                "error": f"{self.api_name} API error: {str(e)}",
+                "url": url,
+            }

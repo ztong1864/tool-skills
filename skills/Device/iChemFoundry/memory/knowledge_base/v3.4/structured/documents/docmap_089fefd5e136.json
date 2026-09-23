@@ -1,0 +1,76 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_089fefd5e136",
+  "paper_id": "e491473623b9",
+  "raw_path": "相关文献/Zhang 等 - 2023 - Fine-Tuning MOFs with Amino Group for One-Step Eth.pdf",
+  "title": "Fine-Tuning MOFs with Amino Group for One-Step Eth",
+  "authors": [
+    "Zhang"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Th-1",
+    "NOTT-300",
+    "NTUnvi-59",
+    "UIO-67",
+    "NTUniv-58",
+    "NTUniv-59",
+    "TIFSIX-2",
+    "ZJNU-119",
+    "NTUnvi-58",
+    "NUC-19",
+    "FeMOF-74",
+    "NTUvi-59",
+    "ZJNU-14",
+    "MOF-505",
+    "TJT-100"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine",
+    "tricarboxylate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "dia",
+    "fcu"
+  ],
+  "key_sections": {
+    "abstract": "Due to the similar kinetic diameters of C2H2, C2H4, and C2H6, one-step\npurification of C2H4 from a ternary C2H2/C2H4/C2H6 mixture by adsorption separation",
+    "results_summary": "Fine-Tuning MOFs with Amino Group for One-Step Ethylene\nPurification from the C2 Hydrocarbon Mixture\nMingxing Zhang, Haitian Zhao, Yu Wang, Junyang Jiang, Meng Chen, Xingge He, Penghui Liu,\nRui Dang, "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:03:18.654097"
+}

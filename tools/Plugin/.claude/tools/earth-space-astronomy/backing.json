@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "type": "sdk_python",
+  "module_path": "tool.py",
+  "attr": "SERVER",
+  "size_gated": true
+}

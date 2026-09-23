@@ -1,0 +1,60 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_c1db52b4729e",
+  "paper_id": "5e115f0ab554",
+  "raw_path": "相关文献/Liu 等 - 2023 - Pillar-layer Zn–triazolate–dicarboxylate framework.pdf",
+  "title": "Pillar-layer Zn–triazolate–dicarboxylate framework",
+  "authors": [
+    "Liu"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "HIAM-210",
+    "UPC-66",
+    "NUM-9",
+    "NPU-2",
+    "ZJNU-115",
+    "TJT-100"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "NDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "Pillar-layer Zn–triazolate–dicarboxylate\nframeworks with a customized pore structure for\neﬃcient ethylene puriﬁcation from ethylene/\nethane/acetylene ternary mixtures†\nJiaqi Liu,a Hao Wang\n*a and Jing"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:27:55.326246"
+}

@@ -1,0 +1,11 @@
+﻿substrate_1,substrate_1_amount,substrate_2,substrate_2_amount,metal_salt_1,metal_salt_1_amount,metal_salt_2,metal_salt_2_amount,chiral_amine,chiral_amine_amount,molecular_sieve,molecular_sieve_amount,solvent,solvent_amount
+苯乙炔,11.0 uL,正壬醛,20.7 uL,CuI,0.952 mg,ZnBr2,1.126 mg,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",30.4 mg,20 mg,20 mg,MeCN,1 mL
+苯乙炔,11.0 uL,正壬醛,20.7 uL,CuBr,0.717 mg,ZnBr2,1.126 mg,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",30.4 mg,20 mg,20 mg,MeCN,1 mL
+苯乙炔,11.0 uL,正壬醛,20.7 uL,CuI,0.952 mg,none,,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",30.4 mg,none,,MeCN,1 mL
+苯乙炔,11.0 uL,正壬醛,20.7 uL,ZnI2,1.596 mg,none,,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",30.4 mg,20 mg,20 mg,DCE,1 mL
+苯乙炔,11.0 uL,正壬醛,20.7 uL,CuOAc,0.613 mg,none,,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",30.4 mg,none,,Tol,1 mL
+苯乙炔,11.0 uL,正壬醛,20.7 uL,AgOTf,1.285 mg,none,,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",30.4 mg,20 mg,20 mg,MeCN,1 mL
+苯乙炔,11.0 uL,正壬醛,20.7 uL,CuCl,0.495 mg,ZnI2,1.596 mg,(S)-Pyrrolidin-2-yldi-p-tolylmethanol,33.77 mg,20 mg,20 mg,MeCN,1 mL
+苯乙炔,11.0 uL,正壬醛,20.7 uL,CuBr,0.717 mg,none,,(S)-Bis(4-methoxyphenyl)(pyrrolidin-2-yl)methanol,37.61 mg,none,,THF,1 mL
+苯乙炔,11.0 uL,正壬醛,20.7 uL,Sc(OTf)3,2.461 mg,none,,L-Prolinamide,13.7 mg,20 mg,20 mg,EtOAc,1 mL
+苯乙炔,11.0 uL,正壬醛,20.7 uL,Cu(OTf)2,1.808 mg,none,,L-Prolinanilide,22.83 mg,none,,DCE,1 mL

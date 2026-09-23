@@ -1,0 +1,231 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_8eec2f0f873f",
+  "paper_id": "fc50783c6918",
+  "title": "Efficient carbon dioxide capture from flue gas and",
+  "year": 2024,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2",
+    "Xe",
+    "Kr"
+  ],
+  "one_line_summary": "Zn-ox-mtz shows activation_barrier_CH4 = 259.4 K for CH4",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "Qst_CO2 (CO2) = 54.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "activation_barrier_CH4 (CH4) = 259.4 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "selectivity_CO2/CH4 (CO2) = 105.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "suitable CO2 adsorption configuration and distinct energy barrier → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "exclusion effect in adsorption mechanism → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce open metal sites or amino functional groups into MOFs → selective CO2 adsorption is improved"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use cheaper 1,2,4-triazolate in place of Mtz → a scalable durable physisorbent for CO2 capture is obtained"
+    },
+    {
+      "title": "Comparison",
+      "body": "Zn-ox-mtz vs ZU-301: winner=subject_a on CO2_uptake_and_parasitic_CH4_N2_adsorption"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_50fd6bbd4cd7",
+    "trace_2634d9c14b0b",
+    "trace_3a1304034faa",
+    "trace_5b259aedc376",
+    "trace_79292dfc0ec1",
+    "trace_f4dffbfec2df",
+    "trace_ba7bbee01836",
+    "trace_2f0b93ae2f62",
+    "trace_dd55d75c55d2",
+    "trace_752dc021233c",
+    "trace_b0bd7d88c7dc",
+    "trace_1f9c428ee7fb",
+    "trace_29c3b18d121e",
+    "trace_0b7e72df1369",
+    "trace_9d931f2cca09",
+    "trace_f5a72af93697",
+    "trace_658a8440fa3e",
+    "trace_568e4000812b",
+    "trace_b713c8314d33",
+    "trace_92386c52ae4a",
+    "trace_17f7b905493f",
+    "trace_f0265779d66d",
+    "trace_274814a4921a",
+    "trace_a14ace3742a5",
+    "trace_c35e8ea014b3",
+    "trace_4b8854773e93",
+    "trace_3f888dc6948f",
+    "trace_11b52f832d42",
+    "trace_6a6a3301ab5a",
+    "trace_617d25484069",
+    "trace_a38990b07144",
+    "trace_617db1006a67",
+    "trace_3c3dc6810abe",
+    "trace_f0566f8b57a8",
+    "trace_6bbc415e0a8d",
+    "trace_b937c442fcf7",
+    "trace_c90e3ead2d3f",
+    "trace_5deabfc2d74f",
+    "trace_4359fc2f356f",
+    "trace_b6d1a81ab3cd",
+    "trace_c35e8ea014b3",
+    "trace_c90e3ead2d3f",
+    "trace_3a1304034faa",
+    "trace_4b8854773e93",
+    "trace_1f9c428ee7fb",
+    "trace_5b259aedc376",
+    "trace_dd55d75c55d2",
+    "trace_b713c8314d33",
+    "trace_29c3b18d121e",
+    "trace_6bbc415e0a8d",
+    "trace_92386c52ae4a",
+    "trace_9d931f2cca09",
+    "trace_f5a72af93697",
+    "trace_ba7bbee01836",
+    "trace_752dc021233c",
+    "trace_617db1006a67",
+    "trace_568e4000812b",
+    "trace_5deabfc2d74f",
+    "trace_17f7b905493f",
+    "trace_617d25484069",
+    "trace_2634d9c14b0b",
+    "trace_11b52f832d42",
+    "trace_50fd6bbd4cd7",
+    "trace_f0265779d66d",
+    "trace_3f888dc6948f",
+    "trace_0b7e72df1369",
+    "trace_b0bd7d88c7dc",
+    "trace_b937c442fcf7",
+    "trace_274814a4921a",
+    "trace_a38990b07144",
+    "trace_4359fc2f356f",
+    "trace_f0566f8b57a8",
+    "trace_3c3dc6810abe",
+    "trace_79292dfc0ec1",
+    "trace_a14ace3742a5",
+    "trace_b6d1a81ab3cd",
+    "trace_2f0b93ae2f62",
+    "trace_f4dffbfec2df",
+    "trace_6a6a3301ab5a",
+    "trace_658a8440fa3e"
+  ],
+  "measurement_card_ids": [
+    "mcard_53bfc92b8df8",
+    "mcard_d4eb985d0694",
+    "mcard_12b75eb82f1d",
+    "mcard_de1f18d96c7e",
+    "mcard_8c335ed1c827",
+    "mcard_267158708b7d",
+    "mcard_d70b4efa8aa7",
+    "mcard_420cd009d1b0",
+    "mcard_a41afb4d02ca",
+    "mcard_1bba65cac78f",
+    "mcard_076a24cdf8c5",
+    "mcard_38b526a88545",
+    "mcard_9dc0047955e7",
+    "mcard_98ec8073fcee",
+    "mcard_8e2161135904",
+    "mcard_f8c131b3296c",
+    "mcard_14710628d269"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_5e482103e50b",
+    "mechcard_34dfa0ed3830",
+    "mechcard_c2ef190f463c",
+    "mechcard_7146a6423768",
+    "mechcard_d82b196f4c31",
+    "mechcard_2e95529711d5",
+    "mechcard_d209b6f7c87d",
+    "mechcard_b2082a6b8c94",
+    "mechcard_21002fac810b",
+    "mechcard_3d9bbe8e452c",
+    "mechcard_c9a5e2054965"
+  ],
+  "recipe_card_ids": [
+    "recipe_463fe14c0b9a",
+    "recipe_c5e9c57110e3"
+  ],
+  "claim_card_ids": [
+    "claim_41c02aaff886",
+    "claim_3cd627eb374a",
+    "claim_3bef21707d3a",
+    "claim_39af9384f2a8",
+    "claim_284c8ad74ae0",
+    "claim_accd58a2e137",
+    "claim_6892e16aa205",
+    "claim_a650e5e0f86a"
+  ],
+  "design_rule_card_ids": [
+    "drule_b57fb7ac931c",
+    "drule_a740a78e12da",
+    "drule_20b937f25bc1"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_6a16f2b56c03",
+    "comp_b811e4613f53",
+    "comp_afc087839366",
+    "comp_9d41ec4393e8",
+    "comp_8793c90293f9"
+  ],
+  "failure_case_card_ids": [
+    "fail_248a669b4bbc",
+    "fail_0049f233c5a0"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_fe3b9102ce95",
+    "mat_cb103240a36a",
+    "mat_aabe0625733f",
+    "mat_0d79f0789157"
+  ],
+  "dossier_ids": [
+    "dossier_3b0cd31b7c9e",
+    "dossier_59f49b7c69c0",
+    "dossier_18b5cf22542c",
+    "dossier_0d3d4eb948f5"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Its 3.5 Å windows and 4.8 Å cages enable molecular sieving: CO2 (3.3 Å) passes, while larger N2 (3.64 Å) and CH4 (3.8 Å) are excluded.",
+    "Granulated Zn-ox-mtz beads with 93.8% MOF loading retain excellent CO2/N2 and CO2/CH4 separation performance after shaping.",
+    "Zn-ox-mtz achieves high CO2 uptake of 58.0 STP cm3 g−1 at 15 kPa with CO2/N2 selectivity >106 and CO2/CH4 selectivity >105."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.923974",
+  "updated_at": "2026-04-24T00:19:47.923977",
+  "raw_path": "相关文献/Hu 等 - 2024 - Efficient carbon dioxide capture from flue gas and.pdf",
+  "authors": [
+    "Hu"
+  ]
+}

@@ -1,0 +1,649 @@
+{
+  "code": 1,
+  "message": "Ok",
+  "data": {
+    "931be65c-1cbe-43e1-99f0-357757e42086": [
+      {
+        "m": 0,
+        "n": 0,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ],
+    "3c82c984-2971-4a35-b7a9-36b891fdd5e2": [
+      {
+        "m": 0,
+        "n": 1,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "AddMitoTracker",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 2,
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "移液吸培养基加染色液"
+          }
+        ]
+      }
+    ],
+    "cba6956d-538a-4798-aa97-f9f4e1b8fc80": [
+      {
+        "m": 0,
+        "n": 2,
+        "name": "调度-等待v2",
+        "parameterList": [
+          {
+            "Type": "Editable",
+            "Key": "DelayTime",
+            "Value": 30,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 3,
+            "DisplayStepDevTypeName": "孵育",
+            "DisplayParaName": "孵育时间",
+            "DisplayParaUnit": "分钟",
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayValidateMin": 0,
+            "DisplayValidateMax": 720,
+            "DisplayIncrementValue": 1,
+            "DisplayDefaultValue": 30,
+            "DisplayValue": null,
+            "DisplayValueFunction": "Value = DisplayValue * 60000",
+            "DisplayDescription": "",
+            "DisplayStepName": "孵育"
+          }
+        ]
+      }
+    ],
+    "c5009b98-cfd0-494c-ad3d-0b3a3f33435b": [
+      {
+        "m": 0,
+        "n": 3,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "AddPFA_1",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 4,
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "移液吸染色液加固定液"
+          }
+        ]
+      }
+    ],
+    "99b857e2-6a03-4374-ab4a-6f48baa69f49": [
+      {
+        "m": 0,
+        "n": 4,
+        "name": "调度-等待v2",
+        "parameterList": [
+          {
+            "Type": "Editable",
+            "Key": "DelayTime",
+            "Value": 20,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 5,
+            "DisplayStepDevTypeName": "孵育",
+            "DisplayParaName": "孵育时间",
+            "DisplayParaUnit": "分钟",
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayValidateMin": 0,
+            "DisplayValidateMax": 720,
+            "DisplayIncrementValue": 1,
+            "DisplayDefaultValue": 20,
+            "DisplayValue": null,
+            "DisplayValueFunction": "Value = DisplayValue * 60000",
+            "DisplayDescription": "",
+            "DisplayStepName": "孵育"
+          }
+        ]
+      }
+    ],
+    "c5534896-17fa-479c-91ec-31340331713d": [
+      {
+        "m": 0,
+        "n": 5,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "OpenLid",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 6,
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "移液开盖"
+          }
+        ]
+      }
+    ],
+    "9c3e27c2-e85f-4949-b518-e5aa6788beea": [
+      {
+        "m": 0,
+        "n": 6,
+        "name": "洗板机-洗板",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "20220901",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 7,
+            "DisplayStepDevTypeName": "洗板",
+            "DisplayParaName": "洗板协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "洗板"
+          },
+          {
+            "Type": "Editable",
+            "Key": "startColumn",
+            "Value": 1,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 7,
+            "DisplayStepDevTypeName": "洗板",
+            "DisplayParaName": "洗板开始列数",
+            "DisplayParaUnit": null,
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "洗板"
+          },
+          {
+            "Type": "Editable",
+            "Key": "endColumn",
+            "Value": 8,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 7,
+            "DisplayStepDevTypeName": "洗板",
+            "DisplayParaName": "洗板结束列数",
+            "DisplayParaUnit": null,
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "洗板"
+          }
+        ]
+      }
+    ],
+    "20555110-d040-4531-bcac-c24c1c62d544": [
+      {
+        "m": 0,
+        "n": 7,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "AddTriton_1",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 8,
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "移液加通透液，关盖"
+          }
+        ]
+      }
+    ],
+    "1f47b30e-93f6-4be6-80a8-817416b7eee8": [
+      {
+        "m": 0,
+        "n": 8,
+        "name": "调度-等待v2",
+        "parameterList": [
+          {
+            "Type": "Editable",
+            "Key": "DelayTime",
+            "Value": 10,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 9,
+            "DisplayStepDevTypeName": "孵育",
+            "DisplayParaName": "孵育时间",
+            "DisplayParaUnit": "分钟",
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayValidateMin": 0,
+            "DisplayValidateMax": 720,
+            "DisplayIncrementValue": 1,
+            "DisplayDefaultValue": 20,
+            "DisplayValue": null,
+            "DisplayValueFunction": "Value = DisplayValue * 60000",
+            "DisplayDescription": "",
+            "DisplayStepName": "孵育"
+          }
+        ]
+      }
+    ],
+    "00b143cf-12e6-4015-9bb8-7cdd26d7c268": [
+      {
+        "m": 0,
+        "n": 9,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "OpenLid",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 10,
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "移液开盖"
+          }
+        ]
+      }
+    ],
+    "87dc1a61-3467-4e26-b86f-57d6e1e4644e": [
+      {
+        "m": 0,
+        "n": 10,
+        "name": "洗板机-洗板",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "20220901",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 11,
+            "DisplayStepDevTypeName": "洗板",
+            "DisplayParaName": "洗板协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "洗板"
+          },
+          {
+            "Type": "Editable",
+            "Key": "startColumn",
+            "Value": 1,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 11,
+            "DisplayStepDevTypeName": "洗板",
+            "DisplayParaName": "洗板开始列数",
+            "DisplayParaUnit": null,
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "洗板"
+          },
+          {
+            "Type": "Editable",
+            "Key": "endColumn",
+            "Value": 8,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 11,
+            "DisplayStepDevTypeName": "洗板",
+            "DisplayParaName": "洗板结束列数",
+            "DisplayParaUnit": null,
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "洗板"
+          }
+        ]
+      }
+    ],
+    "02de0ad5-15b3-4009-9ec0-98c2b7e735a1": [
+      {
+        "m": 0,
+        "n": 11,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "AddMixedDye",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 12,
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "移液加混合染色液，关盖"
+          }
+        ]
+      }
+    ],
+    "c913077b-b41f-4f7b-8aff-9369422ea816": [
+      {
+        "m": 0,
+        "n": 12,
+        "name": "调度-等待v2",
+        "parameterList": [
+          {
+            "Type": "Editable",
+            "Key": "DelayTime",
+            "Value": 30,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 13,
+            "DisplayStepDevTypeName": "孵育",
+            "DisplayParaName": "孵育时间",
+            "DisplayParaUnit": "分钟",
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayValidateMin": 0,
+            "DisplayValidateMax": 720,
+            "DisplayIncrementValue": 1,
+            "DisplayDefaultValue": 30,
+            "DisplayValue": null,
+            "DisplayValueFunction": "Value = DisplayValue * 60000",
+            "DisplayDescription": "",
+            "DisplayStepName": "孵育"
+          }
+        ]
+      }
+    ],
+    "f6388b99-1792-453c-9e29-cb284e9a707b": [
+      {
+        "m": 0,
+        "n": 13,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "OpenLid",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 14,
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "移液开盖"
+          }
+        ]
+      }
+    ],
+    "7165cdd9-a1df-4539-b302-4f563cea2d35": [
+      {
+        "m": 0,
+        "n": 14,
+        "name": "洗板机-洗板",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "20220901",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 15,
+            "DisplayStepDevTypeName": "洗板",
+            "DisplayParaName": "洗板协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "洗板"
+          },
+          {
+            "Type": "Editable",
+            "Key": "startColumn",
+            "Value": 1,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 15,
+            "DisplayStepDevTypeName": "洗板",
+            "DisplayParaName": "洗板开始列数",
+            "DisplayParaUnit": null,
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "洗板"
+          },
+          {
+            "Type": "Editable",
+            "Key": "endColumn",
+            "Value": 8,
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 15,
+            "DisplayStepDevTypeName": "洗板",
+            "DisplayParaName": "洗板结束列数",
+            "DisplayParaUnit": null,
+            "DisplayType": "InputNumber",
+            "DisplayValidate": "int",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "洗板"
+          }
+        ]
+      }
+    ],
+    "67213766-a62c-4c0f-86c5-2bc639d7c496": [
+      {
+        "m": 0,
+        "n": 15,
+        "name": "移液站-移液",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "CloseLid",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 16,
+            "DisplayStepDevTypeName": "移液",
+            "DisplayParaName": "移液协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "移液关盖"
+          }
+        ]
+      }
+    ],
+    "737d4a3d-325f-42c4-8535-b9e6a344f04a": [
+      {
+        "m": 0,
+        "n": 16,
+        "name": "高内涵仪-成像",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "MethodName",
+            "Value": "Run"
+          },
+          {
+            "Type": "Editable",
+            "Key": "protocol",
+            "Value": "C:\\\\Protocols\\\\cxc-foci-demo.HTS",
+            "DisplaySectionIndex": null,
+            "DisplaySectionName": null,
+            "DisplayStepIndex": 17,
+            "DisplayStepDevTypeName": "成像",
+            "DisplayParaName": "成像协议",
+            "DisplayParaUnit": null,
+            "DisplayType": "Input",
+            "DisplayValidate": "string",
+            "DisplayOptionLabels": "",
+            "DisplayOptionValues": "",
+            "DisplayOptionDefaultValue": "",
+            "DisplayDescription": "",
+            "DisplayStepName": "成像"
+          }
+        ]
+      }
+    ],
+    "ee5a17d5-8aad-464d-b660-3f70beedc45a": [
+      {
+        "m": 0,
+        "n": 17,
+        "name": "调度-等待",
+        "parameterList": [
+          {
+            "Type": "Hidden",
+            "Key": "DelayTime",
+            "Value": 10
+          }
+        ]
+      }
+    ]
+  },
+  "error": null,
+  "timestamp": 1778830036356,
+  "path": "/api/workflow/sub-workflow/3a0dddfe-6643-9ee3-f8c0-e8be4b8c11e4/step-parameters"
+}

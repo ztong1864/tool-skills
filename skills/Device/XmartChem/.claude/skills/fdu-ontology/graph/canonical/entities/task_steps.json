@@ -1,0 +1,238 @@
+{
+  "task-step:parse-experiment-request": {
+    "agent_should_check": [
+      "User provided enough experiment target or reaction-space information",
+      "Candidate-space table is available when the request depends on uploaded candidates"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:parse-experiment-request",
+    "input_artifact_ids": [
+      "artifact:user-experiment-request",
+      "artifact:reaction-space-table"
+    ],
+    "name": "Parse experiment request",
+    "output_artifact_ids": [
+      "artifact:constraint-json"
+    ],
+    "requires_user_confirmation_after": false,
+    "requires_user_confirmation_before": false,
+    "skill_name": "constraint-parser",
+    "step_kind": "skill_call"
+  },
+  "task-step:recommend-experiment-conditions": {
+    "agent_should_check": [
+      "Constraint JSON exists",
+      "Candidate chemical space or literature basis exists when required",
+      "After generating the recommendation table, run fdu-risk-review before the recommendation review checkpoint and continue only if the verdict is pass"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:recommend-experiment-conditions",
+    "input_artifact_ids": [
+      "artifact:constraint-json",
+      "artifact:reaction-space-table"
+    ],
+    "name": "Recommend experiment conditions",
+    "output_artifact_ids": [
+      "artifact:recommendation-table"
+    ],
+    "requires_user_confirmation_after": true,
+    "requires_user_confirmation_before": false,
+    "skill_name": "literature-experiment-recommender",
+    "step_kind": "skill_call"
+  },
+  "task-step:calculate-reagent-amounts": {
+    "agent_should_check": [
+      "User has confirmed recommendation table",
+      "Chemical entry library is available",
+      "Recommendation table has executable condition rows",
+      "After generating the amount table, run fdu-risk-review before the amount review checkpoint and continue only if the verdict is pass"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:calculate-reagent-amounts",
+    "input_artifact_ids": [
+      "artifact:constraint-json",
+      "artifact:recommendation-table"
+    ],
+    "name": "Calculate reagent amounts",
+    "output_artifact_ids": [
+      "artifact:amount-table"
+    ],
+    "requires_user_confirmation_after": true,
+    "requires_user_confirmation_before": true,
+    "skill_name": "chemical-amount-calculator",
+    "step_kind": "skill_call"
+  },
+  "task-step:generate-numbered-steps": {
+    "agent_should_check": [
+      "User has confirmed amount table before downstream plan generation",
+      "Constraint JSON source_text is available",
+      "Reference step template is known for the experiment type",
+      "After generating numbered experiment steps, run fdu-risk-review before the numbered-step review checkpoint and continue only if the verdict is pass"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:generate-numbered-steps",
+    "input_artifact_ids": [
+      "artifact:constraint-json"
+    ],
+    "name": "Generate numbered experiment steps",
+    "output_artifact_ids": [
+      "artifact:numbered-experiment-steps"
+    ],
+    "requires_user_confirmation_after": true,
+    "requires_user_confirmation_before": true,
+    "skill_name": "experiment-step-generator",
+    "step_kind": "skill_call"
+  },
+  "task-step:write-experiment-plan": {
+    "agent_should_check": [
+      "User has confirmed numbered steps",
+      "Amount table and recommendation rows align by experiment id"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:write-experiment-plan",
+    "input_artifact_ids": [
+      "artifact:numbered-experiment-steps",
+      "artifact:amount-table"
+    ],
+    "name": "Write Chinese experiment plan",
+    "output_artifact_ids": [
+      "artifact:experiment-plan-md"
+    ],
+    "requires_user_confirmation_after": false,
+    "requires_user_confirmation_before": true,
+    "skill_name": "fdu-experiment-plan",
+    "step_kind": "skill_call"
+  },
+  "task-step:convert-plan-to-step-json": {
+    "agent_should_check": [
+      "Plan file path exists",
+      "Plan steps map to supported FDU unit actions"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:convert-plan-to-step-json",
+    "input_artifact_ids": [
+      "artifact:experiment-plan-md"
+    ],
+    "name": "Convert plan to step JSON",
+    "output_artifact_ids": [
+      "artifact:single-plan-step-json"
+    ],
+    "requires_user_confirmation_after": false,
+    "requires_user_confirmation_before": false,
+    "skill_name": "fdu-step-json",
+    "step_kind": "skill_call"
+  },
+  "task-step:merge-step-json": {
+    "agent_should_check": [
+      "One or more experiment plan Markdown files exist",
+      "Target layout codes match plan file count when explicitly provided"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:merge-step-json",
+    "input_artifact_ids": [
+      "artifact:experiment-plan-md"
+    ],
+    "name": "Generate merged step JSON from plans",
+    "output_artifact_ids": [
+      "artifact:merged-step-json"
+    ],
+    "requires_user_confirmation_after": false,
+    "requires_user_confirmation_before": false,
+    "skill_name": "fdu-multi-step-json",
+    "step_kind": "skill_call"
+  },
+  "task-step:verify-and-fill-resources": {
+    "agent_should_check": [
+      "Merged step JSON exists",
+      "Refresh device resource snapshot through fdu-resource-verify unless direct backfill was explicitly chosen",
+      "No missing or conflicting resources remain before continuing"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:verify-and-fill-resources",
+    "input_artifact_ids": [
+      "artifact:merged-step-json"
+    ],
+    "name": "Verify and fill device resources",
+    "output_artifact_ids": [
+      "artifact:resource-snapshot",
+      "artifact:verified-step-json",
+      "artifact:resource-verification-report"
+    ],
+    "requires_user_confirmation_after": false,
+    "requires_user_confirmation_before": false,
+    "skill_name": "fdu-resource-verify",
+    "step_kind": "skill_call"
+  },
+  "task-step:orchestrate-device-protocol": {
+    "agent_should_check": [
+      "Verified step JSON exists",
+      "Every unit action has resource information",
+      "Only supported device actions are present"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:orchestrate-device-protocol",
+    "input_artifact_ids": [
+      "artifact:verified-step-json"
+    ],
+    "name": "Orchestrate device protocol",
+    "output_artifact_ids": [
+      "artifact:device-protocol-json"
+    ],
+    "requires_user_confirmation_after": true,
+    "requires_user_confirmation_before": false,
+    "skill_name": "fdu-unit-orchestration-json",
+    "step_kind": "skill_call"
+  },
+  "task-step:create-device-task": {
+    "agent_should_check": [
+      "User explicitly confirmed device task creation",
+      "Device protocol JSON exists",
+      "Do not enable device start unless user explicitly requested start execution"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:create-device-task",
+    "input_artifact_ids": [
+      "artifact:device-protocol-json"
+    ],
+    "name": "Create device task",
+    "output_artifact_ids": [
+      "artifact:device-submit-result"
+    ],
+    "requires_user_confirmation_after": false,
+    "requires_user_confirmation_before": true,
+    "skill_name": "fdu-device-run",
+    "step_kind": "skill_call"
+  },
+  "task-step:monitor-device-task": {
+    "agent_should_check": [
+      "Device submit result or explicit task id exists",
+      "sci_agent conversation-id has been resolved before starting monitoring",
+      "Use fdu-execution-monitoring only as a read-only monitor after task creation",
+      "Do not start, pause, cancel, recover, retry, skip, submit, or modify any device task"
+    ],
+    "entity_type": "TaskStep",
+    "failure_policy": "stop_and_report",
+    "id": "task-step:monitor-device-task",
+    "input_artifact_ids": [
+      "artifact:device-submit-result"
+    ],
+    "name": "Monitor device task",
+    "output_artifact_ids": [
+      "artifact:device-monitor-result"
+    ],
+    "requires_user_confirmation_after": false,
+    "requires_user_confirmation_before": false,
+    "skill_name": "fdu-execution-monitoring",
+    "step_kind": "skill_call"
+  }
+}

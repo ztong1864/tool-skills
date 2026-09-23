@@ -1,0 +1,77 @@
+{
+  "step-type:item--08fd4fd2": {
+    "canonical_name": "高内涵仪-成像",
+    "editable_parameters": [
+      {
+        "description": "",
+        "display_name": "成像协议",
+        "key": "protocol",
+        "value_type": "string"
+      }
+    ],
+    "entity_type": "StepType",
+    "id": "step-type:item--08fd4fd2",
+    "normalized_name": "高内涵仪-成像"
+  },
+  "step-type:item--1195f0ed": {
+    "canonical_name": "移液站-移液",
+    "editable_parameters": [
+      {
+        "description": "",
+        "display_name": "移液协议",
+        "key": "protocol",
+        "value_type": "string"
+      }
+    ],
+    "entity_type": "StepType",
+    "id": "step-type:item--1195f0ed",
+    "normalized_name": "移液站-移液"
+  },
+  "step-type:item--42699905": {
+    "canonical_name": "洗板机-洗板",
+    "editable_parameters": [
+      {
+        "description": "",
+        "display_name": "洗板结束列数",
+        "key": "endColumn",
+        "value_type": "integer"
+      },
+      {
+        "description": "",
+        "display_name": "洗板协议",
+        "key": "protocol",
+        "value_type": "string"
+      },
+      {
+        "description": "",
+        "display_name": "洗板开始列数",
+        "key": "startColumn",
+        "value_type": "integer"
+      }
+    ],
+    "entity_type": "StepType",
+    "id": "step-type:item--42699905",
+    "normalized_name": "洗板机-洗板"
+  },
+  "step-type:item--f3a1f689": {
+    "canonical_name": "调度-等待",
+    "editable_parameters": [],
+    "entity_type": "StepType",
+    "id": "step-type:item--f3a1f689",
+    "normalized_name": "调度-等待"
+  },
+  "step-type:v2--b4f1cc3e": {
+    "canonical_name": "调度-等待v2",
+    "editable_parameters": [
+      {
+        "description": "",
+        "display_name": "孵育时间",
+        "key": "DelayTime",
+        "value_type": "integer"
+      }
+    ],
+    "entity_type": "StepType",
+    "id": "step-type:v2--b4f1cc3e",
+    "normalized_name": "调度-等待v2"
+  }
+}

@@ -1,0 +1,22 @@
+S27
+ (S,S)-5ba was recovered as determined by 1H NMR analysis of the crude reaction
+mixture. The residue was purified by ch romatography on silica gel to afford ( R)-4ba
+(19.2 mg, 43%) (eluent: petroleum ether)  as a liquid: 98% ee (HPLC conditions:
+Chiralcel OD-H column, hexane/ i-PrOH = 100/0, 0.7 mL/min, λ = 254 nm,  tR(major)
+= 8.6 min, tR(minor) = 9.6 min). 1H NMR (300 MHz, CDCl 3) δ = 7.35-7.21 (m, 4 H,
+Ar-H), 7.19-7.11 (m, 1 H, Ar-H), 6.12 (dt, J1 = 6.3 Hz,  J2 = 3.0 Hz, 1 H, one proton
+from CH=C=CH), 5.56 (q, J = 6.7 Hz, 1 H, one proton from CH=C=CH), 2.11 (qd, J1
+= 7.1 Hz, J2 = 3.0 Hz, 2 H, CH 2), 1.52-1.14 (m, 12 H, CH 2×6), 0.87 (t, J = 6.8 Hz, 3 H,
+CH 3).
+(3) Reaction of ( S,S)-5ba with 20 mol% of CuBr  in eq.3 of Scheme 2 (lrz-8-6):
+
+65% of the propargylic amine ( S,S)-5ba was recovered as determined by 1H
+NMR analysis of the crude reaction mixtur e from the reaction of CuBr (6.2 mg, 0.04
+mmol, 98% from Acros), ( S,S)-5ba (94.3 mg, 0.2 mmol, 98%),  and toluene (1 mL).
+The residue was purified by chromat ography on silica gel to afford ( R)-4ba (6.5 mg,
+14%) (eluent: petroleum ether) as a liquid: 97% ee (HPLC conditions: Chiralcel
+OD-H column, hexane/ i-PrOH = 100/0, 0.7 mL/min, λ = 254 nm,  tR(major) = 8.6 min,
+tR(minor) = 9.7 min). 1H NMR (300 MHz, CDCl 3) δ = 7.40-7.21 (m, 4 H, Ar-H),
+7.21-7.10 (m, 1 H, Ar-H), 6.12 (dt, J1 = 6.3 Hz,  J2 = 3.0 Hz, 1 H, one proton from
+CH=C=CH), 5.56 (q, J = 6.7 Hz, 1 H, one proton from CH=C=CH), 2.12 (qd, J1 = 7.1
+Hz, J2 = 3.0 Hz, 2 H, CH 2), 1.58-1.12 (m, 12 H, CH 2×6), 0.87 (t, J = 6.6 Hz, 3 H,

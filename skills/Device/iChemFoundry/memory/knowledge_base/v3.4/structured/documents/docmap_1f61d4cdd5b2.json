@@ -1,0 +1,54 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_1f61d4cdd5b2",
+  "paper_id": "97878d3357f1",
+  "raw_path": "相关文献/d2cs00627h.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "Xe"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "SAPO-34",
+    "ZSM-5"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Al",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "MIM"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "conclusion": "for\nZn(tbip), a nanoporous MOF material, that the external surface\nbarriers result from the nearly total occlusion of surface pores.",
+    "results_summary": "This journal is © The Royal Society of Chemistry 2023\nChem. Soc. Rev., 2023, 52, 3991–4005 |  3991\nCite this: Chem. Soc. Rev., 2023,\n52, 3991\nSurface barriers to mass transfer in nanoporous\nmaterials "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:47:55.561849"
+}

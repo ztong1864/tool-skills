@@ -1,0 +1,40 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_8059d20f4e0e",
+  "canonical_material_id": "mat_7bab298f2cb5",
+  "canonical_name": "BUT-43",
+  "metal_element": "Cu",
+  "node_signature_id": "node_dce145c0af35",
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "f4ee8ef5453e"
+  ],
+  "evidence_trace_ids": [],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:11:36.006121",
+  "updated_at": "2026-04-23T17:11:36.006140"
+}

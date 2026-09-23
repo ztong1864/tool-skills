@@ -1,0 +1,205 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_19ad176ca7a2",
+  "paper_id": "3e1294c811a4",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "ZJU-280a shows thermal_stability_temperature = 300.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "uptake_CO2 (CO2) = 0.51 mmol/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Qst_C2H2 (C2H2) = 35.1 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "IAST_selectivity_C2H2/CO2 (C2H2) = 3.21 dimensionless at 1.1 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "tilted ligand phenyl rings creating two pore windows → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "pore windows of 3.6 Å and 5.8 Å, high-density carboxylate oxygen sites, and inert phenyl rings containing pi bonds → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a microporous MOF with pore sizes of 3.6 and 5.8 Å, high-density carboxylate oxygen sites, and inert phenyl rings containing π bonds → enhances preferential C2H2 adsorption over CO2 in CAU-10-H"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] choose CAU-10-H with facile synthesis routes and cost-efficient processing → improves potential for large-scale industrial application"
+    },
+    {
+      "title": "Comparison",
+      "body": "CAU-10-H with 50/50 C2H2/CO2 feed vs CAU-10-H with 2/1 C2H2/CO2 feed: winner=tie on C2H2/CO2_IAST_selectivity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_dd96e5ee577e",
+    "trace_827d72ed57aa",
+    "trace_f06c1f513a8c",
+    "trace_d51d7d8e7be8",
+    "trace_d740aa5837c0",
+    "trace_496ed26dbeaf",
+    "trace_8fd9c61796eb",
+    "trace_b728e4a6bf47",
+    "trace_65f921a8394a",
+    "trace_570b3547515c",
+    "trace_014b861d66f3",
+    "trace_240e10db035d",
+    "trace_6ec105fee799",
+    "trace_c40c803753e2",
+    "trace_90e813702343",
+    "trace_0a551fad811b",
+    "trace_a6fc1f20e1cd",
+    "trace_fed6c5a44613",
+    "trace_a344a014a056",
+    "trace_469eba69df13",
+    "trace_23861d0c30e3",
+    "trace_31dab5beeeca",
+    "trace_5cdf210ebf85",
+    "trace_a1fea9d69b1e",
+    "trace_96ae9bca69d3",
+    "trace_993da0307ab2",
+    "trace_35e1b696989a",
+    "trace_61360d292d41",
+    "trace_6dff0ed1040c",
+    "trace_a519bfbf5794",
+    "trace_77f0648fbacc",
+    "trace_94ef7bfc04b2",
+    "trace_6c0d5b3c7751",
+    "trace_3679d9345eb7",
+    "trace_9d1a55fadaf6",
+    "trace_0e08d33a06e9",
+    "trace_680f47725585",
+    "trace_6c0d5b3c7751",
+    "trace_d740aa5837c0",
+    "trace_f06c1f513a8c",
+    "trace_a6fc1f20e1cd",
+    "trace_240e10db035d",
+    "trace_014b861d66f3",
+    "trace_9d1a55fadaf6",
+    "trace_61360d292d41",
+    "trace_993da0307ab2",
+    "trace_31dab5beeeca",
+    "trace_96ae9bca69d3",
+    "trace_6ec105fee799",
+    "trace_b728e4a6bf47",
+    "trace_35e1b696989a",
+    "trace_77f0648fbacc",
+    "trace_570b3547515c",
+    "trace_827d72ed57aa",
+    "trace_0a551fad811b",
+    "trace_6dff0ed1040c",
+    "trace_94ef7bfc04b2",
+    "trace_dd96e5ee577e",
+    "trace_680f47725585",
+    "trace_3679d9345eb7",
+    "trace_8fd9c61796eb",
+    "trace_a344a014a056",
+    "trace_0e08d33a06e9",
+    "trace_90e813702343",
+    "trace_a519bfbf5794",
+    "trace_5cdf210ebf85",
+    "trace_65f921a8394a",
+    "trace_a1fea9d69b1e",
+    "trace_c40c803753e2",
+    "trace_23861d0c30e3",
+    "trace_469eba69df13",
+    "trace_fed6c5a44613",
+    "trace_496ed26dbeaf",
+    "trace_d51d7d8e7be8"
+  ],
+  "measurement_card_ids": [
+    "mcard_bfc0195d41c1",
+    "mcard_eb9c55fd5b58",
+    "mcard_66b435cd7cfc",
+    "mcard_efdb7dcd8fd6",
+    "mcard_290bb06f9d19",
+    "mcard_8e91de791b52",
+    "mcard_f95fe5d7ea9f",
+    "mcard_d05b53c55e50",
+    "mcard_37a7304d2665",
+    "mcard_0dec0290c8ec",
+    "mcard_1445b6a1d71b",
+    "mcard_b578619a8720"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_23b48af7dbf1",
+    "mechcard_75b700e520de",
+    "mechcard_d2a192ca5bcf",
+    "mechcard_84096b331817",
+    "mechcard_c9277fe53529",
+    "mechcard_057db3bfb363"
+  ],
+  "recipe_card_ids": [
+    "recipe_b86fbe7a1571",
+    "recipe_8936d9016b6f"
+  ],
+  "claim_card_ids": [
+    "claim_9cae92c5a904",
+    "claim_3dec28595e77",
+    "claim_8c7e2e13ba83",
+    "claim_3c40817a70e2",
+    "claim_5067c0de5120",
+    "claim_a8a020beb461",
+    "claim_d2e85342389a",
+    "claim_a4f2a7014574"
+  ],
+  "design_rule_card_ids": [
+    "drule_571931815e53",
+    "drule_1d120349504c",
+    "drule_e7b245e90eec"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_dd5b28958489",
+    "comp_75811990c3a6",
+    "comp_e644bdaf9752"
+  ],
+  "failure_case_card_ids": [
+    "fail_a787b7e9deed"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_7929c7c83df1",
+    "mat_398100fdfee2",
+    "mat_eec1b7bf7e3e"
+  ],
+  "dossier_ids": [
+    "dossier_93a9cc59ba3e",
+    "dossier_ab1c8dc485d6",
+    "dossier_14912815ea6e"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The facile synthesis and cost-efficient processing of CAU-10-H give it strong potential for large-scale industrial application.",
+    "Although CAU-10-H shows the same IAST selectivity (3.21) for 50/50 and 2/1 C2H2/CO2 mixtures, its separation performance is composition-dependent, with only the 2/1 mixture giving a higher acetylene w",
+    "CAU-10-H does not maximize adsorption enthalpy for C2H2 compared with some benchmark MOFs, since its Qst (35.1 kJ mol-1) is lower than ZJU-74a and NKMOF-1-Ni, representing a trade-off between stronger"
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:52.121492",
+  "updated_at": "2026-04-24T00:19:52.121495",
+  "raw_path": "相关文献/水稳定微孔金属——有机框架材料的制备及其乙炔和乙烯纯化性能研究.pdf"
+}

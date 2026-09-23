@@ -1,0 +1,57 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_92aa96bf23e5",
+  "paper_id": "bff26f8ebf7c",
+  "raw_path": "相关文献/10.1016@j.poly.2019.05.003.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": "10.1016/j.poly.2019.05.003",
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MOF-177"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "BPDC",
+    "azolate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "pcu"
+  ],
+  "key_sections": {
+    "conclusion": "of the crystallographic data\nare presented in Table 1, and selected bond lengths and angles\nare given in Table S1.\n2.5. Gas sorption measurements",
+    "results_summary": "Pore-size tuning in pillared-layer metal–organic framework with\nself-penetrated rob net for selective gas adsorption and efﬁcient dyes\nadsorption in aqueous solution\nJie Liu 1, Yuhui Wei 1, Fenlin Bao"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T16:56:39.205468"
+}

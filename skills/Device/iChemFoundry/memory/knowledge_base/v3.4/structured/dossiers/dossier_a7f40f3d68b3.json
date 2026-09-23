@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_a7f40f3d68b3",
+  "canonical_material_id": "mat_4891dcf5df98",
+  "canonical_name": "SCM-15",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": "sov",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_e636221e1e37",
+    "mechcard_c0c10a9d8157"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "62abef84986f"
+  ],
+  "evidence_trace_ids": [
+    "trace_c6df93bb3c28",
+    "trace_d6caa108ff03"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T23:40:03.653118",
+  "updated_at": "2026-04-23T23:40:03.653211"
+}

@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_a1545f9a7bad",
+  "paper_id": "e990e0e8c588",
+  "raw_path": "相关文献/Syntheses,Crystal_Structur...uclear_Copper(Ⅱ)_Compounds_陈彦国.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "C2H6"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "THC-2"
+  ],
+  "mentioned_metals": [
+    "Cu",
+    "Ni",
+    "Mn",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "sod"
+  ],
+  "key_sections": {
+    "abstract": "Two new compounds, 1 ([Cu(IDB)2]Cl2·2CH3CH2OH·2H2O (IDB = N,N-di(2- \nbenzimidazolylmethyl)imine]) and 2 ([Cu(EDTB)]·2[C6H4(OH)COO]·6H2O (EDTB = N,N,N',N'-",
+    "conclusion": "In the present work, two novel copper(II) coor- \ndination compounds based on the N-containing \ngroups (benzimidazole and amine) ligand were",
+    "results_summary": "35 卷12 期                         结  构  化  学 （JIEGOU HUAXUE）                       Vol. 35, No.12      \n2016. 12                                 Chinese  J.  Struct.  Chem.                             "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:58:14.354578"
+}

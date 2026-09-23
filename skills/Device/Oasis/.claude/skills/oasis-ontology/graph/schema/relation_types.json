@@ -1,0 +1,14 @@
+{
+  "relation_types": [
+    "guides",
+    "hasStep",
+    "instanceOf",
+    "precedes",
+    "produce",
+    "refersToVariant",
+    "useMaterial",
+    "usesInstrument",
+    "usesProtocol",
+    "withData"
+  ]
+}

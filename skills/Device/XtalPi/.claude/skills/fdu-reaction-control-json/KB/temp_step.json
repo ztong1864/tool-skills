@@ -1,0 +1,13 @@
+{
+  "skill_input": {
+    "layout_code": "T-3:30",
+    "unit_column": 30,
+    "unit_row": 12,
+    "temperature": 25,
+    "reaction_duration": 1200,
+    "rotation_speed": 0,
+    "is_wait": true,
+    "still_tem": 25
+  },
+  "resource_info": null
+}

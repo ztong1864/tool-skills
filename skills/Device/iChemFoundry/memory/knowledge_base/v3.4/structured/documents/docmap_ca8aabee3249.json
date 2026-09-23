@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_ca8aabee3249",
+  "paper_id": "0e0372bd7999",
+  "raw_path": "相关文献/Wang 等 - Engineering the Microporous Environment of Flexibl.pdf",
+  "title": "Engineering the Microporous Environment of Flexibl",
+  "authors": [
+    "Wang"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Al",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "The separation of ethylene (C2H4) from mixtures with carbon dioxide (CO2) and acetylene (C2H2) is of great",
+    "conclusion": "In summary, this study successfully achieved for the ﬁrst\ntime a rationally designed FMOF of Zn-ox-matz featuring",
+    "results_summary": "Research Article\nHow to cite: Angew. Chem. Int. Ed. 2025, e202508419\ndoi.org/10.1002/anie.202508419\nMetal–Organic Frameworks Very Important Paper\nEngineering the Microporous Environment of Flexible Me"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:19:06.713332"
+}

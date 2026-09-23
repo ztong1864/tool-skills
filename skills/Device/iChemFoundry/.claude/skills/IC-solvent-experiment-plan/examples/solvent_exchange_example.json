@@ -1,0 +1,123 @@
+{
+  "experiment_type": "solvent_exchange",
+  "plan_name": "mof_methanol_solvent_exchange_plan",
+  "description": "单通道 MOF 制样装置的溶剂置换任务编排，用于描述实验流程骨架、循环结构、人工步骤与参数需求。",
+  "steps": [
+    {
+      "step_id": 1,
+      "name": "初始化设备",
+      "kind": "setup",
+      "description": "准备单通道装置，使其进入可执行溶剂置换流程的初始状态。"
+    },
+    {
+      "step_id": 2,
+      "name": "解除抱紧",
+      "kind": "mechanical_prep",
+      "description": "解除装置的抱紧状态，为后续盖板运动做准备。"
+    },
+    {
+      "step_id": 3,
+      "name": "上升盖板",
+      "kind": "mechanical_motion",
+      "description": "抬升盖板，暴露样品放置区域。",
+      "params_needed": [
+        "lift_steps"
+      ]
+    },
+    {
+      "step_id": 4,
+      "name": "人工放入样品",
+      "kind": "manual",
+      "description": "由用户手动将 MOF 样品放入单通道装置。"
+    },
+    {
+      "step_id": 5,
+      "name": "下降盖板",
+      "kind": "mechanical_motion",
+      "description": "放样完成后下降盖板，使装置恢复到密闭处理状态。",
+      "params_needed": [
+        "lift_steps"
+      ]
+    },
+    {
+      "step_id": 6,
+      "name": "开启温控",
+      "kind": "thermal_control",
+      "description": "启动温度控制阶段，使样品进入设定的溶剂置换温度条件。",
+      "params_needed": [
+        "target_temperature_c"
+      ]
+    },
+    {
+      "step_id": 7,
+      "name": "初次抽干",
+      "kind": "drying",
+      "description": "在正式置换循环前先进行一次抽干处理。",
+      "params_needed": [
+        "initial_dry_time_sec"
+      ]
+    },
+    {
+      "step_id": 8,
+      "name": "溶剂置换循环",
+      "kind": "loop",
+      "description": "执行多轮溶剂置换循环，每轮包含注液、活化静置和抽滤三个子步骤。",
+      "params_needed": [
+        "exchange_cycles",
+        "injection_time_sec",
+        "activation_time_sec",
+        "filtration_time_sec",
+        "methanol_volume_ml"
+      ],
+      "substeps": [
+        {
+          "name": "注液",
+          "kind": "liquid_exchange",
+          "description": "向样品通道中加入甲醇。"
+        },
+        {
+          "name": "活化静置",
+          "kind": "incubation",
+          "description": "在当前温度条件下静置，使溶剂充分交换。"
+        },
+        {
+          "name": "抽滤",
+          "kind": "filtration",
+          "description": "移除本轮溶剂，为下一轮置换做准备。"
+        }
+      ]
+    },
+    {
+      "step_id": 9,
+      "name": "风扇降温",
+      "kind": "cooling",
+      "description": "循环结束后进行风扇降温。",
+      "params_needed": [
+        "cooling_time_sec"
+      ]
+    }
+  ],
+  "manual_steps": [
+    4
+  ],
+  "params_required": [
+    "lift_steps",
+    "target_temperature_c",
+    "initial_dry_time_sec",
+    "injection_time_sec",
+    "activation_time_sec",
+    "filtration_time_sec",
+    "exchange_cycles",
+    "cooling_time_sec",
+    "methanol_volume_ml"
+  ],
+  "metadata": {
+    "scope": "task_planning_only",
+    "device_type": "single_channel_mof_device",
+    "notes": [
+      "本任务编排仅描述流程骨架，不包含参数值。",
+      "本任务编排不包含控制器调用、IO 映射或执行条件。",
+      "后续需要由参数智能体补全具体参数值，再由执行智能体转换为装置执行协议。"
+    ]
+  }
+}

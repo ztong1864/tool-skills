@@ -1,0 +1,32 @@
+{
+  "artifact:merged-step-json--containsAction--device-action:add-liquid": {
+    "from": "artifact:merged-step-json",
+    "id": "artifact:merged-step-json--containsAction--device-action:add-liquid",
+    "relation_type": "containsAction",
+    "to": "device-action:add-liquid"
+  },
+  "artifact:merged-step-json--containsAction--device-action:add-solid": {
+    "from": "artifact:merged-step-json",
+    "id": "artifact:merged-step-json--containsAction--device-action:add-solid",
+    "relation_type": "containsAction",
+    "to": "device-action:add-solid"
+  },
+  "artifact:merged-step-json--containsAction--device-action:filter": {
+    "from": "artifact:merged-step-json",
+    "id": "artifact:merged-step-json--containsAction--device-action:filter",
+    "relation_type": "containsAction",
+    "to": "device-action:filter"
+  },
+  "artifact:merged-step-json--containsAction--device-action:high-filter": {
+    "from": "artifact:merged-step-json",
+    "id": "artifact:merged-step-json--containsAction--device-action:high-filter",
+    "relation_type": "containsAction",
+    "to": "device-action:high-filter"
+  },
+  "artifact:merged-step-json--containsAction--device-action:reaction-control": {
+    "from": "artifact:merged-step-json",
+    "id": "artifact:merged-step-json--containsAction--device-action:reaction-control",
+    "relation_type": "containsAction",
+    "to": "device-action:reaction-control"
+  }
+}

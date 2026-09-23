@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_15dce8c4e582",
+  "paper_id": "09be42eaae90",
+  "raw_path": "相关文献/Zn-草酸Selective Adsorption and Separation of C2 Hydrocarbons in a “Flexible-Robust” Metal-Organic Framework on Guest-Dependent Gate-Opening Effect.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "ELM-12",
+    "MIL-53",
+    "MAF-42"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "rsc.li/chemcomm\n ChemComm\nChemical Communications\nrsc.li/chemcomm\nISSN 1359-7345\nCOMMUNICATION\nS. J. Connon, M. O. Senge et al. \nConformational control of nonplanar free base porphyrins: \ntowards bifu"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:30:32.981511"
+}

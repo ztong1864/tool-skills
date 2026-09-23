@@ -1,0 +1,31 @@
+S15
+ Evaporation and column chromatography on silica gel afforded 3dg (109 mg, 42%) as
+a liquid (eluent: petroleum ether/ethyl acetate=30:1): 1H NMR (300 MHz, CDCl 3) δ
+8.19 (d, J = 8.7 Hz, 2 H), 7.50 (d, J = 8.7 Hz, 2 H), 5.30-5.15 (m, 2 H), 4.62 (s, 2 H),
+4.13-4.02 ( m, 2 H), 2.10-1.95 (m, 2 H), 1.45-1.27 (m, 4 H), 0.89 (t, J = 7.1 Hz, 3 H);
+13C NMR (75 MHz, CDCl 3) δ 205.2, 147.2, 146.1, 127.7, 12 3.5, 92.2, 87.8, 70.2, 69.2,
+31.2, 28.2, 22.0, 13.8; MS (EI) m/z (%) 261 (M+, 0.09), 136 (100); IR (neat) 2957,
+2928, 2859, 2362, 2336, 1963, 1605, 1522, 1460, 1346, 1094, 1013; Anal. calcd. for C
+15H19NO 3: (%) C 68.94, H 7.33, N 5.36; Found: C 69.17, H 7.47, N 5.21; HRMS (EI)
+calcd for C 15H19NO 3 (M+): 261.1365. Found: 261.1367 .
+(4) Synthesis of N-(1-phenylundeca-1,2-dien-4-yl)  p-tolylsulfonamide (7a)
+toluene, 130 ℃+ PhCHO +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv62 a
+7aC7H15
+TsHN
+6.4 h, 59%Ph
+NHTs
+C7H15
+
+To a dried reaction tube was added ZnI 2 (256 mg, 0.80 mmol). This reaction tube
+was dried under vacuum with a heating gun. Then N-(dec-1-yn-3-yl)
+p-tolylsulfonamide 6 (307 mg, 1.00 mmol), benzaldehyde (191 mg, 1.80 mmol),
+morpholine (122 mg, 1.40 mmol), and toluene (3 mL) were added sequentially into a
+dried reaction tube equipped  with a reflux condenser und er an argon atmosphere and
+the resulting mixtur e was stirred at 130 ℃. When the reaction was complete as
+monitored by TLC, the reaction mixture was cooled to room temperature and then
+filtered. Evaporation and column chromatography on silica gel afforded 7a (235 mg,
+59%) as a liquid as a pair of diastereoiso mer (eluent: petroleum ether/ethyl acetate =

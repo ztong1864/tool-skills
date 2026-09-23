@@ -1,0 +1,70 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_1df001b4385e",
+  "paper_id": "32ff123187b3",
+  "raw_path": "相关文献/Jeong 等 - 2024 - Carbon Dioxide Capture in a Carbonate-Pillared Ult.pdf",
+  "title": "Carbon Dioxide Capture in a Carbonate-Pillared Ult",
+  "authors": [
+    "Jeong"
+  ],
+  "year": 2024,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "C2H2",
+    "Kr"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MOF-801",
+    "CALF-20",
+    "SIFSIX-2-Cu-i",
+    "UiO-66",
+    "MIL-101",
+    "MIL-140"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Al",
+    "Cr",
+    "Cd",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "DOBDC",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "sql",
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "Metal−organic frameworks (MOFs) have emerged\nas promising candidates for carbon dioxide (CO2) capture due to",
+    "results_summary": "Carbon Dioxide Capture in a Carbonate-Pillared Ultramicroporous\nMetal−Organic Framework\nSe-Min Jeong, Kyung Ho Cho, Su-Kyung Lee, Ji Woong Yoon, Jong Suk Lee,* Donghui Jo,*\nand U-Hwang Lee*\nCite This:"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:56:41.066203"
+}

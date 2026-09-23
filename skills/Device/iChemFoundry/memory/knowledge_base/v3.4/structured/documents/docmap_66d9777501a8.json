@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_66d9777501a8",
+  "paper_id": "f3cdab115144",
+  "raw_path": "相关文献/liu2013.pdf-1.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Cite this: CrystEngComm, 2013, 15, 2057\nReceived 2nd November 2012,\nAccepted 15th January 2013\nTwo isostructural amine-functionalized 3D self-\npenetrating microporous MOFs exhibiting high\nsorption sel"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:20:44.887922"
+}

@@ -1,0 +1,40 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_97f4b915363c",
+  "canonical_material_id": "mat_88982b60a673",
+  "canonical_name": "MIL-47(V)",
+  "metal_element": "V",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "40718dae876e"
+  ],
+  "evidence_trace_ids": [],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:09:05.595919",
+  "updated_at": "2026-04-23T22:09:05.595973"
+}

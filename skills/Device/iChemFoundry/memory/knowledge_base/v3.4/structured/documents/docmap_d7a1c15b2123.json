@@ -1,0 +1,56 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_d7a1c15b2123",
+  "paper_id": "8f5c2cf04665",
+  "raw_path": "相关文献/氮唑相关文献_Talha 等 - 2020 - A three-dimensional metal–organic framework with h.pdf",
+  "title": "A three-dimensional metal–organic framework with h",
+  "authors": [
+    "氮唑相关文献_Talha"
+  ],
+  "year": 2020,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "Xe"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "BUT-25",
+    "BUT-26"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Sr",
+    "Cd",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "This journal is ©The Royal Society of Chemistry and the Centre National de la Recherche Scientifique 2020\nNew J. Chem., 2020, 44, 11829--11834 | 11829\nCite this: New J. Chem., 2020,\n44, 11829\nA three-"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:44:24.011075"
+}

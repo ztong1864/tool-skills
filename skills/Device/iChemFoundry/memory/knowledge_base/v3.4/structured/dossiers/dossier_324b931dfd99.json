@@ -1,0 +1,71 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_324b931dfd99",
+  "canonical_material_id": "mat_3ebfe9fc5062",
+  "canonical_name": "NCU-20",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_5b552ab3b601",
+    "mcard_97724e2ed78c",
+    "mcard_b208be93aa1d",
+    "mcard_5732174477f8",
+    "mcard_0f3de5c373cb",
+    "mcard_14c78cfdab3f",
+    "mcard_ab6c1737288f",
+    "mcard_2c929b49426a",
+    "mcard_fe6f228bfd29"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_cf202921b0bd",
+    "mechcard_feea414b5361",
+    "mechcard_5b363575db5e"
+  ],
+  "recipe_card_ids": [
+    "recipe_e71f17701be0",
+    "recipe_56779d1afe16"
+  ],
+  "claim_card_ids": [
+    "claim_c8b155e88101",
+    "claim_fd9007972943",
+    "claim_10826cf81870",
+    "claim_7b31d1752870",
+    "claim_0ec7265d0e66"
+  ],
+  "design_rule_card_ids": [
+    "drule_2746f2a76d67"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "12b2852ac256"
+  ],
+  "evidence_trace_ids": [
+    "trace_21a501c28608",
+    "trace_2537d867e484",
+    "trace_a890851f96a1",
+    "trace_8bdd7394f634",
+    "trace_6135fa42061c",
+    "trace_0aed8ef97d89",
+    "trace_0681630d6e06",
+    "trace_e4eb2f22c671",
+    "trace_b0a2b036066a",
+    "trace_b4e9de0af627",
+    "trace_3b7a55cf6a43"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:38:50.084391",
+  "updated_at": "2026-04-23T17:39:23.767405"
+}

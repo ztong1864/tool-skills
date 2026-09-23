@@ -1,0 +1,23 @@
+S4
+ Experimental details and analytical data
+1. Preparation of ( R)-1-phenyltrideca-1,2-diene ( R-4aa) in Scheme 1 (yjt-12-21):
+
+To an oven-dried Schlenk tube was added ZnBr 2 (184.2 mg, 0.8 mmol, 98% from
+Alfa) inside a glove box. The Schlenk tube  was then taken out of the glove box and
+dried under vacuum with a heating gun. After cooling to room temperature, ( S)-3
+(323.0 mg, 1.25 mmol, 98%), 1a (171.6 mg, 1.0 mmol, 97%)/toluene (3 mL), and 2a
+(191.4 mg, 1.8 mmol)/toluene (2 mL) were then added sequentially under the Ar
+atmosphere. The Schlenk tube was then equi pped with a condenser  and placed in a
+pre-heated oil bath of 120 oC with stirring for 12 h. After c ooling to room temperature,
+the crude reaction mixture was filtered through a short pad of silica gel eluted with
+ether (20 mL). After evaporation, the re sidue was purified tw ice by chromatography
+on silica gel to afford ( R)-4aa (80.6 mg, 31%) (eluent: petr oleum ether) as a liquid:
+82% ee (HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/0, 0.7
+mL/min, λ = 214 nm,  tR(major) = 10.4 min, tR(minor) = 12.0 min); [ α]D18 = -160.8 ( c
+= 1.05, CHCl 3); 1H NMR (300 MHz, CDCl 3) δ = 7.28 (d, J = 4.2 Hz, 4 H, Ar-H),
+7.21-7.10 (m, 1 H, Ar-H), 6.11 (dt, J1 = 6.6 Hz,  J2 = 3.1 Hz, 1 H, one proton from
+CH=C=CH), 5.55 (q, J = 6.6 Hz, 1 H, one proton from CH=C=CH), 2.11 (qd, J1 = 7.1
+Hz, J2 = 2.8 Hz, 2 H, CH 2), 1.54-1.14 (m, 16 H, CH 2×8), 0.88 (t, J = 6.5 Hz, 3 H,
+CH 3); 13C NMR (75 MHz, CDCl 3) δ = 205.1, 135.1, 128.5, 126.5, 95.1, 94.5, 31.9,
+29.64, 29.6, 29.43, 29.35, 29.19, 29.15, 28.7, 22.7, 14.1; MS (EI) m/z (%): 256 (M+,
+1.20), 157 (M+-C7H15, 2.36), 130 (100); IR (neat): v = 2955, 2924, 2853, 1950, 1599,

@@ -1,0 +1,197 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_6171892618ea",
+  "paper_id": "95c5e1a4b5d9",
+  "title": "X-TRZSmall - 2024 - Yang - Shifting C2H2 CO2 Adsorption and Separation in Pillar‐Layered Metal Organic Frameworks",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "Zn-X-TRZ shows breakthrough_separation_time = 209.0 dimensionless for C2H2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "breakthrough_separation_time (C2H2) = 209.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "C2H2_product_purity_from_70pct_feed (C2H2) = 99.5 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "C2H2_product_purity_from_90pct_feed (C2H2) = 99.95 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "pore_shape_with_uncoordinated_carboxyl_O → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "medium_NDC_rotors_with_comparable_interactions_and_steric_hindrance → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce molecular rotors as dynamic pillar ligands into pillar-layered MOFs → enables controllable reverse and non-reverse C2H2/CO2 adsorption separation by finely tuning the ultramicropore environment"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] decrease pillar rotor size from ADC to smaller NDC or BDC ligands in pillar-layered Zn-TRZ MOFs → separation behavior shifts from C2H2-selective capture toward CO2-selective capture"
+    },
+    {
+      "title": "Comparison",
+      "body": "CO2 in Zn-BDC-TRZ vs C2H2 in Zn-BDC-TRZ: winner=subject_a on number_of_framework_interactions"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_c15472410fdf",
+    "trace_eaf351531b5e",
+    "trace_078eaa82785b",
+    "trace_8e719ea6db1c",
+    "trace_868e44754605",
+    "trace_31db0e30799a",
+    "trace_6fcbc1f6006c",
+    "trace_c57676e3d94d",
+    "trace_a36f9c6f3c89",
+    "trace_269edd59e8e3",
+    "trace_8341ce4eae9b",
+    "trace_589c91ef1a7e",
+    "trace_d12d88adc9ff",
+    "trace_06affb910d74",
+    "trace_71b53cc4bf6c",
+    "trace_ab64c257156b",
+    "trace_2e0bd6002470",
+    "trace_763ccb79bd13",
+    "trace_d92eb7ea3987",
+    "trace_65b1613c6df2",
+    "trace_473e5bdd6567",
+    "trace_82a69dcc0295",
+    "trace_dc58c60d66d1",
+    "trace_593bb38fa134",
+    "trace_9a8ba9a110c3",
+    "trace_1b94b1441aac",
+    "trace_8d0768ac2a48",
+    "trace_c626b3cb6479",
+    "trace_cc376d357755",
+    "trace_70d15a423ecf",
+    "trace_8ff9f5c08fb4",
+    "trace_b5032bdb127d",
+    "trace_bb0d2030fba8",
+    "trace_77bf435d5912",
+    "trace_df366edac690",
+    "trace_6a62cd75ee5e",
+    "trace_ab64c257156b",
+    "trace_8341ce4eae9b",
+    "trace_078eaa82785b",
+    "trace_31db0e30799a",
+    "trace_6fcbc1f6006c",
+    "trace_77bf435d5912",
+    "trace_71b53cc4bf6c",
+    "trace_2e0bd6002470",
+    "trace_cc376d357755",
+    "trace_1b94b1441aac",
+    "trace_06affb910d74",
+    "trace_6a62cd75ee5e",
+    "trace_473e5bdd6567",
+    "trace_d92eb7ea3987",
+    "trace_8ff9f5c08fb4",
+    "trace_9a8ba9a110c3",
+    "trace_eaf351531b5e",
+    "trace_8e719ea6db1c",
+    "trace_a36f9c6f3c89",
+    "trace_82a69dcc0295",
+    "trace_868e44754605",
+    "trace_8d0768ac2a48",
+    "trace_c15472410fdf",
+    "trace_763ccb79bd13",
+    "trace_bb0d2030fba8",
+    "trace_65b1613c6df2",
+    "trace_70d15a423ecf",
+    "trace_d12d88adc9ff",
+    "trace_269edd59e8e3",
+    "trace_dc58c60d66d1",
+    "trace_589c91ef1a7e",
+    "trace_df366edac690",
+    "trace_c626b3cb6479",
+    "trace_b5032bdb127d",
+    "trace_593bb38fa134",
+    "trace_c57676e3d94d"
+  ],
+  "measurement_card_ids": [
+    "mcard_c762c11e4df1",
+    "mcard_72999f8c24ae",
+    "mcard_edc46d272638"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_6c6447dd5b6c",
+    "mechcard_053fa27c266c",
+    "mechcard_89ca9da26cd7",
+    "mechcard_bb125187d852",
+    "mechcard_246b812fc94d",
+    "mechcard_73caea033718",
+    "mechcard_dcf892e7f5fa",
+    "mechcard_1a07038d36d1",
+    "mechcard_73602eaca95f",
+    "mechcard_a66102df84f4",
+    "mechcard_faf0bec09df8"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_2e456fcff4ad",
+    "claim_edc4b55ed3b8",
+    "claim_88e447782d9a",
+    "claim_7c7d4671a299",
+    "claim_1c48caf477ae",
+    "claim_38681ac3acf8",
+    "claim_437edd13316e",
+    "claim_8abcd70170cc"
+  ],
+  "design_rule_card_ids": [
+    "drule_7bbaa0ddc2a3",
+    "drule_1382dd658622",
+    "drule_65617f85e44f"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_1b651c276a99",
+    "comp_fb00509af329"
+  ],
+  "failure_case_card_ids": [
+    "fail_bb363d8a4b08"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_877572e211cd",
+    "mat_5edb0db705b4",
+    "mat_1905762d1991",
+    "mat_4f4c34077a87"
+  ],
+  "dossier_ids": [
+    "dossier_28ded99a61f2",
+    "dossier_a2b530e1c445",
+    "dossier_a81bd093b9e9",
+    "dossier_e3f7ed7ce428"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Pillared molecular rotation regulates adsorption, shifting these MOFs from C2H2-selective to CO2-selective separation as rotor size changes.",
+    "Zn-BDC-TRZ gives excellent dynamic CO2/C2H2 separation, producing >99.5% C2H2 from a 70% feed and >99.95% from a 90% feed at 298 K.",
+    "Zn-ADC-TRZ with the largest ADC rotor shows the highest C2H2-selective thermodynamic separation, including the highest heat of adsorption and IAST selectivity."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.998100",
+  "updated_at": "2026-04-24T00:19:49.998104",
+  "raw_path": "相关文献/Zn-X-TRZSmall - 2024 - Yang - Shifting C2H2 CO2 Adsorption and Separation in Pillar‐Layered Metal Organic Frameworks.pdf",
+  "authors": [
+    "Zn"
+  ]
+}

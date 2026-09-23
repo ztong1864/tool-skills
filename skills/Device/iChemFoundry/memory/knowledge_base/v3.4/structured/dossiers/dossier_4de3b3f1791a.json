@@ -1,0 +1,57 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_4de3b3f1791a",
+  "canonical_material_id": "mat_513bcfa2b82d",
+  "canonical_name": "BEC",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_382fb499331d",
+    "mcard_158402d98a14",
+    "mcard_3f8ba04e6d21",
+    "mcard_35c2e2872b0e",
+    "mcard_3be1dec745d2",
+    "mcard_36653fcd416e"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_3e4f667a42be",
+    "mechcard_c8f7628c4d5c",
+    "mechcard_c8a25081c95a",
+    "mechcard_d615784f6f64"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_b45309d43f08"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "c200d37114d8"
+  ],
+  "evidence_trace_ids": [
+    "trace_497bebcb7851",
+    "trace_82b1879defaf",
+    "trace_224b2820c53a",
+    "trace_7ec13c4c221a",
+    "trace_22f9b0ef61c8"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:25:08.620063",
+  "updated_at": "2026-04-23T22:25:36.053923"
+}

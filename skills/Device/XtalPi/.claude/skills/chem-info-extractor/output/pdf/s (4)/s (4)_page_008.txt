@@ -1,0 +1,35 @@
+S8
+ MS (EI) m/z (%) 234 (M+, 2.00), 135 (100); IR (neat) 3104, 2955, 2925, 2854, 1951,
+1465, 1378, 1264, 1233, 1078 cm-1; HRMS (EI) calcd for C 15H22S(M+): 234.1442.
+Found: 234.1443.
+(5) Synthesis of 1-phenyltrideca-1,2-diene (3ba)
+(CH 2)9CH3
+3ba+P h C H O +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv2aCH3(CH 2)9toluene, 130 ℃
+9.7 h, 57%1b
+
+The reaction of ZnI 2 (256 mg, 0.80 mmol), benzaldehyde (191 mg, 1.80 mmol),
+1-dodecyne 1b (167 mg, 1.01 mmol), and morpholine (123 mg, 1.41 mmol) in 5 mL
+of toluene afforded 3ba2 (148 mg, 57%) as a liquid (eluent: petroleum ether): 1H
+NMR (300 MHz, CDCl 3) δ 7.36-7.27 (m, 4 H), 7.25-7.14 (m, 1 H), 6.20-6.08 (m, 1
+H), 5.63-5.50 (m, 1 H), 2.22-2.07 (m, 2 H), 1.53-1.43 (m, 2 H), 1.40-1.20 (m, 14 H),
+0.89 (t, J = 6.6 Hz, 3 H); 13C NMR (75 MHz, CDCl 3) δ 205.1, 135.2, 128.5, 126.5,
+95.1, 94.5, 31.9, 29.63, 29.59, 29.4, 29.3, 29.19, 29.16, 28.8, 22.7, 14.1; MS (EI) m/z
+(%) 256 (M+, 4.34), 130 (100); IR (neat) 3062, 3031, 2954, 2925, 2853, 1949, 1599,
+1495, 1461 cm-1.
+(6) Synthesis of 1-(4-chlorophenyl)trideca-1,2-diene (3bb)
+(CH 2)9CH3
+3bb+ +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv2bCH3(CH 2)9toluene, 130 ℃
+8.5 h, 53%1bClCHO
+Cl
+
+The reaction of ZnI 2 (256 mg, 0.80 mmol), 4-chlorobenzaldehyde (253 mg, 1.80
+mmol), 1-dodecyne 1b (165 mg, 0.99 mmol), and mor pholine (123 mg, 1.41 mmol) in
+3 mL of toluene afforded 3bb (152 mg, 53%) as a liquid (eluent: petroleum ether): 1H

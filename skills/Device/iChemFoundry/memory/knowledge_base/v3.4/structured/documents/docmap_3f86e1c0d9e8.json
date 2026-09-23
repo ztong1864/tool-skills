@@ -1,0 +1,56 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_3f86e1c0d9e8",
+  "paper_id": "7079b11fb224",
+  "raw_path": "相关文献/Zn-H2FA-Xing 等。 - 2015 - Microporous Zinc(II) Metal-Organic Framework with.pdf",
+  "title": "H2FA-Xing 等。 - 2015 - Microporous Zinc(II) Metal-Organic Framework with",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Diamino-1",
+    "MOF-5"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "In",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "mof-5",
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "The zinc(II) complex [Zn(FA)(datrz)2]n (1) (H2FA = fumaric\nacid, Hdatrz = 3,5-diamino-1,2,4-triazole) was synthesized by solvo-",
+    "results_summary": "Journal of Inorganic and General Chemistry\nZeitschrift für anorganische und allgemeine Chemie\nwww.zaac.wiley-vch.de\nARTICLE\nDOI: 10.1002/zaac.201500152\nMicroporous Zinc(II) Metal-Organic Framework wit"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:33:19.933366"
+}

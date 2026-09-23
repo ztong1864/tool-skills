@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_3bf9dd52276d",
+  "canonical_material_id": "mat_402f1e2d994f",
+  "canonical_name": "MOFs-1-FA",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": "lig_ceaaf3444275",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_1275d6793acc"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [
+    "drule_464314d6d3b4",
+    "drule_93338717bbc5"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "25907edd8ee8"
+  ],
+  "evidence_trace_ids": [
+    "trace_fe3976e3a08e"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T23:11:30.232645",
+  "updated_at": "2026-04-23T23:11:55.467893"
+}

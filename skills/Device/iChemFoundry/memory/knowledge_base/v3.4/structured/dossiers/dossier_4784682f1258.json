@@ -1,0 +1,51 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_4784682f1258",
+  "canonical_material_id": "mat_e4005a3d20ff",
+  "canonical_name": "ZnAtzOx",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_b0c9a0bb374e"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_6a579a5036f7",
+    "mechcard_b85978984471"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_7aa35be5c9a7"
+  ],
+  "design_rule_card_ids": [
+    "drule_44ed477fdb95"
+  ],
+  "failure_case_card_ids": [
+    "fail_41395bf00a3b"
+  ],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "e050ac390c87"
+  ],
+  "evidence_trace_ids": [
+    "trace_86ebbf2dcf97",
+    "trace_c9cb7ebe9d92",
+    "trace_57c5fa255f51"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:32:49.958818",
+  "updated_at": "2026-04-23T21:33:26.613336"
+}

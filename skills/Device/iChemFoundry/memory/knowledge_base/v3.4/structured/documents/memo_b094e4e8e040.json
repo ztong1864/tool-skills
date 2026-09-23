@@ -1,0 +1,149 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_b094e4e8e040",
+  "paper_id": "8199cbc71be5",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "[Zn(atz)(bdc)0.5] shows thermal_stability_up_to = 100.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_up_to = 100.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "ATZ-bridged Zn chain and double-chain connectivity → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use tetrazole-based organic linkers in MOF construction → supports construction of novel MOF networks due to strong networking ability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] combine ATZ and 1,4-benzenedicarboxylate (H2bdc) as mixed ligands → produces a photoluminescent metal-organic framework"
+    },
+    {
+      "title": "Comparison",
+      "body": "observed weight loss vs calculated weight loss: winner=tie on TGA_weight_loss_percent"
+    },
+    {
+      "title": "Comparison",
+      "body": "experimental powder X-ray diffraction pattern of compound 1 vs simulated powder X-ray diffraction pattern from single-crystal data of compound 1: winner=tie on PXRD_pattern_match"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] heating the MOF above 220 °C: the ATZ and H2bdc organic ligands decompose and the whole framework collapses"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_1dbc60319cb7",
+    "trace_728ea6f22db9",
+    "trace_27c0c6be192d",
+    "trace_b286cbf93a9a",
+    "trace_39303fe5ddca",
+    "trace_b8a17acd5dad",
+    "trace_4a73ac902de2",
+    "trace_e22e79cd736b",
+    "trace_a8be95db40a0",
+    "trace_817769c8a3a9",
+    "trace_114d6b6565c6",
+    "trace_56175f29e9c0",
+    "trace_4c5f0b4776a5",
+    "trace_a8008cb431cf",
+    "trace_a29ec7b3374d",
+    "trace_b6fab4528d8e",
+    "trace_6c2dadda0991",
+    "trace_a8cf1fb3d668",
+    "trace_adcecf311fb2",
+    "trace_52cf9abb50e7",
+    "trace_94daa5f321da",
+    "trace_9c67da821b64",
+    "trace_9df8d2407c69",
+    "trace_7fabc4430117",
+    "trace_0b27a1dd195f",
+    "trace_32818307abca",
+    "trace_8bf53a8dee41",
+    "trace_94daa5f321da",
+    "trace_4c5f0b4776a5",
+    "trace_9df8d2407c69",
+    "trace_a8008cb431cf",
+    "trace_817769c8a3a9",
+    "trace_114d6b6565c6",
+    "trace_4a73ac902de2",
+    "trace_b286cbf93a9a",
+    "trace_728ea6f22db9",
+    "trace_e22e79cd736b",
+    "trace_adcecf311fb2",
+    "trace_39303fe5ddca",
+    "trace_27c0c6be192d",
+    "trace_a8cf1fb3d668",
+    "trace_8bf53a8dee41",
+    "trace_7fabc4430117",
+    "trace_a29ec7b3374d",
+    "trace_1dbc60319cb7",
+    "trace_32818307abca",
+    "trace_52cf9abb50e7",
+    "trace_b8a17acd5dad",
+    "trace_56175f29e9c0",
+    "trace_b6fab4528d8e",
+    "trace_a8be95db40a0",
+    "trace_0b27a1dd195f",
+    "trace_9c67da821b64",
+    "trace_6c2dadda0991"
+  ],
+  "measurement_card_ids": [
+    "mcard_0ee4e14ea963"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_ddd83b282da8"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_dca9a4557b3a",
+    "claim_46a6b5e602ee",
+    "claim_03d316fb5c5f",
+    "claim_748fd6edcef9",
+    "claim_54788a19bb99",
+    "claim_ca8db01b4956",
+    "claim_94203e09b9bf"
+  ],
+  "design_rule_card_ids": [
+    "drule_6df154a6d80d",
+    "drule_b7732d40f334",
+    "drule_766efe816b63"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_0c6ff2122fe3",
+    "comp_48d7600910f9"
+  ],
+  "failure_case_card_ids": [
+    "fail_314194f84a1a"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c20af7aa27a6"
+  ],
+  "dossier_ids": [
+    "dossier_e3f469e589db"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Thermal stability is limited: the TGA curve is unchanged only up to 100 °C, then 4.04% mass loss occurs from 100-130 °C due to water loss.",
+    "ATZ bridges Zn centers into 1D neutral double chains, and monodentate bdc carboxylates link these chains into the 2D framework.",
+    "PXRD shows the experimental pattern matches the simulated one from single-crystal data, confirming phase purity of compound 1."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:52.049317",
+  "updated_at": "2026-04-24T00:19:52.049319",
+  "raw_path": "相关文献/氮唑相关文献_Zeng - 2014 - Solvothermal Synthesis, Crystal Structure and Lumi.pdf"
+}

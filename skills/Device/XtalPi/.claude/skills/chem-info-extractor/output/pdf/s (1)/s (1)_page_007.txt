@@ -1,0 +1,109 @@
+2539
+© Georg Thieme Verlag  Stuttgart · New York — Synthesis  2018 , 50, 2533–2545D. Ma et al. Paper Syn  thesis
+13C NMR (75 MHz, CDCl3): δ = 203.8, 91.0, 90.6, 62.9, 32.6, 31.9, 29.6,
+29.5, 29.3, 29.2, 29.1, 29.0, 28.91, 28.89, 25.2, 22.7, 14.1.
+MS (70 eV, EI): m/z (%) = 281 [(M + 1)+, 1.80], 280 (M+, 1.62), 93 (100).
+HRMS: m/z calcd for C19H36O (M+): 280.2766, found: 280.2762.
+Synthesis of ( R)-Icosa-7,8-dien-1-ol [( R)-4fa]
+Using (S)- 3a: Following the Typical Procedure I, the reaction of oct-7-
+yn-1-ol ( 1f;12 0.1893 g, 1.5 mmol), dodecanal ( 2a; 0.2760 g, 1.5
+mmol), ( S)-3a (0.2583 g, 1 mmol), and CuBr2 (0.0450 g, 0.2 mmol) in
+1,4-dioxane (3 mL) at 130 °C for 12 h afforded ( R)-4fa (PE/EtOAc 8:1,
+450 mL for the first round; CH2Cl2, 200 mL for the second round);
+yield: (0.1558 g, 53%); colorless solid with a very low mp (0–20 °C);[α]
+D20 –36.2 ( c 1.205, CHCl3).
+HPLC: Chiralcel PA-2 column, n-hexane/ i-PrOH (200:1), 0.7 mL/min,
+λ = 214 nm; tR (major) = 28.5 min, tR (minor) = 30.4 min; 88% ee.
+1H NMR (300 MHz, CDCl3): δ = 5.10–5.00 (m, 2 H, 2 × =CH × 2), 3.64 (t,
+J = 6.6 Hz, 2 H, OCH2), 2.04–1.90 (m, 4 H, 2 × CH2), 1.64–1.50 (m, 2 H,
+CH2), 1.48–1.21 (m, 25 H, 12 × CH2 + OH), 0.88 (t, J = 6.8 Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 203.8, 91.0, 90.7, 63.0, 32.7, 31.9, 29.7,
+29.6, 29.5, 29.3, 29.2, 29.1, 29.0, 28.9, 28.8, 25.6, 22.7, 14.1.
+Using (S)- 3b: Following the Typical Procedure I, the reaction of oct-7-
+yn-1-ol ( 1f;12 0.1894 g, 1.5 mmol), dodecanal ( 2a; 0.2769 g, 1.5
+mmol), ( S)-3b (0.1290 g, 1 mmol), and CuBr2 (0.0450 g, 0.2 mmol) in
+1,4-dioxane (3 mL) at 130 °C for 12 h afforded ( R)-4fa (PE/EtOAc 8:1,
+450 mL for the first round; CH2Cl2, 200 mL for the second round);
+yield: 0.1473 g (50%); colorless solid with a very low mp (0–20 °C);
+[α]D20 –39.3 ( c 1.000, CHCl3).
+HPLC: Chiralcel PA-2 column, n-hexane/ i-PrOH (200:1), 0.7 mL/min,
+λ = 214 nm; tR (major) = 22.1 min, tR (minor) = 24.7 min; 95% ee.
+IR (neat): 3334, 2925, 2854, 1962, 1464, 1377, 1056 cm–1.
+1H NMR (300 MHz, CDCl3): δ = 5.10–5.00 (m, 2 H, 2 × =CH), 3.64 (t, J =
+6.5 Hz, 2 H, OCH2), 2.04–1.90 (m, 4 H, 2 × CH2), 1.64–1.50 (m, 2 H,
+CH2), 1.48–1.17 (m, 25 H, 12 × CH2 + OH), 0.88 (t, J = 6.6 Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 203.9, 91.0, 90.7, 63.0, 32.8, 31.9, 29.67,
+29.66, 29.5, 29.3, 29.2, 29.15, 29.13, 29.0, 28.92, 28.87, 25.6, 22.7,14.1.
+MS (70 eV, EI): m/z (%) = 294 (M
++, 5.54), 81 (100).
+HRMS: m/z calcd for C20H38O (M+): 294.2923; found: 294.2922.
+Synthesis of ( R)-7-Cyclohexylhepta-5,6-dien-1-ol [( R)-4db]
+Using (S)- 3a: Following the Typical Procedure I, the reaction of hex-5-
+yn-1-ol ( 1d; 0.1534 g, 96% purity, 1.5 mmol), cyclohexanecarbalde-
+hyde ( 2b; 0.1692 g, 1.5 mmol), ( S)-3a (0.2585 g, 1 mmol), and CuBr2
+(0.0451 g, 0.2 mmol) in 1,4-dioxane (3 mL) at 130 °C for 12 h afforded
+(R)-4db (PE/EtOAc 20:1, 300 mL to 10:1, 300 mL); yield: 0.0870 g
+(45%); yellow liquid; [ α]D20 –81.2 ( c 0.96, CHCl3).
+HPLC: Chiralcel PA-2 column, n-hexane/ i-PrOH (200:1), 0.6 mL/min,
+λ = 214 nm; tR (major) = 30.8 min, tR (minor) = 32.4 min; 93% ee.
+1H NMR (300 MHz, CDCl3): δ = 5.16–5.04 (m, 2 H, 2 × =CH), 3.66 (t, J =
+6.5 Hz, 2 H, OCH2), 2.11–1.87 (m, 3 H, CH2 + CH), 1.82–1.56 (m, 7 H,
+3 × CH2 + 1 H from CH2), 1.55–1.40 (m, 2 H, CH2), 1.37–0.98 (m, 6 H,
+2 × CH2 + 1 H from CH2 + OH).
+13C NMR (75 MHz, CDCl3): δ = 202.6, 97.2, 91.4, 62.6, 37.2, 33.1, 33.0,
+32.1, 28.7, 26.1, 26.0, 25.3.
+Using (S)- 3b: Following the Typical Procedure I, the reaction of hex-5-
+yn-1-ol ( 1d; 0.1523 g, 1.5 mmol), cyclohexanecarbaldehyde ( 2b;
+0.1685 g, 1.5 mmol), ( S)-3b (0.1289 g, 1 mmol), and CuBr2 (0.0452 g,0.2 mmol) in 1,4-dioxane (3 mL) at 130 °C for 12 h afforded ( R)-4db
+(PE/EtOAc 8:1, 720 mL for the first round; CH2Cl2, 200 mL for the sec-
+ond round); yield: 0.0900 g (46%); yellow liquid; [ α]D20 –87.6 ( c 1.045,
+CHCl3).
+HPLC: Chiralcel AD-H column, n-hexane/ i-PrOH (200:1), 0.7 mL/min,
+λ = 214 nm; tR (major) = 36.4 min, tR (minor) = 39.1 min; 97% ee.
+IR (neat): 3334, 2923, 2851, 2658, 1960, 1448, 1361, 1347, 1303,
+1258, 1229, 1213, 1159, 1058 cm–1.
+1H NMR (300 MHz, CDCl3): δ = 5.17–5.00 (m, 2 H, 2 × =CH), 3.64 (t, J =
+6.5 Hz, 2 H, OCH2), 2.09–1.87 (m, 3 H, CH2 + CH), 1.84 (s, 1 H, OH),
+1.79–1.55 (m, 7 H, 3 × CH2 + 1 H from CH2), 1.53–1.41 (m, 2 H, CH2),
+1.36–0.98 (m, 5 H, 2 × CH2 + 1 H from CH2).
+13C NMR (75 MHz, CDCl3): δ = 202.6, 97.2, 91.4, 62.7, 37.2, 33.11,
+33.05, 32.2, 28.8, 26.1, 26.0, 25.3.
+MS (70 eV, EI): m/z (%) = 195 [(M + 1)+, 1.63], 194 (M+, 2.17), 79 (100).
+HRMS: m/z calcd for C13H22O (M+): 194.1671; found: 194.1669.
+Synthesis of ( R)-8-Methylnona-5,6-dien-1-ol [( R)-4dg]
+Using (S)- 3a: Following the Typical Procedure I, the reaction of hex-5-
+yn-1-ol ( 1d; 0.1524 g, 1.5 mmol), isobutyraldehyde ( 2g, 0.1090 g, 1.5
+mmol), ( S)-3a (0.2582 g, 1 mmol), and CuBr2 (0.0451 g, 0.2 mmol) in
+1,4-dioxane (3 mL) at 130 °C for 12 h afforded ( R)-4dg (PE/EtOAc 10:1,
+500 mL); yield: 0.0615 g (40%); colorless liquid; [ α]D20 = –63.8 ( c
+0.765, CHCl3).
+HPLC: Chiralcel OJ-H column, n-hexane/ i-PrOH (100:1), 1.0 mL/min,
+λ = 214 nm; tR (minor) = 11.0 min, tR (major) = 11.6 min; 92% ee.
+1H NMR (300 MHz, CDCl3): δ = 5.18–5.07 (m, 2 H, 2 × =CH), 3.65 (t, J =
+6.5 Hz, 2 H, OCH2), 2.36–2.19 (m, 1 H, CH), 2.08–1.96 (m, 2 H, CH2),
+1.68–1.56 (m, 2 H, CH2), 1.55–1.33 (m, 3 H, CH2 + OH), 1.00 (d, J = 6.9
+Hz, 6 H, 2 × CH3).
+13C NMR (75 MHz, CDCl3): δ = 202.3, 98.7, 91.8, 62.8, 32.2, 28.8, 27.9,
+25.3, 22.5.
+Using (S)- 3b: Following the Typical Procedure I, the reaction of hex-5-
+yn-1-ol ( 1d; 0.1515 g, 1.5 mmol), isobutyraldehyde ( 2g; 0.1084 g, 1.5
+mmol), ( S)-3b (0.1362 g, 1 mmol), and CuBr2 (0.0455 g, 0.2 mmol) in
+1,4-dioxane (3 mL) at 130 °C for 12 h afforded ( R)-4dg (PE/EtOAc 10:1,
+500 mL); yield: 0.0752 g (49%); colorless liquid; [ α]D20 –65.3 ( c 0.995,
+CHCl3).
+HPLC: Chiralcel OJ-H column, n-hexane/ i-PrOH (100:1), 1.0 mL/min,
+λ = 214 nm; tR (minor) = 12.0 min, tR (major) = 12.9 min; 96% ee.
+IR (neat): 3344, 2960, 2925, 2867, 1960, 1458, 1381, 1362, 1298,
+1059, 1034 cm–1.
+1H NMR (300 MHz, CDCl3): δ = 5.19–5.07 (m, 2 H, 2 × =CH), 3.66 (t, J =
+6.6 Hz, 2 H, OCH2), 2.35–2.20 (m, 1 H, CH), 2.08–1.96 (m, 2 H, CH2),
+1.72–1.55 (m, 2 H, CH2), 1.55–1.41 (m, 2 H, CH2), 1.36 (br s, 1 H, OH),
+1.00 (d, J = 6.6 Hz, 6 H, 2 × CH3).
+13C NMR (75 MHz, CDCl3): δ = 202.3, 98.7, 91.8, 62.8, 32.2, 28.8, 27.9,
+25.3, 22.5.
+MS (70 eV, EI): m/z (%) = 155 [(M + 1)+, 8.3], 154 (M+, 4.6), 81 (100).
+HRMS: m/z calcd for C10H18O (M+): 154.1358; found:154.1361.
+Synthesis of ( R)-8-Ethyldeca-5,6-dien-1-ol [( R)-4dh]
+Using (S)- 3a: Following the Typical Procedure I, the reaction of hex-5-
+yn-1-ol ( 1d, 0.1510 g, 1.5 mmol), 2-ethylbutanal ( 2h; 0.1509 g, 1.5
+mmol), ( S)-3a (0.2586 g, 1 mmol), and CuBr2 (0.0454 g, 0.2 mmol) in

@@ -1,0 +1,70 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_c97958bb6421",
+  "paper_id": "331085fe34df",
+  "raw_path": "相关文献/草酸锌CALF-20peng-et-al-2024-one-step-ethylene-purification-from-a-seven-component-cracking-gas-mixture-with-sorbent-sorbate-induced.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CALF-20",
+    "HPR-20",
+    "UiO-66",
+    "UiO-67",
+    "JNU-3",
+    "UiO-66-CF",
+    "ZU-33",
+    "UPC-66-a"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Al",
+    "Zr",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "NDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "fcu"
+  ],
+  "key_sections": {
+    "conclusion": "In conclusion, we report a multifunctional physisorbent,\nCALF-20, with precisely designed pore structure and",
+    "results_summary": "One-Step Ethylene Puriﬁcation from\na Seven-Component Cracking Gas\nMixture with Sorbent-Sorbate\nInduced-Fit\nXiaowan Peng1†, Li Zhao1,2†, Yun-Lei Peng1,2,3,4*, Chenghua Deng5, Yassin Hjiej Andaloussi5, "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:57:14.174182"
+}

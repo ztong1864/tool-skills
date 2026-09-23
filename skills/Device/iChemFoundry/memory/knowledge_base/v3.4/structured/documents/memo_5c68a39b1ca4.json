@@ -1,0 +1,169 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_5c68a39b1ca4",
+  "paper_id": "dc6fb3fab588",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C3H8"
+  ],
+  "one_line_summary": "Zn-TAZ shows recyclability_cycles = 5.0 dimensionless for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "recyclability_cycles = 5.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "framework_with_two_adsorbed_CO2 → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "CO2_binding_sites_in_framework → selectivity"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] use Zn-DAT MOF as the sole catalyst for cycloaddition of epichlorohydrin without TBAB co-catalyst: the cycloaddition reaction required evaluation under a no-TBAB condition, indicating reduced or unsuccessful catalytic performance without the co-catalyst"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_98248bf2a113",
+    "trace_aa4523aeff47",
+    "trace_4623fc8a9da6",
+    "trace_a5503c896eb8",
+    "trace_254c1d619e58",
+    "trace_c1ed7d686e19",
+    "trace_fe6b189ee3de",
+    "trace_71fca01f3c5c",
+    "trace_4dc2f729f2b8",
+    "trace_a3a49a788ad1",
+    "trace_d75f791a5adc",
+    "trace_a318c3c12bc9",
+    "trace_d180dbe07155",
+    "trace_e884de4dc6e9",
+    "trace_63e36e577997",
+    "trace_5cdb35b5a0e3",
+    "trace_74620430a14e",
+    "trace_2cdcbcb7f9b3",
+    "trace_7e0ec6f29582",
+    "trace_5823cecce126",
+    "trace_5da80d74bd64",
+    "trace_369ef0303208",
+    "trace_f9f502c258a5",
+    "trace_e9ac1f5c7983",
+    "trace_8b6ae1ba1a9b",
+    "trace_8170b920e8a3",
+    "trace_3651199cbcbf",
+    "trace_b60c17a32d44",
+    "trace_17f7fe1790bf",
+    "trace_636b9bc4c539",
+    "trace_46b96c3be64b",
+    "trace_2437a2e3cf74",
+    "trace_d3e4bc5ef93d",
+    "trace_63ef9f1d6d4e",
+    "trace_1f06dd03138f",
+    "trace_fee7f20e56fd",
+    "trace_21bee51a8207",
+    "trace_7cb5c74bd90d",
+    "trace_1f6df4808aae",
+    "trace_fb4eebd79a11",
+    "trace_75131d236ea0",
+    "trace_d180dbe07155",
+    "trace_5823cecce126",
+    "trace_2437a2e3cf74",
+    "trace_fe6b189ee3de",
+    "trace_c1ed7d686e19",
+    "trace_4dc2f729f2b8",
+    "trace_71fca01f3c5c",
+    "trace_75131d236ea0",
+    "trace_a318c3c12bc9",
+    "trace_63e36e577997",
+    "trace_5cdb35b5a0e3",
+    "trace_63ef9f1d6d4e",
+    "trace_aa4523aeff47",
+    "trace_e884de4dc6e9",
+    "trace_b60c17a32d44",
+    "trace_fee7f20e56fd",
+    "trace_21bee51a8207",
+    "trace_7e0ec6f29582",
+    "trace_74620430a14e",
+    "trace_a5503c896eb8",
+    "trace_1f06dd03138f",
+    "trace_d75f791a5adc",
+    "trace_1f6df4808aae",
+    "trace_e9ac1f5c7983",
+    "trace_fb4eebd79a11",
+    "trace_46b96c3be64b",
+    "trace_17f7fe1790bf",
+    "trace_98248bf2a113",
+    "trace_5da80d74bd64",
+    "trace_4623fc8a9da6",
+    "trace_369ef0303208",
+    "trace_f9f502c258a5",
+    "trace_7cb5c74bd90d",
+    "trace_8b6ae1ba1a9b",
+    "trace_636b9bc4c539",
+    "trace_2cdcbcb7f9b3",
+    "trace_d3e4bc5ef93d",
+    "trace_8170b920e8a3",
+    "trace_3651199cbcbf",
+    "trace_254c1d619e58",
+    "trace_a3a49a788ad1"
+  ],
+  "measurement_card_ids": [
+    "mcard_ac7483373774"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_b0a171160916",
+    "mechcard_24411dce1eb1"
+  ],
+  "recipe_card_ids": [
+    "recipe_a37485682049"
+  ],
+  "claim_card_ids": [
+    "claim_43468e59d124",
+    "claim_ee945ed9b130",
+    "claim_fc2b34e02c5b",
+    "claim_676196ecb9b2",
+    "claim_d4ea08c35bca",
+    "claim_01a89d8b5b7f",
+    "claim_180c3a175bff"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_f45f2379aca0"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_ddacad9f6cea",
+    "mat_35f8208aaf01",
+    "mat_93e9fe21258e",
+    "mat_e175a8042d1e"
+  ],
+  "dossier_ids": [
+    "dossier_50b9da7102c8",
+    "dossier_7f5030050137",
+    "dossier_0e9bce7e5462",
+    "dossier_6d9289f3b093"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Zn-DAT MOF catalyst was recovered after 24 h, reactivated at 373 K under vacuum for 12 h, and reused in subsequent catalytic cycles.",
+    "CO2 adsorption of Zn-DAT and Zn-TAZ was measured at 273 and 298 K, and adsorption enthalpies were derived by the Clausius-Clapeyron method.",
+    "PXRD patterns compare simulated, as-synthesized, activated, and recycled Zn-DAT after five catalytic cycles, indicating recyclability was explicitly evaluated."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.128649",
+  "updated_at": "2026-04-28T14:29:22.128654"
+}

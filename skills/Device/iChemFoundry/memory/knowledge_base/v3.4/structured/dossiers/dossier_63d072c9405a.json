@@ -1,0 +1,40 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_63d072c9405a",
+  "canonical_material_id": "mat_f4f475c4ac9d",
+  "canonical_name": "[Zn(H2PO4)2(TzH)2]",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_4fb5ed25e44e",
+  "pillar_id": "pil_67df0d42bf11",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "3f79bf505f33"
+  ],
+  "evidence_trace_ids": [],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:20:01.705707",
+  "updated_at": "2026-04-23T20:20:01.705734"
+}

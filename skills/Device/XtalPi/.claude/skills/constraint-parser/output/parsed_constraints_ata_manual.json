@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2024-09-18T10:38:00Z",
+  "source_text": "端炔联烯化（ATA）实验：金属盐 1 种或 2 种，0.05 当量，固体；手性胺 1.2 当量，固体；分子筛不加入或 20 mg，固体；溶剂 1 mL，液体；苯乙炔 0.1 mmol，1 当量，液体；正壬醛 1.2 当量，液体。候选化学空间文件：chemical_space.csv。",
+  "items": [
+    {
+      "name": "金属盐",
+      "group": "catalyst",
+      "equivalent": 0.05,
+      "quantity": "1 种或 2 种",
+      "physical_state": "solid",
+      "raw_text": "金属盐 1 种或 2 种，0.05 当量，固体"
+    },
+    {
+      "name": "手性胺",
+      "group": "catalyst",
+      "equivalent": 1.2,
+      "quantity": "1 种",
+      "physical_state": "solid",
+      "raw_text": "手性胺 1.2 当量，固体"
+    },
+    {
+      "name": "分子筛",
+      "group": "additive",
+      "equivalent": null,
+      "quantity": "0 或 1 种，20 mg",
+      "physical_state": "solid",
+      "raw_text": "分子筛不加入或 20 mg，固体"
+    },
+    {
+      "name": "溶剂",
+      "group": "solvent",
+      "equivalent": null,
+      "quantity": "1 mL",
+      "physical_state": "liquid",
+      "raw_text": "溶剂 1 mL，液体"
+    },
+    {
+      "name": "苯乙炔",
+      "group": "substrate",
+      "equivalent": 1.0,
+      "quantity": "0.1 mmol",
+      "physical_state": "liquid",
+      "raw_text": "苯乙炔 0.1 mmol，1 当量，液体"
+    },
+    {
+      "name": "正壬醛",
+      "group": "substrate",
+      "equivalent": 1.2,
+      "quantity": "1.2 当量",
+      "physical_state": "liquid",
+      "raw_text": "正壬醛 1.2 当量，液体"
+    }
+  ],
+  "ambiguities": [
+    {
+      "field": "metal_salt_selection",
+      "description": "金属盐需要从提供的化学空间中选择 1 或 2 种"
+    },
+    {
+      "field": "chiral_amine_selection",
+      "description": "手性胺需要从提供的化学空间中选择 1 种"
+    },
+    {
+      "field": "molecular_sieve",
+      "description": "分子筛是否需要加入不确定"
+    },
+    {
+      "field": "solvent_selection",
+      "description": "溶剂需要从提供的化学空间中选择 1 种"
+    }
+  ]
+}

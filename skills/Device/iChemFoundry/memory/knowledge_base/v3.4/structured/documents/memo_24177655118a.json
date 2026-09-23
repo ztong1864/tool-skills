@@ -1,0 +1,228 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_24177655118a",
+  "paper_id": "930aff59a5dd",
+  "title": "A scalable ultramicroporous metal-organic framewor",
+  "year": 2025,
+  "doi": null,
+  "normalized_task_id": "C3H6_C3H8_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "Kr"
+  ],
+  "one_line_summary": "{[Zn4(atz)2(btc)]-4H2O}n shows breakthrough_interval_time_C3H6/C3H8 = 13.6 dimensionless for C3H6",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "breakthrough_interval_time_C3H6/C3H8 (C3H6) = 1.9 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "breakthrough_interval_time_C3H6/C3H8 (C3H6) = 13.6 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "elevated_temperature_operation → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] incorporate multiple hydrogen-bonding interactions at the pore aperture in an ultramicroporous MOF → enables highly effective C3H6/C3H8 separation at 298-353 K with unchanged performance across the tested temperature range"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] design highly stable ultramicroporous MOFs for molecular-sieving separations intended for elevated-temperature operation → improves effectiveness of C3H6/C3H8 separation at temperatures closer to application conditions"
+    },
+    {
+      "title": "Comparison",
+      "body": "MOF 1 vs KAUST-7 and Co-gallate: winner=subject_a on temperature_stability_of_C3H6/C3H8_separation_performance"
+    },
+    {
+      "title": "Comparison",
+      "body": "MOF 1 vs benchmark MOF materials for C3H6/C3H8 separation: winner=subject_a on breakthrough_separation_performance"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] apply previously reported molecular-sieving materials that show ultrahigh room-temperature selectivity directly in practice: practical implementation is constrained despite ultrahigh room-temperature selectivity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_b8dc9dc35d01",
+    "trace_fcf8b2b36cb2",
+    "trace_9439a9d27727",
+    "trace_126fd194ca16",
+    "trace_80dc95a45027",
+    "trace_ac7d10f2e852",
+    "trace_11f4502020e1",
+    "trace_ae422ccf43c4",
+    "trace_63dcf088b1f6",
+    "trace_50db9907efd2",
+    "trace_e69acbabaabc",
+    "trace_e8902311103a",
+    "trace_3d0eee8b3074",
+    "trace_4253684b2167",
+    "trace_b2488d332bfc",
+    "trace_61869437bb39",
+    "trace_a100f5f13d59",
+    "trace_28e2b12f6c14",
+    "trace_c0e2f2646dbd",
+    "trace_e4060061d531",
+    "trace_36c73c457a4d",
+    "trace_d48e821dd341",
+    "trace_d7f1f4e820e1",
+    "trace_eb6cb706e6c7",
+    "trace_299a53d74f16",
+    "trace_6f83e02e5dd7",
+    "trace_9f9f8e3ad5c2",
+    "trace_8d8e92aa81fb",
+    "trace_105baea493c7",
+    "trace_1a96bdeb857c",
+    "trace_60ae258d5532",
+    "trace_cc0c21bfd282",
+    "trace_99ab9f00da2b",
+    "trace_7596edce988d",
+    "trace_a210729ab6f8",
+    "trace_bb90ef50a759",
+    "trace_82cf7f5f4cb5",
+    "trace_f86e85ada0f6",
+    "trace_9970b22b8477",
+    "trace_7817894ca71e",
+    "trace_865b30104d61",
+    "trace_d24b2f00cada",
+    "trace_f2ad190babe7",
+    "trace_5d9f084fb5cf",
+    "trace_ae4c55a231e8",
+    "trace_2d136fcf1006",
+    "trace_95682cce3658",
+    "trace_7752685b6490",
+    "trace_3ff3aef088f9",
+    "trace_1c9896ad8b07",
+    "trace_f01abafdea83",
+    "trace_92d517aa6511",
+    "trace_fa7b359e04dc",
+    "trace_74b19611c4b4",
+    "trace_bc8a3b8b2a23",
+    "trace_8b68b56465df",
+    "trace_b4fe6aa4ddea",
+    "trace_42c6107a87fe",
+    "trace_105baea493c7",
+    "trace_e8902311103a",
+    "trace_e4060061d531",
+    "trace_c0e2f2646dbd",
+    "trace_b2488d332bfc",
+    "trace_2d136fcf1006",
+    "trace_fa7b359e04dc",
+    "trace_7596edce988d",
+    "trace_f01abafdea83",
+    "trace_299a53d74f16",
+    "trace_60ae258d5532",
+    "trace_28e2b12f6c14",
+    "trace_b4fe6aa4ddea",
+    "trace_1a96bdeb857c",
+    "trace_5d9f084fb5cf",
+    "trace_9439a9d27727",
+    "trace_d24b2f00cada",
+    "trace_ae422ccf43c4",
+    "trace_bc8a3b8b2a23",
+    "trace_3ff3aef088f9",
+    "trace_7817894ca71e",
+    "trace_61869437bb39",
+    "trace_80dc95a45027",
+    "trace_82cf7f5f4cb5",
+    "trace_92d517aa6511",
+    "trace_99ab9f00da2b",
+    "trace_9f9f8e3ad5c2",
+    "trace_f86e85ada0f6",
+    "trace_74b19611c4b4",
+    "trace_e69acbabaabc",
+    "trace_3d0eee8b3074",
+    "trace_fcf8b2b36cb2",
+    "trace_ac7d10f2e852",
+    "trace_7752685b6490",
+    "trace_63dcf088b1f6",
+    "trace_126fd194ca16",
+    "trace_bb90ef50a759",
+    "trace_50db9907efd2",
+    "trace_d7f1f4e820e1",
+    "trace_8b68b56465df",
+    "trace_36c73c457a4d",
+    "trace_42c6107a87fe",
+    "trace_ae4c55a231e8",
+    "trace_8d8e92aa81fb",
+    "trace_d48e821dd341",
+    "trace_6f83e02e5dd7",
+    "trace_a100f5f13d59",
+    "trace_eb6cb706e6c7",
+    "trace_a210729ab6f8",
+    "trace_cc0c21bfd282",
+    "trace_95682cce3658",
+    "trace_f2ad190babe7",
+    "trace_11f4502020e1",
+    "trace_865b30104d61",
+    "trace_4253684b2167",
+    "trace_9970b22b8477",
+    "trace_1c9896ad8b07",
+    "trace_b8dc9dc35d01"
+  ],
+  "measurement_card_ids": [
+    "mcard_8ad84ad9e9e4",
+    "mcard_7aa4e0d22f8c"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_c260a169a02f"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_33aab5e3e532",
+    "claim_90f4fa92b231",
+    "claim_c6d76c192c5b",
+    "claim_f05a418431ab",
+    "claim_e9abdc096a22",
+    "claim_752a7f38e119",
+    "claim_ce38af121450",
+    "claim_6cae2da16654"
+  ],
+  "design_rule_card_ids": [
+    "drule_2dd074b3af3c",
+    "drule_16301b1f649a"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_224805b42efe",
+    "comp_5571d37b9f32",
+    "comp_d3efe3c9bf63"
+  ],
+  "failure_case_card_ids": [
+    "fail_3703104c1ae4",
+    "fail_b42ddcd3643b",
+    "fail_723702dab694"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_b877caea5e5d",
+    "mat_455b7e9f6af3"
+  ],
+  "dossier_ids": [
+    "dossier_acad84153ee5",
+    "dossier_a79753e0679c"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The framework can be produced at scale: 1·G microcrystals were made in a 30-L vessel, affording 124 g product at about 86% yield.",
+    "Breakthrough tests showed unchanged separation performance over 298-353 K and no degradation over multiple adsorption-desorption cycles at 353 K.",
+    "Previously reported room-temperature sieving MOFs show ultrahigh selectivity, but their practical use is limited by sluggish adsorption kinetics."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.772618",
+  "updated_at": "2026-04-24T00:19:49.772622",
+  "raw_path": "相关文献/Zn-H2sqa-Tian 等 - 2025 - A scalable ultramicroporous metal-organic framewor.pdf",
+  "authors": [
+    "Zn-H2sqa-Tian"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_b95f89dee5f9",
+  "paper_id": "2e9e333299b2",
+  "raw_path": "相关文献/Yang 等 - 2023 - Immobilization of the Polar Group into an Ultramic.pdf",
+  "title": "Immobilization of the Polar Group into an Ultramic",
+  "authors": [
+    "Yang"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "PMOF-1",
+    "MUF-16",
+    "ZU-610",
+    "MIL-140",
+    "SIFSIX-3-Ni",
+    "ZJU-610"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Fe",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Ce",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "TED",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "One-step harvest of high-purity light hydrocarbons without the\ndesorption process represents an advanced and highly efficient strategy for the",
+    "conclusion": "of the methodology is also included in the\nSupporting Information. The results displayed that Zn-ox-trz",
+    "results_summary": "Immobilization of the Polar Group into an Ultramicroporous\nMetal−Organic Framework Enabling Benchmark Inverse Selective\nCO2/C2H2 Separation with Record C2H2 Production\nShan-Qing Yang, Rajamani Krishna"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:26:45.462390"
+}

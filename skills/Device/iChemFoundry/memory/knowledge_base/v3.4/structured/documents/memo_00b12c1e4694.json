@@ -1,0 +1,138 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_00b12c1e4694",
+  "paper_id": "45f9abb3ad1c",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "{[Zn(ATz)(Pyc)]-0.5DMF}n shows air_stability = 0.0 dimensionless for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "air_stability = 0.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "SO4^2- participates in framework formation with ATz → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "anion coordination competition → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] include HPyc in the synthesis of compound 1 → HPyc is important for obtaining high-quality single crystals of compound 1"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] change the inorganic anion by using a different zinc salt under otherwise similar reaction conditions → the final framework structure changes significantly because different anions direct different assemblies"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] omit HPyc from the ZnSO4 + HATz solvothermal synthesis in DMF: the reaction produced a very air-unstable small polycrystalline sample rather than the pure phase of compound 1"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_eab0b459cdb4",
+    "trace_e45def783984",
+    "trace_ad80d5e5af61",
+    "trace_1589d7e3a45a",
+    "trace_c4b329b4a429",
+    "trace_3c0b53c3a627",
+    "trace_368fd3b0a933",
+    "trace_8b3d4c260a0e",
+    "trace_e14c8fb4e67e",
+    "trace_5252805cb677",
+    "trace_5befb1142a86",
+    "trace_f9da5b625cb6",
+    "trace_1bd6dc56a7cf",
+    "trace_ffad2f0d45a7",
+    "trace_890d80fa1b00",
+    "trace_db8a0e042098",
+    "trace_e25d76b3d729",
+    "trace_b3be05a35a8d",
+    "trace_ec8b37b94dd8",
+    "trace_c4b329b4a429",
+    "trace_5befb1142a86",
+    "trace_e14c8fb4e67e",
+    "trace_1589d7e3a45a",
+    "trace_3c0b53c3a627",
+    "trace_db8a0e042098",
+    "trace_368fd3b0a933",
+    "trace_ec8b37b94dd8",
+    "trace_8b3d4c260a0e",
+    "trace_b3be05a35a8d",
+    "trace_eab0b459cdb4",
+    "trace_ffad2f0d45a7",
+    "trace_1bd6dc56a7cf",
+    "trace_e45def783984",
+    "trace_890d80fa1b00",
+    "trace_5252805cb677",
+    "trace_e25d76b3d729",
+    "trace_f9da5b625cb6",
+    "trace_ad80d5e5af61"
+  ],
+  "measurement_card_ids": [
+    "mcard_840d08bd6054"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_8487232a49a8",
+    "mechcard_8253bab4d9d0",
+    "mechcard_ec19f6cad44e",
+    "mechcard_327b747e37dd",
+    "mechcard_22807697e0c2",
+    "mechcard_f304ed9eeb4c"
+  ],
+  "recipe_card_ids": [
+    "recipe_292afcccd1f6",
+    "recipe_7a720265a6c7"
+  ],
+  "claim_card_ids": [
+    "claim_038bc38d597d",
+    "claim_8ad6c4ee0ceb",
+    "claim_63eea1d282be",
+    "claim_c1f3097fa055",
+    "claim_be5b44e51c5a",
+    "claim_5535db5f5989",
+    "claim_5a269e736239",
+    "claim_b9bec1c9ba2c"
+  ],
+  "design_rule_card_ids": [
+    "drule_fe73fa357225",
+    "drule_ad2d5f25c9e3"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_b27ca900543e"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_6b237b599df4",
+    "mat_8bec06b7e647",
+    "mat_4bbb9b8dadba"
+  ],
+  "dossier_ids": [
+    "dossier_89f130a2dfe8",
+    "dossier_41109085ab81",
+    "dossier_2f3584cc362e"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Using HATz/HPyc in DMF with ZnSO4 or Zn(NO3)2 gave two distinct Zn(II) coordination polymers, 1 and 2, in high yields of 92% and 87%, respectively.",
+    "Anion coordination strength controls framework assembly: SO4^2- enters compound 1's framework, while weaker NO3^- does not participate in compound 2.",
+    "Without HPyc, ZnSO4 and HATz produce an air-unstable small polycrystalline sample that PXRD shows is not the pure phase of compound 1."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.620484",
+  "updated_at": "2026-04-24T00:19:51.620487",
+  "raw_path": "相关文献/两个4-连接配位网络的锌(...合物的合成、结构和荧光性质_卢文贯.pdf"
+}

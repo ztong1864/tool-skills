@@ -1,0 +1,190 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_fe0dd9b3fbfd",
+  "paper_id": "8a5789906247",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Zn(L)(bdc)0.5 shows solvent_accessible_volume = 1116.3 cm3/g for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "decomposition_onset_temperature = 643.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "solvent_accessible_volume_fraction = 27.5 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "guest_water_weight_loss (H2O) = 0.88 wt% at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "amine_groups_hydrogen_bonded_to_bdc_oxygens → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "small_aperture_1.2-3.0_A → uptake"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] decrease crystallization speed by using gradual program-controlled cooling → produces a different framework isomer with a 3-connected 4·8^2 square layer rather than a 3-connected 4·6·12 honeycomb-like layer"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] control crystallization speed during synthesis → enables structural diversity including framework isomers and tunable porosity"
+    },
+    {
+      "title": "Comparison",
+      "body": "the present frameworks vs reported self-penetrating framework case: winner=tie on catenation_mode"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_605bd61b08e9",
+    "trace_359fa8d88a02",
+    "trace_05f5b51c19dd",
+    "trace_a88f3a8a60d1",
+    "trace_673736eb1720",
+    "trace_d6dfd2f6e5b3",
+    "trace_87e58fc4ecb5",
+    "trace_24bce5c29e29",
+    "trace_07b116b5d5e4",
+    "trace_704e7aaebbbd",
+    "trace_b991c7276525",
+    "trace_3e43674975df",
+    "trace_7b480305083c",
+    "trace_e9b462dc8d18",
+    "trace_f2eb8e512d4b",
+    "trace_d6ca4c6c3366",
+    "trace_bab63f455eef",
+    "trace_db7e31592761",
+    "trace_4df7fa4cd4ad",
+    "trace_0b62706390f2",
+    "trace_9f497f1f5038",
+    "trace_34b97ffa130a",
+    "trace_a5b86aff9127",
+    "trace_94fe74819311",
+    "trace_26fd15572962",
+    "trace_332b249c52b1",
+    "trace_247f807743c1",
+    "trace_ce5dcb4f8cf2",
+    "trace_43edb414caaf",
+    "trace_e896d98efa6e",
+    "trace_c6f4e278efdc",
+    "trace_b4deed3f7825",
+    "trace_4dca630a639f",
+    "trace_fdfd5175f144",
+    "trace_1adc7f8e3060",
+    "trace_735272004f5d",
+    "trace_bfe08910f5d6",
+    "trace_ec1572a66604",
+    "trace_dd183dea947a",
+    "trace_bab63f455eef",
+    "trace_704e7aaebbbd",
+    "trace_05f5b51c19dd",
+    "trace_87e58fc4ecb5",
+    "trace_bfe08910f5d6",
+    "trace_db7e31592761",
+    "trace_f2eb8e512d4b",
+    "trace_fdfd5175f144",
+    "trace_a5b86aff9127",
+    "trace_9f497f1f5038",
+    "trace_c6f4e278efdc",
+    "trace_ce5dcb4f8cf2",
+    "trace_43edb414caaf",
+    "trace_4dca630a639f",
+    "trace_332b249c52b1",
+    "trace_ec1572a66604",
+    "trace_26fd15572962",
+    "trace_07b116b5d5e4",
+    "trace_a88f3a8a60d1",
+    "trace_3e43674975df",
+    "trace_94fe74819311",
+    "trace_24bce5c29e29",
+    "trace_1adc7f8e3060",
+    "trace_d6dfd2f6e5b3",
+    "trace_b4deed3f7825",
+    "trace_e9b462dc8d18",
+    "trace_34b97ffa130a",
+    "trace_dd183dea947a",
+    "trace_359fa8d88a02",
+    "trace_7b480305083c",
+    "trace_e896d98efa6e",
+    "trace_673736eb1720",
+    "trace_d6ca4c6c3366",
+    "trace_605bd61b08e9",
+    "trace_735272004f5d",
+    "trace_b991c7276525",
+    "trace_247f807743c1",
+    "trace_0b62706390f2",
+    "trace_4df7fa4cd4ad"
+  ],
+  "measurement_card_ids": [
+    "mcard_897c6d6ca64b",
+    "mcard_381295200427",
+    "mcard_36f7c859adc3",
+    "mcard_8e2f2e16028c",
+    "mcard_77492cc5db5c",
+    "mcard_8473383e3aa9"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_47e7425ada8d",
+    "mechcard_5b3f4376f2ef",
+    "mechcard_72a91d2b2c5a",
+    "mechcard_44440b9dd229",
+    "mechcard_a5d0daee4c38",
+    "mechcard_17f3d1b6d810"
+  ],
+  "recipe_card_ids": [
+    "recipe_f6a7422f0e54",
+    "recipe_19fafe4cd29c"
+  ],
+  "claim_card_ids": [
+    "claim_14d1e8692c82",
+    "claim_07375ff93a2a",
+    "claim_a18051bdcf0d",
+    "claim_bd02d3fedf53",
+    "claim_eda627b74bba",
+    "claim_896fdf946d23",
+    "claim_b0631ba85838"
+  ],
+  "design_rule_card_ids": [
+    "drule_007e682c213b",
+    "drule_d2af903acf1b"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_d527fd36c7db",
+    "comp_e1390780ced0",
+    "comp_2c4ef316264a",
+    "comp_2877ff83403a"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_2b4a589209e3"
+  ],
+  "dossier_ids": [
+    "dossier_0a5a6acadc7a"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Cooling mode changed crystallization rate: ambient cooling for 2 was faster than programmed cooling for 1, and this was proposed to determine which polymer formed.",
+    "Both isomers are 3D layer-pillared nets with 1D channels along c, but their pore shapes differ: square channels in 1 versus honeycomb-like channels in 2.",
+    "Extensive amine groups form H-bonds to bdc oxygens, generating 16-membered H-bonded squares in 1 and 12-membered H-bonded hexagons in 2."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.094552",
+  "updated_at": "2026-04-24T00:19:51.094558",
+  "raw_path": "相关文献/luo2013.pdf.pdf"
+}

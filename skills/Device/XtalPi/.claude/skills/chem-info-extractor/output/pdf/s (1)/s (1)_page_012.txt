@@ -1,0 +1,90 @@
+2544
+© Georg Thieme Verlag  Stuttgart · New York — Synthesis  2018 , 50, 2533–2545D. Ma et al. Paper Syn  thesis
+Phlomic Acid [( R)-9]10
+To a flame-dried Schlenk tube were added ( R)-8 (0.2669 g, 0.7 mmol),
+MeOH (2 mL), and aq 2.2 N NaOH (1.3 mL) under N2. The resulting
+mixture was stirred in a pre-heated (100 °C) oil bath. After 2.5 h, thereaction was complete as monitored by TLC. The reaction mixturewas cooled to r.t., acidified to pH 1 with aq 1 N HCl, and extractedwith Et
+2O (3 × 15 mL). The combined organic layers were washed with
+brine (5 mL) and dried (anhyd Na2SO4). After filtration and evapora-
+tion, the residue was used in the next step without further purifica-tion.
+To a flame-dried Schlenk tube were added the product prepared as
+above and AcOH (4.2 mL) under N
+2. The resulting mixture was stirred
+in a pre-heated (120 °C) oil bath. After 29 h, the reaction was com-plete as monitored by TLC. After evaporation, the residue was purifiedby chromatography on silica gel (PE/EtOAc 3:1, 400 mL) to afford ( R)-
+9;
+10 yield: 0.1692 g (78%); pale yellow solid with a very low mp (0–20
+°C); [α]D20 –38.7 ( c 1.035, CHCl3) {Lit.10 [α]D30.5 –40.7 ( c 1.03, CHCl3)}.
+IR (neat): 2924, 2854, 2673, 1962, 1713, 1463, 1439, 1413, 1377,
+1278, 1237, 1145, 1085 cm–1.
+1H NMR (300 MHz, CDCl3): δ = 11.53 (s, 1 H, CO2H), 5.18–4.99 (m, 2 H,
+2 × =CH), 2.36 (t, J = 7.5 Hz, 2 H, CH2), 2.05–1.90 (m, 4 H, 2 × CH2),
+1.72–1.58 (m, 2 H, CH2), 1.50–1.20 (m, 22 H, 11 × CH2), 0.88 (t, J = 6.6
+Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 203.8, 180.4, 91.1, 90.5, 34.1, 31.9, 29.7,
+29.5, 29.4, 29.2, 29.1, 29.0, 28.73, 28.71, 28.5, 24.5, 22.7, 14.1.
+MS (70 eV, EI): m/z (%) = 308 (M+, 7.20), 67 (100).
+The ee Determination of ( R)-9
+The ee of (R)-9 was determined after esterification to ( R)-10 (Scheme
+10).
+(R)-10
+To a flame-dried Schlenk tube were added ( R)-9 (0.0624 g, 0.2 mmol)
+and anhyd DMF (2 mL) and the resulting mixture was stirred at r.t.After that, K
+2CO3 (0.0831 g, 0.6 mmol) was added. MeI (25 μL, d = 2.28
+g/mL, 0.0568 g, 0.4 mmol) was added dropwise over 2 min and theresulting mixture was stirred at r.t. After 19 h, the reaction was com-plete as monitored by TLC. The resulting mixture was quenched withsat. aq NH
+4Cl (4 mL) and extracted with Et2O (3 × 10 mL). The com-
+bined organic layers were washed with brine (5 mL) and dried (anhydNa
+2SO4). After filtration and evaporation, the residue was purified by
+chromatography on silica gel (PE/EtOAc 30:1, 360 mL) to afford ( R)-
+10;10 yield: 0.0554 g (85%); colorless liquid; [ α]D20 –37.3 ( c 1.05,
+CHCl3) {Lit.10 [α]D30.5 –39.9 ( c 0.99, CHCl3); 96% ee}.
+HPLC: Chiralcel PA-2 column, n-hexane/ i-PrOH (100:0), 1.0 mL/min,
+λ = 214 nm; tR (major) = 24.6 min, tR (minor) = 32.3 min; 95% ee.
+IR (neat): 2925, 2854, 1961, 1744, 1463, 1436, 1377, 1363, 1258,
+1200, 1170, 1088, 1012 cm–1.1H NMR (300 MHz, CDCl3): δ = 5.11-4.99 (m, 2 H, 2 × =CH), 3.67 (s, 3
+H, OCH3), 2.31 (t, J = 7.5 Hz, 2 H, CH2), 2.03–1.91 (m, 4 H, 2 × CH2),
+1.69–1.57 (m, 2 H, CH2), 1.49–1.19 (m, 22 H, 11 × CH2), 0.88 (t, J = 6.8
+Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 203.8, 174.2, 91.1, 90.6, 51.4, 34.0, 31.9,
+29.7, 29.6, 29.5, 29.3, 29.2, 29.1, 29.0, 28.7, 28.6, 24.8, 22.7, 14.1.
+MS (70 eV, EI): m/z (%) = 322 (M+, 1.28), 150 (100).
+Funding Information
+National Natural Science Foundation of China (21572202). National Basic Research Program of China (215CB856600)National Natural Science Foundation of China (21572202)
+Supporting Information
+Please see the copies of 1H NMR, 13C NMR, and HPLC spectra in Sup-
+porting Information.Supporting information for this article is avail-able online at https://doi.org/10.1055/s-0036-1592007.
+Supporting InformationSupporting Information
+References
+(1) For selected reviews on the synthesis of optically active allenes,
+see: (a) Chu, W.; Zhang, Y.; Wang, J.  Catal. Sci. Technol.  2017 , 7,
+4570. (b) Ye, J.; Ma, S.  Org. Chem. Front.  2014 , 1, 1210. (c) Neff, R.
+K.; Frantz, D. E.  ACS Catal.  2014 , 4, 519. (d) Yu, S.; Ma, S.  Chem.
+Commun.  2011 , 47, 5384. (e) Ogasawara, M.  Tetrahedron: Asym-
+metry  2009 , 20, 259. (f) Brummond, K. M.; De Forrest, J. E.  Syn-
+thesis  2007 , 795. (g) Krause, N.; Hoffmann-Röder, A.  Tetrahedron
+2004 , 60, 11671. (h) Sydnes, L. K.  Chem. Rev.  2003 , 103 , 1133.
+(2) (a) Cambie, R. C.; Hirschberg, A.; Jones, E. R. H.; Lowe, G.  J. Chem.
+Soc. C  1963 , 4120. (b) Bew, R. E.; Chapman, J. R.; Jones, E. R. H.;
+Lowe, B. E.; Lowe, G.  J. Chem. Soc. C  1966 , 129. (c) de Graaf, W.;
+Smits, A.; Boersma, J.; van Koten, G.  Tetrahedron  1988 , 44, 6699.
+(d) Daviesa, D. G.; Hodge, P.  Org. Biomol. Chem.  2005 , 3, 1690.
+(e) Zhang, Y.; Wu, Y.  Org. Biomol. Chem.  2010 , 8, 4744.
+(3) (a) Megati, S.; Goren, Z.; Silverton, J. V.; Orlina, J.; Nishimura, H.;
+Shirasaki, T.; Mitsuya, H.; Zemlicka, J.  J. Med. Chem.  1992 , 35,
+4098. (b) Egron, D.; Périgaud, C.; Gosselin, G.; Aubertin, A.;Gatanaga, H.; Mitsuya, H.; Zemlicka, J.; Imbacha, J.  Bioorg. Med.
+Chem. Lett.  2002 , 12, 265.
+(4) (a) Jones, B. C. N. M.; Silverton, J. V.; Simons, C.; Megati, S.;
+Nishimura, H.; Maeda, Y.; Mitsuya, H.; Zemlicka, J.  J. Med. Chem.
+1995 , 38, 1397. (b) Zhu, Y.; Pai, S. B.; Liu, S.; Grove, K. L.; Jones, B.
+C. N. M.; Simons, C.; Zemlicka, J.; Cheng, Y.  Antimicrob. Agents
+Chemother.  1997 , 41, 1755.
+(5) (a) Hoffmann-Röder, A.; Krause, N.  Angew. Chem. Int. Ed.  2004 ,
+43, 1196. (b) Bagby, M. O.; Smith, C. R. Jr.; Wolff, I. A.  J. Org.
+Chem.  1965 , 30, 4227. (c) Landor, S. R.; Punja, N.  Tetrahedron
+Lett.  1966 , 40, 4905. (d) Mikalaijczak, K. L.; Rogers, M. F.; Smith,
+Jun. C. R.; Wolff, I. A.  Biochem. J.  1967 , 105 , 1245. (e) Cowie, J. S.;
+Landor, P. D.; Landor, S. R.; Punja, N.  J. Chem. Soc., Perkin Trans. 1Scheme10  Esterification of ( R)-9HOOCK2CO3 (3 equiv)
+MeI (2 equiv)
+MeOOC
+85%, 95% eeDMF, r.t., 19 h
+(R)-9 (R)-10H H
+n-C11H23n n-C11H23n

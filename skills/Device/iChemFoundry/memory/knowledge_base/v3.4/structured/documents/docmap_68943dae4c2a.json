@@ -1,0 +1,66 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_68943dae4c2a",
+  "paper_id": "23e9ac5655c5",
+  "raw_path": "相关文献/Zn-tz1-s2.0-S138589472508283X-main.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UIO-66",
+    "ZLQJ-12",
+    "JSM-7900",
+    "ZIF-8",
+    "FACHB-905",
+    "UiO-66",
+    "MIL-101",
+    "MOF-74",
+    "UiO-66-NH",
+    "MAF-7"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Al",
+    "Cr",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "sod",
+    "dia",
+    "zif",
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "Efficient removal and action mode of low-cost zinc-based metal-azolate \nframeworks regulated by ligand on Microcystis aeruginosa\nCai Cheng a,1, Jie Yu a,1, Linna Shao a, Yu Wu a, Shi Huang a, Liexiong"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:59:49.175857"
+}

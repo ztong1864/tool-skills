@@ -1,0 +1,85 @@
+2543
+© Georg Thieme Verlag  Stuttgart · New York — Synthesis  2018 , 50, 2533–2545D. Ma et al. Paper Syn  thesis
+short column of silica gel [eluent: PE (3 × 50 mL)] for the second time
+afforded ( R)-7 as a liquid, which was used directly in the next step
+without further purification.
+To a flame-dried Schlenk flask were added NaH (0.1586 g, 3.96 mmol,
+60% in mineral oil) and anhyd DMF (17 mL) under N2 and the reaction
+mixture was stirred at r.t. Dimethyl malonate (507 μL, d = 1.14 g/cm3,
+0.5783 g, 4.29 mmol) was added dropwise in 5 min. After that, theresulting mixture was stirred at r.t. for another 10 min. A solution of(R)-7 (prepared as above) in anhyd DMF (16 mL) was added dropwise
+to the reaction mixture in 5 min and the resulting mixture wasstirred at r.t. After 9.75 h, the reaction was complete as monitored byTLC. The resulting mixture was cooled to 0 °C in an ice-water bath,quenched with sat. aq NH
+4Cl (50 mL), and extracted with Et2O (3 × 30
+mL). The combined organic layers were was washed with H2O (20
+mL), brine (20 mL), and dried (anhyd Na2SO4). After filtration and
+evaporation, the residue was purified by chromatography on silica gel(PE/EtOAc 40:1, 1200 mL) to afford ( R)-8; yield: 0.7706 g (61% over
+two steps); colorless liquid; [ α]
+D20 –38.0 ( c 1.095, CHCl3).
+HPLC: Chiralcel PA-2 column, MeCN/H2O (90:10), 0.7 mL/min, λ = 214
+nm; tR (major) = 10.7 min, tR (minor) = 12.3 min; 96% ee.
+IR (neat): 2952, 2925, 2854, 1961, 1759, 1739, 1462, 1435, 1343,
+1269, 1252, 1228, 1200, 1150, 1077, 1014 cm–1.
+1H NMR (300 MHz, CDCl3): δ = 5.12–4.99 (m, 2 H, 2 × =CH), 3.74 (s, 6
+H, 2 × OCH3), 3.36 (t, J = 7.5 Hz, 1 H, CH), 2.03–1.86 (m, 6 H, 3 × CH2),
+1.50–1.19 (m, 22 H, 11 × CH2), 0.88 (t, J = 6.8 Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 203.8, 169.8, 91.2, 90.3, 52.4, 51.6, 31.9,
+29.6, 29.5, 29.3, 29.2, 29.1, 28.9, 28.7, 28.6, 26.8, 22.7, 14.1.
+MS (70 eV, EI): m/z (%) = 380 (M+, 1.03), 148 (100).
+HRMS: m/z calcd for C23H40O4(M+): 380.2927; found: 380.2930.
+Synthesis of rac-8 for ee Determination16 (Scheme 8)
+Scheme 8  Synthesis of rac-8rac-7
+To a flame-dried Schlenk tube were added rac-4da (0.3989 g, 1.5
+mmol), CH2Cl2 (12 mL), PPh3 (0.4725 g, 1.8 mmol), and imidazole
+(0.1239 g, 1.8 mmol) sequentially under N2. I2 (0.4568 g, 1.8 mmol)
+and CH2Cl2 (3 mL) were added at r.t. with stirring. The resulting mix-
+ture was kept stirring at r.t. for 35 min until the reaction was com-plete as monitored by TLC. After filtration through a short column ofsilica gel [eluent: PE (3 × 20 mL)] and evaporation of the solvent, theresidue was purified by chromatography on silica gel (eluent: PE, 400mL) to afford rac-7; yield: 0.4982 g (88%); colorless liquid.
+IR (neat): 2955, 2923, 2852, 1962, 1463, 1456, 1435, 1377, 1367,
+1340, 1278, 1243, 1224, 1207, 1166, 1120 cm
+–1.
+1H NMR (300 MHz, CDCl3): δ = 5.15–4.99 (m, 2 H, 2 × =CH), 3.19 (t, J =
+7.1 Hz, 2 H, ICH2), 2.07–1.92 (m, 4 H, 2 × CH2), 1.92–1.81 (m, 2 H, CH2),
+1.58–1.45 (m, 2 H, CH2), 1.45–1.20 (m, 18 H, 9 × CH2), 0.88 (t, J = 6.8
+Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 203.9, 91.4, 90.1, 32.9, 31.9, 29.9, 29.67,
+29.65, 29.5, 29.4, 29.2, 29.1, 29.0, 27.8, 22.7, 14.1, 6.7.
+MS (70 eV, EI): m/z (%) = 376 (M+, 6.53), 109 (100).
+HRMS: m/z calcd for C18H33I (M+): 376.1627; found: 376.1623.
+rac-8
+To a flame-dried Schlenk flask were added NaH (0.0603 g, 1.5 mmol,
+60% in mineral oil) and anhyd DMF (5 mL) under N2 and the reaction
+mixture was stirred at r.t. Dimethyl malonate (177 μL, d = 1.14 g/cm3,
+0.2018 g, 1.5 mmol) was added dropwise over 5 min. After that, theresulting mixture was stirred at r.t. for another 30 min and treatedwith a solution of rac-7 (0.3751g, 1 mmol) in anhyd DMF (5 mL) drop-
+wise over 5 min. Then the reaction mixture was stirred at r.t. After11.7 h, the reaction was complete as monitored by TLC. The resultingmixture was cooled to 0 °C in an ice-water bath, quenched with sat.aq NH
+4Cl (15 mL), and extracted with Et2O (3 × 20 mL). The combined
+organic layers were washed with H2O (15 mL), brine (15 mL), and
+dried (anhyd Na2SO4). After filtration and evaporation, the residue
+was purified by chromatography on silica gel (PE/EtOAc 50:1, 650 mL)to afford rac-8; yield: 0.2469 g (65%); colorless liquid.
+IR (neat): 2952, 2925, 2854, 1961, 1755, 1738, 1462, 1456, 1435,
+1344, 1269, 1252, 1228, 1201, 1150, 1077, 1014 cm
+–1.
+1H NMR (300 MHz, CDCl3): δ = 5.13–4.98 (m, 2 H, 2 × =CH), 3.74 (s, 6
+H, 2 × OCH3), 3.36 (t, J = 7.7 Hz, 1 H, CH), 2.03–1.86 (m, 6 H, 3 × CH2),
+1.50–1.19 (m, 22 H, 11 × CH2), 0.88 (t, J = 6.8 Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 203.8, 169.8, 91.2, 90.3, 52.4, 51.6, 31.9,
+29.6, 29.4, 29.3, 29.2, 29.1, 28.9, 28.65, 28.55, 26.8, 22.6, 14.1.
+MS (70 eV, EI): m/z (%) = 380 (M+, 1.11), 148 (100).
+HRMS: m/z calcd for C23H40O4(M+): 380.2927; found: 380.2932
+Step 2: Hydrolysis of ( R)-8 to Phlomic Acid (Scheme 9)IH
+rac-7
+COOMeMeOOCNaH (1.5 equiv)
+CH2(COOMe) 2 (1.5 equiv)
+DMF, r.t.
+65%rac-8HHOPPh 3 (1.2 equiv)
+imidazole (1.2 equiv)
+I2 (1.2 equiv)
+CH2Cl2, r.t., 35 minH
+rac-4da88%n-C11H23n
+n-C11H23nn-C11H23n
+Scheme 9  Hydrolysis of ( R)-8 to phlomic acidCOOMeMeOOC(1) NaOH (aq, 2.2 N), MeOH, 100 °C, 2.5 h
+HOOC
+78%, 95% ee
+(ee was determined after methylation)(2) aq HCl
+(R)-8
+96% ee(R)-9H
+H
+(3) AcOH, 120 °C, 29 hn-C11H23n
+n-C11H23n

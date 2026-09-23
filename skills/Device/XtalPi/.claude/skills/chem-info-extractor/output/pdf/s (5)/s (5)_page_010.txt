@@ -1,0 +1,38 @@
+- S10 -  C                 -1.32695700    1.37708500   -0.04781200
+ C                  1.26407000   -1.43784100    0.09341700
+ N                  2.40744300   -0.61580900   -0.35932500
+ C                  2.37075000    0.63697300    0.30931000
+ C                  1.21513600    1.52870600   -0.03398000
+ H                 -3.47288000    1.19354000   -0.05891700
+ H                 -3.42439700   -1.29849500    0.02730800
+ H                 -1.24898100   -2.48295300    0.08931700
+ H                 -1.34628400    2.46458900   -0.08797600
+ H                  1.21715800   -2.3468 7100   -0.51916900
+ H                  1.47406300   -1.76293100    1.12169400
+ H                  2.28641400   -0.45627800   -1.36116200
+ H                  2.73602900    0.61201400    1.33553500
+ H                  1.34021500    1.96443700   -1.04049500
+ H                  1.14380700    2.37747700    0.65713700
+
+
+3. References
+(1) Gurubr ahamam,  R.; Periasamy, M.  J. Org. Chem.  2013, 78, 1463.
+(2) Lü , R .; Ye, J .; Cao, T .; Chen, B .; Fan, W .; Lin, W .; Liu, J .; Luo, H .; Miao, B .; Ni, S .; Tang, X .; Wang,
+N.; Wang, Y .; Xie, X.; Yu, Q .; Yuan, W .; Zhang, W .; Zhu, C .; Ma, S. Org. Lett.  2013, 15, 2254.
+(3) Periasamy, M .; Reddy, P . O.; Sanjeevakumar, N . Eur. J. Org. Chem ., 2013 , 18, 3866 .
+(4) Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.; Robb, M. A.; Cheeseman, J. R.;
+Montgomery, J. A. Jr.; Vreven, T.; Kudin, K. N.; Burant, J. C.; Millam, J. M.; Iyengar, S. S.; Tomasi, J.;
+Barone, V.; Mennucci, B.; Cossi, M.; Scalmani, G.; Rega, N.; Petersson, G. A.; Nakatsuji, H.; Hada, M.;
+Ehara, M.; Toyota, K.; Fukuda, R.; Hasegawa,  J.; Ishida, M.; Nakajima, T.; Honda, Y.; Kitao, O.;
+Nakai, H.; Klene, M.; Li, X.; Knox, J. E.; Hratchian, H. P.; Cross, J. B.; Adamo, C.; Jaramillo, J.;
+Gomperts, R.; Stratmann, R. E.; Yazyev, O.; Austin, A. J.; Cammi, R.; Pomelli, C.; Ochterski, J. W.;
+Ayala, P. Y.; Morokuma, K.; V oth, G. A.; Salvador, P.; Dannenberg, J. J.; Zakrzewski, V . G.; Dapprich,
+S.; Daniels, A. D.; Strain, M. C.; Farkas, O.; Malick, D. K.; Rabuck, A. D.; Raghavachari, K.;
+Foresman, J. B.; Ortiz, J. V.; Cui, Q.; Baboul, A. G.; Clif ford, S.; Cioslowski, J.; Stefanov, B. B.; Liu,
+G.; Liashenko, A.; Piskorz, P.; Komaromi, I.; Martin, R. L.; Fox, D. J.; Keith, T.; Al -Laham, M. A.;
+Peng, C. Y.; Nanayakkara, A.; Challacombe, M.; Gill, P. M. W.; Johnson, B.; Chen, W.; Wong, M. W.;
+Gonzalez , C.; Pople, J. A. Gaussian 03 , Revision C.02; Gaussian , Inc.: Wallingford , CT, 2004.
+(5) (a) Becke, A. D. J. Chem. Phys. 1993 , 98, 5648. (b) Lee, C.; Yang, W.; Parr, R. G. Phys. Rev. B. 1988 ,
+37, 785.
+(6) Hehre, W. J.; Radom, L.; Schleyer, P. v. R.; Pople, J. A. Ab Initio Molecular Orbital Theory ; Wiley:
+New York, 1986.

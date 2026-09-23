@@ -1,0 +1,79 @@
+2535
+© Georg Thieme Verlag  Stuttgart · New York — Synthesis  2018 , 50, 2533–2545D. Ma et al. Paper Syn  thesis
+equiv) catalyzed by CuBr2 (20 mol%) at 130 °C in 1,4-di-
+oxane when terminal alkynols were considered as the lim-iting reagent.
+With the optimized conditions in hand, the reaction
+was then carried out on a gram scale. The allenol ( R)-4da
+was obtained smoothly in 55% yield with 97% ee (Scheme
+2).
+The reactions of aromatic aldehydes were also tested.
+Pent-4-yn-1-ol ( 1c; 2 equiv) reacted with benzaldehyde
+(2c; 1.5 equiv) under CuBr
+2 (50 mol%) in the presence of
+(S)-3a at 70 °C in 1,4-dixoane to give ( R)-4cc in 45% yield
+with 95% ee. Under the same conditions, ( S)-3b-promoted
+reaction afforded ( R)-4cc in 37% yield with 98% ee (Table 3,
+entry 1). For 4-bromobenzaldehyde ( 2d), (S)-3b-promoted
+reaction gave better ee than ( S)-3a. However, the yield was
+lower (entry 2). When 4-methylbenzaldehyde ( 2e) was ap-
+plied under the same conditions, better yield and ee were
+obtained in the presence of ( S)-3b. Nevertheless, theenantioselectivity for ( R)-4ce was 90%, which was not satis-
+factory (entry 3). Gladly, the reaction using 1c/2e/(S)-3b
+(ratio 1:1.4:1.4) gave a better result, affording ( R)-4ce with
+93% ee albeit in a yield of 41% (entry 4). For 4-nitrobenzal-
+dehyde ( 2f), the reaction using ( S)-3b afforded ( R)-4cf with
+a slightly better ee, but a lower yield than that using ( S)-3a
+(entry 5). The reaction of o-chlorobenzaldehyde ( 2i) using
+(S)-3a and ( S)-3b afforded the corresponding allenol ( R)-4ci
+in 6% and 12% NMR yield, respectively (Scheme 3).
+Several transformations were conducted to illustrate
+the synthetic potentials of these optically active allenols.Aerobic oxidation of ( R)-4ca afforded chiral allenal ( R)-5
+with the same ee under the catalysis of 20 mol% each of
+Fe(NO
+3)·9H2O, TEMPO, and NaCl in DCE (Scheme 4A).13 Alle-
+nol ( R)-4da could undergo a Mitsunobu reaction14 to afford
+chiral allenyl amide ( R)-6 without any racemization
+(Scheme 4B).
+Table 3  Some Typical Examples with Aromatic Aldehydesa
+Entry 2 (R)-4 from ( S)-3a (R)-4 from ( S)-3b
+Ar Time (h) Yield (%)bee (%) Time (h) Yield (%)bee (%)
+1 Ph ( 2c) 46.5 45 [( R)-4cc] 95 46.5 37 [( R)-4cc]9 8
+2 4-BrC6H4(2d) 44.5 51 [( R)-4cd] 90 45.5 41 [( R)-4cd]9 4
+3 4-MeC6H4(2e) 46.5 49 [( R)-4ce] 76 47.5 56 [( R)-4ce]9 0
+4c4-MeC6H4(2e)  –  –  – 42 41 [( R)-4ce]9 3
+5 4-NO2C6H4 (2f) 43 47 [( R)-4cf] 95 43 39 [( R)-4cf]9 6
+a The reaction was conducted using 1c (2 mmol), 2 (1.5 mmol), ( S)-3a or ( S)-3b (1 mmol), and CuBr2 (50 mol%) in 1,4-dioxane (3 mL) at 70 °C.
+b Isolated yield.
+c The reaction was conducted using 1c (1 mmol), 2e (1.4 mmol), ( S)-3b (1.4 mmol), and CuBr2 (50 mol%) in 1,4-dioxane (3 mL) at 70 °C.2 equiv+
+1.5 equiv+CuBr 2 (50 mol%)
+1,4-dioxane, 70 °C, time
+N2ArH
+OHArCHO
+HO
+1c(R)-43N
+H OHR
+R
+R = Ph, ( S)-3a
+R = Me, ( S)-3b2
+Scheme 2  Gram-scale synthesis of allenol ( R)-4daOH+n-C11H23CHO
+1.4 equiv+
+N
+HOH
+1.2 equivCuBr 2 (20 mol%)
+1,4-dioxane, 130 °C, 12 h
+N2H
+HO
+1 equiv
+10 mmol55%, 1.4561 g
+ 97% ee1d 2a (S)-3b (R)-4dan-C11H23n
+Scheme 3  Reaction of o-chlorobenzaldehyde with pent-4-yn-1-ol2 equiv+
+1.5 equiv+N
+HR
+OHRCuBr 2 (50 mol%)
+1,4-dioxane, 70 °C, 48 h
+N2H
+6% NMR yield from ( S)-3a
+12% NMR yield from ( S)-3bOHHOCHO
+1c(S)-3a, R = Ph
+(S)-3b, R = MeClCl
+2i(R)-4ci

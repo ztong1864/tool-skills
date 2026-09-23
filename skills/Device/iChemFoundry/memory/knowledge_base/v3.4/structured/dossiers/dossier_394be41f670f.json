@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_394be41f670f",
+  "canonical_material_id": "mat_b63ec481323b",
+  "canonical_name": "Mn(1,2,4-triazole)2(H2PO4)2",
+  "metal_element": "Mn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_a325abf8f620",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_d740131361b1"
+  ],
+  "recipe_card_ids": [
+    "recipe_0fcab1919576"
+  ],
+  "claim_card_ids": [
+    "claim_1d92e71a62b8"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "5250c7918a49"
+  ],
+  "evidence_trace_ids": [
+    "trace_e2e2fdee0246",
+    "trace_f5891e2efebc"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:48:24.066379",
+  "updated_at": "2026-04-23T18:48:55.855079"
+}

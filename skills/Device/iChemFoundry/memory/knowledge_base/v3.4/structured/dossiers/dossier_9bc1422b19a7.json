@@ -1,0 +1,51 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_9bc1422b19a7",
+  "canonical_material_id": "mat_5b606190ceef",
+  "canonical_name": "Zn(atz)-layer",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_63a39f87f1c2",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_f7249ceac59b",
+    "mechcard_e7d0d3749a68",
+    "mechcard_ef1aceed3cd5"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [
+    "drule_11892505b6b5"
+  ],
+  "failure_case_card_ids": [
+    "fail_749da6cb0423",
+    "fail_d829ee57bf18"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "03636bfd549e"
+  ],
+  "evidence_trace_ids": [
+    "trace_1318cdeb4cf6",
+    "trace_5e700b3afb25",
+    "trace_189ce1f7648e"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:20:55.223579",
+  "updated_at": "2026-04-23T21:21:34.775749"
+}

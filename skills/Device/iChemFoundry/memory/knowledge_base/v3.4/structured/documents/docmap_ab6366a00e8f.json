@@ -1,0 +1,68 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_ab6366a00e8f",
+  "paper_id": "30d4205afd7a",
+  "raw_path": "相关文献/Nguyen 等 - 2023 - CO2N2 separation by vacuum swing adsorption using.pdf",
+  "title": "CO2N2 separation by vacuum swing adsorption using",
+  "authors": [
+    "Nguyen"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MFM-3",
+    "UiO-67",
+    "MFC-3",
+    "CPO-27",
+    "Framework-20",
+    "TC-1",
+    "CPO-27-Ni",
+    "PT-1",
+    "MOF-74",
+    "VP-1",
+    "MFC-1",
+    "MFC-2",
+    "MCM-41",
+    "MFM-1",
+    "VP-2",
+    "PT-4",
+    "TC-6",
+    "CALF-20",
+    "MFM-2"
+  ],
+  "mentioned_metals": [
+    "Co",
+    "Ni",
+    "Mg",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "Chemical Engineering Journal 452 (2023) 139550\nAvailable online 4 October 2022\n1385-8947/© 2022 Elsevier B.V. All rights reserved.\nCO2/N2 separation by vacuum swing adsorption using a metal–organic \nf"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:39:00.282883"
+}

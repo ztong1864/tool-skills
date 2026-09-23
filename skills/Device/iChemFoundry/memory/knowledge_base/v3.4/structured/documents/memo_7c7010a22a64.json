@@ -1,0 +1,199 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_7c7010a22a64",
+  "paper_id": "7ea1666a932f",
+  "title": "Synthesis, Structures, and Luminescent Properties",
+  "year": 2013,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "Xe"
+  ],
+  "one_line_summary": "[Zn2(dmtrz)2(btec)(H2O)2] shows decomposition_onset_temperature = 618.15 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "decomposition_temperature = 530.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "decomposition_onset_temperature = 618.15 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "weight_loss_hydration (H2O) = 4.26 wt% at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "2D layers stacked by hydrogen bonds into 3D framework → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "[Zn2(dmtrz)2] subunit connected through Zn-N3 coordination into a 3D network → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce aromatic carboxylate coligands into trz-based Zn coordination systems under hydrothermal synthesis → produces a series of novel 3D topological frameworks unexpectedly"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select or design suitable organic ligands for MOF assembly → improves the ability to construct MOFs with targeted structures and properties"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] use aromatic acid coligands in trz-based complex preparation: only limited trz-based complexes with aromatic acid as coligand have been reported"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_cb82b8a1bb11",
+    "trace_a35750b6ab2b",
+    "trace_d469c122b98d",
+    "trace_e0b05976692b",
+    "trace_5a35ff3dbc2b",
+    "trace_f448407707cc",
+    "trace_1466c8f2a0d2",
+    "trace_5aa5a0fe66b9",
+    "trace_a162992cb51f",
+    "trace_682b70eaa294",
+    "trace_c4bd560f49fd",
+    "trace_df1da53b5673",
+    "trace_1a6239727cee",
+    "trace_938b7cb344b6",
+    "trace_bf91951af8ac",
+    "trace_bdd042b3efb1",
+    "trace_2b4e28327fab",
+    "trace_3c6a22935a44",
+    "trace_cfb32c891c46",
+    "trace_5739ef46d35b",
+    "trace_855e2c601593",
+    "trace_61f545e7a1b4",
+    "trace_2b17c088760a",
+    "trace_09e9e74d1e82",
+    "trace_c7f6d668511c",
+    "trace_01c380a028b9",
+    "trace_1a2ec0cdbccd",
+    "trace_cb60f19ce655",
+    "trace_7a4212c5c958",
+    "trace_3b991bc905e2",
+    "trace_f6bad0fe25e7",
+    "trace_2725d08d7ef2",
+    "trace_c884e07b3091",
+    "trace_253128c2beca",
+    "trace_9c34be7e46ac",
+    "trace_862e535cef8c",
+    "trace_8532b7bc1165",
+    "trace_5ffd7b3c4337",
+    "trace_d24e4a47fe64",
+    "trace_f1e852beebbb",
+    "trace_c032acbe8a55",
+    "trace_767aacce2652",
+    "trace_e3540707f0e6",
+    "trace_2725d08d7ef2",
+    "trace_df1da53b5673",
+    "trace_c032acbe8a55",
+    "trace_f1e852beebbb",
+    "trace_a162992cb51f",
+    "trace_a35750b6ab2b",
+    "trace_1a2ec0cdbccd",
+    "trace_5ffd7b3c4337",
+    "trace_61f545e7a1b4",
+    "trace_8532b7bc1165",
+    "trace_cfb32c891c46",
+    "trace_e0b05976692b",
+    "trace_d24e4a47fe64",
+    "trace_f448407707cc",
+    "trace_c884e07b3091",
+    "trace_e3540707f0e6",
+    "trace_9c34be7e46ac",
+    "trace_855e2c601593",
+    "trace_253128c2beca",
+    "trace_09e9e74d1e82",
+    "trace_767aacce2652",
+    "trace_3b991bc905e2",
+    "trace_5aa5a0fe66b9",
+    "trace_2b4e28327fab",
+    "trace_5739ef46d35b",
+    "trace_3c6a22935a44",
+    "trace_cb82b8a1bb11",
+    "trace_7a4212c5c958",
+    "trace_682b70eaa294",
+    "trace_1466c8f2a0d2",
+    "trace_d469c122b98d",
+    "trace_cb60f19ce655",
+    "trace_938b7cb344b6",
+    "trace_2b17c088760a",
+    "trace_f6bad0fe25e7",
+    "trace_bdd042b3efb1",
+    "trace_bf91951af8ac",
+    "trace_c4bd560f49fd",
+    "trace_c7f6d668511c",
+    "trace_1a6239727cee",
+    "trace_5a35ff3dbc2b",
+    "trace_01c380a028b9",
+    "trace_862e535cef8c"
+  ],
+  "measurement_card_ids": [
+    "mcard_dbb2f1764038",
+    "mcard_ec109cfd5013",
+    "mcard_fb2f78a2124f"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_e7954286d41a",
+    "mechcard_3b6c84f69a23",
+    "mechcard_48c8010b9773"
+  ],
+  "recipe_card_ids": [
+    "recipe_33924fabf09a",
+    "recipe_0dd9e88f64f9",
+    "recipe_0b5952cb7d08"
+  ],
+  "claim_card_ids": [
+    "claim_9110ac2c3d76",
+    "claim_ae32bf9c0f57",
+    "claim_0fd6ca0bd11a",
+    "claim_87f8d844aef6",
+    "claim_b3c03e9b879a",
+    "claim_455b8a01c813",
+    "claim_8c214379e5b2",
+    "claim_4fb349b69d0c"
+  ],
+  "design_rule_card_ids": [
+    "drule_0a8548988a29",
+    "drule_0cb62e91aa97",
+    "drule_0f93ddf0958f"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_7b0e90e65ab6"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c02aa1e4e21f",
+    "mat_7d242cd548d4",
+    "mat_ddfcf079d6d1"
+  ],
+  "dossier_ids": [
+    "dossier_cd04efd3ea49",
+    "dossier_49f2d2f9b1c4",
+    "dossier_4715e51e1956"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Hydrothermal synthesis with aromatic carboxylate coligands yielded two new dmtrz-based Zn frameworks: [Zn(dmtrz)(btrc)1/3]n and [Zn2(dmtrz)2(btec)(H2O)2]n.",
+    "The btrc ligand in 1 uses bridging monodentate tricarboxylate coordination to three Zn centers, giving a loh1 topology with Schläfli symbol {43}2{46·66·83}3.",
+    "Trz-based complexes with aromatic acid coligands remain limited, likely because synthesis often gives insoluble, intractable polycrystalline powders."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.974968",
+  "updated_at": "2026-04-24T00:19:47.974972",
+  "raw_path": "相关文献/Huang 等 - 2013 - Synthesis, Structures, and Luminescent Properties .pdf",
+  "authors": [
+    "Huang"
+  ]
+}

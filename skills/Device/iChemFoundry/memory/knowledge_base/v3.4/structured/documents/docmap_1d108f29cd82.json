@@ -1,0 +1,64 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_1d108f29cd82",
+  "paper_id": "0d1cacffbd0b",
+  "raw_path": "相关文献/Zn-SCN-.OX.BTC-hai 等。 - 2007 - Coligand Modulated Six-, Eight-, and Ten-Connected.pdf",
+  "title": "SCN-.OX.BTC-hai 等。 - 2007 - Coligand Modulated Six-, Eight-, and Ten-Connected",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "Kr"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Cd-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Mn",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "nia",
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "Using nonsubstituted 1,2,4-triazole and the second bridging ligands as coligands, a series of three-dimensional",
+    "conclusion": "is supported by the percentage of the\nresidues (37.31%), which is in accordance with the expected\nvalue (38.34%). The framework of 3 was stable up to 370 °C;",
+    "results_summary": "Coligand Modulated Six-, Eight-, and Ten-Connected Zn/\nCd-1,2,4-Triazolate Frameworks Based on Mono-, Bi-, Tri-, Penta-,\nand Heptanuclear Cluster Units\nQuan-Guo Zhai,† Can-Zhong Lu,*,† Xiao-Yuan Wu,† "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:39:42.895334"
+}

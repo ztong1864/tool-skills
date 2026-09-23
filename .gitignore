@@ -1,0 +1,78 @@
+# ---------------------------------------------------------------------------
+# Secrets / local config -- never commit
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+secrets/
+*_token.txt
+*.key
+*.pem
+
+# ---------------------------------------------------------------------------
+# Bundled third-party applications and runtimes (download/install separately)
+# ---------------------------------------------------------------------------
+# Fiji/ImageJ distribution incl. bundled Zulu JDK (~825 MB)
+Fiji.app/
+# Vendored pip packages (install from requirements.txt instead)
+.deps/
+site-packages/
+node_modules/
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Binary / non-editable artifacts
+# ---------------------------------------------------------------------------
+# Reference papers (literature KBs, enzyme-wiki sources)
+*.pdf
+# Trained model bundles
+*.pt
+*.pth
+*.ckpt
+*.onnx
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+# Compiled binaries
+*.exe
+*.dll
+*.pyd
+*.so
+*.dylib
+*.jar
+*.jmod
+
+# ---------------------------------------------------------------------------
+# Generated at runtime
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+outputs/
+*.log
+*.tmp
+*.bak
+*.backup
+
+# ---------------------------------------------------------------------------
+# OS / editor junk
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# Claude Code worktrees
+.claude/worktrees/

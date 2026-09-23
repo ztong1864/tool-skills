@@ -1,0 +1,23 @@
+S18
+ 6.92-6.81 (m, 2 H, Ar-H), 6.74 (dd, J1 = 8.1 Hz, J2 = 2.4 Hz, 1 H, Ar-H), 6.09 (dt, J1 =
+6.1 Hz, J2 = 3.0 Hz, 1 H, one proton from CH=C=CH), 5.56 (q, J = 6.7 Hz, 1 H, one
+proton from CH=C=CH), 3.80 (s, 3 H, OCH 3), 2.12 (qd, J1 = 7.1 Hz, J2 = 2.8 Hz, 2 H,
+CH 2), 1.55-1.16 (m, 12 H, CH 2×6), 0.87 (t, J = 6.8 Hz, 3 H, CH 3); 13C NMR (100
+MHz, CDCl 3) δ = 205.2, 159.8, 136.6, 129.4, 119.2, 1 12.3, 111.7, 95.2, 94.5, 55.1,
+31.8, 29.4, 29.3, 29.19, 29.15, 28.7, 22.7, 14.1. MS (EI) m/z (%): 258 (M+, 3.83), 160
+(100); IR (neat): v = 2925, 2854, 1950, 1598, 1490, 1466, 1155, 1087, 1047 cm-1;
+HRMS calcd for C 18H26O [M+]: 258.1984, found: 258.1985.
+Conditions B : The reaction of ZnBr 2 (115.2 mg, 0.5 mmol, 98% from Alfa), CuBr
+(29.9 mg, 0.1 mmol, 98% from Acros), ( S)-3 (258.7 mg, 1.0 mmol, 98%), 1b (211.9
+mg, 1.5 mmol, 98%)/dioxane (2 mL) , and 2i (272.6 mg, 2.0 mmol)/dioxane (1 mL)
+afforded ( R)-4bi (119.6 mg, 46%) (eluent: petroleum ether/ethyl acetate = 100:1) as a
+liquid: 97% ee (HPLC c onditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/1,
+1.0 mL/min, λ = 214 nm,  tR(major) = 4.3 min, tR(minor) = 4.6 min); [ α]D25 = -232.8 ( c
+= 0.34, CHCl 3); 1H NMR (300 MHz, CDCl 3) δ = 7.21 (t, J = 7.8 Hz, 1 H, Ar-H),
+6.96-6.81 (m, 2 H, Ar-H), 6.74 (dd, J1 = 8.4 Hz, J2 = 2.4 Hz, 1 H, Ar-H), 6.09 (dt, J1 =
+6.3 Hz, J2 = 3.0 Hz, 1 H, one proton from CH=C=CH), 5.56 (q, J = 6.7 Hz, 1 H, one
+proton from CH=C=CH), 3.80 (s, 3 H, OCH 3), 2.12 (qd, J1 = 7.1 Hz, J2 = 2.8 Hz, 2 H,
+CH 2), 1.58-1.16 (m, 12 H, CH 2×6), 0.87 (t, J = 6.8 Hz, 3 H, CH 3); 13C NMR (100
+MHz, CDCl 3) δ = 205.2, 159.8, 136.7, 129.4, 119.3, 1 12.4, 111.7, 95.2, 94.5, 55.1,
+31.9, 29.4, 29.3, 29.20, 29.16, 28.7, 22.7, 14.1.
+(11) Preparation of ( R)-1-phenylnona-1, 2-diene ( R-4ca)  (ljx-9-171, ljx-9-172):

@@ -1,0 +1,177 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_24f314cf08d9",
+  "paper_id": "509de9186208",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C2H4",
+    "C2H2"
+  ],
+  "one_line_summary": "Zn-ox-mtz shows IAST_selectivity_CO2/N2 = 758.0 dimensionless for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "IAST_selectivity_CO2/CH4 (CO2) = 134.9 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "IAST_selectivity_CO2/N2 (CO2) = 758.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "dual-site adsorption behavior → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "CO2 adsorption described by dual-site Langmuir behavior → uptake"
+    },
+    {
+      "title": "Comparison",
+      "body": "SIFSIX-3-Cu vs SIFSIX-3-Ni: winner=subject_a on reported_selectivity_metric_h"
+    },
+    {
+      "title": "Comparison",
+      "body": "GeFSIX-3-Ni vs SIFSIX-3-Zn: winner=subject_a on reported_selectivity_metric_h"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_c409057cd31d",
+    "trace_4e317f93a274",
+    "trace_205652b21077",
+    "trace_89a6a73656a8",
+    "trace_8953f1b1cfdf",
+    "trace_686a0077b5ba",
+    "trace_23da76b9ca7d",
+    "trace_95cb97fe23c4",
+    "trace_ce5a38df612b",
+    "trace_8c2e8ae2e9a3",
+    "trace_d754e63c3eb0",
+    "trace_1dac504ac02b",
+    "trace_cfcdb94fb89d",
+    "trace_bb0985788056",
+    "trace_aa0b870922ad",
+    "trace_5f527e820459",
+    "trace_4ded3b76acfe",
+    "trace_fae2bfe5725c",
+    "trace_4b403c5708dd",
+    "trace_a82c73869fa2",
+    "trace_395740f5bfd7",
+    "trace_b3011f944f6b",
+    "trace_2228f9ff2609",
+    "trace_8ae845934cd3",
+    "trace_f572bd0d445d",
+    "trace_960539e181cc",
+    "trace_1beac407342c",
+    "trace_54c6a0d44970",
+    "trace_a16f16b8faf3",
+    "trace_feb58c6ad594",
+    "trace_1d8323505ec3",
+    "trace_c207b9879c8a",
+    "trace_3b93d1dd45fc",
+    "trace_287ba566e2f0",
+    "trace_c843cbcc8464",
+    "trace_f62e63784a49",
+    "trace_cb8b519258b1",
+    "trace_d99470aa0214",
+    "trace_0432d5143343",
+    "trace_8953f1b1cfdf",
+    "trace_bb0985788056",
+    "trace_d99470aa0214",
+    "trace_1beac407342c",
+    "trace_0432d5143343",
+    "trace_205652b21077",
+    "trace_a82c73869fa2",
+    "trace_960539e181cc",
+    "trace_f572bd0d445d",
+    "trace_cb8b519258b1",
+    "trace_1d8323505ec3",
+    "trace_89a6a73656a8",
+    "trace_f62e63784a49",
+    "trace_8c2e8ae2e9a3",
+    "trace_c409057cd31d",
+    "trace_4e317f93a274",
+    "trace_54c6a0d44970",
+    "trace_a16f16b8faf3",
+    "trace_c207b9879c8a",
+    "trace_23da76b9ca7d",
+    "trace_cfcdb94fb89d",
+    "trace_287ba566e2f0",
+    "trace_686a0077b5ba",
+    "trace_395740f5bfd7",
+    "trace_d754e63c3eb0",
+    "trace_3b93d1dd45fc",
+    "trace_4b403c5708dd",
+    "trace_feb58c6ad594",
+    "trace_5f527e820459",
+    "trace_4ded3b76acfe",
+    "trace_b3011f944f6b",
+    "trace_95cb97fe23c4",
+    "trace_aa0b870922ad",
+    "trace_ce5a38df612b",
+    "trace_8ae845934cd3",
+    "trace_c843cbcc8464",
+    "trace_1dac504ac02b",
+    "trace_2228f9ff2609",
+    "trace_fae2bfe5725c"
+  ],
+  "measurement_card_ids": [
+    "mcard_14123aa7a80d",
+    "mcard_de000f91a3db"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_83df8d4d30b3",
+    "mechcard_89c733ed8c7e",
+    "mechcard_a76c04819f69"
+  ],
+  "recipe_card_ids": [
+    "recipe_261363fe90ea",
+    "recipe_1d58e2913a9e"
+  ],
+  "claim_card_ids": [
+    "claim_6734f306a8da",
+    "claim_7e27b998a1c2",
+    "claim_52a581ca43de",
+    "claim_7514b03a6e9b",
+    "claim_75e55245da99",
+    "claim_100f77477aa1",
+    "claim_6f8391e17777"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [
+    "comp_6d688ebc988e",
+    "comp_7e2425d59e22",
+    "comp_86087b4f1749"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_fe3b9102ce95",
+    "mat_0d79f0789157"
+  ],
+  "dossier_ids": [
+    "dossier_3b0cd31b7c9e",
+    "dossier_18b5cf22542c"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "N2 adsorption in Zn-ox-mtz does not fit a simple Langmuir model alone; it is described with a single-site Langmuir-Freundlich model at 298 K.",
+    "ZU-301 shows very high calculated selectivity, with IAST CO2/N2 (15/85) selectivities of 445.0-758.0 and CO2/CH4 (50/50) of 128.8-134.9.",
+    "ZU-301 CO2 isotherms at 278 and 298 K were also fitted accurately by a dual-site Langmuir model, consistent with two-site CO2 adsorption behavior."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.263721",
+  "updated_at": "2026-04-24T00:19:47.263728",
+  "raw_path": "相关文献/1-s2.0-S1383586624008384-mmc1.pdf"
+}

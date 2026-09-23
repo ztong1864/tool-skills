@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_14e45f97c7a8",
+  "paper_id": "24731d45e39f",
+  "raw_path": "相关文献/Liu 等 - 2009 - Synthesis, crystal structures and properties of th.pdf",
+  "title": "Synthesis, crystal structures and properties of th",
+  "authors": [
+    "Liu"
+  ],
+  "year": 2009,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "FS-920"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "sql"
+  ],
+  "key_sections": {
+    "conclusion": "In summary, we have successfully applied mixed-ligand to\nconstruct\nthree\nnew\ncoordination\npolymers\nwith",
+    "results_summary": "Synthesis, crystal structures and properties of three new mixed-ligand d10\nmetal complexes constructed from pyridinecarboxylate and in situ generated\namino-tetrazole ligand\nDongsheng Liu a,b, Xihe Hua"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:20:43.932182"
+}

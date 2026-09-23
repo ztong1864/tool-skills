@@ -1,0 +1,11 @@
+metal_salt_1,metal_salt_2,chiral_amine,molecular_sieve,solvent
+Zn(OTf)2,none,"(S)-α,α-二苯基脯氨醇",4A MS,乙腈/MeCN
+CuI,ZnBr2,"(S)-α,α-二苯基脯氨醇",4A MS,乙腈/MeCN
+CuBr,Zn(OTf)2,"(S)-α,α-双(3,5-双(三氟甲基)苯基)-2-吡咯烷甲醇",4A MS,乙腈/MeCN
+AgOTf,none,"(S)-α,α-二苯基脯氨醇",4A MS,四氢呋喃/THF
+Sc(OTf)3,none,"(S)-α,α-双(3,5-双(三氟甲基)苯基)-2-吡咯烷甲醇",4A MS,1,4-二氧六环/Dioxane
+ZnI2,none,"(S)-2-(吡咯烷-2-基)丙-2-醇",4A MS,乙腈/MeCN
+CuBr2,none,"(S)-1-(2-吡咯烷甲基) 吡咯烷",4A MS,甲苯/Tol
+CuI,AgOTf,"(S)-3-羟基吡咯烷",4A MS,四氢呋喃/THF
+ZnBr2,none,"(S)-3-羟基吡咯烷盐酸盐",4A MS,三氟乙醇/TFE
+CuBr,none,"(S)-α,α-二苯基脯氨醇",4A MS,1,4-二氧六环/Dioxane

@@ -1,0 +1,54 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_21071efa8ac5",
+  "paper_id": "6f8496567c7f",
+  "raw_path": "相关文献/Yang 等 - 2024 - A Zn(II) Pillared-Layer Ultramicroporous Metal-Org.pdf",
+  "title": "A Zn(II) Pillared-Layer Ultramicroporous Metal-Org",
+  "authors": [
+    "Yang"
+  ],
+  "year": 2024,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "pcu"
+  ],
+  "key_sections": {
+    "conclusion": "are presented in Table S1 in the \nSupporting Information. Each Zn2+ ion center was bridged by a \ncarboxylic O atom from a mipa2- ligand and three N atoms from three",
+    "results_summary": "rsc.li/molecular-engineering\nMolecular Systems Design & Engineering\nMSDE\nrsc.li/molecular-engineering\nISSN 2058-9689\nMolecular Systems Design & Engineering\nMSDE\nThis is an Accepted Manuscript, which h"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:29:38.835839"
+}

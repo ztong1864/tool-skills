@@ -1,0 +1,140 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_d93e54dfa378",
+  "paper_id": "0f9f2bdd54db",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Design rule: use dinuclear [Zn2(CO2)2] units as 6-connected nodes linked by μ4-BDC2- and μ2-ATz- ligands",
+  "key_insights": [
+    {
+      "title": "Design Rule",
+      "body": "[positive] use dinuclear [Zn2(CO2)2] units as 6-connected nodes linked by μ4-BDC2- and μ2-ATz- ligands → enables construction of a 3D 6-connected framework"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] change the synthesis solvent from hydrothermal water-based conditions to DMF solvothermal conditions in the HATz/H2BDC/Zn(NO3)2 system → framework dimensionality changes from a 2D layered Zn coordination polymer to a 3D Zn coordination polymer"
+    },
+    {
+      "title": "Comparison",
+      "body": "hydrothermally synthesized complex 1 in the HATz/H2BDC/Zn(NO3)2 system vs DMF-solvothermally synthesized complex 2 in the HATz/H2BDC/Zn(NO3)2 system: winner=tie on framework_dimensionality"
+    },
+    {
+      "title": "Comparison",
+      "body": "complex 1 vs complex 2: winner=tie on network_topology_and_node_type"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_4fb43bd220ea",
+    "trace_3aa4da2166e6",
+    "trace_bce0397f596d",
+    "trace_d60aa549d721",
+    "trace_e0b45af2f2f9",
+    "trace_4b419d439758",
+    "trace_8bddbe948d55",
+    "trace_599066ed3aaf",
+    "trace_ffdfbfe99362",
+    "trace_981cdd4893cd",
+    "trace_741cecfa302e",
+    "trace_6b55f6bd349d",
+    "trace_446dce6ed0a1",
+    "trace_e83d1ad9b953",
+    "trace_94f025b8f88c",
+    "trace_d731d02cc4dc",
+    "trace_31ca1b2edf79",
+    "trace_edf01bbab7dd",
+    "trace_b37c76e56a0a",
+    "trace_76c4d1d6fa83",
+    "trace_e7ecddb5153b",
+    "trace_8fb4acc3ed7b",
+    "trace_d7e53d2983a7",
+    "trace_59bce7abd46b",
+    "trace_b52d7cce8691",
+    "trace_24910c7ada4a",
+    "trace_1d9904c43f7c",
+    "trace_34593a41e513",
+    "trace_08f6795c555f",
+    "trace_d60aa549d721",
+    "trace_3aa4da2166e6",
+    "trace_6b55f6bd349d",
+    "trace_4b419d439758",
+    "trace_e83d1ad9b953",
+    "trace_1d9904c43f7c",
+    "trace_edf01bbab7dd",
+    "trace_76c4d1d6fa83",
+    "trace_94f025b8f88c",
+    "trace_8fb4acc3ed7b",
+    "trace_24910c7ada4a",
+    "trace_bce0397f596d",
+    "trace_d731d02cc4dc",
+    "trace_b52d7cce8691",
+    "trace_e7ecddb5153b",
+    "trace_59bce7abd46b",
+    "trace_31ca1b2edf79",
+    "trace_e0b45af2f2f9",
+    "trace_599066ed3aaf",
+    "trace_446dce6ed0a1",
+    "trace_741cecfa302e",
+    "trace_34593a41e513",
+    "trace_8bddbe948d55",
+    "trace_08f6795c555f",
+    "trace_ffdfbfe99362",
+    "trace_981cdd4893cd",
+    "trace_4fb43bd220ea",
+    "trace_d7e53d2983a7",
+    "trace_b37c76e56a0a"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_5360c8812334",
+    "recipe_f6d2ad2b79ab"
+  ],
+  "claim_card_ids": [
+    "claim_6318cd49a08f",
+    "claim_1bac05e207a6",
+    "claim_b1390ace9b16",
+    "claim_ea054df3ac69",
+    "claim_fe690ccfbb55",
+    "claim_dad8f1bfd032",
+    "claim_482a03a80235",
+    "claim_3b9eefc1f453"
+  ],
+  "design_rule_card_ids": [
+    "drule_abbaec3c68fa",
+    "drule_3465b9e17124"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_405a0e42bead",
+    "comp_184bdb70a72f",
+    "comp_a95e4aa66790"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_64d90fdebd09"
+  ],
+  "dossier_ids": [
+    "dossier_f9ad396fca86"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Compared with neutral HATz and H2BDC ligands, coordination to Zn(II) markedly enhances emission intensity and causes a clear red shift in both complexes.",
+    "Complex 1 is a 3-connected (6,3) honeycomb 2D layer, and hydrogen bonding between layers stacks it into a stable 3D supramolecular structure.",
+    "Both compounds are strongly luminescent at room temperature under 350 nm excitation, emitting at 451 nm for 1 and 466 nm for 2."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.6,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.588216",
+  "updated_at": "2026-04-24T00:19:49.588221",
+  "raw_path": "相关文献/Zn(Ⅱ)与5-氨基四氮唑和1,4-对苯二甲酸配位聚合物的溶剂可控合成.pdf"
+}

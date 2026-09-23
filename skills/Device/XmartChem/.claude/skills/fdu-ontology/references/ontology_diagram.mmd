@@ -1,0 +1,42 @@
+flowchart TB
+    Process["Process<br/>任务场景入口"]
+    AgentFlow["AgentFlow<br/>Agent 可执行流程"]
+    TaskStep["TaskStep<br/>Agent 执行动作"]
+    DataArtifact["DataArtifact<br/>流程数据产物"]
+    Checkpoint["Checkpoint<br/>用户确认点"]
+    ExecutionRule["ExecutionRule<br/>执行规则"]
+    Resource["Resource<br/>资源 / 位置 / 快照"]
+    DeviceAction["DeviceAction<br/>设备动作类型"]
+    Condition["Condition<br/>条件 / 前置要求"]
+    Property["Property<br/>字段 / 属性语义"]
+    Instrument["Instrument<br/>仪器 / 模块能力"]
+    RiskReview["Risk Review<br/>planning guard"]
+    ExecMonitor["Execution Monitoring<br/>post-submit placeholder"]
+
+    Process -- selects --> AgentFlow
+    AgentFlow -- startsWith --> TaskStep
+    TaskStep -- nextStep --> TaskStep
+    TaskStep -- requiresInput --> DataArtifact
+    TaskStep -- createsOutput --> DataArtifact
+    TaskStep -- pausesAt --> Checkpoint
+    TaskStep -- requiresCondition --> Condition
+    TaskStep -- requiresResource --> Resource
+    DataArtifact -- hasCondition --> Condition
+    DataArtifact -- containsAction --> DeviceAction
+    DeviceAction -- usesInstrument --> Instrument
+    DeviceAction -- requiresResource --> Resource
+    Instrument -- supportsAction --> DeviceAction
+    Resource -- hasProperty --> Property
+    DeviceAction -- hasProperty --> Property
+    Condition -- hasProperty --> Property
+    Instrument -- hasProperty --> Property
+    ExecutionRule -- appliesTo --> AgentFlow
+    ExecutionRule -- appliesTo --> TaskStep
+    ExecutionRule -- appliesTo --> Checkpoint
+    ExecutionRule -- appliesTo --> DataArtifact
+
+    RiskReview -.-> ExecutionRule
+    RiskReview -.-> TaskStep
+    ExecMonitor -.-> TaskStep
+
+    classDef default fill:#E8E5F5,stroke:#7A6FB0,stroke-width:1px,color:#1a1a1a;

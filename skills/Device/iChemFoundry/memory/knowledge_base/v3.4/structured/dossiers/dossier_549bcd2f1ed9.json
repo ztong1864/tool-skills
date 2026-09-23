@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_549bcd2f1ed9",
+  "canonical_material_id": "mat_14a584f41f12",
+  "canonical_name": "化合物7-9",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": "lig_6079e620a055",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_9fc23dd4cf0e"
+  ],
+  "recipe_card_ids": [
+    "recipe_38d2f124f26b"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_31fd510e5b9d"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "1ea61295e3c3"
+  ],
+  "evidence_trace_ids": [
+    "trace_49d1bb26cce5",
+    "trace_c04c77125b11"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T23:45:01.888772",
+  "updated_at": "2026-04-23T23:45:37.059359"
+}

@@ -1,0 +1,3 @@
+display_name: 导入实验脚本
+short_description: 上传生成好的实验脚本 .txt 文件，提交远程导入任务，并轮询直到完成。
+default_prompt: 将这个实验脚本 .txt 文件上传到 Momentum 主机，提交导入任务，并持续轮询直到完成。

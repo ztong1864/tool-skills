@@ -1,0 +1,212 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_daa624e95d3b",
+  "paper_id": "3f432af49e67",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "C3H6_C3H8_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6"
+  ],
+  "one_line_summary": "ZU-609-C3H6 shows BET_surface_area = 380.0 m2/g for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_limit = 200.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "diffusivity_C3H6 (C3H6) = 2.38e-09 cm3/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "uptake_ratio_C3H6/C3H8 (C3H6) = 22.3 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "sieving effect against propane → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "large channels constituted by sulfonic anions and helically arranged metal-organic architectures → diffusion"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a framework with very rapid C3H6 diffusion → allows adsorption operation under near-ambient conditions and high gas velocity without obvious dynamic-capacity loss"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] modify a 2D framework with anion pillars to control pore shape and pore size → provides tunable pore geometry that can enable selective C3H6 admission and C3H8 exclusion"
+    },
+    {
+      "title": "Comparison",
+      "body": "ZU-609 vs other reported adsorbents: winner=subject_a on eluted_C3H6_purity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_877cd7d12651",
+    "trace_4cfe5f7cd760",
+    "trace_e656737b56fd",
+    "trace_9f693dcdbe82",
+    "trace_5b323340ff7f",
+    "trace_9934aebae193",
+    "trace_e7658dc096ca",
+    "trace_fd21882e21bb",
+    "trace_99c19f59e6fe",
+    "trace_f7f12ddd4bd1",
+    "trace_637f632a87fb",
+    "trace_4dde7efe95cb",
+    "trace_2aa2fb414d5e",
+    "trace_11ae02030d5f",
+    "trace_bc6c4ab56356",
+    "trace_d08011fb1c1f",
+    "trace_93c3c210d488",
+    "trace_3ce9be05ca90",
+    "trace_cb6a0fa0c1c3",
+    "trace_eefdc3991bfd",
+    "trace_9fb0bf81f627",
+    "trace_eb0c856fd367",
+    "trace_323f7ddf9954",
+    "trace_641f10a5a283",
+    "trace_0c470b734929",
+    "trace_6663b653fed2",
+    "trace_e97f22d32a77",
+    "trace_a991c431a0ec",
+    "trace_fabad6f6e29b",
+    "trace_6885de539526",
+    "trace_6237aba833dc",
+    "trace_ef9a4b0256c1",
+    "trace_ad6531322c26",
+    "trace_b93357058023",
+    "trace_c7106a7915a9",
+    "trace_88677ca85486",
+    "trace_ebd306d8e578",
+    "trace_ec6218f912b1",
+    "trace_d0214c9c82ca",
+    "trace_e8b1b941e844",
+    "trace_967d4afb7c8c",
+    "trace_a0dcee957bc7",
+    "trace_3287cad13156",
+    "trace_af046e5c3af2",
+    "trace_2aa2fb414d5e",
+    "trace_ec6218f912b1",
+    "trace_fabad6f6e29b",
+    "trace_d08011fb1c1f",
+    "trace_6885de539526",
+    "trace_e8b1b941e844",
+    "trace_0c470b734929",
+    "trace_a991c431a0ec",
+    "trace_e656737b56fd",
+    "trace_ad6531322c26",
+    "trace_11ae02030d5f",
+    "trace_e97f22d32a77",
+    "trace_bc6c4ab56356",
+    "trace_877cd7d12651",
+    "trace_967d4afb7c8c",
+    "trace_93c3c210d488",
+    "trace_eb0c856fd367",
+    "trace_fd21882e21bb",
+    "trace_323f7ddf9954",
+    "trace_637f632a87fb",
+    "trace_5b323340ff7f",
+    "trace_ef9a4b0256c1",
+    "trace_99c19f59e6fe",
+    "trace_d0214c9c82ca",
+    "trace_9934aebae193",
+    "trace_eefdc3991bfd",
+    "trace_af046e5c3af2",
+    "trace_3ce9be05ca90",
+    "trace_4dde7efe95cb",
+    "trace_88677ca85486",
+    "trace_6663b653fed2",
+    "trace_4cfe5f7cd760",
+    "trace_e7658dc096ca",
+    "trace_a0dcee957bc7",
+    "trace_9f693dcdbe82",
+    "trace_b93357058023",
+    "trace_9fb0bf81f627",
+    "trace_ebd306d8e578",
+    "trace_f7f12ddd4bd1",
+    "trace_6237aba833dc",
+    "trace_3287cad13156",
+    "trace_641f10a5a283",
+    "trace_cb6a0fa0c1c3",
+    "trace_c7106a7915a9"
+  ],
+  "measurement_card_ids": [
+    "mcard_a2a0c3d288d6",
+    "mcard_ceacf68785e8",
+    "mcard_c0baea7b745f",
+    "mcard_8dc20765ccc1",
+    "mcard_228fb0efcab6",
+    "mcard_c28367486bf6",
+    "mcard_bccc9d8ff75f",
+    "mcard_836ebf6d9823",
+    "mcard_288375a126b1",
+    "mcard_2dd428b65840"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_6fbc778bd96d",
+    "mechcard_3ba544652747",
+    "mechcard_b3e12cbb1ca8",
+    "mechcard_7e375a46d892",
+    "mechcard_9bb52abfcb6d",
+    "mechcard_ca6d750ea1d0"
+  ],
+  "recipe_card_ids": [
+    "recipe_ebf1d92877aa",
+    "recipe_db766fbae5e1"
+  ],
+  "claim_card_ids": [
+    "claim_354dce1fae83",
+    "claim_9033bf815ab5",
+    "claim_70387755049c",
+    "claim_8f6fedff5407",
+    "claim_9d726b512c3f",
+    "claim_8bb9e35ba79a",
+    "claim_449c11cadfcd",
+    "claim_aae7657a3c0b"
+  ],
+  "design_rule_card_ids": [
+    "drule_c51c10512cd0",
+    "drule_80388b176ae0",
+    "drule_57b7d8db9e8b"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_a795776611f4",
+    "comp_d1b0ffc98ce5",
+    "comp_ce40755fbfd7",
+    "comp_3790c8aa96f5"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_3733ce1e04d0",
+    "mat_0fbcdd04dd97"
+  ],
+  "dossier_ids": [
+    "dossier_259dc88bcc20",
+    "dossier_d9f40b9f21fc"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Propylene diffusivity in ZU-609 is about 1.00–1.36 × 10−9 cm2 s−1, nearly an order above Co-gallate and KAUST-7 and far above Zeolite-4A.",
+    "ZU-609 shows strong C3H6/C3H8 sieving at 298 K and 1 bar, with a C3H6-to-C3H8 uptake ratio of 22.3.",
+    "The gate cross-section of 4.2 × 5.1 Å lies between C3H6 and C3H8 sizes, enabling propane exclusion from propylene by size/shape sieving."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.379886",
+  "updated_at": "2026-04-28T14:29:22.379892"
+}

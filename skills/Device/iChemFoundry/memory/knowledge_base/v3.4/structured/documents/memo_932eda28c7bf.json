@@ -1,0 +1,193 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_932eda28c7bf",
+  "paper_id": "d0656fee58b5",
+  "title": "Three Zn(II)-triazole-H3btc complexes regulated by mixed ligands",
+  "year": 2008,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2"
+  ],
+  "one_line_summary": "{[Zn(Htrz)(Hbtc)(H2O)]-2H2O}n shows lattice_water_removal_end_temperature = 383.15 K for H2O",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "coordinated_water_loss (H2O) = 5.7 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "lattice_water_weight_loss (H2O) = 8.5 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "lattice_water_removal_onset_temperature (H2O) = 333.15 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "1D_infinite_chain_bridged_by_Hbtc → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "incomplete_deprotonation_of_Htrz_and_Hbtc → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use fully deprotonated ligands to assemble Zn/trz/btc secondary building units → enables formation of an 8-connected trinodal 3,8-connected 3-D network rather than lower-dimensional assembly"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[negative] avoid incomplete deprotonation of both ligands in Zn/trz/btc assembly → lowers dimensionality to complex 3 and shifts consolidation toward weak hydrogen-bond interactions"
+    },
+    {
+      "title": "Comparison",
+      "body": "complex 1 vs complexes 2 and 3: winner=tie on thermal_stability"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_f6a13f0e6c58",
+    "trace_b1edbcb68231",
+    "trace_05f70c544482",
+    "trace_23d6f93e3557",
+    "trace_5e712124b599",
+    "trace_acbbfa64e10c",
+    "trace_0615cf12bf2b",
+    "trace_271a0be96728",
+    "trace_32bcd85bede4",
+    "trace_974eb7621b4e",
+    "trace_51fab177cfab",
+    "trace_d94767fc8056",
+    "trace_8408bc3535c5",
+    "trace_373e7968a837",
+    "trace_71aca27f7116",
+    "trace_15b2b6a09633",
+    "trace_a6ead715ebc7",
+    "trace_64d57a929002",
+    "trace_7e8bebc34556",
+    "trace_64a3ce56d15f",
+    "trace_5e680def9658",
+    "trace_d74b2c27d899",
+    "trace_683ec984729b",
+    "trace_697314eecb7d",
+    "trace_e0b1ec68ae33",
+    "trace_e3b000d801eb",
+    "trace_4d48fde191c2",
+    "trace_cd897b1f6299",
+    "trace_8df64c82bafd",
+    "trace_4adf3a90a55c",
+    "trace_76261f4d5dbc",
+    "trace_7a136f8c8539",
+    "trace_b6bca37ca159",
+    "trace_99055cdb210b",
+    "trace_915a88fdfdb1",
+    "trace_298e67726140",
+    "trace_2e69ec919542",
+    "trace_6530709aa762",
+    "trace_77565d7c3628",
+    "trace_64d57a929002",
+    "trace_e0b1ec68ae33",
+    "trace_298e67726140",
+    "trace_77565d7c3628",
+    "trace_271a0be96728",
+    "trace_a6ead715ebc7",
+    "trace_683ec984729b",
+    "trace_64a3ce56d15f",
+    "trace_23d6f93e3557",
+    "trace_acbbfa64e10c",
+    "trace_d74b2c27d899",
+    "trace_99055cdb210b",
+    "trace_71aca27f7116",
+    "trace_4d48fde191c2",
+    "trace_32bcd85bede4",
+    "trace_8408bc3535c5",
+    "trace_b1edbcb68231",
+    "trace_b6bca37ca159",
+    "trace_76261f4d5dbc",
+    "trace_915a88fdfdb1",
+    "trace_2e69ec919542",
+    "trace_51fab177cfab",
+    "trace_f6a13f0e6c58",
+    "trace_7a136f8c8539",
+    "trace_4adf3a90a55c",
+    "trace_d94767fc8056",
+    "trace_5e712124b599",
+    "trace_e3b000d801eb",
+    "trace_5e680def9658",
+    "trace_cd897b1f6299",
+    "trace_974eb7621b4e",
+    "trace_05f70c544482",
+    "trace_6530709aa762",
+    "trace_0615cf12bf2b",
+    "trace_373e7968a837",
+    "trace_8df64c82bafd",
+    "trace_7e8bebc34556",
+    "trace_697314eecb7d",
+    "trace_15b2b6a09633"
+  ],
+  "measurement_card_ids": [
+    "mcard_00899f4074f5",
+    "mcard_4e1a1d743967",
+    "mcard_568950822232",
+    "mcard_3c0418297488",
+    "mcard_02c49f126f0b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_239a75423f9b",
+    "mechcard_4009a1c29f2d",
+    "mechcard_693acf36a786",
+    "mechcard_a16851258742"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_aeb23f79691f",
+    "claim_e057f880b4ca",
+    "claim_0433fced93c0",
+    "claim_fc0d1339b943",
+    "claim_29a79d11aa65",
+    "claim_3a1a0905c698",
+    "claim_e5843723cb1e"
+  ],
+  "design_rule_card_ids": [
+    "drule_d736c6520b00",
+    "drule_dd1866744eb3"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_f842871892d6",
+    "comp_4db2215b3b1c",
+    "comp_849cd85092a1"
+  ],
+  "failure_case_card_ids": [
+    "fail_31aa7a58027b",
+    "fail_5ce3d023de16",
+    "fail_0dc3d0db93ed",
+    "fail_ca331daa778c"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_15a482785d29",
+    "mat_0a47ba0f89b1",
+    "mat_317182f83f39"
+  ],
+  "dossier_ids": [
+    "dossier_08eff891983f",
+    "dossier_270b6a0f87bb",
+    "dossier_111d3ef75366"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Stepwise crystallization of Zn/H3btc/Htrz under hydrothermal conditions yielded three distinct products: 1 as a 3-D microporous framework, 2 as a 3-D pillared-layer MOF, and 3 as a 1-D chain.",
+    "Complex 1 can be described by 8-connected (Zn1)(Zn3)2(trz)4(COO)2 SBUs that assemble into a trinodal 3,8-connected 3-D network.",
+    "Complex 3 is not a 3-D coordination framework; it is a neutral 1-D [Zn(Hbtc)]n chain with Zn...Zn distance 10.189 A, extended to higher dimensions only by H-bonding and water clusters."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.323485",
+  "updated_at": "2026-04-24T00:19:50.323491",
+  "raw_path": "相关文献/Zn-苯三甲酸-yang2008-Three Zn(II)-triazole-H3btc complexes regulated by mixed ligands.pdf",
+  "authors": [
+    "Yang"
+  ]
+}

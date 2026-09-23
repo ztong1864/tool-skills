@@ -1,0 +1,178 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_06613e413262",
+  "paper_id": "98d9e3d44821",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "H2"
+  ],
+  "one_line_summary": "Design rule: control dihedral angles when assembling networks from square-planar nodes",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "3-connected 4.8.16 net → topology"
+    },
+    {
+      "title": "Mechanism",
+      "body": "large 3D channels fully occupied by an identical translational net → porosity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] control dihedral angles when assembling networks from square-planar nodes → enables assembly of a specific network based solely on square-planar nodes instead of the usually favored 2D 4^4 grid"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] apply a one-pot copper-mediated hydrothermal reaction of nitriles and ammonia → gives a novel, non-hydrazine synthetic route to 3,5-disubstituted 1,2,4-triazoles"
+    },
+    {
+      "title": "Comparison",
+      "body": "reaction using Cu2(OH)2CO3 vs reaction using Cu(OH)2: winner=subject_a on product_yield"
+    },
+    {
+      "title": "Comparison",
+      "body": "reaction using Cu2(OH)2CO3 vs reaction using Cu(OH)2: winner=subject_a on product_yield"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] self-assemble square-planar building blocks into extended structures without controlling dihedral angles: 2D square grids (4^4) are favored instead of the desired 3D network based solely on square-planar nodes"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_856fa93ba806",
+    "trace_f68bc1f0bb74",
+    "trace_c1d584e41cf1",
+    "trace_be33652ba163",
+    "trace_6b5081422b7b",
+    "trace_6ade09185d74",
+    "trace_f1728294d448",
+    "trace_e15f2691fb4f",
+    "trace_381cb46a8d75",
+    "trace_4e335248dade",
+    "trace_7c32943ef3fc",
+    "trace_0017b1603a77",
+    "trace_dc1b3dcd628f",
+    "trace_39f5f534cc21",
+    "trace_1c4f7bfe8f4e",
+    "trace_6afe2899f50f",
+    "trace_6fbb60fc6dc8",
+    "trace_631e8e8909ba",
+    "trace_1e4cb4d3ee6c",
+    "trace_dcc5e2dfbac2",
+    "trace_ac44f2a311e3",
+    "trace_3f3d6886fd8d",
+    "trace_4b6487f60fb3",
+    "trace_6fcdd6e3f0fb",
+    "trace_0648b433f8c7",
+    "trace_8fe3e93a9519",
+    "trace_5615f6a089ff",
+    "trace_440e949a6af2",
+    "trace_9d23cf950bd3",
+    "trace_4f162b682f64",
+    "trace_0599dc6e2c13",
+    "trace_db99608f7a9b",
+    "trace_b5e51b6d890e",
+    "trace_b516b15f9290",
+    "trace_257f75e1d380",
+    "trace_c42510c4158b",
+    "trace_40a48d09e3f8",
+    "trace_ab8d98522f9c",
+    "trace_51ea177cd43a",
+    "trace_40a48d09e3f8",
+    "trace_39f5f534cc21",
+    "trace_1e4cb4d3ee6c",
+    "trace_dc1b3dcd628f",
+    "trace_8fe3e93a9519",
+    "trace_ac44f2a311e3",
+    "trace_ab8d98522f9c",
+    "trace_f68bc1f0bb74",
+    "trace_257f75e1d380",
+    "trace_0648b433f8c7",
+    "trace_db99608f7a9b",
+    "trace_c42510c4158b",
+    "trace_631e8e8909ba",
+    "trace_381cb46a8d75",
+    "trace_c1d584e41cf1",
+    "trace_1c4f7bfe8f4e",
+    "trace_9d23cf950bd3",
+    "trace_7c32943ef3fc",
+    "trace_dcc5e2dfbac2",
+    "trace_51ea177cd43a",
+    "trace_6afe2899f50f",
+    "trace_4b6487f60fb3",
+    "trace_e15f2691fb4f",
+    "trace_b516b15f9290",
+    "trace_4f162b682f64",
+    "trace_3f3d6886fd8d",
+    "trace_5615f6a089ff",
+    "trace_6fcdd6e3f0fb",
+    "trace_f1728294d448",
+    "trace_6fbb60fc6dc8",
+    "trace_b5e51b6d890e",
+    "trace_440e949a6af2",
+    "trace_856fa93ba806",
+    "trace_0017b1603a77",
+    "trace_4e335248dade",
+    "trace_6b5081422b7b",
+    "trace_0599dc6e2c13",
+    "trace_6ade09185d74",
+    "trace_be33652ba163"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_91830053118c",
+    "mechcard_5426a0609f20",
+    "mechcard_bdd983907136"
+  ],
+  "recipe_card_ids": [
+    "recipe_a8144dce2a54"
+  ],
+  "claim_card_ids": [
+    "claim_406246b9266b",
+    "claim_17ee26056aab",
+    "claim_627e8ce43aff",
+    "claim_d8c788a982d7",
+    "claim_03f54465af41",
+    "claim_807259128ed5",
+    "claim_8c6eaee99244",
+    "claim_4b4f69a7297c"
+  ],
+  "design_rule_card_ids": [
+    "drule_b19bb71b7945",
+    "drule_4eae60fd4ae3",
+    "drule_b69e44125695"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_b1ccbcc1824e",
+    "comp_fdad895f65fe",
+    "comp_0cbf14d72f4c"
+  ],
+  "failure_case_card_ids": [
+    "fail_407c7fd1a929"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_fc01bb8cc21c",
+    "mat_8ca56b78316f"
+  ],
+  "dossier_ids": [
+    "dossier_b894ee51fa57",
+    "dossier_a3aff60775b7"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Using Cu(OH)2 or Cu2(OH)2CO3 with ammonia and nitriles gave [Cu(mtz)]n or [Cu(ptz)]n in moderate yields up to 40%.",
+    "Compound 1 has an unprecedented 4.8.16 topology with 1D CuI–triazolate helices and large 3D channels occupied by an interpenetrating net.",
+    "The triazolate ligands likely form by coupling nitriles with ammonia, while CuII may act as an oxidant to assist proton elimination in cycloaddition."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.507284",
+  "updated_at": "2026-04-24T00:19:51.507289",
+  "raw_path": "相关文献/zhang2004.pdf.pdf"
+}

@@ -1,0 +1,55 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_39936d941308",
+  "paper_id": "39219513efa5",
+  "raw_path": "相关文献/苯-羧酸chowdhuri2009-3D zinc(II) coordination polymers built up by triazole.pdf",
+  "title": "3D zinc(II) coordination polymers built up by triazole",
+  "authors": [
+    "Chowdhuri"
+  ],
+  "year": 2009,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CS-26",
+    "Benzene-1",
+    "IR-6200",
+    "DIP-1030"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "tricarboxylate"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "The reaction of the 1,2,4-triazole ligand and zinc(II) metal with\naromatic polycarboxylates affords interesting polymeric architec-",
+    "results_summary": "3D zinc(II) coordination polymers built up by triazole\nand benzene-polycarboxylate anions: Synthesis, crystal structure,\nthermal and photoluminescence characterization\nDurga Sankar Chowdhuri a, Abhina"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:54:45.460719"
+}

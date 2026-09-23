@@ -1,0 +1,21 @@
+S14
+
+
+The reaction of CuBr 2 (90.0 mg, 0.4 mmol), 1c (233.1 mg, 1.5 mmol), ( S)-3 (254.0
+mg, 1.0 mmol), and 2f (278.2 mg, 1.5 mmol) in dioxa ne (3.0 mL) afforded ( Ra)-4cf
+(195.0 mg, 60%) (eluent: petroleum ether/ethy l acetate = 25/1) as a oil: 97% ee
+(HPLC conditions: Chiralce l IB column, hexane/ i-PrOH = 95/5, 1.0 mL/min, λ = 214
+nm, tR(minor) = 7.5 min, tR(major) = 8.1 min); [ α]D20 = -207.4 ( c = 1.02, CHCl 3); 1H
+NMR (400 MHz, CDCl 3) δ 7.42-7.37 (m, 2 H, ArH), 7.13 (d, J = 8.4 Hz, 2 H, ArH),
+6.23-6.17 (m, 1 H, one proton of CH=C=CH), 5.62 (q, J = 5.6 Hz, 1 H, one proton of
+CH=C=CH), 4.93 (bs, 1 H, NH), 3.93-3.70 (m, 2 H, NCH 2), 1.39 (s, 9 H, t-Bu); 13C
+NMR (100 MHz, CDCl 3) δ 204.4, 155.5, 132.8, 131.5, 128.3, 120.6, 96.3, 93.9, 79.3,
+38.8, 28.2; IR (neat) ν (cm-1) 3366, 2976, 2928, 1951, 1687, 1515, 1366, 1248, 1165,
+1062, 1008; MS (EI) m/z (%): 269 ((M(81Br)-tBu+H)+, 68.6), 267 ((M(79Br)-tBu+H)+,
+70.66), 57 (100);  HRMS calcd for C 11H10NO 279Br [(M(79Br)-tBu+H)+]: 266.9895,
+found: 266.9891.
+8. Preparation of ( Ra)-dimethyl 2-(4-cyclohexylbuta-2,3-dienyl)malonate
+(Ra)-4da. (hx-11-5)
+
+The reaction of CuBr 2 (44.8 mg, 0.2 mmol), 1d (255.7 mg, 1.5 mmol), ( S)-3
+(252.8 mg, 1.0 mmol), and 2a (168.2 mg, 1.5 mmol) in dioxane (3.0 mL) afforded

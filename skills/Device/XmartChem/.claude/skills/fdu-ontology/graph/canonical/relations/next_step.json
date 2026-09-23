@@ -1,0 +1,57 @@
+{
+  "task-step:create-device-task--nextStep--task-step:monitor-device-task": {
+    "from": "task-step:create-device-task",
+    "id": "task-step:create-device-task--nextStep--task-step:monitor-device-task",
+    "optional": true,
+    "relation_type": "nextStep",
+    "to": "task-step:monitor-device-task"
+  },
+  "task-step:calculate-reagent-amounts--nextStep--task-step:generate-numbered-steps": {
+    "from": "task-step:calculate-reagent-amounts",
+    "id": "task-step:calculate-reagent-amounts--nextStep--task-step:generate-numbered-steps",
+    "relation_type": "nextStep",
+    "to": "task-step:generate-numbered-steps"
+  },
+  "task-step:generate-numbered-steps--nextStep--task-step:write-experiment-plan": {
+    "from": "task-step:generate-numbered-steps",
+    "id": "task-step:generate-numbered-steps--nextStep--task-step:write-experiment-plan",
+    "relation_type": "nextStep",
+    "to": "task-step:write-experiment-plan"
+  },
+  "task-step:merge-step-json--nextStep--task-step:verify-and-fill-resources": {
+    "from": "task-step:merge-step-json",
+    "id": "task-step:merge-step-json--nextStep--task-step:verify-and-fill-resources",
+    "relation_type": "nextStep",
+    "to": "task-step:verify-and-fill-resources"
+  },
+  "task-step:orchestrate-device-protocol--nextStep--task-step:create-device-task": {
+    "from": "task-step:orchestrate-device-protocol",
+    "id": "task-step:orchestrate-device-protocol--nextStep--task-step:create-device-task",
+    "relation_type": "nextStep",
+    "to": "task-step:create-device-task"
+  },
+  "task-step:parse-experiment-request--nextStep--task-step:recommend-experiment-conditions": {
+    "from": "task-step:parse-experiment-request",
+    "id": "task-step:parse-experiment-request--nextStep--task-step:recommend-experiment-conditions",
+    "relation_type": "nextStep",
+    "to": "task-step:recommend-experiment-conditions"
+  },
+  "task-step:recommend-experiment-conditions--nextStep--task-step:calculate-reagent-amounts": {
+    "from": "task-step:recommend-experiment-conditions",
+    "id": "task-step:recommend-experiment-conditions--nextStep--task-step:calculate-reagent-amounts",
+    "relation_type": "nextStep",
+    "to": "task-step:calculate-reagent-amounts"
+  },
+  "task-step:verify-and-fill-resources--nextStep--task-step:orchestrate-device-protocol": {
+    "from": "task-step:verify-and-fill-resources",
+    "id": "task-step:verify-and-fill-resources--nextStep--task-step:orchestrate-device-protocol",
+    "relation_type": "nextStep",
+    "to": "task-step:orchestrate-device-protocol"
+  },
+  "task-step:write-experiment-plan--nextStep--task-step:merge-step-json": {
+    "from": "task-step:write-experiment-plan",
+    "id": "task-step:write-experiment-plan--nextStep--task-step:merge-step-json",
+    "relation_type": "nextStep",
+    "to": "task-step:merge-step-json"
+  }
+}

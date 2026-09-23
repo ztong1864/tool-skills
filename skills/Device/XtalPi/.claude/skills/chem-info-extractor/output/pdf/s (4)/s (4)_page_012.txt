@@ -1,0 +1,35 @@
+S12
+ (11) Synthesis of 1-phenyltrideca-1,2-dien-4-ol (5c)
++ PhCHO +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv4c 2a
+5cHO
+C9H19toluene, 130 ℃Ph
+OH
+C9H198.2 h, 52%
+
+The reaction of ZnI 2 (256 mg, 0.80 mmol), benzal dehyde (192 mg, 1.81 mmol),
+dodec-1-yn-3-ol 4c (181 mg, 0.99 mmol), and morpho line (122 mg, 1.40 mmol) in 8
+mL of toluene afforded 5c (142 mg, 52%) as a liquid (eluent: petroleum ether/ethyl
+acetate = 20:1): 1H NMR (300 MHz, CDCl 3) δ 7.35-7.22 (m, 4 H), 7.22-7.13 (m, 1 H),
+6.31-6.20 (m, 1 H), 5.72-5.58 (m, 1 H), 4.30- 4.15 (m, 1 H), 2.23 (brs, 1 H), 1.70-1.55
+(m, 2 H), 1.53-1.37 (m, 2 H) , 1.35-1.18 (m, 12 H), 0.88 (t, J = 6.5 Hz, 3 H); 13C NMR
+(75 MHz, CDCl 3) δ [203.6, 203.4], [133.92, 133.87] , 128.5, [127.03, 127.01], 126.7,
+[99.7, 99.5], [97.1, 96.8], [70.3, 69.8], [ 37.6, 37.5], 31.8, [29.6, 29.54], 29.46, 29.42,
+29.3, [25.5, 25.4], 22.6, 14.0; MS (EI) m/z (%) 272 (M+, 1.01), 116 (100); IR (neat)
+3385, 3062, 3031, 2925, 2853, 1950, 1695, 1600, 1494, 1460, 1127, 1069, 1007 cm-1;
+HRMS (EI) calcd for C 19H28O (M+): 272.2140. Found: 272.2138.
+2. Allenes 3ca, 3df, 3dg, 7a and 7f were prepared according to the following
+procedures.
+(1) Synthesis of 1-phenyl-5-(4-nitrobenzyloxy))-1,2-pentadiene (3ca)
+++
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv2atoluene, 130 ℃
+9.2 h, 51%1c 3caO2NO PhPhCHO
+O2NO
+   To a dried reaction tube was added ZnI 2 (256 mg, 0.80 mmol). This reaction tube
+was then dried under vacuum with a heating gun. Then

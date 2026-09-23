@@ -1,0 +1,25 @@
+project_root: ..
+
+data:
+  pdf_artifacts_dir: ../../../output/pdf
+  artifacts_dir: ../../../output
+  descriptors_template_dir: ../templates/descriptors_metal_salt_chiral_amine
+
+llm:
+  # Pipeline-specific LLM settings
+  base_url_env: OPENAI_BASE_URL
+  api_key_env: OPENAI_API_KEY
+  model_env: OPENAI_MODEL
+  temperature_env: OPENAI_TEMPERATURE
+  cache_dir: ../../../output/logs
+  max_retries: 2
+  request_timeout_seconds: 120
+
+schema:
+  active: metal_salt_chiral_amine
+
+validation:
+  yield_min: 0
+  yield_max: 100
+  temperature_min: -20
+  temperature_max: 200

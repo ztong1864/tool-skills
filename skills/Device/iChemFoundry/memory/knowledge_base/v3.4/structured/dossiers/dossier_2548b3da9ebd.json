@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_2548b3da9ebd",
+  "canonical_material_id": "mat_6c2382755b2c",
+  "canonical_name": "AFI-zeolite",
+  "metal_element": "Al",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": "afi",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_0292830dcdfa",
+    "mechcard_5c52c0c65acd"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "e7bb127fff1a"
+  ],
+  "evidence_trace_ids": [
+    "trace_0bf463d22abc",
+    "trace_af5cbe55eb2c"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:45:11.757259",
+  "updated_at": "2026-04-23T22:45:11.757444"
+}

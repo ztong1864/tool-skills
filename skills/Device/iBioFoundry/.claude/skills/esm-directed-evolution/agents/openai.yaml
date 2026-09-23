@@ -1,0 +1,4 @@
+interface:
+  display_name: "ESM Directed Evolution"
+  short_description: "Use BioLM ESM models to score masked enzyme mutations."
+  default_prompt: "Use $esm-directed-evolution to predict amino acid probabilities for a masked enzyme sequence."

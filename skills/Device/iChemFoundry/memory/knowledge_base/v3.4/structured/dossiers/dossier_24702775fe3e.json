@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_24702775fe3e",
+  "canonical_material_id": "mat_b2dc02871a66",
+  "canonical_name": "ZIF-8",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": "lig_8e7f86260c88",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_e4df8df0dd9c",
+    "mechcard_9c5be0beb610"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_8deb9a0ecb0e"
+  ],
+  "design_rule_card_ids": [
+    "drule_4826fe7fd2c8",
+    "drule_752c6b7994ba"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "9fbde6b04aa6"
+  ],
+  "evidence_trace_ids": [
+    "trace_654b50912dd8",
+    "trace_69e422572179"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:56:17.654942",
+  "updated_at": "2026-04-23T22:57:09.036606"
+}

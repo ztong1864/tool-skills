@@ -1,0 +1,29 @@
+{
+  "layout_code": "T-3:19",
+  "substance": "",
+  "resource_type": "TTR2T",
+  "tray_QR_code": "TTR2T_01",
+  "QR_code": "",
+  "unit_column": 0,
+  "unit_row": 0,
+  "unit_type": "exp_pipetting",
+  "unit_id": "unit-2634fb9d3081",
+  "process_json": {
+    "src_layout_code": "T-9:2",
+    "resource_type": "TT40TC",
+    "substance": "Toluene (甲苯)",
+    "add_volume": 1.0,
+    "disable_LLDSensitivity": false,
+    "custom": {
+      "unit": "mL",
+      "unitOptions": [
+        "μL",
+        "mL",
+        "L"
+      ],
+      "step": {
+        "add_volume": 0.05
+      }
+    }
+  }
+}

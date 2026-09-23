@@ -1,0 +1,38 @@
+{
+  "task-step:calculate-reagent-amounts--requiresCondition--condition:approved-recommendations": {
+    "from": "task-step:calculate-reagent-amounts",
+    "id": "task-step:calculate-reagent-amounts--requiresCondition--condition:approved-recommendations",
+    "relation_type": "requiresCondition",
+    "to": "condition:approved-recommendations"
+  },
+  "task-step:create-device-task--requiresCondition--condition:approved-device-task-creation": {
+    "from": "task-step:create-device-task",
+    "id": "task-step:create-device-task--requiresCondition--condition:approved-device-task-creation",
+    "relation_type": "requiresCondition",
+    "to": "condition:approved-device-task-creation"
+  },
+  "task-step:generate-numbered-steps--requiresCondition--condition:approved-amount-table": {
+    "from": "task-step:generate-numbered-steps",
+    "id": "task-step:generate-numbered-steps--requiresCondition--condition:approved-amount-table",
+    "relation_type": "requiresCondition",
+    "to": "condition:approved-amount-table"
+  },
+  "task-step:orchestrate-device-protocol--requiresCondition--condition:resource-verification-passed": {
+    "from": "task-step:orchestrate-device-protocol",
+    "id": "task-step:orchestrate-device-protocol--requiresCondition--condition:resource-verification-passed",
+    "relation_type": "requiresCondition",
+    "to": "condition:resource-verification-passed"
+  },
+  "task-step:orchestrate-device-protocol--requiresCondition--condition:supported-device-actions-only": {
+    "from": "task-step:orchestrate-device-protocol",
+    "id": "task-step:orchestrate-device-protocol--requiresCondition--condition:supported-device-actions-only",
+    "relation_type": "requiresCondition",
+    "to": "condition:supported-device-actions-only"
+  },
+  "task-step:write-experiment-plan--requiresCondition--condition:approved-numbered-steps": {
+    "from": "task-step:write-experiment-plan",
+    "id": "task-step:write-experiment-plan--requiresCondition--condition:approved-numbered-steps",
+    "relation_type": "requiresCondition",
+    "to": "condition:approved-numbered-steps"
+  }
+}

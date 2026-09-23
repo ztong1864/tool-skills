@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_305e2fc03cf8",
+  "paper_id": "bfbed74e28fe",
+  "raw_path": "相关文献/new-zn-aminotriazolate-dicarboxylate-frameworks-synthesis-structures-and-adsorption-properties.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "Three Zn-triazolate-dicarboxylate frameworks,\nnamely, [Zn2(atz)2(ipa)] (1, Hatz = 3-amino-1,2,4-triazole,",
+    "results_summary": "New Zn-Aminotriazolate-Dicarboxylate Frameworks: Synthesis,\nStructures, and Adsorption Properties\nKai-Jie Chen, Rui-Biao Lin, Pei-Qin Liao, Chun-Ting He, Jian-Bin Lin, Wei Xue, Yue-Biao Zhang,\nJie-Pen"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:26:08.964273"
+}

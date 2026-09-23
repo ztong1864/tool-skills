@@ -1,0 +1,32 @@
+{
+  "artifact:amount-table--hasCondition--condition:approved-amount-table": {
+    "from": "artifact:amount-table",
+    "id": "artifact:amount-table--hasCondition--condition:approved-amount-table",
+    "relation_type": "hasCondition",
+    "to": "condition:approved-amount-table"
+  },
+  "artifact:device-protocol-json--hasCondition--condition:approved-device-task-creation": {
+    "from": "artifact:device-protocol-json",
+    "id": "artifact:device-protocol-json--hasCondition--condition:approved-device-task-creation",
+    "relation_type": "hasCondition",
+    "to": "condition:approved-device-task-creation"
+  },
+  "artifact:numbered-experiment-steps--hasCondition--condition:approved-numbered-steps": {
+    "from": "artifact:numbered-experiment-steps",
+    "id": "artifact:numbered-experiment-steps--hasCondition--condition:approved-numbered-steps",
+    "relation_type": "hasCondition",
+    "to": "condition:approved-numbered-steps"
+  },
+  "artifact:recommendation-table--hasCondition--condition:approved-recommendations": {
+    "from": "artifact:recommendation-table",
+    "id": "artifact:recommendation-table--hasCondition--condition:approved-recommendations",
+    "relation_type": "hasCondition",
+    "to": "condition:approved-recommendations"
+  },
+  "artifact:verified-step-json--hasCondition--condition:resource-verification-passed": {
+    "from": "artifact:verified-step-json",
+    "id": "artifact:verified-step-json--hasCondition--condition:resource-verification-passed",
+    "relation_type": "hasCondition",
+    "to": "condition:resource-verification-passed"
+  }
+}

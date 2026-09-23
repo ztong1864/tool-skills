@@ -1,0 +1,60 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_e338b318da9c",
+  "paper_id": "b33f5192881b",
+  "raw_path": "相关文献/Zn-BTEC-Chen 等 - 2025 - Immobilization of H2O in Diffusion Channel of Meta.pdf",
+  "title": "Immobilization of H2O in Diffusion Channel of Meta",
+  "authors": [
+    "Zn-BTEC-Chen"
+  ],
+  "year": 2025,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UTSA-16",
+    "CALF-20",
+    "MUF-16",
+    "SIFSIX-2-Cu-i",
+    "SGU-29",
+    "PCN-88",
+    "MOF-74"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Al",
+    "Mg",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "BPDC"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "conclusion": "In summary, this work introduces a counter-intuitive strategy\nfor CO2 capture by immobilizing H2O molecules in MOF chan-",
+    "results_summary": "RESEARCH ARTICLE\nwww.advmat.de\nImmobilization of H2O in Diﬀusion Channel of\nMetal–Organic Frameworks for Long-Term CO2 Capture\nfrom Humid Flue Gas\nYang Chen, Kaihua Wang, Jing-Hong Li, Yi Wang, Rui-Bi"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:26:37.327322"
+}

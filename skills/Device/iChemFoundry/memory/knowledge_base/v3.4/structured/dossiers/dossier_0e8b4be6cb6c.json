@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_0e8b4be6cb6c",
+  "canonical_material_id": "mat_52cdabe9ee75",
+  "canonical_name": "c-system",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_c0bea10be11a"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_3b0396abd5b1",
+    "mechcard_2849d926f18a"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "6f088017d1f9"
+  ],
+  "evidence_trace_ids": [
+    "trace_ab140492af2b",
+    "trace_7deb826c439a",
+    "trace_defa634375e9"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T16:48:59.457455",
+  "updated_at": "2026-04-23T16:48:59.457659"
+}

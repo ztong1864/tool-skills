@@ -1,0 +1,50 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_f9324363f16d",
+  "paper_id": "d87085de1c1d",
+  "raw_path": "相关文献/pardi2000.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "Kr"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "RG-349"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Ni",
+    "Fe",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "MIM"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "Articles\nDirect Determination of the Single-Ion Anisotropy in a One-Dimensional Magnetic System\nby High-Field EPR Spectroscopy; Synthesis, EPR, and X-ray Structure of\nNixZn1-x(C2O4)(dmiz)2 [x ) 0.07]\n"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:29:29.627966"
+}

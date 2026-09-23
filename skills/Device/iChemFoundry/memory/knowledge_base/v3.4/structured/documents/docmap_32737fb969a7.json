@@ -1,0 +1,64 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_32737fb969a7",
+  "paper_id": "e4f2dd03ed6d",
+  "raw_path": "相关文献/exploring-window-effects-revealing-unusual-diffusion-patterns-in-ssz-39-(aei)-zeolite-via-moment-analysis-of-n-alkane.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H8",
+    "C2H6"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "SSZ-13",
+    "MCM-22",
+    "SAPO-3411",
+    "ZSM-5",
+    "ZSM-12",
+    "ITQ-29",
+    "ZSM-22",
+    "Silicalite-1",
+    "ZIF-4",
+    "SSZ-39",
+    "PZ-2",
+    "SAPO-34",
+    "Ssz-39"
+  ],
+  "mentioned_metals": [
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "MIM"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "The molecular-sized cages of the Na-SSZ-39 small-pore zeolite (AEI-type) result\nin a high level of confinement of adsorbing hydrocarbon molecules, accompanied by large",
+    "results_summary": "Exploring Window Effects: Revealing Unusual Diffusion Patterns in\nSSZ-39 (AEI) Zeolite via Moment Analysis of n‑Alkane Adsorption\nUsing Inverse Gas Chromatography\nJennifer K. X. Pham Van, Niels De Wit"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:01:16.008598"
+}

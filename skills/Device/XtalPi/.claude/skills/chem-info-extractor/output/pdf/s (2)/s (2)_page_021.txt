@@ -1,0 +1,21 @@
+S21
+ mL/min, λ = 214 nm, tR(minor) = 12.7 min, tR(major) = 13.4 min); [ α]D26.0 = -52.4 ( c
+= 1.00, CHCl 3); 1H NMR (400 MHz, CDCl 3) δ 5.21-5.09 (m, 2 H, CH=C=CH), 3.68
+(s, 3 H, OCH 3), 2.43 (t, J = 7.4 Hz, 2 H, CH 2), 2.35-2.25 (m, 2 H, CH 2), 2.03-1.90 (m,
+2 H, CH 2), 1.42-1.20 (m, 12 H, 6 × CH 2), 0.88 (t, J = 6.6 Hz, 3 H, CH 3); 13C NMR
+(100 MHz, CDCl 3) δ 203.6, 173.6, 92.6, 89.4, 51.5, 33.2, 31.8, 29.4, 29.3, 29.1, 28.9,
+23.8, 22.6, 14.1; IR (neat) ν (cm-1) 2954, 2924, 2854, 1963, 1741, 1458, 1436, 1362,
+1298, 1254, 1224, 1197, 1159, 1058, 1017; MS (EI) m/z (%): 238 (M+, 8.93), 80
+(100); HRMS calcd. for C 15H26O2 (M+): 238.1933; Found: 238.1930.
+(4) Preparation of ( R,E)-methyl tetradeca-2,4,5-trienoate ( Ra)-6.4 (zjs-3-109)
+
+To a flame-dried Schlenk tube was a dded LDA (0.55 mL, 2 M in THF, 1.1 mmol)
+under nitrogen atmosphere. Then a solution of ( Ra)-5 (120.6 mg, 0.5 mmol) in THF
+(2.0 mL) was added dropwise in 5 minutes at -78 oC. After the reaction mixture was
+stirred for 0.5 h, a solution of PhSeSePh  (191.1 mg, purity = 98%, 0.6 mmol) in THF
+(2.0 mL) was added dropwise in 5 minutes at -78 oC. After being stirred for another
+1.0 h at -78 oC, the reaction was quenched with a saturated aq. solution of NH 4Cl (1.0
+mL). The resulting mixture was extracted with ether (10 mL) and the organic layer was separated, which was washed with br ine (3 × 3 mL) and dried over anhydrous
+Na
+2SO 4. After filtration and evaporation, the residue was purified by chromatography
+(eluent: petroleum ether/ethyl acetate = 50/1) on silica gel to afford a yellow oil,

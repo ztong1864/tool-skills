@@ -1,0 +1,246 @@
+{
+  "artifact:user-experiment-request": {
+    "agent_meaning": "The user's natural-language experiment target, constraints, and any direct instruction about whether to generate a plan, protocol, or device task.",
+    "consumer_step_ids": [
+      "task-step:parse-experiment-request"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "text",
+    "id": "artifact:user-experiment-request",
+    "must_confirm": false,
+    "name": "User experiment request",
+    "path_hint": "conversation",
+    "producer_step_id": null,
+    "required_fields": [],
+    "user_visible": true
+  },
+  "artifact:reaction-space-table": {
+    "agent_meaning": "Optional candidate-space table uploaded or prepared by the user; required when recommendation depends on a bounded candidate set.",
+    "consumer_step_ids": [
+      "task-step:parse-experiment-request",
+      "task-step:recommend-experiment-conditions"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "csv",
+    "id": "artifact:reaction-space-table",
+    "must_confirm": false,
+    "name": "Reaction space table",
+    "path_hint": "user-provided csv/xlsx converted by constraint-parser",
+    "producer_step_id": null,
+    "required_columns": [],
+    "user_visible": true
+  },
+  "artifact:constraint-json": {
+    "agent_meaning": "Internal structured constraints parsed from the user request. Do not show by default unless debugging or user asks.",
+    "consumer_step_ids": [
+      "task-step:recommend-experiment-conditions",
+      "task-step:calculate-reagent-amounts",
+      "task-step:generate-numbered-steps"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "json",
+    "id": "artifact:constraint-json",
+    "must_confirm": false,
+    "name": "Constraint JSON",
+    "path_hint": "constraint-parser/output/parsed_constraints_<timestamp>.json",
+    "producer_step_id": "task-step:parse-experiment-request",
+    "required_fields": [
+      "schema_version",
+      "items",
+      "ambiguities",
+      "source_text"
+    ],
+    "user_visible": false
+  },
+  "artifact:recommendation-table": {
+    "agent_meaning": "Candidate experimental conditions selected for execution; show this table and ask the user to approve combinations before amount calculation.",
+    "consumer_step_ids": [
+      "task-step:calculate-reagent-amounts"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "csv",
+    "id": "artifact:recommendation-table",
+    "must_confirm": true,
+    "name": "Recommendation table",
+    "path_hint": "literature-experiment-recommender/output/literature_recommendations_<YYYYMMDD>.csv",
+    "producer_step_id": "task-step:recommend-experiment-conditions",
+    "required_columns": [],
+    "user_visible": true
+  },
+  "artifact:amount-table": {
+    "agent_meaning": "Recommendation CSV after amount columns are added; user must confirm before downstream plan generation.",
+    "consumer_step_ids": [
+      "task-step:write-experiment-plan"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "csv",
+    "id": "artifact:amount-table",
+    "must_confirm": true,
+    "name": "Amount table",
+    "path_hint": "chemical-amount-calculator/output/chemical_amount_<YYYYMMDD_HHMMSS>.csv",
+    "producer_step_id": "task-step:calculate-reagent-amounts",
+    "required_columns": [],
+    "user_visible": true
+  },
+  "artifact:numbered-experiment-steps": {
+    "agent_meaning": "Numbered wet-lab steps generated from constraint JSON and ATA reference templates; user must confirm step order, time, temperature, and workup logic.",
+    "consumer_step_ids": [
+      "task-step:write-experiment-plan"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "markdown",
+    "id": "artifact:numbered-experiment-steps",
+    "must_confirm": true,
+    "name": "Numbered experiment steps",
+    "path_hint": "experiment-step-generator/output/generated_experiment_steps_<timestamp>.md",
+    "producer_step_id": "task-step:generate-numbered-steps",
+    "required_fields": [],
+    "user_visible": true
+  },
+  "artifact:experiment-plan-md": {
+    "agent_meaning": "Human-readable Chinese experiment plan. It can be shown to the user, but does not require confirmation before conversion to executable step JSON.",
+    "consumer_step_ids": [
+      "task-step:convert-plan-to-step-json",
+      "task-step:merge-step-json"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "markdown",
+    "id": "artifact:experiment-plan-md",
+    "must_confirm": false,
+    "name": "Experiment plan Markdown",
+    "path_hint": "fdu-experiment-plan/output/experiment_plan_<timestamp>/experiment_plan_<tray>_<index>.md",
+    "producer_step_id": "task-step:write-experiment-plan",
+    "required_fields": [],
+    "user_visible": true
+  },
+  "artifact:single-plan-step-json": {
+    "agent_meaning": "A single step JSON file extracted from one experiment plan. This is a standalone conversion artifact; the main multi-plan flow uses fdu-multi-step-json directly from plan Markdown files.",
+    "consumer_step_ids": [],
+    "entity_type": "DataArtifact",
+    "format": "json",
+    "id": "artifact:single-plan-step-json",
+    "must_confirm": false,
+    "name": "Single plan step JSON",
+    "path_hint": "fdu-step-json/output/generated_step_json_<timestamp>.json",
+    "producer_step_id": "task-step:convert-plan-to-step-json",
+    "required_fields": [
+      "steps"
+    ],
+    "user_visible": false
+  },
+  "artifact:merged-step-json": {
+    "agent_meaning": "Merged step JSON that becomes the input to resource verification.",
+    "consumer_step_ids": [
+      "task-step:verify-and-fill-resources"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "json",
+    "id": "artifact:merged-step-json",
+    "must_confirm": false,
+    "name": "Merged step JSON",
+    "path_hint": "fdu-multi-step-json/output/generated_multi_step_json_<timestamp>.json",
+    "producer_step_id": "task-step:merge-step-json",
+    "required_fields": [
+      "steps"
+    ],
+    "user_visible": false
+  },
+  "artifact:resource-snapshot": {
+    "agent_meaning": "Current resource snapshot refreshed or maintained by fdu-resource-verify and used as the source of truth for resource verification.",
+    "consumer_step_ids": [],
+    "entity_type": "DataArtifact",
+    "format": "json",
+    "id": "artifact:resource-snapshot",
+    "must_confirm": false,
+    "name": "Resource snapshot",
+    "path_hint": "fdu-resource-verify/KB/resource_info.json",
+    "producer_step_id": "task-step:verify-and-fill-resources",
+    "required_fields": [],
+    "user_visible": false
+  },
+  "artifact:verified-step-json": {
+    "agent_meaning": "Step JSON after resource verification and resource backfill. This is the only acceptable input to device protocol orchestration.",
+    "consumer_step_ids": [
+      "task-step:orchestrate-device-protocol"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "json",
+    "id": "artifact:verified-step-json",
+    "must_confirm": false,
+    "name": "Verified step JSON",
+    "path_hint": "fdu-resource-verify/output/verified_step_json_<timestamp>.json",
+    "producer_step_id": "task-step:verify-and-fill-resources",
+    "required_fields": [
+      "steps"
+    ],
+    "user_visible": false
+  },
+  "artifact:resource-verification-report": {
+    "agent_meaning": "Resource verification report. If it contains missing or conflicting resources, stop and report before protocol orchestration.",
+    "consumer_step_ids": [],
+    "entity_type": "DataArtifact",
+    "format": "json",
+    "id": "artifact:resource-verification-report",
+    "must_confirm": false,
+    "name": "Resource verification report",
+    "path_hint": "fdu-resource-verify/output/verification_result_<timestamp>.json",
+    "producer_step_id": "task-step:verify-and-fill-resources",
+    "required_fields": [],
+    "user_visible": true
+  },
+  "artifact:device-protocol-json": {
+    "agent_meaning": "Executable device protocol JSON. Must be shown as a task summary before creating a device task.",
+    "consumer_step_ids": [
+      "task-step:create-device-task"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "json",
+    "id": "artifact:device-protocol-json",
+    "must_confirm": true,
+    "name": "Device protocol JSON",
+    "path_hint": "fdu-unit-orchestration-json/output/generated_protocol_<timestamp>.json",
+    "producer_step_id": "task-step:orchestrate-device-protocol",
+    "required_fields": [],
+    "user_visible": true
+  },
+  "artifact:device-submit-result": {
+    "agent_meaning": "Result returned after creating a device task. It is evidence of submission, not proof that the experiment has run.",
+    "consumer_step_ids": [
+      "task-step:monitor-device-task"
+    ],
+    "entity_type": "DataArtifact",
+    "format": "json",
+    "id": "artifact:device-submit-result",
+    "must_confirm": false,
+    "name": "Device submit result",
+    "path_hint": "fdu-device-run/output/submit_<timestamp>.json",
+    "producer_step_id": "task-step:create-device-task",
+    "required_fields": [],
+    "user_visible": true
+  },
+  "artifact:device-monitor-result": {
+    "agent_meaning": "Read-only monitoring result for a created FDU device task, including status timeline, notices, faults, alarms, stop reason, and sci_agent alert push result when abnormal conditions are detected.",
+    "consumer_step_ids": [],
+    "entity_type": "DataArtifact",
+    "format": "json",
+    "id": "artifact:device-monitor-result",
+    "must_confirm": false,
+    "name": "Device monitor result",
+    "path_hint": "fdu-execution-monitoring/output/task_monitor_<timestamp>.json",
+    "producer_step_id": "task-step:monitor-device-task",
+    "required_fields": [
+      "task_id",
+      "conversation_id",
+      "started_at",
+      "ended_at",
+      "stop_reason",
+      "final_status",
+      "timeline",
+      "notices_seen",
+      "faults_seen",
+      "alarms_seen",
+      "alert_push"
+    ],
+    "user_visible": true
+  }
+}

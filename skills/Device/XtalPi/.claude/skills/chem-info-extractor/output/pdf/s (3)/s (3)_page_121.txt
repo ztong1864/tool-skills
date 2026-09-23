@@ -1,0 +1,6 @@
+S121
+
+H
+H(HPLC conditions)
+(Total)(PeakNo) (PeakName) (R.Time)(Analysis Results)
+(PerCent) (PeakArea) (PeakHeight)

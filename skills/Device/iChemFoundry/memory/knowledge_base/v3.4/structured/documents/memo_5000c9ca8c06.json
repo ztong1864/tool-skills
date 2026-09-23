@@ -1,0 +1,167 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_5000c9ca8c06",
+  "paper_id": "fa7473797f58",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4"
+  ],
+  "one_line_summary": "Design rule: select organic ligands and metal ions with suitable coordination geometries",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "3D pillar-layer framework with Co(II)-aminotriazole layers and mbdc2- pillars; noninterpenetrated pcu network → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "hydrogen-bonded network involving coordinated water, free water, carboxylate oxygen atoms, and amino groups of ATAZ → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select organic ligands and metal ions with suitable coordination geometries → crucial to preparation of target compounds"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a mixed-ligand self-assembly strategy combining isophthalic acid and 3-amino-1,2,4-triazole → effective for constructing coordination polymers; the chosen ligands were selected to enable target framework construction"
+    },
+    {
+      "title": "Comparison",
+      "body": "methylene blue degradation system with compound 1 catalyst present vs methylene blue degradation system without compound 1 catalyst: winner=subject_a on methylene_blue_degradation"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] increase temperature beyond 350 °C: the framework collapses"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_e53137e1bbec",
+    "trace_7f1fc6bd0c2b",
+    "trace_a82f718c53f0",
+    "trace_4b22380b904c",
+    "trace_9a55aa897288",
+    "trace_d9f19eb453d1",
+    "trace_8d3fc198aede",
+    "trace_4dc4bfc7744f",
+    "trace_eeef796e6528",
+    "trace_c2ba060016d5",
+    "trace_8fa3f373a22e",
+    "trace_e9ac5e34bb25",
+    "trace_54c17dbe89d8",
+    "trace_5ce25202845b",
+    "trace_02b9ff7fe04c",
+    "trace_4d0d04580a06",
+    "trace_2bf9c5e079ed",
+    "trace_cc41487e9cde",
+    "trace_3fe2ca551b6d",
+    "trace_c9bb6f90fcef",
+    "trace_efca23533b24",
+    "trace_ae387c23aa41",
+    "trace_1372db54d592",
+    "trace_f07635de745b",
+    "trace_e8793cfb1b84",
+    "trace_43144e0eb769",
+    "trace_782f79aef367",
+    "trace_d1d1148c3259",
+    "trace_e188dbb510e7",
+    "trace_c2712a9598e5",
+    "trace_ee0e85721481",
+    "trace_32369a4aa86a",
+    "trace_c9bf9e63f787",
+    "trace_9a55aa897288",
+    "trace_e188dbb510e7",
+    "trace_8fa3f373a22e",
+    "trace_a82f718c53f0",
+    "trace_1372db54d592",
+    "trace_f07635de745b",
+    "trace_d9f19eb453d1",
+    "trace_eeef796e6528",
+    "trace_8d3fc198aede",
+    "trace_4dc4bfc7744f",
+    "trace_cc41487e9cde",
+    "trace_c9bb6f90fcef",
+    "trace_c2ba060016d5",
+    "trace_e8793cfb1b84",
+    "trace_43144e0eb769",
+    "trace_ee0e85721481",
+    "trace_782f79aef367",
+    "trace_54c17dbe89d8",
+    "trace_ae387c23aa41",
+    "trace_4b22380b904c",
+    "trace_c9bf9e63f787",
+    "trace_4d0d04580a06",
+    "trace_7f1fc6bd0c2b",
+    "trace_c2712a9598e5",
+    "trace_02b9ff7fe04c",
+    "trace_5ce25202845b",
+    "trace_d1d1148c3259",
+    "trace_e9ac5e34bb25",
+    "trace_32369a4aa86a",
+    "trace_3fe2ca551b6d",
+    "trace_2bf9c5e079ed",
+    "trace_e53137e1bbec",
+    "trace_efca23533b24"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_2b1e391703e0",
+    "mechcard_7aee82d091c5",
+    "mechcard_4c6bf4b75177",
+    "mechcard_76b1e88e8e28",
+    "mechcard_9bc8f6ec52ca"
+  ],
+  "recipe_card_ids": [
+    "recipe_51748611ffa9",
+    "recipe_4fd3ddd89c65",
+    "recipe_4a6ccabdeefd"
+  ],
+  "claim_card_ids": [
+    "claim_9094eb7dc94f",
+    "claim_095495dea13f",
+    "claim_6d1474b7c0d4",
+    "claim_0876cf9d1bfb",
+    "claim_f2d5b0c2643f",
+    "claim_811159076f83",
+    "claim_3b86e500b192",
+    "claim_7855fcf5b6ea"
+  ],
+  "design_rule_card_ids": [
+    "drule_01de6dcdf218",
+    "drule_55d2a1a488ab",
+    "drule_17b8817bc123"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_f717606ca5cf"
+  ],
+  "failure_case_card_ids": [
+    "fail_cfde54b8ffc4"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_d340aa8a100f",
+    "mat_58daab8cd76a"
+  ],
+  "dossier_ids": [
+    "dossier_bdb6e22e2640",
+    "dossier_8d988f7b0797"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MB shows no obvious degradation without compound 1, supporting that the observed photodegradation depends on the catalyst.",
+    "Compound 1 is an active photocatalyst for methylene blue degradation: MB conversion reaches 89% after 120 min under UV irradiation.",
+    "The framework is only thermally stable up to a point; beyond 350 °C it begins to collapse because the organic ligands decompose."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.525928",
+  "updated_at": "2026-04-24T00:19:51.525930",
+  "raw_path": "相关文献/zhang2015.pdf.pdf"
+}

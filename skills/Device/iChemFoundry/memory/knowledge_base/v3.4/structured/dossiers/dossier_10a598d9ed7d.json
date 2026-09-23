@@ -1,0 +1,50 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_10a598d9ed7d",
+  "canonical_material_id": "mat_5c68b669f6ff",
+  "canonical_name": "NTOU-1",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_ff698d2e2a8b",
+    "mcard_7213ced3d240"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_2a9992a38003",
+    "mechcard_d6748157cba8"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_e9b631610368",
+    "claim_52cb215076ab"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "8bf7f8c8aa14",
+    "49b2ebb2b8e4"
+  ],
+  "evidence_trace_ids": [
+    "trace_ff53a87e0b06",
+    "trace_1b42c27438d0"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:18:37.378586",
+  "updated_at": "2026-04-23T22:54:27.196084"
+}

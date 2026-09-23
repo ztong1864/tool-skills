@@ -1,0 +1,64 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_5888252ea3a9",
+  "canonical_material_id": "mat_2a37d8237da0",
+  "canonical_name": "SIFSIX-3-Ni",
+  "metal_element": "Ni",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_42e843ff9296",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_c520d4f27e0c",
+    "mechcard_25dd41c147f5",
+    "mechcard_d9d7072b98ac",
+    "mechcard_09b5a1d2364e",
+    "mechcard_de4f2e71340e",
+    "mechcard_2e3eccb92773"
+  ],
+  "recipe_card_ids": [
+    "recipe_e1022ea0aa07",
+    "recipe_65c17e984705",
+    "recipe_560b2064f38a"
+  ],
+  "claim_card_ids": [
+    "claim_a99f92881b0e",
+    "claim_323404d7e133"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_6f13e0a6bfaf"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "fd9300073a96",
+    "5fdf9f5f0fbd",
+    "0c2479715990"
+  ],
+  "evidence_trace_ids": [
+    "trace_3909a46a698c",
+    "trace_b96c246607f7",
+    "trace_ee38c06bdc44",
+    "trace_34fb7530d8e3",
+    "trace_ea3d777a213c",
+    "trace_750d3f40f36f",
+    "trace_3874b644a930",
+    "trace_aee90dd756e2"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:03:45.534378",
+  "updated_at": "2026-04-23T21:48:15.778746"
+}

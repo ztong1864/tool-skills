@@ -1,0 +1,56 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_64da9a437508",
+  "paper_id": "df399a767a7e",
+  "raw_path": "相关文献/liu2015.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Fe",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "NDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "BPDC",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "pcu"
+  ],
+  "key_sections": {
+    "results_summary": "This is an Accepted Manuscript, which has been through the \nRoyal Society of Chemistry peer review process and has been \naccepted for publication.\nAccepted Manuscripts are published online shortly aft"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:22:08.632409"
+}

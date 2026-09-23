@@ -1,0 +1,81 @@
+{
+  "condition:approved-amount-table": {
+    "checked_by_step_ids": [
+      "task-step:generate-numbered-steps"
+    ],
+    "description": "The user has reviewed and approved actual reagent amounts before numbered steps are generated.",
+    "entity_type": "Condition",
+    "id": "condition:approved-amount-table",
+    "name": "Approved amount table",
+    "required_artifact_ids": [
+      "artifact:amount-table"
+    ],
+    "scope": "user_confirmation"
+  },
+  "condition:approved-device-task-creation": {
+    "checked_by_step_ids": [
+      "task-step:create-device-task"
+    ],
+    "description": "The user has explicitly approved creating a device task from the generated protocol JSON.",
+    "entity_type": "Condition",
+    "id": "condition:approved-device-task-creation",
+    "name": "Approved device task creation",
+    "required_artifact_ids": [
+      "artifact:device-protocol-json"
+    ],
+    "scope": "device_safety"
+  },
+  "condition:approved-numbered-steps": {
+    "checked_by_step_ids": [
+      "task-step:write-experiment-plan"
+    ],
+    "description": "The user has reviewed and approved the generated numbered experiment steps.",
+    "entity_type": "Condition",
+    "id": "condition:approved-numbered-steps",
+    "name": "Approved numbered steps",
+    "required_artifact_ids": [
+      "artifact:numbered-experiment-steps"
+    ],
+    "scope": "user_confirmation"
+  },
+  "condition:approved-recommendations": {
+    "checked_by_step_ids": [
+      "task-step:calculate-reagent-amounts"
+    ],
+    "description": "The user has selected or approved recommendation rows before amount calculation.",
+    "entity_type": "Condition",
+    "id": "condition:approved-recommendations",
+    "name": "Approved recommendations",
+    "required_artifact_ids": [
+      "artifact:recommendation-table"
+    ],
+    "scope": "user_confirmation"
+  },
+  "condition:resource-verification-passed": {
+    "checked_by_step_ids": [
+      "task-step:orchestrate-device-protocol"
+    ],
+    "description": "Resource verification completed without unresolved missing or conflicting resources.",
+    "entity_type": "Condition",
+    "id": "condition:resource-verification-passed",
+    "name": "Resource verification passed",
+    "required_artifact_ids": [
+      "artifact:verified-step-json",
+      "artifact:resource-verification-report"
+    ],
+    "scope": "resource_integrity"
+  },
+  "condition:supported-device-actions-only": {
+    "checked_by_step_ids": [
+      "task-step:orchestrate-device-protocol"
+    ],
+    "description": "Verified step JSON contains only device actions supported by the FDU orchestration layer.",
+    "entity_type": "Condition",
+    "id": "condition:supported-device-actions-only",
+    "name": "Supported device actions only",
+    "required_artifact_ids": [
+      "artifact:verified-step-json"
+    ],
+    "scope": "device_semantics"
+  }
+}

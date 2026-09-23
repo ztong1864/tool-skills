@@ -1,0 +1,211 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_4973889e8e43",
+  "paper_id": "35fcf2cf447e",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Zn2(TRZ)2(Fuma) shows decomposition_onset_temperature = 300.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "decomposition_onset_temperature = 300.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "ABAB stacking of {[Zn4(trz)4]4+}n layers directed by tar coordination mode → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "tar ligand interconnects 2D {[Zn4(trz)4]4+}n layers into a 3D pillared framework → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select the aliphatic dicarboxylate ligand to control packing of {[Zn4(trz)4]4+}n layers → changes whole-framework packing and can switch between layered and 3D architectures"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use flexible aliphatic carboxylate ligands together with trz as mixed ligands → frameworks are inclined to assemble into unique high-dimensional structures with multicarboxylate-bridged polynuclear cluster SBUs"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 2 vs compound 1: winner=subject_a on framework_dimensionality"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 2 vs compound 1: winner=subject_a on thermal_stability"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] fix the Zn:trz:H2suc ratio at 1:1:1 and vary reaction time, temperature, and concentration: compound 1 could not be synthesized"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_a4e48340b73a",
+    "trace_4c45aac17225",
+    "trace_60f1147d80cc",
+    "trace_db58212abfda",
+    "trace_d2b77ab7f48f",
+    "trace_7ee5a8c5c59d",
+    "trace_db9be2811434",
+    "trace_3bdb3b8e5738",
+    "trace_26bfe2f2992e",
+    "trace_4c6d230baea4",
+    "trace_e853d86990bb",
+    "trace_1b6f9670b31a",
+    "trace_1f88faf8f98f",
+    "trace_dd53b681de6d",
+    "trace_bd1f6a6847c1",
+    "trace_e28be295115a",
+    "trace_45df91449dbe",
+    "trace_85dc5cf5c159",
+    "trace_1603f82e35df",
+    "trace_ebf7f71d366b",
+    "trace_1b677ac3ad17",
+    "trace_d6a6265f927c",
+    "trace_0d7bfacb0a03",
+    "trace_77eb9c5c11b6",
+    "trace_6734a19929c9",
+    "trace_8421d025cf9c",
+    "trace_c2da0c96232d",
+    "trace_3737399d333e",
+    "trace_a52c43b05085",
+    "trace_0f377f51c029",
+    "trace_180033842b45",
+    "trace_a775329f0a35",
+    "trace_e73074d28815",
+    "trace_4bfc0d93164b",
+    "trace_53a5e490c04b",
+    "trace_eabf2ffc11e6",
+    "trace_e183898c1b22",
+    "trace_69ae424a7341",
+    "trace_f9ff32450514",
+    "trace_f5c37d4f0900",
+    "trace_612ef387243c",
+    "trace_db4601ab7cb9",
+    "trace_017749210e34",
+    "trace_9396e257a115",
+    "trace_c459382591df",
+    "trace_e5683bbb37c2",
+    "trace_068f514247c7",
+    "trace_3a8170f0b4bc",
+    "trace_f7bfe2fa1e1b",
+    "trace_56e20cf03158",
+    "trace_56e20cf03158",
+    "trace_69ae424a7341",
+    "trace_e183898c1b22",
+    "trace_a4e48340b73a",
+    "trace_180033842b45",
+    "trace_77eb9c5c11b6",
+    "trace_1f88faf8f98f",
+    "trace_60f1147d80cc",
+    "trace_a775329f0a35",
+    "trace_c2da0c96232d",
+    "trace_dd53b681de6d",
+    "trace_3a8170f0b4bc",
+    "trace_bd1f6a6847c1",
+    "trace_db58212abfda",
+    "trace_4bfc0d93164b",
+    "trace_53a5e490c04b",
+    "trace_9396e257a115",
+    "trace_612ef387243c",
+    "trace_0f377f51c029",
+    "trace_db4601ab7cb9",
+    "trace_d2b77ab7f48f",
+    "trace_eabf2ffc11e6",
+    "trace_e28be295115a",
+    "trace_c459382591df",
+    "trace_1b6f9670b31a",
+    "trace_0d7bfacb0a03",
+    "trace_4c45aac17225",
+    "trace_1b677ac3ad17",
+    "trace_3737399d333e",
+    "trace_017749210e34",
+    "trace_e73074d28815",
+    "trace_a52c43b05085",
+    "trace_3bdb3b8e5738",
+    "trace_d6a6265f927c",
+    "trace_e853d86990bb",
+    "trace_26bfe2f2992e",
+    "trace_f9ff32450514",
+    "trace_7ee5a8c5c59d",
+    "trace_db9be2811434",
+    "trace_45df91449dbe",
+    "trace_1603f82e35df",
+    "trace_f7bfe2fa1e1b",
+    "trace_8421d025cf9c",
+    "trace_ebf7f71d366b",
+    "trace_4c6d230baea4",
+    "trace_f5c37d4f0900",
+    "trace_6734a19929c9",
+    "trace_e5683bbb37c2",
+    "trace_068f514247c7",
+    "trace_85dc5cf5c159"
+  ],
+  "measurement_card_ids": [
+    "mcard_c37b750c22c8"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_3c8b3e210a1a",
+    "mechcard_15e94fa76695",
+    "mechcard_6761ca32a106",
+    "mechcard_675270d035a8",
+    "mechcard_e78ce011de14"
+  ],
+  "recipe_card_ids": [
+    "recipe_822838303a15"
+  ],
+  "claim_card_ids": [
+    "claim_95abbe3fadc8",
+    "claim_f908951e183f",
+    "claim_277ad086d84e",
+    "claim_0727455e889e",
+    "claim_b9cd6276805e",
+    "claim_c2030322f555",
+    "claim_252ca3655f05",
+    "claim_ca5c9b2de25d"
+  ],
+  "design_rule_card_ids": [
+    "drule_43db164c7d39",
+    "drule_e1c9a060d5ce",
+    "drule_2dc11db9c2dd",
+    "drule_06c7cf1844f0",
+    "drule_b394fdafdfb7"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_19a7028c6fde",
+    "comp_7d98afff8560",
+    "comp_8e8c6c05ddd8",
+    "comp_8f5f3d3a43cf"
+  ],
+  "failure_case_card_ids": [
+    "fail_905ad62094f5",
+    "fail_f031386e0dd9"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_ab148aaf9a53"
+  ],
+  "dossier_ids": [
+    "dossier_7b4fa66d10ef"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Compound 1 forms a 2D layered network based on {[Zn4(trz)4]4+}n layers decorated by succinate, describable as a (4, 8^2) topological net.",
+    "Compound 2 adopts a unique 3D pillared-layer framework where tartrate links adjacent 2D {[Zn4(trz)4]4+}n layers into a 3,4-connected network.",
+    "Compound 1 could not be obtained at fixed 1:1:1 stoichiometry even after varying reaction time from 1-7 days, temperature from 120-180 °C, and concentration."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.788963",
+  "updated_at": "2026-04-24T00:19:48.788966",
+  "raw_path": "相关文献/Synthesis and characterization of two new triazolate–aliphatic dicarboxylate.pdf"
+}

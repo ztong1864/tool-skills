@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_9fa2a54687e6",
+  "canonical_material_id": "mat_303f51c44315",
+  "canonical_name": "Na-SSZ-39",
+  "metal_element": "Na",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": "aei-type",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_f542e58acf29",
+    "mechcard_ade188763af4"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "e4f2dd03ed6d"
+  ],
+  "evidence_trace_ids": [
+    "trace_46d34173b537",
+    "trace_d60c326b0900"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:04:55.193561",
+  "updated_at": "2026-04-23T22:04:55.193763"
+}

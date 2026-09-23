@@ -1,0 +1,149 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_c350dccb1d44",
+  "paper_id": "07583595bdf7",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "Design rule: use C2 hydrocarbons instead of CO2 as adsorbates in Zn2(Atz)2Ox",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "phase_transition_and_guest_framework_interactions → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "cylindrical_shape_channel_model → uptake"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use C2 hydrocarbons instead of CO2 as adsorbates in Zn2(Atz)2Ox → C2 hydrocarbons show higher desorption resistance and adsorption hysteresis, whereas CO2 does not"
+    },
+    {
+      "title": "Comparison",
+      "body": "C2 hydrocarbons in Zn2(Atz)2Ox vs CO2 in Zn2(Atz)2Ox: winner=subject_a on desorption_resistance_and_hysteresis_tendency"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_25fc5741fe3b",
+    "trace_917b7c4110b5",
+    "trace_c073d5cf977e",
+    "trace_11a2fe551f9e",
+    "trace_01f20f6f46db",
+    "trace_badb705fbf0a",
+    "trace_cdc76da23614",
+    "trace_54096c0acc3c",
+    "trace_6994a851503b",
+    "trace_4502833a5d29",
+    "trace_ebad01955398",
+    "trace_77fcdf0e5e53",
+    "trace_52fa5561d2f9",
+    "trace_03e951dba984",
+    "trace_f622919c2b2b",
+    "trace_119ba1720f00",
+    "trace_bebf84c74351",
+    "trace_63253a7ddf8f",
+    "trace_955496ba4b13",
+    "trace_d737fed8a6d2",
+    "trace_d068e45869fa",
+    "trace_4f8b19de927f",
+    "trace_b0fc88d34091",
+    "trace_316a8a19b262",
+    "trace_511ed3550e29",
+    "trace_9b8ed2ade37d",
+    "trace_f72c3700c913",
+    "trace_75fb7788bd65",
+    "trace_09e5b992c1e7",
+    "trace_5b3327ab89fb",
+    "trace_c0f0796512da",
+    "trace_e4524c0a42c1",
+    "trace_964e909314b5",
+    "trace_8a48f50d1fcc",
+    "trace_d737fed8a6d2",
+    "trace_f622919c2b2b",
+    "trace_511ed3550e29",
+    "trace_6994a851503b",
+    "trace_63253a7ddf8f",
+    "trace_03e951dba984",
+    "trace_bebf84c74351",
+    "trace_e4524c0a42c1",
+    "trace_25fc5741fe3b",
+    "trace_09e5b992c1e7",
+    "trace_9b8ed2ade37d",
+    "trace_b0fc88d34091",
+    "trace_77fcdf0e5e53",
+    "trace_c0f0796512da",
+    "trace_52fa5561d2f9",
+    "trace_badb705fbf0a",
+    "trace_cdc76da23614",
+    "trace_4502833a5d29",
+    "trace_01f20f6f46db",
+    "trace_917b7c4110b5",
+    "trace_964e909314b5",
+    "trace_955496ba4b13",
+    "trace_316a8a19b262",
+    "trace_ebad01955398",
+    "trace_54096c0acc3c",
+    "trace_119ba1720f00",
+    "trace_4f8b19de927f",
+    "trace_f72c3700c913",
+    "trace_5b3327ab89fb",
+    "trace_11a2fe551f9e",
+    "trace_8a48f50d1fcc",
+    "trace_c073d5cf977e",
+    "trace_75fb7788bd65",
+    "trace_d068e45869fa"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_605cd79f12d0",
+    "mechcard_73251b05473a",
+    "mechcard_b07c7d0eb0bd"
+  ],
+  "recipe_card_ids": [
+    "recipe_e947e0b1de0c"
+  ],
+  "claim_card_ids": [
+    "claim_99b4df703686",
+    "claim_6e2bc64a33ac",
+    "claim_f284f23e5702",
+    "claim_a25f2f110ee9",
+    "claim_4751e8eb0694",
+    "claim_04e058f910ff",
+    "claim_d75fae171334"
+  ],
+  "design_rule_card_ids": [
+    "drule_55d63897ecf1"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_c0afc8a2c638"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_548ac8fa1296"
+  ],
+  "dossier_ids": [
+    "dossier_2ff6043c3112"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The C2-hydrocarbon hysteresis in Zn2(Atz)2Ox is classified as a type H1 loop, consistent with adsorption in cylindrical-shape channels.",
+    "The paper attributes adsorption hysteresis mainly to capillary condensation governed by adsorbate properties and pore size/shape.",
+    "Compared with CO2, C2 hydrocarbons have slightly larger size and stronger binding affinity, leading to higher desorption resistance in Zn2(Atz)2Ox."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.313436",
+  "updated_at": "2026-04-28T14:29:22.313440"
+}

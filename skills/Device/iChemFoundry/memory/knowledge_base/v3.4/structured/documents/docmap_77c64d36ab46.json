@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_77c64d36ab46",
+  "paper_id": "54f9fbaf30b0",
+  "raw_path": "相关文献/zhao2014.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "A new Zn(II) compound, namely {[Zn(atz)\n(C2O4)0.5]\u0002H2O}n (1 Hatz = 3-amino-1,2,4-triazole), has\nbeen",
+    "results_summary": "3D Pillar-Layered Zn(II) Compound with 6-Connected pcu\nTopology: Synthesis, Structure and Luminescent Properties\nfor Sensing of Nitrobenzene\nYing Zhao • Jun-min Wang • Hai-Yan Liu •\nShu-Tao Gao\nReceiv"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:01:13.944853"
+}

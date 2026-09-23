@@ -1,0 +1,18 @@
+{
+  "material:bm-bsa-medium": {
+    "description": "BM means BSA Medium and represents the BSA-containing baseline culture medium used in the BODIPY experiment.",
+    "document": "graph/canonical/entities/materials/BSA_Medium.md",
+    "entity_type": "Material",
+    "id": "material:bm-bsa-medium",
+    "material_type": "reagent",
+    "name": "BM / BSA Medium"
+  },
+  "material:fm-ffas-medium": {
+    "description": "FM means FFAs Medium and represents the free-fatty-acid-containing medium used to simulate elevated blood lipid conditions.",
+    "document": "graph/canonical/entities/materials/FFAs_Medium.md",
+    "entity_type": "Material",
+    "id": "material:fm-ffas-medium",
+    "material_type": "reagent",
+    "name": "FM / FFAs Medium"
+  }
+}

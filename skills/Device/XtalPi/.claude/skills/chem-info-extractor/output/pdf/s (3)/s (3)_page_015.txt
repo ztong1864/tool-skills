@@ -1,0 +1,23 @@
+S15
+ afforded ( R)-4bg (127.8 mg, 53%) (eluent: petrol eum ether) as a liquid: 93% ee
+(HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/0, 0.7 mL/min, λ =
+254 nm,  tR(major) = 12.1 min, tR(minor) = 13.8 min); [ α]D22 = -220.7 ( c = 1.00,
+CHCl 3); 1H NMR (300 MHz, CDCl 3) δ = 7.18 (d, J = 7.8 Hz, 2 H, Ar-H), 7.09 (d, J =
+7.8 Hz, 2 H, Ar-H), 6.09 (dt, J1 = 6.3 Hz, J2 = 3.0 Hz, 1 H, one proton from
+CH=C=CH), 5.53 (q, J = 6.6 Hz, 1 H, one proton from CH=C=CH), 2.32 (s, 3 H,
+CH 3), 2.11 (qd, J1 = 7.0 Hz, J2 = 2.9 Hz, 2 H, CH 2), 1.56-1.16 (m, 12 H, CH 2×6), 0.87
+(t, J = 6.6 Hz, 3 H, CH 3); 13C NMR (75 MHz, CDCl 3) δ = 204.8, 136.3, 132.1, 129.2,
+126.4, 95.0, 94.3, 31.9, 29.4, 29.3, 29.20, 29.16, 28.9, 22.7, 21.1, 14.1; MS (EI) m/z
+(%): 242 (M+, 1.26), 129 (100); IR (neat): v = 2955, 2924, 2854, 1949, 1513, 1465
+cm-1; HRMS calcd for C 18H26 [M+]: 242.2035, found: 242.2037.
+Conditions B : The reaction of ZnBr 2 (114.9 mg, 0.5 mmol, 98% from Alfa), CuBr
+(29.3 mg, 0.2 mmol, 98% from Acros), ( S)-3 (258.6 mg, 1.0 mmol, 98%), 1b (211.2
+mg, 1.5 mmol, 98%)/dioxane (2 mL), and 2g (240.5 mg, 2.0 mmol)/dioxane (1 mL)
+afforded ( R)-4bg (97.0 mg, 40%) (eluent: petroleum ether) as a liquid: 97% ee (HPLC
+conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/0, 0.7 mL/min, λ = 214 nm,
+tR(major) = 12.6 min, tR(minor) = 14.8 min,); [ α]D25 = -224.0 ( c = 1.06, CHCl 3); 1H
+NMR (300 MHz, CDCl 3) δ = 7.18 (d, J = 8.1 Hz, 2 H, Ar-H), 7.09 (d, J = 7.8 Hz, 2 H,
+Ar-H), 6.15-6.00 (m, 1 H, one pr oton from CH=C=CH), 5.53 (q, J = 6.7 Hz, 1 H, one
+proton from CH=C=CH), 2.31 (s, 3 H, CH 3), 2.12 (qd, J1 = 7.1 Hz, J2 = 2.6 Hz, 2 H,
+CH 2), 1.52-1.13 (m, 12 H, CH 2×6), 0.87 (t, J = 6.2 Hz, 3 H, CH 3); 13C NMR (75 MHz,
+CDCl 3) δ = 204.8, 136.3, 132.1, 129.2, 126.4, 95.0, 94.3, 31.9, 29.4, 29.3, 29.20,

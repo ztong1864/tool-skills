@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_09844f8c9d7f",
+  "paper_id": "b2bd48fc9577",
+  "raw_path": "相关文献/2021-Residence time distribution in fluidized beds-diffusion、dispersion、and adsorption.pdf",
+  "title": "Residence time distribution in fluidized beds-diffusion、dispersion、and adsorption",
+  "authors": [],
+  "year": 2021,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "Kr"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "Residence time distribution is a multifaceted method to charac-\nterize vessel hydrodynamics. In this study, we examined the gas",
+    "results_summary": "Original Research Paper\nResidence time distribution in ﬂuidized beds: diffusion, dispersion, and\nadsorption\nAriane Bérard, Bruno Blais, Gregory S. Patience ⇑\nChemical Engineering, Polytechnique Montré"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:01:58.602039"
+}

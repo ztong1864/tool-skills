@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_5b34d44c3714",
+  "canonical_material_id": "mat_fc67c51133aa",
+  "canonical_name": "Ni(C2O4)(dmiz)2",
+  "metal_element": "Ni",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_27090a4f91c9",
+  "pillar_id": "pil_83977598992c",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_6996f7ed68ea"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "de52aa10b4d9",
+    "d87085de1c1d"
+  ],
+  "evidence_trace_ids": [
+    "trace_ecf051516a4c"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:45:51.621976",
+  "updated_at": "2026-04-23T22:31:53.403553"
+}

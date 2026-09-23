@@ -1,0 +1,90 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_0395583a3016",
+  "paper_id": "3b10485188f4",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [],
+  "one_line_summary": "Paper 3b10485188f4: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Author Claim",
+      "body": "Complex 2 contains a 1D anionic {Zn(TAZ)3}n chain that extends into a 3D (3,6)-connected framework."
+    },
+    {
+      "title": "Author Claim",
+      "body": "Powder XRD patterns for compounds 1-5 match those simulated from single-crystal data, supporting phase purity and bulk structural consistency."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_dee5f2736efc",
+    "trace_9aaf4e70ea8a",
+    "trace_600be81ce957",
+    "trace_e3ee30279cd3",
+    "trace_a90a2ed8b926",
+    "trace_d278cd10a776",
+    "trace_585dac1a30f9",
+    "trace_d0acbd262871",
+    "trace_1d26e7dba0d8",
+    "trace_74c5cd027797",
+    "trace_94aa59da2fc2",
+    "trace_b256168c56a8",
+    "trace_d54ce4e68da7",
+    "trace_dca0afccee91",
+    "trace_e0ec8f13871e",
+    "trace_1d26e7dba0d8",
+    "trace_dee5f2736efc",
+    "trace_9aaf4e70ea8a",
+    "trace_d0acbd262871",
+    "trace_a90a2ed8b926",
+    "trace_585dac1a30f9",
+    "trace_600be81ce957",
+    "trace_94aa59da2fc2",
+    "trace_74c5cd027797",
+    "trace_d278cd10a776",
+    "trace_dca0afccee91",
+    "trace_d54ce4e68da7",
+    "trace_b256168c56a8",
+    "trace_e3ee30279cd3",
+    "trace_e0ec8f13871e"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_0cf0903b8333",
+    "claim_177506640cc3",
+    "claim_01345955d468",
+    "claim_cb1f3ffea70c",
+    "claim_c4677f548ab8",
+    "claim_d956d44d2339",
+    "claim_304168550221"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_e175a8042d1e",
+    "mat_1e77ebdc3148"
+  ],
+  "dossier_ids": [
+    "dossier_40d2e8334d25",
+    "dossier_6d9289f3b093"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Complex 2 contains a 1D anionic {Zn(TAZ)3}n chain that extends into a 3D (3,6)-connected framework.",
+    "Powder XRD patterns for compounds 1-5 match those simulated from single-crystal data, supporting phase purity and bulk structural consistency.",
+    "In complex 5, the μ4-AmTAZ ligand links Cd(2) into a 1D double-bridged chain and Cd(1) into a 2D (4,4) layer."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.2,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.303076",
+  "updated_at": "2026-04-28T14:29:22.303078"
+}

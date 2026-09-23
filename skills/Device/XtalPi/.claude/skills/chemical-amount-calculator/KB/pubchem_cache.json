@@ -1,0 +1,658 @@
+{
+  "10139-47-6": {
+    "query": "10139-47-6",
+    "cid": 66278,
+    "molecular_formula": "I2Zn",
+    "molecular_weight": 319.2,
+    "iupac_name": "diiodozinc"
+  },
+  "7789-45-9": {
+    "query": "7789-45-9",
+    "cid": 24611,
+    "molecular_formula": "Br2Cu",
+    "molecular_weight": 223.35,
+    "iupac_name": "dibromocopper"
+  },
+  "7681-65-4": {
+    "query": "7681-65-4",
+    "cid": 6432705,
+    "molecular_formula": "CuI",
+    "molecular_weight": 190.45,
+    "iupac_name": "copper(1+) iodide"
+  },
+  "7787-70-4": {
+    "query": "7787-70-4",
+    "cid": 24593,
+    "molecular_formula": "BrCu",
+    "molecular_weight": 143.45,
+    "iupac_name": "bromocopper"
+  },
+  "7699-45-8": {
+    "query": "7699-45-8",
+    "cid": 10421208,
+    "molecular_formula": "Br2Zn",
+    "molecular_weight": 225.2,
+    "iupac_name": "zinc dibromide"
+  },
+  "112068-01-6": {
+    "query": "112068-01-6",
+    "cid": 2724899,
+    "molecular_formula": "C17H19NO",
+    "molecular_weight": 253.34,
+    "iupac_name": "diphenyl-[(2S)-pyrrolidin-2-yl]methanol"
+  },
+  "131180-63-7": {
+    "query": "131180-63-7",
+    "cid": 11616543,
+    "molecular_formula": "C21H27NO",
+    "molecular_weight": 309.4,
+    "iupac_name": "bis(3,5-dimethylphenyl)-[(2S)-pyrrolidin-2-yl]methanol"
+  },
+  "131180-52-4": {
+    "query": "131180-52-4",
+    "cid": 11818365,
+    "molecular_formula": "C19H23NO",
+    "molecular_weight": 281.4,
+    "iupac_name": "bis(4-methylphenyl)-[(2S)-pyrrolidin-2-yl]methanol"
+  },
+  "131180-57-9": {
+    "query": "131180-57-9",
+    "cid": 14813983,
+    "molecular_formula": "C19H23NO3",
+    "molecular_weight": 313.4,
+    "iupac_name": "bis(4-methoxyphenyl)-[(2S)-pyrrolidin-2-yl]methanol"
+  },
+  "536-74-3": {
+    "query": "536-74-3",
+    "cid": 10821,
+    "molecular_formula": "C8H6",
+    "molecular_weight": 102.13,
+    "iupac_name": "ethynylbenzene"
+  },
+  "124-19-6": {
+    "query": "124-19-6",
+    "cid": 31289,
+    "molecular_formula": "C9H18O",
+    "molecular_weight": 142.24,
+    "iupac_name": "nonanal"
+  },
+  "34946-82-2": {
+    "query": "34946-82-2",
+    "cid": 3260416,
+    "molecular_formula": "CHCuF3O3S",
+    "molecular_weight": 213.63,
+    "iupac_name": "copper;trifluoromethanesulfonic acid"
+  },
+  "2923-28-6": {
+    "query": "2923-28-6",
+    "cid": 76223,
+    "molecular_formula": "CAgF3O3S",
+    "molecular_weight": 256.94,
+    "iupac_name": "silver trifluoromethanesulfonate"
+  },
+  "848821-76-1": {
+    "query": "848821-76-1",
+    "cid": 11973958,
+    "molecular_formula": "C21H15F12NO",
+    "molecular_weight": 525.3,
+    "iupac_name": "bis[3,5-bis(trifluoromethyl)phenyl]-[(2S)-pyrrolidin-2-yl]methanol"
+  },
+  "127986-84-9": {
+    "query": "127986-84-9",
+    "cid": 2733810,
+    "molecular_formula": "C25H23NO",
+    "molecular_weight": 353.5,
+    "iupac_name": "dinaphthalen-2-yl-[(2S)-pyrrolidin-2-yl]methanol"
+  },
+  "100243-39-8": {
+    "query": "100243-39-8",
+    "cid": 2733874,
+    "molecular_formula": "C4H9NO",
+    "molecular_weight": 87.12,
+    "iupac_name": "(3S)-pyrrolidin-3-ol"
+  },
+  "122536-94-1": {
+    "query": "122536-94-1",
+    "cid": 22309122,
+    "molecular_formula": "C4H10ClNO",
+    "molecular_weight": 123.58,
+    "iupac_name": "(3S)-pyrrolidin-3-ol;hydrochloride"
+  },
+  "92053-25-3": {
+    "query": "92053-25-3",
+    "cid": 12732179,
+    "molecular_formula": "C7H15NO",
+    "molecular_weight": 129.2,
+    "iupac_name": "2-[(2S)-pyrrolidin-2-yl]propan-2-ol"
+  },
+  "131180-65-9": {
+    "query": "131180-65-9",
+    "cid": 14813976,
+    "molecular_formula": "C19H17F6NO",
+    "molecular_weight": 389.3,
+    "iupac_name": "[(2S)-pyrrolidin-2-yl]-bis[4-(trifluoromethyl)phenyl]methanol"
+  },
+  "848821-58-9": {
+    "query": "848821-58-9",
+    "cid": 11198150,
+    "molecular_formula": "C20H27NOSi",
+    "molecular_weight": 325.5,
+    "iupac_name": "[diphenyl-[(2S)-pyrrolidin-2-yl]methoxy]-trimethylsilane"
+  },
+  "118971-03-2": {
+    "query": "118971-03-2",
+    "cid": 11694649,
+    "molecular_formula": "C18H21NO",
+    "molecular_weight": 267.4,
+    "iupac_name": "(2S)-2-[methoxy(diphenyl)methyl]pyrrolidine"
+  },
+  "64030-43-9": {
+    "query": "64030-43-9",
+    "cid": 6552381,
+    "molecular_formula": "C11H14N2O",
+    "molecular_weight": 190.24,
+    "iupac_name": "(2S)-N-phenylpyrrolidine-2-carboxamide"
+  },
+  "7531-52-4": {
+    "query": "7531-52-4",
+    "cid": 111306,
+    "molecular_formula": "C5H10N2O",
+    "molecular_weight": 114.15,
+    "iupac_name": "(2S)-pyrrolidine-2-carboxamide"
+  },
+  "42429-27-6": {
+    "query": "42429-27-6",
+    "cid": 12707183,
+    "molecular_formula": "C5H11ClN2O",
+    "molecular_weight": 150.61,
+    "iupac_name": "(2S)-pyrrolidine-2-carboxamide;hydrochloride"
+  },
+  "27262-43-7": {
+    "query": "27262-43-7",
+    "cid": 10353898,
+    "molecular_formula": "C14H20N2O",
+    "molecular_weight": 232.32,
+    "iupac_name": "(2R)-N-(2,6-dimethylphenyl)piperidine-2-carboxamide"
+  },
+  "40216-83-9": {
+    "query": "40216-83-9",
+    "cid": 11435319,
+    "molecular_formula": "C6H12ClNO3",
+    "molecular_weight": 181.62,
+    "iupac_name": "methyl (2S,4R)-4-hydroxypyrrolidine-2-carboxylate;hydrochloride"
+  },
+  "3197-44-2": {
+    "query": "3197-44-2",
+    "cid": 6950192,
+    "molecular_formula": "C6H13NO",
+    "molecular_weight": 115.17,
+    "iupac_name": "[(2R)-piperidin-2-yl]methanol"
+  },
+  "141-78-6": {
+    "query": "141-78-6",
+    "cid": 8857,
+    "molecular_formula": "C4H8O2",
+    "molecular_weight": 88.11,
+    "iupac_name": "ethyl acetate"
+  },
+  "67-68-5": {
+    "query": "67-68-5",
+    "cid": 679,
+    "molecular_formula": "C2H6OS",
+    "molecular_weight": 78.14,
+    "iupac_name": "methylsulfinylmethane"
+  },
+  "68-12-2": {
+    "query": "68-12-2",
+    "cid": 6228,
+    "molecular_formula": "C3H7NO",
+    "molecular_weight": 73.09,
+    "iupac_name": "N,N-dimethylformamide"
+  },
+  "872-50-4": {
+    "query": "872-50-4",
+    "cid": 13387,
+    "molecular_formula": "C5H9NO",
+    "molecular_weight": 99.13,
+    "iupac_name": "1-methylpyrrolidin-2-one"
+  },
+  "75-05-8": {
+    "query": "75-05-8",
+    "cid": 6342,
+    "molecular_formula": "C2H3N",
+    "molecular_weight": 41.05,
+    "iupac_name": "acetonitrile"
+  },
+  "123-91-1": {
+    "query": "123-91-1",
+    "cid": 31275,
+    "molecular_formula": "C4H8O2",
+    "molecular_weight": 88.11,
+    "iupac_name": "1,4-dioxane"
+  },
+  "109-99-9": {
+    "query": "109-99-9",
+    "cid": 8028,
+    "molecular_formula": "C4H8O",
+    "molecular_weight": 72.11,
+    "iupac_name": "oxolane"
+  },
+  "108-88-3": {
+    "query": "108-88-3",
+    "cid": 1140,
+    "molecular_formula": "C7H8",
+    "molecular_weight": 92.14,
+    "iupac_name": "toluene"
+  },
+  "108-90-7": {
+    "query": "108-90-7",
+    "cid": 7964,
+    "molecular_formula": "C6H5Cl",
+    "molecular_weight": 112.55,
+    "iupac_name": "chlorobenzene"
+  },
+  "107-06-2": {
+    "query": "107-06-2",
+    "cid": 11,
+    "molecular_formula": "C2H4Cl2",
+    "molecular_weight": 98.96,
+    "iupac_name": "1,2-dichloroethane"
+  },
+  "67-56-1": {
+    "query": "67-56-1",
+    "cid": 887,
+    "molecular_formula": "CH4O",
+    "molecular_weight": 32.042,
+    "iupac_name": "methanol"
+  },
+  "64-17-5": {
+    "query": "64-17-5",
+    "cid": 702,
+    "molecular_formula": "C2H6O",
+    "molecular_weight": 46.07,
+    "iupac_name": "ethanol"
+  },
+  "67-63-0": {
+    "query": "67-63-0",
+    "cid": 3776,
+    "molecular_formula": "C3H8O",
+    "molecular_weight": 60.1,
+    "iupac_name": "propan-2-ol"
+  },
+  "75-89-8": {
+    "query": "75-89-8",
+    "cid": 6409,
+    "molecular_formula": "C2H3F3O",
+    "molecular_weight": 100.04,
+    "iupac_name": "2,2,2-trifluoroethanol"
+  },
+  "10361-84-9": {
+    "query": "10361-84-9",
+    "cid": 82586,
+    "molecular_formula": "Cl3Sc",
+    "molecular_weight": 151.31,
+    "iupac_name": "trichloroscandium"
+  },
+  "144026-79-9": {
+    "query": "144026-79-9",
+    "cid": 57451379,
+    "molecular_formula": "CHF3O3SSc",
+    "molecular_weight": 195.04,
+    "iupac_name": "scandium;trifluoromethanesulfonic acid"
+  },
+  "10361-92-9": {
+    "query": "10361-92-9",
+    "cid": 10198055,
+    "molecular_formula": "Cl3Y",
+    "molecular_weight": 195.26,
+    "iupac_name": "yttrium(3+) trichloride"
+  },
+  "546-68-9": {
+    "query": "546-68-9",
+    "cid": 11026,
+    "molecular_formula": "C12H28O4Ti",
+    "molecular_weight": 284.22,
+    "iupac_name": "tetrakis(propan-2-olate);titanium(4+)"
+  },
+  "10026-11-6": null,
+  "1291-32-3": {
+    "query": "1291-32-3",
+    "cid": 102092,
+    "molecular_formula": "C10H10Cl2Zr",
+    "molecular_weight": 292.31,
+    "iupac_name": "bis(cyclopenta-1,3-diene);dichlorozirconium(2+)"
+  },
+  "13499-05-3": {
+    "query": "13499-05-3",
+    "cid": 37715,
+    "molecular_formula": "Cl4Hf",
+    "molecular_weight": 320.3,
+    "iupac_name": "tetrachlorohafnium"
+  },
+  "17475-67-1": {
+    "query": "17475-67-1",
+    "cid": 11330624,
+    "molecular_formula": "C20H32HfO8",
+    "molecular_weight": 578.9,
+    "iupac_name": "hafnium;tetrakis((Z)-4-hydroxypent-3-en-2-one)"
+  },
+  "7727-18-6": {
+    "query": "7727-18-6",
+    "cid": 24410,
+    "molecular_formula": "Cl3H3OV",
+    "molecular_weight": 176.32,
+    "iupac_name": "oxovanadium;trihydrochloride"
+  },
+  "10026-12-7": {
+    "query": "10026-12-7",
+    "cid": 24818,
+    "molecular_formula": "Cl5Nb",
+    "molecular_weight": 270.2,
+    "iupac_name": "pentachloroniobium"
+  },
+  "13478-18-7": {
+    "query": "13478-18-7",
+    "cid": 83515,
+    "molecular_formula": "Cl3Mo",
+    "molecular_weight": 202.3,
+    "iupac_name": "trichloromolybdenum"
+  },
+  "10241-05-1": {
+    "query": "10241-05-1",
+    "cid": 61497,
+    "molecular_formula": "Cl5Mo",
+    "molecular_weight": 273.2,
+    "iupac_name": "pentachloromolybdenum"
+  },
+  "13470-14-9": {
+    "query": "13470-14-9",
+    "cid": 139469,
+    "molecular_formula": "Cl5W",
+    "molecular_weight": 361.1,
+    "iupac_name": "pentachlorotungsten"
+  },
+  "13283-01-7": {
+    "query": "13283-01-7",
+    "cid": 83301,
+    "molecular_formula": "Cl6W",
+    "molecular_weight": 396.5,
+    "iupac_name": "hexachlorotungsten"
+  },
+  "7773-01-5": {
+    "query": "7773-01-5",
+    "cid": 10313134,
+    "molecular_formula": "Cl2Mn",
+    "molecular_weight": 125.84,
+    "iupac_name": "manganese(2+) dichloride"
+  },
+  "55120-76-8": {
+    "query": "55120-76-8",
+    "cid": 92004361,
+    "molecular_formula": "C2H2F6MnO6S2",
+    "molecular_weight": 355.1,
+    "iupac_name": "manganese;bis(trifluoromethanesulfonic acid)"
+  },
+  "15238-00-3": null,
+  "14024-48-7": {
+    "query": "14024-48-7",
+    "cid": 2724216,
+    "molecular_formula": "C10H14CoO4",
+    "molecular_weight": 257.15,
+    "iupac_name": "cobalt(2+);bis(pentane-2,4-dione)"
+  },
+  "14126-40-0": {
+    "query": "14126-40-0",
+    "cid": 6102222,
+    "molecular_formula": "C36H30Cl2CoP2",
+    "molecular_weight": 654.4,
+    "iupac_name": "dichlorocobalt;bis(triphenylphosphane)"
+  },
+  "7758-94-3": {
+    "query": "7758-94-3",
+    "cid": 24458,
+    "molecular_formula": "Cl2Fe",
+    "molecular_weight": 126.75,
+    "iupac_name": "dichloroiron"
+  },
+  "7705-08-0": {
+    "query": "7705-08-0",
+    "cid": 24380,
+    "molecular_formula": "Cl3Fe",
+    "molecular_weight": 162.2,
+    "iupac_name": "trichloroiron"
+  },
+  "7789-46-0": {
+    "query": "7789-46-0",
+    "cid": 82240,
+    "molecular_formula": "Br2Fe",
+    "molecular_weight": 215.65,
+    "iupac_name": "iron(2+) dibromide"
+  },
+  "10031-26-2": {
+    "query": "10031-26-2",
+    "cid": 82310,
+    "molecular_formula": "Br3Fe",
+    "molecular_weight": 295.56,
+    "iupac_name": "iron(3+) tribromide"
+  },
+  "7783-86-0": {
+    "query": "7783-86-0",
+    "cid": 82220,
+    "molecular_formula": "FeI2",
+    "molecular_weight": 309.65,
+    "iupac_name": "iron(2+) diiodide"
+  },
+  "14126-37-5": {
+    "query": "14126-37-5",
+    "cid": 11050914,
+    "molecular_formula": "C36H30Br2NiP2",
+    "molecular_weight": 743.1,
+    "iupac_name": "dibromonickel;bis(triphenylphosphane)"
+  },
+  "28923-39-9": null,
+  "15629-92-2": {
+    "query": "15629-92-2",
+    "cid": 2724937,
+    "molecular_formula": "C27H26Cl2NiP2",
+    "molecular_weight": 542.0,
+    "iupac_name": "dichloronickel;3-diphenylphosphanylpropyl(diphenyl)phosphane"
+  },
+  "7647-10-1": {
+    "query": "7647-10-1",
+    "cid": 24290,
+    "molecular_formula": "Cl2Pd",
+    "molecular_weight": 177.32,
+    "iupac_name": "dichloropalladium"
+  },
+  "3375-31-3": {
+    "query": "3375-31-3",
+    "cid": 167845,
+    "molecular_formula": "C4H6O4Pd",
+    "molecular_weight": 224.51,
+    "iupac_name": "palladium(2+) diacetate"
+  },
+  "14871-92-2": {
+    "query": "14871-92-2",
+    "cid": 6096670,
+    "molecular_formula": "C10H8Cl2N2Pd",
+    "molecular_weight": 333.5,
+    "iupac_name": "dichloropalladium;2-pyridin-2-ylpyridine"
+  },
+  "13965-03-2": {
+    "query": "13965-03-2",
+    "cid": 6102075,
+    "molecular_formula": "C36H30Cl2P2Pd",
+    "molecular_weight": 701.9,
+    "iupac_name": "dichloropalladium;bis(triphenylphosphane)"
+  },
+  "598-54-9": {
+    "query": "598-54-9",
+    "cid": 69023,
+    "molecular_formula": "C2H3CuO2",
+    "molecular_weight": 122.59,
+    "iupac_name": "copper(1+) acetate"
+  },
+  "68986-76-5": {
+    "query": "68986-76-5",
+    "cid": 11194830,
+    "molecular_formula": "C5H3CuO2S",
+    "molecular_weight": 190.69,
+    "iupac_name": "copper(1+);thiophene-2-carboxylate"
+  },
+  "162715-14-2": {
+    "query": "162715-14-2",
+    "cid": 12000378,
+    "molecular_formula": "C4CuF12N2O8S4",
+    "molecular_weight": 623.8,
+    "iupac_name": "copper bis(bis(trifluoromethylsulfonyl)azanide)"
+  },
+  "142-71-2": {
+    "query": "142-71-2",
+    "cid": 8895,
+    "molecular_formula": "C4H6CuO4",
+    "molecular_weight": 181.63,
+    "iupac_name": "copper diacetate"
+  },
+  "7447-39-4": {
+    "query": "7447-39-4",
+    "cid": 24014,
+    "molecular_formula": "Cl2Cu",
+    "molecular_weight": 134.45,
+    "iupac_name": "dichlorocopper"
+  },
+  "189114-61-2": {
+    "query": "189114-61-2",
+    "cid": 15975413,
+    "molecular_formula": "C2AgF6NO4S2",
+    "molecular_weight": 388.02,
+    "iupac_name": "silver bis(trifluoromethylsulfonyl)azanide"
+  },
+  "7783-93-9": {
+    "query": "7783-93-9",
+    "cid": 24562,
+    "molecular_formula": "AgClO4",
+    "molecular_weight": 207.32,
+    "iupac_name": "silver perchlorate"
+  },
+  "7783-96-2": {
+    "query": "7783-96-2",
+    "cid": 24563,
+    "molecular_formula": "AgI",
+    "molecular_weight": 234.773,
+    "iupac_name": "iodosilver"
+  },
+  "14104-20-2": {
+    "query": "14104-20-2",
+    "cid": 159722,
+    "molecular_formula": "AgBF4",
+    "molecular_weight": 194.68,
+    "iupac_name": "silver tetrafluoroborate"
+  },
+  "29892-37-3": {
+    "query": "29892-37-3",
+    "cid": 6100873,
+    "molecular_formula": "C2H6AuClS",
+    "molecular_weight": 294.55,
+    "iupac_name": "chlorogold;methylsulfanylmethane"
+  },
+  "168106-25-0": {
+    "query": "168106-25-0",
+    "cid": 25178006,
+    "molecular_formula": "C4F12N2O8S4Zn",
+    "molecular_weight": 625.7,
+    "iupac_name": "zinc bis(bis(trifluoromethylsulfonyl)azanide)"
+  },
+  "10108-64-2": {
+    "query": "10108-64-2",
+    "cid": 24947,
+    "molecular_formula": "CdCl2",
+    "molecular_weight": 183.32,
+    "iupac_name": "dichlorocadmium"
+  },
+  "7446-70-0": {
+    "query": "7446-70-0",
+    "cid": 24012,
+    "molecular_formula": "AlCl3",
+    "molecular_weight": 133.34,
+    "iupac_name": "trichloroalumane"
+  },
+  "555-31-7": {
+    "query": "555-31-7",
+    "cid": 11143,
+    "molecular_formula": "C9H21AlO3",
+    "molecular_weight": 204.24,
+    "iupac_name": "aluminum tris(propan-2-olate)"
+  },
+  "13450-90-3": {
+    "query": "13450-90-3",
+    "cid": 26010,
+    "molecular_formula": "Cl3Ga",
+    "molecular_weight": 176.08,
+    "iupac_name": "trichlorogallane"
+  },
+  "13450-91-4": {
+    "query": "13450-91-4",
+    "cid": 83478,
+    "molecular_formula": "GaI3",
+    "molecular_weight": 450.436,
+    "iupac_name": "triiodogallane"
+  },
+  "13465-09-3": {
+    "query": "13465-09-3",
+    "cid": 26046,
+    "molecular_formula": "Br3In",
+    "molecular_weight": 354.53,
+    "iupac_name": "tribromoindigane"
+  },
+  "10025-82-8": {
+    "query": "10025-82-8",
+    "cid": 24812,
+    "molecular_formula": "Cl3In",
+    "molecular_weight": 221.17,
+    "iupac_name": "trichloroindigane"
+  },
+  "7783-70-2": {
+    "query": "7783-70-2",
+    "cid": 24557,
+    "molecular_formula": "F5Sb",
+    "molecular_weight": 216.752,
+    "iupac_name": "pentafluoro-lambda5-stibane"
+  },
+  "10025-91-9": {
+    "query": "10025-91-9",
+    "cid": 24814,
+    "molecular_formula": "Cl3Sb",
+    "molecular_weight": 228.11,
+    "iupac_name": "trichlorostibane"
+  },
+  "苯乙炔": null,
+  "正壬醛": null,
+  "54010-75-2": {
+    "query": "54010-75-2",
+    "cid": 104671,
+    "molecular_formula": "C2F6O6S2Zn",
+    "molecular_weight": 363.5,
+    "iupac_name": "zinc bis(trifluoromethanesulfonate)"
+  },
+  "7758-89-6": {
+    "query": "7758-89-6",
+    "cid": 62652,
+    "molecular_formula": "ClCu",
+    "molecular_weight": 99.0,
+    "iupac_name": "chlorocopper"
+  },
+  "sc(otf)3": {
+    "query": "Sc(OTf)3",
+    "cid": 57451379,
+    "molecular_formula": "CHF3O3SSc",
+    "molecular_weight": 195.04,
+    "iupac_name": "scandium;trifluoromethanesulfonic acid"
+  },
+  "cu(otf)2": {
+    "query": "Cu(OTf)2",
+    "cid": 62406,
+    "molecular_formula": "CHF3O3S",
+    "molecular_weight": 150.08,
+    "iupac_name": "trifluoromethanesulfonic acid"
+  }
+}

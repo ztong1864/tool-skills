@@ -1,0 +1,97 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_291b52bf3074",
+  "canonical_material_id": "mat_fd0c80909cfa",
+  "canonical_name": "Zn-atz-ipa",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_63a39f87f1c2",
+  "pillar_id": "pil_ae3272062ae7",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_bbe8b873c481",
+    "mcard_4f30b3c361d3",
+    "mcard_d81e2339f947",
+    "mcard_9ea2414f6632",
+    "mcard_e6673687e22f",
+    "mcard_1da5f921e686",
+    "mcard_ae9a52897225",
+    "mcard_fb31c3fdfc9b",
+    "mcard_20a24b9939fd"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_aa3ab4669024",
+    "mechcard_45ce7a57e089",
+    "mechcard_c7c863f7572b",
+    "mechcard_9caf6d598dc0",
+    "mechcard_57d798f1c689",
+    "mechcard_4aa845500edc",
+    "mechcard_6f65cfb9de66",
+    "mechcard_3eddc5fdc2c7",
+    "mechcard_2867e5d70a47",
+    "mechcard_7fe7793c8f95",
+    "mechcard_34da49e81dcc",
+    "mechcard_620c43ed2e59",
+    "mechcard_7fef6e996392",
+    "mechcard_a4fa72496946",
+    "mechcard_5e40f5533847",
+    "mechcard_f5bba30f4dc2"
+  ],
+  "recipe_card_ids": [
+    "recipe_ac9facd6b3fc"
+  ],
+  "claim_card_ids": [
+    "claim_6a184ca6706e"
+  ],
+  "design_rule_card_ids": [
+    "drule_4543ee547265"
+  ],
+  "failure_case_card_ids": [
+    "fail_6f13e0a6bfaf",
+    "fail_9b58813d1fbd"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "fd9300073a96",
+    "5fdf9f5f0fbd",
+    "e491473623b9",
+    "0c2479715990",
+    "bfbed74e28fe"
+  ],
+  "evidence_trace_ids": [
+    "trace_87d74ac1fbaa",
+    "trace_7a5e1942d203",
+    "trace_8833c76482dc",
+    "trace_584732563154",
+    "trace_ea260daee64d",
+    "trace_59149042a3ad",
+    "trace_c94c9cb1e25a",
+    "trace_ea13663b3996",
+    "trace_6c4498d86b70",
+    "trace_e80c4d12ba74",
+    "trace_215a282b8be7",
+    "trace_649427dec711",
+    "trace_a9f06ca7fa7e",
+    "trace_d0368c496d3f",
+    "trace_2ba8539aa1b7",
+    "trace_6628997cc0d0",
+    "trace_fb31d08024fb",
+    "trace_1adfc67a2776",
+    "trace_3ed2348e7127",
+    "trace_07031682b8ef",
+    "trace_80400cecd27c",
+    "trace_7e2a9c24dc45"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:03:45.535992",
+  "updated_at": "2026-04-23T22:33:25.166803"
+}

@@ -1,0 +1,62 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_c111ef869e61",
+  "paper_id": "94d0484540b0",
+  "raw_path": "相关文献/氮唑相关文献_Talha 等 - 2021 - Construction of a zeolite A-type multivariate meta.pdf",
+  "title": "Construction of a zeolite A-type multivariate meta",
+  "authors": [
+    "氮唑相关文献_Talha"
+  ],
+  "year": 2021,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "Xe"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ZIF-22",
+    "BUT-26",
+    "BUT-25",
+    "BUT-27",
+    "ZIF-67"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif"
+  ],
+  "key_sections": {
+    "results_summary": "CrystEngComm\nPAPER\nCite this: CrystEngComm, 2021, 23,\n4923\nReceived 7th May 2021,\nAccepted 6th June 2021\nDOI: 10.1039/d1ce00610j\nrsc.li/crystengcomm\nConstruction of a zeolite A-type multivariate\nmetal"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:45:37.131096"
+}

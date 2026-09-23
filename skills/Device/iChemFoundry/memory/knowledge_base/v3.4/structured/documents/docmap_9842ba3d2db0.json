@@ -1,0 +1,59 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_9842ba3d2db0",
+  "paper_id": "bdcdbf619520",
+  "raw_path": "相关文献/1-s2.0-S0735193326004276-main.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C2H6",
+    "Xe",
+    "Kr"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ZK-5",
+    "ZIF-8",
+    "KFI-6",
+    "ZSM-5",
+    "LTA-4",
+    "HKUST-1"
+  ],
+  "mentioned_metals": [
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "MIM"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif",
+    "hkust"
+  ],
+  "key_sections": {
+    "results_summary": "Mass transfer resistance of noble gases in KFI zeolite: Insights from \nmolecular simulations\nJiasheng Song a,*, Yu Qiu b,*, Lu Zhang c, Shouyin Cai d, Li Shi a\na School of Mechanical Engineering and M"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T16:49:28.864165"
+}

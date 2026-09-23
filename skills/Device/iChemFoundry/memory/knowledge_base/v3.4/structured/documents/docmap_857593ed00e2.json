@@ -1,0 +1,71 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_857593ed00e2",
+  "paper_id": "8fe522d31fa4",
+  "raw_path": "相关文献/plastic-pores-for-switchable-and-optimized-adsorption-behaviors.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2",
+    "Xe",
+    "Kr"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "DUT-98",
+    "ZIF-65",
+    "MAF-92",
+    "MAF-91",
+    "MFU-4",
+    "MAF-93-lp"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Al",
+    "Zr",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "sod",
+    "acs",
+    "zif",
+    "mfu"
+  ],
+  "key_sections": {
+    "abstract": "Similar to conventional solids, porous materials have demonstrated rigid\nand flexible behaviors. Here, we show that flexible pores can be not just elastic but also",
+    "conclusion": "We demonstrated that pore structures can exhibit not only\nrigid and elastic but also plastic behaviors. Being more",
+    "results_summary": "Plastic Pores for Switchable and Optimized Adsorption Behaviors\nXue-Wen Zhang, Rong-Hua Wang, Jie-Peng Zhang,* and Xiao-Ming Chen\nCite This: ACS Cent. Sci. 2025, 11, 479−485\nRead Online\nACCESS\nMetrics"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:36:40.367888"
+}

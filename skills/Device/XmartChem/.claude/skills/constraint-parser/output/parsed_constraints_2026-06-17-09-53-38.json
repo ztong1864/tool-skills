@@ -1,0 +1,100 @@
+{
+  "schema_version": "constraint-parser/simple-v1",
+  "created_at": "2206-06-17T09:53:06",
+  "items": [
+    {
+      "name": "4-溴甲苯",
+      "group": "substrate",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "4-溴甲苯",
+      "note": "底物A，反应规模0.1 mmol"
+    },
+    {
+      "name": "苯硼酸",
+      "group": "substrate",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "苯硼酸",
+      "note": "底物B，反应规模0.1 mmol"
+    },
+    {
+      "name": "Pd(PPh3)4",
+      "group": "reagent",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "Pd(PPh3)4",
+      "note": "催化剂候选"
+    },
+    {
+      "name": "Pd2(dba)3",
+      "group": "reagent",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "Pd2(dba)3",
+      "note": "催化剂候选"
+    },
+    {
+      "name": "SPhos",
+      "group": "reagent",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "SPhos",
+      "note": "配体候选"
+    },
+    {
+      "name": "XPhos",
+      "group": "reagent",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "XPhos",
+      "note": "配体候选"
+    },
+    {
+      "name": "K3PO4",
+      "group": "reagent",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "K3PO4",
+      "note": "碱候选"
+    },
+    {
+      "name": "Cs2CO3",
+      "group": "reagent",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "Cs2CO3",
+      "note": "碱候选"
+    },
+    {
+      "name": "1,4-二氧六环",
+      "group": "solvent",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "1,4-二氧六环",
+      "note": "溶剂候选"
+    },
+    {
+      "name": "甲苯/水",
+      "group": "solvent",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "甲苯/水",
+      "note": "溶剂候选"
+    }
+  ],
+  "ambiguities": [
+    "该指令为Suzuki偶联的候选推荐测试，列出了多种催化剂、配体、碱和溶剂的候选选项，但未指定具体使用哪一种，也未给出各组分的具体当量或用量。反应规模为0.1 mmol，但未明确是底物A还是底物B的规模。"
+  ],
+  "source_text": "请针对Suzuki偶联做一个小规模候选推荐测试：底物A为4-溴甲苯，底物B为苯硼酸；催化剂候选Pd(PPh3)4或Pd2(dba)3；配体候选SPhos或XPhos；碱候选K3PO4或Cs2CO3；溶剂候选1,4-二氧六环或甲苯/水；温度80-100摄氏度；反应时间6-12小时；反应规模0.1 mmol。"
+}

@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_54d2dde3d976",
+  "canonical_material_id": "mat_98de19a3ccb5",
+  "canonical_name": "[Zn(btap)(SO4)(H2O)3]",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_5b45e20432ec",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_5fbb2c6193f9",
+    "mcard_0d21723253ab",
+    "mcard_a4e4fb547f6f",
+    "mcard_126c18a7b9a7"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_dd430c302f22",
+    "mechcard_37bacf31b87b",
+    "mechcard_31f70fea2894"
+  ],
+  "recipe_card_ids": [
+    "recipe_228cb255be61"
+  ],
+  "claim_card_ids": [
+    "claim_76165d0ab621"
+  ],
+  "design_rule_card_ids": [
+    "drule_3f9ebe746bc2",
+    "drule_d8dcd32737ae"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "7d1015d4b98c"
+  ],
+  "evidence_trace_ids": [
+    "trace_f78859c929a8",
+    "trace_8f497c7d4700",
+    "trace_9bae94409189",
+    "trace_c64bb94d1f28",
+    "trace_ffd72a523b16",
+    "trace_3da7b0ab8a07",
+    "trace_6c1857fb5e0b"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:53:19.525988",
+  "updated_at": "2026-04-23T20:53:49.602552"
+}

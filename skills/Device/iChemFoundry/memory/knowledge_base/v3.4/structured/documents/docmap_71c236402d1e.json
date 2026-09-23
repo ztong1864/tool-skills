@@ -1,0 +1,67 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_71c236402d1e",
+  "paper_id": "25907edd8ee8",
+  "raw_path": "相关文献/zn-trz-fa bdc-design-of-pore-size-and-functionality-in-pillar-layered-zn-triazolate-dicarboxylate-frameworks-and-their-high-co2-ch4.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ZIF-8",
+    "Zn-1",
+    "MOF-524"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "NDC",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "BPDC",
+    "azolate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif",
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "In the design of new materials, those with rare and\nexceptional compositional and structural features are often highly",
+    "results_summary": "Design of Pore Size and Functionality in Pillar-Layered Zn-Triazolate-\nDicarboxylate Frameworks and Their High CO2/CH4 and C2\nHydrocarbons/CH4 Selectivity\nQuan-Guo Zhai,†,‡ Ni Bai,‡ Shu’ni Li,‡ Xianhu"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:02:55.586446"
+}

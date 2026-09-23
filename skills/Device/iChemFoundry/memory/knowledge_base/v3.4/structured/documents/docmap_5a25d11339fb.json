@@ -1,0 +1,54 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_5a25d11339fb",
+  "paper_id": "8cb3c4f4e106",
+  "raw_path": "相关文献/Tan 等 - 2022 - Facile synthesis and superior properties of a nitr.pdf",
+  "title": "Facile synthesis and superior properties of a nitr",
+  "authors": [
+    "Tan"
+  ],
+  "year": 2022,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CL-20"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Fe",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "Dalton\n Transactions\nAn international journal of inorganic chemistry\nrsc.li/dalton\nVolume 51\nNumber 20\n28 May 2022\nPages 7735-8070\nISSN 1477-9226 \n PAPER \n Jia-Tong Ren, Ning Liu  et al. \n Facile synt"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:06:08.549791"
+}

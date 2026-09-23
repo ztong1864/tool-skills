@@ -1,0 +1,352 @@
+[
+  {
+    "type": "WebSearchTool",
+    "name": "web_search",
+    "description": "General web search using DDGS (Dux Distributed Global Search) supporting multiple search engines including Google, Bing, Brave, Yahoo, and DuckDuckGo. No API keys required. Parallel Search MCP is opt-in; selecting it sends the query to Parallel's hosted third-party service, so do not submit sensitive or patient-identifying information.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query string"
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 50
+        },
+        "search_type": {
+          "type": "string",
+          "description": "Type of search to perform",
+          "enum": [
+            "general",
+            "api_documentation",
+            "python_packages",
+            "github"
+          ],
+          "default": "general"
+        },
+        "backend": {
+          "type": "string",
+          "description": "Search engine backend to use. Selecting 'parallel' sends the query to https://search.parallel.ai/mcp; that backend does not apply ToolUniverse region or safesearch controls.",
+          "enum": [
+            "auto",
+            "parallel",
+            "google",
+            "bing",
+            "brave",
+            "yahoo",
+            "duckduckgo"
+          ],
+          "default": "auto"
+        },
+        "region": {
+          "type": "string",
+          "description": "Search region/locale for DDGS backends. Parallel does not support this control; only the default value is accepted with backend='parallel'.",
+          "enum": [
+            "us-en",
+            "cn-zh",
+            "uk-en",
+            "de-de",
+            "fr-fr",
+            "ja-jp"
+          ],
+          "default": "us-en"
+        },
+        "safesearch": {
+          "type": "string",
+          "description": "Safe search level for DDGS backends. Parallel does not support this control; only the default value is accepted with backend='parallel'.",
+          "enum": [
+            "on",
+            "moderate",
+            "off"
+          ],
+          "default": "moderate"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "query": {
+              "type": "string"
+            },
+            "search_type": {
+              "type": "string"
+            },
+            "total_results": {
+              "type": [
+                "integer",
+                "number"
+              ]
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "snippet": {
+                    "type": "string"
+                  },
+                  "rank": {
+                    "type": [
+                      "integer",
+                      "number"
+                    ]
+                  }
+                }
+              }
+            },
+            "backend_used": {
+              "type": "string"
+            },
+            "attempted_backends": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "provider_errors": {
+              "type": "object",
+              "properties": {
+                "duckduckgo": {
+                  "type": "string"
+                }
+              }
+            },
+            "provider_notice": {
+              "type": "string",
+              "description": "Disclosure included when the query was sent to a hosted third-party backend."
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "python requests library",
+        "max_results": 5,
+        "expected_output_type": "object",
+        "description": "Search for Python requests library information"
+      },
+      {
+        "query": "machine learning APIs",
+        "search_type": "api_documentation",
+        "max_results": 3,
+        "expected_output_type": "object",
+        "description": "Search for machine learning API documentation"
+      }
+    ],
+    "metadata": {
+      "tags": [
+        "web-search",
+        "multi-engine",
+        "no-api-key",
+        "ddgs"
+      ],
+      "difficulty_level": "easy",
+      "estimated_execution_time": "2-5 seconds"
+    }
+  },
+  {
+    "type": "WebAPIDocumentationSearchTool",
+    "name": "web_api_documentation_search",
+    "description": "Specialized web search for API documentation, Python packages, and technical resources using DDGS with multiple search engines. Parallel Search MCP is opt-in; selecting it sends the query to Parallel's hosted third-party service, so do not submit sensitive information.",
+    "parameter": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Search query string (e.g., tool name, library name, API name)"
+        },
+        "max_results": {
+          "type": "integer",
+          "description": "Maximum number of results to return",
+          "default": 10,
+          "minimum": 1,
+          "maximum": 50
+        },
+        "focus": {
+          "type": "string",
+          "description": "Focus area for the search",
+          "enum": [
+            "api_docs",
+            "python_packages",
+            "github_repos"
+          ],
+          "default": "api_docs"
+        },
+        "backend": {
+          "type": "string",
+          "description": "Search engine backend to use. Selecting 'parallel' sends the query to https://search.parallel.ai/mcp.",
+          "enum": [
+            "auto",
+            "parallel",
+            "google",
+            "bing",
+            "brave",
+            "yahoo",
+            "duckduckgo"
+          ],
+          "default": "auto"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    },
+    "return_schema": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "status": {
+              "type": "string"
+            },
+            "query": {
+              "type": "string"
+            },
+            "search_type": {
+              "type": "string"
+            },
+            "total_results": {
+              "type": [
+                "integer",
+                "number"
+              ]
+            },
+            "results": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  },
+                  "snippet": {
+                    "type": "string"
+                  },
+                  "rank": {
+                    "type": [
+                      "integer",
+                      "number"
+                    ]
+                  }
+                }
+              }
+            },
+            "backend_used": {
+              "type": "string"
+            },
+            "attempted_backends": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "provider_errors": {
+              "type": "object",
+              "properties": {
+                "duckduckgo": {
+                  "type": "string"
+                }
+              }
+            },
+            "provider_notice": {
+              "type": "string",
+              "description": "Disclosure included when the query was sent to a hosted third-party backend."
+            },
+            "focus": {
+              "type": "string"
+            },
+            "enhanced_query": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "status"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "error": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "error"
+          ]
+        }
+      ]
+    },
+    "test_examples": [
+      {
+        "query": "pandas",
+        "focus": "api_docs",
+        "max_results": 5,
+        "expected_output_type": "object",
+        "description": "Search for pandas API documentation"
+      },
+      {
+        "query": "requests",
+        "focus": "python_packages",
+        "max_results": 3,
+        "expected_output_type": "object",
+        "description": "Search for requests Python package information"
+      },
+      {
+        "query": "scikit-learn",
+        "focus": "github_repos",
+        "max_results": 3,
+        "expected_output_type": "object",
+        "description": "Search for scikit-learn GitHub repositories"
+      }
+    ],
+    "metadata": {
+      "tags": [
+        "web-search",
+        "api-documentation",
+        "python-packages",
+        "technical-resources",
+        "multi-engine",
+        "ddgs"
+      ],
+      "difficulty_level": "easy",
+      "estimated_execution_time": "2-5 seconds"
+    }
+  }
+]

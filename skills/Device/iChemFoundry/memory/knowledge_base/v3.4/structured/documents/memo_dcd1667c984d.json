@@ -1,0 +1,165 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_dcd1667c984d",
+  "paper_id": "286e012e968f",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "C13H19N7O6Zn2 shows selectivity_C2H6/C2H4 = 2.0 dimensionless for C2H6",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "moisture_resistance (H2O) = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "water_resistance (H2O) = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "selectivity_C2H6/C2H4 (C2H6) = 2.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "one-dimensional channels decorated with adjacent uncoordinated carboxylate-O atoms → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "adjacent uncoordinated carboxylate-O atoms along the channels → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce a non-polar pore surface when seeking stronger C2H6 preference → a non-polar surface favors C2H6 adsorption"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] tailor the pore surface chemical environment and pore size to a sweet spot that simultaneously favors C2H2/C2H4 and C2H6/C2H4 selectivity → enables simultaneous high selectivities for both C2H2/C2H4 and C2H6/C2H4 in one-step C2H4 purification"
+    },
+    {
+      "title": "Comparison",
+      "body": "pure C2H4 breakthrough behavior and productivity under humid environment vs pure C2H4 breakthrough behavior and productivity under dry environment: winner=tie on breakthrough_behavior_and_productivity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_aaa784e73261",
+    "trace_723bc6f727eb",
+    "trace_7c5cad2c8952",
+    "trace_6b779df55464",
+    "trace_ab9b90eb5401",
+    "trace_2fb0a432721f",
+    "trace_61f17655e1b5",
+    "trace_cb407df2f2ec",
+    "trace_eca4c5b4076a",
+    "trace_06347e4c962a",
+    "trace_470a9089d126",
+    "trace_60edb6378d4d",
+    "trace_70edaed85b5c",
+    "trace_99bf735c319d",
+    "trace_35315ddac32a",
+    "trace_6b8c52a5463c",
+    "trace_72cbcd3238ee",
+    "trace_9fbb8a4df61e",
+    "trace_2d6839496b4b",
+    "trace_e69ebfb92d2e",
+    "trace_c88d3563f3aa",
+    "trace_7cbe83666680",
+    "trace_3fbc37a62af0",
+    "trace_59ff2d02b3cc",
+    "trace_77391b596911",
+    "trace_6401a3eea932",
+    "trace_5068d0f621e2",
+    "trace_bb38f92b09bd",
+    "trace_6401a3eea932",
+    "trace_cb407df2f2ec",
+    "trace_723bc6f727eb",
+    "trace_06347e4c962a",
+    "trace_eca4c5b4076a",
+    "trace_2fb0a432721f",
+    "trace_c88d3563f3aa",
+    "trace_35315ddac32a",
+    "trace_60edb6378d4d",
+    "trace_9fbb8a4df61e",
+    "trace_7cbe83666680",
+    "trace_e69ebfb92d2e",
+    "trace_5068d0f621e2",
+    "trace_99bf735c319d",
+    "trace_7c5cad2c8952",
+    "trace_6b8c52a5463c",
+    "trace_bb38f92b09bd",
+    "trace_6b779df55464",
+    "trace_61f17655e1b5",
+    "trace_70edaed85b5c",
+    "trace_59ff2d02b3cc",
+    "trace_72cbcd3238ee",
+    "trace_2d6839496b4b",
+    "trace_470a9089d126",
+    "trace_aaa784e73261",
+    "trace_3fbc37a62af0",
+    "trace_ab9b90eb5401",
+    "trace_77391b596911"
+  ],
+  "measurement_card_ids": [
+    "mcard_b127fba88883",
+    "mcard_bb22a3a92de6",
+    "mcard_7c33c74a52e2",
+    "mcard_cc9853b3764f",
+    "mcard_a45ecf398497"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_53dda304addb",
+    "mechcard_a2b2817ff7c6"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_03246818ea7e",
+    "claim_16aaa1784e7a",
+    "claim_3e23cbfc8335",
+    "claim_4a747964e795",
+    "claim_10e7eaafc790",
+    "claim_ce2d240e9e33",
+    "claim_8d796b893841",
+    "claim_1842a2512120"
+  ],
+  "design_rule_card_ids": [
+    "drule_fd73bd605aba",
+    "drule_8494750b43b7"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_eebf6b6b6e92",
+    "comp_7e7be96d7851"
+  ],
+  "failure_case_card_ids": [
+    "fail_18a404b94295"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_591084892e17"
+  ],
+  "dossier_ids": [
+    "dossier_c457d2f681b2"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "C2H2 occupies the primary sites near two adjacent carboxylate-O atoms in Cage C, while C2H6 prefers sites in Cages A and D; C2H2 binds more strongly in Cage C.",
+    "Breakthrough tests directly produced polymer-grade (>99.95%) C2H4 from binary feeds and from ternary mixtures including 34/33/33 and 1/90/9 compositions.",
+    "Adjacent uncoordinated carboxylate-O atoms are the key binding sites that preferentially recognize C2H2 and C2H6 over C2H4 in HIAM-210."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.691042",
+  "updated_at": "2026-04-24T00:19:48.691047",
+  "raw_path": "相关文献/Pillar-layer Zn–triazolate–dicarboxylate.pdf"
+}

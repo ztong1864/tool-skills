@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_4973889e8e43",
+  "paper_id": "35fcf2cf447e",
+  "raw_path": "相关文献/Synthesis and characterization of two new triazolate–aliphatic dicarboxylate.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "of the structures\nThe 2D layer {[Zn4(trz)4]4+}n motifs in 1 and 2 exhibit the differ-\nent crystal packing (–AAA– for 1, –ABAB– for 2). Moreover, the ali-",
+    "results_summary": "Synthesis and characterization of two new triazolate–aliphatic dicarboxylate\nbridged Zn(II) coordination polymers based on 2D layer motifs with different\ncrystal packing\nHong Ren a, Tian-You Song b, D"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:59:12.605005"
+}

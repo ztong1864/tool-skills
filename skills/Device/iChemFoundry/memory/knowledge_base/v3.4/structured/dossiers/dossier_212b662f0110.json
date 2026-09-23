@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_212b662f0110",
+  "canonical_material_id": "mat_0b5383a0b4ca",
+  "canonical_name": "Co(im)2",
+  "metal_element": "Co",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_7c78ebb4c223",
+  "pillar_id": null,
+  "topology": "nog",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_8454deb9b7b3"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_04c5a2c499b3"
+  ],
+  "recipe_card_ids": [
+    "recipe_07c3f84aebe3"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 0.5,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "09e67f192def"
+  ],
+  "evidence_trace_ids": [
+    "trace_ac8b1c9fd4d7",
+    "trace_9f8d718ad32b"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:25:45.924318",
+  "updated_at": "2026-04-23T20:25:45.924476"
+}

@@ -1,0 +1,16 @@
+{
+  "knowledge:bodipy-bm-fm-medium-rules": {
+    "description": "Long-term reusable rules describing the meanings of BM and FM in the BODIPY lipid staining experiment.",
+    "document": "graph/canonical/entities/knowledge/BODIPY_BM_FM_Rules.md",
+    "entity_type": "Knowledge",
+    "id": "knowledge:bodipy-bm-fm-medium-rules",
+    "name": "BODIPY BM FM Medium Rules"
+  },
+  "knowledge:oasis-lab-environment-rules": {
+    "description": "Long-term reusable rules describing the physical structure, execution semantics, location meaning, inventory semantics, and queue-based start behavior of the Oasis lab platform.",
+    "document": "graph/canonical/entities/knowledge/Oasis_Lab_Environment_Rules.md",
+    "entity_type": "Knowledge",
+    "id": "knowledge:oasis-lab-environment-rules",
+    "name": "Oasis Lab Environment Rules"
+  }
+}

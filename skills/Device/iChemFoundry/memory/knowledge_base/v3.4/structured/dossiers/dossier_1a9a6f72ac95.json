@@ -1,0 +1,63 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_1a9a6f72ac95",
+  "canonical_material_id": "mat_eb59e5132f6a",
+  "canonical_name": "[Zn2(trz)2(tda)]-DMA-CH3OH",
+  "metal_element": "Zn",
+  "node_signature_id": "node_c113f986d907",
+  "primary_linker_id": "lig_9b529ca41c80",
+  "pillar_id": "pil_272513685d04",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_f47b748adef3",
+    "mcard_90ef7eb77013",
+    "mcard_e14efcef0977",
+    "mcard_b4041c828267"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_849148d57185",
+    "mechcard_8b8411a4ec20",
+    "mechcard_aa2a15d20ee5",
+    "mechcard_78e279b4d3d3",
+    "mechcard_b998ed2c9b42"
+  ],
+  "recipe_card_ids": [
+    "recipe_75a4072fea2e",
+    "recipe_eb9083779eec"
+  ],
+  "claim_card_ids": [
+    "claim_4bfb1adc854a",
+    "claim_3367f3f67fec"
+  ],
+  "design_rule_card_ids": [
+    "drule_987118ca3933"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "c4b74fb8fd1c",
+    "df399a767a7e"
+  ],
+  "evidence_trace_ids": [
+    "trace_2598a6291f71",
+    "trace_98b11ee076b5",
+    "trace_43b9cb839286",
+    "trace_080bb60e154c",
+    "trace_f4f605e8c45b",
+    "trace_ba686dc8de70",
+    "trace_c78501654c1d",
+    "trace_8c02da2f4b9b"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:27:15.323635",
+  "updated_at": "2026-04-23T22:26:08.901943"
+}

@@ -1,0 +1,169 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_e08a540a0a85",
+  "paper_id": "c1a5d8e02c30",
+  "title": "Construction of a New Co(II) Coordination Polymer",
+  "year": 2016,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H4"
+  ],
+  "one_line_summary": "Design rule: use a mixed-ligand self-assembly strategy combining isophthalic acid and 3-amino-1,2,4-triazole",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "hydrogen-bonded framework involving coordinated water, free water, carboxylate oxygen atoms, and amino groups of ATAZ → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "pure phase crystallinity → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a mixed-ligand self-assembly strategy combining isophthalic acid and 3-amino-1,2,4-triazole → effective construction of coordination polymers and successful formation of the target 3D pillar-layer framework"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select organic ligands and metal ions with suitable coordination geometries → improves the likelihood of preparing target coordination compounds"
+    },
+    {
+      "title": "Comparison",
+      "body": "methylene blue degradation system with compound 1 as catalyst vs methylene blue degradation system without compound 1 as catalyst: winner=subject_a on methylene_blue_degradation"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] operate or heat the framework above 350 C: the framework begins to collapse beyond 350 C"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_5599f523c501",
+    "trace_a326b53022e7",
+    "trace_063a12fb6c04",
+    "trace_71747d7527ba",
+    "trace_25a3cb9a1958",
+    "trace_47f2427a91f0",
+    "trace_78c9c89af2e3",
+    "trace_3556f746ac92",
+    "trace_dc5b6e9a060a",
+    "trace_b3dadf8777a3",
+    "trace_f1497b2c78d6",
+    "trace_ebd4b1972afa",
+    "trace_d3143071be6b",
+    "trace_ada6ffa63e46",
+    "trace_6e393d0cfe01",
+    "trace_9c171c13c6dc",
+    "trace_cfddaa7ed2f2",
+    "trace_466098192520",
+    "trace_9cc59142bb1c",
+    "trace_1eab7bd9a387",
+    "trace_87a9c0dd44bb",
+    "trace_60c17cd5c259",
+    "trace_d9f663b6213b",
+    "trace_74da5befec3a",
+    "trace_81b78ac1eba7",
+    "trace_bc58b5581a49",
+    "trace_951a789ef835",
+    "trace_f3f5e13775c0",
+    "trace_51695e54dbfa",
+    "trace_e39229a7ba13",
+    "trace_6d1dcfae3edd",
+    "trace_69c6de04f688",
+    "trace_7965c50fe030",
+    "trace_78c9c89af2e3",
+    "trace_6e393d0cfe01",
+    "trace_d9f663b6213b",
+    "trace_dc5b6e9a060a",
+    "trace_466098192520",
+    "trace_d3143071be6b",
+    "trace_9c171c13c6dc",
+    "trace_5599f523c501",
+    "trace_25a3cb9a1958",
+    "trace_063a12fb6c04",
+    "trace_51695e54dbfa",
+    "trace_a326b53022e7",
+    "trace_47f2427a91f0",
+    "trace_cfddaa7ed2f2",
+    "trace_81b78ac1eba7",
+    "trace_b3dadf8777a3",
+    "trace_74da5befec3a",
+    "trace_ada6ffa63e46",
+    "trace_69c6de04f688",
+    "trace_1eab7bd9a387",
+    "trace_87a9c0dd44bb",
+    "trace_f3f5e13775c0",
+    "trace_3556f746ac92",
+    "trace_bc58b5581a49",
+    "trace_60c17cd5c259",
+    "trace_ebd4b1972afa",
+    "trace_f1497b2c78d6",
+    "trace_71747d7527ba",
+    "trace_e39229a7ba13",
+    "trace_6d1dcfae3edd",
+    "trace_9cc59142bb1c",
+    "trace_7965c50fe030",
+    "trace_951a789ef835"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_a7d0a2dffe6b",
+    "mechcard_ba9e7dcf2191",
+    "mechcard_462bd786d35a",
+    "mechcard_b1c1e06507d3",
+    "mechcard_51f50cdce742"
+  ],
+  "recipe_card_ids": [
+    "recipe_88ae7b8c5a7b",
+    "recipe_a9a6d7feb72a",
+    "recipe_e44d5385d2a7"
+  ],
+  "claim_card_ids": [
+    "claim_340a6bfd07b7",
+    "claim_429771766451",
+    "claim_1430b96ced4a",
+    "claim_4d9105f338ff",
+    "claim_bfe6563ea22c",
+    "claim_4f648b99fc53",
+    "claim_999f9c22572c"
+  ],
+  "design_rule_card_ids": [
+    "drule_a4d4831883f6",
+    "drule_21a0176cff7d",
+    "drule_218c578d66fb"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_5a9e15a4570b"
+  ],
+  "failure_case_card_ids": [
+    "fail_233dbf538805"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_d340aa8a100f",
+    "mat_58daab8cd76a"
+  ],
+  "dossier_ids": [
+    "dossier_bdb6e22e2640",
+    "dossier_8d988f7b0797"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "A new Co(II) coordination polymer, [Co2(mbdc)(ATAZ)2(H2O)2]n·nH2O, was synthesized solvothermally/hydrothermally from Co(NO3)2, isophthalic acid and 3-amino-1,2,4-triazole.",
+    "Compound 1 forms a 3D pillar-layer framework built from Co(II)-ATAZ layers pillared by mbdc2−, and simplifies to a noninterpenetrated 6-connected pcu network.",
+    "Compound 1 is phase-pure by PXRD and shows stepwise water loss: 3.82% at 71–100 °C for free water and 7.18% at 150–200 °C for coordinated water."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.360419",
+  "updated_at": "2026-04-24T00:19:49.360425",
+  "raw_path": "相关文献/Zhang 等 - 2016 - Construction of a New Co(II) Coordination Polymer .pdf",
+  "authors": [
+    "Zhang"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "skill_input": {
+    "layout_code": "T-3:20",
+    "unit_column": 20,
+    "unit_row": 2,
+    "substance": "5A MS",
+    "add_weight": 20.0,
+    "unit": "mg"
+  },
+  "resource_info": {
+    "layout_code": "W2-1:0",
+    "working_code": "",
+    "source_layout_code": "W2-1:0",
+    "resource_type": "DHP30_V2",
+    "substance": "5A MS",
+    "unit": "mg",
+    "initial_volume": 0.0,
+    "available_volume": 0.0,
+    "initial_weight": 4000.0,
+    "available_weight": 4000.0,
+    "tray_QR_code": "DHP30_V2_01",
+    "QR_code": "",
+    "chemical_id": 37,
+    "status": 0
+  }
+}

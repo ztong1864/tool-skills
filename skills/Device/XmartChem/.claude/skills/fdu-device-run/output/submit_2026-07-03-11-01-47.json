@@ -1,0 +1,54 @@
+{
+  "protocol_source": "outputs/实验设计/generated_protocol_replaced.json",
+  "protocol_structure": "list",
+  "protocol_structure_note": "Detected protocol JSON array.",
+  "task_name": "ATA联烯化实验_20260703_110145_9369",
+  "task_id": 563,
+  "layout_summary": {
+    "step_count": 13,
+    "unit_types": [
+      "exp_add_solid",
+      "exp_add_solid",
+      "exp_add_solid",
+      "exp_pipetting",
+      "exp_magnetic_stirrer",
+      "exp_pipetting",
+      "exp_pipetting",
+      "exp_magnetic_stirrer",
+      "exp_pipetting",
+      "exp_pipetting",
+      "exp_magnetic_stirrer",
+      "exp_magnetic_stirrer",
+      "exp_high_filtering_samples"
+    ],
+    "layout_codes": [
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20",
+      "T-3:20"
+    ]
+  },
+  "add_task_payload_preview": {
+    "task_id": 0,
+    "task_name": "ATA联烯化实验_20260703_110145_9369",
+    "layout_count": 13
+  },
+  "add_task_result": {
+    "code": 200,
+    "task_id": 563,
+    "msg": "success",
+    "substance_shortage_list": {}
+  },
+  "start_task_enabled": false,
+  "start_task_result": null,
+  "start_task_note": "StartTask was NOT called. This is intentional. Use --enable-start only when you are on-site and ready to run the device."
+}

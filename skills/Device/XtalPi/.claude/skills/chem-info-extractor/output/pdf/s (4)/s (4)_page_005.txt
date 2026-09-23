@@ -1,0 +1,28 @@
+S5
+ General. Liquid  aromatic aldehydes were distilled before use. i-PrCHO and
+n-BuCHO were used as it is. ZnI 2 (98%) was purchased from Acros and used without
+further treatment. Toluene was dried ove r sodium wire with benzophenone as
+indicator and distilled freshly before us e. Morpholine was dried over calcium hydride
+and distilled. All the temperatures ar e referred to the oil baths used.
+1. General Procedure for the Synthesis of Allenes (3aa-3be and 5a-5c). To a dried
+reaction tube was added ZnI 2 (0.8 mmol). Then the reacti on tube was dried under
+vacuum with a heating gun. Then al dehyde (1.8 mmol), alkyne (1.0 mmol),
+morpholine (1.4 mmol), and toluene (3 mL or  5 mL or 8 mL) were  added sequentially
+into this dried reaction tube equipped with a reflux condenser under an argon
+atmosphere and the resulting mixture was stirred at 130 ℃. When the reaction was
+complete as monitored by TLC (or NMR), th e reaction mixture was cooled to room
+temperature and then filtered. Evaporati on and column chromatography on silica gel
+(eluent: petroleum ether or petroleum ether with ethyl acetate) afforded the
+corresponding 1,3-disubstituted allene.
+(1) Synthesis of 1-phenylundeca-1,2-diene (3aa)
+(CH 2)7CH3
+3aa+PhCHO +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv2aCH3(CH 2)7toluene, 130 ℃
+7.2 h, 65%1a
+
+The reaction of ZnI 2 (256 mg, 0.80 mmol), benzaldehyde (192 mg, 1.81 mmol),
+1-decyne 1a (139 mg, 1.00 mmol), and morpholine (122 mg, 1.40 mmol) in 5 mL of
+toluene afforded 3aa1 (148 mg, 65%) as a liquid (eluent: petroleum ether):  1H NMR

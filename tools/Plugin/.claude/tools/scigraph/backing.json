@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "type": "mcp_http",
+  "url": "https://scp.intern-ai.org.cn/api/v1/mcp/37/SciGraph",
+  "credential": {
+    "ref": "scigraph",
+    "header": "SCP-HUB-API-KEY",
+    "prefix": "",
+    "required": true
+  }
+}

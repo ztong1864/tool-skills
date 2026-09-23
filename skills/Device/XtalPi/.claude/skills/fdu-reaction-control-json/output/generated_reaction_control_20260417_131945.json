@@ -1,0 +1,25 @@
+{
+  "layout_code": "T-3:22",
+  "substance": "",
+  "resource_type": "TTR2T",
+  "tray_QR_code": "TTR2T_01",
+  "QR_code": "",
+  "unit_column": 0,
+  "unit_row": 0,
+  "unit_type": "exp_magnetic_stirrer",
+  "unit_id": "unit-fb88a044e0d4",
+  "process_json": {
+    "temperature": 70,
+    "reaction_duration": 86400,
+    "is_wait": true,
+    "rotation_speed": 500,
+    "still_tem": 70,
+    "custom": {
+      "step": {
+        "rotation_speed": 50,
+        "temperature": 1
+      },
+      "unit": ""
+    }
+  }
+}

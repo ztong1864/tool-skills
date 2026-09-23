@@ -1,0 +1,19 @@
+{
+  "entity_types": [
+    "Data",
+    "Instrument",
+    "Knowledge",
+    "Material",
+    "Process",
+    "Protocol",
+    "StepType",
+    "StepVariant",
+    "Workflow",
+    "WorkflowStepRef"
+  ],
+  "material_types": [
+    "consumable",
+    "reagent",
+    "sample"
+  ]
+}

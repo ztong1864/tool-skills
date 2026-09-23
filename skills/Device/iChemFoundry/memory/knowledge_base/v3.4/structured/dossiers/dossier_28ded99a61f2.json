@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_28ded99a61f2",
+  "canonical_material_id": "mat_877572e211cd",
+  "canonical_name": "Zn-X-TRZ",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_9b529ca41c80",
+  "pillar_id": "pil_02129bb86106",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_73caea033718"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_1c48caf477ae"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "95c5e1a4b5d9"
+  ],
+  "evidence_trace_ids": [
+    "trace_c15472410fdf"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:02:17.195284",
+  "updated_at": "2026-04-23T21:02:47.555344"
+}

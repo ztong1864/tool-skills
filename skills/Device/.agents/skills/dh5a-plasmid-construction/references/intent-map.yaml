@@ -1,0 +1,65 @@
+{
+  "intents": [
+    {
+      "protocol_id": "dh5a_full_plasmid_construction",
+      "display_name": "完整 DH5a 质粒构建",
+      "summary_prompt": "生成完整 DH5a 质粒构建实验的两个独立 Momentum 脚本：前段完成 96 个大肠杆菌质粒突变体的全质粒 PCR、DpnI 酶切、化学转化、复苏和卡那抗性板涂布；后段完成挑克隆、扩增培养、IPTG 诱导表达、裂解、裂解液转移及 Bradford 检测。",
+      "protocols": [
+        {
+          "protocol_id": "dh5a_mutant_construction_transformation",
+          "protocol_file": "protocol.yaml",
+          "procedure_file": "procedure-map.yaml",
+          "step_map_file": "step-map.yaml"
+        },
+        {
+          "protocol_id": "dh5a_clone_expression_bradford",
+          "protocol_file": "protocol-clone-expression-bradford.yaml",
+          "procedure_file": "procedure-clone-expression-bradford.yaml",
+          "step_map_file": "step-map-clone-expression-bradford.yaml"
+        }
+      ],
+      "keywords": [
+        "质粒构建",
+        "完整质粒构建",
+        "完整的质粒构建",
+        "质粒构建全流程",
+        "DH5a质粒构建",
+        "DH5A质粒构建",
+        "dh5a plasmid construction",
+        "plasmid construction"
+      ]
+    },
+    {
+      "protocol_id": "dh5a_mutant_construction_transformation",
+      "standard_name": "dh5a_mutant_construction_transformation",
+      "display_name": "DH5a 质粒突变体构建与转化",
+      "summary_prompt": "生成完整质粒构建实验的前段脚本：构建 96 个大肠杆菌质粒突变体，通过全质粒 PCR 获得扩增产物，经 DpnI 酶切后化学转化至 DH5α 感受态细胞，复苏后进行卡那抗性板涂布。",
+      "keywords": [
+        "质粒构建前段",
+        "质粒突变体构建",
+        "质粒构建与转化",
+        "全质粒PCR转化",
+        "DH5a转化涂布"
+      ]
+    },
+    {
+      "protocol_id": "dh5a_clone_expression_bradford",
+      "standard_name": "dh5a_clone_expression_bradford",
+      "display_name": "DH5a 克隆挑取、表达与 Bradford 检测",
+      "summary_prompt": "生成完整质粒构建实验的后段独立脚本：从卡那抗性八孔板挑取克隆，转接扩增培养，加入 IPTG 诱导表达，加入裂解液并转移裂解产物，最终配置 Bradford 检测板并使用 Clariostar 读数。",
+      "protocol_file": "protocol-clone-expression-bradford.yaml",
+      "procedure_file": "procedure-clone-expression-bradford.yaml",
+      "step_map_file": "step-map-clone-expression-bradford.yaml",
+      "keywords": [
+        "克隆挑取表达检测",
+        "挑克隆表达Bradford",
+        "clone expression bradford",
+        "dh5a clone expression bradford",
+        "Bradford检测",
+        "Bradford 检测",
+        "bradford detection",
+        "质粒构建后段"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_d93e54dfa378",
+  "paper_id": "0f9f2bdd54db",
+  "raw_path": "相关文献/Zn(Ⅱ)与5-氨基四氮唑和1,4-对苯二甲酸配位聚合物的溶剂可控合成.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": false,
+  "has_comparison_tables": false,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "pcu"
+  ],
+  "key_sections": {
+    "abstract": "摇\nThe hydrothermal reaction of 5鄄amino鄄tetrazole ( HATz ) and 1,4鄄benzenedicarboxylic acid\n(H2BDC) with Zn(NO3) 2 gave a new coordination polymer {[Zn2(ATz) 2(BDC) (H2O) 2] ·H2O} n(1),",
+    "results_summary": "Vol. 34\n高等学校化学学报\nNo. 12\n2013 年12 月\n摇\n摇摇摇摇摇CHEMICAL JOURNAL OF CHINESE UNIVERSITIES摇摇摇摇摇\n摇\n2691 ~ 2698\n摇摇\ndoi: 10. 7503 / cjcu20130716\nZn(域)与5鄄氨基四氮唑和1,4鄄对苯二甲酸\n配位聚合物的溶剂可控合成\n卢文贯, 刘宏文, 殷旭光, 蓝路梅, 刘海瑶\n(韶关学院"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:20:00.257515"
+}

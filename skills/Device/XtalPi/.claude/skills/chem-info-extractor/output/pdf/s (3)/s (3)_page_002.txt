@@ -1,0 +1,17 @@
+S2
+ General Information.  NMR spectra were recorded with a Bruker AM-300 or
+AM-400 instrument. Chemical shifts are reported in relative to TMS [1H: δ = 0.00
+ppm (TMS)], solvent residual peaks [13C: δ = 77.0 ppm (CDCl 3)] or internal standard
+[19F: δ = 0.00 ppm (CFCl 3)]. IR spectra were measured  with a Bruker Tensor 27
+instrument. MS analyses were performe d with an Aglient Technologies 5975C
+instrument. HRMS analyses were performe d with a Waters GCT Premier instrument.
+All reactions were carried out in  oven dried Schlenk tubes. ZnBr 2 was purchased from
+Alfa Aesar (98%) and kept in a glove box;  CuBr was purchased from Acros (98%),
+1-dodecyne 1a (97%), 1-decyne 1b (98%), 1-octyne 1c (98%), and
+5-chloro-1-pentyne 1d (98%) were purchased from Alfa Aesar;
+(S)-α,α-diphenylprolinol 3 (98%)  was purchased from Shanghai  Darui Fine Chemicals.
+Liquid aldehydes were distilled right before use. Toluene was dried over sodium wire
+with benzophenone as the indicator and dis tilled freshly before use. Other reagents
+were used as received from commercial sources. NMR yield was determined by using
+CH 2Br2 as the  internal standard. Petroleum ether (60 ℃-90℃) was used for
+chromatography. All the temperatures are referred to the oil baths used.

@@ -1,0 +1,55 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_4b728d118011",
+  "paper_id": "d9b80005c58d",
+  "raw_path": "相关文献/在纳米多孔材料中的扩散：将MAS和PFG NMR结合起来的新见解.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CH4",
+    "H2",
+    "C3H8",
+    "C2H4",
+    "C2H6"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MCM-48",
+    "ZIF-8",
+    "SBA-15",
+    "KIT-6",
+    "ZSM-5"
+  ],
+  "mentioned_metals": [
+    "Ni",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "Pulsed ﬁeld gradient (PFG) nuclear magnetic resonance (NMR) allows recording of\nmolecular diffusion paths (notably, the probability distribution of molecular displacements over",
+    "conclusion": "of the\nexperimental procedure and the physical background in Section 2. Showcases of the application",
+    "results_summary": "processes\nReview\nDiffusion in Nanoporous Materials: Novel Insights\nby Combining MAS and PFG NMR\nJörg Kärger * ID , Dieter Freude ID and Jürgen Haase ID\nFakultät für Physik und Geowissenschaften, Unive"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:13:16.213222"
+}

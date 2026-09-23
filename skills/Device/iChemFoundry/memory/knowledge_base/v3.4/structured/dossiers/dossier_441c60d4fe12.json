@@ -1,0 +1,56 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_441c60d4fe12",
+  "canonical_material_id": "mat_cac596534180",
+  "canonical_name": "TYUT-DATZ",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_ddce74877ea3",
+  "pillar_id": "pil_f0d3a029e893",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_0bb0d9a10913",
+    "mechcard_54b97b6a626d",
+    "mechcard_8380a7195c82",
+    "mechcard_1828ec42be04",
+    "mechcard_4daad8c77469",
+    "mechcard_a0fb6e454013"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [
+    "drule_ba7f73aab62b"
+  ],
+  "failure_case_card_ids": [
+    "fail_dac09d940ce0"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "b33f5192881b"
+  ],
+  "evidence_trace_ids": [
+    "trace_95f9fab06a0c",
+    "trace_f551b3b3eb43",
+    "trace_363cd58a6ac4",
+    "trace_e2f37540750d",
+    "trace_b8f17cd5c304",
+    "trace_1a9bd043f875"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:32:16.260516",
+  "updated_at": "2026-04-23T20:33:19.895091"
+}

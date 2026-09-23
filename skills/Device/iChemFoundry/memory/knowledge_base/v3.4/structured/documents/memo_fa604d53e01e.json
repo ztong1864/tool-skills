@@ -1,0 +1,227 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_fa604d53e01e",
+  "paper_id": "f55a02c26322",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "Kr"
+  ],
+  "one_line_summary": "{Zn7(btc)4(dmtrz)2(H2O)5}n shows solvent_accessible_volume = 62.3 dimensionless for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 0.49 mmol/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "air_stability_time (air) = 24.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "N2_uptake (N2) = 0.06 mmol/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "anion effect during assembly → synthesis"
+    },
+    {
+      "title": "Mechanism",
+      "body": "triazole-carboxylate shared paddle-wheel units → porosity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] combine pyrazole/triazole-type N-donor groups with carboxylate groups to build shared SBUs → enables construction of novel triazole-carboxylate shared SBUs"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use DMAC as the solvent during assembly of Zn-triazole-carboxylate shared paddle-wheel MOFs → DMAC enabled generation of crystalline structures 1 and 2, whereas water, DMF, or DEF gave only unknown-phase powders"
+    },
+    {
+      "title": "Comparison",
+      "body": "DMAC solvent system for synthesis of mixed triazole-carboxylate Zn-MOFs vs water solvent system previously used for mixed triazole-carboxylate MOF synthesis: winner=subject_a on ability_to_generate_crystalline_target_structures"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_49c0eb1f4db5",
+    "trace_2c942e2aae47",
+    "trace_30bc221f459d",
+    "trace_eabe0418dc1b",
+    "trace_9398b8d7f7e3",
+    "trace_d88a044db776",
+    "trace_46fe3cda05ea",
+    "trace_ade07f9d18a2",
+    "trace_b234f5ee23de",
+    "trace_e8359955e223",
+    "trace_886993d1f67a",
+    "trace_cf3bba06faab",
+    "trace_e342d877203d",
+    "trace_f35605c096c6",
+    "trace_4c93d8e748bb",
+    "trace_96468fd3186b",
+    "trace_9eac06cefc7c",
+    "trace_bd01b02a28a9",
+    "trace_7134522c8e6b",
+    "trace_8edc4ccdfece",
+    "trace_b3abaacf0377",
+    "trace_39d362ecb361",
+    "trace_eb3aaaa86d58",
+    "trace_bd3a9d9ff7da",
+    "trace_00ee71d0ca0e",
+    "trace_83de802b9be0",
+    "trace_5dc17bcf7d6a",
+    "trace_b3e8d98a6ee7",
+    "trace_28a488c66c20",
+    "trace_022c98c607ec",
+    "trace_92e810e036e6",
+    "trace_1ee88f0b9e3b",
+    "trace_77c82343c057",
+    "trace_df4bf32b89d9",
+    "trace_f7467cdb3fff",
+    "trace_1ef9dce867ca",
+    "trace_b1819fca5967",
+    "trace_8d5555bd1720",
+    "trace_09a5609f5489",
+    "trace_191363cd3943",
+    "trace_4cf1afc53bce",
+    "trace_61c2eff27e67",
+    "trace_88b462cf437e",
+    "trace_c4c58a95a160",
+    "trace_f1f867df141d",
+    "trace_b6ce652ef466",
+    "trace_21a520ae1001",
+    "trace_9d491c5f31d4",
+    "trace_25ee3113a897",
+    "trace_66f2b0053151",
+    "trace_395e4fd1f126",
+    "trace_4aab464e52de",
+    "trace_bc9364505850",
+    "trace_db716f8ba653",
+    "trace_17d54be9cee4",
+    "trace_2e703879e70c",
+    "trace_f699b393ae1d",
+    "trace_335fb03c310d",
+    "trace_9d491c5f31d4",
+    "trace_4cf1afc53bce",
+    "trace_191363cd3943",
+    "trace_09a5609f5489",
+    "trace_7134522c8e6b",
+    "trace_2e703879e70c",
+    "trace_28a488c66c20",
+    "trace_d88a044db776",
+    "trace_ade07f9d18a2",
+    "trace_46fe3cda05ea",
+    "trace_e8359955e223",
+    "trace_88b462cf437e",
+    "trace_b234f5ee23de",
+    "trace_b6ce652ef466",
+    "trace_5dc17bcf7d6a",
+    "trace_eb3aaaa86d58",
+    "trace_92e810e036e6",
+    "trace_61c2eff27e67",
+    "trace_49c0eb1f4db5",
+    "trace_df4bf32b89d9",
+    "trace_f7467cdb3fff",
+    "trace_9398b8d7f7e3",
+    "trace_2c942e2aae47",
+    "trace_022c98c607ec",
+    "trace_30bc221f459d",
+    "trace_bd3a9d9ff7da",
+    "trace_96468fd3186b",
+    "trace_c4c58a95a160",
+    "trace_77c82343c057",
+    "trace_b3abaacf0377",
+    "trace_cf3bba06faab",
+    "trace_00ee71d0ca0e",
+    "trace_f35605c096c6",
+    "trace_e342d877203d",
+    "trace_bc9364505850",
+    "trace_4aab464e52de",
+    "trace_bd01b02a28a9",
+    "trace_8edc4ccdfece",
+    "trace_335fb03c310d",
+    "trace_1ee88f0b9e3b",
+    "trace_b1819fca5967",
+    "trace_eabe0418dc1b",
+    "trace_1ef9dce867ca",
+    "trace_886993d1f67a",
+    "trace_f699b393ae1d",
+    "trace_21a520ae1001",
+    "trace_db716f8ba653",
+    "trace_4c93d8e748bb",
+    "trace_25ee3113a897",
+    "trace_39d362ecb361",
+    "trace_8d5555bd1720",
+    "trace_9eac06cefc7c",
+    "trace_b3e8d98a6ee7",
+    "trace_17d54be9cee4",
+    "trace_395e4fd1f126",
+    "trace_f1f867df141d",
+    "trace_83de802b9be0",
+    "trace_66f2b0053151"
+  ],
+  "measurement_card_ids": [
+    "mcard_fc18dc6db060",
+    "mcard_829c42ac9bc2",
+    "mcard_c37aded42c64",
+    "mcard_39140b571693"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_4b7cc8ab1926",
+    "mechcard_e5552eab02f1",
+    "mechcard_16ac2ce976d5",
+    "mechcard_30b77fab1dd4",
+    "mechcard_75f5cd03b92a"
+  ],
+  "recipe_card_ids": [
+    "recipe_4ea6cc436334",
+    "recipe_dddbb831ae1b"
+  ],
+  "claim_card_ids": [
+    "claim_16ca04a729da",
+    "claim_94dac82127b8",
+    "claim_a6d22c4cd6a5",
+    "claim_81b177fbbc70",
+    "claim_4953ddf35ddb",
+    "claim_d27d739f22fd",
+    "claim_7b73df8929d4"
+  ],
+  "design_rule_card_ids": [
+    "drule_df6e2c433e02",
+    "drule_abea1b18412f"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_cb55cc5b5dbd"
+  ],
+  "failure_case_card_ids": [
+    "fail_832057863b13",
+    "fail_e61785d9795a",
+    "fail_340228ee6198"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_68e17171ea6b"
+  ],
+  "dossier_ids": [
+    "dossier_e02a92b0c5b9"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "DMAC is crucial for assembling 1 and 2; replacing it with water, DMF, or DEF gave only unknown-phase powders.",
+    "The target frameworks form only under a specific 1:1:1.5 H3btc:Hdmtrz:Zn ratio; changing the ratio produced impure bulk samples.",
+    "Structure 2 shows CO2 and N2 adsorption behavior consistent with a potential microporous adsorbent for CO2/N2 separation at room temperature."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.173987",
+  "updated_at": "2026-04-24T00:19:50.173991",
+  "raw_path": "相关文献/Zn-均苯三甲酸two-novel-zinc(ii)-metal-organic-frameworks-based-on-triazole-carboxylate-shared-paddle-wheel-units-synthesis-structure.pdf"
+}

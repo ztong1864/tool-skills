@@ -1,0 +1,172 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_bf01c6006fb0",
+  "paper_id": "3102127ab41f",
+  "title": "Adsorption of Iodine Based on a Tetrazolate Framew",
+  "year": 2016,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "one_line_summary": "tetrazolate-framework shows Langmuir_surface_area = 321.7 m2/g for N2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "I2_uptake (I2) = 39.5 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "pore_void_fraction = 62.7 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 27.0 cm3/g at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "reversible_guest_release → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "octahedral_microporous_cage → porosity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] mix btc with an azole ligand to build a cage-based MOF structure → effective for enriching or encapsulating guest molecules"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] leave the inner pore space unoccupied by coordinated molecules → beneficial to absorb or encapsulate other components"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs zeolite 13X: winner=subject_a on iodine_loading_wt_percent"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_cd0c20e38fef",
+    "trace_2485b374dc5b",
+    "trace_81c39f0fd5b3",
+    "trace_7a0a8f51d176",
+    "trace_bc297faf5cd6",
+    "trace_93a765e32bbb",
+    "trace_0d764c03c10c",
+    "trace_f106ec93b68a",
+    "trace_1ff5a7ff7313",
+    "trace_f5520f2f8e33",
+    "trace_f1ad1a5fb0e3",
+    "trace_87184b1b3070",
+    "trace_cfa7f32e5f71",
+    "trace_fbb18c8f6251",
+    "trace_9e97d3e975ac",
+    "trace_5be94c4867b5",
+    "trace_2144e7c14c57",
+    "trace_5a83dcf849c8",
+    "trace_800c3882a25f",
+    "trace_8de40f1e6bd0",
+    "trace_40307a923020",
+    "trace_da8940df0571",
+    "trace_47f374bc5e42",
+    "trace_714da412cebb",
+    "trace_8d204aaf4911",
+    "trace_5e318a99be93",
+    "trace_74961a395240",
+    "trace_6065e9f1eb2a",
+    "trace_2efaff72e221",
+    "trace_47f374bc5e42",
+    "trace_8d204aaf4911",
+    "trace_fbb18c8f6251",
+    "trace_5be94c4867b5",
+    "trace_2144e7c14c57",
+    "trace_8de40f1e6bd0",
+    "trace_5e318a99be93",
+    "trace_9e97d3e975ac",
+    "trace_74961a395240",
+    "trace_2485b374dc5b",
+    "trace_87184b1b3070",
+    "trace_93a765e32bbb",
+    "trace_cd0c20e38fef",
+    "trace_40307a923020",
+    "trace_1ff5a7ff7313",
+    "trace_714da412cebb",
+    "trace_bc297faf5cd6",
+    "trace_5a83dcf849c8",
+    "trace_f5520f2f8e33",
+    "trace_da8940df0571",
+    "trace_81c39f0fd5b3",
+    "trace_6065e9f1eb2a",
+    "trace_f1ad1a5fb0e3",
+    "trace_f106ec93b68a",
+    "trace_0d764c03c10c",
+    "trace_7a0a8f51d176",
+    "trace_cfa7f32e5f71",
+    "trace_800c3882a25f",
+    "trace_2efaff72e221"
+  ],
+  "measurement_card_ids": [
+    "mcard_480e135df66f",
+    "mcard_24f09f673f15",
+    "mcard_e4641000bc0a",
+    "mcard_eaf3ac23a0f4",
+    "mcard_7e612fbb7401"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_ea6c7e0d4f37",
+    "mechcard_97c48231aa0d",
+    "mechcard_90136ec2c793"
+  ],
+  "recipe_card_ids": [
+    "recipe_b1612c287c35",
+    "recipe_4e060f52566b",
+    "recipe_632fb89fb0f6"
+  ],
+  "claim_card_ids": [
+    "claim_7ffe7cb3dfd2",
+    "claim_9567aef816b4",
+    "claim_d50b51c224a6",
+    "claim_8195a06ce0f0",
+    "claim_0317365fe4b8",
+    "claim_05f60d3e255c",
+    "claim_d3b71cbaa4be"
+  ],
+  "design_rule_card_ids": [
+    "drule_82a0bd0e6a50",
+    "drule_ddd0a1f98a12",
+    "drule_7b8fd0d2b5c8"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_b5e3b037f8e1"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c214a9603588",
+    "mat_6cd4b6552c81"
+  ],
+  "dossier_ids": [
+    "dossier_dfe64aa520a3",
+    "dossier_18f10bdef1d7"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Iodine uptake by compound 1 reaches about 39.5 wt%, and the adsorption process is reversible.",
+    "Activated compound 1 shows permanent microporosity, evidenced by a reversible type-I N2 isotherm and BET/Langmuir surface areas of 229.7/321.7 m2 g−1.",
+    "The iodine loading of compound 1 is only slightly above zeolite 13X and remains below activated carbon and some MOFs."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.933568",
+  "updated_at": "2026-04-24T00:19:51.933572",
+  "raw_path": "相关文献/氮唑相关文献_Jiang 等 - 2016 - Adsorption of Iodine Based on a Tetrazolate Framew.pdf",
+  "authors": [
+    "氮唑相关文献_Jiang"
+  ]
+}

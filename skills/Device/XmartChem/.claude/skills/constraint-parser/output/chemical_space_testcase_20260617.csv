@@ -1,0 +1,11 @@
+﻿section,no,recommendation_name,cn_name,en_name,abbr,formula,smiles,cas,notes
+substrate_a,1,4-溴甲苯,4-溴甲苯,4-Bromotoluene,,,,,aryl bromide
+substrate_b,1,苯硼酸,苯硼酸,Phenylboronic acid,,,,,boronic acid
+catalyst,1,Pd(PPh3)4,四(三苯基膦)钯,Pd(PPh3)4,,,,,
+catalyst,2,Pd2(dba)3,三(二亚苄基丙酮)二钯,Pd2(dba)3,,,,,
+ligand,1,SPhos,SPhos,SPhos,,,,,
+ligand,2,XPhos,XPhos,XPhos,,,,,
+base,1,K3PO4,磷酸钾,K3PO4,,,,,
+base,2,Cs2CO3,碳酸铯,Cs2CO3,,,,,
+solvent,1,"1,4-dioxane","1,4-二氧六环","1,4-dioxane",,,,,
+solvent,2,toluene/H2O,甲苯/水,toluene/H2O,,,,,

@@ -1,0 +1,100 @@
+{
+    "supported_unit_types": [
+        "exp_add_solid",
+        "exp_pipetting",
+        "exp_magnetic_stirrer",
+        "exp_filtering_samples"
+    ],
+    "logical_schema": {
+        "exp_add_solid": {
+            "required_fields": [
+                "unit_type",
+                "substance",
+                "add_weight"
+            ]
+        },
+        "exp_pipetting": {
+            "required_fields": [
+                "unit_type",
+                "substance",
+                "add_volume"
+            ]
+        },
+        "exp_magnetic_stirrer": {
+            "required_fields": [
+                "unit_type",
+                "temperature",
+                "reaction_duration",
+                "rotation_speed",
+                "still_tem",
+                "is_wait"
+            ]
+        },
+        "exp_filtering_samples": {
+            "required_fields": [
+                "unit_type",
+                "add_volume"
+            ]
+        }
+    },
+    "rendering_defaults": {
+        "reactor": {
+            "layout_code": "T-3:0",
+            "resource_type": "TTR2T",
+            "tray_QR_code": "TTR2T_01",
+            "QR_code": "",
+            "substance": "",
+            "unit_column_start": 0,
+            "unit_row_start": 0
+        },
+        "pipetting": {
+            "disable_LLDSensitivity": true,
+            "custom": {
+                "unit": "μL",
+                "unitOptions": [
+                    "μL",
+                    "mL",
+                    "L"
+                ],
+                "step": {
+                    "add_volume": 0.5
+                }
+            }
+        },
+        "add_solid": {
+            "custom": {
+                "unit": "mg",
+                "unitOptions": [
+                    "mg",
+                    "g"
+                ]
+            }
+        },
+        "magnetic_stirrer": {
+            "custom": {
+                "step": {
+                    "rotation_speed": 50,
+                    "temperature": 1
+                },
+                "unit": ""
+            }
+        },
+        "filtering": {
+            "custom": {
+                "unit": "mL",
+                "unitOptions": [
+                    "μL",
+                    "mL",
+                    "L"
+                ],
+                "step": {
+                    "add_volume": 0.05
+                }
+            },
+            "dst": {
+                "resource_type": "TTS2TCP_V2",
+                "tray_QR_code": "TTS2TCP_V2_01"
+            }
+        }
+    }
+}

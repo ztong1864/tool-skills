@@ -1,0 +1,61 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_fe932bc1a78f",
+  "paper_id": "a5965e89e460",
+  "raw_path": "相关文献/氮唑相关文献_Chen 等 - 2015 - A new anionic metal–organic framework showing tuna.pdf",
+  "title": "A new anionic metal–organic framework showing tuna",
+  "authors": [
+    "氮唑相关文献_Chen"
+  ],
+  "year": 2015,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "IMFC-3",
+    "MOF-1",
+    "ICP-9000",
+    "CAU-1",
+    "CPF-13"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Mn",
+    "Mg",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "DOBDC",
+    "BTC",
+    "BDC",
+    "TED",
+    "carboxylate"
+  ],
+  "mentioned_topologies": [
+    "dia"
+  ],
+  "key_sections": {
+    "results_summary": "A new anionic metal–organic framework showing\ntunable emission by lanthanide(III) doping and\nhighly selective CO2 adsorption properties†\nRong-Ying Chen, Dan Tian, Yun-Wu Li, Ying-Bin Lv, Hong-Wei Sun,"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:25:09.238280"
+}

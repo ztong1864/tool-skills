@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_2b46ffa3e13b",
+  "paper_id": "bc94c5cb3329",
+  "raw_path": "相关文献/anie202407840-sup-0001-misc_information.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "Xe"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "NbOFFIVE-1-Ni",
+    "CALF-20",
+    "HPR-20",
+    "CUPMOF-5"
+  ],
+  "mentioned_metals": [
+    "Cu",
+    "Co",
+    "Ni",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "of adsorption and separation metrics of CUPMOF-5 and representative material NbOFFIVE-1-Ni for CO2 removal from exhale anesthetic gas.",
+    "results_summary": "Supporting Information\nExhaled Anesthetic Xenon Regeneration by Gas Separation Using a\nMetal–Organic Framework with Sorbent-Sorbate Induced-Fit\nL. Zhao, X. Peng, C. Deng, J.-H. Li, H. Pan, J.-S. Zou, "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:39:54.998486"
+}

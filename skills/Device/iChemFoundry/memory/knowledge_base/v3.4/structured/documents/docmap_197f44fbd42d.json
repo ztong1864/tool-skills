@@ -1,0 +1,45 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_197f44fbd42d",
+  "paper_id": "266d29fc0075",
+  "raw_path": "相关文献/10.1515@zpch-2014-0445.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": "10.1515/zpch-2014-0445",
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "pyridine",
+    "BIPY"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "abstract": "The metal organic layered structure catena-(bis(μ2-4,4’-bipyridine)-\ntris(μ2-oxalato)-bis(4,4’-bipyridine)-tri-zinc(ii))\n([Zn3(C2O4)3(4,4’-bipy)4])",
+    "results_summary": "DOI 10.1515/zpch-2014-0445\n|\nZ. Phys. Chem. 2014; 228(4–5): 575–585\nLisa Tröbs, Annett Zimathies, Ulrich Panne, and\nFranziska Emmerling*\nMechanochemical Synthesis of\n[Zn3(C2O4)3(4,4’-bipy)4] and its\nR"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:01:47.398532"
+}

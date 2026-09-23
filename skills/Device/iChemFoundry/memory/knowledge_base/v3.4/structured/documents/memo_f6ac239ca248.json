@@ -1,0 +1,197 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_f6ac239ca248",
+  "paper_id": "79ccfb53a022",
+  "title": "A zinc(II) metal–organic framework based on triazole and dicarboxylate",
+  "year": 2011,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "C2H2"
+  ],
+  "one_line_summary": "{[Zn2(HBDC)2(dmtrz)2]-guest}n shows Langmuir_surface_area = 807.8 m2/g for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "selective_adsorption_n-HEX+3MP_over_22DMB (n-HEX/3MP) = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "BET_surface_area = 552.0 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "selective_adsorption_n-HEX+3MP_over_22DMB (n-HEX/3MP) = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "alternately connected triazolate-dinuclear unit and paddle-wheel unit in a 3D pillar-layer structure → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "slight_breathing_due_to_SBU-2_counteracting_SBU-1 → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] adjust the layer distance in similar pillar-layer MOF structures → separation behavior for different alkane isomers can be tuned"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs [Zn2(BDC)2(dabco)]n: winner=subject_b on BET_surface_area"
+    },
+    {
+      "title": "Comparison",
+      "body": "[Zn2(BDC)2(dabco)]n vs compound 1: winner=subject_a on n-HEX_vs_3MP_selective_adsorption"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_03068fcec234",
+    "trace_563dd3e55b00",
+    "trace_4308777f2fc2",
+    "trace_5c305f518234",
+    "trace_7a06eca0b4ae",
+    "trace_c70250ed2252",
+    "trace_29f9eb24b2c8",
+    "trace_f23c2368b954",
+    "trace_1faf1c69de32",
+    "trace_a976babb6a2c",
+    "trace_4e6ff18f53d4",
+    "trace_4ca856f834bc",
+    "trace_cff5d4347e33",
+    "trace_b0e3da32adbc",
+    "trace_be3f9eeaf70f",
+    "trace_1df7970cdde4",
+    "trace_694e6a342036",
+    "trace_14ee8d6e1b6e",
+    "trace_aafb8cc7b687",
+    "trace_9377e938df86",
+    "trace_cb97d67f7bed",
+    "trace_b6a58c71eb65",
+    "trace_9f62bbef896b",
+    "trace_6cdf925606ca",
+    "trace_7d133951aeb2",
+    "trace_b2845cda2c41",
+    "trace_c1b6ef39ecd7",
+    "trace_3025baba86b6",
+    "trace_3e809b877dfb",
+    "trace_bd17376c8d46",
+    "trace_57faee6c0722",
+    "trace_7f26868c003c",
+    "trace_0aaf372c6773",
+    "trace_ecaaecec8773",
+    "trace_872548dd17f6",
+    "trace_ffd4a8aec0d0",
+    "trace_7a06eca0b4ae",
+    "trace_b6a58c71eb65",
+    "trace_3025baba86b6",
+    "trace_4308777f2fc2",
+    "trace_cff5d4347e33",
+    "trace_1df7970cdde4",
+    "trace_3e809b877dfb",
+    "trace_5c305f518234",
+    "trace_563dd3e55b00",
+    "trace_aafb8cc7b687",
+    "trace_7f26868c003c",
+    "trace_6cdf925606ca",
+    "trace_9f62bbef896b",
+    "trace_9377e938df86",
+    "trace_cb97d67f7bed",
+    "trace_872548dd17f6",
+    "trace_7d133951aeb2",
+    "trace_29f9eb24b2c8",
+    "trace_c1b6ef39ecd7",
+    "trace_bd17376c8d46",
+    "trace_1faf1c69de32",
+    "trace_be3f9eeaf70f",
+    "trace_f23c2368b954",
+    "trace_694e6a342036",
+    "trace_a976babb6a2c",
+    "trace_ffd4a8aec0d0",
+    "trace_4ca856f834bc",
+    "trace_4e6ff18f53d4",
+    "trace_0aaf372c6773",
+    "trace_ecaaecec8773",
+    "trace_c70250ed2252",
+    "trace_b2845cda2c41",
+    "trace_03068fcec234",
+    "trace_14ee8d6e1b6e",
+    "trace_b0e3da32adbc",
+    "trace_57faee6c0722"
+  ],
+  "measurement_card_ids": [
+    "mcard_9d8655e7ee69",
+    "mcard_91fdf18593cd",
+    "mcard_8b87ad2a652a",
+    "mcard_ce5d624998c6",
+    "mcard_f7b3013ec1b0",
+    "mcard_95b8037c8c13",
+    "mcard_800da83c713c",
+    "mcard_d9b24fb2bb1d",
+    "mcard_bca40077af59",
+    "mcard_7120e5b1e0d1",
+    "mcard_f53801d24ec5",
+    "mcard_cf4e50d89d1b",
+    "mcard_208c6be7a4c3"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_f7606efcb4d4",
+    "mechcard_52f7e357a068",
+    "mechcard_ff30483a1612",
+    "mechcard_8e111b5001de"
+  ],
+  "recipe_card_ids": [
+    "recipe_d7c40851d0b6",
+    "recipe_a8995cb4e1f4",
+    "recipe_0182db6010c7",
+    "recipe_13058c4e70f8"
+  ],
+  "claim_card_ids": [
+    "claim_3186be0b0faa",
+    "claim_b8256db99c8f",
+    "claim_24e4cdd4dadd",
+    "claim_d0edcb10a8f2",
+    "claim_30433815f035",
+    "claim_212ff246c1f9",
+    "claim_d35eb92e13cb"
+  ],
+  "design_rule_card_ids": [
+    "drule_6b85ec94284c"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_ed7156944acc",
+    "comp_20742c8b3b08",
+    "comp_cec749b9d2e3"
+  ],
+  "failure_case_card_ids": [
+    "fail_8d8f8cfa213b"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c07f018810cb",
+    "mat_3a9b6a4e9635"
+  ],
+  "dossier_ids": [
+    "dossier_eb47da81ff0e",
+    "dossier_752a444d8205"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Adjusting the layer distance in similar pillar-layer MOFs is proposed as a design rule to tune separation behavior for different alkane isomers.",
+    "Gas chromatography separation results confirmed the adsorption selectivity of compound 1 for n-HEX and 3MP over 22DMB.",
+    "Compound 1 is microporous, showing a type-I isotherm with BET area about 552 m2 g−1, Langmuir area 807.8 m2 g−1, and pore size about 6.7 Å."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.598991",
+  "updated_at": "2026-04-24T00:19:49.598995",
+  "raw_path": "相关文献/Zn-1,4-苯二甲酸-ling2011-A zinc(II) metal–organic framework based on triazole and dicarboxylate.pdf",
+  "authors": [
+    "Ling"
+  ]
+}

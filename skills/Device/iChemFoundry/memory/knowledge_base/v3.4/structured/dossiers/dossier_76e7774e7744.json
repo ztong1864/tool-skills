@@ -1,0 +1,70 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_76e7774e7744",
+  "canonical_material_id": "mat_42a15160bea8",
+  "canonical_name": "KFI-zeolite",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": "kfi",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_aed39defcb2c",
+    "mcard_83d36037a0b1",
+    "mcard_fab623d5cb2a",
+    "mcard_1e7e66742adb"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_d227eb55b001",
+    "mechcard_16106a8eadaa",
+    "mechcard_6f0fcf3ddbef",
+    "mechcard_0fde3e50e254",
+    "mechcard_a4f0730ad119",
+    "mechcard_73ad7a084a14",
+    "mechcard_6aa249f06c33",
+    "mechcard_2b8b410e81ca",
+    "mechcard_9157dde78093",
+    "mechcard_3881c0251630"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [
+    "drule_f1423800b0d0",
+    "drule_10979676b535"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "bdcdbf619520"
+  ],
+  "evidence_trace_ids": [
+    "trace_2db779a3c876",
+    "trace_9c36596817c2",
+    "trace_d95c8c1b001d",
+    "trace_9628cb0cc7ca",
+    "trace_55276a5391af",
+    "trace_f0c714ec8ca4",
+    "trace_273be522da89",
+    "trace_316c2ffdfbaa",
+    "trace_3f0033991d28",
+    "trace_a34abb35eda5",
+    "trace_ac2940d5c099",
+    "trace_8d5101eca327",
+    "trace_8afd0d149f32"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T16:55:57.579049",
+  "updated_at": "2026-04-23T16:56:39.139396"
+}

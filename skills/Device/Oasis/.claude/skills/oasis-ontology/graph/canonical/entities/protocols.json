@@ -1,0 +1,492 @@
+{
+  "protocol:20220901--ef7d16db": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:20220901--ef7d16db",
+    "protocol_key": "20220901",
+    "reference_name": "20220901"
+  },
+  "protocol:addbsa--f924f493": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addbsa--f924f493",
+    "protocol_key": "AddBSA",
+    "reference_name": "AddBSA"
+  },
+  "protocol:adddye--0d9aa152": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:adddye--0d9aa152",
+    "protocol_key": "AddDye",
+    "reference_name": "AddDye"
+  },
+  "protocol:adddyebuffer--b20b325c": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:adddyebuffer--b20b325c",
+    "protocol_key": "AddDyeBuffer",
+    "reference_name": "AddDyeBuffer"
+  },
+  "protocol:addhoechst--1220de8b": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addhoechst--1220de8b",
+    "protocol_key": "AddHoechst",
+    "reference_name": "AddHoechst"
+  },
+  "protocol:addmedicine-6plates--e5a99245": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addmedicine-6plates--e5a99245",
+    "protocol_key": "AddMedicine_6Plates",
+    "reference_name": "AddMedicine_6Plates"
+  },
+  "protocol:addmedicine-9plates--ef1fd644": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addmedicine-9plates--ef1fd644",
+    "protocol_key": "AddMedicine_9Plates",
+    "reference_name": "AddMedicine_9Plates"
+  },
+  "protocol:addmedicine-9plates-day2--500a1096": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addmedicine-9plates-day2--500a1096",
+    "protocol_key": "AddMedicine_9Plates_Day2",
+    "reference_name": "AddMedicine_9Plates_Day2"
+  },
+  "protocol:addmedicine-9plates-merge--8fc6e386": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addmedicine-9plates-merge--8fc6e386",
+    "protocol_key": "AddMedicine_9Plates_Merge",
+    "reference_name": "AddMedicine_9Plates_Merge"
+  },
+  "protocol:addmedicinetocellplate--df6633e9": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addmedicinetocellplate--df6633e9",
+    "protocol_key": "AddMedicineToCellPlate",
+    "reference_name": "AddMedicineToCellPlate"
+  },
+  "protocol:addmitotracker--b2d71764": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addmitotracker--b2d71764",
+    "protocol_key": "AddMitoTracker",
+    "reference_name": "AddMitoTracker"
+  },
+  "protocol:addmixeddye--3d869bee": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addmixeddye--3d869bee",
+    "protocol_key": "AddMixedDye",
+    "reference_name": "AddMixedDye"
+  },
+  "protocol:addnucleusdye--12a3034b": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addnucleusdye--12a3034b",
+    "protocol_key": "AddNucleusDye",
+    "reference_name": "AddNucleusDye"
+  },
+  "protocol:addpfa--50da84f4": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addpfa--50da84f4",
+    "protocol_key": "AddPFA",
+    "reference_name": "AddPFA"
+  },
+  "protocol:addpfa-1--7df650e9": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addpfa-1--7df650e9",
+    "protocol_key": "AddPFA_1",
+    "reference_name": "AddPFA_1"
+  },
+  "protocol:addpom--1400d28a": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addpom--1400d28a",
+    "protocol_key": "AddPOM",
+    "reference_name": "AddPOM"
+  },
+  "protocol:addprimaryantibody--818daa13": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addprimaryantibody--818daa13",
+    "protocol_key": "AddPrimaryAntibody",
+    "reference_name": "AddPrimaryAntibody"
+  },
+  "protocol:addsecondaryantibody--c9c9a5a6": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addsecondaryantibody--c9c9a5a6",
+    "protocol_key": "AddSecondaryAntibody",
+    "reference_name": "AddSecondaryAntibody"
+  },
+  "protocol:addtriton--307332f5": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addtriton--307332f5",
+    "protocol_key": "AddTriton",
+    "reference_name": "AddTriton"
+  },
+  "protocol:addtriton-1--aee37b9a": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:addtriton-1--aee37b9a",
+    "protocol_key": "AddTriton_1",
+    "reference_name": "AddTriton_1"
+  },
+  "protocol:bodipy-d1-addmedicinetocellplate-demo--b75cf2eb": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:bodipy-d1-addmedicinetocellplate-demo--b75cf2eb",
+    "protocol_key": "BODIPY_D1_AddMedicineToCellPlate_Demo",
+    "reference_name": "BODIPY_D1_AddMedicineToCellPlate_Demo"
+  },
+  "protocol:bodipy-d1-moveinmedplatetop10--41101738": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:bodipy-d1-moveinmedplatetop10--41101738",
+    "protocol_key": "BODIPY_D1_MoveInMedPlateToP10",
+    "reference_name": "BODIPY_D1_MoveInMedPlateToP10"
+  },
+  "protocol:bodipy-d1-moveoutmedplatetop8--2ce572dc": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:bodipy-d1-moveoutmedplatetop8--2ce572dc",
+    "protocol_key": "BODIPY_D1_MoveOutMedPlateToP8",
+    "reference_name": "BODIPY_D1_MoveOutMedPlateToP8"
+  },
+  "protocol:bodipy-day2--81eea422": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:bodipy-day2--81eea422",
+    "protocol_key": "BODIPY_DAY2",
+    "reference_name": "BODIPY_DAY2"
+  },
+  "protocol:c-protocols-bodipy-hts--d0d40919": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:c-protocols-bodipy-hts--d0d40919",
+    "protocol_key": "C:\\\\Protocols\\\\BODIPY.HTS",
+    "reference_name": "C:\\\\Protocols\\\\BODIPY.HTS"
+  },
+  "protocol:c-protocols-cxc-foci-demo-hts--1a0b64d7": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:c-protocols-cxc-foci-demo-hts--1a0b64d7",
+    "protocol_key": "C:\\\\Protocols\\\\cxc-foci-demo.HTS",
+    "reference_name": "C:\\\\Protocols\\\\cxc-foci-demo.HTS"
+  },
+  "protocol:closelid--1aa05b3e": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:closelid--1aa05b3e",
+    "protocol_key": "CloseLid",
+    "reference_name": "CloseLid"
+  },
+  "protocol:demoaddmedcinetocellplate--791e659f": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:demoaddmedcinetocellplate--791e659f",
+    "protocol_key": "DemoAddMedcineToCellPlate",
+    "reference_name": "DemoAddMedcineToCellPlate"
+  },
+  "protocol:demomoveinmedplatetop6-1017--e32c92b5": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:demomoveinmedplatetop6-1017--e32c92b5",
+    "protocol_key": "DemoMoveInMedPlateToP6_1017",
+    "reference_name": "DemoMoveInMedPlateToP6_1017"
+  },
+  "protocol:demomoveoutmedplatetop8-1017--d621e552": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:demomoveoutmedplatetop8-1017--d621e552",
+    "protocol_key": "DemoMoveOutMedPlateToP8_1017",
+    "reference_name": "DemoMoveOutMedPlateToP8_1017"
+  },
+  "protocol:medicineplatedilution--978cb622": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:medicineplatedilution--978cb622",
+    "protocol_key": "MedicinePlateDilution",
+    "reference_name": "MedicinePlateDilution"
+  },
+  "protocol:movein-1--6d789aa0": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:movein-1--6d789aa0",
+    "protocol_key": "MoveIn_1",
+    "reference_name": "MoveIn_1"
+  },
+  "protocol:movein-2--4e271ca6": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:movein-2--4e271ca6",
+    "protocol_key": "MoveIn_2",
+    "reference_name": "MoveIn_2"
+  },
+  "protocol:movein-3--246d1e43": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:movein-3--246d1e43",
+    "protocol_key": "MoveIn_3",
+    "reference_name": "MoveIn_3"
+  },
+  "protocol:movein-4--46a4a4f2": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:movein-4--46a4a4f2",
+    "protocol_key": "MoveIn_4",
+    "reference_name": "MoveIn_4"
+  },
+  "protocol:movein-5--dc442df4": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:movein-5--dc442df4",
+    "protocol_key": "MoveIn_5",
+    "reference_name": "MoveIn_5"
+  },
+  "protocol:movein-6--be69ab9e": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:movein-6--be69ab9e",
+    "protocol_key": "MoveIn_6",
+    "reference_name": "MoveIn_6"
+  },
+  "protocol:movein-med1--a6bea204": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:movein-med1--a6bea204",
+    "protocol_key": "MoveIn_Med1",
+    "reference_name": "MoveIn_Med1"
+  },
+  "protocol:moveincellplate1--809ed98b": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveincellplate1--809ed98b",
+    "protocol_key": "MoveInCellPlate1",
+    "reference_name": "MoveInCellPlate1"
+  },
+  "protocol:moveincellplate2--9e5ddac7": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveincellplate2--9e5ddac7",
+    "protocol_key": "MoveInCellPlate2",
+    "reference_name": "MoveInCellPlate2"
+  },
+  "protocol:moveincellplate3--d7daff56": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveincellplate3--d7daff56",
+    "protocol_key": "MoveInCellPlate3",
+    "reference_name": "MoveInCellPlate3"
+  },
+  "protocol:moveincellplate4--0b8044d2": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveincellplate4--0b8044d2",
+    "protocol_key": "MoveInCellPlate4",
+    "reference_name": "MoveInCellPlate4"
+  },
+  "protocol:moveincellplate5--5240ed96": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveincellplate5--5240ed96",
+    "protocol_key": "MoveInCellPlate5",
+    "reference_name": "MoveInCellPlate5"
+  },
+  "protocol:moveincellplate6--9546d8ec": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveincellplate6--9546d8ec",
+    "protocol_key": "MoveInCellPlate6",
+    "reference_name": "MoveInCellPlate6"
+  },
+  "protocol:moveincellplate7--f3cfefd7": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveincellplate7--f3cfefd7",
+    "protocol_key": "MoveInCellPlate7",
+    "reference_name": "MoveInCellPlate7"
+  },
+  "protocol:moveincellplate8--844bc8fb": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveincellplate8--844bc8fb",
+    "protocol_key": "MoveInCellPlate8",
+    "reference_name": "MoveInCellPlate8"
+  },
+  "protocol:moveincellplate9--07d20917": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveincellplate9--07d20917",
+    "protocol_key": "MoveInCellPlate9",
+    "reference_name": "MoveInCellPlate9"
+  },
+  "protocol:moveindilutionplate--23192bbe": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveindilutionplate--23192bbe",
+    "protocol_key": "MoveInDilutionPlate",
+    "reference_name": "MoveInDilutionPlate"
+  },
+  "protocol:moveintips--ec72a3c5": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveintips--ec72a3c5",
+    "protocol_key": "MoveInTips",
+    "reference_name": "MoveInTips"
+  },
+  "protocol:moveout-1--3f42af15": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveout-1--3f42af15",
+    "protocol_key": "MoveOut_1",
+    "reference_name": "MoveOut_1"
+  },
+  "protocol:moveout-2--c721e913": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveout-2--c721e913",
+    "protocol_key": "MoveOut_2",
+    "reference_name": "MoveOut_2"
+  },
+  "protocol:moveout-3--c543e66a": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveout-3--c543e66a",
+    "protocol_key": "MoveOut_3",
+    "reference_name": "MoveOut_3"
+  },
+  "protocol:moveout-4--befd4927": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveout-4--befd4927",
+    "protocol_key": "MoveOut_4",
+    "reference_name": "MoveOut_4"
+  },
+  "protocol:moveout-5--c0c17f00": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveout-5--c0c17f00",
+    "protocol_key": "MoveOut_5",
+    "reference_name": "MoveOut_5"
+  },
+  "protocol:moveout-6--5d04b566": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveout-6--5d04b566",
+    "protocol_key": "MoveOut_6",
+    "reference_name": "MoveOut_6"
+  },
+  "protocol:moveout-med1--9e328050": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveout-med1--9e328050",
+    "protocol_key": "MoveOut_Med1",
+    "reference_name": "MoveOut_Med1"
+  },
+  "protocol:moveoutcellplate1--aeba1cc1": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutcellplate1--aeba1cc1",
+    "protocol_key": "MoveOutCellPlate1",
+    "reference_name": "MoveOutCellPlate1"
+  },
+  "protocol:moveoutcellplate2--4b7a7731": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutcellplate2--4b7a7731",
+    "protocol_key": "MoveOutCellPlate2",
+    "reference_name": "MoveOutCellPlate2"
+  },
+  "protocol:moveoutcellplate3--533bc63b": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutcellplate3--533bc63b",
+    "protocol_key": "MoveOutCellPlate3",
+    "reference_name": "MoveOutCellPlate3"
+  },
+  "protocol:moveoutcellplate4--2d16e4ad": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutcellplate4--2d16e4ad",
+    "protocol_key": "MoveOutCellPlate4",
+    "reference_name": "MoveOutCellPlate4"
+  },
+  "protocol:moveoutcellplate5--ffac8fd7": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutcellplate5--ffac8fd7",
+    "protocol_key": "MoveOutCellPlate5",
+    "reference_name": "MoveOutCellPlate5"
+  },
+  "protocol:moveoutcellplate6--90980501": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutcellplate6--90980501",
+    "protocol_key": "MoveOutCellPlate6",
+    "reference_name": "MoveOutCellPlate6"
+  },
+  "protocol:moveoutcellplate7--631531d7": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutcellplate7--631531d7",
+    "protocol_key": "MoveOutCellPlate7",
+    "reference_name": "MoveOutCellPlate7"
+  },
+  "protocol:moveoutcellplate8--8487c3ff": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutcellplate8--8487c3ff",
+    "protocol_key": "MoveOutCellPlate8",
+    "reference_name": "MoveOutCellPlate8"
+  },
+  "protocol:moveoutcellplate9--617ec1ab": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutcellplate9--617ec1ab",
+    "protocol_key": "MoveOutCellPlate9",
+    "reference_name": "MoveOutCellPlate9"
+  },
+  "protocol:moveoutdilutionplate--bebd639e": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveoutdilutionplate--bebd639e",
+    "protocol_key": "MoveOutDilutionPlate",
+    "reference_name": "MoveOutDilutionPlate"
+  },
+  "protocol:moveouttips--26a0800e": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:moveouttips--26a0800e",
+    "protocol_key": "MoveOutTips",
+    "reference_name": "MoveOutTips"
+  },
+  "protocol:openlid--811d71e0": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:openlid--811d71e0",
+    "protocol_key": "OpenLid",
+    "reference_name": "OpenLid"
+  },
+  "protocol:recoverprimaryantibody--ad1c0bfd": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:recoverprimaryantibody--ad1c0bfd",
+    "protocol_key": "RecoverPrimaryAntibody",
+    "reference_name": "RecoverPrimaryAntibody"
+  },
+  "protocol:recoversecondaryantibody--876ae545": {
+    "description": "",
+    "entity_type": "Protocol",
+    "id": "protocol:recoversecondaryantibody--876ae545",
+    "protocol_key": "RecoverSecondaryAntibody",
+    "reference_name": "RecoverSecondaryAntibody"
+  }
+}

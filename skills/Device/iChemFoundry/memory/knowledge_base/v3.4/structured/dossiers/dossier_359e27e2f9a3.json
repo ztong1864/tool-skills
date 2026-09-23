@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_359e27e2f9a3",
+  "canonical_material_id": "mat_e1d1f6a1f00f",
+  "canonical_name": "Structures-1",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_3432b972d513",
+    "mechcard_9564937254bc"
+  ],
+  "recipe_card_ids": [
+    "recipe_c6575943ec8e"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "2402f4b4cedf",
+    "adc30d5190af"
+  ],
+  "evidence_trace_ids": [
+    "trace_87923317e787",
+    "trace_43bce71b76e0",
+    "trace_8b2892f3f54b"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:54:01.136497",
+  "updated_at": "2026-04-23T22:37:24.657495"
+}

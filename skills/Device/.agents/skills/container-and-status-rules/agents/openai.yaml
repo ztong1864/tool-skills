@@ -1,0 +1,7 @@
+interface:
+  display_name: "Container And Status Rules"
+  short_description: "Momentum container names, Acquire patterns, and status rules."
+  default_prompt: "Use $container-and-status-rules to choose valid container names and write correct Acquire and Status blocks for this experiment."
+
+policy:
+  allow_implicit_invocation: true

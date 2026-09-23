@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_26c5aa483b94",
+  "canonical_material_id": "mat_4962457bef15",
+  "canonical_name": "[ZnL2(SO4)]",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_d20caec3b48a",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_812542f6bf42",
+    "mcard_bc67a2284d95"
+  ],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_1f8a52048661"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 0.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "mechanism",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "3c82aca435dd"
+  ],
+  "evidence_trace_ids": [
+    "trace_5ba249046bdc",
+    "trace_22cc0e3392f3"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:48:06.119073",
+  "updated_at": "2026-04-23T20:48:06.119278"
+}

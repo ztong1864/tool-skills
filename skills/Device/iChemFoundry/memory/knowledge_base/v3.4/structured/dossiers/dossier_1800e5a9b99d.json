@@ -1,0 +1,103 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_1800e5a9b99d",
+  "canonical_material_id": "mat_c3758f66e17f",
+  "canonical_name": "[H2N(CH3)2]-Zn(NDC)(atz)-H2O",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_05348efc65be",
+  "pillar_id": "pil_63a39f87f1c2",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_01b93388b60d",
+    "mcard_4b800fdcb930",
+    "mcard_338b3498f590",
+    "mcard_c6973fb5e2fa",
+    "mcard_dcfdcf0a76b6",
+    "mcard_c4f7f1b774cd",
+    "mcard_256496477d9b",
+    "mcard_8d7d5346cd43",
+    "mcard_37165e5c2cc9",
+    "mcard_97fcfbc56df8",
+    "mcard_6f06223d17b3",
+    "mcard_fcdb2ea7c86a",
+    "mcard_57e8dd1e97b1",
+    "mcard_0ea517df76b0",
+    "mcard_dc5cdb36f43e",
+    "mcard_016d261b330d"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_0df717151b1b",
+    "mechcard_7529a0374d69",
+    "mechcard_659834f7bbd0",
+    "mechcard_f3e2afb60a02",
+    "mechcard_a5ae2d8b8060",
+    "mechcard_c2a76cf46dee",
+    "mechcard_50d938eabc31",
+    "mechcard_3b423399d326",
+    "mechcard_b23d9c1f75c8"
+  ],
+  "recipe_card_ids": [
+    "recipe_a85a03987591",
+    "recipe_b08045958dbf"
+  ],
+  "claim_card_ids": [
+    "claim_dc706352de26",
+    "claim_3ff4d1ace6c6",
+    "claim_974b9ae1cb5b",
+    "claim_e898d6a31e47",
+    "claim_11e8b15b8cea",
+    "claim_4bbbac37191d",
+    "claim_26e6f6cb3a28",
+    "claim_33b1e8aa3a96",
+    "claim_4ae8aad118c8",
+    "claim_fdf18b2d4fb1"
+  ],
+  "design_rule_card_ids": [
+    "drule_abc74dacd016",
+    "drule_4e7f97afdfdb"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "819514b3add8",
+    "a4f10cb0fd34"
+  ],
+  "evidence_trace_ids": [
+    "trace_70107ef398e1",
+    "trace_80b0fcd999b7",
+    "trace_27aacfbe83fd",
+    "trace_b938dd6efeac",
+    "trace_7816cf08709d",
+    "trace_61e0560aae56",
+    "trace_83fed3a18f69",
+    "trace_20a8a7cf712f",
+    "trace_79492b4a7c3f",
+    "trace_57d8c5249f0c",
+    "trace_f465eb51f0ea",
+    "trace_0bff0ac0c6ef",
+    "trace_e7ca3c2f775b",
+    "trace_d87f8e07e33b",
+    "trace_29ed85ab6f44",
+    "trace_a85bb6d0d20d",
+    "trace_1fbe530d4117",
+    "trace_82ef06dfa649",
+    "trace_a2019a5a8567",
+    "trace_572244372171",
+    "trace_8e96dba7b6ac",
+    "trace_a04d6ceb28c0",
+    "trace_dcb46c10d9c4"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:26:08.968278",
+  "updated_at": "2026-04-23T23:46:30.512386"
+}

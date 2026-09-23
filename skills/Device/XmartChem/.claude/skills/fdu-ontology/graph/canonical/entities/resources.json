@@ -1,0 +1,30 @@
+{
+  "resource:device-location": {
+    "description": "Physical layout, well, slot, or device location required by verified step JSON.",
+    "entity_type": "Resource",
+    "id": "resource:device-location",
+    "name": "Device location",
+    "resource_type": "location"
+  },
+  "resource:liquid-reagent": {
+    "description": "Liquid reagent resource used by liquid addition and high-filter actions.",
+    "entity_type": "Resource",
+    "id": "resource:liquid-reagent",
+    "name": "Liquid reagent",
+    "resource_type": "reagent"
+  },
+  "resource:solid-reagent": {
+    "description": "Solid reagent resource used by solid addition actions.",
+    "entity_type": "Resource",
+    "id": "resource:solid-reagent",
+    "name": "Solid reagent",
+    "resource_type": "reagent"
+  },
+  "resource:tip-consumable": {
+    "description": "Disposable pipette tip or related consumable required by liquid handling.",
+    "entity_type": "Resource",
+    "id": "resource:tip-consumable",
+    "name": "Tip consumable",
+    "resource_type": "consumable"
+  }
+}

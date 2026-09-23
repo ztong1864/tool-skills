@@ -1,0 +1,62 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_0351a36a8e79",
+  "canonical_material_id": "mat_687c72a64dbc",
+  "canonical_name": "Zn-MAFs",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_c4c95a9f3ba5",
+    "mcard_2ec0a89e19e6"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_930dbde8453c",
+    "mechcard_93f9df3f7b19",
+    "mechcard_7c1cecc8f24e",
+    "mechcard_02526404ac78",
+    "mechcard_cabc6afbb081",
+    "mechcard_d5e6005395df"
+  ],
+  "recipe_card_ids": [
+    "recipe_dde4b092f0d1"
+  ],
+  "claim_card_ids": [
+    "claim_388003209e23",
+    "claim_2678695b5cba",
+    "claim_dd5d5a682f17"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "23e9ac5655c5"
+  ],
+  "evidence_trace_ids": [
+    "trace_945fff502a85",
+    "trace_bffbca9e21f6",
+    "trace_856ca19df976",
+    "trace_a1c751f9c00f",
+    "trace_952d0bba429f",
+    "trace_e511d1914e21",
+    "trace_d1d46ddb43f0",
+    "trace_840d3762da20",
+    "trace_c10f79ce695a"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:04:16.722235",
+  "updated_at": "2026-04-23T21:04:53.314519"
+}

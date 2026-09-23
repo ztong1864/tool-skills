@@ -1,0 +1,29 @@
+S9
+ NMR (300 MHz, CDCl 3) δ 7.29-7.22 (m, 2 H), 7.22-7.16 (m, 2 H), 6.11-6.03 (m, 1 H)
+5.63-5.50 (m, 1 H), 2.20-2.05 (m, 2 H), 1.52- 1.40 (m, 2H), 1.38-1.20 (m, 14 H), 0.88
+(t, J = 6.5 Hz, 3 H);  13C NMR (75 MHz, CDCl 3) δ 205.2, 133.7, 132.1, 128.6, 127.7,
+95.5, 93.7, 31.9, 29.63, 29.59, 29.4, 29.3, 29.2, 29.1, 28.6, 22.7, 14.1; MS (EI) m/z
+292 (M+(37Cl), 0.27), 290 (M+(35Cl), 0.77), 129 (100); IR  (neat) 2955, 2925, 2854,
+1950, 1491, 1465, 1092, 1013 cm-1; HRMS (EI) calcd for C 19H2735Cl (M+): 290.1801.
+Found: 290.1798.
+(7) Synthesis of 1-(4-bromo phenyl)trideca-1,2-diene (3bc)
+(CH 2)9CH3
+3bc+ +
+N
+HO
+1.4 equivZnI2 (0.8 equiv)
+1.8 equiv2cCH3(CH 2)9toluene, 130 ℃
+8.5 h, 55%1bBrCHO
+Br
+
+The reaction of ZnI 2 (255 mg, 0.80 mmol), 1-dodecyne 1b (165 mg, 0.99 mmol),
+4-bromobenzaldehyde (332 m g, 1.79 mmol), and morpho line (121 mg, 1.39 mmol) in
+3 mL of toluene afforded 3bc (183 mg, 55%) as a liquid (eluent: petroleum ether): 1H
+NMR (300 MHz, CDCl 3) δ 7.41 (d, J = 8.4 Hz, 2 H), 7.15 (d, J = 8.4 Hz, 2 H),
+6.12-6.02 (m, 1 H), 5.62-5.50 (m, 1 H), 2.20-2.05 (m, 2 H), 1.54-1.42 (m, 2 H),
+1.40-1.20 (m, 14 H), 0.90 (t, J = 6.8 Hz, 3 H); 13C NMR (75 MHz, CDCl 3) δ 205.2,
+134.2, 131.6, 128.1, 120.1, 95.6, 93.8, 31.9, 29.63, 29.59, 29.4, 29.3, 29.2, 29.1, 28.6,
+22.7, 14.1; MS (EI) m/z (%) 336 (M+(81Br), 0.96), 334 (M+(79Br), 1.01), 129 (100); IR
+(neat) 2930, 2853, 1949, 1487, 1465, 1385, 1070, 1010 cm-1; HRMS (EI) calcd for
+C19H2779Br (M+): 334.1296. Found: 334.1296.
+(8) Synthesis of 1-(4-trifluoromet hylphenyl)trideca-1,2-diene (3be)

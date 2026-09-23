@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_54aa70fdaa4a",
+  "canonical_material_id": "mat_b3b3d155f6bf",
+  "canonical_name": "Zn-MOF-500-P",
+  "metal_element": "Zn",
+  "node_signature_id": "node_0e109e4b44cf",
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_6e6290d73ccc",
+    "mcard_f793ea40a5e4",
+    "mcard_9f4f338e3105",
+    "mcard_1e205a96a6af",
+    "mcard_865577bbf952",
+    "mcard_300b61e454ed"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_9d9197a95b18",
+    "mechcard_55b4441d96b9"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "987bc8a29237",
+    "c79105a7e122"
+  ],
+  "evidence_trace_ids": [
+    "trace_b688e43e64d3",
+    "trace_1030f7878fab"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:04:05.407632",
+  "updated_at": "2026-04-23T23:54:11.346866"
+}

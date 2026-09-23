@@ -1,0 +1,4 @@
+interface:
+  display_name: "Momentum Web Services"
+  short_description: "Launch or query Momentum via Web Services."
+  default_prompt: "Use $momentum-web-services to get a token, launch a Momentum process, or check a Momentum work queue on a target host."

@@ -1,0 +1,36 @@
+{
+  "skill_input": {
+    "layout_code": "T-3:30",
+    "unit_column": 30,
+    "unit_row": 10,
+    "substance": "乙腈",
+    "add_volume": 0.5,
+    "unit": "mL"
+  },
+  "resource_info": {
+    "layout_code": "N1-2:0",
+    "working_code": "",
+    "source_layout_code": "N1-2:0",
+    "resource_type": "SB125TC",
+    "substance": "乙腈",
+    "initial_volume": 30.0,
+    "initial_weight": 0.0,
+    "cur_volume": 48.55,
+    "cur_weight": 0.0,
+    "unit": "mL",
+    "created_at": 1773733840,
+    "updated_at": 1774747821,
+    "editor": "admin",
+    "status": 0,
+    "available_volume": 80.0,
+    "available_weight": 0.0,
+    "tray_QR_code": "SB125TC_02",
+    "QR_code": "",
+    "fid": 30422,
+    "chemical_id": 24,
+    "material_batch_number": null,
+    "color": null,
+    "with_cap": 1,
+    "used": false
+  }
+}

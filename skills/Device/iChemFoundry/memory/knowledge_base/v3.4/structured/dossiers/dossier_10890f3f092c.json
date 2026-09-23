@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_10890f3f092c",
+  "canonical_material_id": "mat_0bd7143b9736",
+  "canonical_name": "NixZn1-x(C2O4)L2",
+  "metal_element": "Ni",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_27090a4f91c9",
+  "pillar_id": "pil_d20caec3b48a",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_38000eeba3d6",
+    "mechcard_cf7916795672"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_538f446e4cf7",
+    "claim_7e5e5c615b76"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "de52aa10b4d9",
+    "d87085de1c1d"
+  ],
+  "evidence_trace_ids": [
+    "trace_5599ccdeacfe",
+    "trace_ad75bdd098a9"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:45:51.621142",
+  "updated_at": "2026-04-23T22:32:20.985052"
+}

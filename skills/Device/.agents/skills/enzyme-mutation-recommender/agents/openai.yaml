@@ -1,0 +1,4 @@
+interface:
+  display_name: "Enzyme Mutation Recommender"
+  short_description: "Traceable PylRS mutation recommendations."
+  default_prompt: "Use $enzyme-mutation-recommender to recommend traceable single-site enzyme mutations from a sequence and target substrates."

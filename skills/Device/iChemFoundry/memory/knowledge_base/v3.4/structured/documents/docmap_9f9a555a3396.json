@@ -1,0 +1,65 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_9f9a555a3396",
+  "paper_id": "e5c646067ae0",
+  "raw_path": "相关文献/Ding 等 - 2022 - Control of intracrystalline diffusion in a bilayer.pdf",
+  "title": "Control of intracrystalline diffusion in a bilayer",
+  "authors": [
+    "Ding"
+  ],
+  "year": 2022,
+  "doi": null,
+  "journal": null,
+  "task_type": "C3H6/C3H8 separation",
+  "normalized_task_id": "C3H6_C3H8_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ITQ-3",
+    "ZIF-8",
+    "MAF-23-O",
+    "ELM-12",
+    "ZSM-58",
+    "SAPO-34",
+    "CPL-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "sod",
+    "zif"
+  ],
+  "key_sections": {
+    "results_summary": "Chemical Engineering Journal 434 (2022) 134784\nAvailable online 20 January 2022\n1385-8947/© 2022 Elsevier B.V. All rights reserved.\nControl of intracrystalline diffusion in a bilayered metal-organic f"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:33:56.834409"
+}

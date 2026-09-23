@@ -1,0 +1,202 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_64da9a437508",
+  "paper_id": "df399a767a7e",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "one_line_summary": "[Zn2(trz)2(bpdc)]-DMA shows DMA_weight_loss_temperature_range = 56.0 K for DMA",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "DMA_weight_loss_temperature_range (DMA) = 56.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "weight_loss (CH3OH,DMA) = 20.1 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "DMA_weight_loss_percent (DMA) = 14.7 wt% at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "high thermal stability → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "channel dimensions along b axis of 10.1×6.5 Å2 → porosity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] functionalize the pillar ligands → framework flexibility or rigidity and physical properties can be adjusted"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a pillared-layer structure in MOF construction → provides an efficient route to controllably construct frameworks"
+    },
+    {
+      "title": "Comparison",
+      "body": "MOF 1 with tda dicarboxylate ligand vs MOF 2 with longer bpdc dicarboxylate ligand: winner=subject_b on b-axis_channel_dimension"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_7629e91510d0",
+    "trace_2ce9c5fa1fac",
+    "trace_bb32b74e1cff",
+    "trace_5d90168d54b3",
+    "trace_902670cb8bbc",
+    "trace_fde7121ee8b2",
+    "trace_15e087f04eea",
+    "trace_fc28951b7e85",
+    "trace_254fdc97deb2",
+    "trace_1391eb90f920",
+    "trace_aa8280ec063a",
+    "trace_6f99b5902480",
+    "trace_eaec3ea463a8",
+    "trace_50ff32bd4474",
+    "trace_8c02da2f4b9b",
+    "trace_0f299bf98dd1",
+    "trace_f47a9e53cb87",
+    "trace_e9e88bd74220",
+    "trace_dfb85e9b3c77",
+    "trace_d4c5c75b80f8",
+    "trace_34a205ea1c83",
+    "trace_ba686dc8de70",
+    "trace_db896977f8b9",
+    "trace_ce72ad545a3e",
+    "trace_cbc749be587d",
+    "trace_98b11ee076b5",
+    "trace_89e4859acde1",
+    "trace_7ad975427d2b",
+    "trace_271667af3df3",
+    "trace_ec82c8e7ae36",
+    "trace_ed604797b7f3",
+    "trace_40fc42daaafd",
+    "trace_274f00e70e35",
+    "trace_8b18be330a66",
+    "trace_2eb397daffbf",
+    "trace_60d3556e79b7",
+    "trace_05ad1fa06434",
+    "trace_c3855629f2a5",
+    "trace_8fbd71c4da56",
+    "trace_0ea7789856af",
+    "trace_6d4fcb0e5c55",
+    "trace_4427be737856",
+    "trace_3375a4143775",
+    "trace_84dc7a6861a9",
+    "trace_a5f56e5be841",
+    "trace_b64e2f21a822",
+    "trace_6d4fcb0e5c55",
+    "trace_8fbd71c4da56",
+    "trace_0ea7789856af",
+    "trace_84dc7a6861a9",
+    "trace_7ad975427d2b",
+    "trace_6f99b5902480",
+    "trace_98b11ee076b5",
+    "trace_05ad1fa06434",
+    "trace_5d90168d54b3",
+    "trace_fc28951b7e85",
+    "trace_274f00e70e35",
+    "trace_50ff32bd4474",
+    "trace_3375a4143775",
+    "trace_254fdc97deb2",
+    "trace_d4c5c75b80f8",
+    "trace_c3855629f2a5",
+    "trace_15e087f04eea",
+    "trace_fde7121ee8b2",
+    "trace_ec82c8e7ae36",
+    "trace_0f299bf98dd1",
+    "trace_7629e91510d0",
+    "trace_aa8280ec063a",
+    "trace_eaec3ea463a8",
+    "trace_40fc42daaafd",
+    "trace_b64e2f21a822",
+    "trace_60d3556e79b7",
+    "trace_ba686dc8de70",
+    "trace_4427be737856",
+    "trace_e9e88bd74220",
+    "trace_902670cb8bbc",
+    "trace_2ce9c5fa1fac",
+    "trace_2eb397daffbf",
+    "trace_bb32b74e1cff",
+    "trace_db896977f8b9",
+    "trace_89e4859acde1",
+    "trace_8c02da2f4b9b",
+    "trace_8b18be330a66",
+    "trace_1391eb90f920",
+    "trace_34a205ea1c83",
+    "trace_cbc749be587d",
+    "trace_ce72ad545a3e",
+    "trace_271667af3df3",
+    "trace_ed604797b7f3",
+    "trace_dfb85e9b3c77",
+    "trace_f47a9e53cb87",
+    "trace_a5f56e5be841"
+  ],
+  "measurement_card_ids": [
+    "mcard_6ca90042890d",
+    "mcard_b4041c828267",
+    "mcard_768774fa89c2"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_5067de0a1c9e",
+    "mechcard_78e279b4d3d3",
+    "mechcard_7fbb1cb71b32",
+    "mechcard_053097668bbf",
+    "mechcard_b998ed2c9b42"
+  ],
+  "recipe_card_ids": [
+    "recipe_eb9083779eec",
+    "recipe_ac4949de77ae"
+  ],
+  "claim_card_ids": [
+    "claim_5344fa19b3d6",
+    "claim_5c7cff929a4b",
+    "claim_6a6fa978ceae",
+    "claim_8212dc7fa981",
+    "claim_e0a27e61ed7e",
+    "claim_3367f3f67fec",
+    "claim_8d7c3e36fac7"
+  ],
+  "design_rule_card_ids": [
+    "drule_64aacf57d748",
+    "drule_760fbe972f05",
+    "drule_987118ca3933"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_7273e07decf0"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_f5ccd896d79f",
+    "mat_eb59e5132f6a"
+  ],
+  "dossier_ids": [
+    "dossier_e3665894923b",
+    "dossier_1a9a6f72ac95"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Both MOFs show a certain degree of stability in water and in acid/base solutions, indicating usable framework robustness.",
+    "Activated phases 1a and 2a are highly luminescence-sensitive to metal ions, especially Fe3+ and Cd2+.",
+    "The paper presents these two pillared-layer MOFs as luminescent probes with multifunctional sensitivity toward metal ions and small molecules."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.064443",
+  "updated_at": "2026-04-24T00:19:51.064446",
+  "raw_path": "相关文献/liu2015.pdf.pdf"
+}

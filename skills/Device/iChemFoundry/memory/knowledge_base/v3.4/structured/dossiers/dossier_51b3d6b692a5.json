@@ -1,0 +1,55 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_51b3d6b692a5",
+  "canonical_material_id": "mat_b342ae78d659",
+  "canonical_name": "MFI",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_82c96fb44648",
+    "mcard_05596479ab45",
+    "mcard_5d787c280f5d"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_58c9f116806f",
+    "mechcard_fd7944518ec2"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_6938ec1c28c5",
+    "claim_1f1822951dd1"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_2b2da17d154f"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "02a1c3dc2ba1",
+    "c200d37114d8"
+  ],
+  "evidence_trace_ids": [
+    "trace_9db0e50e5111",
+    "trace_086a17ddef25",
+    "trace_3db1e89665c4",
+    "trace_9b7470d5e022"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:07:53.996974",
+  "updated_at": "2026-04-23T22:25:36.054287"
+}

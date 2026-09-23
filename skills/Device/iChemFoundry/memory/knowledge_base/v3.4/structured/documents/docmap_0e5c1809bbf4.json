@@ -1,0 +1,57 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_0e5c1809bbf4",
+  "paper_id": "819514b3add8",
+  "raw_path": "相关文献/Liu 等 - 2017 - Selective gas adsorption and fluorescence sensing .pdf",
+  "title": "Selective gas adsorption and fluorescence sensing",
+  "authors": [
+    "Liu"
+  ],
+  "year": 2017,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "CH4",
+    "C2H4",
+    "C2H6"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "HKUST-1",
+    "UTSA-38",
+    "UiO-66",
+    "MIL-125"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Cd",
+    "In",
+    "Ti",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "NDC"
+  ],
+  "mentioned_topologies": [
+    "hkust"
+  ],
+  "key_sections": {
+    "results_summary": "Dalton\nTransactions\nCOMMUNICATION\nCite this: Dalton Trans., 2017, 46,\n4893\nReceived 27th January 2017,\nAccepted 8th March 2017\nDOI: 10.1039/c7dt00330g\nrsc.li/dalton\nSelective gas adsorption and ﬂuores"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:23:55.253838"
+}

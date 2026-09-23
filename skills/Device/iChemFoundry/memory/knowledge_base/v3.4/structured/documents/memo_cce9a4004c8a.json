@@ -1,0 +1,203 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_cce9a4004c8a",
+  "paper_id": "524fd695803c",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Zn2(C2O4)(C2N4H3)2(H2O)0.5 shows surface_area = 782.0 m2/g for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "pore_volume = 0.19 cm3/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 4.35 mmol/g at 1.2 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "surface_area = 782.0 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "small_rigid_multiply_chelated_linkers → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "small_pores_diffusion_barrier → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] design MOFs with amine-functionalized micropores using 3-amino-1,2,4-triazole as the ligand → enables a framework concept aimed at selective low-partial-pressure CO2 capture"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use oxalate as a co-ligand to bridge Zn-Atz layers → favors formation of the porous target framework instead of entirely different dense frameworks"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs the compared Zn-triazolate framework with spaces occupied by oxalate ligand: winner=subject_a on porosity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_dfcea82e601e",
+    "trace_7ed773bb897c",
+    "trace_a5cb44da40db",
+    "trace_c873f0a0815f",
+    "trace_ed8c82d0a9dd",
+    "trace_a154bb6024fc",
+    "trace_345d255e4d82",
+    "trace_0cd2e28082cc",
+    "trace_a95b015e3d48",
+    "trace_c7faf7c38be9",
+    "trace_106fe911afa4",
+    "trace_a69859594598",
+    "trace_44c8fb565572",
+    "trace_a990a04d0d5c",
+    "trace_5617b5d0ac48",
+    "trace_5cec20732dfa",
+    "trace_3f61cb6ffa19",
+    "trace_5b5fe284a347",
+    "trace_f395c2a925f8",
+    "trace_83833b8872fd",
+    "trace_af636529f063",
+    "trace_0e371345459c",
+    "trace_cf8914e9e490",
+    "trace_ea4ee2cba3e0",
+    "trace_8d795a4c2533",
+    "trace_a855a577face",
+    "trace_bf455a93e5b6",
+    "trace_d172d29d66dc",
+    "trace_6db294692c24",
+    "trace_40114a9eefac",
+    "trace_76b87890b8d9",
+    "trace_48149cc80d31",
+    "trace_6da1823514bf",
+    "trace_3cc1d6949ca5",
+    "trace_f119c05ae6fd",
+    "trace_85852ca23fda",
+    "trace_414e4bc8125f",
+    "trace_19026411caa1",
+    "trace_30ed33b4b9f6",
+    "trace_a38fe5509b22",
+    "trace_ec41c8fb4fe0",
+    "trace_8a4ae46c06fc",
+    "trace_6510edaa9a42",
+    "trace_345d255e4d82",
+    "trace_a95b015e3d48",
+    "trace_af636529f063",
+    "trace_19026411caa1",
+    "trace_5cec20732dfa",
+    "trace_a5cb44da40db",
+    "trace_ed8c82d0a9dd",
+    "trace_414e4bc8125f",
+    "trace_ec41c8fb4fe0",
+    "trace_6db294692c24",
+    "trace_83833b8872fd",
+    "trace_dfcea82e601e",
+    "trace_ea4ee2cba3e0",
+    "trace_a154bb6024fc",
+    "trace_c7faf7c38be9",
+    "trace_5b5fe284a347",
+    "trace_3cc1d6949ca5",
+    "trace_48149cc80d31",
+    "trace_6510edaa9a42",
+    "trace_44c8fb565572",
+    "trace_76b87890b8d9",
+    "trace_a855a577face",
+    "trace_a38fe5509b22",
+    "trace_30ed33b4b9f6",
+    "trace_106fe911afa4",
+    "trace_a69859594598",
+    "trace_c873f0a0815f",
+    "trace_d172d29d66dc",
+    "trace_5617b5d0ac48",
+    "trace_85852ca23fda",
+    "trace_8a4ae46c06fc",
+    "trace_6da1823514bf",
+    "trace_0e371345459c",
+    "trace_0cd2e28082cc",
+    "trace_bf455a93e5b6",
+    "trace_f119c05ae6fd",
+    "trace_7ed773bb897c",
+    "trace_cf8914e9e490",
+    "trace_a990a04d0d5c",
+    "trace_8d795a4c2533",
+    "trace_f395c2a925f8",
+    "trace_3f61cb6ffa19",
+    "trace_40114a9eefac"
+  ],
+  "measurement_card_ids": [
+    "mcard_ca839eea1cc7",
+    "mcard_c58ff56b9504",
+    "mcard_1aac683f444c",
+    "mcard_219c8d8a9ce9",
+    "mcard_76cebace164e",
+    "mcard_83b6cc516e30",
+    "mcard_0a54e874a9e0",
+    "mcard_0a99e3d1dd9a",
+    "mcard_ed3552f72cf9"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_b2127868bc3d",
+    "mechcard_37760cce34b3",
+    "mechcard_5a8a3344bae6"
+  ],
+  "recipe_card_ids": [
+    "recipe_e6e56da48869"
+  ],
+  "claim_card_ids": [
+    "claim_ffa577f14232",
+    "claim_117eba72d65d",
+    "claim_9af206dcf7e9",
+    "claim_7f8cee34a627",
+    "claim_d82bf0b7dd17",
+    "claim_77febcb3706b",
+    "claim_db909d406d5a",
+    "claim_208767aa291c"
+  ],
+  "design_rule_card_ids": [
+    "drule_c0607a43767b",
+    "drule_ab92c60101dd",
+    "drule_95e0642742d2"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_e45383f1dd74",
+    "comp_780ea87307fd"
+  ],
+  "failure_case_card_ids": [
+    "fail_402d7b3fb2a5",
+    "fail_e10561c119b8",
+    "fail_f9e2036ffd0e"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_e9e53e0a6ff3",
+    "mat_9afd4269fa58"
+  ],
+  "dossier_ids": [
+    "dossier_3c0da02da719",
+    "dossier_27f3728b17e5"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Porosity in related zinc-Atz layered materials is limited by efficient packing of pillaring dicarboxylates; some carboxylate-pillared analogues show no gas uptake.",
+    "Initial Atz-metal syntheses failed to give highly crystalline MOFs, so oxalic acid was introduced as a co-ligand to obtain the target framework.",
+    "Free amine groups protrude into the pores, creating a zig-zag largest channel and amine-functionalized micropores as a deliberate design feature."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.420683",
+  "updated_at": "2026-04-24T00:19:51.420687",
+  "raw_path": "相关文献/vaidhyanathan2009.pdf.pdf"
+}

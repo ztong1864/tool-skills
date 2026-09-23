@@ -1,0 +1,110 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_a2b530e1c445",
+  "canonical_material_id": "mat_1905762d1991",
+  "canonical_name": "Zn-BDC-TRZ",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_9b529ca41c80",
+  "pillar_id": "pil_16d744be8097",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_f4cec68d42e5",
+    "mcard_f4f60187a06c",
+    "mcard_4f4f2e491806",
+    "mcard_b057ccd68470",
+    "mcard_9113d373aefb",
+    "mcard_c762c11e4df1",
+    "mcard_72999f8c24ae",
+    "mcard_edc46d272638",
+    "mcard_42392865e0ed",
+    "mcard_003582c2de06",
+    "mcard_9508b4a223db"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_f5fbe3b58b3f",
+    "mechcard_162ea6388c95",
+    "mechcard_d6ba0abe13da",
+    "mechcard_7f7c44b6118e",
+    "mechcard_246b812fc94d",
+    "mechcard_73602eaca95f",
+    "mechcard_dcf892e7f5fa",
+    "mechcard_bb125187d852",
+    "mechcard_98bd66c1365f",
+    "mechcard_96ca5b147aea",
+    "mechcard_dd9775bf6eec",
+    "mechcard_7452718c4186",
+    "mechcard_ad51401fbb12"
+  ],
+  "recipe_card_ids": [
+    "recipe_8d1f86680827",
+    "recipe_bbd30646ad31",
+    "recipe_7d6e0d9c44a2"
+  ],
+  "claim_card_ids": [
+    "claim_6ccbd6ed0f50",
+    "claim_edc4b55ed3b8",
+    "claim_8abcd70170cc",
+    "claim_38681ac3acf8",
+    "claim_2e456fcff4ad",
+    "claim_e1057bc47d10"
+  ],
+  "design_rule_card_ids": [
+    "drule_4cf8395672e9",
+    "drule_cd3c5b5a6cec",
+    "drule_1ac2c2c7f485",
+    "drule_3d6d5aad1c30",
+    "drule_6663d8a7f65d",
+    "drule_98632c5ff6df"
+  ],
+  "failure_case_card_ids": [
+    "fail_f58649b70674",
+    "fail_b6fa9391de16"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "6b310008b988",
+    "95c5e1a4b5d9",
+    "1cdb348c09d0",
+    "25907edd8ee8"
+  ],
+  "evidence_trace_ids": [
+    "trace_bf014f9a75d7",
+    "trace_bf65f1ae7803",
+    "trace_0e82ba1bcd0f",
+    "trace_365d5707d255",
+    "trace_df366edac690",
+    "trace_078eaa82785b",
+    "trace_31248a2a0e0e",
+    "trace_6055442149ca",
+    "trace_5051c84fe1fe",
+    "trace_1f37c1180f84",
+    "trace_e5f2c0eb2c78",
+    "trace_e604a8d10426",
+    "trace_0880ffeb1406",
+    "trace_269edd59e8e3",
+    "trace_71b53cc4bf6c",
+    "trace_473e5bdd6567",
+    "trace_dc58c60d66d1",
+    "trace_adf32db1bc52",
+    "trace_d46c7b47a860",
+    "trace_fb1f48dccf98",
+    "trace_21f47e12fc7a",
+    "trace_ff3d2e38bc3c",
+    "trace_c5ef835371fa",
+    "trace_070c92b4ade7",
+    "trace_41c11fe790c2"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:51:29.334535",
+  "updated_at": "2026-04-23T23:11:30.229326"
+}

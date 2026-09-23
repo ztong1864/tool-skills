@@ -1,0 +1,7 @@
+interface:
+  display_name: "Device Operation Library"
+  short_description: "Unified Momentum device templates and workflow rules."
+  default_prompt: "Use $device-operation-library to find the correct Momentum device templates and workflow rules for this experiment."
+
+policy:
+  allow_implicit_invocation: true

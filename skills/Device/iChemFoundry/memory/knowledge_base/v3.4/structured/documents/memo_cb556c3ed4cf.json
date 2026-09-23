@@ -1,0 +1,210 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_cb556c3ed4cf",
+  "paper_id": "3bb15c92cc7b",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "SBU-2 shows Langmuir_surface_area = 496.0 m2/g for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 33.4 wt% at 10.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Langmuir_surface_area = 496.0 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "BET_surface_area = 339.0 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "hydroxyl groups from OH-IPA ligands → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "Zn paddle-wheel unit formed by carboxylate coordination of IPA ligands → unknown"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] pre-functionalize the MAC-4 linker with a hydroxyl group using 5-hydroxyisophthalic acid to create hydroxyl-functionalized channels in the isoreticular analogue MAC-4-OH → CO2 uptake is significantly enhanced, initial uptake rate increases from 11.4 to 26.6, and zero-coverage Qst increases from 21 to about 31 kJ mol−1 despite lower surface area"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] combine trinuclear-triangular and paddle-wheel SBUs within one porous MOF framework → enables formation of a new porous binodal framework class, exemplified by MAC-4 as the first reported porous MOF using both SBU types together"
+    },
+    {
+      "title": "Comparison",
+      "body": "MAC-4-OH vs MAC-4: winner=subject_a on CO2_uptake"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_7eaff0454ea5",
+    "trace_89604e61d61e",
+    "trace_3583005a6b63",
+    "trace_0e3cf620e9d8",
+    "trace_f39148c0fbbc",
+    "trace_65232544f1fa",
+    "trace_178a60854a29",
+    "trace_d3fd374c6060",
+    "trace_684ce29fd367",
+    "trace_5f726727e091",
+    "trace_a2f1986bebc2",
+    "trace_cc0ab0030187",
+    "trace_5ed3fdb355ca",
+    "trace_a77e311ea831",
+    "trace_9b1d36447d48",
+    "trace_4b0fcd5af806",
+    "trace_93c08b7a2f20",
+    "trace_58ee3b93acdc",
+    "trace_5690de38b74a",
+    "trace_2b44c4e2baa6",
+    "trace_695f50d8b1a4",
+    "trace_869841ca27f0",
+    "trace_d70c07b01484",
+    "trace_3734bf125f11",
+    "trace_a04f3b2f1ac6",
+    "trace_5e8d5cb8113a",
+    "trace_e05c4c6ff484",
+    "trace_c9078209cb14",
+    "trace_cfb1edc69600",
+    "trace_f2d83c59e917",
+    "trace_c0dad21dc8d6",
+    "trace_dcdc895441f1",
+    "trace_b86340f97177",
+    "trace_5eed072101db",
+    "trace_2eaeeeb0f1db",
+    "trace_cabd35e2a779",
+    "trace_286aa784d931",
+    "trace_b02e226ae965",
+    "trace_2111cb3bb1b1",
+    "trace_fd26f6d43ffb",
+    "trace_516ec9b9fdc8",
+    "trace_7ed94bcc050c",
+    "trace_7f3081d45fda",
+    "trace_339079604417",
+    "trace_d7b6df5d1a15",
+    "trace_a3b2e55e44e4",
+    "trace_93c08b7a2f20",
+    "trace_5f726727e091",
+    "trace_a04f3b2f1ac6",
+    "trace_516ec9b9fdc8",
+    "trace_178a60854a29",
+    "trace_cc0ab0030187",
+    "trace_695f50d8b1a4",
+    "trace_7eaff0454ea5",
+    "trace_a2f1986bebc2",
+    "trace_4b0fcd5af806",
+    "trace_f39148c0fbbc",
+    "trace_684ce29fd367",
+    "trace_5ed3fdb355ca",
+    "trace_3734bf125f11",
+    "trace_339079604417",
+    "trace_9b1d36447d48",
+    "trace_58ee3b93acdc",
+    "trace_2eaeeeb0f1db",
+    "trace_7ed94bcc050c",
+    "trace_65232544f1fa",
+    "trace_c0dad21dc8d6",
+    "trace_286aa784d931",
+    "trace_d70c07b01484",
+    "trace_cabd35e2a779",
+    "trace_b86340f97177",
+    "trace_dcdc895441f1",
+    "trace_a77e311ea831",
+    "trace_89604e61d61e",
+    "trace_b02e226ae965",
+    "trace_869841ca27f0",
+    "trace_5eed072101db",
+    "trace_d3fd374c6060",
+    "trace_fd26f6d43ffb",
+    "trace_c9078209cb14",
+    "trace_2111cb3bb1b1",
+    "trace_d7b6df5d1a15",
+    "trace_cfb1edc69600",
+    "trace_7f3081d45fda",
+    "trace_3583005a6b63",
+    "trace_0e3cf620e9d8",
+    "trace_2b44c4e2baa6",
+    "trace_e05c4c6ff484",
+    "trace_a3b2e55e44e4",
+    "trace_5690de38b74a",
+    "trace_f2d83c59e917",
+    "trace_5e8d5cb8113a"
+  ],
+  "measurement_card_ids": [
+    "mcard_d0d395916e16",
+    "mcard_77a5c455d64b",
+    "mcard_7ea032f88189",
+    "mcard_78ff97c8d83f",
+    "mcard_26367ccd484b"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_3f2cd07efef1",
+    "mechcard_442317bef24b",
+    "mechcard_619e8083e8e9",
+    "mechcard_d4c996fd077c",
+    "mechcard_d2f83d5e5dce",
+    "mechcard_a89424d96692",
+    "mechcard_aad12a34473d",
+    "mechcard_4f8982764ddc",
+    "mechcard_2aa2cd4ffea3"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_3d609ef489c3",
+    "claim_b18bb1b02d67",
+    "claim_5b945fee3736",
+    "claim_3496ac400033",
+    "claim_dce1417e53d2",
+    "claim_fe2b43b3163e",
+    "claim_3f6603fa1e2b"
+  ],
+  "design_rule_card_ids": [
+    "drule_71375fb2a68b",
+    "drule_b26f2d1cbfcf"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_4b033709e02c",
+    "comp_cc4529e09d94",
+    "comp_4735afae3c20"
+  ],
+  "failure_case_card_ids": [
+    "fail_388a72f505c0"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_7d242cd548d4",
+    "mat_1cd74d4a99f9",
+    "mat_24c7d563bd19",
+    "mat_b7d2292f059b"
+  ],
+  "dossier_ids": [
+    "dossier_c36938cf94dc",
+    "dossier_5d1831176996",
+    "dossier_47365a237127",
+    "dossier_4715e51e1956"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MAC-4 forms a 3D framework with 1D zig-zag open channels along the a axis through linked trinuclear and paddle-wheel units.",
+    "Single-crystal analysis shows MAC-4-OH is isoreticular with MAC-4, but its channels are functionalized by hydroxyl groups.",
+    "In MAC-4, dmtrz ligands and a μ3-OH bridge generate a trinuclear-triangular [Zn3(dmtrz)3(OH)(O2C)2] SBU."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.038111",
+  "updated_at": "2026-04-24T00:19:51.038119",
+  "raw_path": "相关文献/ling2012.pdf.pdf"
+}

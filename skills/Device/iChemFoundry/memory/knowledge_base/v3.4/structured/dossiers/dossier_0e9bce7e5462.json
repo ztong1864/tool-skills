@@ -1,0 +1,55 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_0e9bce7e5462",
+  "canonical_material_id": "mat_93e9fe21258e",
+  "canonical_name": "{[Zn2(TDC)2(DATRZ)]-(3H2O)-(DMF)}n",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_d41e5228bd77",
+  "pillar_id": "pil_0dce51fe77e8",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_5d6609534daa"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_666203a5bb6b",
+    "mechcard_e0afa993c3e7",
+    "mechcard_4b157cac2925",
+    "mechcard_59cbd3c5ac50"
+  ],
+  "recipe_card_ids": [
+    "recipe_198229c6b2fd",
+    "recipe_84016ffeb518"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "6a5b1f4fd296",
+    "dc6fb3fab588"
+  ],
+  "evidence_trace_ids": [
+    "trace_369776b6126d",
+    "trace_4611b7e51c67",
+    "trace_8ced89750e16",
+    "trace_34c57191666e",
+    "trace_92f9a7a6005e",
+    "trace_8e70e744debf"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:51:39.838212",
+  "updated_at": "2026-04-28T13:29:57.852163"
+}

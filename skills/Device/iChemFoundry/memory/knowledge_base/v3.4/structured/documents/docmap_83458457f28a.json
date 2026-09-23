@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_83458457f28a",
+  "paper_id": "02a1c3dc2ba1",
+  "raw_path": "相关文献/diffusivity-of-propylene-in-one-dimensional-medium-pore-zeolites.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ZSM-48",
+    "ZSM-5",
+    "SEV-2016",
+    "ZSM-23",
+    "ZSM-23-d",
+    "ZSM-22",
+    "MIL-47"
+  ],
+  "mentioned_metals": [
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "One-dimensional medium-pore zeolites are promising catalysts for\npropylene production from naphtha cracking due to their high selectivity. However, fast",
+    "conclusion": "At a similar molecule/[accessible volume]\nloadings, ZSM-5 and ZSM-22 have similar diﬀusion\ncoeﬃcients. The diﬀusion coeﬃcient of propylene in ZSM-5",
+    "results_summary": "Diﬀusivity of Propylene in One-Dimensional Medium-Pore Zeolites\nZainab A. Alaithan,* Nicholas Harrison, and German Sastre*\nCite This: J. Phys. Chem. C 2021, 125, 19200−19208\nRead Online\nACCESS\nMetrics"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:59:11.966871"
+}

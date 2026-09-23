@@ -1,0 +1,628 @@
+{
+  "_meta": {
+    "version": "v4",
+    "description": "Maps lever_id -> MaterialKB filter DSL",
+    "last_updated": "2026-05-24T01:10:28.968666",
+    "stats": {
+      "total_levers": 31,
+      "filterable": 18,
+      "advisory": 13,
+      "with_filters": 16
+    }
+  },
+  "lever_24e80ebf9352": {
+    "lever_name": "increase_syn_triazole_orientation_bias",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 增强三唑环同向构象偏好",
+      "筛选: 含三唑/四唑配体的MOF",
+      "关注: 配体柔性可通过dihedral角调控的材料"
+    ]
+  },
+  "lever_09816eb6e03a": {
+    "lever_name": "optimize_ligand_bend_angle_via_triazole_dihedral_tuning",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 通过三唑二面角调优配体弯折角",
+      "筛选: 含可旋转二面角的配体",
+      "关注: 配体弯折角影响孔窗尺寸的材料"
+    ]
+  },
+  "lever_1c99a3df2f79": {
+    "lever_name": "functionalize_pores_with_co2_philic_polar_sites",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "CO2_capture",
+                "CO2_N2_separation",
+                "C2H2_CO2_separation",
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 功能化孔道引入CO2亲和极性位点",
+      "筛选: 含-NH2/-OH/开放金属位点的MOF",
+      "关注: 测量数据中CO2吸附热>30 kJ/mol的材料"
+    ]
+  },
+  "lever_5f95470689dc": {
+    "lever_name": "decrease_pore_size_to_co2_affinity_window_while_avoiding_xe_cavity_matching",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "topology",
+              "op": "in",
+              "value": [
+                "sod",
+                "lta",
+                "gis",
+                "cha"
+              ]
+            },
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "CO2_capture",
+                "CO2_N2_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 缩小孔径至CO2亲和窗口(3.3Å附近)，同时避免Xe空腔匹配",
+      "筛选: 小孔窗拓扑(sod/lta/gis/cha)",
+      "关注: 孔窗直径≈3.3-3.8Å的材料"
+    ]
+  },
+  "lever_5aaef73f6ab0": {
+    "lever_name": "reduce_highly_polarizable_hydrophobic_xe_binding_domains",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "Xe_Kr_separation",
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 减少高极化疏水Xe结合域",
+      "筛选: 避免Xe共格空腔(≈4.1Å)的拓扑",
+      "关注: 孔腔尺寸偏离Xe动力学直径(4.1Å)的材料"
+    ]
+  },
+  "lever_8ae3088ade20": {
+    "lever_name": "functionalize_pore_surface_with_polarizable_xe_philic_sites",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "Xe_Kr_separation",
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 功能化孔表面引入可极化Xe亲和位点",
+      "筛选: 含芳香环或重原子的MOF骨架",
+      "关注: Xe吸附热>20 kJ/mol的材料"
+    ]
+  },
+  "lever_37335cf291de": {
+    "lever_name": "optimize_cavity_size_to_xe_commensurate_confinement",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "Xe_Kr_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 优化空腔尺寸至Xe共格限域(≈4.1Å)",
+      "筛选: 空腔尺寸≈4.0-4.3Å的MOF",
+      "关注: Xe选择性>10的材料"
+    ]
+  },
+  "lever_46de5e871c8f": {
+    "lever_name": "increase_framework_stability_for_ambient_air_capture_regeneration",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "Xe_Kr_separation",
+                "CO2_capture",
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 提高骨架稳定性以耐受环境空气捕集-再生循环",
+      "筛选: 高化学/热稳定性MOF",
+      "关注: Zr/Cu/Zn基高稳定性骨架"
+    ]
+  },
+  "lever_73920ed87c7f": {
+    "lever_name": "reduce_strong_binding_site_density_along_diffusion_path",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "topology",
+              "op": "in",
+              "value": [
+                "sod",
+                "lta",
+                "gis",
+                "rho",
+                "cha"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 减少扩散路径上的强结合位点密度",
+      "筛选: 小孔窗拓扑(sod/lta/gis/rho)的材料",
+      "关注: window_diameter 在目标分子对动力学直径之间的材料"
+    ]
+  },
+  "lever_ab9cfdd1333e": {
+    "lever_name": "optimize_channel_cross_section_for_free_rotation_of_target",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "topology",
+              "op": "in",
+              "value": [
+                "sod",
+                "lta",
+                "gis",
+                "cha",
+                "afx"
+              ]
+            },
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "C3H6_C3H8_separation",
+                "C2H4_C2H6_separation",
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 优化通道截面以允许目标分子自由旋转",
+      "筛选: 具有一维通道的拓扑(sod/lta/cha)",
+      "关注: 通道尺寸略大于目标分子动力学直径的材料"
+    ]
+  },
+  "lever_de6a79ef8ba2": {
+    "lever_name": "functionalize_pore_walls_to_bias_competitor_orientation_trapping",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "topology",
+              "op": "in",
+              "value": [
+                "sod",
+                "lta",
+                "gis",
+                "rho",
+                "pcu"
+              ]
+            },
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "C3H6_C3H8_separation",
+                "C2H4_C2H6_separation",
+                "C2H2_CO2_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 功能化孔壁以偏向捕获竞争分子的取向",
+      "筛选: 具有可功能化孔壁的拓扑",
+      "关注: 含-NH2/-OH/-F官能团的材料"
+    ]
+  },
+  "lever_d316b276f8ae": {
+    "lever_name": "substitute_carbon_centered_ua_with_shifted_aua_sites",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: gas_separation, adsorption_simulation, diffusion_simulation",
+      "目标特征: force-field interaction site definition for hydrocarbon CHx groups in adsorbates"
+    ]
+  },
+  "lever_fc2e8c9d17b9": {
+    "lever_name": "optimize_chx_force_center_shift_distance",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "基于任务匹配: gas_separation"
+    ]
+  },
+  "lever_14ed20bf7aeb": {
+    "lever_name": "prioritize_shifted_aua_for_anisotropy_sensitive_mof_screening",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: gas_separation, adsorption_simulation, diffusion_simulation",
+      "目标特征: modeling protocol selection for MOFs with confined pores, directional binding si"
+    ]
+  },
+  "lever_f05c2512d656": {
+    "lever_name": "eliminate_residual_carboxylic_acid_band_at_1661_cm_inverse",
+    "lever_type": "filterable",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "基于任务匹配: "
+    ]
+  },
+  "lever_e6c7ef92d4b3": {
+    "lever_name": "optimize_nh_and_tetrazole_signature_consistency",
+    "lever_type": "filterable",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "基于任务匹配: "
+    ]
+  },
+  "lever_4a9f86686930": {
+    "lever_name": "increase_equilibrium_propylene_binding_sites",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "topology",
+              "op": "in",
+              "value": [
+                "sod",
+                "lta",
+                "pcu",
+                "sql"
+              ]
+            },
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "C3H6_C3H8_separation",
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 增加平衡态丙烯结合位点",
+      "筛选: 含开放金属位点或π-π堆积位点的拓扑",
+      "关注: Cu/Zn基MOF中具有不饱和配位位的材料"
+    ]
+  },
+  "lever_3a851c499a14": {
+    "lever_name": "introduce_moderate_kinetic_discrimination_without_blocking_equilibrium_capacity",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "topology",
+              "op": "in",
+              "value": [
+                "sod",
+                "lta",
+                "gis",
+                "rho"
+              ]
+            },
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "C3H6_C3H8_separation",
+                "C2H4_C2H6_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 引入适度动力学区分而不损失平衡容量",
+      "筛选: 孔窗直径可调的拓扑(sod/lta/gis)",
+      "关注: window_diameter 略大于较小分子动力学直径的材料"
+    ]
+  },
+  "lever_88191c4edb90": {
+    "lever_name": "increase_adsorption_front_uniformity_across_bed_accessible_domains",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "C3H6_C3H8_separation",
+                "CO2_capture",
+                "C2H2_CO2_separation",
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "目标: 提高床层可及域内吸附前沿均匀性",
+      "筛选: 颗粒形貌均一的材料",
+      "关注: 结晶度高、颗粒尺寸分布窄的材料"
+    ]
+  },
+  "lever_ea6e2be56999": {
+    "lever_name": "increase_hydroxyl_nest_density_near_rh_sites",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: heterogeneous_catalysis, hydroformylation",
+      "目标特征: local density and proximity of hydroxyl groups surrounding isolated Rh catalytic"
+    ]
+  },
+  "lever_7d6f20afe1aa": {
+    "lever_name": "optimize_micropore_solvophobicity_for_gas_enrichment",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: heterogeneous_catalysis, hydroformylation, gas_phase_reactant_enrichment",
+      "目标特征: solvophobic character of microporous domains surrounding Rh sites, controlling p"
+    ]
+  },
+  "lever_d22b8436f1a5": {
+    "lever_name": "co_localize_rh_sites_with_dual_polar_nonpolar_microdomains",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: heterogeneous_catalysis, hydroformylation, gas_phase_reactant_enrichment",
+      "目标特征: nanoscale spatial arrangement between Rh centers, hydroxyl nests, and adjacent g"
+    ]
+  },
+  "lever_7ace57783fcc": {
+    "lever_name": "decrease_particle_size_distribution_width",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: gas_separation, adsorption_modeling, mass_transfer_analysis",
+      "目标特征: particle size distribution uniformity of MOF crystals or formed pellets"
+    ]
+  },
+  "lever_16b5a6db442f": {
+    "lever_name": "optimize_representative_particle_radius_for_diffusion_path",
+    "lever_type": "filterable",
+    "candidate_filters": [
+      {
+        "filter_dsl": {
+          "object": "CandidateCompositionTuple",
+          "where": [
+            {
+              "field": "normalized_task_id",
+              "op": "in",
+              "value": [
+                "gas_separation"
+              ]
+            }
+          ]
+        }
+      }
+    ],
+    "material_search_hints": [
+      "基于任务匹配: gas_separation"
+    ]
+  },
+  "lever_820a0aec60c0": {
+    "lever_name": "optimize_pellet_porosity_for_uniform_radial_transport",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: gas_separation, adsorption_modeling, mass_transfer_analysis",
+      "目标特征: intercrystalline or pellet porosity within spherical adsorbent particles"
+    ]
+  },
+  "lever_43e1e1e57f05": {
+    "lever_name": "optimize_particle_size_distribution_for_free_flow",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: material_shaping, powder_processing, reactor_packing",
+      "目标特征: powder particle size distribution and fines fraction"
+    ]
+  },
+  "lever_eebeb6b19e23": {
+    "lever_name": "decrease_surface_roughness_and_irregular_agglomeration",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: material_shaping, powder_processing, reactor_packing",
+      "目标特征: particle morphology, surface roughness, and agglomerate irregularity"
+    ]
+  },
+  "lever_bf710236e8a8": {
+    "lever_name": "decrease_residual_moisture_and_surface_stickiness",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: material_shaping, powder_processing, reactor_packing",
+      "目标特征: residual guest content, surface moisture, and capillary-bridge-forming stickines"
+    ]
+  },
+  "lever_34f20ea6ce26": {
+    "lever_name": "optimize_excitation_window_to_near_uv_absorption",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: luminescent_sensing, optical_materials",
+      "目标特征: excitation wavelength matched to ligand-centered absorption band in the framewor"
+    ]
+  },
+  "lever_21d9acc81963": {
+    "lever_name": "increase_linker_pi_conjugation_to_shift_emission_window",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: luminescent_sensing, optical_materials",
+      "目标特征: linker π-conjugation length and electronic substituent pattern"
+    ]
+  },
+  "lever_95a46d1591df": {
+    "lever_name": "increase_framework_rigidity_to_enhance_ligand_centered_emission",
+    "lever_type": "advisory",
+    "candidate_filters": [],
+    "material_search_hints": [
+      "指导性杠杆，不直接映射到MaterialKB筛选",
+      "适用场景: luminescent_sensing, optical_materials",
+      "目标特征: coordination geometry and solid-state packing rigidity around the emissive linke"
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_0e4c78c4e4f0",
+  "paper_id": "2c4071961196",
+  "raw_path": "相关文献/photoluminescent-zn(ii)-metal-organic-frameworks-built-from-tetrazole-ligand-2d-four-connected-regular-honeycomb-(4363).pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "Kr"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Amino-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "In",
+    "Ga",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "nbo",
+    "acs",
+    "sql"
+  ],
+  "key_sections": {
+    "abstract": "Two metal-organic frameworks, [Zn2(ATA)3(ATA)2/2] (1) and [Zn(OH)(ATA)2] (2), have been synthesized by the",
+    "results_summary": "Photoluminescent Zn(II) Metal-Organic Frameworks Built from Tetrazole\nLigand: 2D Four-Connected Regular Honeycomb (4363)-net\nXian-Wen Wang,*,† Jing-Zhong Chen,† and Jian-Hong Liu‡\nFaculty of Materials"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:33:57.267131"
+}

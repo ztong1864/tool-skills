@@ -1,0 +1,50 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_1a92cd4c6118",
+  "canonical_material_id": "mat_d9a65a627d0f",
+  "canonical_name": "cis-[M(C2O4)L2]",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": "lig_27090a4f91c9",
+  "pillar_id": "pil_d20caec3b48a",
+  "topology": "one-dimensional",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_bdf53fa7c141",
+    "mechcard_421318e0a47e"
+  ],
+  "recipe_card_ids": [
+    "recipe_516293c183f1"
+  ],
+  "claim_card_ids": [
+    "claim_538f446e4cf7",
+    "claim_7e5e5c615b76"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "de52aa10b4d9",
+    "d87085de1c1d"
+  ],
+  "evidence_trace_ids": [
+    "trace_df37aa3c0fb0",
+    "trace_813cb9cf4b42",
+    "trace_8aee9fccd9a9"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:45:51.622532",
+  "updated_at": "2026-04-23T22:32:20.985467"
+}

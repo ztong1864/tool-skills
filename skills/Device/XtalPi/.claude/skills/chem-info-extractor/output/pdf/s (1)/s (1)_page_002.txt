@@ -1,0 +1,56 @@
+2534
+© Georg Thieme Verlag  Stuttgart · New York — Synthesis  2018 , 50, 2533–2545D. Ma et al. Paper Syn  thesis
+n >1, the difference in enantioselectivity is much larger. In
+most cases, the yields are also higher (entries 2–6). Besidesn-alkyl aldehyde 2a, the bulkier sec-alkyl aldehydes could
+also be applied. The reactions using ( S)-3b also gave chiral
+allenols in higher yields and ees than those using ( S)-3a
+(entries 7–9).
+Among the three reactants of the allenylation reaction,
+terminal alkynols 1 are usually not commercially available,
+and should be generally considered as the limiting reagent.Thus, the reaction was further optimized for this purpose.At first, we attempted the reaction with the ratio of1c/2a/(S)-3b being 1:1.5:1.1. As a result, the yield of ( R)-4ca
+was 51% and the ee-value was 94% (Table 2, entry 2), both of
+which were slightly lower than that of reactions using1c/2a/(S)-3b (ratio: 1.5:1.5:1) (entry1). On the basis of the
+results, the effect of the loading of 2a was screened (entries
+2–5): When the ratio of 1c/2a/(S)-3b was 1:1.4:1.1, ( R)-4ca
+was obtained in 46% yield with the highest ee of 95% (entry
+3). Increasing the loading of ( S)-3b to 1.2 equivalents led to
+an improved yield of 49% with the same ee (entry 6). Thus,
+the best conditions for this reaction could also be defined as1 (1.0 equiv) and 2 (1.4 equiv) reacted with ( S)-3b (1.2
+Table 1  Allenylation of Different Terminal Alkynols 1 with Aliphatic Aldehydes 2: (S)-3a vs ( S)-3ba
+Entry 12 (R)-4 from ( S)-3a (R)-4 from ( S)-3b
+n R Yield (%)bee (%) Yield (%)bee (%)
+11  ( 1a) n-C11H23(2a)6 0c [(R)-4aa]9 3c61 [( R)-4aa]9 6
+22  ( 1b) n-C11H23(2a) 49 [( R)-4ba] 86 51 [( R)-4ba]9 5
+33  ( 1c) n-C11H23(2a) 56 [( R)-4ca] 85 53 [( R)-4ca]9 5
+44  ( 1d) n-C11H23(2a) 51 [( R)-4da] 88 57 [( R)-4da]9 3
+55  ( 1e) n-C11H23(2a) 46 [( R)-4ea] 87 52 [( R)-4ea]9 6
+66  ( 1f) n-C11H23(2a) 53 [( R)-4fa] 88 50 [( R)-4fa]9 5
+74  ( 1d) Cy ( 2b) 45 [( R)-4db] 93 46 [( R)-4db]9 7
+84  ( 1d) i-Pr (2g) 40 [( R)-4dg] 92 49 [( R)-4dg]9 6
+94  ( 1d)E t2CH (2h) 34 [( R)-4dh] 94 53 [( R)-4dh]9 9
+a The reaction was conducted using 1 (1.5 mmol), 2 (1.5 mmol), ( S)-3a or ( S)-3b (1.0 mmol), and CuBr2 (20 mol%) in 1,4-dioxane (3 mL) at 130 °C for 12 h.
+b Isolated yield.
+c Data reported in entry 12 of Table 2 in Ref. 9a.1.5 equiv+
+1.5 equiv+CuBr 2 (20 mol%)
+1,4-dioxane, 130 °C, 12 h
+N2HOR1H
+OH( )n
+( )n
+12 (R)-4 3N
+H OHR
+R
+R = Ph, ( S)-3a
+R = Me, ( S)-3bR1CHO
+Table 2  Reaction of 2a with Pent-4-yn-1-ol ( 1c) as the Limiting Reagenta
+Entry 1c/2a/(S)-3b (R)-4ca
+Yield (%)bee (%)
+1 1.5:1.5:1 53 95
+2 1:1.5:1.1 51 943 1:1.4:1.1 46 954 1:1.45:1.1 46 945 1:1.6:1.1 50 936 1:1.4:1.2 49 95
+a The reaction was conducted using 1c, 2a, (S)-3b, and CuBr2 (20 mol%) in 1,4-dioxane (3 mL) on 1 mmol scale at 130 °C for 12 h.
+b Isolated yield.n-C11H23CHO ++
+N
+HOHCuBr 2 (20 mol%)
+1,4-dioxane, 130 °C, 12 h
+N2H
+OH HO
+1c 2a (S)-3b (R)-4can-C11H23n

@@ -1,0 +1,198 @@
+{
+  "_meta": {
+    "version": "v4",
+    "description": "Maps task_id -> PrinciplePlaybook IDs",
+    "last_updated": "2026-05-24T01:10:28.969306",
+    "stats": {
+      "total_tasks": 9,
+      "total_unique_principles": 5,
+      "total_unique_levers": 12
+    }
+  },
+  "C3H6_C3H8_separation": {
+    "primary_principle_playbook_id": "p_pbook_kinetic_separation",
+    "secondary_principle_playbook_ids": [],
+    "key_principles": [
+      "p_principle_window_sieving_kinetic_separation",
+      "mprin_e6a4d661d741",
+      "mprin_019ad6898ab3"
+    ],
+    "key_levers": [
+      "p_lever_pore_aperture_tuning_kinetic_selectivity",
+      "lever_3a851c499a14",
+      "lever_ab9cfdd1333e",
+      "lever_4a9f86686930"
+    ],
+    "v3_4_task_playbook_id": "playbook_97710f7aaa57",
+    "archetype": [
+      "kinetic_separation",
+      "size_exclusion"
+    ],
+    "target_molecule_pair": {
+      "smaller": "C3H6",
+      "larger": "C3H8"
+    }
+  },
+  "C2H4_C2H6_separation": {
+    "primary_principle_playbook_id": "p_pbook_kinetic_separation",
+    "secondary_principle_playbook_ids": [],
+    "key_principles": [
+      "p_principle_window_sieving_kinetic_separation",
+      "mprin_e6a4d661d741"
+    ],
+    "key_levers": [
+      "p_lever_pore_aperture_tuning_kinetic_selectivity",
+      "lever_ab9cfdd1333e",
+      "lever_73920ed87c7f"
+    ],
+    "v3_4_task_playbook_id": "playbook_7e3e1414a85b",
+    "archetype": [
+      "kinetic_separation",
+      "size_exclusion"
+    ],
+    "target_molecule_pair": {
+      "smaller": "C2H4",
+      "larger": "C2H6"
+    }
+  },
+  "CO2_N2_separation": {
+    "primary_principle_playbook_id": "p_pbook_thermodynamic_separation",
+    "secondary_principle_playbook_ids": [],
+    "key_principles": [
+      "mprin_e6a4d661d741",
+      "mprin_b3f31cadbafd"
+    ],
+    "key_levers": [
+      "lever_1c99a3df2f79",
+      "lever_5f95470689dc"
+    ],
+    "v3_4_task_playbook_id": "playbook_1b6976c614d9",
+    "archetype": [
+      "thermodynamic_separation"
+    ],
+    "target_molecule_pair": {
+      "smaller": "N2",
+      "larger": "CO2"
+    }
+  },
+  "C2H2_CO2_separation": {
+    "primary_principle_playbook_id": "p_pbook_thermodynamic_separation",
+    "secondary_principle_playbook_ids": [],
+    "key_principles": [
+      "mprin_e6a4d661d741",
+      "mprin_b3f31cadbafd"
+    ],
+    "key_levers": [
+      "lever_1c99a3df2f79",
+      "lever_de6a79ef8ba2"
+    ],
+    "v3_4_task_playbook_id": "playbook_e9842860b6f7",
+    "archetype": [
+      "thermodynamic_separation"
+    ],
+    "target_molecule_pair": {
+      "smaller": "C2H2",
+      "larger": "CO2"
+    }
+  },
+  "C2H2_C2H4_separation": {
+    "primary_principle_playbook_id": "p_pbook_thermodynamic_separation",
+    "secondary_principle_playbook_ids": [],
+    "key_principles": [
+      "mprin_e6a4d661d741"
+    ],
+    "key_levers": [
+      "lever_1c99a3df2f79",
+      "lever_de6a79ef8ba2"
+    ],
+    "v3_4_task_playbook_id": "playbook_e18c97d9a5d4",
+    "archetype": [
+      "thermodynamic_separation"
+    ],
+    "target_molecule_pair": {
+      "smaller": "C2H2",
+      "larger": "C2H4"
+    }
+  },
+  "Xe_Kr_separation": {
+    "primary_principle_playbook_id": "p_pbook_xe_kr_separation",
+    "secondary_principle_playbook_ids": [],
+    "key_principles": [
+      "mprin_f8664a10f48d",
+      "mprin_b3f31cadbafd"
+    ],
+    "key_levers": [
+      "lever_8ae3088ade20",
+      "lever_37335cf291de",
+      "lever_46de5e871c8f",
+      "lever_5aaef73f6ab0"
+    ],
+    "v3_4_task_playbook_id": "playbook_32958906d106",
+    "archetype": [
+      "size_exclusion",
+      "xenon_commensurate_confinement"
+    ],
+    "target_molecule_pair": {
+      "smaller": "Kr",
+      "larger": "Xe"
+    }
+  },
+  "CO2_capture": {
+    "primary_principle_playbook_id": "p_pbook_co2_capture",
+    "secondary_principle_playbook_ids": [],
+    "key_principles": [
+      "mprin_b3f31cadbafd",
+      "mprin_e6a4d661d741"
+    ],
+    "key_levers": [
+      "lever_1c99a3df2f79",
+      "lever_5f95470689dc",
+      "lever_46de5e871c8f"
+    ],
+    "v3_4_task_playbook_id": "playbook_ac4dd6271084",
+    "archetype": [
+      "thermodynamic_separation",
+      "equilibrium_selective_adsorption"
+    ],
+    "target_molecule_pair": {
+      "smaller": "CO2",
+      "larger": "N2"
+    }
+  },
+  "H2_storage": {
+    "primary_principle_playbook_id": "p_pbook_h2_storage",
+    "secondary_principle_playbook_ids": [],
+    "key_principles": [
+      "mprin_e6a4d661d741"
+    ],
+    "key_levers": [
+      "lever_46de5e871c8f"
+    ],
+    "v3_4_task_playbook_id": "playbook_8721d9ed5b64",
+    "archetype": [
+      "physisorption"
+    ],
+    "target_molecule_pair": {
+      "smaller": "H2",
+      "larger": "CH4"
+    }
+  },
+  "gas_separation": {
+    "primary_principle_playbook_id": "p_pbook_gas_separation",
+    "secondary_principle_playbook_ids": [],
+    "key_principles": [
+      "mprin_e6a4d661d741"
+    ],
+    "key_levers": [
+      "lever_73920ed87c7f",
+      "lever_ab9cfdd1333e",
+      "lever_de6a79ef8ba2",
+      "lever_1c99a3df2f79"
+    ],
+    "v3_4_task_playbook_id": "playbook_3d0b600eb8e7",
+    "archetype": [
+      "confinement_induced_diffusion"
+    ],
+    "target_molecule_pair": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "description": "Kinetic diameters of common gas molecules (Angstrom)",
+    "source": "Breck 1974 + literature"
+  },
+  "H2": 2.89,
+  "He": 2.6,
+  "H2O": 2.65,
+  "NH3": 2.6,
+  "CO2": 3.3,
+  "O2": 3.46,
+  "Ar": 3.4,
+  "N2": 3.64,
+  "CO": 3.76,
+  "CH4": 3.8,
+  "C2H2": 3.3,
+  "C2H4": 3.9,
+  "C2H6": 4.44,
+  "C3H6": 4.0,
+  "C3H8": 4.3,
+  "n-C4H10": 4.69,
+  "i-C4H10": 5.0,
+  "n-C5H12": 4.5,
+  "i-C5H12": 5.0,
+  "SF6": 5.13,
+  "Xe": 3.96,
+  "Kr": 3.6,
+  "SO2": 3.6,
+  "H2S": 3.6,
+  "NO": 3.17,
+  "NO2": 3.46,
+  "Cl2": 3.2
+}

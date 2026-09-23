@@ -1,0 +1,113 @@
+{
+  "protocol_id": "dh5a_mutant_construction_transformation",
+  "standard_name": "dh5a_mutant_construction_transformation",
+  "process_note": "check ATC1 lid 105, ATC2 lid 30,\nprepare balance pcr & balance DWP\n",
+  "containers": [
+    {"name": "Primer1", "role": "primer plate", "acquire_status": "PrimerMix", "initial_set": false},
+    {"name": "PCR_Plate1", "role": "PCR product plate", "acquire_status": "New", "final_status": "PCR_Plate1"},
+    {"name": "Tips_Liha50_1", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "Tips_MCA50_1", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "Tips_Liha10_1", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "Tips_Liha50_2", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "Tips_Liha50_3", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "PCR_Plate2", "role": "transformation plate", "acquire_status": "New", "final_status": "PCR_Plate2"},
+    {"name": "Cell_Plate1", "role": "LB cell plate", "acquire_status": "LB", "initial_set": false},
+    {"name": "Tips_Liha50_4", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "Tips_Liha200_1", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "8Well_Plate_1", "role": "spreading plate", "acquire_status": "New", "acquire_modifier": "'Lidded' HasLid", "final_status": "8Well_Plate_1"},
+    {"name": "8Well_Plate_2", "role": "spreading plate", "acquire_status": "New", "acquire_modifier": "'Lidded' HasLid", "final_status": "8Well_Plate_2"},
+    {"name": "8Well_Plate_3", "role": "spreading plate", "acquire_status": "New", "acquire_modifier": "'Lidded' HasLid", "final_status": "8Well_Plate_3"},
+    {"name": "8Well_Plate_4", "role": "spreading plate", "acquire_status": "New", "acquire_modifier": "'Lidded' HasLid", "final_status": "8Well_Plate_4"}
+  ],
+  "stages": [
+    {
+      "id": "stage1_pcr",
+      "comment": "STEP1 PCR",
+      "description": "Primer plate unseal, EVO PCR mix setup, plate sealing, centrifugation, ATC PCR protocol, and tips cleanup.",
+      "flow": [
+        "remove_seal_primer1",
+        "evo_load_primer1",
+        "evo_run_inheco",
+        "evo_run_pcr_mix",
+        {
+          "parallel": [
+            ["seal_primer1_alps", "cytomat_2c450_load_primer1", "cytomat_24h_load_tips_liha50_1"],
+            ["seal_pcr_plate1_alps", "centrifugeloader_load_pcr_plate1_bucket1", "centrifugeloader_load_balance_pcr_bucket2", "centrifugeloader_spin_pcr", "cytomat_24h_load_balance_pcr", "atc1_load_pcr_plate1", "atc1_run_pcr"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage2_dpni",
+      "comment": "STEP2  Dpn I",
+      "description": "PCR plate unseal, EVO DpnI addition, sealing, centrifugation, ATC DpnI protocol, and tips cleanup.",
+      "flow": [
+        "remove_seal_pcr_plate1",
+        "evo_load_pcr_plate1",
+        "evo_run_inheco",
+        "evo_run_dpni",
+        {
+          "parallel": [
+            ["cytomat_24h_load_tips_liha10_1"],
+            ["seal_pcr_plate1_alps", "centrifugeloader_load_pcr_plate1_bucket1", "centrifugeloader_load_balance_pcr_bucket2", "centrifugeloader_spin_pcr", "cytomat_24h_load_balance_pcr", "atc2_load_pcr_plate1", "atc2_run_dpni"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage3_transformation",
+      "comment": "STEP 3  DNA transformation",
+      "description": "PCR plate unseal, EVO transformation setup into PCR_Plate2, storage of PCR_Plate1, sealing and transformation protocol for PCR_Plate2.",
+      "flow": [
+        "remove_seal_pcr_plate1",
+        "evo_load_pcr_plate1",
+        "evo_run_inheco",
+        "evo_run_pre_transforming",
+        {
+          "parallel": [
+            ["cytomat_24h_load_tips_liha50_2_3"],
+            ["seal_pcr_plate1_alps", "cytomat_2c450_load_pcr_plate1", "seal_pcr_plate2_alps", "atc2_load_pcr_plate2", "atc2_run_transformation"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stage4_cell_revive",
+      "comment": "STEP 4  Cell revive",
+      "description": "PCR_Plate2 unseal, EVO transfer/add LB to Cell_Plate1, seal plates, shaking incubation, and Rotanta centrifugation.",
+      "flow": [
+        "remove_seal_pcr_plate2",
+        "evo_load_pcr_plate2",
+        "evo_run_add_lb",
+        {
+          "parallel": [
+            ["cytomat_24h_load_tips_liha50_4"],
+            ["seal_pcr_plate2_alps", "cytomat_2c450_load_pcr_plate2", "seal_cell_plate1_kbs", "tos1_load_cell_plate1"]
+          ]
+        },
+        "tos1_set_shake_900",
+        "tos1_incubate_cell_plate1_1h",
+        "rotanta_load_cell_plate1",
+        "rotanta_run_cell_plate1",
+        "staging_load_balance_dwps"
+      ]
+    },
+    {
+      "id": "stage5_spreading",
+      "comment": "STEP 5  Spreading",
+      "description": "Cell_Plate1 unseal, Fluent spreading onto four 8-well plates, seal/store Cell_Plate1, store tips, and incubate 8-well plates.",
+      "flow": [
+        "remove_seal_cell_plate1",
+        "fluent_load_cell_plate1",
+        "fluent_load_spreading_deck",
+        "fluent_run_spreading",
+        {
+          "parallel": [
+            ["seal_cell_plate1_kbs", "cytomat_10h_load_cell_plate1", "cytomat_24h_load_tips_liha200_1"],
+            ["cytomat_10c_load_8well_plates"]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_0c08705825b9",
+  "canonical_material_id": "mat_d586d092abb5",
+  "canonical_name": "HKUST-1",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_f6b66faad9a0"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_a95b2fe33eec",
+    "mechcard_5caa969ab4bf"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "fbf7094ee3a4"
+  ],
+  "evidence_trace_ids": [
+    "trace_f38106bf952e",
+    "trace_39a365aa0153",
+    "trace_bb2db0c080a1"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:50:48.108062",
+  "updated_at": "2026-04-23T18:50:48.108263"
+}

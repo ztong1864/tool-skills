@@ -1,0 +1,82 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_8502babc3e74",
+  "paper_id": "a4c5917133a0",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Paper a4c5917133a0: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Author Claim",
+      "body": "In MAC-4-OH, μ3-OH groups form hydrogen bonds with CO2 oxygen atoms, providing a mechanistic basis for stronger CO2 binding."
+    },
+    {
+      "title": "Author Claim",
+      "body": "CO2 also interacts with the OH-IPA ligand in MAC-4-OH; the C···O distance is about 3.35 Å, consistent with electrostatic attraction."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_49e0bdcbe833",
+    "trace_726717f80aaa",
+    "trace_23f16e040b74",
+    "trace_dd7cd92165ca",
+    "trace_48e8e137ab68",
+    "trace_ecb7a30e8afc",
+    "trace_099f282b6be6",
+    "trace_4630c8b38fb1",
+    "trace_7ca98f920421",
+    "trace_49e0bdcbe833",
+    "trace_099f282b6be6",
+    "trace_23f16e040b74",
+    "trace_48e8e137ab68",
+    "trace_726717f80aaa",
+    "trace_dd7cd92165ca",
+    "trace_7ca98f920421",
+    "trace_ecb7a30e8afc",
+    "trace_4630c8b38fb1"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_a232bd4c7895",
+    "claim_814c61f98b0b",
+    "claim_30aac118a677",
+    "claim_d1c351ef8a5d",
+    "claim_e18ef94fd580",
+    "claim_9c63b17327e1",
+    "claim_6d0a87541ec3"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_b7d2292f059b",
+    "mat_7d242cd548d4"
+  ],
+  "dossier_ids": [
+    "dossier_47365a237127",
+    "dossier_4715e51e1956"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "In MAC-4-OH, μ3-OH groups form hydrogen bonds with CO2 oxygen atoms, providing a mechanistic basis for stronger CO2 binding.",
+    "CO2 also interacts with the OH-IPA ligand in MAC-4-OH; the C···O distance is about 3.35 Å, consistent with electrostatic attraction.",
+    "Activated MAC-4-OH shows measurable high-pressure CO2 uptake at 298 K, indicating CO2 adsorption capacity in the desolvated framework."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.2,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.220882",
+  "updated_at": "2026-04-28T14:29:22.220887"
+}

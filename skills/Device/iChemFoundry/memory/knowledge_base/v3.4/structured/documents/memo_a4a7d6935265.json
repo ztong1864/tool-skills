@@ -1,0 +1,191 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_a4a7d6935265",
+  "paper_id": "7053ffe8885e",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "C2H2"
+  ],
+  "one_line_summary": "{[Zn2(HBDC)2(dmtrz)2]-guest}n shows Langmuir_surface_area = 807.8 m2/g for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "n-HEX_uptake (n-HEX) = 13.4 wt% at 0.091 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "3MP_uptake (3MP) = 12.1 wt% at 0.983 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "pore_size = 6.7 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "adsorption_desorption_related_peak_broadening → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "presence_of_SBU-2 → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] adjust the layer distance in similar pillar-layer MOF structures → separation purpose can be tuned by changing which adsorbates are preferentially separated"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs [Zn2(BDC)2(dabco)]n: winner=subject_b on BET_surface_area"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs [Zn2(BDC)2(dabco)]n: winner=subject_b on framework_breathing_peak_shift_in_benzene"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_57cd743d8687",
+    "trace_d75cb514900e",
+    "trace_6b4a89e25032",
+    "trace_c0956698f633",
+    "trace_6708a962c07f",
+    "trace_bd8b87948c93",
+    "trace_dee75c73bb6a",
+    "trace_3a7cc45586bc",
+    "trace_b5b7c7d22235",
+    "trace_f01827134957",
+    "trace_b41f6c44252c",
+    "trace_75586f87445b",
+    "trace_f3c7f278feab",
+    "trace_5fec592c226e",
+    "trace_c0adbf1867c3",
+    "trace_2cbec80757c0",
+    "trace_1567287ac49f",
+    "trace_f3a169059e23",
+    "trace_73159a0c4d2c",
+    "trace_3fab900a69f8",
+    "trace_b9dd3af22876",
+    "trace_b0a23801b67a",
+    "trace_81204b242919",
+    "trace_b2dcd2b86b79",
+    "trace_402619b81f23",
+    "trace_cc19f4d23f4b",
+    "trace_718ed9aa1723",
+    "trace_988ff7877c8d",
+    "trace_95ced1e2db5f",
+    "trace_2c8d6a2abd1f",
+    "trace_8ee815656488",
+    "trace_2ad8b672f7cf",
+    "trace_627f8df93da7",
+    "trace_945a12ee8f72",
+    "trace_d387e4a4e8d7",
+    "trace_8f5f1d1a511e",
+    "trace_5832ee757f56",
+    "trace_95ced1e2db5f",
+    "trace_dee75c73bb6a",
+    "trace_2c8d6a2abd1f",
+    "trace_c0956698f633",
+    "trace_1567287ac49f",
+    "trace_d387e4a4e8d7",
+    "trace_945a12ee8f72",
+    "trace_5832ee757f56",
+    "trace_f3c7f278feab",
+    "trace_d75cb514900e",
+    "trace_b2dcd2b86b79",
+    "trace_5fec592c226e",
+    "trace_3fab900a69f8",
+    "trace_cc19f4d23f4b",
+    "trace_718ed9aa1723",
+    "trace_c0adbf1867c3",
+    "trace_73159a0c4d2c",
+    "trace_b5b7c7d22235",
+    "trace_57cd743d8687",
+    "trace_2ad8b672f7cf",
+    "trace_75586f87445b",
+    "trace_8f5f1d1a511e",
+    "trace_bd8b87948c93",
+    "trace_6b4a89e25032",
+    "trace_402619b81f23",
+    "trace_2cbec80757c0",
+    "trace_988ff7877c8d",
+    "trace_f3a169059e23",
+    "trace_3a7cc45586bc",
+    "trace_f01827134957",
+    "trace_b0a23801b67a",
+    "trace_b9dd3af22876",
+    "trace_627f8df93da7",
+    "trace_b41f6c44252c",
+    "trace_8ee815656488",
+    "trace_6708a962c07f",
+    "trace_81204b242919"
+  ],
+  "measurement_card_ids": [
+    "mcard_91c21cf8814b",
+    "mcard_b7465721b550",
+    "mcard_92e885f4e71b",
+    "mcard_a060e5ad3d3c",
+    "mcard_6698efa6df2e",
+    "mcard_a3a4384fe126",
+    "mcard_b8b85a7e3ba8",
+    "mcard_b76deae1a7fb",
+    "mcard_31876d5df7ac",
+    "mcard_61c79d2e998b",
+    "mcard_b65d4741f67f",
+    "mcard_ea3e70bbb36f"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_9629c52713f3",
+    "mechcard_7d13b0444f98",
+    "mechcard_889c1885ecbc"
+  ],
+  "recipe_card_ids": [
+    "recipe_bfd9d9114aa7",
+    "recipe_3f40ecd0fc57",
+    "recipe_9344a6d76836"
+  ],
+  "claim_card_ids": [
+    "claim_a7df2d5b0883",
+    "claim_f658d9d1566f",
+    "claim_708c4cc0294c",
+    "claim_cfd549d3163e",
+    "claim_3fbdbced9555",
+    "claim_21b8924327f0",
+    "claim_49bb50325cb6",
+    "claim_0e30033ce0b1"
+  ],
+  "design_rule_card_ids": [
+    "drule_26e5ac36e861"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_919a6af63968",
+    "comp_f556fe9e8a35",
+    "comp_cc2fe8c05ec7"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c07f018810cb",
+    "mat_3a9b6a4e9635"
+  ],
+  "dossier_ids": [
+    "dossier_eb47da81ff0e",
+    "dossier_752a444d8205"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "At near-saturation pressure, uptake rises to 13.3 wt% for n-HEX at P/P0=0.98 and 12.1 wt% for 3MP at P/P0=0.97.",
+    "Compound 1 shows only slight breathing; its maximum PXRD peak shift in benzene is 0.081, far smaller than >0.21 for [Zn2(BDC)2(dabco)]n.",
+    "The paper proposes that separation targets in related pillar-layer MOFs can be tuned by adjusting the interlayer distance."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.360084",
+  "updated_at": "2026-04-28T14:29:22.360088"
+}

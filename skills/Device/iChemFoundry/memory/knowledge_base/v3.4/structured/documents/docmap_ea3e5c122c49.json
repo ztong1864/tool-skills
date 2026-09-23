@@ -1,0 +1,59 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_ea3e5c122c49",
+  "paper_id": "125eb726c7ef",
+  "raw_path": "相关文献/Liang 等 - 2021 - A porous anionic zinc(II) metal–organic framework .pdf",
+  "title": "A porous anionic zinc(II) metal–organic framework",
+  "authors": [
+    "Liang"
+  ],
+  "year": 2021,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H2",
+    "Xe"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "SNU-151",
+    "CPF-13"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA",
+    "dicarboxylate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "pcu"
+  ],
+  "key_sections": {
+    "results_summary": "CrystEngComm\nPAPER\nCite this: CrystEngComm, 2021, 23,\n7348\nReceived 11th August 2021,\nAccepted 11th September 2021\nDOI: 10.1039/d1ce01074c\nrsc.li/crystengcomm\nA porous anionic zincĲII) metal–organic f"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:10:45.397175"
+}

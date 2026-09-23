@@ -1,0 +1,55 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_1ef87ae24959",
+  "paper_id": "94e80a9c0ffd",
+  "raw_path": "/Users/weiji-feng/project/MOFDiscoveryAgent/相关文献/Zhu 等 - 2021 - Precise regulating synergistic effect in metal–org-1.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "BY-2",
+    "MAC-20-II",
+    "MAC-18",
+    "MAC-17",
+    "TS-200",
+    "MAC-20",
+    "BO-14",
+    "MAC-20-I",
+    "SY-2",
+    "MAC-19-I",
+    "MAC-19"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "In",
+    "V"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "azolate",
+    "BTC"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "1 \n \n \nElectronic Supplementary Information (ESI) \nPrecise regulating synergistic effect in metal-organic framework for stepwise-\ncontrolled adsorption \nJiaxing Zhu, Yi Yu, Hongchuan Fan, Huaqiang Cai"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-28T13:48:53.319130"
+}

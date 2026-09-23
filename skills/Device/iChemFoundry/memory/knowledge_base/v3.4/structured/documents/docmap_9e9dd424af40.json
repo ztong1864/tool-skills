@@ -1,0 +1,83 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_9e9dd424af40",
+  "paper_id": "03314ed46af4",
+  "raw_path": "相关文献/Kim 等 - Achieving Superprotonic Conduction in Metal-Organi.pdf",
+  "title": "Achieving Superprotonic Conduction in Metal-Organi",
+  "authors": [
+    "Kim"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "VNU-15",
+    "CAT-5",
+    "ZIF-8",
+    "UiO-66",
+    "MIL-101-SO",
+    "GS-10",
+    "MFM-500",
+    "CPM-103",
+    "BUT-8",
+    "NENU-3-Ina",
+    "PCMOF-3",
+    "MIL-101",
+    "Hexaethyl-1",
+    "MIL-53",
+    "PCC-72",
+    "HKUST-1",
+    "PCMOF-5",
+    "GS-11",
+    "IA-2",
+    "BTL-433",
+    "NENU-3"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Al",
+    "Cr",
+    "Zr",
+    "Ca",
+    "Sr",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "DOBDC",
+    "BTC",
+    "BPY",
+    "NDC",
+    "BDC",
+    "TED",
+    "BPDC"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif",
+    "hkust"
+  ],
+  "key_sections": {
+    "results_summary": "S1\t\r  \n\t\r  \nSupporting Information \nAchieving Superprotonic Conduction in Metal-Organic \nFrameworks through Iterative Design Advances \n \n \nSiRim Kim, Biplab Joarder, Jeff A. Hurd, Jinfeng Zhang, Karl "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:00:43.885704"
+}

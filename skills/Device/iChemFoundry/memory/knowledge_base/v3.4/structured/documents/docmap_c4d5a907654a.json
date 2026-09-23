@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_c4d5a907654a",
+  "paper_id": "6dce67f7e059",
+  "raw_path": "相关文献/Zou 等 - 2018 - Sensitive luminescent probes of aniline, benzaldeh.pdf",
+  "title": "Sensitive luminescent probes of aniline, benzaldeh",
+  "authors": [
+    "Zou"
+  ],
+  "year": 2018,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "YCXY-05",
+    "Max-2500",
+    "Varian-720"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Cr",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "pcu"
+  ],
+  "key_sections": {
+    "conclusion": "In summary, a unique anionic zinc(II) metal-organic framework was\nsynthesized and characterized. Through post-functionalization via ca-",
+    "results_summary": "Contents lists available at ScienceDirect\nDyes and Pigments\njournal homepage: www.elsevier.com/locate/dyepig\nSensitive luminescent probes of aniline, benzaldehyde and Cr(VI) based on a\nzinc(II) metal-"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:34:22.559235"
+}

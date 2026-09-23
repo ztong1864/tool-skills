@@ -1,0 +1,28 @@
+S13
+ 1-((but-3-ynyloxy)methyl)-4-nitrobenzene 1c (206 mg, 1.00 mmol), benzaldehyde
+(190 mg, 1.79 mmol), morpholine (123 mg, 1.41 mmol) and toluene (5 mL) were
+added sequentially into a dr ied reaction tube equipped with a reflux condenser under
+an argon atmosphere and the resu lting mixture was stirred at 130 ℃. When the
+reaction was complete as monitored by TLC, the reaction mixture was cooled to room
+temperature and then filtered. Evaporati on and column chromatography on silica gel
+afforded 3ca (152 mg, 51%) as a liquid (eluent: petroleum ether/ethyl acetate=20:1):
+1H NMR (300 MHz, CDCl 3) δ 8.15 (d, J = 8.7 Hz, 2 H), 7.45 (d, J = 8.7 Hz, 2 H),
+7.32-7.20 (m, 4 H), 7.20-7.0 (m, 1 H), 6.20-6.10 (m, 1 H), 5.70-5.55 (m, 1 H), 4.59 (s,
+2 H), 3.67 (t, J = 6.5 Hz, 2 H), 2.55-2.40 (m, 2 H); 13C NMR (75 MHz, CDCl 3) δ
+205.6, 147.2, 146.0, 134.5, 128.5, 127.6, 126.8, 126.6, 123.5, 95.1, 91.5, 71.6, 70.0,
+29.1; MS (EI) m/z (%) 295 (M+, 6.96), 115 (100); IR (neat) 3107, 3073, 3062, 3031,
+2914, 2859, 1950, 1603, 1519, 1456, 1344, 1205, 1101, 1013 cm-1; HRMS (EI) calcd
+for C 18H17NO 3 (M+): 295.1208. Found: 295.1207.
+(2) Synthesis of  1-(4-nitrobenzyloxy)-5-m ethylhexa-2,3-diene (3df)
+3dfO2NOO2NO+ CHO +
+N
+HO
+2f
+1.4 equiv 1.8 equivZnI2 (0.8 equiv)
+toluene, 130 ℃
+22 h, 56%1d
+
+To a dried reaction tube with  a screw cap was added ZnI 2 (256 mg, 0.80 mmol).
+This reaction tube was then  dried under vacuum with a heating gun. Then propargyl
+4-nitrobenzyl ether 1d (191 mg, 1.00 mmol), isobutyr aldehyde (131 mg, 1.82 mmol),
+morpholine (123 mg, 1.41 mmol), and toluene (5 mL) were added sequentially into

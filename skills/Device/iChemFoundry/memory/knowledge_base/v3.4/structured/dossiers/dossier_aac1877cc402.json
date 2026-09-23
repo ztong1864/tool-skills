@@ -1,0 +1,86 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_aac1877cc402",
+  "canonical_material_id": "mat_928993de9b8b",
+  "canonical_name": "[Zn7(trz)6(1,2,4,5-BTC)2(H2O)6]-8H2O",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_9b529ca41c80",
+  "pillar_id": "pil_7c0f55fda7a9",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_777b7728d1e0",
+    "mcard_330543b82363",
+    "mcard_194310ed1bd3",
+    "mcard_5e2c2f3abdd3",
+    "mcard_e357a4ae8459",
+    "mcard_9e3f28344c74",
+    "mcard_8b4f91790dc7",
+    "mcard_50843f5d5065",
+    "mcard_b8683ffb2e2a",
+    "mcard_e4ff9d51519b",
+    "mcard_fdf4035e599e",
+    "mcard_6711aedd8331",
+    "mcard_2146bc4b45e4",
+    "mcard_d9411e4cc645"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_96e0774b8507",
+    "mechcard_08f487890eae",
+    "mechcard_0d4b77ba314d",
+    "mechcard_625f23b103ac",
+    "mechcard_880c85093d2f",
+    "mechcard_dd3f7d2f2ba9",
+    "mechcard_a97de08d28de"
+  ],
+  "recipe_card_ids": [
+    "recipe_b4df5f34b4de"
+  ],
+  "claim_card_ids": [
+    "claim_1d98c367366b"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_d55705bb5193",
+    "fail_27fd6e76d12b"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "5aa321e49dbe",
+    "0d1cacffbd0b"
+  ],
+  "evidence_trace_ids": [
+    "trace_35df354c282b",
+    "trace_b1fdd84d8d72",
+    "trace_a47bf4de9937",
+    "trace_2596d4933f87",
+    "trace_616622f6a0f1",
+    "trace_df766dec4f5a",
+    "trace_1cca9bbcc673",
+    "trace_db4cb2a097bd",
+    "trace_3904ca54ac29",
+    "trace_c678c9b0f883",
+    "trace_327a917da40d",
+    "trace_3cf1b10e46ed",
+    "trace_37fa6640aca1",
+    "trace_e25b4c3b4954",
+    "trace_646459d94cfa",
+    "trace_389d92380005",
+    "trace_213a005ead23",
+    "trace_572aab147c6d"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:49:05.767298",
+  "updated_at": "2026-04-23T20:47:30.350217"
+}

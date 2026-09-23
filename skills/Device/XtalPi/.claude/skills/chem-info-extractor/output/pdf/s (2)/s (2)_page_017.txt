@@ -1,0 +1,22 @@
+S17
+
+
+The reaction of CuBr 2 (44.9 mg, 0.2 mmol), 1e (207.8 mg, 1.5 mmol), ( S)-3
+(253.4 mg, 1.0 mmol), and 2g (201.5 mg, 1.5 mmol) in dioxane (3.0 mL) afforded
+(Ra)-4eg (119.3 mg, 47%) (eluent: petroleum ether) as a liqui d: 90% ee (HPLC
+conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/0, 0.3 mL/min, λ = 214 nm,
+tR(minor) = 17.9 min, tR(major) = 19.7 min); [ α]D20 = -50.0 ( c = 0.84, CHCl 3); 1H
+NMR (300 MHz, CDCl 3) δ 7.30-7.21 (m, 2 H, ArH), 7.21-7.12 (m, 3 H, ArH),
+5.16-5.02 (m, 2 H, CH=C=CH), 2.72 (t, J = 7.8 Hz, 2 H, CH 2), 2.35-2.20 (m, 2 H,
+CH 2), 1.99-1.87 (m, 2 H, CH 2), 1.42-1.18 (m, 12 H, CH 2 × 6), 0.88 (t, J = 6.8 Hz, 3 H,
+Me); 13C NMR (75 MHz, CDCl 3) δ 204.0, 141.9, 128.5, 128.2, 125.8, 91.5, 90.2, 35.5,
+31.9, 30.7, 29.4, 29.3, 29.2, 29.1, 28.9, 22.7, 14.1; IR (neat) ν (cm-1) 3086, 3063, 3027,
+2924, 2854, 1962, 1721, 1604, 1496, 1455, 1373, 1331, 1284, 1075, 1028; MS (EI)
+m/z (%): 256 (M+, 12.85), 91 (100);  HRMS calcd for C 19H28 [M+]: 256.2191, found:
+256.2194.
+12. Preparation of ( Ra)-3-cyclohexyl-1-phenylpropa-1,2-diene ( Ra)-4fa.  (hx-11-18)
+
+The reaction of CuBr 2 (44.8 mg, 0.2 mmol), 1f (153.2 mg, 1.5 mmol), ( S)-3
+(253.1 mg, 1.0 mmol), and 2a (168.4 mg, 1.5 mmol) in dioxane (3.0 mL) afforded
+(Ra)-4fa (90.1 mg, 46%) (eluent: petroleum ether) as a liquid:3 96% ee (HPLC
+conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/0, 0.3 mL/min, λ = 214 nm,

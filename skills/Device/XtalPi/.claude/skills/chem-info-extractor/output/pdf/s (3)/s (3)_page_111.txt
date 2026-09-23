@@ -1,0 +1,7 @@
+S111
+
+H
+C6H13-nPh
+H(HPLC conditions)
+(Total)(PeakNo) (PeakName) (R.Time)(Analysis Results)
+(PerCent) (PeakArea) (PeakHeight)(R ) -4ca

@@ -1,0 +1,26 @@
+{
+  "task-step:calculate-reagent-amounts--pausesAt--checkpoint:review-amounts": {
+    "from": "task-step:calculate-reagent-amounts",
+    "id": "task-step:calculate-reagent-amounts--pausesAt--checkpoint:review-amounts",
+    "relation_type": "pausesAt",
+    "to": "checkpoint:review-amounts"
+  },
+  "task-step:generate-numbered-steps--pausesAt--checkpoint:review-numbered-steps": {
+    "from": "task-step:generate-numbered-steps",
+    "id": "task-step:generate-numbered-steps--pausesAt--checkpoint:review-numbered-steps",
+    "relation_type": "pausesAt",
+    "to": "checkpoint:review-numbered-steps"
+  },
+  "task-step:orchestrate-device-protocol--pausesAt--checkpoint:approve-device-task-creation": {
+    "from": "task-step:orchestrate-device-protocol",
+    "id": "task-step:orchestrate-device-protocol--pausesAt--checkpoint:approve-device-task-creation",
+    "relation_type": "pausesAt",
+    "to": "checkpoint:approve-device-task-creation"
+  },
+  "task-step:recommend-experiment-conditions--pausesAt--checkpoint:review-recommendations": {
+    "from": "task-step:recommend-experiment-conditions",
+    "id": "task-step:recommend-experiment-conditions--pausesAt--checkpoint:review-recommendations",
+    "relation_type": "pausesAt",
+    "to": "checkpoint:review-recommendations"
+  }
+}

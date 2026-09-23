@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_5231b498227b",
+  "paper_id": "5ec53d505118",
+  "raw_path": "相关文献/Yin 等 - 2011 - Role of molar-ratio, temperature and solvent on th.pdf",
+  "title": "Role of molar-ratio, temperature and solvent on th",
+  "authors": [
+    "Yin"
+  ],
+  "year": 2011,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2",
+    "C2H4"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CHNS-0",
+    "DMAX-2500"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "BIPY"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Role of molar-ratio, temperature and solvent on the Zn/Cd 1,2,4-triazolate\nsystem with novel topological architectures†\nPei-Xiu Yin, Jian Zhang, Ye-Yan Qin, Jian-Kai Cheng, Zhao-Ji Li and Yuan-Gen Yao"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:35:55.171363"
+}

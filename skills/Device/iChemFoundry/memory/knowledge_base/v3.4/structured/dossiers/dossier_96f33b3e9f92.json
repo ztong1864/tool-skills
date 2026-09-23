@@ -1,0 +1,63 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_96f33b3e9f92",
+  "canonical_material_id": "mat_7a02b23da718",
+  "canonical_name": "ZSM-23",
+  "metal_element": "Al",
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": "mtt",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_9dc25e2b0ce1",
+    "mcard_d22ddc316fea",
+    "mcard_dcc814aa8795",
+    "mcard_c672400c289c",
+    "mcard_4d7adc2c168b",
+    "mcard_a6c9561cb5f3"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_ac8d6c3678f3",
+    "mechcard_36c0f7eaee43",
+    "mechcard_635c41b1d41c",
+    "mechcard_6c274730f28c",
+    "mechcard_27054ee0206b"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "02a1c3dc2ba1"
+  ],
+  "evidence_trace_ids": [
+    "trace_1b7c4f0bf1da",
+    "trace_4943d1939383",
+    "trace_11ee59dd007a",
+    "trace_1c681313a1b5",
+    "trace_603ce29ba52a",
+    "trace_49d0192a9bad",
+    "trace_d0c916604c13",
+    "trace_1bed44d7c94b",
+    "trace_8ac2f3333ae1",
+    "trace_f1d0777f9e50",
+    "trace_82154fdbd4e1"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:07:53.992544",
+  "updated_at": "2026-04-23T22:07:53.993018"
+}

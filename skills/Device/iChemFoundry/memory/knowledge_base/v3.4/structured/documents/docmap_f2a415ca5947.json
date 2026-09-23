@@ -1,0 +1,65 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_f2a415ca5947",
+  "paper_id": "a440f91e7e1a",
+  "raw_path": "相关文献/Booth 等 - 2025 - Restoring Porosity and Uncovering Flexibility in P.pdf",
+  "title": "Restoring Porosity and Uncovering Flexibility in P",
+  "authors": [
+    "Booth"
+  ],
+  "year": 2025,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UNSW-100-op",
+    "UNSW-100-np",
+    "UNSW-101",
+    "MIL-53",
+    "UNSW-100",
+    "FJU-40-H"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "sql"
+  ],
+  "key_sections": {
+    "abstract": "Porous adsorbents have emerged as leading materials for carbon capture, where pressure-controlled regeneration",
+    "conclusion": "This research identiﬁes a new strategy to induce ﬂexi-\nbility in a pillared multicomponent MOF while retaining",
+    "results_summary": "Research Article\nHow to cite: Angew. Chem. Int. Ed. 2025, 64, e202513319\ndoi.org/10.1002/anie.202513319\nMetal-Organic Frameworks\nRestoring Porosity and Uncovering Flexibility in Pillared 3D-Linker\nMet"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:04:42.641373"
+}

@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_5b2db476a8af",
+  "canonical_material_id": "mat_f9aa08bdd53c",
+  "canonical_name": "RHO",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": "rho",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_c0849ef46f32"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_7bae2b02cc66",
+    "mechcard_605d031b8899",
+    "mechcard_ef799ecdf9e4",
+    "mechcard_1c648cc623e3",
+    "mechcard_3bd078f529b2",
+    "mechcard_9509b0cd441e"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_60a752e1e630"
+  ],
+  "design_rule_card_ids": [
+    "drule_bb68fbee662d"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "08169a547bbc",
+    "62abef84986f"
+  ],
+  "evidence_trace_ids": [
+    "trace_b4fd4dda3a0b",
+    "trace_87ce048ec997",
+    "trace_48216d53e3e7",
+    "trace_e1d9b96e7e7e",
+    "trace_5c8669d0f54d",
+    "trace_08bd8ef269d0",
+    "trace_5a1ec1a69ffe"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:29:02.330856",
+  "updated_at": "2026-04-23T23:40:03.651218"
+}

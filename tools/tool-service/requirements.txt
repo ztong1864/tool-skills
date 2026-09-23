@@ -1,0 +1,25 @@
+# tooluniverse itself is vendored at tools/tool-service/vendor/tooluniverse/, not
+# pip-installed -- see tooluniverse_bridge.py's module docstring for why (the PyPI
+# package named "tooluniverse" is an unrelated, much older package, and even
+# installing the real project from source pulls in markitdown[all] as a *required*
+# dependency whose own transitive deps have no working resolution on newer
+# Python/platform combinations).
+#
+# What's listed below are the vendored package's own runtime dependencies that our
+# curated category set actually needs -- both to build the tool catalog (huggingface_hub,
+# imported unconditionally by tooluniverse/profile/) and to actually execute individual
+# tools when invoked (requests for REST-API categories; numpy/pandas/scipy/networkx/rdkit
+# for the local-compute categories -- see the ToolUniverse local-compute reference doc
+# for which specific tools need which). A tool whose dependency isn't listed here will
+# still appear correctly in the catalog (listing only needs the JSON config, not the
+# tool's own implementation) but fails with a clear ModuleNotFoundError only when that
+# specific tool is actually called -- not silently, and not affecting any other tool.
+huggingface_hub
+pyyaml
+requests
+numpy
+pandas
+scipy
+networkx
+rdkit
+periodictable

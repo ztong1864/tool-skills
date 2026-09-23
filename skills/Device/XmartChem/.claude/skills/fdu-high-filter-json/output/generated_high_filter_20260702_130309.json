@@ -1,0 +1,28 @@
+{
+  "layout_code": "T-3:20",
+  "resource_type": "TTR2T",
+  "tray_QR_code": "TTR2T_01",
+  "unit_column": 0,
+  "unit_row": 0,
+  "unit_type": "exp_high_filtering_samples",
+  "process_json": {
+    "src_layout_code": "N1-2:0",
+    "add_volume": 0.8,
+    "custom": {
+      "unit": "mL",
+      "unitOptions": [
+        "mL",
+        "μL",
+        "L"
+      ]
+    },
+    "dilute_volume": 0.0,
+    "substance": "乙腈",
+    "quick_cap": 1,
+    "dst": {
+      "pos": "W3-5:20",
+      "resource_type": "TTS2TCP_V2",
+      "tray_QR_code": "TTS2TCP_V2_01"
+    }
+  }
+}

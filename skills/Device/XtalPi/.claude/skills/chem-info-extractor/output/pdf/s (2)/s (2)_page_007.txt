@@ -1,0 +1,12 @@
+S7
+ General Experimental Methods
+1H and 13C nuclear magnetic resonance spectra were recorded on an instrument
+operated at 300 MHz for 1H NMR and 75 MHz for 13C NMR spectra. Infrared spectra
+were recorded from the films of pure sample s on sodium chloride plates for liquid or
+in the form of KBr discs for the solid sa mples. Mass and HRMS spectra were carried
+out in EI or ESI mode. Thin layer chro matography was performed on pre-coated
+glass-back plates and visualized w ith UV light at 254 nm. Flash column
+chromatography was performed on silica gel. Copper(II) bromide was purchased from J&K. ( S)-α,α-Diphenylprolinol and ( R)-α,α-diphenylprolinol were purchased from
+Shanghai Darui Fine Chemicals. Aldehydes we re distilled right before use. Dioxane
+were dried over sodium wire with benzophe none as the indicator and distilled freshly
+before use. All the temperatures are referred to the oil baths used.

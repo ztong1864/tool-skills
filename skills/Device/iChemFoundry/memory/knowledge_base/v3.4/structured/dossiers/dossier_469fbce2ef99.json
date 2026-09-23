@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_469fbce2ef99",
+  "canonical_material_id": "mat_9816671c91db",
+  "canonical_name": "FAU",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": "fau",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_d4e61bfdae47"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_abf5cd73222a",
+    "mechcard_a7071c304c93",
+    "mechcard_a336399ec390"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_71edd83eb8b0"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "b371e84f5f09"
+  ],
+  "evidence_trace_ids": [
+    "trace_ac9f825753f5",
+    "trace_ce0bcfa23f79",
+    "trace_68e9f8ea0654"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:00:48.265510",
+  "updated_at": "2026-04-23T22:01:15.916448"
+}

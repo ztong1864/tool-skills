@@ -1,0 +1,173 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_0338b61200c8",
+  "paper_id": "4ac5d26e2f79",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "H2"
+  ],
+  "one_line_summary": "1(CO2)1.3 shows initial_heat_of_adsorption_CO2 = 40.0 K for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "crystal_stability_after_activation = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "initial_heat_of_adsorption_CO2 (CO2) = 40.0 K at 0.85 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake_temperature_dependence_195_to_273K (CO2) = 0.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "framework adsorption sites in the pore space → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "neighboring groups and interaction types within the framework → uptake"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] combine appropriate pore size with pore-lined free amine functional groups in a Zn aminotriazolate-oxalate framework → improves low-pressure CO2 binding and increases low-pressure CO2 uptake"
+    },
+    {
+      "title": "Comparison",
+      "body": "CO2-I binding site in Zn2(Atz)2(ox) vs CO2-II binding site in Zn2(Atz)2(ox): winner=subject_a on strength_of_amine-mediated_CO2_interaction"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_1dd1eec88ad8",
+    "trace_43a067b5df4b",
+    "trace_ec80b20ec1c2",
+    "trace_f035586c6670",
+    "trace_eee13dff9d79",
+    "trace_4aa106de6263",
+    "trace_624e8c044847",
+    "trace_87925be941fa",
+    "trace_541a38293c79",
+    "trace_b786e4cc11f1",
+    "trace_1586f7276ab6",
+    "trace_674c0fdd6ba9",
+    "trace_1a9a29367b21",
+    "trace_a654be63e64f",
+    "trace_eb765669444c",
+    "trace_3609a545e3b2",
+    "trace_219333116ae4",
+    "trace_14b8eadf84eb",
+    "trace_9af271629d87",
+    "trace_5cba7ea10d85",
+    "trace_a66a01be091f",
+    "trace_8dce4cab6020",
+    "trace_ef8a074ce11e",
+    "trace_479c303f5785",
+    "trace_b3edf39fcdf6",
+    "trace_fb8b826a52b9",
+    "trace_53e835981c9f",
+    "trace_24e910ed8550",
+    "trace_d7a59215e67f",
+    "trace_bbdb9b22f052",
+    "trace_5bace1fff3c6",
+    "trace_ca34aa6ed594",
+    "trace_ca3ad8b6ee79",
+    "trace_9c1c3d82ae93",
+    "trace_d9be2b87b0ff",
+    "trace_80f019bfa0e4",
+    "trace_7e901d73ea9a",
+    "trace_79ecc1e977c2",
+    "trace_7e901d73ea9a",
+    "trace_5cba7ea10d85",
+    "trace_53e835981c9f",
+    "trace_479c303f5785",
+    "trace_624e8c044847",
+    "trace_a654be63e64f",
+    "trace_9c1c3d82ae93",
+    "trace_ef8a074ce11e",
+    "trace_1586f7276ab6",
+    "trace_4aa106de6263",
+    "trace_14b8eadf84eb",
+    "trace_bbdb9b22f052",
+    "trace_b786e4cc11f1",
+    "trace_80f019bfa0e4",
+    "trace_9af271629d87",
+    "trace_541a38293c79",
+    "trace_b3edf39fcdf6",
+    "trace_ca34aa6ed594",
+    "trace_3609a545e3b2",
+    "trace_1a9a29367b21",
+    "trace_d9be2b87b0ff",
+    "trace_ec80b20ec1c2",
+    "trace_fb8b826a52b9",
+    "trace_eb765669444c",
+    "trace_87925be941fa",
+    "trace_43a067b5df4b",
+    "trace_5bace1fff3c6",
+    "trace_f035586c6670",
+    "trace_8dce4cab6020",
+    "trace_79ecc1e977c2",
+    "trace_219333116ae4",
+    "trace_1dd1eec88ad8",
+    "trace_a66a01be091f",
+    "trace_24e910ed8550",
+    "trace_ca3ad8b6ee79",
+    "trace_674c0fdd6ba9",
+    "trace_d7a59215e67f",
+    "trace_eee13dff9d79"
+  ],
+  "measurement_card_ids": [
+    "mcard_39573c20a65b",
+    "mcard_ffbdf7efb25c",
+    "mcard_c54ae0d3c19f"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_2fa2953f4710",
+    "mechcard_36f5f2b8b4fd",
+    "mechcard_aabbe3ec4c50"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_5a7121d33eef",
+    "claim_7990af20c842",
+    "claim_98a026be4e1c",
+    "claim_85d4bfc33894",
+    "claim_1a9928b4a2ec",
+    "claim_aa85a4982169",
+    "claim_e8052b5c8ba7",
+    "claim_238afbcf70c3"
+  ],
+  "design_rule_card_ids": [
+    "drule_de3b8bf9d6e5"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_7be4e2898b16"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_93b133f45c29",
+    "mat_f9e5d807c947"
+  ],
+  "dossier_ids": [
+    "dossier_7f57f185c986",
+    "dossier_c367105beb9f"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Zn2(Atz)2(ox) shows strong low-pressure CO2 uptake with a zero-loading heat of adsorption of 40.8 ± 0.8 kJ mol−1.",
+    "Large low-pressure CO2 uptake is attributed to the combination of suitable pore size, pore-lined amine groups, and cooperative CO2 binding.",
+    "The adsorption enthalpy does not simply fall with loading; after an initial decrease, DHads rises again and stays above 35 kJ mol−1, indicating cooperative binding."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.336217",
+  "updated_at": "2026-04-24T00:19:51.336221",
+  "raw_path": "相关文献/science.1194237Zn-草酸.pdf"
+}

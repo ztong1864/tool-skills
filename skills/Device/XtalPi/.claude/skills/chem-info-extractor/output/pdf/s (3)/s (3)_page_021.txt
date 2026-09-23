@@ -1,0 +1,21 @@
+S21
+ conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/1, 1 mL/min, λ = 214 nm,
+tR(major) = 5.4 min, tR(minor) = 5.8 min); [ α]D19 = -268.1 ( c = 0.98, CHCl 3); 1H NMR
+(300 MHz, CDCl 3) δ = 7.34-7.24 (m, 4 H, Ar-H), 7.24- 7.13 (m, 1 H, Ar-H), 6.17 (dt,
+J1 = 6.3 Hz, J2 = 3.1 Hz, 1 H, one proton from CH=C=CH), 5.57 (q, J = 6.5 Hz, 1 H,
+one proton from CH=C=CH), 3.59 (t, J = 6.6 Hz, 2 H, CH 2), 2.35-2.22 (m, 2 H, CH 2),
+2.02-1.88 (m, 2 H, CH 2); 13C NMR (75 MHz, CDCl 3) δ = 205.2, 134.5, 128.6, 126.8,
+126.6, 95.4, 93.5, 44.3, 31.6, 25.7; MS (EI) m/z (%): 194 (M+(37Cl), 2.60), 192
+(M+(35Cl, 7.91), 130 (100); IR (neat): v = 2957, 2850, 1950, 1598, 1497, 1459, 1442,
+1260, 1073, 1027 cm-1; HRMS calcd for C 12H1335Cl [M+]: 192.0706, found: 192.0705.
+(13) Preparation of ( R)-3-cyclohexyl-1-phenyl-1,2-propadiene ( R-4ej)  (lrz-7-198,
+lrz-8-4):
+
+Conditions A: The reaction of ZnBr 2 (115.7 mg, 0.5 mmol, 98% from Alfa), CuBr
+(29.9 mg, 0.2 mmol, 98% from Acros), ( S)-3 (259.5 mg, 1.0 mmol, 98%), 1e (157.0
+mg, 1.5 mmol, 97% from Alfa)/toluene (2 mL), and 2j (224.5 mg, 2.0 mmol)/toluene
+(1 mL) afforded ( R)-4ej (101.7 mg, 51%) (eluent: petroleu m ether) as a liquid: 99%
+ee (HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/1, 1 mL/min, λ
+= 214 nm,  tR(major) = 3.6 min, tR(minor) = 3.9 min); [ α]D19 = -330.3 ( c = 0.94,
+CHCl 3); 1H NMR (300 MHz, CDCl 3) δ = 7.36-7.25 (m, 4 H, Ar -H), 7.25-7.10 (m, 1 H,
+Ar-H), 6.15 (dd, J1 = 6.6 Hz, J2 = 3.0 Hz, 1 H, one prot on from CH=C=CH), 5.56 (t, J

@@ -1,0 +1,8 @@
+{
+  "_meta": {
+    "version": "v4",
+    "description": "Cross-KB contradictions detected by lint",
+    "last_updated": ""
+  },
+  "contradictions": []
+}

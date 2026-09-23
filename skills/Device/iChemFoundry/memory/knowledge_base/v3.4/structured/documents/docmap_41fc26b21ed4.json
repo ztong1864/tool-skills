@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_41fc26b21ed4",
+  "paper_id": "cd0fc62673f6",
+  "raw_path": "相关文献/Zhang 等 - 2016 - Stitching 2D Polymeric Layers into Flexible 3D Met.pdf",
+  "title": "Stitching 2D Polymeric Layers into Flexible 3D Met",
+  "authors": [
+    "Zhang"
+  ],
+  "year": 2016,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ARTZ-2",
+    "ARTZ-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "In",
+    "Ga",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "dia"
+  ],
+  "key_sections": {
+    "abstract": "Two-dimensional (2D) coordination polymer [Zn-\n(ATZ)2]n (HATZ = 5-amino-1H-tetrazole) featuring a 2D + 2D →2D",
+    "results_summary": "Stitching 2D Polymeric Layers into Flexible 3D Metal−Organic\nFrameworks via a Sequential Self-Assembly Approach\nHao Zhang,†,‡ Tianlu Sheng,† Shengmin Hu,† Chao Zhuo,†,‡ Haoran Li,†,‡ Ruibiao Fu,† Yueh"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:50:18.288196"
+}

@@ -1,0 +1,26 @@
+{
+  "unit_type": "exp_add_solid",
+  "defaults": {
+    "layout_code": "T-3:0",
+    "layout_code_ref": "T-3:A1",
+    "resource_type": "TTR2T",
+    "tray_QR_code": "TTR2T_01",
+    "QR_code": "",
+    "ori_layout_code": null,
+    "unit_column": 0,
+    "unit_row": 0,
+    "offset": 0.5,
+    "quick_cap": 1,
+    "use_tip_type": "",
+    "custom": {
+      "unit": "mg",
+      "unitOptions": [
+        "mg",
+        "g"
+      ],
+      "step": {
+        "offset": 0.1
+      }
+    }
+  }
+}

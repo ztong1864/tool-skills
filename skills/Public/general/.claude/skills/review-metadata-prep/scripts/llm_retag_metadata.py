@@ -1,0 +1,209 @@
+#!/usr/bin/env python3
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import ssl
+import sys
+import time
+import urllib.error
+import urllib.request
+from pathlib import Path
+from typing import Any
+
+from prepare_metadata import (
+    STRUCTURED_TAG_KEYS,
+    _foundryclaw_openai_config,
+    apply_structured_tags_to_compat_fields,
+    build_llm_payload,
+    load_dotenv,
+    load_blocks,
+    markdown_head,
+    merge_llm,
+    decode_json_object,
+    open_json_request,
+    openai_endpoint,
+    resolve_api_key,
+    resolve_classification_labels,
+    sample_topic_text,
+    suggest_taxonomy_profile,
+    read_json,
+    update_quality,
+    write_json,
+)
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from _review_runtime.paths import resolve_review_root
+
+
+def call_responses(
+    payload: dict[str, Any], api_key: str, base_url: str, timeout: int, wire_api: str = "responses"
+) -> dict[str, Any]:
+    endpoint = "chat/completions" if wire_api == "chat-completions" else "responses"
+    req = urllib.request.Request(
+        openai_endpoint(base_url, endpoint),
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "User-Agent": "review-writer-metadata-prep/1.0",
+        },
+        method="POST",
+    )
+    data = open_json_request(req, timeout=timeout, context="Metadata retag model request")
+    if wire_api == "chat-completions":
+        try:
+            text = data["choices"][0]["message"]["content"]
+        except (KeyError, IndexError, TypeError) as exc:
+            raise RuntimeError("Chat completions response did not contain choices[0].message.content") from exc
+        return decode_json_object(text, "Metadata retag model output")
+    text = data.get("output_text")
+    if not text:
+        parts = []
+        for item in data.get("output", []):
+            if not isinstance(item, dict):
+                continue
+            for content in item.get("content", []):
+                if isinstance(content, dict) and content.get("type") in {"output_text", "text"}:
+                    if content.get("text"):
+                        parts.append(content["text"])
+        text = "\n".join(parts)
+    if not text:
+        raise RuntimeError("response missing output_text")
+    return decode_json_object(text, "Metadata retag model output")
+
+
+def retag_one(
+    meta_path: Path,
+    system_prompt: str,
+    api_key: str,
+    base_url: str,
+    model: str,
+    timeout: int,
+    reasoning_effort: str,
+    classification_labels: dict[str, list[str]],
+    wire_api: str = "responses",
+) -> dict[str, Any]:
+    meta = read_json(meta_path)
+    source_paths = meta.get("source_paths") or {}
+    content_path = Path(str(source_paths.get("content_list") or ""))
+    markdown_path = Path(str(source_paths.get("markdown") or ""))
+    blocks = load_blocks(content_path if content_path.exists() else None)
+    md = markdown_head(markdown_path if markdown_path.exists() else None)
+    payload = build_llm_payload(
+        meta, blocks, md, system_prompt, model, reasoning_effort, classification_labels, wire_api
+    )
+    llm_data = call_responses(payload, api_key, base_url, timeout, wire_api)
+    merge_llm(meta, llm_data)
+    apply_structured_tags_to_compat_fields(meta)
+    meta.setdefault("extraction", {}).setdefault("notes", [])
+    meta["extraction"]["mode"] = "llm_8_category_retag"
+    meta["extraction"]["model"] = model
+    meta["extraction"]["notes"].append("llm_8_category_tags_refreshed")
+    update_quality(meta)
+    write_json(meta_path, meta)
+    return {
+        "paper_id": meta.get("paper_id"),
+        "metadata_path": str(meta_path),
+        "status": "ok",
+        "structured_tags": (meta.get("structured_tags") or {}).get("value"),
+    }
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Refresh existing metadata with LLM-extracted eight-category tags.")
+    parser.add_argument("--review-root", default=None)
+    parser.add_argument("--model", default="")
+    parser.add_argument("--base-url", default="")
+    parser.add_argument("--api-key", default="")
+    parser.add_argument("--reasoning-effort", default="", choices=["", "none", "low", "medium", "high"])
+    parser.add_argument("--wire-api", default="", choices=["", "responses", "chat-completions"])
+    parser.add_argument("--paper-id", action="append", default=[], help="Retag only selected paper_id. Repeatable.")
+    parser.add_argument("--limit", type=int, default=0)
+    parser.add_argument("--sleep-seconds", type=float, default=0.0)
+    parser.add_argument("--timeout", type=int, default=120)
+    return parser.parse_args()
+
+
+def main() -> int:
+    args = parse_args()
+    review_root = resolve_review_root(args.review_root, anchor=Path(__file__))
+    load_dotenv(review_root / ".env")
+    foundryclaw = None if (args.base_url or args.api_key) else _foundryclaw_openai_config()
+    if foundryclaw:
+        base_url = foundryclaw["base_url"]
+        api_key = foundryclaw["api_key"]
+        model = args.model or foundryclaw["model"]
+    else:
+        base_url = args.base_url or os.environ.get("OPENAI_BASE_URL", "https://api.openai.com")
+        api_key = resolve_api_key(args.api_key, base_url)
+        model = args.model or os.environ.get("REVIEW_METADATA_MODEL", "gpt-5.4")
+    reasoning_effort = args.reasoning_effort or os.environ.get("REVIEW_METADATA_REASONING_EFFORT", "high")
+    wire_api = args.wire_api or os.environ.get("REVIEW_METADATA_WIRE_API", "responses")
+    if not api_key:
+        raise SystemExit("Missing API key. Pass --api-key, set OPENAI_API_KEY, or write it to <review-root>/.env.")
+    skill_root = Path(__file__).resolve().parents[1]
+    system_prompt = (skill_root / "references" / "metadata_extraction_system.md").read_text(encoding="utf-8")
+    meta_dir = review_root / "review-library" / "metadata" / "papers"
+    topic_text = sample_topic_text(meta_dir)
+    classification_labels = resolve_classification_labels(review_root, topic_text)
+    print(f"Taxonomy profile: {suggest_taxonomy_profile(topic_text) if topic_text.strip() else 'general_academic'}")
+    paths = sorted(meta_dir.glob("*.metadata.json"))
+    if args.paper_id:
+        wanted = set(args.paper_id)
+        paths = [p for p in paths if p.stem.replace(".metadata", "") in wanted]
+    if args.limit > 0:
+        paths = paths[: args.limit]
+    reports = []
+    for path in paths:
+        try:
+            report = retag_one(
+                path, system_prompt, api_key, base_url, model, args.timeout, reasoning_effort,
+                classification_labels, wire_api=wire_api,
+            )
+            print(f"{report['paper_id']} ok")
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError, json.JSONDecodeError, RuntimeError) as exc:
+            report = {
+                "paper_id": path.stem.replace(".metadata", ""),
+                "metadata_path": str(path),
+                "status": "failed",
+                "error": f"{type(exc).__name__}: {exc}",
+            }
+            print(f"{report['paper_id']} failed: {report['error']}")
+        reports.append(report)
+        if args.sleep_seconds:
+            time.sleep(args.sleep_seconds)
+    out = review_root / "review-library" / "metadata" / "llm_retag_report.json"
+    write_json(out, {"total": len(reports), "failed": sum(1 for r in reports if r["status"] != "ok"), "reports": reports})
+    write_markdown_report(out.with_suffix(".md"), reports)
+    print(f"Wrote {out}")
+    return 1 if any(r["status"] != "ok" for r in reports) else 0
+
+
+def write_markdown_report(path: Path, reports: list[dict[str, Any]]) -> None:
+    failed = [r for r in reports if r.get("status") != "ok"]
+    lines = [
+        "# LLM Retag Report",
+        "",
+        f"- Total: {len(reports)}",
+        f"- Failed: {len(failed)}",
+        "",
+        "## Failures",
+        "",
+    ]
+    if not failed:
+        lines.append("None.")
+    for row in failed:
+        lines.append(f"- {row.get('paper_id')}: {row.get('error')}")
+    lines += ["", "## Sample Tags", ""]
+    for row in [r for r in reports if r.get("status") == "ok"][:30]:
+        tags = row.get("structured_tags") or {}
+        compact = "; ".join(f"{key}: {tags.get(key, '')}" for key in STRUCTURED_TAG_KEYS)
+        lines.append(f"- {row.get('paper_id')}: {compact}")
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

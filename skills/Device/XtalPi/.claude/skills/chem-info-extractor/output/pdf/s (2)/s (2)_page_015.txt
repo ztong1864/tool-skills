@@ -1,0 +1,22 @@
+S15
+ (Ra)-4da (135.7 mg, 51%) (elu ent: petroleum ether/ethyl ace tate = 15/1) as a liquid:1
+95% ee (HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/1, 1.0
+mL/min, λ = 214 nm, tR(minor) = 9.0 min, tR(major) = 9.6 min); [ α]D20 = -84.0 ( c =
+1.045, CHCl 3) (reported value: 99% ee; [ α]D20 = -85.4 (c = 1.05, CHCl 3)); 1H NMR
+(300 MHz, CDCl 3) δ 5.20-5.08 (m, 2 H, CH=C=CH), 3.740 (s, 3 H, Me), 3.737 (s, 3
+H, Me), 3.51 (t, J = 7.5 Hz, 1 H, CH), 2.63-2.54 (m, 2 H, CH 2), 2.00-1.85 (m, 1 H,
+CH from Cy), 1.78-1.57 (m, 5 H, five pr otons from Cy), 1.35-0.95 (m, 5 H, five
+protons from Cy); 13C NMR (75 MHz, CDCl 3) δ 202.7, 169.33, 169.29, 98.9, 88.2,
+52.4, 51.2, 37.1, 32.82, 32.78, 28.0, 26.0, 25.9; IR (neat) ν (cm-1) 2926, 2851, 1959,
+1757, 1738, 1617, 1436, 1343, 1233, 1155, 1035; MS (EI) m/z (%): 266 (M+, 6.72),
+91 (100).
+9. Preparation of ( Ra)-dimethyl 2-(6-methylhepta-2,3-dienyl)malonate ( Ra)-4db.
+(hx-11-25)
+
+The reaction of CuBr 2 (45.0 mg, 0.2 mmol), 1d (255.7 mg, 1.5 mmol), ( S)-3 (252.5
+mg, 1.0 mmol), and 2b (129.6 mg, 1.5 mmol) in dioxa ne (3.0 mL) afforded ( Ra)-4db
+(121.9 mg, 51%) (eluent: petroleum ether/ethyl acetate = 20/1) as a liquid: 94% ee
+(HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH = 100/1, 0.7 mL/min, λ =
+214 nm, tR(minor) = 10.9 min, tR(major) = 11.7 min); [ α]D20 = -64.4 ( c = 0.87, CHCl 3);
+1H NMR (300 MHz, CDCl 3) δ 5.15-5.04 (m, 2 H, CH=C=CH), 3.74 (s, 6 H, Me × 2),
+3.51 (t, J = 7.5 Hz, 1 H, CH), 2.62-2.54 (m, 2 H, CH 2), 1.90-1.82 (m, 2 H, CH 2),

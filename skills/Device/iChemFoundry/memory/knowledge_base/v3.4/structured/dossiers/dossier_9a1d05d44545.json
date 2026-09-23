@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_9a1d05d44545",
+  "canonical_material_id": "mat_1e4a24afac3f",
+  "canonical_name": "Zn(Atz)",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_63a39f87f1c2",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_faa7824f3dce"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_9e7427072439"
+  ],
+  "design_rule_card_ids": [
+    "drule_3a9562afcdf4"
+  ],
+  "failure_case_card_ids": [
+    "fail_b0658bd55f1d"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "22272f44e8c7"
+  ],
+  "evidence_trace_ids": [
+    "trace_5d2e944356f9"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:24:31.839226",
+  "updated_at": "2026-04-23T21:25:12.710861"
+}

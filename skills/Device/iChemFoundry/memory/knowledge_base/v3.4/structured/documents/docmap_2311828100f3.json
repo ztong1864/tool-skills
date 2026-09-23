@@ -1,0 +1,67 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_2311828100f3",
+  "paper_id": "1cdb348c09d0",
+  "raw_path": "相关文献/zn-trz-fa-1-s2.0-S1383586623018385-main.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Zn-1",
+    "MUF-16",
+    "ZSM-5",
+    "ZU-610",
+    "SU-101",
+    "MIL-140"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Fe",
+    "Al",
+    "Ca",
+    "Cd",
+    "In",
+    "Ga",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "nbo",
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "Separation and Purification Technology 327 (2023) 124930\nAvailable online 29 August 2023\n1383-5866/© 2023 Elsevier B.V. All rights reserved.\nControllable C2H2/CO2 inverse adsorption and separation in "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:04:18.294014"
+}

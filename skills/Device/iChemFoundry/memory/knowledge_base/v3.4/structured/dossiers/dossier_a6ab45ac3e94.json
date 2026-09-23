@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_a6ab45ac3e94",
+  "canonical_material_id": "mat_416726cc0743",
+  "canonical_name": "[Zn2(trz)2(oba)-2DMA]",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_9b529ca41c80",
+  "pillar_id": "pil_17ce9da8b54d",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_885a498a43f7",
+    "mechcard_e645c1e868ad",
+    "mechcard_cd01a18a8fe2"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [
+    "drule_277758928b5c",
+    "drule_f85cb29cd343"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "47e14342870f"
+  ],
+  "evidence_trace_ids": [
+    "trace_08a962a1d835",
+    "trace_becd6c1790b1",
+    "trace_c65efb4acdef"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:58:21.088145",
+  "updated_at": "2026-04-23T17:58:54.547663"
+}

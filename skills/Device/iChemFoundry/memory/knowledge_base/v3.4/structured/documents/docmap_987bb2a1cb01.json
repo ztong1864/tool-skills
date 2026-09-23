@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_987bb2a1cb01",
+  "paper_id": "2618bcaf2994",
+  "raw_path": "相关文献/Ghaffari Nik 等 - 2023 - Rapid Cycle Temperature Swing Adsorption Using Cal.pdf",
+  "title": "Rapid Cycle Temperature Swing Adsorption Using Cal",
+  "authors": [
+    "Ghaffari Nik"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": false,
+  "has_comparison_tables": false,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CALF-20",
+    "GHGT-15",
+    "GHGT-16"
+  ],
+  "mentioned_metals": [
+    "In"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "abstract": "Concrete is the most widely used synthetic material in existence, and is second only to water as the most consumed",
+    "results_summary": "16th International Conference on Greenhouse Gas Control Technologies GHGT-16 \n23-27th October 2022, Lyon, France \nRapid Cycle Temperature Swing Adsorption Using CALF-20 MOF \nStructured Adsorbent for C"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:46:44.117178"
+}

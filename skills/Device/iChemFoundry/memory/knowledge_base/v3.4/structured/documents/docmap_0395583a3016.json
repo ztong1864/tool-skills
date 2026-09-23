@@ -1,0 +1,38 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_0395583a3016",
+  "paper_id": "3b10485188f4",
+  "raw_path": "/Users/weiji-feng/project/MOFDiscoveryAgent/相关文献/Yin 等 - 2011 - Role of molar-ratio, temperature and solvent on th-1.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": false,
+  "has_comparison_tables": true,
+  "has_synthesis_section": false,
+  "has_stability_tests": false,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cd",
+    "V"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "azolate"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Supplementary Material (ESI) for Dalton Transactions \nThis journal is (c) The Royal Society of Chemistry 2011 \n \nSupporting Information \n \nRole of molar-ratio, temperature and solvent \non the Zn/Cd 1,"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-28T13:48:05.590430"
+}

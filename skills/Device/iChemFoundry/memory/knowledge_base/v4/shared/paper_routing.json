@@ -1,0 +1,3816 @@
+{
+  "version": "v4",
+  "generated_at": "2026-05-20T16:35:50.537330",
+  "total_records": 274,
+  "records": [
+    {
+      "paper_id": "24731d45e39f",
+      "title": "Synthesis, crystal structures and properties of th",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.519431",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "20a73d2f96f4",
+      "title": "Exhaled Anesthetic Xenon Regeneration by Gas Separ",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.519723",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "7d1015d4b98c",
+      "title": "SO4-anion-controlled-assembly-of-a-silver-responsive-bifunctional-coordination-polymer-with-detection-and-large-adsorption",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.519990",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "08078d819c99",
+      "title": "Two Unprecedented 3-Connected Three-Dimensional Ne",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.520058",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b002da0f0c54",
+      "title": "",
+      "paper_kind": "theory_simulation",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "computational only, no synthesis/experimental",
+      "routed_at": "2026-05-20T16:35:50.520186",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "ee6e24a30498",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.520355",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "943305fdca28",
+      "title": "SO4-hydrothermal-and-structural-chemistry-of-the-zinc(ii)-and-cadmium(ii)-1-2-4-triazolate-systems",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.520426",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "2402f4b4cedf",
+      "title": "Hydrothermal Synthesis and Structural Characteriza",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.520487",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "1ea61295e3c3",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.520694",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3c82aca435dd",
+      "title": "SO4-Applied Organom Chemis - 2017 - Ren - Enhanced antifungal activities of four Zn II  complexes based on uniconazole",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.520767",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "437971f0d489",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.520820",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "7ea1666a932f",
+      "title": "Synthesis, Structures, and Luminescent Properties",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.520881",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "93a072e837ab",
+      "title": "Stitching 2D Polymeric Layers into Flexible 3D Met",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.520943",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b3e6c07b82b5",
+      "title": "",
+      "paper_kind": "ambiguous",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.4,
+      "routing_rationale": "insufficient signals for rule-based classification",
+      "routed_at": "2026-05-20T16:35:50.520996",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "331085fe34df",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521050",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "beb388971362",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521104",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "5250c7918a49",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521156",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8447b81d8a48",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521206",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "54f9fbaf30b0",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521257",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a2bbb951fd66",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521310",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "183091a2e8c1",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521363",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "2ff55e6ee723",
+      "title": "Solvothermal Synthesis, Crystal Structure and Lumi",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521423",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "c200d37114d8",
+      "title": "",
+      "paper_kind": "review_methodology",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.95,
+      "routing_rationale": "filename matches known principle paper: loading-driven-diffusion",
+      "routed_at": "2026-05-20T16:35:50.521471",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6719a09a449d",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521615",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "fc15206cdae2",
+      "title": "Two Novel Zinc(II) Metal–Organic Frameworks Based",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521675",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "e050ac390c87",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521726",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "62abef84986f",
+      "title": "",
+      "paper_kind": "review_methodology",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.99,
+      "routing_rationale": "known principle paper ID",
+      "routed_at": "2026-05-20T16:35:50.521769",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "bb5e40031d43",
+      "title": "3D Pillar-Layered Zn(II) Compound with 6-Connected",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521826",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "ee80b65b2eff",
+      "title": "A Flexible Porous MOF Exhibiting Reversible Breath",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521882",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "ca3213a92d15",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521933",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a75f77b10e12",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.521983",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6dce67f7e059",
+      "title": "Sensitive luminescent probes of aniline, benzaldeh",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522041",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "0ed2013c63d4",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522189",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "ed2e02bdfbe8",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522239",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "d67c409db37b",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522288",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "d17e8bdce2c0",
+      "title": "Electronic Supplementary Information (ESI)",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522344",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "dc6fb3fab588",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522489",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f3cdab115144",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522539",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a4f10cb0fd34",
+      "title": "Selective gas adsorption and fluorescence sensing",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522596",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "d9d19a39346c",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522646",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3f432af49e67",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522778",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "61c7ed14218a",
+      "title": "The design of a novel and resistant Zn(PZDC)(ATZ)",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522837",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "125eb726c7ef",
+      "title": "A porous anionic zinc(II) metal–organic framework",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.522895",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3b10485188f4",
+      "title": "",
+      "paper_kind": "theory_simulation",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "computational only, no synthesis/experimental",
+      "routed_at": "2026-05-20T16:35:50.523047",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8cb3c4f4e106",
+      "title": "Facile synthesis and superior properties of a nitr",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523105",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "853299a980a3",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523154",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "9daa86d6b3c0",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523204",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "ddc984c6572e",
+      "title": "Framework isomers controlled by the speed of cryst",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523262",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "1b118e60d7ac",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523378",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a73000c53af6",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523426",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b2c6560d9efc",
+      "title": "HPO4-aitenneite2012-Poly[(l3-hydrogenphosphato)(4H-1,2,4",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523483",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b5d313a80058",
+      "title": "",
+      "paper_kind": "ambiguous",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.4,
+      "routing_rationale": "insufficient signals for rule-based classification",
+      "routed_at": "2026-05-20T16:35:50.523616",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "2618bcaf2994",
+      "title": "Rapid Cycle Temperature Swing Adsorption Using Cal",
+      "paper_kind": "ambiguous",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.4,
+      "routing_rationale": "insufficient signals for rule-based classification",
+      "routed_at": "2026-05-20T16:35:50.523672",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "64afdaef56aa",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523721",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "cb0db3cfb790",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523771",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "1e03e8a24ac5",
+      "title": "Synthesis, crystal structures and properties of th",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523826",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "4ac5d26e2f79",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523874",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "4358ab539332",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523923",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "c7d06ee112e6",
+      "title": "The design of a novel and resistant Zn(PZDC)(ATZ)",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.523979",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "94f7b4957cbd",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524029",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f06b5fb682b1",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524078",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6a5b1f4fd296",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524127",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "32ff123187b3",
+      "title": "Carbon Dioxide Capture in a Carbonate-Pillared Ult",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524187",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "c4b74fb8fd1c",
+      "title": "Pillared metal organic frameworks for the luminesc",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524243",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b33f5192881b",
+      "title": "Immobilization of H2O in Diffusion Channel of Meta",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524303",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "c2ce30b6259c",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524352",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "d7d931748afa",
+      "title": "",
+      "paper_kind": "theory_simulation",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "computational only, no synthesis/experimental",
+      "routed_at": "2026-05-20T16:35:50.524483",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "07583595bdf7",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524615",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "5490d74e9536",
+      "title": "Achieving Superprotonic Conduction in Metal–Organi",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524675",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "5aa321e49dbe",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524726",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "30d4205afd7a",
+      "title": "CO2N2 separation by vacuum swing adsorption using",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524782",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "819514b3add8",
+      "title": "Selective gas adsorption and fluorescence sensing",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524838",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3102127ab41f",
+      "title": "Adsorption of Iodine Based on a Tetrazolate Framew",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524894",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8f5c2cf04665",
+      "title": "A three-dimensional metal–organic framework with h",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.524951",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "e5c646067ae0",
+      "title": "Control of intracrystalline diffusion in a bilayer",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525008",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "fc50783c6918",
+      "title": "Efficient carbon dioxide capture from flue gas and",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525065",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "bdcdbf619520",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525113",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "bc94c5cb3329",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525161",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "cd232c378576",
+      "title": "Kinetic separation of propylene over propane in a",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525220",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "de406c62e157",
+      "title": "BTEC水解",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525271",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "5b0277415f17",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525322",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "c79105a7e122",
+      "title": "Studies on the removal of phosphate in water throu",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525379",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a81a4cda2196",
+      "title": "Construction of a zeolite A-type multivariate meta",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525436",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8fe522d31fa4",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525487",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "7eafab3ec2e2",
+      "title": "An amine-functionalized metal organic framework fo",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525543",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "bcfc40db266f",
+      "title": "Adsorption of Iodine Based on a Tetrazolate Framew",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525599",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "ad4930c0a0d3",
+      "title": "Solvent-Induced Topological Variation in Zn-Triazo",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525657",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "25907edd8ee8",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525706",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "9c7fd9f72c5c",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525756",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "318d01c9cf2b",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525806",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "23e9ac5655c5",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525854",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "09e67f192def",
+      "title": "Metal Azolate Frameworks From Crystal Engineering to Functional Materials",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525919",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "0d1cacffbd0b",
+      "title": "SCN-.OX.BTC-hai 等。 - 2007 - Coligand Modulated Six-, Eight-, and Ten-Connected",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.525986",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f849bda00a63",
+      "title": "Exceptionally Stable and Hollow Tubular Metal-Orga",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526044",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "57e1f73b209f",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526094",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "49b2ebb2b8e4",
+      "title": "",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526142",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a8e30ce28b53",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526191",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "9a4d07d3bef9",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526241",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "97fd14a47cac",
+      "title": "SO4-Angew Chem Int Ed - 2025 - Wang - Multivariate Sulfate‐Pillared Metal Azolate Frameworks with Tunable Flexibility for CO2",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526314",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6514269e82d9",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526362",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "0e0372bd7999",
+      "title": "Engineering the Microporous Environment of Flexibl",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526418",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6b0b28490990",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526465",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "7d76885b5ec5",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526602",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "915a83b12e95",
+      "title": "Selective adsorption and separation of C2 hydrocar",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526658",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "e491473623b9",
+      "title": "Fine-Tuning MOFs with Amino Group for One-Step Eth",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526716",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "09be42eaae90",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526766",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "bc92a6860fda",
+      "title": "A scalable ultramicroporous metal-organic framewor",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526822",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b693b8f886ee",
+      "title": "Effect of Fluorination on the Crystal Structure, S",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526879",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "40538d8f41b8",
+      "title": "",
+      "paper_kind": "theory_simulation",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "computational only, no synthesis/experimental",
+      "routed_at": "2026-05-20T16:35:50.526927",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "cd0fc62673f6",
+      "title": "Stitching 2D Polymeric Layers into Flexible 3D Met",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.526984",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6613653bbccc",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527033",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "13ab371bdaeb",
+      "title": "Structures, luminescence and magnetic properties o",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527090",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "287429d86099",
+      "title": "",
+      "paper_kind": "ambiguous",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.4,
+      "routing_rationale": "insufficient signals for rule-based classification",
+      "routed_at": "2026-05-20T16:35:50.527207",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6d91fe8710db",
+      "title": "Syntheses, structures, and photoluminescent proper",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527267",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "ffba90254f37",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527316",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "14d4b8abc8fc",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527366",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "c5a7573ead67",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527415",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "537a8fa3b41c",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527465",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "fbf7094ee3a4",
+      "title": "Competitive CO2H2O Adsorption on CALF-20",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527528",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "5e115f0ab554",
+      "title": "Pillar-layer Zn–triazolate–dicarboxylate framework",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527586",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "5ec53d505118",
+      "title": "Role of molar-ratio, temperature and solvent on th",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527643",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "03314ed46af4",
+      "title": "Achieving Superprotonic Conduction in Metal-Organi",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527701",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "70cdcc23a105",
+      "title": "One-step ethylene purification from ternary mixtur",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527758",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "7b72d2604f90",
+      "title": "Zn Metal–Organic Framework with High Stability and",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527815",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "4138e79cf7f6",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527864",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6d0b831e801b",
+      "title": "Four Zn(II)Cd(II)-3-amino-1,2,4-triazolate framew",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527921",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3e1294c811a4",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.527974",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3acf5b3581ba",
+      "title": "A three-dimensional metal–organic framework with h",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528031",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a440f91e7e1a",
+      "title": "Restoring Porosity and Uncovering Flexibility in P",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528088",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "03636bfd549e",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528138",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "2c4071961196",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528187",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6f8496567c7f",
+      "title": "A Zn(II) Pillared-Layer Ultramicroporous Metal-Org",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528246",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b995768c76e0",
+      "title": "CO3-Angew Chem Int Ed - 2024 - Zhao - Exhaled Anesthetic Xenon Regeneration by Gas Separation Using a Metal Organic Framework",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528366",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "e0c6d76c92fc",
+      "title": "Programmed Pore Engineering in an Isoreticular Tri",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528466",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "63f0d3e9e0fb",
+      "title": "High CO 2 and H 2 Uptake in",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528543",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8a5789906247",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528604",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "286e012e968f",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528663",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "2051063a5ece",
+      "title": "",
+      "paper_kind": "review_methodology",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.95,
+      "routing_rationale": "filename matches known principle paper: c4cp04898a",
+      "routed_at": "2026-05-20T16:35:50.528713",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f8402f8ea542",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528769",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "7053ffe8885e",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528920",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "625603ff8379",
+      "title": "H2bdc",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.528988",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "2c0d01aac737",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529045",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8a61649cf87e",
+      "title": "A Series of Metal–Organic Frameworks Built of Tria",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.75,
+      "routing_rationale": "title contains comparative/screening keywords",
+      "routed_at": "2026-05-20T16:35:50.529137",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6baaaba11f24",
+      "title": "A Flexible Porous MOF Exhibiting Reversible Breath",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529221",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f70ee3da2e06",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529286",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "08169a547bbc",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529347",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "fa7473797f58",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529400",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "be82c3858dd0",
+      "title": "An electrochemically neutralized energy-assisted l",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529463",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "05f5cdef9b49",
+      "title": "A {Zn 5 } cluster‐based metal–organic f",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529524",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "0d9c5712fee6",
+      "title": "A self-catenated rob-type porous coordination poly",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529582",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b371e84f5f09",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529629",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "40b04428835f",
+      "title": "Preferential CO 2 adsorption by an ultr",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529686",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f55a02c26322",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529735",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f409ad2e178a",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529787",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "94e80a9c0ffd",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529916",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "79ccfb53a022",
+      "title": "A zinc(II) metal–organic framework based on triazole and dicarboxylate",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.529976",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8bf7f8c8aa14",
+      "title": "A Highly Stable Framework of Crystalline Zinc Phos",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530037",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "25a1e70b986d",
+      "title": "Novel Iso-Reticular Zn(II) Metal–Organic Framework",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530098",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "d0656fee58b5",
+      "title": "Three Zn(II)-triazole-H3btc complexes regulated by mixed ligands",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530159",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b2a9adbbc4b4",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530212",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "ab2f2ea89067",
+      "title": "Ligand Symmetry Modulation for Designing Mixed-Lig",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530273",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "cccbb8ebbffc",
+      "title": "A scalable robust microporous Al-MOF for post-comb",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530337",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f13b85af5e0f",
+      "title": "Isoreticular Three-Dimensional Kagome Metal–Organi",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530413",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a3ea5d899378",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530464",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6b310008b988",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530516",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "cd9897204eef",
+      "title": "Abnormal CO2 and H2O Diffusion in CALF-20(Zn) Meta",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530579",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "c4a33fca36cb",
+      "title": "Synthesis and characterization of two new triazola",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530637",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "86a7c025866c",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530687",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3f79bf505f33",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530738",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "99cce61e0b82",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530876",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "d3cb3f2fb120",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530924",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "e7bb127fff1a",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.530973",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "014124fe711e",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531022",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "1f71b819131c",
+      "title": "Two isostructural amine-functionalized 3D self-pen",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531077",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "47bd0617ba03",
+      "title": "Separation of CO2 and N2 on a hydrophobic metal or",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531132",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "93123c5868a2",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531178",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8eeb28d8abfa",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531226",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "4b169130f161",
+      "title": "Zeolitic metal azolate frameworks (MAFs) from ZnO",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531283",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "92ab82a51655",
+      "title": "Abnormal CO2 and H2O Diffusion in CALF-20(Zn) Meta",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531350",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "585d1cd3111b",
+      "title": "Charting the CO2 capture performance of a phase-ch",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531416",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f297c1f73265",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531471",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8fece016b962",
+      "title": "",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531619",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "530f5c40e426",
+      "title": "A new anionic metal–organic framework showing tuna",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531680",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "1cdb348c09d0",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531730",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "42a2825a2090",
+      "title": "Preferential CO 2 adsorption by an ultr",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531786",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "4bf71c012a6c",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531838",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "02a1c3dc2ba1",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531889",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "dc8e95b470bb",
+      "title": "Atz-PO4Angew Chem Int Ed - 2011 - Vaidhyanathan - Competition and Cooperativity in Carbon Dioxide Sorption by Amine‐Functionalized",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.531965",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "4aac5875b0eb",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532015",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a5965e89e460",
+      "title": "A new anionic metal–organic framework showing tuna",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532073",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "524fd695803c",
+      "title": "",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532123",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "c6c12319f7ad",
+      "title": "Tailoring Hydrophobicity and Pore Environment in P",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532182",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "12b2852ac256",
+      "title": "Green and Scalable Preparation of an Isomeric CALF",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532241",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6f088017d1f9",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532290",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "47e14342870f",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532340",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "7173aa00e955",
+      "title": "",
+      "paper_kind": "review_methodology",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.95,
+      "routing_rationale": "filename matches known principle paper: c5cs00715a",
+      "routed_at": "2026-05-20T16:35:50.532384",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "22272f44e8c7",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532434",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "bff26f8ebf7c",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532493",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "57f7dc1dff2e",
+      "title": "Four Novel Three-Dimensional Pillared-Layer Metal-Organic",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532558",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "5bd6d1cae658",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532757",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "df399a767a7e",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532859",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "fd11547b34e2",
+      "title": "Humidity-Responsive Polymorphism in CALF-20 A Res",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532926",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "5d8eca38aab2",
+      "title": "Wall-trapped acetylene tetramer in a metal-organic",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.532990",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "adc30d5190af",
+      "title": "",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533045",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "327e4c63e7dd",
+      "title": "A zinc(II) metal–organic framework based on triazo",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533107",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "e4f2dd03ed6d",
+      "title": "",
+      "paper_kind": "review_methodology",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.95,
+      "routing_rationale": "filename matches known principle paper: exploring-window-effects",
+      "routed_at": "2026-05-20T16:35:50.533156",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f99adb3f4b07",
+      "title": "An electrochemically neutralized energy-assisted l",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533220",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "35fcf2cf447e",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533275",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3bb15c92cc7b",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533330",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8199cbc71be5",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533383",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "ee237b02c72e",
+      "title": "New luminescent Zn(II) compound as a highly select",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533447",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8453eeb895d8",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533504",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "5fdf9f5f0fbd",
+      "title": "Synergistic sorbent separation for one-step ethyle",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533568",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "0c2479715990",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533625",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "76162d2dc290",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533753",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "0980bd5892a8",
+      "title": "Efficient Xe selective separation from XeKrN 2 m",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533819",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "9621c008066d",
+      "title": "Four Zn(II)Cd(II)-3-amino-1,2,4-triazolate framew",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533886",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "d9b80005c58d",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533941",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "45f9abb3ad1c",
+      "title": "",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.533994",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "9a3286216110",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534155",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "7002be9dcc15",
+      "title": "Strong and Dynamic CO2 Sorption in a Flexible Poro",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534229",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "9a91aa096117",
+      "title": "Framework Enabling Benchmark Inverse Selective CO2",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534296",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "de52aa10b4d9",
+      "title": "Direct Determination of the Single-Ion Anisotropy",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534362",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "39219513efa5",
+      "title": "3D zinc(II) coordination polymers built up by triazole",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534427",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "98d9e3d44821",
+      "title": "",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534481",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "930aff59a5dd",
+      "title": "A scalable ultramicroporous metal-organic framewor",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534540",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "0f9f2bdd54db",
+      "title": "",
+      "paper_kind": "ambiguous",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.4,
+      "routing_rationale": "insufficient signals for rule-based classification",
+      "routed_at": "2026-05-20T16:35:50.534588",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "bfa7c9affeb8",
+      "title": "Zn Metal–Organic Framework with High Stability and",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534648",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "e990e0e8c588",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534702",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3ffa6c8bb295",
+      "title": "Exceptionally Stable, Hollow Tubular Metal−Organic",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534763",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a5f035406a01",
+      "title": "Pore configuration control in hybrid azolate ultra",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534821",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "fd9300073a96",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534872",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a4c5917133a0",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534924",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "234cd07539aa",
+      "title": "IPA-F",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.534976",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b612f8927383",
+      "title": "High CO2 and H2 Uptake in an Anionic Porous Framew",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535035",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "1ab646fccf23",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535087",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "4ebb439e73d2",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535140",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "2d345c000268",
+      "title": "H4betc-A stable, pillar-layer metal–organic framework",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535199",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "f4ee8ef5453e",
+      "title": "Exploring the Potential of a Highly Scalable Metal",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535259",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "bb3ea0ef2139",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535310",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "987bc8a29237",
+      "title": "Studies on the removal of phosphate in water throu",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535369",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "40718dae876e",
+      "title": "",
+      "paper_kind": "review_methodology",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.95,
+      "routing_rationale": "filename matches known principle paper: diffusivity-of-co2",
+      "routed_at": "2026-05-20T16:35:50.535418",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "122d7b4e0d01",
+      "title": "Isoreticular Three-Dimensional Kagome Metal–Organi",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535480",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "2e9e333299b2",
+      "title": "Immobilization of the Polar Group into an Ultramic",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535541",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3fdc7853db6d",
+      "title": "",
+      "paper_kind": "ambiguous",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.4,
+      "routing_rationale": "insufficient signals for rule-based classification",
+      "routed_at": "2026-05-20T16:35:50.535594",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "d87085de1c1d",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535641",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "653921058bc6",
+      "title": "Poly[bis(μ 3 -3-amino-1,2,4-triazolato)",
+      "paper_kind": "single_material_paper",
+      "routes": [
+        "material"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.8,
+      "routing_rationale": "has synthesis + experimental, no comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535695",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "d3f7c46a759d",
+      "title": "Novel HBD-Containing Zn (dobdc) (datz) as efficien",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535750",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6cff4bbbe500",
+      "title": "Precise regulating synergistic effect in metal–org",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535807",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6067608ce1e2",
+      "title": "Carbon Dioxide Capture in a Carbonate-Pillared Ult",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535862",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "34af98065e7b",
+      "title": "A novel water-stable MOF Zn(Py)(Atz) as heterogene",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535917",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "95c5e1a4b5d9",
+      "title": "X-TRZSmall - 2024 - Yang - Shifting C2H2 CO2 Adsorption and Separation in Pillar‐Layered Metal Organic Frameworks",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.535985",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "7079b11fb224",
+      "title": "H2FA-Xing 等。 - 2015 - Microporous Zinc(II) Metal-Organic Framework with",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536044",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "80889541cbf7",
+      "title": "Pore Surface Tailored SOD-Type Metal-Organic Zeoli",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536102",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "9fbde6b04aa6",
+      "title": "",
+      "paper_kind": "review_methodology",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.95,
+      "routing_rationale": "filename matches known principle paper: yang-et-al-2024-leveraging-diffusion",
+      "routed_at": "2026-05-20T16:35:50.536147",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "23635e636118",
+      "title": "Synthesis and characterization of two new triazola",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536202",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "bfbed74e28fe",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536248",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8fafae7223b5",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536295",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8a689977d757",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536345",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "94d0484540b0",
+      "title": "Construction of a zeolite A-type multivariate meta",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536402",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "266d29fc0075",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536450",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "509de9186208",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536497",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "c1a5d8e02c30",
+      "title": "Construction of a New Co(II) Coordination Polymer",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536550",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "97878d3357f1",
+      "title": "",
+      "paper_kind": "review_methodology",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.95,
+      "routing_rationale": "filename matches known principle paper: d2cs00627h",
+      "routed_at": "2026-05-20T16:35:50.536593",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3642cdd42737",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536640",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "526b137a4e63",
+      "title": "H2FA-Hydrogen bond unlocking-driven pore structure control for shifting multi-component gas separation function",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536704",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "8bcfad0f6e91",
+      "title": "",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536846",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "b2bd48fc9577",
+      "title": "Residence time distribution in fluidized beds-diffusion、dispersion、and adsorption",
+      "paper_kind": "review_methodology",
+      "routes": [
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.95,
+      "routing_rationale": "filename matches known principle paper: residence time distribution",
+      "routed_at": "2026-05-20T16:35:50.536894",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "a0e9f0acf0bb",
+      "title": "New luminescent Zn(II) compound as a highly select",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.536948",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "6f6e2157a8fd",
+      "title": "PO4-trzAngew Chem Int Ed - 2025 - Sarkar - Near‐Zero Thermal Expansion in Coordination Polymer Cd 1 2 4‐Triazole 2 H2PO4 2",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.537019",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "9d7addf6cc90",
+      "title": "SO4",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.537065",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "28c83b15b1b5",
+      "title": "H2IPA",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.537112",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "3a2a3169d968",
+      "title": "Post-Combustion CO2 capture by vacuum swing adsorp",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.537166",
+      "routed_by_model": ""
+    },
+    {
+      "paper_id": "99abd74c416a",
+      "title": "Construction of a bifunctional Zn(II)–organic fram",
+      "paper_kind": "comparative_material_paper",
+      "routes": [
+        "material",
+        "principle"
+      ],
+      "routing_method": "rule_based",
+      "routing_confidence": 0.7,
+      "routing_rationale": "has synthesis + comparison tables",
+      "routed_at": "2026-05-20T16:35:50.537221",
+      "routed_by_model": ""
+    }
+  ]
+}

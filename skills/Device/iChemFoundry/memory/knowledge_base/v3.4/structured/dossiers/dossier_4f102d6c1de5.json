@@ -1,0 +1,43 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_4f102d6c1de5",
+  "canonical_material_id": "mat_99e9a26099a5",
+  "canonical_name": "CH2Cl2-grown-[HMTA]-[NIS]4-complex,-III",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": "lig_a4f730da6c20",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_2935d417b994"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "ed2e02bdfbe8"
+  ],
+  "evidence_trace_ids": [
+    "trace_5c3f0781dc42"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:54:55.615384",
+  "updated_at": "2026-04-23T22:54:55.615437"
+}

@@ -1,0 +1,34 @@
+{
+  "experiment_type": "solvent_exchange",
+  "parameter_set_name": "mof_methanol_solvent_exchange_params",
+  "description": "针对单通道 MOF 甲醇溶剂置换任务编排的参数集合。",
+  "filled_params": {
+    "lift_steps": 800000,
+    "target_temperature_c": 65,
+    "initial_dry_time_sec": 30,
+    "injection_time_sec": 30,
+    "activation_time_sec": 300,
+    "filtration_time_sec": 30,
+    "exchange_cycles": 3,
+    "cooling_time_sec": 600,
+    "methanol_volume_ml": 10
+  },
+  "param_sources": {
+    "lift_steps": "user_provided",
+    "target_temperature_c": "user_provided",
+    "initial_dry_time_sec": "user_provided",
+    "injection_time_sec": "user_provided",
+    "activation_time_sec": "user_provided",
+    "filtration_time_sec": "user_provided",
+    "exchange_cycles": "user_provided",
+    "cooling_time_sec": "user_provided",
+    "methanol_volume_ml": "user_provided"
+  },
+  "missing_params": [],
+  "assumptions": [],
+  "metadata": {
+    "scope": "parameter_generation_only",
+    "mode": "strict",
+    "device_type": "single_channel_mof_device"
+  }
+}

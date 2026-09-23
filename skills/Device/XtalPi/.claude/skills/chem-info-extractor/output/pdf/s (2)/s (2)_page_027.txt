@@ -1,0 +1,22 @@
+S27
+ CH=C=CH), 2.40 (t, J = 7.6 Hz, 2 H, CH 2), 2.08-1.94 (m, 4 H, 2 × CH 2), 1.75 (quint,
+J = 7.4 Hz, 2 H, CH 2), 1.45-1.22 (m, 18 H, 9 × CH 2), 0.88 (t, J = 6.8 Hz, 3 H, CH 3);
+13C NMR (100 MHz, CDCl 3) δ 204.0, 180.3, 91.6, 89.6, 33.3, 31.9, 29.67, 29.65, 29.5,
+29.4, 29.2, 29.1, 28.9, 28.2, 23.9, 22.7, 14.1; IR (neat, cm-1): 2922, 2853, 1962, 1708,
+1457, 1439, 1413, 1378, 1287, 1240, 1204, 1157, 1061, 1056; MS (EI) m/z (%): 280 (M
++, 1.65), 140 (100).
+(3) Determination of ee for ( R)-octadeca-5,6-dienoic acid.  (jxg-1-69)
+
+To a round bottom flask, ( Ra)-7 (55.9 mg, 0.2 mmol) and mixed solvent (5 mL,
+Et2O/MeOH = 4/1 by volume) were added. TMSCHN 2 (2 M in hexane, 0.2 mL, 0.4
+mmol) was added dropwise after the mixture was cooled to 0 oC. The reaction mixture
+was then warmed up to room temperature naturally. When the reaction was complete as monitored by TLC after 2.5 h, the solven t was evaporated under vacuum, and the
+residue was purified by chromatography on silica gel on silica gel to afford ( R
+a)-4hd
+(55.0 mg, 94%) (eluent: petroleum ether then pe troleum ether /ethyl acetate = 50/1) as
+a liquid:6 93% ee (HPLC conditions: Chir alcel OD-H column, hexane/ i-PrOH = 100/0,
+0.5 mL/min, λ = 214 nm, tR(major) = 21.7 min, tR(minor) = 21.0 min); [ α]D27.2 = -44.4
+(c = 0.970, CHCl 3); 1H NMR (400 MHz, CDCl 3) δ 5.15-4.99 (m, 2 H, CH=C=CH),
+3.67 (s, 3 H, CH 3), 2.36 (t, J = 7.6 Hz, 2 H, CH 2), 2.09-1.91 (m, 4 H, 2 × CH 2), 1.74
+(quint, J = 7.4 Hz, 2 H, CH 2), 1.45-1.19 (m, 18 H, 9 × CH 2), 0.88 (t, J = 6.8 Hz, 3 H,
+CH 3); 13C NMR (100 MHz, CDCl 3) δ 204.0, 174.0, 91.5, 89.7, 51.4, 33.3, 31.9, 29.65,

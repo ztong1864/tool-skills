@@ -1,0 +1,38 @@
+S3
+ Table S1 . Difference in the specific rotation values reported by Periasamy  et al . and
+the data observed in this studya
+
+Compound Reported by
+Periasamy et al.1 Our results
+4bj 94%ee
+ [α]D25 = -193.5
+(0.33, CHCl 3) 97%ee
+[α]D25 = -232.8 (0.34, CHCl 3)
+[α]D25 = -228.1 (0.61, CHCl 3)
+[α]D25 = -221.1 (0.78, CHCl 3)
+
+4bg 90%ee
+ [α]D25 = -151.5
+(0.51, CHCl 3) 93%ee
+[α]D24 = -229.0 (0.53, CHCl 3)
+[α]D22 = -220.7 (1.00, CHCl 3)
+
+4bh 90%ee
+ [α]D25 = -125.3
+(0.50, CHCl 3) 95%ee
+ [α]D22 = -199.9 (1.02, CHCl 3)
+
+4bf 90%ee
+ [α]D25 = -146.5
+(0.50, CHCl 3) 96%ee
+[α]D21 = -194.6 (0.56, CHCl 3)
+[α]D21 = -197.1 (1.05, CHCl 3)
+
+4bd 90%ee
+ [α]D25 = -167.8
+(0.5, CHCl 3) 95%ee
+[α]D20 = -221.7 (0.51, CHCl 3)
+[α]D19 = -212.1 (0.98, CHCl 3)
+a The polarimeter has been checked by measuring the opti cal rotation of ( S)-diphenyl-
+prolinol (99% ee): [ α]D19 = -66.8 (0.51, CHCl 3), which is in agreement with the value
+reported in the literature.

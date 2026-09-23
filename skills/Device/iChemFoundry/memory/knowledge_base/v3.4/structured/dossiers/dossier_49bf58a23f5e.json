@@ -1,0 +1,63 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_49bf58a23f5e",
+  "canonical_material_id": "mat_f33180a69a49",
+  "canonical_name": "Zn-Tz-crystals",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_a325abf8f620",
+  "pillar_id": "pil_60486cbf961b",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_871bd6cf6e69",
+    "mcard_805f06043e59",
+    "mcard_d0f16b269a76"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_7d67a95eee0c",
+    "mechcard_be063617765c",
+    "mechcard_5cc234aba5c8"
+  ],
+  "recipe_card_ids": [
+    "recipe_effefc6e3ff5",
+    "recipe_5b7db11dbe85"
+  ],
+  "claim_card_ids": [
+    "claim_1d92e71a62b8",
+    "claim_e1e5fd778b30",
+    "claim_724efbdcd56f"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_88e0eaa2421e"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "5250c7918a49",
+    "2402f4b4cedf",
+    "adc30d5190af"
+  ],
+  "evidence_trace_ids": [
+    "trace_c49c670bd8fa",
+    "trace_360a2405e16e",
+    "trace_e802e622160e",
+    "trace_645feca922b9",
+    "trace_9f416c40c9de",
+    "trace_c1335d32b3fd",
+    "trace_9678594befe4"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:48:24.063274",
+  "updated_at": "2026-04-23T22:37:24.653579"
+}

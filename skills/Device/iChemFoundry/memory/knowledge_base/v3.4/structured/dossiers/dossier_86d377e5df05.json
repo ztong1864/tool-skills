@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_86d377e5df05",
+  "canonical_material_id": "mat_35b047f07914",
+  "canonical_name": "LTA-zeolites",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_f5de89474dd7",
+    "mcard_27b7df70a6fa",
+    "mcard_2b70240820e4",
+    "mcard_05b66fcac854"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_c5a17591a8ee"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_ed73e3958ec4",
+    "claim_a419e7511b3b",
+    "claim_1a2abf15a28a"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 0.5,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "08169a547bbc"
+  ],
+  "evidence_trace_ids": [
+    "trace_9e61db2b6650",
+    "trace_f26680b34694",
+    "trace_6416f0505492"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:29:02.330168",
+  "updated_at": "2026-04-23T22:29:29.577415"
+}

@@ -1,0 +1,76 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_5d1831176996",
+  "canonical_material_id": "mat_24c7d563bd19",
+  "canonical_name": "[Zn2(dmtrz)2(H2O)]-subunit",
+  "metal_element": "Zn",
+  "node_signature_id": "node_82e52af9fabf",
+  "primary_linker_id": "lig_e8414fc161af",
+  "pillar_id": null,
+  "topology": "3d network",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_2706cce51ea4",
+    "mcard_38ed2bec62f1",
+    "mcard_09c684c5baed",
+    "mcard_8ea95bea48db",
+    "mcard_d6a4bd5c4619",
+    "mcard_f5b4585e99cd",
+    "mcard_fcae645d3c19",
+    "mcard_c1a1071b0803",
+    "mcard_7b05cd98475d",
+    "mcard_fbe510950c82",
+    "mcard_36ff1da62c34",
+    "mcard_fdb58853dbec"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_b655e4cb9e97",
+    "mechcard_06b2b0134cab",
+    "mechcard_97bd7bd42250",
+    "mechcard_407ef1e2db2e",
+    "mechcard_77eac9ad2a8f",
+    "mechcard_aad12a34473d"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_f767b2388998",
+    "claim_f921560bf3da",
+    "claim_e1fe168a9ebc",
+    "claim_4c349b7d288e",
+    "claim_3d609ef489c3"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "9daa86d6b3c0",
+    "86a7c025866c",
+    "3bb15c92cc7b"
+  ],
+  "evidence_trace_ids": [
+    "trace_2368a2250176",
+    "trace_369e3804f187",
+    "trace_c93566c55358",
+    "trace_0f14e6c6018c",
+    "trace_30e1b6b0d25e",
+    "trace_a697297e5b0f",
+    "trace_56cf63eaa3a9",
+    "trace_cafa616fec51",
+    "trace_c77ee6c991ee",
+    "trace_869841ca27f0"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:08:15.114510",
+  "updated_at": "2026-04-23T22:22:08.551794"
+}

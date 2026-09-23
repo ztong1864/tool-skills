@@ -1,0 +1,240 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_9f9a555a3396",
+  "paper_id": "e5c646067ae0",
+  "title": "Control of intracrystalline diffusion in a bilayer",
+  "year": 2022,
+  "doi": null,
+  "normalized_task_id": "C3H6_C3H8_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "Milli-Zn-ATA shows thermal_decomposition_temperature = 340.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "dynamic_uptake_C3H6 (C3H6) = 30.0 wt% at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "thermal_decomposition_temperature = 340.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "separation_factor_C3H6/C3H8 (C3H6) = 129.0 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "straight_channels_parallel_to_(0k0)_surface → diffusion"
+    },
+    {
+      "title": "Mechanism",
+      "body": "pore_channels_parallel_to_large_top_surface → diffusion"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] balance intracrystalline diffusion and surface permeation when tuning framework structure for kinetic C3H6/C3H8 separation → identified as an essential starting point for effective kinetic adsorptive separation, especially for gases with highly similar kinetic size"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a pore window size comparable to the molecular cross-sections of C3H6 and C3H8, as in Zn-ATA with a 4.1 × 3.8 Å2 window → enables kinetic discrimination, with C3H6 adsorbing dramatically faster than C3H8 in Milli-Zn-ATA"
+    },
+    {
+      "title": "Comparison",
+      "body": "C3H6 adsorption in Milli-Zn-ATA vs C3H8 adsorption in Milli-Zn-ATA: winner=subject_a on adsorption_rate"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_d8b77bdd1312",
+    "trace_28b7f7640682",
+    "trace_a95ef2c6fe1e",
+    "trace_79f7d8197210",
+    "trace_0c5d818ce865",
+    "trace_22718f0ba4dd",
+    "trace_262b2e2dbe15",
+    "trace_8a9876ae6e1e",
+    "trace_2d72a0023973",
+    "trace_54b64286b039",
+    "trace_0e90751a219c",
+    "trace_212454a61d0d",
+    "trace_ba220cc41a61",
+    "trace_220c861326dd",
+    "trace_6ad26e983b3f",
+    "trace_e4fc1f76e63e",
+    "trace_154428d6b159",
+    "trace_7c10ba99e053",
+    "trace_443d91a49969",
+    "trace_2ac4e3e832e1",
+    "trace_2adae7b6e7f1",
+    "trace_5dc58f6e8d1a",
+    "trace_54eb6263c0a8",
+    "trace_a67f3d5da311",
+    "trace_03c36f112fab",
+    "trace_bfc1abbb3c4f",
+    "trace_70c7dc974731",
+    "trace_210fd6bc5890",
+    "trace_410867b6a104",
+    "trace_c5b1cefa36b7",
+    "trace_a8744132d5c0",
+    "trace_f9453a18267e",
+    "trace_147a14547610",
+    "trace_bd7cc8f6ea25",
+    "trace_b4bf55f31fe3",
+    "trace_f47f44e4746f",
+    "trace_fa7ac0053847",
+    "trace_3dfccc547524",
+    "trace_2db1d508e020",
+    "trace_236533af5410",
+    "trace_57eaf06562e3",
+    "trace_4e06ed01679d",
+    "trace_2eb180c0c16c",
+    "trace_4042daf0483b",
+    "trace_566f06f46d88",
+    "trace_7d11325b930c",
+    "trace_fc8e20d31161",
+    "trace_faca76ff7fdd",
+    "trace_77a7a13c34e4",
+    "trace_0d6fb04febcd",
+    "trace_55f86d42ea58",
+    "trace_870b351e20d6",
+    "trace_8f75dc14481c",
+    "trace_ff2bfb0ca879",
+    "trace_0f74c94d51f3",
+    "trace_ecd3adfe201b",
+    "trace_8c35c714c943",
+    "trace_f0682f090d0f",
+    "trace_9e43c0db3054",
+    "trace_f47f44e4746f",
+    "trace_2db1d508e020",
+    "trace_6ad26e983b3f",
+    "trace_54b64286b039",
+    "trace_ecd3adfe201b",
+    "trace_70c7dc974731",
+    "trace_4042daf0483b",
+    "trace_c5b1cefa36b7",
+    "trace_0c5d818ce865",
+    "trace_0e90751a219c",
+    "trace_fa7ac0053847",
+    "trace_77a7a13c34e4",
+    "trace_f9453a18267e",
+    "trace_e4fc1f76e63e",
+    "trace_2eb180c0c16c",
+    "trace_870b351e20d6",
+    "trace_ba220cc41a61",
+    "trace_262b2e2dbe15",
+    "trace_bd7cc8f6ea25",
+    "trace_2d72a0023973",
+    "trace_03c36f112fab",
+    "trace_fc8e20d31161",
+    "trace_7c10ba99e053",
+    "trace_2adae7b6e7f1",
+    "trace_79f7d8197210",
+    "trace_22718f0ba4dd",
+    "trace_8c35c714c943",
+    "trace_57eaf06562e3",
+    "trace_a95ef2c6fe1e",
+    "trace_236533af5410",
+    "trace_443d91a49969",
+    "trace_9e43c0db3054",
+    "trace_8a9876ae6e1e",
+    "trace_212454a61d0d",
+    "trace_8f75dc14481c",
+    "trace_5dc58f6e8d1a",
+    "trace_faca76ff7fdd",
+    "trace_0f74c94d51f3",
+    "trace_7d11325b930c",
+    "trace_410867b6a104",
+    "trace_d8b77bdd1312",
+    "trace_566f06f46d88",
+    "trace_4e06ed01679d",
+    "trace_3dfccc547524",
+    "trace_28b7f7640682",
+    "trace_154428d6b159",
+    "trace_210fd6bc5890",
+    "trace_a67f3d5da311",
+    "trace_bfc1abbb3c4f",
+    "trace_ff2bfb0ca879",
+    "trace_2ac4e3e832e1",
+    "trace_0d6fb04febcd",
+    "trace_55f86d42ea58",
+    "trace_f0682f090d0f",
+    "trace_a8744132d5c0",
+    "trace_54eb6263c0a8",
+    "trace_b4bf55f31fe3",
+    "trace_147a14547610",
+    "trace_220c861326dd"
+  ],
+  "measurement_card_ids": [
+    "mcard_c8614a733adb",
+    "mcard_2db56c329219",
+    "mcard_87dc674c69ef",
+    "mcard_a774a7e5eb4b",
+    "mcard_b2463a2fd4a2",
+    "mcard_5aae44d9e5d9",
+    "mcard_8b79177de83d",
+    "mcard_ce2857ce2c30"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_38908b64aa41",
+    "mechcard_6f1f43a86788",
+    "mechcard_fe5b7e6159b0",
+    "mechcard_973baa39c855"
+  ],
+  "recipe_card_ids": [
+    "recipe_c0c7ba299ed6"
+  ],
+  "claim_card_ids": [
+    "claim_9dc85a8a5fac",
+    "claim_4051fdc4fb30",
+    "claim_5c1255bf9a93",
+    "claim_e378f2252ea3",
+    "claim_57a8feedc31d",
+    "claim_eecb71a05d5b",
+    "claim_d8db9c60c686"
+  ],
+  "design_rule_card_ids": [
+    "drule_6ddfca5a4292",
+    "drule_646293ce2330"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_e47b484224bf",
+    "comp_b081a80a4289",
+    "comp_b49bdc79d76e"
+  ],
+  "failure_case_card_ids": [
+    "fail_1cf61ab94f83",
+    "fail_8688f759d094"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_940dd8f78c3c"
+  ],
+  "dossier_ids": [
+    "dossier_fada311ee414"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Effective kinetic adsorptive separation requires balancing intracrystalline diffusion with surface permeation, not pore-size tuning alone.",
+    "Shaping nanocrystals into 1–2 mm pellets only partially restores performance: selectivity rises to 17 but remains far below 60 for Milli-Zn-ATA.",
+    "Breakthrough tests gave 93% pure C3H6 from an equimolar C3H6/C3H8 mixture in one adsorption-desorption cycle, a new benchmark."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.734300",
+  "updated_at": "2026-04-24T00:19:47.734304",
+  "raw_path": "相关文献/Ding 等 - 2022 - Control of intracrystalline diffusion in a bilayer.pdf",
+  "authors": [
+    "Ding"
+  ]
+}

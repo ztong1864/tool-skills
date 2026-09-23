@@ -1,0 +1,83 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_a5225a4665a8",
+  "canonical_material_id": "mat_7d36b87c749e",
+  "canonical_name": "MAC-4-C",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_e4963c37db5d",
+  "pillar_id": "pil_e8414fc161af",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_fd9d1dede37a",
+    "mcard_2539ce309ecb",
+    "mcard_2eb3aead3363",
+    "mcard_f5be45e1894d",
+    "mcard_6c260137b2b1",
+    "mcard_752289a02704",
+    "mcard_a309697c8b13",
+    "mcard_6167104aa24e",
+    "mcard_135438694e50",
+    "mcard_8d5ee1ecb7ce"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_e1f5bb12c154",
+    "mechcard_83d741c41d04",
+    "mechcard_9f7e9c4081c3",
+    "mechcard_2817c9bd91dd",
+    "mechcard_3fb6c75002fb",
+    "mechcard_aa9679cbe053",
+    "mechcard_79f382aa37af",
+    "mechcard_77c64cb89083",
+    "mechcard_b611f1a8a081"
+  ],
+  "recipe_card_ids": [
+    "recipe_52b0e140d633"
+  ],
+  "claim_card_ids": [
+    "claim_a0d043b8ff7f",
+    "claim_b18be9198c47",
+    "claim_f1803cc4247f"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_82203b913205",
+    "fail_5067d3f9d837",
+    "fail_62743aadebbb"
+  ],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "8a61649cf87e",
+    "beb388971362",
+    "f06b5fb682b1",
+    "cb0db3cfb790"
+  ],
+  "evidence_trace_ids": [
+    "trace_6b963f355d0b",
+    "trace_d5c577d43e53",
+    "trace_f610d0e458ee",
+    "trace_de06ddbba539",
+    "trace_d3bd02dd4d34",
+    "trace_164baba54d8e",
+    "trace_23a83f78ed5d",
+    "trace_60657529c6e1",
+    "trace_2c9094b6ca9d",
+    "trace_e6af0a53b192",
+    "trace_a147fed8743b",
+    "trace_8ef5228a1b68"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:33:08.141469",
+  "updated_at": "2026-04-23T21:59:11.875486"
+}

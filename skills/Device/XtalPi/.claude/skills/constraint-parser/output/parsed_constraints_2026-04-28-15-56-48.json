@@ -1,0 +1,81 @@
+{
+  "schema_version": "constraint-parser/simple-v1",
+  "created_at": "2026-04-28T15:56:48",
+  "items": [
+    {
+      "name": "金属盐",
+      "group": "reagent",
+      "equivalent": 0.05,
+      "quantity": null,
+      "physical_state": "solid",
+      "raw_text": "金属盐（1种或2种，0.05 当量，固体）",
+      "note": "1种或2种"
+    },
+    {
+      "name": "手性胺",
+      "group": "reagent",
+      "equivalent": 1.2,
+      "quantity": null,
+      "physical_state": "solid",
+      "raw_text": "手性胺（1.2 当量，固体）",
+      "note": null
+    },
+    {
+      "name": "分子筛",
+      "group": "reagent",
+      "equivalent": null,
+      "quantity": {
+        "value": 20,
+        "unit": "mg"
+      },
+      "physical_state": "solid",
+      "raw_text": "分子筛（不加入或20 mg，固体）",
+      "note": "不加入或20 mg"
+    },
+    {
+      "name": "溶剂",
+      "group": "solvent",
+      "equivalent": null,
+      "quantity": {
+        "value": 1,
+        "unit": "mL"
+      },
+      "physical_state": "liquid",
+      "raw_text": "溶剂（1 mL，液体）",
+      "note": "1 mL"
+    },
+    {
+      "name": "苯乙炔",
+      "group": "substrate",
+      "equivalent": 1,
+      "quantity": null,
+      "physical_state": "liquid",
+      "raw_text": "苯乙炔（0.1 mmol，1 当量，液体）",
+      "note": "0.1 mmol"
+    },
+    {
+      "name": "正壬醛",
+      "group": "substrate",
+      "equivalent": 1.2,
+      "quantity": null,
+      "physical_state": "liquid",
+      "raw_text": "正壬醛（1.2 当量，液体）",
+      "note": null
+    },
+    {
+      "name": "室温条件",
+      "group": "condition",
+      "equivalent": null,
+      "quantity": null,
+      "physical_state": null,
+      "raw_text": "室温条件下做ATA优化反应",
+      "note": "ATA优化反应"
+    }
+  ],
+  "ambiguities": [
+    "金属盐、手性胺和溶剂都只给出了类别，没有具体化学名称。",
+    "分子筛是可选项，未固定是否加入。",
+    "反应未给出更具体的催化体系、反应时间和溶剂名称。"
+  ],
+  "source_text": "试剂：金属盐（1种或2种，0.05 当量，固体），手性胺（1.2 当量，固体），分子筛（不加入或20 mg，固体），溶剂（1 mL，液体）\n底物：苯乙炔（0.1 mmol，1 当量，液体）、正壬醛（1.2 当量，液体） \n室温条件下做ATA优化反应"
+}

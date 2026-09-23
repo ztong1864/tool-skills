@@ -1,0 +1,50 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_2086b12efaf0",
+  "canonical_material_id": "mat_356f2e8b83b1",
+  "canonical_name": "complexes-1-5",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": "lig_d2878577ded5",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_c2556c8ea20b",
+    "mcard_bdd0f347a885"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_6bf0b91b7c8f",
+    "mechcard_808fd91fff14"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "0d1cacffbd0b",
+    "4bf71c012a6c"
+  ],
+  "evidence_trace_ids": [
+    "trace_0de530ee9963",
+    "trace_49c5513e9d85",
+    "trace_5d1ee6f84de3",
+    "trace_9a2b5a22a5ef"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:46:48.720198",
+  "updated_at": "2026-04-23T22:35:51.437251"
+}

@@ -1,0 +1,167 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_c8c19be40a70",
+  "paper_id": "57e1f73b209f",
+  "title": "",
+  "year": null,
+  "doi": "10.1080/24701556.2020.1777164",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "[Zn3(3-atrz)2(4-atrz)2(SO4)2] shows thermal_stability = 595.15 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "thermal_stability = 595.15 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "electron transfer from framework conduction band to Fe3+ half-filled 3d orbital → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "3-atrz ligand with μ3-κN1,κN2,κN3 coordination and 4-atrz ligand with μ2-κN1,κN2 coordination → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] rationally design and construct MOFs with intense luminescence → necessary for obtaining crystalline materials for selective and sensitive Fe3+ detection"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select an appropriate organic ligand when constructing the MOF → helps construct MOFs with desired structures and properties"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs previously reported compounds: winner=subject_a on novelty_and_combined_Fe3+_sensing_luminescence_performance"
+    },
+    {
+      "title": "Comparison",
+      "body": "free 3-atrz ligand vs free 4-atrz ligand: winner=tie on emission_maxima_under_340_nm_excitation"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] further heating of compound 1 beyond its stable temperature range: the framework of compound 1 collapses"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_e59dbcab8fba",
+    "trace_245b297fd254",
+    "trace_6c114b512974",
+    "trace_f2da77ad9b77",
+    "trace_f018b29eb8fd",
+    "trace_c084fa04e45f",
+    "trace_f46a6b4afd76",
+    "trace_35749f1e837b",
+    "trace_088088d5f0da",
+    "trace_3da0390227ca",
+    "trace_a8fe16626a2a",
+    "trace_a0211f942de5",
+    "trace_ebbd0e101878",
+    "trace_2f964811ce35",
+    "trace_68bda0dce618",
+    "trace_d9f39486dc70",
+    "trace_a623deecb5e9",
+    "trace_12d85f18e881",
+    "trace_88fe504ff005",
+    "trace_d9e0ee61b53a",
+    "trace_056bf9af5a2c",
+    "trace_3d3208c25c64",
+    "trace_b0164d703ee2",
+    "trace_2ea2ba665365",
+    "trace_01f16b0f6c88",
+    "trace_58ba120bbef8",
+    "trace_7112ed958fe1",
+    "trace_10e5f871acc1",
+    "trace_6e7ccc158bf8",
+    "trace_7112ed958fe1",
+    "trace_056bf9af5a2c",
+    "trace_35749f1e837b",
+    "trace_f46a6b4afd76",
+    "trace_10e5f871acc1",
+    "trace_f018b29eb8fd",
+    "trace_e59dbcab8fba",
+    "trace_2ea2ba665365",
+    "trace_ebbd0e101878",
+    "trace_6e7ccc158bf8",
+    "trace_088088d5f0da",
+    "trace_68bda0dce618",
+    "trace_245b297fd254",
+    "trace_3d3208c25c64",
+    "trace_01f16b0f6c88",
+    "trace_a623deecb5e9",
+    "trace_3da0390227ca",
+    "trace_12d85f18e881",
+    "trace_2f964811ce35",
+    "trace_c084fa04e45f",
+    "trace_f2da77ad9b77",
+    "trace_a8fe16626a2a",
+    "trace_d9f39486dc70",
+    "trace_a0211f942de5",
+    "trace_58ba120bbef8",
+    "trace_88fe504ff005",
+    "trace_b0164d703ee2",
+    "trace_d9e0ee61b53a",
+    "trace_6c114b512974"
+  ],
+  "measurement_card_ids": [
+    "mcard_247f5411bbc0"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_73a0b5414097",
+    "mechcard_5749baf38e73",
+    "mechcard_0968bf04703f"
+  ],
+  "recipe_card_ids": [
+    "recipe_4cdc539bc94a",
+    "recipe_eaed0847b2fd",
+    "recipe_a267b989e1c2",
+    "recipe_d92abc08fd2b"
+  ],
+  "claim_card_ids": [
+    "claim_388d84d614c4",
+    "claim_571cb661b25f",
+    "claim_d8fc2de3ceb7",
+    "claim_7a7eb1bca31e",
+    "claim_89a4c0b2bc33",
+    "claim_c7ae3dad16e5",
+    "claim_af2bfc8ebf15",
+    "claim_00c8490f5f59"
+  ],
+  "design_rule_card_ids": [
+    "drule_d968899ee67c",
+    "drule_edd814bd8891",
+    "drule_e5f3cc743c8f"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_8ea51ecd4569",
+    "comp_4d04ab0bf307"
+  ],
+  "failure_case_card_ids": [
+    "fail_a77e92375755"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_d3f210635fb9",
+    "mat_416062befb91"
+  ],
+  "dossier_ids": [
+    "dossier_17e498797cdd",
+    "dossier_82fe81c4bf2a"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The framework is only thermally stable up to 322 °C; on further heating it collapses as the organic ligands are released.",
+    "Compound 1 shows strong room-temperature luminescence, emitting at 459 nm under 340 nm excitation.",
+    "A new Zn(II) MOF, [Zn3(3-atrz)2(4-atrz)2(SO4)2]n, was solvothermally synthesized from ZnSO4·7H2O with two isomorphic aminotriazole ligands."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.343671",
+  "updated_at": "2026-04-24T00:19:47.343676",
+  "raw_path": "相关文献/10.1080@24701556.2020.1777164.pdf.pdf"
+}

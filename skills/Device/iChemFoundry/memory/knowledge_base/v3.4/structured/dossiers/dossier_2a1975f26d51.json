@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_2a1975f26d51",
+  "canonical_material_id": "mat_1903f54cd46d",
+  "canonical_name": "POS",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_d9e5b832ea66",
+    "mechcard_85380d1ce191",
+    "mechcard_579866fafc5a",
+    "mechcard_e1b5c34ec79f"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [
+    "drule_e4779b0c742e",
+    "drule_a80a8d2bc6e4"
+  ],
+  "failure_case_card_ids": [
+    "fail_2b2da17d154f"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "c200d37114d8"
+  ],
+  "evidence_trace_ids": [
+    "trace_266593468333",
+    "trace_5965840d02c3",
+    "trace_62a209ae6f0b",
+    "trace_618bec374926"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T22:25:08.623630",
+  "updated_at": "2026-04-23T22:25:36.054615"
+}

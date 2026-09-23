@@ -1,0 +1,180 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_9cc1292e1341",
+  "paper_id": "5fdf9f5f0fbd",
+  "title": "Synergistic sorbent separation for one-step ethyle",
+  "year": 2019,
+  "doi": null,
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "H2",
+    "C3H6",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "SIFSIX-3-Ni shows uptake_CO2 = 4.3 mmol/g for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "gas_uptake (all four gases) = 2.0 mmol/g at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "uptake_C2H2 (C2H2) = 4.1 mmol/g at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "uptake_C2H4 (C2H4) = 2.6 mmol/g at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "pore size and chemistry ill-suited for C2H6-selective sorption → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "pore_size_and_chemistry → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select ultramicroporous MOF Zn-atz-ipa with unusual pore chemistry → makes the material suitable for the intended C2H6-selective separation purpose"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] tune pore size and pore chemistry in metal-organic frameworks → improves suitability of MOFs for gas separations"
+    },
+    {
+      "title": "Comparison",
+      "body": "TJT-100 vs other reported sorbents for ternary C2H2-C2H4-C2H6 separation: winner=subject_a on discrimination_toward_C2H4_over_C2H2_and_C2H6"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_e3f8181eb5e0",
+    "trace_5d0899c23aba",
+    "trace_17b0680a1bef",
+    "trace_76f3ba7be063",
+    "trace_dec8de61b4a4",
+    "trace_ad7676e9c496",
+    "trace_28e852cae4b1",
+    "trace_87203305cf84",
+    "trace_9c9604cfdc3d",
+    "trace_e51f1c23900e",
+    "trace_b96c246607f7",
+    "trace_87d48733bdcb",
+    "trace_335ddf0e34c5",
+    "trace_b8fe67bf9c98",
+    "trace_ee38c06bdc44",
+    "trace_13cdb55d5b4b",
+    "trace_6c4498d86b70",
+    "trace_089a1a36f6bf",
+    "trace_d67035d32d0e",
+    "trace_4e0a6d948e5e",
+    "trace_853669730c4a",
+    "trace_6e08148686c5",
+    "trace_b3cc464f3f58",
+    "trace_8833c76482dc",
+    "trace_6e9f5c42585f",
+    "trace_f8c84c4247d5",
+    "trace_97d678d536e5",
+    "trace_fc0aab0ea8f2",
+    "trace_ecfcf10fede6",
+    "trace_b8fe67bf9c98",
+    "trace_ee38c06bdc44",
+    "trace_5d0899c23aba",
+    "trace_089a1a36f6bf",
+    "trace_f8c84c4247d5",
+    "trace_28e852cae4b1",
+    "trace_dec8de61b4a4",
+    "trace_4e0a6d948e5e",
+    "trace_e3f8181eb5e0",
+    "trace_6e9f5c42585f",
+    "trace_17b0680a1bef",
+    "trace_b96c246607f7",
+    "trace_97d678d536e5",
+    "trace_76f3ba7be063",
+    "trace_e51f1c23900e",
+    "trace_d67035d32d0e",
+    "trace_853669730c4a",
+    "trace_87d48733bdcb",
+    "trace_fc0aab0ea8f2",
+    "trace_ad7676e9c496",
+    "trace_6e08148686c5",
+    "trace_9c9604cfdc3d",
+    "trace_8833c76482dc",
+    "trace_b3cc464f3f58",
+    "trace_13cdb55d5b4b",
+    "trace_ecfcf10fede6",
+    "trace_6c4498d86b70",
+    "trace_87203305cf84",
+    "trace_335ddf0e34c5"
+  ],
+  "measurement_card_ids": [
+    "mcard_e6673687e22f",
+    "mcard_1f00a2fdfc9a",
+    "mcard_f64570072b7f",
+    "mcard_dfeb4bb8d718",
+    "mcard_c20c83706ace"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_8ac1f9c78d73",
+    "mechcard_d9d7072b98ac",
+    "mechcard_9caf6d598dc0",
+    "mechcard_25dd41c147f5"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_178bf55a42cc",
+    "claim_6a184ca6706e",
+    "claim_a99f92881b0e",
+    "claim_7479859e6410",
+    "claim_bcbc692ffc5f",
+    "claim_34b83a0e5499",
+    "claim_d85e6c26a093"
+  ],
+  "design_rule_card_ids": [
+    "drule_4543ee547265",
+    "drule_50182047cac8",
+    "drule_627f77812e06",
+    "drule_30ea7693f1b2",
+    "drule_21c767c22013"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_4c8552064b2b",
+    "comp_7f1a78646a21"
+  ],
+  "failure_case_card_ids": [
+    "fail_6f13e0a6bfaf",
+    "fail_655c3ab55acb"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_f07adecbd1d4",
+    "mat_2a37d8237da0",
+    "mat_c1f4f4f04aa9",
+    "mat_fd0c80909cfa"
+  ],
+  "dossier_ids": [
+    "dossier_5888252ea3a9",
+    "dossier_291b52bf3074",
+    "dossier_bd9a29a7a7db",
+    "dossier_552d63514f45"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The paper synthesized readily regenerated ultraselective microporous sorbents, including one selective for C2H6 over CO2, C2H2, and C2H4.",
+    "Zn-atz-ipa showed similar 1 bar uptakes for all four gases at 298 K (1.8-2.0 mmol/g), but from 0-0.4 bar it adsorbed more C2H6 than CO2, C2H2, and C2H4.",
+    "Adding SIFSIX-3-Ni, an ultraselective CO2 sorbent, should remove trace CO2 from four-component mixtures, enabling a one-step process."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.551626",
+  "updated_at": "2026-04-24T00:19:47.551629",
+  "raw_path": "相关文献/Chen 等 - 2019 - Synergistic sorbent separation for one-step ethyle.pdf",
+  "authors": [
+    "Chen"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_2daa232038dd",
+  "canonical_material_id": "mat_09dc59d74e00",
+  "canonical_name": "sulfate-pillared-metal-azolate-frameworks(MAFs)",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": "lig_153f88c42cbb",
+  "pillar_id": "pil_7e52db4a0e67",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_c5fd76acddf0",
+    "mechcard_31ba3365e731",
+    "mechcard_c1cee1ef8ca0"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_99faf38c18f2"
+  ],
+  "design_rule_card_ids": [
+    "drule_aa3d17042ab2"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement",
+    "recipe"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "97fd14a47cac"
+  ],
+  "evidence_trace_ids": [
+    "trace_ab6947b760c9",
+    "trace_76115ba0b239",
+    "trace_caabdd82852a"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:47:32.479609",
+  "updated_at": "2026-04-23T20:48:01.195212"
+}

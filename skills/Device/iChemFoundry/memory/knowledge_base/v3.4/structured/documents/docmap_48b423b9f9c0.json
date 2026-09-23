@@ -1,0 +1,62 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_48b423b9f9c0",
+  "paper_id": "9c7fd9f72c5c",
+  "raw_path": "相关文献/Zn-对苯二甲酸-yao2016.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "FJU-40-NH",
+    "FJU-40",
+    "FJU-40-Br",
+    "FJU-40-OH",
+    "MOF-890",
+    "PMOF-55",
+    "FJU-40-R",
+    "NCET-10",
+    "IRMOF-74",
+    "FJU-40-H"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Fe",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "TED",
+    "carboxylate",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "hkust"
+  ],
+  "key_sections": {
+    "conclusion": "In summary, we have synthesized four isoreticular MOFs FJU-\n40-R and demonstrated that FJU-40-NH2 is the first MOF exam-",
+    "results_summary": "Direct Evidence of CO2 Capture under Low Partial Pressure\non a Pillared Metal–Organic Framework with Improved\nStabilization through Intramolecular Hydrogen Bonding\nZizhu Yao,[a] Yuan Chen,[a] Lizhen L"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:10:56.634600"
+}

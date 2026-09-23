@@ -1,0 +1,81 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_31c768cca47a",
+  "canonical_material_id": "mat_f3c1211ae936",
+  "canonical_name": "Mn-dtzip",
+  "metal_element": "Mn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_ba08f94a4cce",
+  "pillar_id": null,
+  "topology": "3d honeycomb",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_6fc1063ca349",
+    "mcard_b2f9a19ae8a8",
+    "mcard_7bb14799c3f0",
+    "mcard_848415c2f118",
+    "mcard_846d3219f7f3",
+    "mcard_70a871baea40",
+    "mcard_526f7629ba9a",
+    "mcard_c2285b36434c",
+    "mcard_4aebaa413020",
+    "mcard_c1252441b17a",
+    "mcard_ee2fbe4ef97a"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_61a9f437e131",
+    "mechcard_68ca86831665",
+    "mechcard_fff8a08f77e7",
+    "mechcard_6e27e48815df",
+    "mechcard_214892918ca2"
+  ],
+  "recipe_card_ids": [
+    "recipe_ef27beeb1ddb",
+    "recipe_15a98fd35533",
+    "recipe_b133bc8f57dc",
+    "recipe_675b40903744"
+  ],
+  "claim_card_ids": [
+    "claim_b13aef90170d",
+    "claim_625c7338a744",
+    "claim_7228012e8dbd"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "f99adb3f4b07",
+    "be82c3858dd0"
+  ],
+  "evidence_trace_ids": [
+    "trace_04fb21d5016e",
+    "trace_c7bb243d0bea",
+    "trace_540429e4ea2b",
+    "trace_b6298b12a2ca",
+    "trace_a9cea1d66630",
+    "trace_a08364913a9c",
+    "trace_7d0e346510eb",
+    "trace_142b43c056e2",
+    "trace_9aa16dd45170",
+    "trace_1a0195086294",
+    "trace_4ef983a8f12f",
+    "trace_8488295c7eea",
+    "trace_45ab8c338d02",
+    "trace_2a5c26ecd5e7",
+    "trace_94eb5477291a",
+    "trace_204c129ef374"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:10:00.696374",
+  "updated_at": "2026-04-23T23:39:56.630791"
+}

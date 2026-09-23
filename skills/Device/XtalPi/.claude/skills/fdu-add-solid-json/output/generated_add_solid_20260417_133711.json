@@ -1,0 +1,28 @@
+{
+  "layout_code": "T-3:22",
+  "substance": "",
+  "resource_type": "TTR2T",
+  "tray_QR_code": "TTR2T_01",
+  "QR_code": "",
+  "unit_column": 0,
+  "unit_row": 0,
+  "unit_type": "exp_add_solid",
+  "unit_id": "unit-f6e9899e64fd",
+  "process_json": {
+    "src_layout_code": "W1-5:1",
+    "resource_type": "DHP30_V2",
+    "substance": "(S)-(+)-α,α-二苯基脯氨醇",
+    "add_weight": 30.4,
+    "offset": 2.1,
+    "custom": {
+      "unit": "mg",
+      "unitOptions": [
+        "mg",
+        "g"
+      ],
+      "step": {
+        "offset": 0.525
+      }
+    }
+  }
+}

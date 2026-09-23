@@ -1,0 +1,81 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_94046cbf1438",
+  "paper_id": "40718dae876e",
+  "raw_path": "相关文献/diffusivity-of-co2-in-h2o-a-review-of-experimental-studies-and-molecular-simulations-in-the-bulk-and-in-confinement.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": false,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CMK-5",
+    "MgMOF-74",
+    "CALF-20",
+    "ZIF-8",
+    "SBA-15",
+    "UiO-66",
+    "MIL-140A",
+    "IRMOF-1",
+    "MOF-74",
+    "ZSM-5",
+    "MIL-53",
+    "MIL-140",
+    "MCM-41-S",
+    "MIL-47",
+    "SPE-135563",
+    "DMOF-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Al",
+    "Cr",
+    "Zr",
+    "Mg",
+    "Ca",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "BTC",
+    "TED",
+    "BPDC",
+    "azolate",
+    "imidazolate",
+    "terephthalate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "An in-depth review of the available experimental\nand molecular simulation studies of CO2 diffusion in H2O, which is",
+    "conclusion": "was\nreached from the MD simulations reported by Moultos et al.45\nInterestingly, MD simulations show that pressure effects could",
+    "results_summary": "Diffusivity of CO2 in H2O: A Review of Experimental Studies and\nMolecular Simulations in the Bulk and in Confinement\nH. Mert Polat,∥Felipe M. Coelho,∥Thijs J. H. Vlugt, Luís Fernando Mercier Franco,*\n"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:58:19.663775"
+}

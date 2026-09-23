@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_5400226676e1",
+  "canonical_material_id": "mat_71c9d95b0999",
+  "canonical_name": "{[(CH3)2NH2][ZnL5ATZ]-DMF}n",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_63a39f87f1c2",
+  "pillar_id": "pil_25d6c78aa672",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_f4246d87876d",
+    "mcard_43b498166614",
+    "mcard_41229220916e"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_f9b3e6e8bf4a",
+    "mechcard_845cb4ef2057",
+    "mechcard_69d5f61b693b"
+  ],
+  "recipe_card_ids": [
+    "recipe_8ef99f0b9290"
+  ],
+  "claim_card_ids": [
+    "claim_2b3c98603ea7"
+  ],
+  "design_rule_card_ids": [
+    "drule_d00aa0ac8e91"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [],
+  "is_incomplete": false,
+  "source_papers": [
+    "cd0fc62673f6"
+  ],
+  "evidence_trace_ids": [
+    "trace_b88035944fc3",
+    "trace_e1ef9be04afd",
+    "trace_148d689fa18b",
+    "trace_a6628814de79"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:58:34.145232",
+  "updated_at": "2026-04-23T19:59:21.014125"
+}

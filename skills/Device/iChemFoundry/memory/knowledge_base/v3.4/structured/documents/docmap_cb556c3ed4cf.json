@@ -1,0 +1,60 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_cb556c3ed4cf",
+  "paper_id": "3bb15c92cc7b",
+  "raw_path": "相关文献/ling2012.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MAC-2",
+    "MOF-4",
+    "MOF-1",
+    "SBU-2",
+    "MAC-3",
+    "MAC-4",
+    "MAC-1",
+    "MAC-4-OH",
+    "SBU-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "DOBDC",
+    "BDC",
+    "imidazolate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "DABCO"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "This article is published as part of the Dalton Transactions themed issue entitled: \n \nCoordination chemistry in the solid state \n \nGuest Editor Russell E. Morris \n \nPublished in Issue 14, Volume 41 o"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:18:38.610116"
+}

@@ -1,0 +1,64 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_814e65d19509",
+  "paper_id": "fd11547b34e2",
+  "raw_path": "相关文献/Chen 等 - 2023 - Humidity-Responsive Polymorphism in CALF-20 A Res.pdf",
+  "title": "Humidity-Responsive Polymorphism in CALF-20 A Res",
+  "authors": [
+    "Chen"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CPO-27",
+    "MIL-5328",
+    "CPO-27-Ni",
+    "CALF-20",
+    "MOF-7430",
+    "MOF-74",
+    "MIL-53"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Ni",
+    "Cr",
+    "Mg",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "carboxylate",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "CALF-20 is a zinc-triazole-oxalate-based metal−\norganic framework (MOF) that exhibits selective CO2\nphysisorption, which makes it attractive for potential",
+    "results_summary": "Humidity-Responsive Polymorphism in\nCALF-20: A Resilient MOF Physisorbent for\nCO2 Capture\nZhihengyu Chen, Ching-Hwa Ho, Xiaoliang Wang, Simon M. Vornholt, Thomas M. Rayder,\nTimur Islamoglu, Omar K. Fa"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:20:56.851313"
+}

@@ -1,0 +1,56 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_7d222a7ab09a",
+  "paper_id": "80889541cbf7",
+  "raw_path": "相关文献/Zhang 等 - 2011 - Pore Surface Tailored SOD-Type Metal-Organic Zeoli.pdf",
+  "title": "Pore Surface Tailored SOD-Type Metal-Organic Zeoli",
+  "authors": [
+    "Zhang"
+  ],
+  "year": 2011,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "C2H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MAF-4",
+    "MAF-47-x",
+    "MAF-7",
+    "MAF-47"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "TED",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "sod"
+  ],
+  "key_sections": {
+    "conclusion": "is sup-\nported by a study of the H 2 adsorption sites in MAF-4, [ 6a ] which \nrevealed that the strongest adsorption sites are the organic",
+    "results_summary": "www.advmat.de\nwww.MaterialsViews.com\nCOMMUNICATION\n© 2011 WILEY-VCH Verlag GmbH & Co. KGaA, Weinheim\nwileyonlinelibrary.com\n1268\nAdv. Mater. 2011, 23, 1268–1271\n Jie-Peng  Zhang , *  Ai-Xin  Zhu ,  Ru"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:44:40.354240"
+}

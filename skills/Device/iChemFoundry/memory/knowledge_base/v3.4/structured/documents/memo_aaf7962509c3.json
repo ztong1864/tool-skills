@@ -1,0 +1,130 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_aaf7962509c3",
+  "paper_id": "8fece016b962",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2"
+  ],
+  "one_line_summary": "MAC-11’ shows PXRD_phase_transformation_in_water = 1.0 dimensionless for H2O",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "PXRD_phase_transformation_in_water (H2O) = 1.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "1D channel along c axis; 3D rob network built from Zn2(dmtrz)2 dimers → porosity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "accessible_porous_structure_along_c_axis → porosity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] add additional acid during synthesis to obtain phase-pure MA-11 → phase-pure MA-11 is obtained instead of a side-product crystal structure"
+    },
+    {
+      "title": "Comparison",
+      "body": "MAC-14 under heating vs MAC-11 under heating: winner=subject_a on temperature-induced PXRD peak shift near 2θ ≈ 4.6°"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] omit additional acid during MA-11 synthesis: a side-product crystal structure forms instead of phase-pure MA-11"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_c711190a55c1",
+    "trace_8ad5f2791b48",
+    "trace_ac74e7e3b774",
+    "trace_d82b2e1c0c39",
+    "trace_38bfba0f50ee",
+    "trace_a258e04ba4e9",
+    "trace_85cca716bc9b",
+    "trace_0a7c016feb03",
+    "trace_2d0cf33fcc26",
+    "trace_1b7103ed41d3",
+    "trace_60f8a379c24c",
+    "trace_0a7c016feb03",
+    "trace_8ad5f2791b48",
+    "trace_ac74e7e3b774",
+    "trace_2d0cf33fcc26",
+    "trace_d82b2e1c0c39",
+    "trace_60f8a379c24c",
+    "trace_c711190a55c1",
+    "trace_38bfba0f50ee",
+    "trace_85cca716bc9b",
+    "trace_a258e04ba4e9",
+    "trace_1b7103ed41d3"
+  ],
+  "measurement_card_ids": [
+    "mcard_60e034a88531"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_9e8ab51a699c",
+    "mechcard_774cbc9b7217",
+    "mechcard_3860d6b8ab1f",
+    "mechcard_d7027adf3c1a",
+    "mechcard_b92461b7942a",
+    "mechcard_50c2f06f021e",
+    "mechcard_d0772397b52f",
+    "mechcard_f6bd106f1899",
+    "mechcard_6746e39056ad",
+    "mechcard_f40486b7cd2e"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_0da76dfff9a2",
+    "claim_9f3a1aac2085",
+    "claim_cb65b3140500",
+    "claim_c5dac51cedb7",
+    "claim_92b92d589f78",
+    "claim_8098f1a2c3d9",
+    "claim_dc00a08b494d",
+    "claim_676737895aab"
+  ],
+  "design_rule_card_ids": [
+    "drule_54214eedaad7"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_a8dc0ba3972f"
+  ],
+  "failure_case_card_ids": [
+    "fail_6cd2bb56b67f"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_adfb1a7ef154",
+    "mat_8098358875b6",
+    "mat_29444478b32c",
+    "mat_3ba9d9dc3303",
+    "mat_8ee1b43a4eab",
+    "mat_1ae88e7dcc31",
+    "mat_2306bc864e7d"
+  ],
+  "dossier_ids": [
+    "dossier_d61b4216392f",
+    "dossier_ebb68a7ba391",
+    "dossier_570e1414d8cc",
+    "dossier_04c7e5ff2719",
+    "dossier_9879025633ee",
+    "dossier_33d2092f7eb1",
+    "dossier_5d09ceac385f"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MAC-13 has the largest listed pore size among the three materials at 7.8 Å, versus 5.9 Å for MAC-11 and 6.9 Å for MAC-14.",
+    "MAC-14 is an accessible porous framework along c axis and can be described topologically as a 6-connected pcu-type network.",
+    "Heating affects MAC-14 less than MAC-11: MAC-14's PXRD peak shifts only from ~4.6° to ~4.9°, much smaller than in MAC-11."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.139431",
+  "updated_at": "2026-04-28T14:29:22.139435"
+}

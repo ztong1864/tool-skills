@@ -1,0 +1,55 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_bbf781eedb6d",
+  "paper_id": "f70ee3da2e06",
+  "raw_path": "相关文献/molecules-23-00668.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "C3H8",
+    "C2H6",
+    "Xe"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ZIF-4",
+    "ZIF-8",
+    "LTA-5"
+  ],
+  "mentioned_metals": [
+    "Co",
+    "Ni",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "TED",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "Molecular diffusion is commonly found to slow down with increasing molecular size.\nDeviations from this pattern occur in some host materials with pore sizes approaching the diameters",
+    "conclusion": "is, as a matter of course,\ntotally correct on comparing the diffusivities at identical pore occupancies. It might be worthwhile",
+    "results_summary": "molecules\nArticle\nAnomaly in the Chain Length Dependence\nof n-Alkane Diffusion in ZIF-4\nMetal-Organic Frameworks\nSeungtaik Hwang 1 ID , Arun Gopalan 2, Maximilian Hovestadt 3 ID , Frank Piepenbreier 3"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:25:36.145361"
+}

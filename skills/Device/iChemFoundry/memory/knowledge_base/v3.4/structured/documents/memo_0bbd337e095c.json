@@ -1,0 +1,109 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_0bbd337e095c",
+  "paper_id": "63f0d3e9e0fb",
+  "title": "High CO 2 and H 2 Uptake in",
+  "year": 2012,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "CPF-13 shows CO2_uptake = 3.62 mmol/g for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 3.62 mmol/g at 1.0 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "pentagonal window of MOPs → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "(5,6)-connected topological net with paddle-wheel SBU-1 and triazole-carboxylate shared SBU-2 → porosity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_972fe45002dd",
+    "trace_560f3fe06330",
+    "trace_47986ea5d85a",
+    "trace_48404b5266f4",
+    "trace_99a2711acb4d",
+    "trace_201b8570704e",
+    "trace_3080a9fef386",
+    "trace_a699f9df672a",
+    "trace_78f08b8a1892",
+    "trace_af8f7f2af153",
+    "trace_1788108af9e4",
+    "trace_4108d02cafd5",
+    "trace_990f1df7a6c0",
+    "trace_f9a44c8d62cb",
+    "trace_6ef6dc830318",
+    "trace_560f3fe06330",
+    "trace_201b8570704e",
+    "trace_48404b5266f4",
+    "trace_78f08b8a1892",
+    "trace_a699f9df672a",
+    "trace_972fe45002dd",
+    "trace_990f1df7a6c0",
+    "trace_3080a9fef386",
+    "trace_f9a44c8d62cb",
+    "trace_4108d02cafd5",
+    "trace_47986ea5d85a",
+    "trace_99a2711acb4d",
+    "trace_af8f7f2af153",
+    "trace_1788108af9e4",
+    "trace_6ef6dc830318"
+  ],
+  "measurement_card_ids": [
+    "mcard_9e9f8552caee"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_359c7cd0da6c",
+    "mechcard_668e4675f47f"
+  ],
+  "recipe_card_ids": [
+    "recipe_c45ab5931827"
+  ],
+  "claim_card_ids": [
+    "claim_5a0b6a680ee6",
+    "claim_ab1dcd8a16e0",
+    "claim_fee1af98d419",
+    "claim_184e444367d6",
+    "claim_5a354d5aba9c",
+    "claim_45230bec4632",
+    "claim_30b930a2c92c"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c50637bf54a2",
+    "mat_5ba0721e8492"
+  ],
+  "dossier_ids": [
+    "dossier_725d23109bd9",
+    "dossier_e1ce8dffa213"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The framework is built from paddle-wheel SBU-1 and triazole-carboxylate shared SBU-2, forming a unique (5,6)-connected topological net.",
+    "Large fractions of disordered pore cations/solvents in CPF-13 could not be modeled as atomic sites and had to be treated with the SQUEEZE routine.",
+    "CPF-13 was synthesized solvothermally from Zn(NO3)2, H2BDC, and DATRZ in DMF at 90 °C for 3 days, giving colorless octahedral crystals in about 80% yield."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.171456",
+  "updated_at": "2026-04-24T00:19:49.171459",
+  "raw_path": "相关文献/Zhai 等 - 2012 - High CO 2 and H 2 Uptake in .pdf",
+  "authors": [
+    "Zhai"
+  ]
+}

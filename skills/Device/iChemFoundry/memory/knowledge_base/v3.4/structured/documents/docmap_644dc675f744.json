@@ -1,0 +1,52 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_644dc675f744",
+  "paper_id": "7eafab3ec2e2",
+  "raw_path": "相关文献/Vaidhyanathan 等 - 2009 - An amine-functionalized metal organic framework fo.pdf",
+  "title": "An amine-functionalized metal organic framework fo",
+  "authors": [
+    "Vaidhyanathan"
+  ],
+  "year": 2009,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": false,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MOF-177"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Fe",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "of gas adsorption data for 1\nGas\nT/K\nSurface areaa/m2 g\u00021\nPore volumea/cm3 g\u00021\nAmount adsorbedb/\ncm3(STP)g\u00021",
+    "results_summary": "An amine-functionalized metal organic framework for preferential\nCO2 adsorption at low pressuresw\nRamanathan Vaidhyanathan, Simon S. Iremonger, Karl W. Dawson\nand George K. H. Shimizu*\nReceived (in Be"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:10:39.011056"
+}

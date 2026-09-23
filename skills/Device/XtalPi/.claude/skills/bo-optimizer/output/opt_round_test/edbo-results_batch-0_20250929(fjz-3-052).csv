@@ -1,0 +1,12 @@
+NAME,tempo,additive,ratio,solvent,volume
+TYPE,DATA,DATA,DATA,DATA,DATA
+0,2,CaSO4,eq_2,EtOH,v_3
+1,2,Sc2(SO4)3_8H2O,eq_3,Cyhex,v_4
+2,5,CoCl2,eq_4,Toluene,v_5
+3,2,Na3PO4,eq_4,dioxane,v_3
+4,8,(NH4)2SO4,eq_4,CHCl3,v_1
+5,5,K2CO3,eq_6,Cyhex,v_2
+6,5,MgCl2,eq_2,EtOH,v_3
+7,2,K2SO4,eq_7,Benzene,v_1
+8,8,CuCl,eq_5,Et2O,v_2
+9,6,CaCO3,eq_1,Et2O,v_4

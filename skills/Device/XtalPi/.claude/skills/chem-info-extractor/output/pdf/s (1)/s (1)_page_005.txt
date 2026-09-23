@@ -1,0 +1,92 @@
+2537
+© Georg Thieme Verlag  Stuttgart · New York — Synthesis  2018 , 50, 2533–2545D. Ma et al. Paper Syn  thesis
+of 1,4-dioxane) sequentially under N2. The Schlenk tube was then
+sealed by screwing the polytetrafluoroethylene plug tightly with theoutlet being closed. Then the reaction mixture was heated in an oilbath preheated at 130 °C with stirring. After 12 h, the reaction wascomplete as monitored by TLC and the mixture was cooled to r.t. Af-terwards, the resulting mixture was diluted with Et
+2O (30 mL) and
+washed with aq HCl (3 M, 20 mL). The organic layer was separatedand the aqueous layer was extracted with Et
+2O (3 × 15 mL). The com-
+bined organic layers were washed with brine (20 mL) and dried (an-hyd Na
+2SO4). After filtration and evaporation, the residue was purified
+by chromatography on silica gel (PE/EtOAc 8:1, 720 mL) to afford ( R)-
+4aa;9a yield: 0.1372 g (61%); pale yellow liquid; [ α]D20 –50.6 ( c 1.025,
+CHCl3) {Lit.9a 93% ee; [α]D25.9 –52.1 ( c 0.99, CHCl3)}.
+HPLC: Chiralcel AS-H column, n-hexane/ i-PrOH (200:1), 1.0 mL/min,
+λ = 214 nm; tR (major) = 19.6 min, tR (minor) = 21.3 min; 96% ee.
+1H NMR (300 MHz, CDCl3): δ = 5.38–5.24 (m, 2 H, 2 × =CH), 4.16–4.07
+(m, 2 H, OCH2), 2.09–1.96 (m, 2 H, CH2), 1.54–1.19 (m, 19 H, 9 × CH2 + OH),
+0.88 (t, J = 6.8 Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 202.9, 94.1, 91.7, 60.8, 31.9, 29.65,
+29.62, 29.4, 29.3, 29.12, 29.07, 28.7, 22.7, 14.1.
+Synthesis of ( R)-Hexadeca-3,4-dien-1-ol [( R)-4ba]
+Using (S)- 3a: Following the Typical Procedure I, the reaction of but-3-
+yn-1-ol ( 1b; 0.1048 g, 1.5 mmol), dodecanal ( 2a; 0.2762 g, 1.5 mmol),
+(S)-3a (0.2585 g, 1 mmol), and CuBr2 (0.0451 g, 0.2 mmol) in 1,4-di-
+oxane (3 mL) at 130 °C for 12 h afforded ( R)-4ba (PE/EtOAc 8:1, 450
+mL) was used for the first round to afford impure ( R)-4ba, which was
+further purified by chromatography on silica gel (eluent: CH2Cl2, 200
+mL for the second round); yield: 0.1161 g (49%); pale yellow liquid;[α]
+D20 –44.9 ( c 1.01, CHCl3).
+HPLC: Chiralcel IC column, n-hexane/ i-PrOH (200:1), 0.6 mL/min, λ =
+214 nm; tR (minor) = 23.4 min, tR (major) = 25.3 min; 86% ee.1H NMR (300 MHz, CDCl3): δ = 5.20–5.04 (m, 2 H, 2 × =CH), 3.70 (q, J =
+5.7 Hz, 2 H, OCH2), 2.24 (qd, J1 = 6.3 Hz, J2 = 3.0 Hz, 2 H, CH2), 1.99 (qd,
+J1 = 7.0 Hz, J2 = 3.2 Hz, 2 H, CH2), 1.66 (br s, 1 H, OH), 1.46–1.20 (m, 18
+H, 9 × CH2), 0.88 (t, J = 6.8 Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 204.6, 91.7, 87.1, 62.1, 32.3, 31.9, 29.65,
+29.63, 29.5, 29.3, 29.2, 29.1, 28.9, 22.7, 14.1.
+Using (S)- 3b: Following the Typical Procedure I, the reaction of but-3-
+yn-1-ol ( 1b; 0.1059 g, 1.5 mmol), dodecanal ( 2a; 0.2770 g, 1.5 mmol),
+(S)-3b (0.1298 g, 1 mmol), and CuBr2 (0.0451 g, 0.2 mmol) in 1,4-di-
+oxane (3 mL) at 130 °C for 12 h afforded ( R)-4ba (PE/EtOAc 8:1, 900
+mL); yield: 0.1227 g (51%); pale yellow liquid; [ α]D20 –51.3 ( c 0.970,
+CHCl3).
+HPLC: Chiralcel IC column, n-hexane/ i-PrOH (200:1), 0.6 mL/min, λ =
+214 nm; tR (minor) = 22.9 min, tR (major) = 25.1 min; 95% ee.
+IR (neat): 3334, 2954, 2923, 2853, 1963, 1466, 1378, 1341, 1286,
+1178, 1050 cm–1.
+1H NMR (300 MHz, CDCl3): δ = 5.20–5.02 (m, 2 H, 2 × =CH), 3.69 (t, J =
+6.5 Hz, 2 H, OCH2), 2.24 (qd, J1 = 6.4 Hz, J2 = 3.0 Hz, 2 H, CH2), 1.99 (qd,
+J1 = 6.9 Hz, J2 = 3.1 Hz, 2 H, CH2), 1.86 (br s, 1 H, OH), 1.47–1.14 (m, 18
+H, 9 × CH2), 0.88 (t, J = 6.8 Hz, 3 H, CH3).
+13C NMR (75 MHz, CDCl3): δ = 204.6, 91.6, 87.1, 62.0, 32.3, 31.9, 29.63,
+29.60, 29.4, 29.3, 29.2, 29.1, 28.8, 22.6, 14.1.
+MS (70 eV, EI): m/z (%) = 238 (M+, 1.87), 68 (100).
+HRMS: m/z calcd for C16H30O (M+): 238.2297; found: 238.2294.
+Synthesis of ( R)-Heptadeca-4,5-dien-1-ol [( R)-4ca]
+Using (S)- 3a: Following the Typical Procedure I, the reaction of pent-
+4-yn-1-ol ( 1c; 0.1307 g, 1.5 mmol), dodecanal ( 2a; 0.2769 g, 1.5
+mmol), ( S)-3a (0.2589 g, 1 mmol), and CuBr2 (0.0449 g, 0.2 mmol) in
+1,4-dioxane (3 mL) at 130 °C for 12 h afforded ( R)-4ca (PE/EtOAc 8:1,
+450 mL) for the first round to afford impure ( R)-4ca, which was fur-Scheme 5  Proposed mechanismR1NH
+CuN
+R1
+HH
+Cu
+BrCuBr 2R1N
+(S,S)-12H R1
+H
+(R)-4
+IN-2IN-3Br
+BrBr-
+Br-OHR
+R
+HOR
+RR
+HORR1NR
+OHR
+H2O
+R1CHON
+HR
+OHRBrCu
+IN-1
+11OH
+n
+nOH
+OHnOHnOH
+n
+R = Me or Ph
+NH
+HOHH
+H
+HHH
+NH
+HOvs

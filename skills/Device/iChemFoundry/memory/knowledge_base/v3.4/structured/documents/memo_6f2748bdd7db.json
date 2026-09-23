@@ -1,0 +1,229 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_6f2748bdd7db",
+  "paper_id": "2d345c000268",
+  "title": "H4betc-A stable, pillar-layer metal–organic framework",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "C3H8",
+    "C2H6"
+  ],
+  "one_line_summary": "Zn2(trz)2(ox)-(2) shows thermal_stability_limit = 250.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "solvent_stability_boiling_solvents = 12.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "air_stability_duration = 14.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_limit = 250.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "uncoordinated_carboxyl_oxygen_atoms → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "pore_access_with_DMF → diffusion"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select 1,2,4-triazole and pyromellitic acid ligands to construct Zn-based MOFs with rigid, porous, non-interpenetrated frameworks and abundant coordination sites → enables selective adsorption and separation of transition metal ions"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use smaller solvents during sorption and separation operations → sorption amount increases, with the strongest increase observed in water"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 in water vs compound 1 in DMF or methanol: winner=subject_a on Cu2+ sorption rate and extent"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_1d930abe892f",
+    "trace_c20074af0a29",
+    "trace_6b455c708094",
+    "trace_fc318cdc7740",
+    "trace_d320c6a4bd97",
+    "trace_7f22348df3dc",
+    "trace_4ec4045a72b3",
+    "trace_4c9b5cd8ad47",
+    "trace_72759371be42",
+    "trace_16415548b6a6",
+    "trace_3796defa954e",
+    "trace_87655beb6b57",
+    "trace_6f17fa6ce29b",
+    "trace_1a5425a1a870",
+    "trace_3b840512f0e1",
+    "trace_dcac7f8eaa3a",
+    "trace_eda6703fb3e0",
+    "trace_bfdc5fbad5bf",
+    "trace_2bdd520763ff",
+    "trace_3b46fe98820a",
+    "trace_9e9784b03ebe",
+    "trace_5ef854a1d9ff",
+    "trace_a675a3f41bc6",
+    "trace_54cf1a94fcdb",
+    "trace_5abf38de5759",
+    "trace_84b4f168596a",
+    "trace_4c2732f7938c",
+    "trace_3d7e616698ec",
+    "trace_23c4e6ad6598",
+    "trace_bc07b241c772",
+    "trace_4815c1096da1",
+    "trace_5bfb78c34281",
+    "trace_348e8c1be66d",
+    "trace_2fce39084313",
+    "trace_188183d706d8",
+    "trace_71204f3391c8",
+    "trace_fa1ccde749b1",
+    "trace_1d2f7e658c79",
+    "trace_aa02d19cdcf2",
+    "trace_ec4d5080e329",
+    "trace_30b25cb4518f",
+    "trace_9a89699eb270",
+    "trace_dd4a5b567cca",
+    "trace_e4127a9088d5",
+    "trace_c32a40eddfa4",
+    "trace_2e32cbd68897",
+    "trace_c9c3ec05cb84",
+    "trace_fb31ba5e1b02",
+    "trace_90636ec2c7d3",
+    "trace_fdb112228ea1",
+    "trace_7611d760ea3a",
+    "trace_8f4dbf7148ed",
+    "trace_c56cfe0851d0",
+    "trace_10e585006aa8",
+    "trace_813278d0f7be",
+    "trace_fc318cdc7740",
+    "trace_6f17fa6ce29b",
+    "trace_bfdc5fbad5bf",
+    "trace_eda6703fb3e0",
+    "trace_5bfb78c34281",
+    "trace_3b46fe98820a",
+    "trace_348e8c1be66d",
+    "trace_10e585006aa8",
+    "trace_c56cfe0851d0",
+    "trace_6b455c708094",
+    "trace_90636ec2c7d3",
+    "trace_1a5425a1a870",
+    "trace_e4127a9088d5",
+    "trace_5abf38de5759",
+    "trace_fb31ba5e1b02",
+    "trace_188183d706d8",
+    "trace_1d930abe892f",
+    "trace_4815c1096da1",
+    "trace_84b4f168596a",
+    "trace_3d7e616698ec",
+    "trace_4c2732f7938c",
+    "trace_4ec4045a72b3",
+    "trace_72759371be42",
+    "trace_bc07b241c772",
+    "trace_c9c3ec05cb84",
+    "trace_ec4d5080e329",
+    "trace_dd4a5b567cca",
+    "trace_c32a40eddfa4",
+    "trace_8f4dbf7148ed",
+    "trace_2bdd520763ff",
+    "trace_1d2f7e658c79",
+    "trace_a675a3f41bc6",
+    "trace_30b25cb4518f",
+    "trace_2e32cbd68897",
+    "trace_aa02d19cdcf2",
+    "trace_9a89699eb270",
+    "trace_3b840512f0e1",
+    "trace_3796defa954e",
+    "trace_fa1ccde749b1",
+    "trace_7f22348df3dc",
+    "trace_16415548b6a6",
+    "trace_54cf1a94fcdb",
+    "trace_87655beb6b57",
+    "trace_7611d760ea3a",
+    "trace_4c9b5cd8ad47",
+    "trace_dcac7f8eaa3a",
+    "trace_5ef854a1d9ff",
+    "trace_71204f3391c8",
+    "trace_813278d0f7be",
+    "trace_fdb112228ea1",
+    "trace_c20074af0a29",
+    "trace_2fce39084313",
+    "trace_9e9784b03ebe",
+    "trace_23c4e6ad6598",
+    "trace_d320c6a4bd97"
+  ],
+  "measurement_card_ids": [
+    "mcard_2cb593e69ef5",
+    "mcard_511ff49bb8d7",
+    "mcard_546766b8b3ca",
+    "mcard_1c505177b39f",
+    "mcard_a7d61fb0cd6d"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_7c8f15a43a50",
+    "mechcard_4463f747e4f0",
+    "mechcard_12ab3f0dec50",
+    "mechcard_07ccba8a00be",
+    "mechcard_12fd2d7e0076",
+    "mechcard_600f08c4ab88"
+  ],
+  "recipe_card_ids": [
+    "recipe_c0f4eee57f6b"
+  ],
+  "claim_card_ids": [
+    "claim_4ef9d6bbc71f",
+    "claim_aacc8d5c6239",
+    "claim_3edb7fe78354",
+    "claim_f0b747920bbb",
+    "claim_f8e39a448fa2",
+    "claim_1159c4370991",
+    "claim_0b86b22c392d",
+    "claim_1f8d8ae5344b"
+  ],
+  "design_rule_card_ids": [
+    "drule_ecbdce03984c",
+    "drule_a2c02c2e7019",
+    "drule_8b5869bd33d0"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_1ebf7687edef",
+    "comp_4357cdcff6d2",
+    "comp_a65f23fe444a",
+    "comp_f87c6bcd4693"
+  ],
+  "failure_case_card_ids": [
+    "fail_8a07b2ecdcbb"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_e92a6e1a0c1f"
+  ],
+  "dossier_ids": [
+    "dossier_d2e48df4dfb6"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MOF 1 is stable in air for 2 weeks, in water for 4 h, and thermally stable up to 250 °C by PXRD measurements.",
+    "Compound 1 remained structurally intact after boiling in multiple organic solvents for 12 h, as confirmed by PXRD.",
+    "Ligand choice is crucial: trz and H4betc were selected to build rigid, porous, non-interpenetrated MOFs with abundant coordination sites."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.785383",
+  "updated_at": "2026-04-24T00:19:49.785387",
+  "raw_path": "相关文献/Zn-H4betc-A stable, pillar-layer metal–organic framework.pdf",
+  "authors": [
+    "Zn"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_0115ff290cf5",
+  "canonical_material_id": "mat_cbd78b18ff7e",
+  "canonical_name": "MAC-20",
+  "metal_element": "Zn",
+  "node_signature_id": "node_f4fd2340b6b6",
+  "primary_linker_id": "lig_c112e3c852e0",
+  "pillar_id": "pil_e8414fc161af",
+  "topology": "(3,4,6)-connected",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_441f07e9347b",
+    "mechcard_b8c3b076ae44",
+    "mechcard_41f78a724e83",
+    "mechcard_5ee9ace405c9",
+    "mechcard_c09b55fdb54b",
+    "mechcard_5d76d1c7c86d",
+    "mechcard_283b647fb508",
+    "mechcard_df21f43ca80f",
+    "mechcard_6781914903ac",
+    "mechcard_5c667d1db1f3",
+    "mechcard_738e650bd24e",
+    "mechcard_79dc9f6c229d",
+    "mechcard_f21566ee0b4c",
+    "mechcard_cec1de55170e",
+    "mechcard_52658f20fb5d"
+  ],
+  "recipe_card_ids": [
+    "recipe_7cd3be189fb6"
+  ],
+  "claim_card_ids": [
+    "claim_0f5c0d3efbe7",
+    "claim_f73e4bbe14c1",
+    "claim_d832f787376f",
+    "claim_f2db16acdfb8",
+    "claim_7b79b903df41",
+    "claim_f277c3de761e",
+    "claim_6c4cb922622b",
+    "claim_5bc292e8261f",
+    "claim_1c704c6740f3",
+    "claim_4a3b51326b87",
+    "claim_7b1b3757ba12"
+  ],
+  "design_rule_card_ids": [
+    "drule_402fb040f357",
+    "drule_a891d45e10a8"
+  ],
+  "failure_case_card_ids": [
+    "fail_22c62d5464c9"
+  ],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "d3cb3f2fb120",
+    "6cff4bbbe500",
+    "c2ce30b6259c",
+    "94e80a9c0ffd"
+  ],
+  "evidence_trace_ids": [
+    "trace_c2ab9edb3ec7",
+    "trace_77fa5727b966",
+    "trace_d361dd0bb0b7",
+    "trace_4fd6f2333e17",
+    "trace_5330e28299a9",
+    "trace_4973a3ce3454",
+    "trace_d4a8ad648dcf",
+    "trace_6e3b1adb2f00",
+    "trace_1570d53a5632",
+    "trace_97808d2aee29",
+    "trace_d1d0e0623dfc",
+    "trace_f901ed45e141",
+    "trace_1f143d3a8ea2",
+    "trace_124860074faf",
+    "trace_b6e6a112df04",
+    "trace_47b6fb3a666e"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:01:10.191423",
+  "updated_at": "2026-04-28T13:57:56.220297"
+}

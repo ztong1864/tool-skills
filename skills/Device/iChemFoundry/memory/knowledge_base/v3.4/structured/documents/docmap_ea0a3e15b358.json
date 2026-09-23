@@ -1,0 +1,46 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_ea0a3e15b358",
+  "paper_id": "6613653bbccc",
+  "raw_path": "相关文献/Zn-二苯甲酸-Acid and alkalinity stable pillared-layer and fluorescent zinc(II).pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Inorganic Chemistry Communications 129 (2021) 108664\nAvailable online 11 May 2021\n1387-7003/© 2021 Elsevier B.V. All rights reserved.\nShort communication \nAcid and alkalinity stable pillared-layer and"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:02:47.621623"
+}

@@ -1,0 +1,51 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_11bf28cf8ebe",
+  "canonical_material_id": "mat_dccdccd8637f",
+  "canonical_name": "CdSO4",
+  "metal_element": "Cd",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_02efbac63bc5",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_ffb14be72a35",
+    "mechcard_ce4d8aab6c91"
+  ],
+  "recipe_card_ids": [
+    "recipe_91da79862e2c"
+  ],
+  "claim_card_ids": [
+    "claim_42c62ec87300",
+    "claim_68a7ef0ca642"
+  ],
+  "design_rule_card_ids": [
+    "drule_a0df18fcd438",
+    "drule_e910cae5a6c3"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 1.0,
+    "recipe": 0.5,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "measurement"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "9621c008066d"
+  ],
+  "evidence_trace_ids": [
+    "trace_7aeeba0f7f15",
+    "trace_50108bc16bf8",
+    "trace_922c5f8755cb"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T17:16:32.098849",
+  "updated_at": "2026-04-23T17:17:14.184952"
+}

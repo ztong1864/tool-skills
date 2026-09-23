@@ -1,0 +1,88 @@
+{
+  "property:add-volume": {
+    "allowed_values": [],
+    "description": "Liquid volume to add or transfer.",
+    "entity_type": "Property",
+    "id": "property:add-volume",
+    "name": "Add volume",
+    "property_type": "number",
+    "unit_hint": "uL, mL, or L"
+  },
+  "property:add-weight": {
+    "allowed_values": [],
+    "description": "Solid mass to add.",
+    "entity_type": "Property",
+    "id": "property:add-weight",
+    "name": "Add weight",
+    "property_type": "number",
+    "unit_hint": "mg or g"
+  },
+  "property:dst-pos": {
+    "allowed_values": [],
+    "description": "Destination position for filtering or collection.",
+    "entity_type": "Property",
+    "id": "property:dst-pos",
+    "name": "Destination position",
+    "property_type": "string",
+    "unit_hint": null
+  },
+  "property:layout-code": {
+    "allowed_values": [],
+    "description": "Layout or vessel code used to identify a resource or reaction position.",
+    "entity_type": "Property",
+    "id": "property:layout-code",
+    "name": "Layout code",
+    "property_type": "string",
+    "unit_hint": null
+  },
+  "property:reaction-duration": {
+    "allowed_values": [],
+    "description": "Reaction duration used by reaction-control actions.",
+    "entity_type": "Property",
+    "id": "property:reaction-duration",
+    "name": "Reaction duration",
+    "property_type": "integer",
+    "unit_hint": "seconds"
+  },
+  "property:resource-availability": {
+    "allowed_values": [
+      "available",
+      "missing",
+      "conflict",
+      "unknown"
+    ],
+    "description": "Resource availability status reported by resource verification.",
+    "entity_type": "Property",
+    "id": "property:resource-availability",
+    "name": "Resource availability",
+    "property_type": "enum",
+    "unit_hint": null
+  },
+  "property:substance": {
+    "allowed_values": [],
+    "description": "Name of reagent, solvent, substrate, catalyst, additive, sample, or dilution liquid.",
+    "entity_type": "Property",
+    "id": "property:substance",
+    "name": "Substance",
+    "property_type": "string",
+    "unit_hint": null
+  },
+  "property:temperature": {
+    "allowed_values": [],
+    "description": "Reaction temperature or setpoint.",
+    "entity_type": "Property",
+    "id": "property:temperature",
+    "name": "Temperature",
+    "property_type": "string",
+    "unit_hint": "C or rt"
+  },
+  "property:unit-position": {
+    "allowed_values": [],
+    "description": "Unit row and column position in the FDU layout.",
+    "entity_type": "Property",
+    "id": "property:unit-position",
+    "name": "Unit position",
+    "property_type": "object",
+    "unit_hint": "unit_column/unit_row"
+  }
+}

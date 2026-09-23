@@ -1,0 +1,222 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_fd0df006197b",
+  "paper_id": "8453eeb895d8",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "Kr"
+  ],
+  "one_line_summary": "[Zn4O(3,5-dimethyl-4-carboxypyrazolato)3] shows decomposition_temperature = 773.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "benzene_uptake_dry (benzene) = 130.0 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "partition_coefficient_DIFP/H2O (DIFP) = 200.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "decomposition_temperature = 773.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "methyl groups protruding into pores → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "small pore windows → uptake"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use hydrophobic adsorbents with Kr(DIFP/H2O) > 200 → effective maintenance of sufficiently low DIFP levels"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] prioritize pore size and surface hydrophobicity in MOF design for VOC capture → improves VOC recognition and practical capture performance under ambient moisture"
+    },
+    {
+      "title": "Comparison",
+      "body": "MOF 1 vs Carboxen: winner=tie on VOC_capture_performance"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_3e17331c0e32",
+    "trace_56cb1c1f4a29",
+    "trace_a8a15fa10f09",
+    "trace_30d765a3d86c",
+    "trace_36dcdf5bbcac",
+    "trace_f0cefe503561",
+    "trace_7b76a5a2f8b0",
+    "trace_b90ec03d8392",
+    "trace_aa9ad254583e",
+    "trace_db32c80a877a",
+    "trace_fe95ba0743e5",
+    "trace_952147722ea9",
+    "trace_688635c0b0ea",
+    "trace_7076ad829482",
+    "trace_efdee58d920f",
+    "trace_e636382376df",
+    "trace_565d6dae286c",
+    "trace_840c7be88856",
+    "trace_75be45f37d77",
+    "trace_22fb47af99be",
+    "trace_c4db7a4caa7d",
+    "trace_a53787d3cdb0",
+    "trace_ce85454fdbe1",
+    "trace_3043327f3869",
+    "trace_99111e224575",
+    "trace_0593b195671b",
+    "trace_5c3912322aa3",
+    "trace_cd18abd2d382",
+    "trace_f6a53fba187e",
+    "trace_7a63dd8f67fb",
+    "trace_feaff1597c3b",
+    "trace_805240e9f89d",
+    "trace_f1061c1a46e8",
+    "trace_db0e04b001ff",
+    "trace_b049ba547044",
+    "trace_8094cb98ca3c",
+    "trace_7bf5f3a60690",
+    "trace_36cddc10f510",
+    "trace_6e3d118c02e6",
+    "trace_72cb57ed91ca",
+    "trace_3db5fa7486bc",
+    "trace_e35e06ab0cda",
+    "trace_bfa58f79fdfc",
+    "trace_7de3404d147b",
+    "trace_2d61e75f527e",
+    "trace_812bbd0577db",
+    "trace_501e5cd11547",
+    "trace_edfc421f8196",
+    "trace_33ba8ae01aef",
+    "trace_7aa48eb6ee73",
+    "trace_6e3d118c02e6",
+    "trace_3043327f3869",
+    "trace_e636382376df",
+    "trace_805240e9f89d",
+    "trace_75be45f37d77",
+    "trace_565d6dae286c",
+    "trace_2d61e75f527e",
+    "trace_7b76a5a2f8b0",
+    "trace_99111e224575",
+    "trace_952147722ea9",
+    "trace_a8a15fa10f09",
+    "trace_7076ad829482",
+    "trace_cd18abd2d382",
+    "trace_c4db7a4caa7d",
+    "trace_b90ec03d8392",
+    "trace_3e17331c0e32",
+    "trace_aa9ad254583e",
+    "trace_ce85454fdbe1",
+    "trace_f1061c1a46e8",
+    "trace_db0e04b001ff",
+    "trace_56cb1c1f4a29",
+    "trace_7aa48eb6ee73",
+    "trace_edfc421f8196",
+    "trace_db32c80a877a",
+    "trace_f6a53fba187e",
+    "trace_fe95ba0743e5",
+    "trace_feaff1597c3b",
+    "trace_b049ba547044",
+    "trace_22fb47af99be",
+    "trace_bfa58f79fdfc",
+    "trace_3db5fa7486bc",
+    "trace_36dcdf5bbcac",
+    "trace_72cb57ed91ca",
+    "trace_e35e06ab0cda",
+    "trace_7de3404d147b",
+    "trace_33ba8ae01aef",
+    "trace_840c7be88856",
+    "trace_812bbd0577db",
+    "trace_f0cefe503561",
+    "trace_7a63dd8f67fb",
+    "trace_8094cb98ca3c",
+    "trace_688635c0b0ea",
+    "trace_30d765a3d86c",
+    "trace_efdee58d920f",
+    "trace_501e5cd11547",
+    "trace_0593b195671b",
+    "trace_36cddc10f510",
+    "trace_a53787d3cdb0",
+    "trace_5c3912322aa3",
+    "trace_7bf5f3a60690"
+  ],
+  "measurement_card_ids": [
+    "mcard_6c9adc9ade7e",
+    "mcard_302974ff5887",
+    "mcard_03c14441fde6",
+    "mcard_af9569d11b84",
+    "mcard_d840a96e7182",
+    "mcard_894539489cf8"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_ff46875bcf6c",
+    "mechcard_d141f1043088",
+    "mechcard_a14e19a19f69",
+    "mechcard_4b0397b27307"
+  ],
+  "recipe_card_ids": [
+    "recipe_674c52ca6335"
+  ],
+  "claim_card_ids": [
+    "claim_e161cecf5a33",
+    "claim_ba328b3e9b6b",
+    "claim_88aad6dca0c4",
+    "claim_54a4dd18a31f",
+    "claim_fdebb1cd59a6",
+    "claim_f1e429324395",
+    "claim_cb6affb8a01a",
+    "claim_e2e31612b930"
+  ],
+  "design_rule_card_ids": [
+    "drule_27316eceb7e2",
+    "drule_e6d252488c60",
+    "drule_c9f6922ee44e"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_159db6c2d023",
+    "comp_2b21e194a20c",
+    "comp_717af2a56044",
+    "comp_24dcf365947c",
+    "comp_718321bd76e7"
+  ],
+  "failure_case_card_ids": [
+    "fail_609021f4ce01",
+    "fail_f5e4d698af87",
+    "fail_71bd2ce6967b",
+    "fail_87e7b11f4802",
+    "fail_23db1bc6b3a6"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_30d06080bc70",
+    "mat_af2a558e6bb4",
+    "mat_143b1bbcceec"
+  ],
+  "dossier_ids": [
+    "dossier_423b49d957fd",
+    "dossier_66f7da93c626",
+    "dossier_6d9cf717d6cf"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MOF 1 has outstanding thermal and mechanical stability, decomposing only from 773 K and remaining largely intact up to 0.2 GPa.",
+    "MOF 1 is highly but not absolutely hydrolytically stable: severe heating in water at 80 C for 8 h forms dense phase 2.",
+    "MOF 1 is chemically robust: it withstands water, 0.001 M HNO3, and boiling methanol, benzene, or cyclohexane for prolonged periods."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.419667",
+  "updated_at": "2026-04-24T00:19:48.419670",
+  "raw_path": "相关文献/MOF-5capture-of-nerve-agents-and-mustard-gas-analogues-by-hydrophobic-robust-mof-5-type-metal-organic-frameworks.pdf"
+}

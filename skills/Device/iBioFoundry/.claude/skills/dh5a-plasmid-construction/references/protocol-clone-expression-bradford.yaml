@@ -1,0 +1,35 @@
+{
+  "protocol_id": "dh5a_clone_expression_bradford",
+  "standard_name": "dh5a_clone_expression_bradford",
+  "containers": [
+    {"name": "Cell_Plate2", "role": "clone culture plate", "acquire_status": "LB+K_2", "initial_set": false},
+    {"name": "Tips_Liha200_2", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "8Well_Plate_1", "role": "kanamycin clone plate", "acquire_status": "8Well_Plate_1", "acquire_modifier": "'Lidded' HasLid", "initial_set": false},
+    {"name": "8Well_Plate_2", "role": "kanamycin clone plate", "acquire_status": "8Well_Plate_2", "acquire_modifier": "'Lidded' HasLid", "initial_set": false},
+    {"name": "8Well_Plate_3", "role": "kanamycin clone plate", "acquire_status": "8Well_Plate_3", "acquire_modifier": "'Lidded' HasLid", "initial_set": false},
+    {"name": "8Well_Plate_4", "role": "kanamycin clone plate", "acquire_status": "8Well_Plate_4", "acquire_modifier": "'Lidded' HasLid", "initial_set": false},
+    {"name": "Cell_Plate3", "role": "expression culture plate", "acquire_status": "LB+K_3", "initial_set": false},
+    {"name": "Tips_MCA50_2", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "PCR_Template", "role": "IPTG reagent plate", "acquire_status": "New", "final_status": "Used"},
+    {"name": "Tips_Liha50_5", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "03_AX_Reaction1", "role": "lysis reagent plate", "acquire_status": "New", "final_status": "Used"},
+    {"name": "Tips_Liha200_3", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "PCR_Plate3", "role": "lysis supernatant plate", "acquire_status": "New", "final_status": "PCR_Plate3"},
+    {"name": "Tips_MCA200_1", "role": "tips", "acquire_status": "New", "final_status": "Used"},
+    {"name": "03_AX_Buffer", "role": "Bradford buffer plate", "acquire_status": "New", "final_status": "Used"},
+    {"name": "03_ZFL_BMG_Plate1", "role": "Bradford assay plate", "acquire_status": "New", "final_status": "BMG_Plate1"},
+    {"name": "Tips_MCA50_3", "role": "tips", "acquire_status": "New", "final_status": "Used"}
+  ],
+  "status_groups": [
+    ["Tips_Liha200_2", "Tips_MCA50_2", "PCR_Template", "Tips_Liha50_5", "03_AX_Reaction1", "Tips_Liha200_3", "Tips_MCA200_1", "03_AX_Buffer", "03_ZFL_BMG_Plate1", "Tips_MCA50_3"],
+    ["PCR_Plate3"]
+  ],
+  "stages": [
+    {"id": "stage6_pick_clone", "comment": "STEP6 pick clone", "flow": ["unseal_cell_plate2", "fluent_load_cell_plate2", "fluent_load_pick_clone_deck", "fluent_run_pick_clone", "seal_cell_plate2_kbs", "tos1_set_800", "tos1_load_cell_plate2", "tos1_incubate_cell_plate2_15h", "cytomat24_load_liha200_2", "cytomat10h_load_8well_plates"]},
+    {"id": "stage7_transfer", "comment": "STEP7 Transfer", "flow": ["unseal_cell_plate2", "evo_load_cell_plate2_nest1", "unseal_cell_plate3", "evo_load_cell_plate3_nest2", "evo_run_transfer", "seal_cell_plate3_kbs", "tos1_set_800", "tos1_load_cell_plate3", "tos1_incubate_cell_plate3_2h", "seal_cell_plate2_kbs", "cytomat10h_load_cell_plate2"]},
+    {"id": "stage8_add_iptg", "comment": "STEP8 add IPTG", "flow": ["unseal_cell_plate3", "evo_load_cell_plate3_nest2", "unseal_pcr_template", "evo_load_iptg_deck", "evo_run_add_iptg", "seal_cell_plate3_kbs", "tos1_set_800", "tos1_load_cell_plate3", "tos1_incubate_cell_plate3_4h", "seal_pcr_template_alps", "cytomat10h_load_pcr_template", "cytomat24_load_liha50_5"]},
+    {"id": "stage9_add_lysis", "comment": "STEP9 add lysis", "flow": ["unseal_cell_plate3", "evo_load_cell_plate3_nest2", "unseal_ax_reaction1", "evo_load_lysis_deck", "evo_run_add_lysis", "seal_cell_plate3_alps", "tos1_set_800", "tos1_load_cell_plate3", "tos1_incubate_cell_plate3_20m", "seal_ax_reaction1_alps", "cytomat10h_load_ax_reaction1", "cytomat24_load_liha200_3"]},
+    {"id": "stage10_lysis_transfer", "comment": "STEP10 lysis transfer", "flow": ["unseal_cell_plate3", "evo_load_lysis_transfer_deck", "evo_run_lysis_transfer", "seal_cell_plate3_alps", "cytomat10h_load_cell_plate3", "evo_load_pcr_plate3_nest5"]},
+    {"id": "stage11_bradford_detection", "comment": "STEP11 Bradford detection", "flow": ["unseal_ax_buffer", "evo_load_ax_buffer_nest3", "evo_run_bradford_pcr3", {"parallel": [["seal_ax_buffer_alps", "cytomat10h_load_ax_buffer"], ["seal_pcr_plate3_alps", "cytomat10h_load_pcr_plate3"], ["rotate_bmg_before_read", "clariostar_run_bradford", "rotate_bmg_after_read", "staging_load_bmg_plate1"]]}]}
+  ]
+}

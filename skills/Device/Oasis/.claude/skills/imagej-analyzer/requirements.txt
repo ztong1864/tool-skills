@@ -1,0 +1,20 @@
+# ImageJ Analyzer Dependencies
+# Core dependencies for Fiji integration
+
+# ImageJ Python wrapper
+pyimagej>=1.4.0
+
+# Java-Python bridge (pulled by pyimagej)
+jpype1>=1.5.0
+
+# Array operations
+numpy>=1.20.0
+
+# Image I/O
+Pillow>=9.0.0
+
+# Scientific computing
+scipy>=1.7.0
+
+# Optional: visualization
+# matplotlib>=3.5.0

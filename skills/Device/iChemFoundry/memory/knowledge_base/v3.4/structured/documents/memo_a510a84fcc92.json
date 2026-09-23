@@ -1,0 +1,126 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_a510a84fcc92",
+  "paper_id": "2ff55e6ee723",
+  "title": "Solvothermal Synthesis, Crystal Structure and Lumi",
+  "year": 2014,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Paper 2ff55e6ee723: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Comparison",
+      "body": "observed weight loss vs calculated weight loss: winner=tie on TGA_weight_loss_percent"
+    },
+    {
+      "title": "Comparison",
+      "body": "experimental powder X-ray diffraction pattern of compound 1 vs simulated powder X-ray diffraction pattern from single-crystal data of compound 1: winner=tie on PXRD_pattern_match"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] heating the framework above 220 °C: the framework decomposes and the whole framework collapses"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_e1dad2c8e7e9",
+    "trace_be0339eb3a74",
+    "trace_9ba01189bf7b",
+    "trace_38cad108aeb8",
+    "trace_96298f3a8c05",
+    "trace_c3827e290b87",
+    "trace_a6388b41ef8b",
+    "trace_9d3f7f130512",
+    "trace_b2d530c542dc",
+    "trace_6f054007f11f",
+    "trace_d344ad99bf5a",
+    "trace_e55f1e3e57fc",
+    "trace_8a2c4df56e2d",
+    "trace_fb54fd86a183",
+    "trace_a47eddf1080e",
+    "trace_7ae5c348d802",
+    "trace_ea14c7784cb3",
+    "trace_392f37fa905f",
+    "trace_7347bdd1e1f0",
+    "trace_f51b86add189",
+    "trace_13b4d31e1066",
+    "trace_0fbf9d62f653",
+    "trace_92283a34ebc6",
+    "trace_19a670c1a980",
+    "trace_0f24970e8b2d",
+    "trace_5b1f023f6bfe",
+    "trace_be0339eb3a74",
+    "trace_0fbf9d62f653",
+    "trace_0f24970e8b2d",
+    "trace_92283a34ebc6",
+    "trace_8a2c4df56e2d",
+    "trace_a6388b41ef8b",
+    "trace_e55f1e3e57fc",
+    "trace_7347bdd1e1f0",
+    "trace_13b4d31e1066",
+    "trace_7ae5c348d802",
+    "trace_19a670c1a980",
+    "trace_5b1f023f6bfe",
+    "trace_9ba01189bf7b",
+    "trace_d344ad99bf5a",
+    "trace_96298f3a8c05",
+    "trace_6f054007f11f",
+    "trace_9d3f7f130512",
+    "trace_38cad108aeb8",
+    "trace_e1dad2c8e7e9",
+    "trace_392f37fa905f",
+    "trace_fb54fd86a183",
+    "trace_b2d530c542dc",
+    "trace_ea14c7784cb3",
+    "trace_c3827e290b87",
+    "trace_f51b86add189",
+    "trace_a47eddf1080e"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_bf6a37fb29c7",
+    "claim_9d893cccb277",
+    "claim_95d21d2e75c3",
+    "claim_90dfa00497d8",
+    "claim_7dfe9e6e969e",
+    "claim_e4056cd4dd87",
+    "claim_4e17bbd928ba"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [
+    "comp_0e99a215c1af",
+    "comp_bb5cb5e0ce70"
+  ],
+  "failure_case_card_ids": [
+    "fail_d853c75dc99d"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c20af7aa27a6"
+  ],
+  "dossier_ids": [
+    "dossier_e3f469e589db"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Compound 1 shows intense photoluminescence with an emission maximum at 450 nm under 375 nm excitation.",
+    "ATZ bridges Zn1 and Zn2 into 1D neutral double chains, which are further linked by monodentate bdc carboxylates into the 2D framework.",
+    "A new 2D Zn(II) MOF, [Zn2(H2bdc)(ATZ)2.5(H2O)·2(H2O)] (1), was solvothermally synthesized and structurally characterized by single-crystal XRD."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.2,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.163917",
+  "updated_at": "2026-04-24T00:19:49.163920",
+  "raw_path": "相关文献/Zeng - 2014 - Solvothermal Synthesis, Crystal Structure and Lumi.pdf",
+  "authors": [
+    "Zeng"
+  ]
+}

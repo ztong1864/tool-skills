@@ -1,0 +1,27 @@
+S4
+ Table S3. Optimization of reaction conditions for the ZnI 2-promoted one-pot
+synthesis of 3aaa
++ +
+tolueneCH3(CH2)7
+PhN
+HO
+(CH2)7CH3 PhCHO
+1a3aaZnI2
+2a
+
+entry PhCHO
+(equiv ) morpholine
+(equiv ) ZnI 2
+(equiv ) temp.
+(℃) time
+(h) NMR yield
+of 3aa (%)
+1 1.7  1.5  0.6 150b 2.5 43
+2 1.7 1.5 0.6 140 8 45
+3 1.7 1.3 0.6 140 6 53
+4 1.7 1.1 0.6 140 8 34
+5 1.7 1.3 0.6 130 5 53
+6 1.7 1.3 0.6 120 22 36
+7 1.8 1.4 0.8 130 6.3 60
+a The reactions were carried out in 0.3 mmol scale of 1a in 0.9 mL of toluene. b The
+reaction was carried out in a r eaction tube with a screw cap.

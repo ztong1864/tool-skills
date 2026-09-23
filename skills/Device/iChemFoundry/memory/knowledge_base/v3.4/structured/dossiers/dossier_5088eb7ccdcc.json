@@ -1,0 +1,61 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_5088eb7ccdcc",
+  "canonical_material_id": "mat_6e0985b34e9d",
+  "canonical_name": "ANA-[Zn(eim)2]",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_fcbef5d8ac49",
+  "pillar_id": null,
+  "topology": "ana",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_24548a7a4086"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_c942c1421092",
+    "mechcard_d076799e1357",
+    "mechcard_a713bcec8cbf",
+    "mechcard_60553d2a3b7b",
+    "mechcard_e8729a0d11fd",
+    "mechcard_03e0acba7054"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_0039263fbd32",
+    "claim_60ec16358e11",
+    "claim_682f53c0fed7"
+  ],
+  "design_rule_card_ids": [
+    "drule_841a4c60382f"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 1.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "4b169130f161",
+    "09e67f192def",
+    "ffba90254f37"
+  ],
+  "evidence_trace_ids": [
+    "trace_7ae442673c3f",
+    "trace_3816a2fb3d27",
+    "trace_9e1ba30d3cb5",
+    "trace_0f7f56d6048a",
+    "trace_62a977d690e2",
+    "trace_3ce1fc299e6d",
+    "trace_dd53d618c7f9"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:14:56.827510",
+  "updated_at": "2026-04-23T23:07:06.881229"
+}

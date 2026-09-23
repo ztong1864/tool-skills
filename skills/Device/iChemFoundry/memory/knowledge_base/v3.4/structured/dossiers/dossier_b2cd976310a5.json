@@ -1,0 +1,43 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_b2cd976310a5",
+  "canonical_material_id": "mat_1e62001a1e63",
+  "canonical_name": "[Zn4(atz)4(CO3)(ox)(H2O)2]-H2O",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_63a39f87f1c2",
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_771c59a6cd90"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 0.5,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "03636bfd549e"
+  ],
+  "evidence_trace_ids": [
+    "trace_a9b21aa86d73"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T21:20:55.221223",
+  "updated_at": "2026-04-23T21:20:55.221281"
+}

@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_b4c8e7374388",
+  "paper_id": "6f088017d1f9",
+  "raw_path": "相关文献/064702_1_online.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CH4",
+    "C2H6",
+    "Xe"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": false,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "ZSM-5"
+  ],
+  "mentioned_metals": [
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA",
+    "MIM"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "\nView\nOnline \nExport\nCitation\nRESEARCH ARTICLE |  AUGUST 09 2018\nDiffusion processes in a poly-crystalline zeolitic material: A\nmolecular dynamics study \nAngela Mary Thomas; Yashonath Subramanian \n"
+  },
+  "page_count": 9,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T16:45:18.612078"
+}

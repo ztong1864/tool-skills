@@ -1,0 +1,221 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_6ea2f7351f4d",
+  "paper_id": "93123c5868a2",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Zn(II)-coordination-polymers shows decomposition_onset_temperature = 300.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "decomposition_onset_temperature = 300.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "five-membered chelate rings involving hydroxyl-derived oxygen and carboxylate → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "layer-pillared net with Zn(II)-trz sheet as layer and tar ligand as pillar → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use polynuclear metal clusters as SBUs in Zn/triazolate/aromatic carboxylate systems → favors pillared-layer structures or high-connected frameworks"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use flexible aliphatic carboxylate ligands with trz as mixed ligands → promotes assembly into unique high-dimensional frameworks with multicarboxylate-bridged polynuclear clusters as SBUs"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 2 vs compound 1: winner=subject_a on framework_dimensionality"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 synthesized at Zn salt:trz:H2suc = 1:2:2 vs compound 1 synthesis attempted at Zn salt:trz:H2suc = 1:1:1: winner=subject_a on formation_of_compound_1"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] run the reaction without NaOH or at higher pH using 1.0 ml or 2.0 ml of 0.5 M NaOH: without NaOH only a small amount of white powder or liquid was obtained, and at higher pH a large amount of white powder different from compounds 1 and 2 was produced"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_19a31ffc7874",
+    "trace_fb29534992f3",
+    "trace_b55717c8e705",
+    "trace_6602bf8f4db6",
+    "trace_d3ecb9019335",
+    "trace_bc5dbaac41d4",
+    "trace_507677a3fe34",
+    "trace_a1f0645d962a",
+    "trace_1aadd9b2f4b2",
+    "trace_bc2bb94084fe",
+    "trace_58ffa48f1db2",
+    "trace_6fe8dd6d969d",
+    "trace_1763b8f43625",
+    "trace_c37ba40e0da8",
+    "trace_b7818b336b01",
+    "trace_4ada6e48880b",
+    "trace_e2b5c349e6cc",
+    "trace_ae3c0621c2d5",
+    "trace_6077718fdfbe",
+    "trace_9cc50f5761b5",
+    "trace_dcb4981c4371",
+    "trace_922cccff60f9",
+    "trace_0db795ee6713",
+    "trace_876c580364ce",
+    "trace_db43303999ad",
+    "trace_a9c24ba040f0",
+    "trace_83cafe0bbebc",
+    "trace_b248af972557",
+    "trace_cecf465120c6",
+    "trace_188d7aba88bf",
+    "trace_1f401e05fbe6",
+    "trace_a849315a25bf",
+    "trace_5195552ab0c4",
+    "trace_f501d66754fd",
+    "trace_52ef10d82b80",
+    "trace_74512477efc9",
+    "trace_0668f538ec70",
+    "trace_c1821f003b4f",
+    "trace_446747bf2e43",
+    "trace_ebdaea13eb67",
+    "trace_d7e6d5a827e8",
+    "trace_0b6456fa9c8a",
+    "trace_7966e903ad1c",
+    "trace_fba3cca35a6e",
+    "trace_c94aa798c3d0",
+    "trace_3aa984f0bc19",
+    "trace_ae6fd0a07aeb",
+    "trace_1ca0448e92e6",
+    "trace_727d58a19a2b",
+    "trace_8cfa41bd2793",
+    "trace_33ae58646db3",
+    "trace_dcb4981c4371",
+    "trace_c37ba40e0da8",
+    "trace_e2b5c349e6cc",
+    "trace_5195552ab0c4",
+    "trace_74512477efc9",
+    "trace_1763b8f43625",
+    "trace_fba3cca35a6e",
+    "trace_cecf465120c6",
+    "trace_c94aa798c3d0",
+    "trace_58ffa48f1db2",
+    "trace_188d7aba88bf",
+    "trace_876c580364ce",
+    "trace_83cafe0bbebc",
+    "trace_d7e6d5a827e8",
+    "trace_507677a3fe34",
+    "trace_1aadd9b2f4b2",
+    "trace_b7818b336b01",
+    "trace_1f401e05fbe6",
+    "trace_33ae58646db3",
+    "trace_6fe8dd6d969d",
+    "trace_d3ecb9019335",
+    "trace_9cc50f5761b5",
+    "trace_19a31ffc7874",
+    "trace_db43303999ad",
+    "trace_6077718fdfbe",
+    "trace_bc5dbaac41d4",
+    "trace_fb29534992f3",
+    "trace_a9c24ba040f0",
+    "trace_f501d66754fd",
+    "trace_b248af972557",
+    "trace_0b6456fa9c8a",
+    "trace_ae6fd0a07aeb",
+    "trace_ebdaea13eb67",
+    "trace_1ca0448e92e6",
+    "trace_4ada6e48880b",
+    "trace_3aa984f0bc19",
+    "trace_6602bf8f4db6",
+    "trace_bc2bb94084fe",
+    "trace_a849315a25bf",
+    "trace_b55717c8e705",
+    "trace_ae3c0621c2d5",
+    "trace_446747bf2e43",
+    "trace_7966e903ad1c",
+    "trace_8cfa41bd2793",
+    "trace_727d58a19a2b",
+    "trace_0db795ee6713",
+    "trace_c1821f003b4f",
+    "trace_a1f0645d962a",
+    "trace_52ef10d82b80",
+    "trace_0668f538ec70",
+    "trace_922cccff60f9"
+  ],
+  "measurement_card_ids": [
+    "mcard_80eef98d19f1"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_b84950042fa7",
+    "mechcard_bdc1e533fbd1",
+    "mechcard_ba5422169c7b",
+    "mechcard_ff86c373e673",
+    "mechcard_650c36719904"
+  ],
+  "recipe_card_ids": [
+    "recipe_4bba20b93baa",
+    "recipe_a34aa5efccec"
+  ],
+  "claim_card_ids": [
+    "claim_1b090558db86",
+    "claim_df641e52ab9a",
+    "claim_a7fedb07e006",
+    "claim_d4fcbb359bd2",
+    "claim_667d3d22d4b7",
+    "claim_b683c50a763a",
+    "claim_6a96c8b4fa3c",
+    "claim_11bc9b2c77fe"
+  ],
+  "design_rule_card_ids": [
+    "drule_32401e1e9e0f",
+    "drule_1b71f48854f4",
+    "drule_914e1ae1a834",
+    "drule_5058da4baf88",
+    "drule_d70a7c283ed1",
+    "drule_a1b61be6d74b",
+    "drule_2a36b256c9ef",
+    "drule_9ca386be7c01"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_ff1fa83c5c56",
+    "comp_9d36b2c6852c",
+    "comp_fe6a025dd6e1",
+    "comp_393259ad0dfd",
+    "comp_0b489ace9a0d",
+    "comp_e42c83d6048b"
+  ],
+  "failure_case_card_ids": [
+    "fail_04b647d56278",
+    "fail_6bc530e66b08"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_0794f3270ccf",
+    "mat_ab148aaf9a53"
+  ],
+  "dossier_ids": [
+    "dossier_6f338ba67d4b",
+    "dossier_7b4fa66d10ef"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "In 2, tar dianions bridge adjacent Zn-trz layers by chelating through hydroxyl and carboxylate groups in a μ2, κ4 mode, creating the 3D framework.",
+    "Compound 1 forms a 2D layered network based on {[Zn4(trz)4]4+}n sheets decorated by succinate, topologically described as a (4, 8^2) net.",
+    "Formation of compound 1 is condition-dependent: Zn:trz:H2suc = 1:2:2 favors 1, but 1:1:1 gives no 1 under the same conditions."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.265291",
+  "updated_at": "2026-04-24T00:19:51.265293",
+  "raw_path": "相关文献/ren2011.pdf.pdf"
+}

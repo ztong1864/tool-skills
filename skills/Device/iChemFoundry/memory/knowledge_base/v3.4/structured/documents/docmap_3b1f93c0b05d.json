@@ -1,0 +1,55 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_3b1f93c0b05d",
+  "paper_id": "7002be9dcc15",
+  "raw_path": "相关文献/Liao 等 - 2012 - Strong and Dynamic CO2 Sorption in a Flexible Poro.pdf",
+  "title": "Strong and Dynamic CO2 Sorption in a Flexible Poro",
+  "authors": [
+    "Liao"
+  ],
+  "year": 2012,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MAF-23"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Fe",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "imidazolate",
+    "TED",
+    "azolate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "Using a bis-triazolate ligand and tetrahedral\nZn(II) ion, we synthesized a ﬂexible porous coordination",
+    "results_summary": "Strong and Dynamic CO2 Sorption in a Flexible Porous Framework\nPossessing Guest Chelating Claws\nPei-Qin Liao,† Dong-Dong Zhou,† Ai-Xin Zhu,†,‡ Lu Jiang,† Rui-Biao Lin,† Jie-Peng Zhang,*,†\nand Xiao-Min"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:14:32.815839"
+}

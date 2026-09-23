@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_94d5a270a44b",
+  "canonical_material_id": "mat_e7a598e8db90",
+  "canonical_name": "MAF-32",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_fcbef5d8ac49",
+  "pillar_id": null,
+  "topology": "qtz",
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_efdd718bc568",
+    "recipe_126d2cb9892f"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [
+    "drule_24853e84d050"
+  ],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 1.0,
+    "design_rule": 1.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "4b169130f161",
+    "ffba90254f37"
+  ],
+  "evidence_trace_ids": [
+    "trace_c0dd6ae4d302",
+    "trace_aeac4c54ecb3"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T20:14:56.828094",
+  "updated_at": "2026-04-23T23:07:06.881566"
+}

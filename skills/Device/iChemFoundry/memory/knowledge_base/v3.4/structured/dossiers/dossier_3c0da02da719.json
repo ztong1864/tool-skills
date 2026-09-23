@@ -1,0 +1,85 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_3c0da02da719",
+  "canonical_material_id": "mat_9afd4269fa58",
+  "canonical_name": "Zn2(C2O4)(C2N4H3)2(H2O)0.5",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_180c33468a68",
+  "pillar_id": "pil_27090a4f91c9",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_50bf0548801b",
+    "mcard_3d6c4ee6131b",
+    "mcard_8395f0f541dc",
+    "mcard_94d6b7bbadf5",
+    "mcard_972245f99b23",
+    "mcard_96debbb48ecf",
+    "mcard_76cebace164e",
+    "mcard_c58ff56b9504",
+    "mcard_1aac683f444c",
+    "mcard_ca839eea1cc7",
+    "mcard_0a54e874a9e0",
+    "mcard_219c8d8a9ce9",
+    "mcard_83b6cc516e30",
+    "mcard_ed3552f72cf9"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_315e2ced2131",
+    "mechcard_cc55f6e97df8",
+    "mechcard_8ea38a8b9acf",
+    "mechcard_b2127868bc3d",
+    "mechcard_37760cce34b3",
+    "mechcard_5a8a3344bae6"
+  ],
+  "recipe_card_ids": [
+    "recipe_17be1cc92795",
+    "recipe_e6e56da48869"
+  ],
+  "claim_card_ids": [
+    "claim_db909d406d5a"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "7eafab3ec2e2",
+    "524fd695803c"
+  ],
+  "evidence_trace_ids": [
+    "trace_a691f986fa72",
+    "trace_e30ad5cc153a",
+    "trace_31750b8875d8",
+    "trace_e060a9481416",
+    "trace_d827322d0c22",
+    "trace_8d795a4c2533",
+    "trace_d172d29d66dc",
+    "trace_bf455a93e5b6",
+    "trace_85852ca23fda",
+    "trace_414e4bc8125f",
+    "trace_0e371345459c",
+    "trace_6db294692c24",
+    "trace_d141d92da51b",
+    "trace_80b3c071a0a0",
+    "trace_f1b323e729ce",
+    "trace_40114a9eefac",
+    "trace_48149cc80d31",
+    "trace_a38fe5509b22",
+    "trace_960bd2d4692b",
+    "trace_cf8914e9e490"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:13:19.239730",
+  "updated_at": "2026-04-23T22:49:36.180745"
+}

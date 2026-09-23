@@ -1,0 +1,83 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_5e547fc7bc64",
+  "paper_id": "9fbde6b04aa6",
+  "raw_path": "相关文献/yang-et-al-2024-leveraging-diffusion-kinetics-to-reverse-propane-propylene-adsorption-in-zeolitic-imidazolate-framework.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "propylene/propane separation",
+  "normalized_task_id": "C3H6_C3H8_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "Xe",
+    "Kr"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CPO-27",
+    "SU-8010",
+    "ZIF-69",
+    "ZIF-71",
+    "CPO-27-Ni",
+    "KAUST-7",
+    "HPR-20",
+    "ZIF-8",
+    "CPO-27-Mg",
+    "MOF-74",
+    "ZIF-62",
+    "ITQ-32",
+    "ZIF-67",
+    "ZIF-4",
+    "ZSM-58",
+    "ZIF-7",
+    "CPL-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Fe",
+    "Al",
+    "Zr",
+    "Mg",
+    "Ba",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "TED",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "sod",
+    "acs",
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "The separation challenge posed by propylene/\npropane mixtures arises from their nearly identical molecular",
+    "results_summary": "Leveraging Diffusion Kinetics to Reverse\nPropane/Propylene Adsorption in Zeolitic\nImidazolate Framework‑8\nLinghe Yang,⊥Ying Liu,⊥Fang Zheng,* Fuxing Shen, Baojian Liu, Rajamani Krishna,* Zhiguo Zhang,"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T22:51:57.750861"
+}

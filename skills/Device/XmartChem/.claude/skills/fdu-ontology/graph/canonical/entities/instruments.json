@@ -1,0 +1,80 @@
+{
+  "instrument:fdu-automation-platform": {
+    "description": "Overall FDU automation device platform used for task creation and execution.",
+    "entity_type": "Instrument",
+    "id": "instrument:fdu-automation-platform",
+    "name": "FDU automation platform",
+    "required_resource_ids": [],
+    "supported_action_ids": [
+      "device-action:add-solid",
+      "device-action:add-liquid",
+      "device-action:reaction-control",
+      "device-action:filter",
+      "device-action:high-filter"
+    ]
+  },
+  "instrument:fdu-filter-module": {
+    "description": "Filtering module for normal filtering actions.",
+    "entity_type": "Instrument",
+    "id": "instrument:fdu-filter-module",
+    "name": "FDU filter module",
+    "required_resource_ids": [
+      "resource:device-location"
+    ],
+    "supported_action_ids": [
+      "device-action:filter"
+    ]
+  },
+  "instrument:fdu-high-filter-module": {
+    "description": "High-filtering module for high-filtering actions.",
+    "entity_type": "Instrument",
+    "id": "instrument:fdu-high-filter-module",
+    "name": "FDU high-filter module",
+    "required_resource_ids": [
+      "resource:device-location",
+      "resource:liquid-reagent"
+    ],
+    "supported_action_ids": [
+      "device-action:high-filter"
+    ]
+  },
+  "instrument:fdu-liquid-handler": {
+    "description": "Liquid handling module for pipetting actions.",
+    "entity_type": "Instrument",
+    "id": "instrument:fdu-liquid-handler",
+    "name": "FDU liquid handler",
+    "required_resource_ids": [
+      "resource:device-location",
+      "resource:liquid-reagent",
+      "resource:tip-consumable"
+    ],
+    "supported_action_ids": [
+      "device-action:add-liquid"
+    ]
+  },
+  "instrument:fdu-magnetic-stirrer": {
+    "description": "Magnetic stirrer module for reaction-control actions.",
+    "entity_type": "Instrument",
+    "id": "instrument:fdu-magnetic-stirrer",
+    "name": "FDU magnetic stirrer",
+    "required_resource_ids": [
+      "resource:device-location"
+    ],
+    "supported_action_ids": [
+      "device-action:reaction-control"
+    ]
+  },
+  "instrument:fdu-solid-dispenser": {
+    "description": "Solid dispensing module for solid addition actions.",
+    "entity_type": "Instrument",
+    "id": "instrument:fdu-solid-dispenser",
+    "name": "FDU solid dispenser",
+    "required_resource_ids": [
+      "resource:device-location",
+      "resource:solid-reagent"
+    ],
+    "supported_action_ids": [
+      "device-action:add-solid"
+    ]
+  }
+}

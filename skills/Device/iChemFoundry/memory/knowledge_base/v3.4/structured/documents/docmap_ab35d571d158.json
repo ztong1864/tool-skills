@@ -1,0 +1,59 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_ab35d571d158",
+  "paper_id": "3a2a3169d968",
+  "raw_path": "相关文献/Nguyen 等 - 2022 - Post-Combustion CO2 capture by vacuum swing adsorp.pdf",
+  "title": "Post-Combustion CO2 capture by vacuum swing adsorp",
+  "authors": [
+    "Nguyen"
+  ],
+  "year": 2022,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "VP-2",
+    "Framework-20",
+    "PT-4",
+    "TC-1",
+    "UTSA-16",
+    "TC-6",
+    "CALF-20",
+    "MFM-2",
+    "PT-1",
+    "MFM-1",
+    "MFC-1",
+    "VP-1",
+    "MFM-3",
+    "MFC-2"
+  ],
+  "mentioned_metals": [
+    "Co",
+    "In",
+    "V"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "abstract": "9 \nIn this paper, the ability of CALF-20, a hydrophobic metal-organic framework (MOF), to capture \n10",
+    "results_summary": "1 \nPost-Combustion CO2 capture by vacuum swing adsorption \n1 \nusing a hydrophobic metal-organic framework (MOF), CALF-\n2 \n20: Multi-objective optimization and experimental validation \n3 \nTai T. T. Ngu"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:35:28.987866"
+}

@@ -1,0 +1,79 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_dd4c7801c854",
+  "paper_id": "cccbb8ebbffc",
+  "raw_path": "相关文献/Chen 等 - 2023 - A scalable robust microporous Al-MOF for post-comb.pdf",
+  "title": "A scalable robust microporous Al-MOF for post-comb",
+  "authors": [
+    "Chen"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "DUT-8",
+    "UTSA-16",
+    "ETS-4",
+    "MIL-160",
+    "NbOFFIVE-1-Ni",
+    "CALF-20",
+    "SIFSIX-3-Cu",
+    "MIL-120",
+    "MOF-74",
+    "MOF-303",
+    "MIL-53",
+    "MIL-121",
+    "MIL-91",
+    "MIL-16049",
+    "MIL-118",
+    "SIFSIX-3-Zn",
+    "MOF-7440"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Al",
+    "Mg",
+    "In",
+    "Ti",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "BPDC",
+    "azolate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "zif"
+  ],
+  "key_sections": {
+    "abstract": "Adsorptive separation via scalable and inexpensive adsorbents is now considered \namong the credible alternative solutions for post-combustion carbon mitigation via",
+    "conclusion": "In this work, a highly robust and cheap aluminum-based microporous Al \ntetracarboxylate MOF, MIL-120(Al), was studied for post-combustion carbon capture.",
+    "results_summary": "1 \nA scalable robust microporous Al-MOF for \npost-combustion carbon capture \nBingbing Chen,1 Dong Fan,2 Rosana V. Pinto,1,3 Iurii Dovgaliuk,1 Shyamapada Nandi,1 \nDebanjan Chakraborty,1 Nicolas Heymans"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:19:01.909345"
+}

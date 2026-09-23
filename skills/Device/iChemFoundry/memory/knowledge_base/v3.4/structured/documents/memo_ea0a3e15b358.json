@@ -1,0 +1,224 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_ea0a3e15b358",
+  "paper_id": "6613653bbccc",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "[Zn2(trz)2(btdb)]⋅4DMF shows Langmuir_surface_area = 775.1 m2/g for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "Langmuir_surface_area = 775.1 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "chemical_stability_pH12_NaOH_duration (NaOH_aqueous_solution) = 24.0 h at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "channel_size_max = 8.8 A at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "thiadiazole_sites_exposed_on_pore_surface → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "rigid_framework → porosity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use small polytopic ligands to build compact layers in a pillared-layer MOF → framework stability is improved"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select a linear and sufficiently long dicarboxylate pillar ligand → high porosity becomes more achievable"
+    },
+    {
+      "title": "Comparison",
+      "body": "desolvated ds-1 vs free H2btdb ligand: winner=subject_a on quantum_yield"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_30ffc7ee1be1",
+    "trace_29c1c6ade9dd",
+    "trace_f98b3f4a47d1",
+    "trace_62454c27dcfa",
+    "trace_73e0c89bb56a",
+    "trace_42b41b7014a6",
+    "trace_ec64a9d36798",
+    "trace_2cecf1e37819",
+    "trace_6aa7d9ab81ff",
+    "trace_bf14dd369dbe",
+    "trace_ab2a37a8d9cd",
+    "trace_ac0f697dda60",
+    "trace_97d13430bf78",
+    "trace_a32ca0c83fc7",
+    "trace_bf68910dde8b",
+    "trace_a02a043e9f84",
+    "trace_cb963c4a81a6",
+    "trace_25b03a73848d",
+    "trace_176f0006ac96",
+    "trace_95490b1a3318",
+    "trace_72dc409593df",
+    "trace_b8ca59720533",
+    "trace_e522603a5905",
+    "trace_2d585f002ac3",
+    "trace_b63e2f3e6d8d",
+    "trace_d38d1b77d922",
+    "trace_a90f3afddb01",
+    "trace_787298e3af3a",
+    "trace_15eff33bc3c0",
+    "trace_ac698141bca8",
+    "trace_fae687209b41",
+    "trace_9cab0b1b60a5",
+    "trace_02b02bc7e404",
+    "trace_dc2d8a59e100",
+    "trace_d0b7df72af05",
+    "trace_930d46ec0a6f",
+    "trace_e9555229c143",
+    "trace_041f49788744",
+    "trace_d7fbda2f36c9",
+    "trace_a5783c8b41f4",
+    "trace_1b4926ae176f",
+    "trace_1edb1877d5d1",
+    "trace_0c7f62b52041",
+    "trace_e0d9d8e95121",
+    "trace_ed0054f7ecdb",
+    "trace_d40d397f6c31",
+    "trace_45f93cea55eb",
+    "trace_e4ab7c42e2fc",
+    "trace_e41060226b7c",
+    "trace_d634fbeeefcb",
+    "trace_69b58cf867b8",
+    "trace_4bde1c691bd4",
+    "trace_fae687209b41",
+    "trace_62454c27dcfa",
+    "trace_29c1c6ade9dd",
+    "trace_ed0054f7ecdb",
+    "trace_97d13430bf78",
+    "trace_ac698141bca8",
+    "trace_dc2d8a59e100",
+    "trace_d0b7df72af05",
+    "trace_f98b3f4a47d1",
+    "trace_a32ca0c83fc7",
+    "trace_9cab0b1b60a5",
+    "trace_bf68910dde8b",
+    "trace_b63e2f3e6d8d",
+    "trace_ec64a9d36798",
+    "trace_e0d9d8e95121",
+    "trace_ab2a37a8d9cd",
+    "trace_bf14dd369dbe",
+    "trace_041f49788744",
+    "trace_a90f3afddb01",
+    "trace_4bde1c691bd4",
+    "trace_a02a043e9f84",
+    "trace_6aa7d9ab81ff",
+    "trace_30ffc7ee1be1",
+    "trace_45f93cea55eb",
+    "trace_25b03a73848d",
+    "trace_e9555229c143",
+    "trace_d634fbeeefcb",
+    "trace_15eff33bc3c0",
+    "trace_d7fbda2f36c9",
+    "trace_72dc409593df",
+    "trace_e41060226b7c",
+    "trace_930d46ec0a6f",
+    "trace_e4ab7c42e2fc",
+    "trace_2d585f002ac3",
+    "trace_2cecf1e37819",
+    "trace_1edb1877d5d1",
+    "trace_e522603a5905",
+    "trace_02b02bc7e404",
+    "trace_787298e3af3a",
+    "trace_95490b1a3318",
+    "trace_176f0006ac96",
+    "trace_ac0f697dda60",
+    "trace_0c7f62b52041",
+    "trace_d38d1b77d922",
+    "trace_1b4926ae176f",
+    "trace_73e0c89bb56a",
+    "trace_b8ca59720533",
+    "trace_69b58cf867b8",
+    "trace_cb963c4a81a6",
+    "trace_d40d397f6c31",
+    "trace_a5783c8b41f4",
+    "trace_42b41b7014a6"
+  ],
+  "measurement_card_ids": [
+    "mcard_14b207585996",
+    "mcard_2f24bce5b2cb",
+    "mcard_b04e5a2e2beb",
+    "mcard_e818445f2061",
+    "mcard_0c3831daf482",
+    "mcard_28bcc1a56014",
+    "mcard_a0d62ca94c55",
+    "mcard_3ea188198642",
+    "mcard_13878dc69bd5",
+    "mcard_900790d2e48d",
+    "mcard_5d21441dc2e9",
+    "mcard_49b353ac9827",
+    "mcard_c4606030a1cc"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_0f0c08caa8d1",
+    "mechcard_61f5dc34f934",
+    "mechcard_ed9b833ce108"
+  ],
+  "recipe_card_ids": [
+    "recipe_6d7137bde6fd",
+    "recipe_0967752b243a"
+  ],
+  "claim_card_ids": [
+    "claim_c904de7266a3",
+    "claim_ad7e2edc6d94",
+    "claim_6d4eb8ef98e6",
+    "claim_ee2ceacb581d",
+    "claim_1540e68cb572",
+    "claim_7e40ce11decc",
+    "claim_7768e46e6cb0"
+  ],
+  "design_rule_card_ids": [
+    "drule_1627bea1b08c",
+    "drule_f1673be561c0",
+    "drule_b80e23476a67",
+    "drule_d08a59ba4ed5",
+    "drule_4f8bc72957cc"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_c69f673ac21d"
+  ],
+  "failure_case_card_ids": [
+    "fail_98538c34012e"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_471625073dda",
+    "mat_0f05f7e78fd7"
+  ],
+  "dossier_ids": [
+    "dossier_4af82239b205",
+    "dossier_9d76ac85750a"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "High porosity exposes uncoordinated N and S atoms of the thiadiazole groups on pore surfaces, providing potential metal-ion sensing sites.",
+    "Brightly fluorescent MOF 1 selectively detects Fe3+ by fluorescence quenching, with detection limits of 3.1 μM in methanol and 17.0 μM in water.",
+    "The new pillared-layer MOF [Zn2(trz)2(btdb)]·4DMF was successfully constructed from [Zn2] (4,4)-grid layers and inclined fluorescent dicarboxylate pillars."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.110842",
+  "updated_at": "2026-04-24T00:19:50.110856",
+  "raw_path": "相关文献/Zn-二苯甲酸-Acid and alkalinity stable pillared-layer and fluorescent zinc(II).pdf"
+}

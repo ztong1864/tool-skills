@@ -1,0 +1,86 @@
+{
+  "device-action:add-liquid": {
+    "description": "Liquid addition/pipetting unit action.",
+    "entity_type": "DeviceAction",
+    "generator_skill": "fdu-add-liquid-json",
+    "id": "device-action:add-liquid",
+    "name": "Add liquid",
+    "required_fields": [
+      "layout_code",
+      "unit_column",
+      "unit_row",
+      "substance",
+      "add_volume",
+      "unit"
+    ],
+    "unit_type": "exp_pipetting"
+  },
+  "device-action:add-solid": {
+    "description": "Solid reagent addition unit action.",
+    "entity_type": "DeviceAction",
+    "generator_skill": "fdu-add-solid-json",
+    "id": "device-action:add-solid",
+    "name": "Add solid",
+    "required_fields": [
+      "layout_code",
+      "unit_column",
+      "unit_row",
+      "substance",
+      "add_weight",
+      "unit"
+    ],
+    "unit_type": "exp_add_solid"
+  },
+  "device-action:filter": {
+    "description": "Normal filtering unit action.",
+    "entity_type": "DeviceAction",
+    "generator_skill": "fdu-filter-json",
+    "id": "device-action:filter",
+    "name": "Filter",
+    "required_fields": [
+      "layout_code",
+      "unit_column",
+      "unit_row",
+      "add_volume",
+      "unit",
+      "dst_pos"
+    ],
+    "unit_type": "exp_filtering_samples"
+  },
+  "device-action:high-filter": {
+    "description": "High-filtering unit action with dilution support.",
+    "entity_type": "DeviceAction",
+    "generator_skill": "fdu-high-filter-json",
+    "id": "device-action:high-filter",
+    "name": "High filter",
+    "required_fields": [
+      "layout_code",
+      "unit_column",
+      "unit_row",
+      "add_volume",
+      "substance",
+      "dilute_volume",
+      "unit",
+      "dst_pos"
+    ],
+    "unit_type": "exp_high_filtering_samples"
+  },
+  "device-action:reaction-control": {
+    "description": "Magnetic stirrer reaction-control unit action.",
+    "entity_type": "DeviceAction",
+    "generator_skill": "fdu-reaction-control-json",
+    "id": "device-action:reaction-control",
+    "name": "Reaction control",
+    "required_fields": [
+      "layout_code",
+      "unit_column",
+      "unit_row",
+      "temperature",
+      "reaction_duration",
+      "is_wait",
+      "rotation_speed",
+      "still_tem"
+    ],
+    "unit_type": "exp_magnetic_stirrer"
+  }
+}

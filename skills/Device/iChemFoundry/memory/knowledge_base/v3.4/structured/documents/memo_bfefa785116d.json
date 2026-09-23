@@ -1,0 +1,190 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_bfefa785116d",
+  "paper_id": "a73000c53af6",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "H2"
+  ],
+  "one_line_summary": "Zn-trz-ox shows nitrobenzene_detection_limit = 400.0 dimensionless for nitrobenzene",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "nitrobenzene_detection_limit (nitrobenzene) = 400.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "Zn3(trz)6 cluster → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "in situ generated dimethylammonium from DMF decomposition → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use DMF as the solvent/guest-controlling agent during synthesis → expected to obtain a coordination polymer material with larger pores because DMF controls porous size"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use oxalate molecules as pillar linkers to connect 2-D Zn-triazolate layers → formation of a 3-D network from 2-D layers"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs some reported coordination polymer materials: winner=tie on sensing ability"
+    },
+    {
+      "title": "Comparison",
+      "body": "compound 1 vs reported compound [Zn2(ox)(trz)2]: winner=tie on 3-D backbone structure"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] omit phthalic acid and N2H4 from the reaction precursors: the title compound 1 was not obtained"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_0a41ac4fb203",
+    "trace_6065f4b939fd",
+    "trace_d1da8b8eeade",
+    "trace_ec3239c57560",
+    "trace_ec2c3deeb51b",
+    "trace_2619e4caaacc",
+    "trace_56747e88ed8e",
+    "trace_e8a7fcacfd4f",
+    "trace_9b612c8b1185",
+    "trace_67d5c55578b0",
+    "trace_1b508a8ddcc7",
+    "trace_f9ddaba28563",
+    "trace_b0381a2fd021",
+    "trace_415462ee60c0",
+    "trace_c480c44df1b9",
+    "trace_1483a453b298",
+    "trace_4a26e62972bd",
+    "trace_18d648677a1a",
+    "trace_56d90d9e3687",
+    "trace_fac2319c7257",
+    "trace_ac93b9202557",
+    "trace_f1df614c29b5",
+    "trace_67237f8f3cff",
+    "trace_9698b5b54aa1",
+    "trace_f89918ae3409",
+    "trace_d9ffaee5ca90",
+    "trace_5de367d482c1",
+    "trace_ac38714cc109",
+    "trace_d5285e959e12",
+    "trace_6e29427d4561",
+    "trace_c1a959124a83",
+    "trace_e65136966e39",
+    "trace_2d31e3e7b3f1",
+    "trace_80d7b2e2688f",
+    "trace_dc70a56ef384",
+    "trace_bab05a91cd7a",
+    "trace_1fdc33cc4e57",
+    "trace_52bca62b167f",
+    "trace_3dc89ac44000",
+    "trace_93aa9a2b963a",
+    "trace_247a8946fe91",
+    "trace_331a1ec8342d",
+    "trace_2883260ca0c3",
+    "trace_c87b3c6df645",
+    "trace_18d648677a1a",
+    "trace_e65136966e39",
+    "trace_ac93b9202557",
+    "trace_2619e4caaacc",
+    "trace_bab05a91cd7a",
+    "trace_ac38714cc109",
+    "trace_0a41ac4fb203",
+    "trace_e8a7fcacfd4f",
+    "trace_f89918ae3409",
+    "trace_ec2c3deeb51b",
+    "trace_415462ee60c0",
+    "trace_4a26e62972bd",
+    "trace_6e29427d4561",
+    "trace_d1da8b8eeade",
+    "trace_9698b5b54aa1",
+    "trace_52bca62b167f",
+    "trace_c480c44df1b9",
+    "trace_5de367d482c1",
+    "trace_56d90d9e3687",
+    "trace_67237f8f3cff",
+    "trace_f9ddaba28563",
+    "trace_c1a959124a83",
+    "trace_d5285e959e12",
+    "trace_6065f4b939fd",
+    "trace_1b508a8ddcc7",
+    "trace_3dc89ac44000",
+    "trace_67d5c55578b0",
+    "trace_80d7b2e2688f",
+    "trace_b0381a2fd021",
+    "trace_d9ffaee5ca90",
+    "trace_1fdc33cc4e57",
+    "trace_56747e88ed8e",
+    "trace_2883260ca0c3",
+    "trace_9b612c8b1185",
+    "trace_2d31e3e7b3f1",
+    "trace_93aa9a2b963a",
+    "trace_c87b3c6df645",
+    "trace_ec3239c57560",
+    "trace_f1df614c29b5",
+    "trace_fac2319c7257",
+    "trace_1483a453b298",
+    "trace_247a8946fe91",
+    "trace_331a1ec8342d",
+    "trace_dc70a56ef384"
+  ],
+  "measurement_card_ids": [
+    "mcard_9e8ab52bdd80"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_51cb31dffd0a",
+    "mechcard_6a692f64b6b4",
+    "mechcard_bf437d4f8f99"
+  ],
+  "recipe_card_ids": [
+    "recipe_d4a2a1ba91b4",
+    "recipe_061284a2966d"
+  ],
+  "claim_card_ids": [
+    "claim_5e9e75cb8f44",
+    "claim_360ba0216eaf",
+    "claim_4d30c8a42a5d",
+    "claim_e964156896e4",
+    "claim_fd85c7a3b742",
+    "claim_5cd4cea2c8bd"
+  ],
+  "design_rule_card_ids": [
+    "drule_814d99dde5ca",
+    "drule_e95df7501b19"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_0aa3ef3f705e",
+    "comp_5b746e63a54c"
+  ],
+  "failure_case_card_ids": [
+    "fail_854c38080c29"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_58ca62c07e23"
+  ],
+  "dossier_ids": [
+    "dossier_d9ec16304ba2"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The framework contains larger channels with 11 × 5.5 Å2 windows, but these channels are occupied by (CH3)2NH2+ cations and water molecules.",
+    "In compound 1, trz ligands build 2D Zn-triazolate layers from trinuclear Zn3(trz)6 clusters, and oxalate pillars extend them into a 3D network.",
+    "DMF was used as a guest-controlling solvent to target larger pores, and its in situ decomposition generated the (CH3)2NH2+ species in the framework."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.352374",
+  "updated_at": "2026-04-24T00:19:50.352380",
+  "raw_path": "相关文献/Zn-草酸-Anewthree-dimensionalZn2+coordinationpolymerconstructedfrom.pdf"
+}

@@ -1,0 +1,212 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_e82cd0f0174c",
+  "paper_id": "4ebb439e73d2",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "C2H2"
+  ],
+  "one_line_summary": "MAF-4 shows void_fraction = 49.8 dimensionless for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "void_fraction = 49.8 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "window_diameter = 3.2 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "cavity_diameter = 11.4 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "unchanged_pore_size_or_volume → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "lack_of_strong_adsorption_sites_on_pore_surface → uptake"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] tune pore-surface Lewis base active-site density without changing pore size or pore volume → enables fine tuning of sorption performance without altering confinement effect or sorption capacity associated with pore dimensions"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] replace a pore-surface C-H moiety in MAF-4 with an isoelectronic N atom to create an uncoordinated triazolate Lewis base site → introduces Lewis base active sites for guest binding and significantly enhances sorption performance, especially for more polar adsorbates"
+    },
+    {
+      "title": "Comparison",
+      "body": "MAF-47-x vs reported SSF adsorbents: winner=subject_a on ability_to_fine_tune_sorption_without_changing_pore_size_or_volume"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_4d3c404e6605",
+    "trace_103a617c1808",
+    "trace_5dd2cee20a53",
+    "trace_e597c56bbc72",
+    "trace_54f898936f20",
+    "trace_569aead0bf2d",
+    "trace_3e7a75549b06",
+    "trace_5485637e08bd",
+    "trace_cc70630ed225",
+    "trace_16456efd5e01",
+    "trace_18f46a500038",
+    "trace_72fc3044e2a0",
+    "trace_5eb814e08212",
+    "trace_035b744737df",
+    "trace_150047f544ce",
+    "trace_4c68c539e001",
+    "trace_4cb179acba3f",
+    "trace_c7b21c8cd4c6",
+    "trace_d4367ccfb2c2",
+    "trace_ede8340a732c",
+    "trace_b4925d2bf69a",
+    "trace_4813c93e2a31",
+    "trace_e6ea122f1e39",
+    "trace_63d8f452185a",
+    "trace_9b337fc3d876",
+    "trace_35e4af99d296",
+    "trace_8c0a64f5cb13",
+    "trace_d2ddb62243d6",
+    "trace_0f18e4d1e682",
+    "trace_0d9b1293d61f",
+    "trace_3f87612861c5",
+    "trace_fb245c77e258",
+    "trace_fe0015aaf9f4",
+    "trace_f733edd8cee2",
+    "trace_e1610b315d9c",
+    "trace_f955389cb780",
+    "trace_6c547f5d83cf",
+    "trace_807235b2daff",
+    "trace_3175de82a03d",
+    "trace_ba29a942a244",
+    "trace_9908439848fc",
+    "trace_9df011a963ab",
+    "trace_f963e8f9896f",
+    "trace_3063755d90cb",
+    "trace_3ac036053754",
+    "trace_08a4efc636a1",
+    "trace_3f87612861c5",
+    "trace_9908439848fc",
+    "trace_e1610b315d9c",
+    "trace_9df011a963ab",
+    "trace_0d9b1293d61f",
+    "trace_103a617c1808",
+    "trace_5485637e08bd",
+    "trace_8c0a64f5cb13",
+    "trace_f963e8f9896f",
+    "trace_08a4efc636a1",
+    "trace_807235b2daff",
+    "trace_d2ddb62243d6",
+    "trace_569aead0bf2d",
+    "trace_9b337fc3d876",
+    "trace_5dd2cee20a53",
+    "trace_63d8f452185a",
+    "trace_b4925d2bf69a",
+    "trace_3175de82a03d",
+    "trace_4c68c539e001",
+    "trace_f955389cb780",
+    "trace_f733edd8cee2",
+    "trace_35e4af99d296",
+    "trace_16456efd5e01",
+    "trace_fe0015aaf9f4",
+    "trace_fb245c77e258",
+    "trace_cc70630ed225",
+    "trace_3ac036053754",
+    "trace_54f898936f20",
+    "trace_3e7a75549b06",
+    "trace_0f18e4d1e682",
+    "trace_035b744737df",
+    "trace_72fc3044e2a0",
+    "trace_d4367ccfb2c2",
+    "trace_4cb179acba3f",
+    "trace_4813c93e2a31",
+    "trace_4d3c404e6605",
+    "trace_ede8340a732c",
+    "trace_e597c56bbc72",
+    "trace_18f46a500038",
+    "trace_6c547f5d83cf",
+    "trace_e6ea122f1e39",
+    "trace_c7b21c8cd4c6",
+    "trace_3063755d90cb",
+    "trace_5eb814e08212",
+    "trace_ba29a942a244",
+    "trace_150047f544ce"
+  ],
+  "measurement_card_ids": [
+    "mcard_2066d90e46d2",
+    "mcard_49263707dc8b",
+    "mcard_6187ab3ac5b3"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_7269682f9e1f",
+    "mechcard_07c95797a3ea",
+    "mechcard_9d0987a8cf3c",
+    "mechcard_e87f00053ab6",
+    "mechcard_e943568502a3"
+  ],
+  "recipe_card_ids": [
+    "recipe_06bc61e2258d",
+    "recipe_18d48f0104cc"
+  ],
+  "claim_card_ids": [
+    "claim_26ba0f50b2e5",
+    "claim_90dbe899025e",
+    "claim_ef5d5f241f6c",
+    "claim_6de23a7aeb15",
+    "claim_45005281e70e",
+    "claim_70fd2270a89f",
+    "claim_226db505e3f7",
+    "claim_3ca80a0cdf2e"
+  ],
+  "design_rule_card_ids": [
+    "drule_d58368cf8fb1",
+    "drule_d380e56e78f9",
+    "drule_c0e25a9cad1b"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_0213a1abf4f4",
+    "comp_bf0fc6a6a24a",
+    "comp_03f8e98f12fe"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_be3ea53110c4",
+    "mat_69c69f083355",
+    "mat_a4bebdf5ca18",
+    "mat_4d80d62d1e5c",
+    "mat_0d79f0789157",
+    "mat_47ea15f7f747",
+    "mat_8b3a43bec840"
+  ],
+  "dossier_ids": [
+    "dossier_49c2520e10b6",
+    "dossier_6c70558a2584",
+    "dossier_f01dc9065095",
+    "dossier_18b5cf22542c",
+    "dossier_c2bc2fb847d3",
+    "dossier_267554472d5d",
+    "dossier_f14bf34b1d00"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "MAF-4 and MAF-7 have similar pore volumes (~0.67 cm3 g−1) and BET areas (~1870 m2 g−1), much higher than the most open inorganic zeolites.",
+    "In MAF-47-x solid-solution frameworks, lowering pore-surface active-site density decreases H2O affinity, reducing initial isotherm slopes and shifting inflection to higher humidity.",
+    "MAF-7, SOD-[Zn(mtz)2], is isomorphous with MAF-4 and has nearly identical pore metrics: 11.2 Å cavity, 3.4 Å window, and 51.7% void."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:48.407750",
+  "updated_at": "2026-04-24T00:19:48.407753",
+  "raw_path": "相关文献/MAF-4.MAF-7.pdf"
+}

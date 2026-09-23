@@ -1,0 +1,22 @@
+S18
+ tR(major) = 20.1 min, tR(minor) = 22.1 min); [ α]D20 = -355.3 ( c = 1.01, CHCl 3)
+(reported value: 99% ee; [ α]D19 = -330.3 (c = 0.94, CHCl 3)) (We repeated the reaction
+reported in ref. 3 and measured the ee and the specific optical rotation of this compound again: 99% ee; [ α]
+D20 = -379.0 (c = 1.125, CHCl 3), thus, the data in ref. 3
+for this specific compound should be corrected); 1H NMR (300 MHz, CDCl 3) δ
+7.32-7.23 (m, 4 H, ArH), 7.21-7.1 1 (m, 1 H, ArH), 6.15 (dd, J1 = 6.6 Hz, J2 = 3.0 Hz,
+1 H, one proton from CH=C=CH), 5.56 (t, J = 6.3 Hz, 1 H, one proton from
+CH=C=CH), 2.20-2.04 (m, 1 H, CH), 1.90-1.57 (m, 5 H, five protons from Cy),
+1.38-1.09 (m, 5 H, five protons from Cy); 13C NMR (75 MHz, CDCl 3) δ 204.1, 135.2,
+128.5, 126.6, 126.4, 101.0, 95.4, 37.6, 33.2, 33.1,  26.1, 26.0; IR (neat) ν (cm-1) 3082,
+3062, 3030, 2924, 2851, 1946, 1597, 1496, 1458, 1257, 1071, 1028; MS (EI) m/z (%): 198 (M
++, 30.22), 130 (100).
+
+Synthesis of naturally occurring allenes 1. Synthesis of naturally occurring insect pheromone ( R
+a)-6
+(1) Preparation of ( R)-dimethyl 2-(dodeca-2,3-dienyl)malonate ( Ra)-4rk on 4.0
+mmol scale. (tangxj-8-154)
+
+Following Typical Procedure I , the reaction of CuBr 2 (44.5 mg, 0.2 mmol), 1d
+(340.2 mg, 2.0 mmol), ( S)-3 (254.1 mg, 1.0 mmol), and 2c (285.1 mg, 2.0 mmol) in
+dioxane (3.0 mL) afforded ( Ra)-4dc (166.3 mg, 56%) (eluent: petroleum ether/ethyl

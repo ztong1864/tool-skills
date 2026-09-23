@@ -1,0 +1,49 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_5c68a39b1ca4",
+  "paper_id": "dc6fb3fab588",
+  "raw_path": "/Users/weiji-feng/project/MOFDiscoveryAgent/相关文献/Das 等 - 2019 - Construction of a bifunctional Zn(II)–organic fram-1.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C3H8"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "SHELXL-2014",
+    "SHELXL-20136"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Ni",
+    "In",
+    "V",
+    "Mo"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "S1\nConstruction of a bifunctional Zn(II)-organic framework \ncontaining basic amine functionality for selective capture \nand room temperature fixation of CO2 \nRajesh Das, Sandeep Singh Dhankhar and C. "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-28T13:27:15.088572"
+}

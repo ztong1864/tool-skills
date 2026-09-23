@@ -1,0 +1,61 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_9cc1292e1341",
+  "paper_id": "5fdf9f5f0fbd",
+  "raw_path": "相关文献/Chen 等 - 2019 - Synergistic sorbent separation for one-step ethyle.pdf",
+  "title": "Synergistic sorbent separation for one-step ethyle",
+  "authors": [
+    "Chen"
+  ],
+  "year": 2019,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "H2",
+    "C3H6",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "DMR-1607989",
+    "TIFSIX-2-Cu-i",
+    "TIFSIX-2",
+    "CHE-1531590",
+    "SIFSIX-3-Ni",
+    "TJT-100"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Zr",
+    "In",
+    "Ti",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "results_summary": "GAS SEPARATIONS\nSynergistic sorbent separation for one-step ethylene\npurification from a four-component mixture\nKai-Jie Chen1*†, David G. Madden2*‡, Soumya Mukherjee2, Tony Pham3§, Katherine A. Forres"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:17:37.599038"
+}

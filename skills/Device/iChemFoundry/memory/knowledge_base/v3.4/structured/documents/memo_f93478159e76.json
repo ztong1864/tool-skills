@@ -1,0 +1,71 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_f93478159e76",
+  "paper_id": "287429d86099",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [],
+  "one_line_summary": "Paper 287429d86099: MOF synthesis and characterization",
+  "key_insights": [
+    {
+      "title": "Author Claim",
+      "body": "The paper links structural construction and photoluminescent properties to the choice of carboxylate anion in the Zn(II)-triazolate series."
+    },
+    {
+      "title": "Author Claim",
+      "body": "IR spectra were reported for compounds 2 and 4, providing spectroscopic characterization of the coordination polymers."
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_5822661c8e28",
+    "trace_c82c6da90145",
+    "trace_abf0f10bd551",
+    "trace_6bb401b78291",
+    "trace_af73c68d5900",
+    "trace_a120f1756862",
+    "trace_b68de925ed90",
+    "trace_054dcfdbe0d1",
+    "trace_af73c68d5900",
+    "trace_5822661c8e28",
+    "trace_b68de925ed90",
+    "trace_abf0f10bd551",
+    "trace_6bb401b78291",
+    "trace_c82c6da90145",
+    "trace_a120f1756862",
+    "trace_054dcfdbe0d1"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_6109777860b4",
+    "claim_6466acee2f9e",
+    "claim_d5974602ac43",
+    "claim_59587fd54315"
+  ],
+  "design_rule_card_ids": [],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_940dd8f78c3c"
+  ],
+  "dossier_ids": [
+    "dossier_fada311ee414"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The paper links structural construction and photoluminescent properties to the choice of carboxylate anion in the Zn(II)-triazolate series.",
+    "IR spectra were reported for compounds 2 and 4, providing spectroscopic characterization of the coordination polymers.",
+    "The study synthesized a series of Zn(II)-3-amino-1,2,4-triazolate coordination polymers by varying the carboxylate anions."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.2,
+  "build_id": "build_20260428_142902",
+  "created_at": "2026-04-28T14:29:22.184660",
+  "updated_at": "2026-04-28T14:29:22.184663"
+}

@@ -1,0 +1,70 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_db01b8f1a0a5",
+  "paper_id": "ffba90254f37",
+  "raw_path": "相关文献/zhu2012.pdf.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "MAF-33",
+    "MAF-4",
+    "MAF-5",
+    "Methyl-1",
+    "Im-3",
+    "Ia-3",
+    "ZSM-5",
+    "MAF-32",
+    "MAF-3",
+    "MAF-6",
+    "MAF-7",
+    "MAF-31",
+    "Fd-3",
+    "NCET-10"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "MIM",
+    "TED",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "sod",
+    "dia",
+    "bcu"
+  ],
+  "key_sections": {
+    "conclusion": "of the crystal data and structure reﬁnement parameters for the MAFs.\nCompound\nMAF-4\nMAF-5\nMAF-7\nMAF-31",
+    "results_summary": "Zeolitic metal azolate frameworks (MAFs) from ZnO/Zn(OH)2\nand monoalkyl-substituted imidazoles and 1,2,4-triazoles: Efﬁcient syntheses\nand properties\nAi-Xin Zhu, Rui-Biao Lin, Xiao-Lin Qi, Yan Liu, Ya"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T23:02:08.757787"
+}

@@ -1,0 +1,422 @@
+{
+  "rel:usesProtocol:02765e34": {
+    "id": "rel:usesProtocol:02765e34",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutdilutionplate--bebd639e"
+  },
+  "rel:usesProtocol:061e1859": {
+    "id": "rel:usesProtocol:061e1859",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:movein-5--dc442df4"
+  },
+  "rel:usesProtocol:07a16035": {
+    "id": "rel:usesProtocol:07a16035",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addtriton-1--aee37b9a"
+  },
+  "rel:usesProtocol:0cef48ca": {
+    "id": "rel:usesProtocol:0cef48ca",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveincellplate8--844bc8fb"
+  },
+  "rel:usesProtocol:1296a13f": {
+    "id": "rel:usesProtocol:1296a13f",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:closelid--1aa05b3e"
+  },
+  "rel:usesProtocol:16cd1cf8": {
+    "id": "rel:usesProtocol:16cd1cf8",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:demomoveoutmedplatetop8-1017--d621e552"
+  },
+  "rel:usesProtocol:16e23a93": {
+    "id": "rel:usesProtocol:16e23a93",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutcellplate1--aeba1cc1"
+  },
+  "rel:usesProtocol:19900c40": {
+    "id": "rel:usesProtocol:19900c40",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:medicineplatedilution--978cb622"
+  },
+  "rel:usesProtocol:1fe49417": {
+    "id": "rel:usesProtocol:1fe49417",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addtriton--307332f5"
+  },
+  "rel:usesProtocol:2e6c7d63": {
+    "id": "rel:usesProtocol:2e6c7d63",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:movein-med1--a6bea204"
+  },
+  "rel:usesProtocol:35094cba": {
+    "id": "rel:usesProtocol:35094cba",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addmedicine-6plates--e5a99245"
+  },
+  "rel:usesProtocol:35d504f6": {
+    "id": "rel:usesProtocol:35d504f6",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:adddye--0d9aa152"
+  },
+  "rel:usesProtocol:35df3222": {
+    "id": "rel:usesProtocol:35df3222",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutcellplate3--533bc63b"
+  },
+  "rel:usesProtocol:398d1de8": {
+    "id": "rel:usesProtocol:398d1de8",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:movein-4--46a4a4f2"
+  },
+  "rel:usesProtocol:3dfb25d8": {
+    "id": "rel:usesProtocol:3dfb25d8",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutcellplate4--2d16e4ad"
+  },
+  "rel:usesProtocol:43a22fa9": {
+    "id": "rel:usesProtocol:43a22fa9",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveincellplate4--0b8044d2"
+  },
+  "rel:usesProtocol:44fecb16": {
+    "id": "rel:usesProtocol:44fecb16",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveout-6--5d04b566"
+  },
+  "rel:usesProtocol:45e41948": {
+    "id": "rel:usesProtocol:45e41948",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveincellplate6--9546d8ec"
+  },
+  "rel:usesProtocol:496e11de": {
+    "id": "rel:usesProtocol:496e11de",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveout-2--c721e913"
+  },
+  "rel:usesProtocol:4dd71283": {
+    "id": "rel:usesProtocol:4dd71283",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addprimaryantibody--818daa13"
+  },
+  "rel:usesProtocol:575e63da": {
+    "id": "rel:usesProtocol:575e63da",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveout-4--befd4927"
+  },
+  "rel:usesProtocol:5797cb36": {
+    "id": "rel:usesProtocol:5797cb36",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addsecondaryantibody--c9c9a5a6"
+  },
+  "rel:usesProtocol:5dafe1e6": {
+    "id": "rel:usesProtocol:5dafe1e6",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveintips--ec72a3c5"
+  },
+  "rel:usesProtocol:5f0e8862": {
+    "id": "rel:usesProtocol:5f0e8862",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addmedicine-9plates-day2--500a1096"
+  },
+  "rel:usesProtocol:6a213262": {
+    "id": "rel:usesProtocol:6a213262",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:adddyebuffer--b20b325c"
+  },
+  "rel:usesProtocol:6a8889ae": {
+    "id": "rel:usesProtocol:6a8889ae",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addmitotracker--b2d71764"
+  },
+  "rel:usesProtocol:6e01ba6c": {
+    "id": "rel:usesProtocol:6e01ba6c",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--08fd4fd2",
+    "to": "protocol:c-protocols-cxc-foci-demo-hts--1a0b64d7"
+  },
+  "rel:usesProtocol:76a6fd4f": {
+    "id": "rel:usesProtocol:76a6fd4f",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:movein-3--246d1e43"
+  },
+  "rel:usesProtocol:7c6e0594": {
+    "id": "rel:usesProtocol:7c6e0594",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addpom--1400d28a"
+  },
+  "rel:usesProtocol:7d6b8f3d": {
+    "id": "rel:usesProtocol:7d6b8f3d",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:movein-6--be69ab9e"
+  },
+  "rel:usesProtocol:7fea6f92": {
+    "id": "rel:usesProtocol:7fea6f92",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addpfa--50da84f4"
+  },
+  "rel:usesProtocol:8874fac8": {
+    "id": "rel:usesProtocol:8874fac8",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:recoversecondaryantibody--876ae545"
+  },
+  "rel:usesProtocol:892e55a9": {
+    "id": "rel:usesProtocol:892e55a9",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addmedicine-9plates-merge--8fc6e386"
+  },
+  "rel:usesProtocol:8d5be2af": {
+    "id": "rel:usesProtocol:8d5be2af",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveincellplate5--5240ed96"
+  },
+  "rel:usesProtocol:91333f4d": {
+    "id": "rel:usesProtocol:91333f4d",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveout-3--c543e66a"
+  },
+  "rel:usesProtocol:9195aa8e": {
+    "id": "rel:usesProtocol:9195aa8e",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveout-1--3f42af15"
+  },
+  "rel:usesProtocol:9636b6a4": {
+    "id": "rel:usesProtocol:9636b6a4",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:bodipy-d1-addmedicinetocellplate-demo--b75cf2eb"
+  },
+  "rel:usesProtocol:9b9c8497": {
+    "id": "rel:usesProtocol:9b9c8497",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveindilutionplate--23192bbe"
+  },
+  "rel:usesProtocol:9f6f60df": {
+    "id": "rel:usesProtocol:9f6f60df",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--08fd4fd2",
+    "to": "protocol:c-protocols-bodipy-hts--d0d40919"
+  },
+  "rel:usesProtocol:a0134882": {
+    "id": "rel:usesProtocol:a0134882",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveouttips--26a0800e"
+  },
+  "rel:usesProtocol:a2ac928e": {
+    "id": "rel:usesProtocol:a2ac928e",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveincellplate3--d7daff56"
+  },
+  "rel:usesProtocol:ac1563ed": {
+    "id": "rel:usesProtocol:ac1563ed",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutcellplate6--90980501"
+  },
+  "rel:usesProtocol:b25a99a4": {
+    "id": "rel:usesProtocol:b25a99a4",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveincellplate1--809ed98b"
+  },
+  "rel:usesProtocol:b83f846a": {
+    "id": "rel:usesProtocol:b83f846a",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:recoverprimaryantibody--ad1c0bfd"
+  },
+  "rel:usesProtocol:b92541b4": {
+    "id": "rel:usesProtocol:b92541b4",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutcellplate2--4b7a7731"
+  },
+  "rel:usesProtocol:b9885df4": {
+    "id": "rel:usesProtocol:b9885df4",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:movein-2--4e271ca6"
+  },
+  "rel:usesProtocol:b988ab6d": {
+    "id": "rel:usesProtocol:b988ab6d",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:bodipy-d1-moveinmedplatetop10--41101738"
+  },
+  "rel:usesProtocol:bc90eedb": {
+    "id": "rel:usesProtocol:bc90eedb",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addbsa--f924f493"
+  },
+  "rel:usesProtocol:c39f8835": {
+    "id": "rel:usesProtocol:c39f8835",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutcellplate9--617ec1ab"
+  },
+  "rel:usesProtocol:c3cf6342": {
+    "id": "rel:usesProtocol:c3cf6342",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:openlid--811d71e0"
+  },
+  "rel:usesProtocol:ce33960d": {
+    "id": "rel:usesProtocol:ce33960d",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:movein-1--6d789aa0"
+  },
+  "rel:usesProtocol:d4b24071": {
+    "id": "rel:usesProtocol:d4b24071",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:demoaddmedcinetocellplate--791e659f"
+  },
+  "rel:usesProtocol:d4c38084": {
+    "id": "rel:usesProtocol:d4c38084",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutcellplate5--ffac8fd7"
+  },
+  "rel:usesProtocol:d5d32d70": {
+    "id": "rel:usesProtocol:d5d32d70",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveout-5--c0c17f00"
+  },
+  "rel:usesProtocol:d8082c72": {
+    "id": "rel:usesProtocol:d8082c72",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutcellplate8--8487c3ff"
+  },
+  "rel:usesProtocol:d9e25d15": {
+    "id": "rel:usesProtocol:d9e25d15",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:bodipy-day2--81eea422"
+  },
+  "rel:usesProtocol:da47a1b4": {
+    "id": "rel:usesProtocol:da47a1b4",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--42699905",
+    "to": "protocol:20220901--ef7d16db"
+  },
+  "rel:usesProtocol:da63709f": {
+    "id": "rel:usesProtocol:da63709f",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveoutcellplate7--631531d7"
+  },
+  "rel:usesProtocol:dc712ec1": {
+    "id": "rel:usesProtocol:dc712ec1",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveincellplate9--07d20917"
+  },
+  "rel:usesProtocol:e3bcbd14": {
+    "id": "rel:usesProtocol:e3bcbd14",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveincellplate2--9e5ddac7"
+  },
+  "rel:usesProtocol:e4b9aa57": {
+    "id": "rel:usesProtocol:e4b9aa57",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addnucleusdye--12a3034b"
+  },
+  "rel:usesProtocol:ea92b337": {
+    "id": "rel:usesProtocol:ea92b337",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addhoechst--1220de8b"
+  },
+  "rel:usesProtocol:ec03acbc": {
+    "id": "rel:usesProtocol:ec03acbc",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addpfa-1--7df650e9"
+  },
+  "rel:usesProtocol:ee8e8917": {
+    "id": "rel:usesProtocol:ee8e8917",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addmedicinetocellplate--df6633e9"
+  },
+  "rel:usesProtocol:ef346d3c": {
+    "id": "rel:usesProtocol:ef346d3c",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:demomoveinmedplatetop6-1017--e32c92b5"
+  },
+  "rel:usesProtocol:f5be243f": {
+    "id": "rel:usesProtocol:f5be243f",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveout-med1--9e328050"
+  },
+  "rel:usesProtocol:f70917dd": {
+    "id": "rel:usesProtocol:f70917dd",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addmixeddye--3d869bee"
+  },
+  "rel:usesProtocol:f73dbd06": {
+    "id": "rel:usesProtocol:f73dbd06",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:bodipy-d1-moveoutmedplatetop8--2ce572dc"
+  },
+  "rel:usesProtocol:f85a5dc2": {
+    "id": "rel:usesProtocol:f85a5dc2",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:moveincellplate7--f3cfefd7"
+  },
+  "rel:usesProtocol:f8f9e224": {
+    "id": "rel:usesProtocol:f8f9e224",
+    "relation_type": "usesProtocol",
+    "from": "step-type:item--1195f0ed",
+    "to": "protocol:addmedicine-9plates--ef1fd644"
+  }
+}

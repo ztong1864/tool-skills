@@ -1,0 +1,63 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_8e9a7765ba70",
+  "paper_id": "12b2852ac256",
+  "raw_path": "相关文献/Deng 等 - 2025 - Green and Scalable Preparation of an Isomeric CALF.pdf",
+  "title": "Green and Scalable Preparation of an Isomeric CALF",
+  "authors": [
+    "Deng"
+  ],
+  "year": 2025,
+  "doi": null,
+  "journal": null,
+  "task_type": "C3H6/C3H8 separation",
+  "normalized_task_id": "C3H6_C3H8_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "C3H6",
+    "C3H8",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UTSA-400",
+    "NCU-20",
+    "KAUST-7",
+    "CALF-20",
+    "FJU-1",
+    "HIAM-301",
+    "CALF-20-H",
+    "NTU-85-WNT"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Al",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "TED",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "conclusion": "In summary, we demonstrated a novel NCU-20 adsorbent,\ncompared to the isomeric CALF-20, it exhibited a contracted",
+    "results_summary": "RESEARCH ARTICLE\nwww.small-methods.com\nGreen and Scalable Preparation of an Isomeric CALF-20\nAdsorbent with Tailored Pore Size for Molecular Sieving of\nPropylene from Propane\nZhenning Deng, Longsheng "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:33:27.603408"
+}

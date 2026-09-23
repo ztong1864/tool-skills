@@ -1,0 +1,71 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_18f10bdef1d7",
+  "canonical_material_id": "mat_6cd4b6552c81",
+  "canonical_name": "Zn9(btc)4(atz)12",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_4b9169eb3e07",
+  "pillar_id": null,
+  "topology": "(3,4)-connected anionic mof",
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_24f09f673f15",
+    "mcard_7e612fbb7401",
+    "mcard_eaf3ac23a0f4",
+    "mcard_e4641000bc0a",
+    "mcard_480e135df66f"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_97c48231aa0d",
+    "mechcard_90136ec2c793",
+    "mechcard_ea6c7e0d4f37"
+  ],
+  "recipe_card_ids": [
+    "recipe_eddc6edc2683",
+    "recipe_b1612c287c35",
+    "recipe_632fb89fb0f6",
+    "recipe_4e060f52566b"
+  ],
+  "claim_card_ids": [
+    "claim_10bf219e7f87",
+    "claim_d3b71cbaa4be",
+    "claim_9567aef816b4",
+    "claim_8195a06ce0f0",
+    "claim_7ffe7cb3dfd2",
+    "claim_d50b51c224a6"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 1.0,
+    "mechanism": 1.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "bcfc40db266f",
+    "3102127ab41f"
+  ],
+  "evidence_trace_ids": [
+    "trace_9e97d3e975ac",
+    "trace_8de40f1e6bd0",
+    "trace_40307a923020",
+    "trace_714da412cebb",
+    "trace_f1ad1a5fb0e3",
+    "trace_800c3882a25f",
+    "trace_5e318a99be93",
+    "trace_730302808280",
+    "trace_1ff5a7ff7313",
+    "trace_2144e7c14c57",
+    "trace_5a83dcf849c8"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:00:22.152536",
+  "updated_at": "2026-04-23T23:36:04.971150"
+}

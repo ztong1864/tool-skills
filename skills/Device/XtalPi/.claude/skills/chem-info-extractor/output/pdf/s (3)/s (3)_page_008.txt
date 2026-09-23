@@ -1,0 +1,31 @@
+S8
+ conditions A : toluene, 110oC, 13 h : 44%, 95% ee
+conditions B : dioxane, 120oC, 13 h : 42%, 98% een-C8H17+ + N
+HPh
+OHPh
+1b 2b
+(R)-4bbH
+C8H17-n H(S)-3
+(1.5 equiv)(2.0 equiv)(1.0 equiv)CHOBrZnBr 2(50 mol%)
+CuBr (20 mol%)
+conditions A or BBr
+
+Conditions A: The reaction of ZnBr 2 (114.7 mg, 0.5 mmol, 98% from Alfa), CuBr
+(29.4 mg, 0.2 mmol, 98% from Acros), ( S)-3 (258.4 mg, 1.0 mmol, 98%), 1b (211.4
+mg, 1.5 mmol, 98%)/toluene (2 mL), and 2b (370.1 mg, 2.0 mmol)/toluene (1 mL)
+afforded ( R)-4bb (135.1 mg, 44%) (eluent: petrol eum ether) as a liquid: 95% ee
+(HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH = 400/1, 0.7 mL/min, λ =
+214 nm,  tR(minor) = 5.1 min, tR(major) = 5.8 min); [ α]D20 = -197.7 ( c = 1.02, CHCl 3);
+1H NMR (400 MHz, CDCl 3) δ = 7.44-7.33 (m, 2 H, Ar-H), 7.17-7.09 (m, 2 H, Ar-H),
+6.05 (dt, J1 = 6.4 Hz, J2 = 3.1 Hz, 1 H, one proton from CH=C=CH), 5.55 (q, J = 6.7
+Hz, 1 H, one proton fr om CH=C=CH), 2.11 (qd, J1 = 7.2 Hz, J2 = 2.8 Hz, 2 H, CH 2),
+1.52-1.40 (m, 2 H, CH 2), 1.40-1.17 (m, 10 H, CH 2×5), 0.87 (t, J = 7.0 Hz, 3 H, CH 3);
+13C NMR (100 MHz, CDCl 3) δ = 205.2, 134.2, 131.6, 128.0, 120.1, 95.6, 93.8, 31.8,
+29.4, 29.3, 29.2, 29.1, 28.6, 22.7, 14.1. MS (EI) m/z (%): 308 (M+(81Br), 1.95), 306
+(M+(79Br), 1.68), 129 (100); IR (neat): v = 2924, 2853, 1950, 1488, 1465, 1386, 1070,
+1010 cm-1; HRMS calcd for C 17H2379Br [M+]: 306.0983, found: 306.0985.
+Conditions B : The reaction of ZnBr 2 (115.0 mg, 0.5 mmol, 98% from Alfa), CuBr
+(29.3 mg, 0.2 mmol, 98% from Acros), ( S)-3 (258.9 mg, 1.0 mmol, 98%), 1b (211.9
+mg, 1.5 mmol, 98%)/dioxane (2 mL),  and 2b (371.0 mg, 2.0 mmol)/dioxane (1 mL)
+afforded ( R)-4bb (129.0 mg, 42%) (eluent: petrol eum ether) as a liquid: 98% ee
+(HPLC conditions: Chiralcel OD-H column, hexane/ i-PrOH = 400/1, 0.7 mL/min, λ =

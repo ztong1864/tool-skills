@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_0f2f2fbefe36",
+  "canonical_material_id": "mat_93c6010393b7",
+  "canonical_name": "PCMOF2½(Pyrazole)",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": "pil_508e6afca4ea",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_686c85a7f637"
+  ],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_ae335150fa38"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 0.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "mechanism",
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "03314ed46af4"
+  ],
+  "evidence_trace_ids": [
+    "trace_8dffc2128327"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T18:04:28.938713",
+  "updated_at": "2026-04-23T18:04:41.601122"
+}

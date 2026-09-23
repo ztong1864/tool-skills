@@ -1,0 +1,37 @@
+{
+  "process-bodipy-image-analysis": {
+    "description": "用于对 BODIPY 多视野双通道图像执行核计数、绿光强度计算、单孔平均、BSA 归一化与 FM 阈值筛选的标准流程实例。",
+    "document": "graph/canonical/entities/processes/BODIPYImageAnalysisProcess.md",
+    "entity_type": "Process",
+    "id": "process-bodipy-image-analysis",
+    "name": "BODIPY 图像分析流程"
+  },
+  "process-bodipy-screening-experiment": {
+    "description": "用于执行一轮完整的 BODIPY 药物筛选实验，包括候选药物确认、DAY1 加药孵育、细胞孵化等待、DAY2 固定染色成像，以及后续图像分析。",
+    "document": "graph/canonical/entities/processes/BODIPYScreeningExperimentProcess.md",
+    "entity_type": "Process",
+    "id": "process-bodipy-screening-experiment",
+    "name": "BODIPY 药物筛选实验全流程"
+  },
+  "process-document-download": {
+    "description": "用于访问远程文档目录并下载文件到本地的标准流程实例。",
+    "document": "graph/canonical/entities/processes/DocumentDownloadProcess.md",
+    "entity_type": "Process",
+    "id": "process-document-download",
+    "name": "文档下载流程"
+  },
+  "process-drug-recommendation-on-oasis": {
+    "description": "用于在绿洲平台场景下执行药物推荐的标准流程，药物推荐能力由 primekg-drug-recommendation skill 提供。",
+    "document": "graph/canonical/entities/processes/DrugRecommendationOnOasisProcess.md",
+    "entity_type": "Process",
+    "id": "process-drug-recommendation-on-oasis",
+    "name": "绿洲平台药物推荐流程"
+  },
+  "process-new-experiment-standard": {
+    "description": "用于在 Oasis 平台中创建一个新实验并推进到可启动状态的标准流程实例。",
+    "document": "graph/canonical/entities/processes/CreateNewExperimentWorkflow.md",
+    "entity_type": "Process",
+    "id": "process-new-experiment-standard",
+    "name": "新建实验标准流程"
+  }
+}

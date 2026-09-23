@@ -1,0 +1,168 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_b7dfc07f5a54",
+  "paper_id": "b612f8927383",
+  "title": "High CO2 and H2 Uptake in an Anionic Porous Framew",
+  "year": 2012,
+  "doi": null,
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4"
+  ],
+  "one_line_summary": "CPF-13 shows Qst_CO2 = 26.5 K for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "selectivity_CO2/N2 (CO2) = 9.5 dimensionless at 0.15 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "Qst_CO2 (CO2) = 26.5 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 3.62 mmol/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "optimum_pore_size → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "amino_groups_and_charged_framework_with_polyhedral_cages → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] tune pore size to be commensurate with the gas molecule and maintain the CPF-13 optimum pore size window → supports high gas uptake while preserving framework stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] generate a charged framework → enhances solid-gas interactions relevant to CO2 capture"
+    },
+    {
+      "title": "Comparison",
+      "body": "CPF-13 vs H3[(Cu4Cl)3(BTTri)8]·ethylenediamine and bio-MOF-1: winner=subject_a on CO2_Qst_at_high_loading"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_3cc50f137a24",
+    "trace_e56bf2ac2a4a",
+    "trace_ab8cc1cc6c8c",
+    "trace_4df71d61b667",
+    "trace_9605b62044e5",
+    "trace_e46ea36adcd4",
+    "trace_4dad222f16b4",
+    "trace_5434f7a7976c",
+    "trace_b304d82a192a",
+    "trace_a2093d0d2860",
+    "trace_b7b36e99e6e6",
+    "trace_bf4921bf9823",
+    "trace_bc569e5d47e0",
+    "trace_2aaefcf5269e",
+    "trace_32cc911ab37c",
+    "trace_ee2102f7dd34",
+    "trace_bd966e3b92e8",
+    "trace_e169020a1310",
+    "trace_a5b14142a6dc",
+    "trace_a6d40242ddc7",
+    "trace_140682b9b6e3",
+    "trace_d2fdc8e99d99",
+    "trace_b17c25d7d1db",
+    "trace_126afde9e1e7",
+    "trace_015cc6be6c21",
+    "trace_3609f53ffdc5",
+    "trace_d96e00a3f8c4",
+    "trace_04d6a9d46e68",
+    "trace_d96e00a3f8c4",
+    "trace_3609f53ffdc5",
+    "trace_e169020a1310",
+    "trace_b7b36e99e6e6",
+    "trace_ee2102f7dd34",
+    "trace_e56bf2ac2a4a",
+    "trace_4dad222f16b4",
+    "trace_9605b62044e5",
+    "trace_d2fdc8e99d99",
+    "trace_e46ea36adcd4",
+    "trace_b304d82a192a",
+    "trace_a2093d0d2860",
+    "trace_3cc50f137a24",
+    "trace_bf4921bf9823",
+    "trace_04d6a9d46e68",
+    "trace_b17c25d7d1db",
+    "trace_015cc6be6c21",
+    "trace_a6d40242ddc7",
+    "trace_2aaefcf5269e",
+    "trace_ab8cc1cc6c8c",
+    "trace_4df71d61b667",
+    "trace_140682b9b6e3",
+    "trace_32cc911ab37c",
+    "trace_bd966e3b92e8",
+    "trace_bc569e5d47e0",
+    "trace_5434f7a7976c",
+    "trace_a5b14142a6dc",
+    "trace_126afde9e1e7"
+  ],
+  "measurement_card_ids": [
+    "mcard_ed2892fa9cf0",
+    "mcard_5a3cba1949e5",
+    "mcard_5d8fbf54ae61"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_299e09628062",
+    "mechcard_b89c93a8a7f7",
+    "mechcard_785884a3f319"
+  ],
+  "recipe_card_ids": [
+    "recipe_fe1e8d389309"
+  ],
+  "claim_card_ids": [
+    "claim_b633be6c63bb",
+    "claim_012044b1b924",
+    "claim_b659e6871ee4",
+    "claim_5cd179930e60",
+    "claim_7e09cc9726f4",
+    "claim_4e82405e0b96",
+    "claim_92918098f83d"
+  ],
+  "design_rule_card_ids": [
+    "drule_b693fc06fdda",
+    "drule_a7334bd7d596",
+    "drule_8acd32d076de"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_13e7b1ac4e13",
+    "comp_d16b8eacb22a",
+    "comp_affe266472bc"
+  ],
+  "failure_case_card_ids": [
+    "fail_c3c569e43911"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_c50637bf54a2"
+  ],
+  "dossier_ids": [
+    "dossier_725d23109bd9"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "CPF-13 shows 81 cm3/g (3.62 mmol/g) CO2 uptake at 298 K and 1 atm, reported as the highest among known charged porous frameworks under ambient conditions.",
+    "CPF-13 has low CH4 uptake, 0.11 mmol/g at 0.1 bar and 0.98 mmol/g at 1 bar, giving CO2/CH4 uptake ratios of 18:1 and 5:1.",
+    "CPF-13 achieves strong CO2/N2 selectivity: 35:1 at 273 K and 0.1 bar, 31:1 at 273 K and 1 bar, but only 9.5:1 at 298 K and 0.15 bar."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.178464",
+  "updated_at": "2026-04-24T00:19:49.178467",
+  "raw_path": "相关文献/Zhai 等 - 2012 - High CO2 and H2 Uptake in an Anionic Porous Framew.pdf",
+  "authors": [
+    "Zhai"
+  ]
+}

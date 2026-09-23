@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_791f52ac61bc",
+  "paper_id": "1b118e60d7ac",
+  "raw_path": "/Users/weiji-feng/project/MOFDiscoveryAgent/相关文献/Ling 等 - 2011 - A zinc(II) metal–organic framework based on triazo-1.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "SC-200",
+    "SHELXTL-97"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BDC",
+    "TED"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "1\nElectronic Supporting Information for: \n \nA zinc(II) metal-organic framework based on triazole and \ndicarboxlate ligands for selective adsorption of hexane isomers: \nsynthesis, structure and adsorpt"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-28T13:36:59.158384"
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "default_id": "Typical_Procedure_I",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": null,
+    "chiral_amine": "(S)-3a",
+    "molecular_sieve": null,
+    "solvent": "1,4-dioxane",
+    "notes": "130°C for 12h, used for longer alkyne substrates (e.g., hex-5-yn-1-ol)",
+    "paper_id": "s (1)"
+  },
+  {
+    "default_id": "Typical_Procedure_II",
+    "metal_salt_1": "CuBr2",
+    "metal_salt_2": null,
+    "chiral_amine": "(S)-3a",
+    "molecular_sieve": null,
+    "solvent": "1,4-dioxane",
+    "notes": "70°C for 46-47h, used for shorter alkyne substrates (e.g., prop-2-yn-1-ol, pent-4-yn-1-ol)",
+    "paper_id": "s (1)"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_181e0afc6617",
+  "paper_id": "3c82aca435dd",
+  "raw_path": "相关文献/Zn-SO4-Applied Organom Chemis - 2017 - Ren - Enhanced antifungal activities of four Zn II  complexes based on uniconazole.pdf",
+  "title": "SO4-Applied Organom Chemis - 2017 - Ren - Enhanced antifungal activities of four Zn II  complexes based on uniconazole",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "ATA"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "of the crystallographic data is\nreported in Table 1. The crystallographic data for com-\nplexes 1‐4 have been deposited at the Cambridge Crystal-",
+    "results_summary": "F U L L P A P E R\nEnhanced antifungal activities of four Zn(II) complexes\nbased on uniconazole\nGuo‐Yu Ren1,2 | Jie Li1 | Jin‐Hua Zhou1 | Biao Yan2 | Ying‐Hui Ren1 | Xiao‐Hong Sun1 |\nHai‐Xia Ma1\n1Schoo"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:44:47.054061"
+}

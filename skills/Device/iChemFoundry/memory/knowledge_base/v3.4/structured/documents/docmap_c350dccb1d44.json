@@ -1,0 +1,44 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_c350dccb1d44",
+  "paper_id": "07583595bdf7",
+  "raw_path": "/Users/weiji-feng/project/MOFDiscoveryAgent/相关文献/Zhang 等 - 2020 - Selective adsorption and separation of C2 hydrocar-1.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "gate_opening",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "HPR-20"
+  ],
+  "mentioned_metals": [
+    "Cu",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "Electronic Supplementary Information (ESI)\nSelective Adsorption and Separation of C2 Hydrocarbons in a \n“Flexible-Robust” Metal-Organic Framework on Guest-Dependent \nGate-Opening Effect\nPeng-Dan Zhang"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-28T13:48:20.877496"
+}

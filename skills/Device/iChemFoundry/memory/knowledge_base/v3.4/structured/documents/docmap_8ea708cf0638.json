@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_8ea708cf0638",
+  "paper_id": "47e14342870f",
+  "raw_path": "相关文献/Hu 等。 - 2014 - Controllable synthesis of isoreticular pillared-la.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Al",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "NDC",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "pcu"
+  ],
+  "key_sections": {
+    "conclusion": "In summary, we utilized an already established and powerful\napproach for the targeted manipulation of an important family",
+    "results_summary": "Journal of\n Materials Chemistry A\nMaterials for energy and sustainability\nwww.rsc.org/MaterialsA\nISSN 2050-7488\nPAPER\nChao Qin, Zhong-Min Su, Fu-Chen Liu et al.\nControllable synthesis of isoreticular "
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:52:05.585614"
+}

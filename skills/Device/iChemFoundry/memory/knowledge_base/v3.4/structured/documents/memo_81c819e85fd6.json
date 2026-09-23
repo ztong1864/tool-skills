@@ -1,0 +1,175 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_81c819e85fd6",
+  "paper_id": "bb3ea0ef2139",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "one_line_summary": "Zn2(TRZ)2(BDC) shows IAST_selectivity_CO2/N2 = 132.0 dimensionless for CO2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "CO2_working_capacity (CO2) = 2.78 mmol/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "CO2_uptake (CO2) = 3.92 mmol/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "IAST_selectivity_CO2/N2 (CO2) = 132.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use pore and aperture tuning engineering in MOF design → used as a strategy to precisely trap CO2 molecules for CO2/N2 separation"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use nitrogen-donor ligands in Zn-carboxylate frameworks to form robust ultra-microporous sorbents → improves robustness for carbon capture under humid conditions"
+    },
+    {
+      "title": "Comparison",
+      "body": "this work's sorbents with comprehensively proficient CO2 capture performance and desirable water stability vs most state-of-the-art sorbents reported to date: winner=subject_a on overall_CO2_capture_performance_with_water_stability"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] use MOFs containing brittle coordination bonds such as Zn-O bonds in humid environments: the MOFs become susceptible to water or water vapor under humidity"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_e11fdb6fae79",
+    "trace_8362030d53ff",
+    "trace_019b0892658b",
+    "trace_c0e0525bc46d",
+    "trace_13053e3e0f6f",
+    "trace_4328b5bab44c",
+    "trace_a445911ad426",
+    "trace_2c494688eb6a",
+    "trace_664373f459b1",
+    "trace_be5d5e4ca0a9",
+    "trace_9958d872e1f8",
+    "trace_c0fa748c40af",
+    "trace_49276a77a96e",
+    "trace_4edb9e1e2028",
+    "trace_26b16b6081b5",
+    "trace_0d248c788125",
+    "trace_ddf88b3b5f9e",
+    "trace_7fd5150f3fb3",
+    "trace_756a66f9ea72",
+    "trace_f6eec53e2771",
+    "trace_1eb06252833e",
+    "trace_85662194c568",
+    "trace_925ae6876a7d",
+    "trace_d121a4894be1",
+    "trace_442ee8cbdbc2",
+    "trace_18573fd253c7",
+    "trace_7f05c135df48",
+    "trace_40b4a867d2a6",
+    "trace_c4629b7e9b15",
+    "trace_80cb3d1ef6e5",
+    "trace_f89d9dd9a089",
+    "trace_0a26d94fb537",
+    "trace_62c7bc2db5d2",
+    "trace_d0751de6f32f",
+    "trace_de2b9f276cd5",
+    "trace_9c0dc0d2dcd6",
+    "trace_442ee8cbdbc2",
+    "trace_ddf88b3b5f9e",
+    "trace_c0e0525bc46d",
+    "trace_7f05c135df48",
+    "trace_c4629b7e9b15",
+    "trace_40b4a867d2a6",
+    "trace_f89d9dd9a089",
+    "trace_de2b9f276cd5",
+    "trace_4edb9e1e2028",
+    "trace_9c0dc0d2dcd6",
+    "trace_2c494688eb6a",
+    "trace_756a66f9ea72",
+    "trace_0a26d94fb537",
+    "trace_d121a4894be1",
+    "trace_4328b5bab44c",
+    "trace_18573fd253c7",
+    "trace_49276a77a96e",
+    "trace_8362030d53ff",
+    "trace_9958d872e1f8",
+    "trace_7fd5150f3fb3",
+    "trace_c0fa748c40af",
+    "trace_f6eec53e2771",
+    "trace_85662194c568",
+    "trace_d0751de6f32f",
+    "trace_62c7bc2db5d2",
+    "trace_1eb06252833e",
+    "trace_0d248c788125",
+    "trace_e11fdb6fae79",
+    "trace_664373f459b1",
+    "trace_80cb3d1ef6e5",
+    "trace_019b0892658b",
+    "trace_26b16b6081b5",
+    "trace_be5d5e4ca0a9",
+    "trace_13053e3e0f6f",
+    "trace_925ae6876a7d",
+    "trace_a445911ad426"
+  ],
+  "measurement_card_ids": [
+    "mcard_9d7c3eb0de3d",
+    "mcard_fd492dd23829",
+    "mcard_a81d6edd6585"
+  ],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_d8f790d48d44",
+    "recipe_0b307b34addf"
+  ],
+  "claim_card_ids": [
+    "claim_d14c452b0b7c",
+    "claim_09201ba9e21b",
+    "claim_7fc38d6a7701",
+    "claim_3f5f1f8b9755",
+    "claim_5af5117871ff",
+    "claim_317674abc7c7",
+    "claim_596face40424"
+  ],
+  "design_rule_card_ids": [
+    "drule_3e0f03ba11db",
+    "drule_f023a35352e7"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_fba86b83bbc1"
+  ],
+  "failure_case_card_ids": [
+    "fail_3aab0bae024c"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_90bcdc4bb678",
+    "mat_ab148aaf9a53"
+  ],
+  "dossier_ids": [
+    "dossier_2ecf3011f026",
+    "dossier_7b4fa66d10ef"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Zn2(TRZ)2(Fuma) and Zn2(TRZ)2(BDC) achieved CO2 uptakes of 3.92 and 1.52 mmol/g at 298 K and 101 kPa.",
+    "Dynamic sorption tests gave working capacities of 2.78 and 1.14 mmol/g and confirmed strong cycling performance under humid ambient conditions.",
+    "Both frameworks showed exceptional water stability, with no structural change after 7 days in a 100% RH environment."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.123958",
+  "updated_at": "2026-04-24T00:19:50.123962",
+  "raw_path": "相关文献/Zn-反丁烯二酸-1，2，4-三氮唑.pdf"
+}

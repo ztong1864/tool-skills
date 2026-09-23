@@ -1,0 +1,53 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_a1ac8b046374",
+  "paper_id": "9621c008066d",
+  "raw_path": "相关文献/Chen 等 - 2008 - Four Zn(II)Cd(II)-3-amino-1,2,4-triazolate framew.pdf",
+  "title": "Four Zn(II)Cd(II)-3-amino-1,2,4-triazolate framew",
+  "authors": [
+    "Chen"
+  ],
+  "year": 2008,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "Amino-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "Cd",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "pyridine"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "conclusion": "of crystallographic data and reﬁnements of compounds 1–4\n1\n2\n3\n4\nFormula\nC4H6N4O2Zn\nC9H17N16O9SZn4\nC2H3BrN4Cd",
+    "results_summary": "Four Zn(II)/Cd(II)-3-amino-1,2,4-triazolate frameworks constructed\nby in situ metal/ligand reactions: Structures and ﬂuorescent properties\nZilu Chen, Xiaoling Li, Fupei Liang \u0002\nCollege of Chemistry an"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:12:27.962507"
+}

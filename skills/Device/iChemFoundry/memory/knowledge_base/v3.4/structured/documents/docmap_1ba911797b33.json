@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_1ba911797b33",
+  "paper_id": "e050ac390c87",
+  "raw_path": "相关文献/Zn-草酸.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2/N2 separation",
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "Pune-411008"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Fe",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "TED",
+    "carboxylate",
+    "azolate",
+    "BIPY"
+  ],
+  "mentioned_topologies": [],
+  "key_sections": {
+    "results_summary": "This journal is ©The Royal Society of Chemistry 2016\nChem. Commun., 2016, 52, 1851--1854 | 1851\nCite this: Chem. Commun., 2016,\n52, 1851\nEnhancing the carbon capture capacities of a rigid\nultra-microp"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:30:04.497025"
+}

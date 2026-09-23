@@ -1,0 +1,99 @@
+{
+  "rule:constraint-json-is-internal": {
+    "applies_to_ids": [
+      "artifact:constraint-json"
+    ],
+    "content": "Constraint JSON is internal transfer data. Do not show it to the user by default unless debugging or explicitly requested.",
+    "entity_type": "ExecutionRule",
+    "id": "rule:constraint-json-is-internal",
+    "name": "Constraint JSON is internal",
+    "scope": "data_visibility",
+    "severity": "normal"
+  },
+  "rule:no-device-start-without-explicit-start-request": {
+    "applies_to_ids": [
+      "task-step:create-device-task"
+    ],
+    "content": "Creating a device task and starting device execution are separate. Enable device start only when the user explicitly asks to start execution.",
+    "entity_type": "ExecutionRule",
+    "id": "rule:no-device-start-without-explicit-start-request",
+    "name": "No device start without explicit start request",
+    "scope": "device_safety",
+    "severity": "critical"
+  },
+  "rule:no-device-task-without-user-approval": {
+    "applies_to_ids": [
+      "checkpoint:approve-device-task-creation",
+      "task-step:create-device-task"
+    ],
+    "content": "Do not call fdu-device-run to create a device task until the user explicitly confirms task creation after seeing the protocol or task summary.",
+    "entity_type": "ExecutionRule",
+    "id": "rule:no-device-task-without-user-approval",
+    "name": "No device task without user approval",
+    "scope": "device_safety",
+    "severity": "critical"
+  },
+  "rule:monitoring-is-read-only": {
+    "applies_to_ids": [
+      "task-step:monitor-device-task",
+      "artifact:device-monitor-result"
+    ],
+    "content": "fdu-execution-monitoring is read-only. It may poll task status, progress, notices, faults, and alarms, and may push sci_agent alerts, but must not start, pause, cancel, recover, retry, skip, submit, or modify any device task.",
+    "entity_type": "ExecutionRule",
+    "id": "rule:monitoring-is-read-only",
+    "name": "Monitoring is read-only",
+    "scope": "device_safety",
+    "severity": "critical"
+  },
+  "rule:resource-snapshot-is-source-of-truth": {
+    "applies_to_ids": [
+      "task-step:verify-and-fill-resources",
+      "artifact:resource-snapshot",
+      "artifact:resource-verification-report"
+    ],
+    "content": "Do not invent resource locations or availability. Resource snapshot and verification output are the source of truth for resource-dependent execution.",
+    "entity_type": "ExecutionRule",
+    "id": "rule:resource-snapshot-is-source-of-truth",
+    "name": "Resource snapshot is source of truth",
+    "scope": "resource_integrity",
+    "severity": "critical"
+  },
+  "rule:risk-review-after-planning-output": {
+    "applies_to_ids": [
+      "task-step:recommend-experiment-conditions",
+      "task-step:calculate-reagent-amounts",
+      "task-step:generate-numbered-steps"
+    ],
+    "content": "After recommendation, amount calculation, or numbered-step generation produces its planning artifact, and before the corresponding user confirmation checkpoint, use the fdu-risk-review skill to check reaction feasibility, safety risk, device capability, and action boundaries against the generated artifact and available context. Stop if the review returns block, and ask for human review if the review returns needs_human_review.",
+    "entity_type": "ExecutionRule",
+    "id": "rule:risk-review-after-planning-output",
+    "name": "Risk review after planning output",
+    "scope": "safety_review",
+    "severity": "critical"
+  },
+  "rule:show-confirmable-artifacts-before-continuing": {
+    "applies_to_ids": [
+      "artifact:recommendation-table",
+      "artifact:amount-table",
+      "artifact:numbered-experiment-steps",
+      "artifact:device-protocol-json"
+    ],
+    "content": "If a user-visible artifact has must_confirm=true, show a concise summary or path and wait for explicit user confirmation before continuing.",
+    "entity_type": "ExecutionRule",
+    "id": "rule:show-confirmable-artifacts-before-continuing",
+    "name": "Show confirmable artifacts before continuing",
+    "scope": "user_confirmation",
+    "severity": "critical"
+  },
+  "rule:stop-on-skill-failure": {
+    "applies_to_ids": [
+      "agent-flow:fdu-experiment-to-device-task"
+    ],
+    "content": "If a downstream skill fails, stop immediately, report which step failed, and do not continue later steps until the issue is resolved.",
+    "entity_type": "ExecutionRule",
+    "id": "rule:stop-on-skill-failure",
+    "name": "Stop on skill failure",
+    "scope": "flow_control",
+    "severity": "critical"
+  }
+}

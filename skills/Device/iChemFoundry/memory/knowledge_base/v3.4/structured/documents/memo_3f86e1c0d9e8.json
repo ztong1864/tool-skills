@@ -1,0 +1,175 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_3f86e1c0d9e8",
+  "paper_id": "7079b11fb224",
+  "title": "H2FA-Xing 等。 - 2015 - Microporous Zinc(II) Metal-Organic Framework with",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "[Zn(FA)(datrz)2] shows surface_area_BET = 721.0 m2/g for N2",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "Qst_CO2_zero_coverage (CO2) = 23.98 dimensionless at 1.0 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "surface_area_BET (N2) = 721.0 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "pore_volume_ratio = 38.9 wt% at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "amino_groups → uptake"
+    },
+    {
+      "title": "Mechanism",
+      "body": "intermolecular_hydrogen_bonding_between_amino_and_carboxylate_groups → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select amino-functionalized organic ligands when constructing MOFs → higher CO2 adsorption capacity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce polar functional groups, open metal sites, or extra-framework cations into MOFs → improves CO2 adsorption and selectivity"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] operate the framework at temperatures above about 350 °C: the organic ligand decomposes and the whole framework totally collapses"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_205addeb2c5d",
+    "trace_848120ab9ec5",
+    "trace_99c22ccd1f4c",
+    "trace_f54cebba2e9a",
+    "trace_80de72413e72",
+    "trace_41b10fac604a",
+    "trace_24d4012aa47b",
+    "trace_3ea9d1f7dec1",
+    "trace_be57153f77cb",
+    "trace_cc1cc3b751bc",
+    "trace_590674798662",
+    "trace_532eb9bd9219",
+    "trace_75822fd27b3e",
+    "trace_77e2c782e544",
+    "trace_ed7c5771cd02",
+    "trace_5177f1b231bf",
+    "trace_e7ecbc035f9c",
+    "trace_bef7ab35aeb9",
+    "trace_4f96c77c5336",
+    "trace_30a575250924",
+    "trace_b6ad4df731d6",
+    "trace_e562e3cc7bc3",
+    "trace_9433d179880e",
+    "trace_94450f1ab524",
+    "trace_d504f35a3300",
+    "trace_2ae277664f9e",
+    "trace_6adf91b68cb5",
+    "trace_2fc8509c8229",
+    "trace_4a1694e2f4b3",
+    "trace_bc46d6eab199",
+    "trace_b6fc9e618a2c",
+    "trace_04dea531272e",
+    "trace_aa9936a94cfa",
+    "trace_c4903b7f93a4",
+    "trace_1416cf3d255b",
+    "trace_b6ad4df731d6",
+    "trace_80de72413e72",
+    "trace_d504f35a3300",
+    "trace_9433d179880e",
+    "trace_f54cebba2e9a",
+    "trace_b6fc9e618a2c",
+    "trace_2fc8509c8229",
+    "trace_532eb9bd9219",
+    "trace_cc1cc3b751bc",
+    "trace_41b10fac604a",
+    "trace_e562e3cc7bc3",
+    "trace_aa9936a94cfa",
+    "trace_94450f1ab524",
+    "trace_c4903b7f93a4",
+    "trace_99c22ccd1f4c",
+    "trace_75822fd27b3e",
+    "trace_ed7c5771cd02",
+    "trace_6adf91b68cb5",
+    "trace_1416cf3d255b",
+    "trace_bc46d6eab199",
+    "trace_24d4012aa47b",
+    "trace_205addeb2c5d",
+    "trace_5177f1b231bf",
+    "trace_4f96c77c5336",
+    "trace_e7ecbc035f9c",
+    "trace_bef7ab35aeb9",
+    "trace_30a575250924",
+    "trace_04dea531272e",
+    "trace_3ea9d1f7dec1",
+    "trace_be57153f77cb",
+    "trace_2ae277664f9e",
+    "trace_4a1694e2f4b3",
+    "trace_590674798662",
+    "trace_848120ab9ec5",
+    "trace_77e2c782e544"
+  ],
+  "measurement_card_ids": [
+    "mcard_f815beae2c13",
+    "mcard_680688445b4b",
+    "mcard_897a15a0ac2e",
+    "mcard_2c05cadcacd6"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_c621eac70a96",
+    "mechcard_b0328b5a3610"
+  ],
+  "recipe_card_ids": [
+    "recipe_a2f87bf65e4e"
+  ],
+  "claim_card_ids": [
+    "claim_6543d5c2303d",
+    "claim_80e7bf55d9b5",
+    "claim_15c181fe8d65",
+    "claim_93e021d67e97",
+    "claim_82179d175155",
+    "claim_94192bf0ee2d",
+    "claim_2d41d63f5013"
+  ],
+  "design_rule_card_ids": [
+    "drule_4d8703a74042",
+    "drule_1cee9ff299b8"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_208d031c05d7"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_2aeb95421dbd"
+  ],
+  "dossier_ids": [
+    "dossier_7f346bcb3906"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The framework exhibits excellent CO2 adsorption ability, and the amino groups in 1 are identified as enabling high CO2 uptake.",
+    "Compound 1 has substantial porosity, with solvent-accessible volume of about 399.4 Å3 per unit cell and a 38.9% pore volume ratio.",
+    "Selecting amino-functionalized ligands is presented as a key design strategy for building MOFs with high CO2 adsorption capacity."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:49.728889",
+  "updated_at": "2026-04-24T00:19:49.728890",
+  "raw_path": "相关文献/Zn-H2FA-Xing 等。 - 2015 - Microporous Zinc(II) Metal-Organic Framework with.pdf",
+  "authors": [
+    "Zn"
+  ]
+}

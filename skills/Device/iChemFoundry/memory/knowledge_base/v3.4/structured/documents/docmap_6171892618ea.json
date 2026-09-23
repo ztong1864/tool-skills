@@ -1,0 +1,72 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_6171892618ea",
+  "paper_id": "95c5e1a4b5d9",
+  "raw_path": "相关文献/Zn-X-TRZSmall - 2024 - Yang - Shifting C2H2 CO2 Adsorption and Separation in Pillar‐Layered Metal Organic Frameworks.pdf",
+  "title": "X-TRZSmall - 2024 - Yang - Shifting C2H2 CO2 Adsorption and Separation in Pillar‐Layered Metal Organic Frameworks",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "BSF-3",
+    "DICRO-4-Ni",
+    "IITKGP-25",
+    "UTSA-74",
+    "TIFSIX-2-Cu-i",
+    "MUF-16",
+    "SIFSIX-21-Ni",
+    "MUF-17",
+    "TIFSIX-2",
+    "NKMOF-9",
+    "ZU-610",
+    "NTU-67",
+    "FJU-90",
+    "CPL-1"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Ni",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "NDC",
+    "BDC",
+    "dicarboxylate",
+    "TED",
+    "carboxylate"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "pcu"
+  ],
+  "key_sections": {
+    "conclusion": "In summary, by introducing molecular rotors, ultramicropore en-\nvironments of pillar-layered MOFs were ﬁnely tuned to achieve",
+    "results_summary": "RESEARCH ARTICLE\nwww.small-journal.com\nShifting C2H2/CO2 Adsorption and Separation in\nPillar-Layered Metal–Organic Frameworks Finely-Regulated\nby Molecular Rotation\nLi-Qiu Yang, Ying Wang, Wen-Yu Yuan"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:53:49.686749"
+}

@@ -1,0 +1,55 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_35b7a8c19869",
+  "paper_id": "14d4b8abc8fc",
+  "raw_path": "相关文献/Zn-草酸-AIChE Journal - 2023 - Wu - Porous materials with suitable pore size and dual‐functional sites for benchmark one‐step.pdf",
+  "title": "",
+  "authors": [],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/C2H4 separation",
+  "normalized_task_id": "C2H2_C2H4_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H6",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "PCN-250",
+    "UiO-67"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "In",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "Multiple impurities removal represents one of the most daunting challenges in gas\npurification, but the attainment of efficient adsorptive separation is hindered by the",
+    "results_summary": "R E S E A R C H A R T I C L E\nS e p a r a t i o n s : M a t e r i a l s , D e v i c e s a n d P r o c e s s e s\nPorous materials with suitable pore size and dual-functional\nsites for benchmark one-ste"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T21:26:32.943550"
+}

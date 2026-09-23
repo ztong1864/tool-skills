@@ -1,0 +1,172 @@
+{
+  "timestamp": "2026-07-02T12:33:31.434390",
+  "steps": [
+    {
+      "step_index": 1,
+      "unit_type": "exp_add_solid",
+      "downstream_skill": "fdu-add-solid-json",
+      "instruction": "加入 CuBr（溴化亚铜） 0.717 mg",
+      "skill_input": {
+        "substance": "CuBr（溴化亚铜）",
+        "unit": "mg",
+        "target_layout_code": "T-3:20",
+        "add_weight": 0.717,
+        "layout_code": "T-3:20"
+      }
+    },
+    {
+      "step_index": 2,
+      "unit_type": "exp_add_solid",
+      "downstream_skill": "fdu-add-solid-json",
+      "instruction": "加入 (S)-(+)-α,α-二苯基脯氨醇 30.4 mg",
+      "skill_input": {
+        "substance": "(S)-(+)-α,α-二苯基脯氨醇",
+        "unit": "mg",
+        "target_layout_code": "T-3:20",
+        "add_weight": 30.4,
+        "layout_code": "T-3:20"
+      }
+    },
+    {
+      "step_index": 3,
+      "unit_type": "exp_pipetting",
+      "downstream_skill": "fdu-add-liquid-json",
+      "instruction": "加入 Dioxane二噁烷 1 mL",
+      "skill_input": {
+        "substance": "Dioxane二噁烷",
+        "unit": "mL",
+        "target_layout_code": "T-3:20",
+        "add_volume": 1.0,
+        "layout_code": "T-3:20"
+      }
+    },
+    {
+      "step_index": 4,
+      "unit_type": "exp_magnetic_stirrer",
+      "downstream_skill": "fdu-reaction-control-json",
+      "instruction": "室温预搅拌：25°C、500 rpm、1800 s",
+      "skill_input": {
+        "target_layout_code": "T-3:20",
+        "temperature": 25,
+        "layout_code": "T-3:20",
+        "reaction_duration": 1800,
+        "rotation_speed": 500,
+        "still_tem": 25,
+        "is_wait": true
+      }
+    },
+    {
+      "step_index": 5,
+      "unit_type": "exp_pipetting",
+      "downstream_skill": "fdu-add-liquid-json",
+      "instruction": "加入苯乙炔 10.98 μL",
+      "skill_input": {
+        "substance": "苯乙炔",
+        "unit": "μL",
+        "target_layout_code": "T-3:20",
+        "add_volume": 10.98,
+        "layout_code": "T-3:20"
+      }
+    },
+    {
+      "step_index": 6,
+      "unit_type": "exp_pipetting",
+      "downstream_skill": "fdu-add-liquid-json",
+      "instruction": "加入正壬醛 20.64 μL",
+      "skill_input": {
+        "substance": "正壬醛",
+        "unit": "μL",
+        "target_layout_code": "T-3:20",
+        "add_volume": 20.64,
+        "layout_code": "T-3:20"
+      }
+    },
+    {
+      "step_index": 7,
+      "unit_type": "exp_magnetic_stirrer",
+      "downstream_skill": "fdu-reaction-control-json",
+      "instruction": "70°C、500 rpm 反应 86400 s",
+      "skill_input": {
+        "target_layout_code": "T-3:20",
+        "temperature": 70,
+        "layout_code": "T-3:20",
+        "reaction_duration": 86400,
+        "rotation_speed": 500,
+        "still_tem": 70,
+        "is_wait": true
+      }
+    },
+    {
+      "step_index": 8,
+      "unit_type": "exp_pipetting",
+      "downstream_skill": "fdu-add-liquid-json",
+      "instruction": "加入联苯 0.5 mol/L in ACN 0.20 mL",
+      "skill_input": {
+        "substance": "联苯 0.5 mol/L in ACN",
+        "unit": "mL",
+        "target_layout_code": "T-3:20",
+        "add_volume": 0.2,
+        "layout_code": "T-3:20"
+      }
+    },
+    {
+      "step_index": 9,
+      "unit_type": "exp_pipetting",
+      "downstream_skill": "fdu-add-liquid-json",
+      "instruction": "加入乙腈 0.50 mL",
+      "skill_input": {
+        "substance": "乙腈",
+        "unit": "mL",
+        "target_layout_code": "T-3:20",
+        "add_volume": 0.5,
+        "layout_code": "T-3:20"
+      }
+    },
+    {
+      "step_index": 10,
+      "unit_type": "exp_magnetic_stirrer",
+      "downstream_skill": "fdu-reaction-control-json",
+      "instruction": "25°C、800 rpm 搅拌 300 s 混匀",
+      "skill_input": {
+        "target_layout_code": "T-3:20",
+        "temperature": 25,
+        "layout_code": "T-3:20",
+        "reaction_duration": 300,
+        "rotation_speed": 800,
+        "still_tem": 25,
+        "is_wait": true
+      }
+    },
+    {
+      "step_index": 11,
+      "unit_type": "exp_magnetic_stirrer",
+      "downstream_skill": "fdu-reaction-control-json",
+      "instruction": "25°C 静置 1200 s",
+      "skill_input": {
+        "target_layout_code": "T-3:20",
+        "temperature": 25,
+        "layout_code": "T-3:20",
+        "reaction_duration": 1200,
+        "rotation_speed": 0,
+        "still_tem": 25,
+        "is_wait": true
+      }
+    },
+    {
+      "step_index": 12,
+      "unit_type": "exp_high_filtering_samples",
+      "downstream_skill": "fdu-high-filter-json",
+      "instruction": "取 0.02 mL 反应液到 W3-5:20，用 0.8 mL 乙腈稀释并高滤",
+      "skill_input": {
+        "substance": "乙腈",
+        "source_layout_code": "T-3:20",
+        "target_layout_code": "W3-5:20",
+        "transfer_volume": 0.02,
+        "transfer_unit": "mL",
+        "layout_code": "W3-5:20",
+        "add_volume": 0.8,
+        "unit": "mL"
+      }
+    }
+  ]
+}

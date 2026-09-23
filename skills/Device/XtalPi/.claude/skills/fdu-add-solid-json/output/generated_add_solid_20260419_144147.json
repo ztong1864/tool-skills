@@ -1,0 +1,28 @@
+{
+  "layout_code": "T-3:17",
+  "substance": "",
+  "resource_type": "TTR2T",
+  "tray_QR_code": "TTR2T_01",
+  "QR_code": "",
+  "unit_column": 0,
+  "unit_row": 0,
+  "unit_type": "exp_add_solid",
+  "unit_id": "unit-346ecfeff3b0",
+  "process_json": {
+    "src_layout_code": "W1-4:1",
+    "resource_type": "DHP30_V2",
+    "substance": "AgOTf",
+    "add_weight": 1.28,
+    "offset": 0.05,
+    "custom": {
+      "unit": "mg",
+      "unitOptions": [
+        "mg",
+        "g"
+      ],
+      "step": {
+        "offset": 0.0125
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_83c61709b67d",
+  "paper_id": "ab2f2ea89067",
+  "raw_path": "相关文献/Chen 等 - 2016 - Ligand Symmetry Modulation for Designing Mixed-Lig.pdf",
+  "title": "Ligand Symmetry Modulation for Designing Mixed-Lig",
+  "authors": [
+    "Chen"
+  ],
+  "year": 2016,
+  "doi": null,
+  "journal": null,
+  "task_type": "C2H2/CO2 separation",
+  "normalized_task_id": "C2H2_CO2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2",
+    "C2H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UTSA-100",
+    "UTSA-60",
+    "MOF-177",
+    "MOF-3a",
+    "MOF-3",
+    "UTSA-50",
+    "HKUST-1",
+    "NOTT-122"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "In",
+    "V",
+    "Mo",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BPY",
+    "TED",
+    "azolate",
+    "pyridine",
+    "BIPY"
+  ],
+  "mentioned_topologies": [
+    "acs",
+    "hkust"
+  ],
+  "key_sections": {
+    "abstract": "Herein, we report the synthesis of a new mixed-linker\nZn(II)-based metal−organic framework (MOF), {[Zn2(atz)2(bpydb)]-\n(DMA)8}n (1) (atz = deprotonated 3-amino-1,2,4-triazole, bpydb =",
+    "conclusion": "In conclusion, we have achieved a new porous metal−organic\nframework with an unusual helical Zn-triazolate chain building",
+    "results_summary": "Ligand Symmetry Modulation for Designing Mixed-Ligand Metal−\nOrganic Frameworks: Gas Sorption and Luminescence Sensing\nProperties\nDi-Ming Chen, Jia-Yue Tian, and Chun-Sen Liu*\nHenan Provincial Key Lab"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T17:17:14.254672"
+}

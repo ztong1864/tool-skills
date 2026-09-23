@@ -1,0 +1,169 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_59598deb051e",
+  "paper_id": "6514269e82d9",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Design rule: use HATRZ with amino-group nitrogen participation in coordination",
+  "key_insights": [
+    {
+      "title": "Mechanism",
+      "body": "pcu-like network built from zinc(II)/ATRZ layers and inorganic sulfate pillars → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "zinc(II)/ATRZ layers pillared by inorganic sulfate → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use HATRZ with amino-group nitrogen participation in coordination → can build novel chiral compounds"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use aromatic polycarboxylate or polypyridine ligands to construct functionalized MOFs → these are the most commonly used ligands for functionalized MOFs"
+    },
+    {
+      "title": "Failure",
+      "body": "[performance_regression] use sulfate as a pillaring component in MOF materials: sulfate-pillared MOF materials remain extremely rarely reported"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_93780696d26b",
+    "trace_7da0fa862422",
+    "trace_e4f3c5d7ca98",
+    "trace_a73b6beb241e",
+    "trace_93b21f42ff67",
+    "trace_028a65442972",
+    "trace_8c9e963b85cf",
+    "trace_1c9112e1986f",
+    "trace_67397ef203f0",
+    "trace_52ae0a3e0759",
+    "trace_f93a314805ec",
+    "trace_739209e63f93",
+    "trace_7cb3a49b5d48",
+    "trace_53c006e4c260",
+    "trace_a9bebdbc5a62",
+    "trace_a1bd01b08591",
+    "trace_b89b77d9fe57",
+    "trace_b628bb3afab3",
+    "trace_c6a2d7800503",
+    "trace_fc615a24e008",
+    "trace_c573b1343fd0",
+    "trace_50cfff052411",
+    "trace_dc225a1cfe16",
+    "trace_d1c9d7f1dfd7",
+    "trace_797788bd50af",
+    "trace_eb70749e8b12",
+    "trace_00b023aa80fb",
+    "trace_017492a1c408",
+    "trace_accd3ab7e39d",
+    "trace_b0f9511568e3",
+    "trace_3e67b76e8586",
+    "trace_9a1b12c008b6",
+    "trace_9aaf14e3abad",
+    "trace_1541010ee399",
+    "trace_b10ef0f431fa",
+    "trace_1c296a67561e",
+    "trace_c6ce43b47127",
+    "trace_1bf121796ea5",
+    "trace_f0bfe8dc6c5f",
+    "trace_d1c9d7f1dfd7",
+    "trace_7cb3a49b5d48",
+    "trace_b0f9511568e3",
+    "trace_017492a1c408",
+    "trace_67397ef203f0",
+    "trace_1bf121796ea5",
+    "trace_7da0fa862422",
+    "trace_a9bebdbc5a62",
+    "trace_b89b77d9fe57",
+    "trace_8c9e963b85cf",
+    "trace_c6ce43b47127",
+    "trace_a1bd01b08591",
+    "trace_e4f3c5d7ca98",
+    "trace_9a1b12c008b6",
+    "trace_c6a2d7800503",
+    "trace_50cfff052411",
+    "trace_797788bd50af",
+    "trace_eb70749e8b12",
+    "trace_028a65442972",
+    "trace_f93a314805ec",
+    "trace_a73b6beb241e",
+    "trace_dc225a1cfe16",
+    "trace_00b023aa80fb",
+    "trace_c573b1343fd0",
+    "trace_93b21f42ff67",
+    "trace_1c296a67561e",
+    "trace_f0bfe8dc6c5f",
+    "trace_b628bb3afab3",
+    "trace_1541010ee399",
+    "trace_b10ef0f431fa",
+    "trace_52ae0a3e0759",
+    "trace_fc615a24e008",
+    "trace_53c006e4c260",
+    "trace_739209e63f93",
+    "trace_93780696d26b",
+    "trace_3e67b76e8586",
+    "trace_accd3ab7e39d",
+    "trace_9aaf14e3abad",
+    "trace_1c9112e1986f"
+  ],
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [
+    "mechcard_f90d84c59e30",
+    "mechcard_92941c55ae5b",
+    "mechcard_119ccfaee029"
+  ],
+  "recipe_card_ids": [
+    "recipe_93c9886aed89",
+    "recipe_6f4f26db9f26",
+    "recipe_f10bab38805d"
+  ],
+  "claim_card_ids": [
+    "claim_2a17ee26034c",
+    "claim_718a45808629",
+    "claim_13aeeea04722",
+    "claim_bbd680a16d05",
+    "claim_8bed17831309",
+    "claim_bd08cb7c371a",
+    "claim_da1bd5e8abbd"
+  ],
+  "design_rule_card_ids": [
+    "drule_ef3fd0b0438e",
+    "drule_fcf27c174993",
+    "drule_2935825a727f",
+    "drule_da9731fcdad9",
+    "drule_dc047efcb45d",
+    "drule_d6cc91d01ac8"
+  ],
+  "comparative_finding_card_ids": [],
+  "failure_case_card_ids": [
+    "fail_69d20002b3af"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_319e13e7a7fe"
+  ],
+  "dossier_ids": [
+    "dossier_44b3b0eaa368"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Single-crystal XRD shows compound 1 is a pcu-like MOF built from Zn(II)/ATRZ layers pillared by inorganic sulfate.",
+    "Hydrothermal reaction of ZnSO4·7H2O with HATRZ yields a 3D zinc(II) MOF, Zn2(ATRZ)2SO4·3H2O (1).",
+    "MOF architecture and function depend strongly on ligand flexibility, length, coordination ability, and symmetry."
+  ],
+  "data_quality": "low",
+  "extraction_completeness": 0.8,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:47.216196",
+  "updated_at": "2026-04-24T00:19:47.216202",
+  "raw_path": "相关文献/1-s2.0-S0022286014011673-main.pdf"
+}

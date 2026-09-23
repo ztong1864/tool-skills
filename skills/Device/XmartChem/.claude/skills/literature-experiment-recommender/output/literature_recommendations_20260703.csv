@@ -1,0 +1,11 @@
+﻿metal_salt_1,metal_salt_2,chiral_amine,molecular_sieve,solvent
+ZnI2,none,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",4A MS,乙腈
+ZnBr2,none,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",4A MS,乙腈
+Zn(OTf)2,none,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",none,乙腈
+CuBr,ZnBr2,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",4A MS,乙腈
+CuI,ZnBr2,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",none,乙腈
+CuBr2,none,"(S)-Bis(3,5-dimethylphenyl)(pyrrolidin-2-yl)methanol",4A MS,甲苯
+Cu(OTf)2,none,"(S)-Bis(3,5-bis(trifluoromethyl)phenyl)(pyrrolidin-2-yl)methanol",4A MS,二氯乙烷
+AgOTf,none,"(S)-(-)-α,α-Diphenyl-2-pyrrolidinemethanol",none,四氢呋喃
+AgNTf2,none,(S)-Pyrrolidin-2-yldi-p-tolylmethanol,4A MS,乙腈
+Sc(OTf)3,none,(S)-Bis(4-methoxyphenyl)(pyrrolidin-2-yl)methanol,4A MS,二氯乙烷

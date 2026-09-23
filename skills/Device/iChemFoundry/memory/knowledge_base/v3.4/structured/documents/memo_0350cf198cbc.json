@@ -1,0 +1,185 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_0350cf198cbc",
+  "paper_id": "f297c1f73265",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "H2_storage",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2"
+  ],
+  "one_line_summary": "Zn2(Atz)2Ox shows TGA_temperature_range_max = 800.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "TGA_temperature_range = 30.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "TGA_temperature_range_max = 800.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "5-nodal (3,4,6,7,8)-connected 3D heterometallic network → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "centrosymmetric Eu(III) coordination environment → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use ligands containing both N- and O-donor sites in lanthanide-transition metal framework synthesis → enables formation of heterometallic coordination polymers"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce oxalate as a linker between adjacent 2D layers → converts adjacent layers into an infinite 3D architecture"
+    },
+    {
+      "title": "Comparison",
+      "body": "Eu-containing framework {[Eu2Zn19(atz)18(ox)9(Cl)8]·17H2O}n (compound 1) vs Tb-containing framework {[Tb2Zn19(atz)18(ox)9(Cl)8]·17H2O}n (compound 3): winner=subject_b on Ln-O_distance"
+    },
+    {
+      "title": "Comparison",
+      "body": "measured powder X-ray diffraction patterns of compounds 1-3 vs powder patterns generated from corresponding single-crystal structures: winner=tie on PXRD_pattern_agreement"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_39fc71e2c034",
+    "trace_cd1f538646c5",
+    "trace_d2f0ca8b70a5",
+    "trace_754a5aca4a04",
+    "trace_baece0fbde6f",
+    "trace_c26a1bd6bc59",
+    "trace_bb2950dd958e",
+    "trace_5b3c7823ac31",
+    "trace_82230fbeab4d",
+    "trace_f61bcb492c24",
+    "trace_7df9d2f4b54a",
+    "trace_ff5774e40ad2",
+    "trace_d7666c3745a9",
+    "trace_139286fa51a3",
+    "trace_2c0593afa2dc",
+    "trace_2ce0e26e1919",
+    "trace_cba75c4e4588",
+    "trace_6de8bf7156af",
+    "trace_ec6d63d4cea5",
+    "trace_c6c63158b1c1",
+    "trace_2a2134035e3a",
+    "trace_b18b633e0d49",
+    "trace_ee7dc1bee1de",
+    "trace_2f6a1348c3ee",
+    "trace_f174357a0563",
+    "trace_bd4fa083e002",
+    "trace_c971b919c87e",
+    "trace_bb69e8f73dc5",
+    "trace_47c44aceec1c",
+    "trace_bc2a498b3da2",
+    "trace_716979d9e338",
+    "trace_158ba4e8178f",
+    "trace_953eb0090bec",
+    "trace_4c0d29c0407e",
+    "trace_d879a9469dac",
+    "trace_96211ae6f2d4",
+    "trace_139286fa51a3",
+    "trace_d7666c3745a9",
+    "trace_47c44aceec1c",
+    "trace_6de8bf7156af",
+    "trace_96211ae6f2d4",
+    "trace_7df9d2f4b54a",
+    "trace_c26a1bd6bc59",
+    "trace_ff5774e40ad2",
+    "trace_953eb0090bec",
+    "trace_cba75c4e4588",
+    "trace_2f6a1348c3ee",
+    "trace_4c0d29c0407e",
+    "trace_c6c63158b1c1",
+    "trace_82230fbeab4d",
+    "trace_bb69e8f73dc5",
+    "trace_b18b633e0d49",
+    "trace_cd1f538646c5",
+    "trace_2ce0e26e1919",
+    "trace_d879a9469dac",
+    "trace_158ba4e8178f",
+    "trace_bb2950dd958e",
+    "trace_d2f0ca8b70a5",
+    "trace_f174357a0563",
+    "trace_5b3c7823ac31",
+    "trace_39fc71e2c034",
+    "trace_2c0593afa2dc",
+    "trace_ee7dc1bee1de",
+    "trace_baece0fbde6f",
+    "trace_ec6d63d4cea5",
+    "trace_bc2a498b3da2",
+    "trace_bd4fa083e002",
+    "trace_f61bcb492c24",
+    "trace_754a5aca4a04",
+    "trace_c971b919c87e",
+    "trace_2a2134035e3a",
+    "trace_716979d9e338"
+  ],
+  "measurement_card_ids": [
+    "mcard_5f9d9b8f7d58",
+    "mcard_998d6ba74804"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_0a804fb97b28",
+    "mechcard_50b90092da7e"
+  ],
+  "recipe_card_ids": [
+    "recipe_a322c794b607"
+  ],
+  "claim_card_ids": [
+    "claim_42da56e92c95",
+    "claim_b7df2610cb6e",
+    "claim_7a5bef4d8478",
+    "claim_f28857e6d723",
+    "claim_42edbb9c7627",
+    "claim_5402b9352e1e",
+    "claim_36b06c681700",
+    "claim_2be86f8564e6"
+  ],
+  "design_rule_card_ids": [
+    "drule_3376fb15e1ad",
+    "drule_6be412a657d6",
+    "drule_9e6e2fbe05e2",
+    "drule_dd50d4af8455",
+    "drule_4cca4c96516a"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_55c2e9d96e1c",
+    "comp_e993274fc6fb"
+  ],
+  "failure_case_card_ids": [
+    "fail_d9af1cdd513a",
+    "fail_cba40214b458"
+  ],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_e0ad4b83141d",
+    "mat_548ac8fa1296",
+    "mat_6229de2749fa"
+  ],
+  "dossier_ids": [
+    "dossier_2ff6043c3112",
+    "dossier_bc66cc546071",
+    "dossier_eb89af0010a4"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Complexes 1 and 3 are strongly luminescent, whereas complex 2 displays antiferromagnetic behavior.",
+    "Neighboring 2D planes can also be connected into a 3D supramolecular architecture by the Hatz ligand.",
+    "The reported Ln–Zn frameworks show a 5-nodal (3,4,6,7,8)-connected topology and are the highest-nuclearity examples yet in 3-amino-1H-1,2,4-triazole chemistry."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.892192",
+  "updated_at": "2026-04-24T00:19:50.892197",
+  "raw_path": "相关文献/gao2013.pdf.pdf"
+}

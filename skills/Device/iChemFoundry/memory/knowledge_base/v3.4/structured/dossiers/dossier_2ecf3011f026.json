@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_2ecf3011f026",
+  "canonical_material_id": "mat_90bcdc4bb678",
+  "canonical_name": "Zn2(TRZ)2(BDC)",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_16d744be8097",
+  "pillar_id": "pil_9b529ca41c80",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [
+    "recipe_d8f790d48d44",
+    "recipe_6f43f2c55937"
+  ],
+  "claim_card_ids": [],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.0,
+    "mechanism": 0.0,
+    "recipe": 1.0,
+    "design_rule": 0.0,
+    "contradiction": 0.0
+  },
+  "missing_slots": [
+    "measurement",
+    "mechanism",
+    "design_rule",
+    "contradiction"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "9a4d07d3bef9",
+    "bb3ea0ef2139",
+    "9c7fd9f72c5c"
+  ],
+  "evidence_trace_ids": [
+    "trace_0d248c788125",
+    "trace_06659c73587f"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T16:48:51.024009",
+  "updated_at": "2026-04-23T21:15:34.144638"
+}

@@ -1,0 +1,8 @@
+S55
+
+(HPLC conditions)
+(Total)(PeakNo) (PeakName) (R.Time)(Analysis Results)
+(PerCent) (PeakArea) (PeakHeight)H
+C8H17-nm-BrC6H4
+H
+(R ) -4bc

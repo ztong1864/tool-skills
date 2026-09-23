@@ -1,0 +1,4 @@
+interface:
+  display_name: "Process Visualizer"
+  short_description: "Generate Mermaid flowcharts from Momentum process blocks."
+  default_prompt: "Use $process-visualizer to convert this generated Momentum txt script into a Mermaid process flowchart."

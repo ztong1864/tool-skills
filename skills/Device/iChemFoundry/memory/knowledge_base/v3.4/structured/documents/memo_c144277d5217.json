@@ -1,0 +1,211 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_c144277d5217",
+  "paper_id": "a4f10cb0fd34",
+  "title": "Selective gas adsorption and fluorescence sensing",
+  "year": 2017,
+  "doi": null,
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "CH4",
+    "C2H4",
+    "C2H6"
+  ],
+  "one_line_summary": "[H2N(CH3)2]-Zn(NDC)(atz)-H2O shows accessible_volume = 40.5 dimensionless for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "channel_size_b_direction = 8.6 A at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "solvent_accessible_volume_actual = 23.5 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "accessible_volume = 40.5 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "amine_groups → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "N-rich auxiliary ligand Hatz → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use a mixed-ligand strategy with multiple organic ligands → enriches structure and functions and is a promising convenient route to multifunctional MOFs"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce an N-rich auxiliary ligand such as 1H-tetrazol-5-amine → used as a suitable linker in constructing the reported CO2-selective bifunctional MOF"
+    },
+    {
+      "title": "Comparison",
+      "body": "complex 1 vs MIL-125(Ti): winner=subject_a on CO2/CH4_selectivity_at_298K"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_43281c062606",
+    "trace_dd458e0138b7",
+    "trace_df34f2c2c384",
+    "trace_33b94e748472",
+    "trace_6671a907a20a",
+    "trace_cccd095dd6c1",
+    "trace_f66fa4ecb4f2",
+    "trace_8b89107bfb2b",
+    "trace_51238d1199c8",
+    "trace_7d7eb04710db",
+    "trace_0ab7b2c0d09a",
+    "trace_5a3e8c99822e",
+    "trace_ce50f5d19793",
+    "trace_dcb46c10d9c4",
+    "trace_e13ec4d93b03",
+    "trace_20a8a7cf712f",
+    "trace_79492b4a7c3f",
+    "trace_0834c8ac04ba",
+    "trace_bac47e921d73",
+    "trace_5ecb0bf41bdb",
+    "trace_f465eb51f0ea",
+    "trace_95fe22c713b0",
+    "trace_0c0f46c9de34",
+    "trace_6800d335b4a7",
+    "trace_d4103e7f00bf",
+    "trace_57d8c5249f0c",
+    "trace_0da8857858af",
+    "trace_29ed85ab6f44",
+    "trace_584410ca9d1f",
+    "trace_1fbe530d4117",
+    "trace_3497d6daf07b",
+    "trace_a2ead5567dba",
+    "trace_6c8afb08d25a",
+    "trace_82ef06dfa649",
+    "trace_a2019a5a8567",
+    "trace_572244372171",
+    "trace_8e96dba7b6ac",
+    "trace_0b55868b2911",
+    "trace_cc84e750a93f",
+    "trace_0bff0ac0c6ef",
+    "trace_b15b49a3fe32",
+    "trace_eaabacab0fd3",
+    "trace_e034336e0a68",
+    "trace_a85bb6d0d20d",
+    "trace_1d2914ea0402",
+    "trace_09e9c68e357a",
+    "trace_82ef06dfa649",
+    "trace_5ecb0bf41bdb",
+    "trace_f66fa4ecb4f2",
+    "trace_33b94e748472",
+    "trace_43281c062606",
+    "trace_8e96dba7b6ac",
+    "trace_0da8857858af",
+    "trace_3497d6daf07b",
+    "trace_d4103e7f00bf",
+    "trace_f465eb51f0ea",
+    "trace_6800d335b4a7",
+    "trace_e13ec4d93b03",
+    "trace_df34f2c2c384",
+    "trace_a2019a5a8567",
+    "trace_eaabacab0fd3",
+    "trace_b15b49a3fe32",
+    "trace_1d2914ea0402",
+    "trace_bac47e921d73",
+    "trace_0c0f46c9de34",
+    "trace_e034336e0a68",
+    "trace_6c8afb08d25a",
+    "trace_a2ead5567dba",
+    "trace_20a8a7cf712f",
+    "trace_8b89107bfb2b",
+    "trace_cc84e750a93f",
+    "trace_0ab7b2c0d09a",
+    "trace_dcb46c10d9c4",
+    "trace_1fbe530d4117",
+    "trace_5a3e8c99822e",
+    "trace_09e9c68e357a",
+    "trace_a85bb6d0d20d",
+    "trace_cccd095dd6c1",
+    "trace_29ed85ab6f44",
+    "trace_95fe22c713b0",
+    "trace_57d8c5249f0c",
+    "trace_584410ca9d1f",
+    "trace_0834c8ac04ba",
+    "trace_7d7eb04710db",
+    "trace_51238d1199c8",
+    "trace_79492b4a7c3f",
+    "trace_0b55868b2911",
+    "trace_572244372171",
+    "trace_6671a907a20a",
+    "trace_0bff0ac0c6ef",
+    "trace_ce50f5d19793",
+    "trace_dd458e0138b7"
+  ],
+  "measurement_card_ids": [
+    "mcard_97fcfbc56df8",
+    "mcard_57e8dd1e97b1",
+    "mcard_fcdb2ea7c86a",
+    "mcard_016d261b330d",
+    "mcard_6f06223d17b3",
+    "mcard_dc5cdb36f43e",
+    "mcard_0ea517df76b0"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_659834f7bbd0",
+    "mechcard_f3e2afb60a02",
+    "mechcard_c2a76cf46dee",
+    "mechcard_50d938eabc31",
+    "mechcard_3b423399d326",
+    "mechcard_a5ae2d8b8060",
+    "mechcard_b23d9c1f75c8"
+  ],
+  "recipe_card_ids": [
+    "recipe_b08045958dbf",
+    "recipe_f254eaab932f"
+  ],
+  "claim_card_ids": [
+    "claim_26e6f6cb3a28",
+    "claim_3e1f62ab7178",
+    "claim_4ae8aad118c8",
+    "claim_9df4c2ec5ba0",
+    "claim_5d3b2bf5b789",
+    "claim_fdf18b2d4fb1",
+    "claim_1904d7e7af9f",
+    "claim_33b1e8aa3a96"
+  ],
+  "design_rule_card_ids": [
+    "drule_f8d86cadc3a8",
+    "drule_4e7f97afdfdb",
+    "drule_abc74dacd016"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_8959c9b9af39"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_e67fb04601ea",
+    "mat_c3758f66e17f"
+  ],
+  "dossier_ids": [
+    "dossier_1800e5a9b99d",
+    "dossier_eac77ff0d297"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "A mixed-ligand strategy produced a bifunctional Zn-MOF, [H2N(CH3)2]·Zn(NDC)(atz)·H2O, with a 3D two-fold interpenetrated framework.",
+    "At 298 K, the MOF's CO2/CH4 selectivity (10.35) exceeds reported values for HKUST-1 (7.1), UiO-66 (6.87), and MIL-125(Ti) (6.0).",
+    "Complex 1 adsorbs 25.98 cm3 g−1 CO2 but only 8.31 cm3 g−1 CH4 at 273 K, showing over 3× higher CO2 uptake."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.993632",
+  "updated_at": "2026-04-24T00:19:51.993635",
+  "raw_path": "相关文献/氮唑相关文献_Liu 等 - 2017 - Selective gas adsorption and fluorescence sensing .pdf",
+  "authors": [
+    "氮唑相关文献_Liu"
+  ]
+}

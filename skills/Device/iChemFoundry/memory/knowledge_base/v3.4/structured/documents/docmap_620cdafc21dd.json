@@ -1,0 +1,71 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_620cdafc21dd",
+  "paper_id": "9d7addf6cc90",
+  "raw_path": "相关文献/Zn-SO4.pdf",
+  "title": "SO4",
+  "authors": [
+    "Zn"
+  ],
+  "year": null,
+  "doi": null,
+  "journal": null,
+  "task_type": "C3H6/C3H8 separation",
+  "normalized_task_id": "C3H6_C3H8_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "H2",
+    "C3H6",
+    "C3H8",
+    "C2H4",
+    "C2H2"
+  ],
+  "mechanism_type": "molecular_sieving",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "UTSA-400",
+    "ITQ-55-O",
+    "HIAM-301",
+    "NbOFFIVE-1-Ni",
+    "MIP-203",
+    "KAUST-7",
+    "HAF-1",
+    "NTU-68",
+    "NTU-85",
+    "JNU-3",
+    "ZU-609",
+    "SCMS-0",
+    "HAF-2"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Cu",
+    "Co",
+    "Ni",
+    "Ba",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "ATA",
+    "BTC",
+    "TED",
+    "azolate",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "pcu"
+  ],
+  "key_sections": {
+    "results_summary": "Nature Chemistry | Volume 17 | January 2025 | 141–147\n141\nnature chemistry\nhttps://doi.org/10.1038/s41557-024-01672-0\nArticle\nPore configuration control in hybrid azolate \nultra-microporous frameworks"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T20:49:36.837684"
+}

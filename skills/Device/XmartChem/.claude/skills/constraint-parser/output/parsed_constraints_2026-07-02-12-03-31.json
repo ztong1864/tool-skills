@@ -1,0 +1,71 @@
+{
+  "schema_version": "constraint-parser/simple-v1",
+  "created_at": "2206-07-02T12:03:15",
+  "items": [
+    {
+      "name": "金属盐",
+      "group": "reagent",
+      "equivalent": 0.05,
+      "quantity": null,
+      "physical_state": "solid",
+      "raw_text": "金属盐（1或2种，0.05当量，固体）",
+      "note": "1或2种"
+    },
+    {
+      "name": "手性胺",
+      "group": "reagent",
+      "equivalent": 1.2,
+      "quantity": null,
+      "physical_state": "solid",
+      "raw_text": "手性胺（1.2当量，固体）",
+      "note": null
+    },
+    {
+      "name": "分子筛",
+      "group": "reagent",
+      "equivalent": null,
+      "quantity": {
+        "value": 20,
+        "unit": "mg"
+      },
+      "physical_state": "solid",
+      "raw_text": "分子筛（不加入或20mg，固体）",
+      "note": "不加入或20mg"
+    },
+    {
+      "name": "溶剂",
+      "group": "solvent",
+      "equivalent": null,
+      "quantity": {
+        "value": 1,
+        "unit": "mL"
+      },
+      "physical_state": "liquid",
+      "raw_text": "溶剂（1mL，液体）",
+      "note": "1mL"
+    },
+    {
+      "name": "苯乙炔",
+      "group": "substrate",
+      "equivalent": 1,
+      "quantity": null,
+      "physical_state": "liquid",
+      "raw_text": "苯乙炔（0.1mmol，1当量，液体）",
+      "note": "0.1mmol"
+    },
+    {
+      "name": "正壬醛",
+      "group": "substrate",
+      "equivalent": 1.2,
+      "quantity": null,
+      "physical_state": "liquid",
+      "raw_text": "正壬醛（1.2当量，液体）",
+      "note": null
+    }
+  ],
+  "ambiguities": [
+    "金属盐、手性胺、溶剂只给出类别，未给出具体名称。",
+    "分子筛存在不加入或20mg两种情况，未确定实际用量。"
+  ],
+  "source_text": "端炔联烯化(ATA)反应构建联烯结构，设备为复旦智能合成工作站。试剂：金属盐（1或2种，0.05当量，固体）、手性胺（1.2当量，固体）、分子筛（不加入或20mg，固体）、溶剂（1mL，液体）。底物：苯乙炔（0.1mmol，1当量，液体）、正壬醛（1.2当量，液体）。"
+}

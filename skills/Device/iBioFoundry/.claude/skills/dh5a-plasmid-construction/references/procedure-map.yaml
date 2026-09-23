@@ -1,0 +1,207 @@
+{
+  "protocol_id": "dh5a_mutant_construction_transformation",
+  "experiment_name": "质粒突变体构建与转化",
+  "experiment_description": "完整 DH5a 质粒构建实验的前段脚本，从全质粒 PCR 扩增、DpnI 酶切、化学转化、细胞复苏到卡那抗性板涂布培养。",
+  "stages": [
+    {
+      "id": "stage1_pcr",
+      "title": "第一步：进行 PCR 反应对模板 DNA 进行扩增",
+      "source_text": "进行PCR反应对模版DNA进行扩增，将放有Primer的试剂板撕膜后和新的一块PCR _Plate1，以及所需枪头Liha50和MCA50各一盒放于移液工作站EVO，进行反应液配制。完成后封膜，离心，进入PCR仪运行PCR程序，并将空枪头盒取走。",
+      "substeps": [
+        {
+          "id": "stage1_unseal_primer",
+          "text": "将放有 Primer 的试剂板撕膜。",
+          "code_steps": ["remove_seal_primer1"]
+        },
+        {
+          "id": "stage1_load_primer_to_evo",
+          "text": "将撕膜后的 Primer 试剂板放于移液工作站 EVO。",
+          "code_steps": ["evo_load_primer1"]
+        },
+        {
+          "id": "stage1_prepare_evo_environment",
+          "text": "运行 EVO 前置环境准备程序。",
+          "code_steps": ["evo_run_inheco"]
+        },
+        {
+          "id": "stage1_prepare_pcr_reaction",
+          "text": "将 Primer 试剂板、新的 PCR_Plate1、Liha50 枪头盒和 MCA50 枪头盒放于 EVO，进行 PCR 反应液配制。",
+          "code_steps": ["evo_run_pcr_mix"]
+        },
+        {
+          "id": "stage1_finish_primer_plate",
+          "text": "Primer 试剂板完成后封膜并放回低温保存位置，同时取走使用后的 Liha50 枪头盒。",
+          "code_steps": ["seal_primer1_alps", "cytomat_2c450_load_primer1", "cytomat_24h_load_tips_liha50_1"]
+        },
+        {
+          "id": "stage1_finish_pcr_plate",
+          "text": "PCR_Plate1 完成后封膜、离心，进入 PCR 仪运行 PCR 程序，并回收离心配平板。",
+          "code_steps": ["seal_pcr_plate1_alps", "centrifugeloader_load_pcr_plate1_bucket1", "centrifugeloader_load_balance_pcr_bucket2", "centrifugeloader_spin_pcr", "cytomat_24h_load_balance_pcr", "atc1_load_pcr_plate1", "atc1_run_pcr"]
+        }
+      ]
+    },
+    {
+      "id": "stage2_dpni",
+      "title": "第二步：对 PCR 产物进行 DpnI 酶切",
+      "source_text": "将上一步PCR产物撕膜后，放置于移液工作站EVO，再取一盒Liha10枪头，完成反应液配制后封膜，离心，进入PCR仪运行DpnI酶切程序，并将空枪头盒取走。",
+      "substeps": [
+        {
+          "id": "stage2_unseal_pcr_plate1",
+          "text": "将上一步 PCR 产物 PCR_Plate1 撕膜。",
+          "code_steps": ["remove_seal_pcr_plate1"]
+        },
+        {
+          "id": "stage2_load_pcr_plate1_to_evo",
+          "text": "将撕膜后的 PCR_Plate1 放置于移液工作站 EVO。",
+          "code_steps": ["evo_load_pcr_plate1"]
+        },
+        {
+          "id": "stage2_prepare_evo_environment",
+          "text": "运行 EVO 前置环境准备程序。",
+          "code_steps": ["evo_run_inheco"]
+        },
+        {
+          "id": "stage2_add_dpni",
+          "text": "取一盒 Liha10 枪头，在 EVO 上完成 DpnI 酶切反应液配制。",
+          "code_steps": ["evo_run_dpni"]
+        },
+        {
+          "id": "stage2_remove_used_liha10",
+          "text": "将使用后的 Liha10 枪头盒取走。",
+          "code_steps": ["cytomat_24h_load_tips_liha10_1"]
+        },
+        {
+          "id": "stage2_run_dpni_program",
+          "text": "PCR_Plate1 完成后封膜、离心，进入 PCR 仪运行 DpnI 酶切程序，并回收离心配平板。",
+          "code_steps": ["seal_pcr_plate1_alps", "centrifugeloader_load_pcr_plate1_bucket1", "centrifugeloader_load_balance_pcr_bucket2", "centrifugeloader_spin_pcr", "cytomat_24h_load_balance_pcr", "atc2_load_pcr_plate1", "atc2_run_dpni"]
+        }
+      ]
+    },
+    {
+      "id": "stage3_transformation",
+      "title": "第三步：配置转化反应液并运行转化程序",
+      "source_text": "将上一步的反应产物取出，撕膜，置于EVO指定位置，再取一块新的PCR _Plate2，和两盒Liha50枪头，进行转化反应液配置，完成反应液配制后封膜，进入PCR仪运行转化程序，并将空枪头盒取出放于耗材载架，将原PCR _Plate1取出封膜，放入低温保存箱。",
+      "substeps": [
+        {
+          "id": "stage3_unseal_pcr_plate1",
+          "text": "将上一步反应产物 PCR_Plate1 取出并撕膜。",
+          "code_steps": ["remove_seal_pcr_plate1"]
+        },
+        {
+          "id": "stage3_load_pcr_plate1_to_evo",
+          "text": "将 PCR_Plate1 置于 EVO 指定位置。",
+          "code_steps": ["evo_load_pcr_plate1"]
+        },
+        {
+          "id": "stage3_prepare_evo_environment",
+          "text": "运行 EVO 前置环境准备程序。",
+          "code_steps": ["evo_run_inheco"]
+        },
+        {
+          "id": "stage3_prepare_transformation_mix",
+          "text": "取新的 PCR_Plate2 和两盒 Liha50 枪头，在 EVO 上进行转化反应液配置。",
+          "code_steps": ["evo_run_pre_transforming"]
+        },
+        {
+          "id": "stage3_remove_used_liha50",
+          "text": "将使用后的两盒 Liha50 枪头盒取出放于耗材载架。",
+          "code_steps": ["cytomat_24h_load_tips_liha50_2_3"]
+        },
+        {
+          "id": "stage3_store_original_pcr_plate1",
+          "text": "将原 PCR_Plate1 取出封膜，放入低温保存箱。",
+          "code_steps": ["seal_pcr_plate1_alps", "cytomat_2c450_load_pcr_plate1"]
+        },
+        {
+          "id": "stage3_run_transformation_program",
+          "text": "将 PCR_Plate2 封膜后进入 PCR 仪运行转化程序。",
+          "code_steps": ["seal_pcr_plate2_alps", "atc2_load_pcr_plate2", "atc2_run_transformation"]
+        }
+      ]
+    },
+    {
+      "id": "stage4_cell_revive",
+      "title": "第四步：转移至含 LB 的 Cell Plate 并复苏培养",
+      "source_text": "将上一步产物取出，撕膜，置于EVO指定位置，再取放有LB试剂的Cell Plate1，和Liha50枪头盒，运行EVO程序，将产物转移至Cell Plate1，结束后两块板封膜，将Cell Plate1放于振荡培养箱中振荡培养1h，原PCR _Plate2封膜后放入低温保存箱，枪头盒取出。",
+      "substeps": [
+        {
+          "id": "stage4_unseal_pcr_plate2",
+          "text": "将上一步产物 PCR_Plate2 取出并撕膜。",
+          "code_steps": ["remove_seal_pcr_plate2"]
+        },
+        {
+          "id": "stage4_load_pcr_plate2_to_evo",
+          "text": "将 PCR_Plate2 置于 EVO 指定位置。",
+          "code_steps": ["evo_load_pcr_plate2"]
+        },
+        {
+          "id": "stage4_add_lb_transfer",
+          "text": "取放有 LB 试剂的 Cell_Plate1 和 Liha50 枪头盒，运行 EVO 程序，将产物转移至 Cell_Plate1。",
+          "code_steps": ["evo_run_add_lb"]
+        },
+        {
+          "id": "stage4_remove_used_liha50",
+          "text": "将使用后的 Liha50 枪头盒取出。",
+          "code_steps": ["cytomat_24h_load_tips_liha50_4"]
+        },
+        {
+          "id": "stage4_store_pcr_plate2",
+          "text": "原 PCR_Plate2 封膜后放入低温保存箱。",
+          "code_steps": ["seal_pcr_plate2_alps", "cytomat_2c450_load_pcr_plate2"]
+        },
+        {
+          "id": "stage4_seal_and_load_cell_plate1",
+          "text": "Cell_Plate1 封膜后放入振荡培养箱。",
+          "code_steps": ["seal_cell_plate1_kbs", "tos1_load_cell_plate1"]
+        },
+        {
+          "id": "stage4_shaking_incubation",
+          "text": "设置振荡培养箱转速并将 Cell_Plate1 振荡培养 1 小时。",
+          "code_steps": ["tos1_set_shake_900", "tos1_incubate_cell_plate1_1h"]
+        },
+        {
+          "id": "stage4_centrifuge_cell_plate1",
+          "text": "将 Cell_Plate1 与 DWP 配平板放入 Rotanta460 离心，结束后回收配平板。",
+          "code_steps": ["rotanta_load_cell_plate1", "rotanta_run_cell_plate1", "staging_load_balance_dwps"]
+        }
+      ]
+    },
+    {
+      "id": "stage5_spreading",
+      "title": "第五步：将复苏产物涂布至八孔板并静置培养",
+      "source_text": "将Cell Plate1撕膜，放于Fluent，再取4块八孔板和一盒枪头，运行程序完成涂布。结束后将八孔板放于静置培养箱，其余耗材依次取出。",
+      "substeps": [
+        {
+          "id": "stage5_unseal_cell_plate1",
+          "text": "将 Cell_Plate1 撕膜。",
+          "code_steps": ["remove_seal_cell_plate1"]
+        },
+        {
+          "id": "stage5_load_cell_plate1_to_fluent",
+          "text": "将撕膜后的 Cell_Plate1 放于 Fluent。",
+          "code_steps": ["fluent_load_cell_plate1"]
+        },
+        {
+          "id": "stage5_load_spreading_consumables",
+          "text": "再取 4 块八孔板和一盒 Liha200 枪头，放置到 Fluent 指定位置。",
+          "code_steps": ["fluent_load_spreading_deck"]
+        },
+        {
+          "id": "stage5_run_spreading_method",
+          "text": "运行 Fluent 涂布程序，完成涂布。",
+          "code_steps": ["fluent_run_spreading"]
+        },
+        {
+          "id": "stage5_finish_cell_plate_and_tips",
+          "text": "涂布结束后将 Cell_Plate1 封膜并放回保存位置，同时取出使用后的 Liha200 枪头盒。",
+          "code_steps": ["seal_cell_plate1_kbs", "cytomat_10h_load_cell_plate1", "cytomat_24h_load_tips_liha200_1"]
+        },
+        {
+          "id": "stage5_incubate_8well_plates",
+          "text": "将 4 块八孔板放于静置培养箱。",
+          "code_steps": ["cytomat_10c_load_8well_plates"]
+        }
+      ]
+    }
+  ]
+}

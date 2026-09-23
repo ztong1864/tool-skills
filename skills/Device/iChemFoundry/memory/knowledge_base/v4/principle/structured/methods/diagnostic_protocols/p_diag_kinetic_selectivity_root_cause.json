@@ -1,0 +1,47 @@
+{
+  "TYPE_TAG": "DiagnosticProtocol",
+  "id": "p_diag_kinetic_selectivity_root_cause",
+  "name": "diagnose_low_kinetic_selectivity",
+  "display_name_zh": "动力学选择性不足根因诊断",
+  "input_required": {
+    "material_id": "required",
+    "measured_metrics": [
+      "kinetic_selectivity",
+      "diffusion_time_constant_for_each_guest"
+    ],
+    "structural_data": [
+      "window_diameter",
+      "framework_flexibility_indicator"
+    ]
+  },
+  "decision_tree": [
+    {
+      "step": 1,
+      "question": "window_diameter ∈ [4.0, 4.3] ?",
+      "if_no": "p_lever_pore_aperture_tuning_kinetic_selectivity",
+      "if_yes": "proceed to step 2"
+    },
+    {
+      "step": 2,
+      "question": "diffusion_time_ratio > 10 ?",
+      "if_no": "check loading-driven counter principle p_counter_reverse_kinetic_selectivity_high_loading",
+      "if_yes": "proceed to step 3"
+    },
+    {
+      "step": 3,
+      "question": "selectivity > 30 ?",
+      "if_no": "p_lever_pore_aperture_tuning_kinetic_selectivity",
+      "if_yes": "target met"
+    }
+  ],
+  "recommended_levers": [
+    "p_lever_pore_aperture_tuning_kinetic_selectivity"
+  ],
+  "anti_levers": [
+    "盲目增大极性官能团",
+    "盲目缩小孔径而忽略扩散速率"
+  ],
+  "linked_principle_ids": [
+    "p_principle_window_sieving_kinetic_separation"
+  ]
+}

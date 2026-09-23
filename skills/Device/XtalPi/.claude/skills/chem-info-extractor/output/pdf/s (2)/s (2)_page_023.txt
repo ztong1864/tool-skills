@@ -1,0 +1,22 @@
+S23
+ temperature, ( S)-3 (5.0631 g, 20 mmol) and 1g (3.7430 g, 22 mmol) were added
+sequentially with stirring under argon atmosphere at room temperature. The
+suspension was allowed to stir for 5 minutes  at room temperature before 60 mL of
+freshly distilled toluene were adde d. Then freshly distilled aldehyde 2c (5.1 mL, d =
+0.83 g/mL, 4.23 g, 30 mmol) was added. The re sulting mixture was stirred for 3
+minutes at room temperature. The flask was then heated in a pre- heated oil bath of
+130 °C for 12 h with stirring. After cooling to room temperature, the crude reaction
+mixture was concentrated by rotary evapor ation, flash chromatography on silica gel
+(eluent: petroleum ether/et hyl ether = 40/1) afforded  an orange-red liquid.
+To a 250-mL flask cooled with an ice-water bath were added the crude product
+prepared above, 60 mL of THF, and TB AF (5.2203 g, 20 mmol) sequentially. Then
+the ice-water bath was removed and the resulting mixture was allowed to stir at room temperature. After 3 h, the reaction was complete as monitored by TLC, and the resulting mixture was poured into 30 mL of  water and extracted with ethyl ether (100
+mL). The organic layer was separated , washed sequentially with water (3 × 20 mL)
+and brine (3 × 20 mL), and dried over anhydrous Na
+2SO 4. After filtration and
+evaporation, the residue was purified by chromatography on silica gel (eluent:
+petroleum ether/ethyl acetate = 30/1) to afford ( Ra)-4gc (1.7847 g, 49% yields over
+the two steps) as an oil:5 98% ee (HPLC conditions: Chiralcel AS-H column,
+hexane/i-PrOH = 200/1, 1.0 mL/min, λ = 214 nm,  tR(major) = 10.3 min, tR(minor) =
+11.0 min); [ α]D22 = - 69.1 (c = 1.02, hexane) (reported value: 95% ee; [ α]D26.1 = -61.7
+(c = 0.98, CHCl 3); 1H NMR (300 MHz, CDCl 3): δ 5.36-5.24 (m, 2 H, CH=C=CH),

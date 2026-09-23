@@ -1,0 +1,188 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_e14d513078d3",
+  "paper_id": "8a689977d757",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "N2",
+    "H2"
+  ],
+  "one_line_summary": "Zn2(ATRZ)2SO4-3H2O shows decomposition_temperature = 693.15 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "weight_loss_lattice_water (H2O) = 11.67 wt% at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "decomposition_temperature = 693.15 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "water_loss_temperature_range (H2O) = 128.0 K at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "hydrogen_bonding_network_with_lattice_water_and_amino_groups → stability"
+    },
+    {
+      "title": "Mechanism",
+      "body": "bridging_sulfate_counteranion → stability"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] use sulfate ions as auxiliary bridging pillars in MOF self-assembly → enables construction of multidimensional frameworks and can increase structural complexity/functionality; in this paper the resulting framework is rationalized as a 3D pcu network"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] select organic ligands with suitable flexibility, length, coordination ability, and symmetry → strongly influences MOF architecture and functionality"
+    },
+    {
+      "title": "Comparison",
+      "body": "sulfate ion coordination chemistry in general vs reported sulfate-pillared MOF materials: winner=subject_a on prevalence_in_literature"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_074dc329ed4c",
+    "trace_ac6405c2b474",
+    "trace_8531824fbee6",
+    "trace_966c4636093f",
+    "trace_4cdd6ec61e5d",
+    "trace_5b6759dcd8e8",
+    "trace_322c56d99e63",
+    "trace_c006fd9bcdaf",
+    "trace_55cabe406d4a",
+    "trace_ef171dbefd89",
+    "trace_72ebef87e57c",
+    "trace_9b8ae2f9fcca",
+    "trace_8ed4dc6aefca",
+    "trace_1a5d138bef62",
+    "trace_4dd3e826d72e",
+    "trace_0c75f5dc1124",
+    "trace_e4ed43556efc",
+    "trace_a7f537661e6c",
+    "trace_54ed25f813fd",
+    "trace_253a5673dc99",
+    "trace_a775b2806609",
+    "trace_65487c4406e4",
+    "trace_8c27d0139430",
+    "trace_fafcdbee5bca",
+    "trace_b2f67f40216a",
+    "trace_a781e6c80fcc",
+    "trace_98ceb06db269",
+    "trace_6707aa6d2053",
+    "trace_dbbf1a086125",
+    "trace_108236771619",
+    "trace_5b9c6e009f62",
+    "trace_6bbd391f060f",
+    "trace_c11b6910cf56",
+    "trace_f87f11453d5e",
+    "trace_e9f971e4a9e1",
+    "trace_e2a65788be9c",
+    "trace_662ccb29757a",
+    "trace_d6587179662e",
+    "trace_0327411db5b8",
+    "trace_23ff66c17df8",
+    "trace_b12bf1bd638b",
+    "trace_c999e23fdd3b",
+    "trace_5b6759dcd8e8",
+    "trace_6bbd391f060f",
+    "trace_65487c4406e4",
+    "trace_f87f11453d5e",
+    "trace_a7f537661e6c",
+    "trace_1a5d138bef62",
+    "trace_662ccb29757a",
+    "trace_108236771619",
+    "trace_322c56d99e63",
+    "trace_8ed4dc6aefca",
+    "trace_4cdd6ec61e5d",
+    "trace_966c4636093f",
+    "trace_23ff66c17df8",
+    "trace_c999e23fdd3b",
+    "trace_dbbf1a086125",
+    "trace_a781e6c80fcc",
+    "trace_0327411db5b8",
+    "trace_72ebef87e57c",
+    "trace_0c75f5dc1124",
+    "trace_fafcdbee5bca",
+    "trace_ac6405c2b474",
+    "trace_d6587179662e",
+    "trace_e4ed43556efc",
+    "trace_c11b6910cf56",
+    "trace_074dc329ed4c",
+    "trace_54ed25f813fd",
+    "trace_4dd3e826d72e",
+    "trace_e2a65788be9c",
+    "trace_8531824fbee6",
+    "trace_253a5673dc99",
+    "trace_b12bf1bd638b",
+    "trace_a775b2806609",
+    "trace_8c27d0139430",
+    "trace_9b8ae2f9fcca",
+    "trace_ef171dbefd89",
+    "trace_c006fd9bcdaf",
+    "trace_e9f971e4a9e1",
+    "trace_b2f67f40216a",
+    "trace_55cabe406d4a",
+    "trace_5b9c6e009f62",
+    "trace_98ceb06db269",
+    "trace_6707aa6d2053"
+  ],
+  "measurement_card_ids": [
+    "mcard_165da17eaab8",
+    "mcard_c39e51a1527a",
+    "mcard_9ab0d83d799f"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_899a97084487",
+    "mechcard_dfeaf356b2d1",
+    "mechcard_3b8e27ef1881",
+    "mechcard_6283bb922bb6"
+  ],
+  "recipe_card_ids": [
+    "recipe_df3bf49c8f88",
+    "recipe_c28339bd0980"
+  ],
+  "claim_card_ids": [
+    "claim_5643ed8d24db",
+    "claim_54bd309a9181",
+    "claim_aee6f094a0e0",
+    "claim_ebb1459c42f3",
+    "claim_37c936cbf6df",
+    "claim_089575e609c7",
+    "claim_f5b5874de91c"
+  ],
+  "design_rule_card_ids": [
+    "drule_3c4d92d4d467",
+    "drule_3f1d737de01e",
+    "drule_09006776d15c"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_8fa7572b1971"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_319e13e7a7fe"
+  ],
+  "dossier_ids": [
+    "dossier_44b3b0eaa368"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "Compound 1 exhibits ligand-centered fluorescence in the solid state at room temperature.",
+    "ATRZ− acts as a μ3 ligand linking three Zn(II) centers, while its amino groups remain non-coordinating in the framework.",
+    "The framework forms by ATRZ-bridged dinuclear Zn blocks assembling into 2D layers, which are further connected by μ2-SO4^2− into 3D."
+  ],
+  "data_quality": "medium",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:50.997137",
+  "updated_at": "2026-04-24T00:19:50.997140",
+  "raw_path": "相关文献/lin2015.pdf.pdf"
+}

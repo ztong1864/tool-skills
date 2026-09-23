@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_27124ff80696",
+  "canonical_material_id": "mat_cd6e86e5cb60",
+  "canonical_name": "[Zn7(trz)6(hip)4(H2O)2]-8H2O",
+  "metal_element": "Zn",
+  "node_signature_id": null,
+  "primary_linker_id": "lig_997f6b054d31",
+  "pillar_id": "pil_9b529ca41c80",
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_fcee62f3f191"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_6fe4116e1d7a",
+    "mechcard_8bc8ca2bfb6d"
+  ],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_a7c29926b243"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.3333333333333333,
+    "mechanism": 1.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": false,
+  "source_papers": [
+    "57f7dc1dff2e"
+  ],
+  "evidence_trace_ids": [
+    "trace_7acc6fdd81fa",
+    "trace_606d5b0e5fb3",
+    "trace_c2061045a375"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T16:52:39.370026",
+  "updated_at": "2026-04-23T16:53:22.520737"
+}

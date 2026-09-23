@@ -1,0 +1,48 @@
+{
+  "TYPE_TAG": "MaterialDossier",
+  "id": "dossier_27f3728b17e5",
+  "canonical_material_id": "mat_e9e53e0a6ff3",
+  "canonical_name": "carbonate-derivative",
+  "metal_element": null,
+  "node_signature_id": null,
+  "primary_linker_id": null,
+  "pillar_id": null,
+  "topology": null,
+  "formula": null,
+  "measurement_card_ids": [
+    "mcard_2d60a52612b5",
+    "mcard_0a99e3d1dd9a"
+  ],
+  "mechanism_card_ids": [],
+  "recipe_card_ids": [],
+  "claim_card_ids": [
+    "claim_74533a1b843c",
+    "claim_ffa577f14232"
+  ],
+  "design_rule_card_ids": [],
+  "failure_case_card_ids": [],
+  "completeness_vector": {
+    "measurement": 0.6666666666666666,
+    "mechanism": 0.0,
+    "recipe": 0.0,
+    "design_rule": 0.0,
+    "contradiction": 0.5
+  },
+  "missing_slots": [
+    "mechanism",
+    "recipe",
+    "design_rule"
+  ],
+  "is_incomplete": true,
+  "source_papers": [
+    "7eafab3ec2e2",
+    "524fd695803c"
+  ],
+  "evidence_trace_ids": [
+    "trace_6a8dd90fb4b8",
+    "trace_5b5fe284a347"
+  ],
+  "is_novel": false,
+  "created_at": "2026-04-23T19:13:19.238812",
+  "updated_at": "2026-04-23T22:49:36.180096"
+}

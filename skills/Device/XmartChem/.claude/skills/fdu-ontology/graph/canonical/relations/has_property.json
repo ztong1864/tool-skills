@@ -1,0 +1,86 @@
+{
+  "condition:resource-verification-passed--hasProperty--property:resource-availability": {
+    "from": "condition:resource-verification-passed",
+    "id": "condition:resource-verification-passed--hasProperty--property:resource-availability",
+    "relation_type": "hasProperty",
+    "to": "property:resource-availability"
+  },
+  "device-action:add-liquid--hasProperty--property:add-volume": {
+    "from": "device-action:add-liquid",
+    "id": "device-action:add-liquid--hasProperty--property:add-volume",
+    "relation_type": "hasProperty",
+    "to": "property:add-volume"
+  },
+  "device-action:add-liquid--hasProperty--property:substance": {
+    "from": "device-action:add-liquid",
+    "id": "device-action:add-liquid--hasProperty--property:substance",
+    "relation_type": "hasProperty",
+    "to": "property:substance"
+  },
+  "device-action:add-solid--hasProperty--property:add-weight": {
+    "from": "device-action:add-solid",
+    "id": "device-action:add-solid--hasProperty--property:add-weight",
+    "relation_type": "hasProperty",
+    "to": "property:add-weight"
+  },
+  "device-action:add-solid--hasProperty--property:substance": {
+    "from": "device-action:add-solid",
+    "id": "device-action:add-solid--hasProperty--property:substance",
+    "relation_type": "hasProperty",
+    "to": "property:substance"
+  },
+  "device-action:filter--hasProperty--property:add-volume": {
+    "from": "device-action:filter",
+    "id": "device-action:filter--hasProperty--property:add-volume",
+    "relation_type": "hasProperty",
+    "to": "property:add-volume"
+  },
+  "device-action:filter--hasProperty--property:dst-pos": {
+    "from": "device-action:filter",
+    "id": "device-action:filter--hasProperty--property:dst-pos",
+    "relation_type": "hasProperty",
+    "to": "property:dst-pos"
+  },
+  "device-action:high-filter--hasProperty--property:add-volume": {
+    "from": "device-action:high-filter",
+    "id": "device-action:high-filter--hasProperty--property:add-volume",
+    "relation_type": "hasProperty",
+    "to": "property:add-volume"
+  },
+  "device-action:high-filter--hasProperty--property:dst-pos": {
+    "from": "device-action:high-filter",
+    "id": "device-action:high-filter--hasProperty--property:dst-pos",
+    "relation_type": "hasProperty",
+    "to": "property:dst-pos"
+  },
+  "device-action:high-filter--hasProperty--property:substance": {
+    "from": "device-action:high-filter",
+    "id": "device-action:high-filter--hasProperty--property:substance",
+    "relation_type": "hasProperty",
+    "to": "property:substance"
+  },
+  "device-action:reaction-control--hasProperty--property:reaction-duration": {
+    "from": "device-action:reaction-control",
+    "id": "device-action:reaction-control--hasProperty--property:reaction-duration",
+    "relation_type": "hasProperty",
+    "to": "property:reaction-duration"
+  },
+  "device-action:reaction-control--hasProperty--property:temperature": {
+    "from": "device-action:reaction-control",
+    "id": "device-action:reaction-control--hasProperty--property:temperature",
+    "relation_type": "hasProperty",
+    "to": "property:temperature"
+  },
+  "resource:device-location--hasProperty--property:layout-code": {
+    "from": "resource:device-location",
+    "id": "resource:device-location--hasProperty--property:layout-code",
+    "relation_type": "hasProperty",
+    "to": "property:layout-code"
+  },
+  "resource:device-location--hasProperty--property:unit-position": {
+    "from": "resource:device-location",
+    "id": "resource:device-location--hasProperty--property:unit-position",
+    "relation_type": "hasProperty",
+    "to": "property:unit-position"
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "TYPE_TAG": "PaperInsightMemo",
+  "id": "memo_66d9777501a8",
+  "paper_id": "f3cdab115144",
+  "title": "",
+  "year": null,
+  "doi": null,
+  "normalized_task_id": "CO2_N2_separation",
+  "target_molecules": [
+    "CO2",
+    "N2",
+    "CH4",
+    "H2"
+  ],
+  "one_line_summary": "[M(atz)(bdc)0.5] shows thermal_stability_limit = 420.0 K for target gas",
+  "key_insights": [
+    {
+      "title": "Measurement",
+      "body": "thermal_stability_limit = 420.0 K at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "water_stability_duration (H2O) = 7.0 dimensionless at 1.013 bar"
+    },
+    {
+      "title": "Measurement",
+      "body": "BET_surface_area (CO2) = 377.9 m2/g at 1.013 bar"
+    },
+    {
+      "title": "Mechanism",
+      "body": "highly_polar_pores_with_O_donors_NH2_groups_pi_systems_and_electron_rich_atz → selectivity"
+    },
+    {
+      "title": "Mechanism",
+      "body": "uncoordinated_carboxyl_oxygen_atoms_on_pore_surface → selectivity"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] introduce amine groups and small-sized pores in a framework → constructs an efficient CO2-selective sorption material"
+    },
+    {
+      "title": "Design Rule",
+      "body": "[positive] incorporate specific polar functional groups such as -NH2, -COOH, or -OH on ligands → augments CO2 adsorptive affinity and selectivity"
+    },
+    {
+      "title": "Comparison",
+      "body": "the reported amine-containing porous framework system vs many MOFs with highly polar functional sites in the pores: winner=subject_a on CO2/N2_selectivity_ratio"
+    }
+  ],
+  "evidence_trace_ids": [
+    "trace_65f77cb2576d",
+    "trace_ddd3ee5450da",
+    "trace_ea8c153e102e",
+    "trace_6b443cfb9010",
+    "trace_b7b8c7dc0a59",
+    "trace_94588f537c8a",
+    "trace_b5f62df1c84a",
+    "trace_9db877bd2d08",
+    "trace_5a977d8755a3",
+    "trace_21f370b794fd",
+    "trace_5d4ce201d8fd",
+    "trace_baaf196c478c",
+    "trace_3b814984f435",
+    "trace_a64b7ce6a614",
+    "trace_d2b3bae30c80",
+    "trace_9eda7ede488c",
+    "trace_2bcf14925334",
+    "trace_4e3999f29290",
+    "trace_c313f3b5f8b8",
+    "trace_6eb17baa7ca5",
+    "trace_f38b38feb43d",
+    "trace_7ceb696664ff",
+    "trace_a92a30457704",
+    "trace_8d63f264bb5e",
+    "trace_a0d846a9f062",
+    "trace_dc52821a3aa2",
+    "trace_5d733f1afa80",
+    "trace_f12f6a0a29f5",
+    "trace_3bd9e043d846",
+    "trace_296413cbbf3c",
+    "trace_fa6a6c9f73a4",
+    "trace_ef117b1cb09d",
+    "trace_0f3e0d18ed67",
+    "trace_02a397cfdfdd",
+    "trace_4c1784490186",
+    "trace_f058af292861",
+    "trace_4263a08f1ed8",
+    "trace_2bcde9d6b174",
+    "trace_65f77cb2576d",
+    "trace_94588f537c8a",
+    "trace_a0d846a9f062",
+    "trace_3bd9e043d846",
+    "trace_4e3999f29290",
+    "trace_5a977d8755a3",
+    "trace_6eb17baa7ca5",
+    "trace_ea8c153e102e",
+    "trace_ef117b1cb09d",
+    "trace_dc52821a3aa2",
+    "trace_21f370b794fd",
+    "trace_2bcf14925334",
+    "trace_f38b38feb43d",
+    "trace_6b443cfb9010",
+    "trace_02a397cfdfdd",
+    "trace_f12f6a0a29f5",
+    "trace_9eda7ede488c",
+    "trace_4263a08f1ed8",
+    "trace_8d63f264bb5e",
+    "trace_0f3e0d18ed67",
+    "trace_4c1784490186",
+    "trace_baaf196c478c",
+    "trace_9db877bd2d08",
+    "trace_2bcde9d6b174",
+    "trace_b5f62df1c84a",
+    "trace_b7b8c7dc0a59",
+    "trace_5d4ce201d8fd",
+    "trace_a64b7ce6a614",
+    "trace_ddd3ee5450da",
+    "trace_296413cbbf3c",
+    "trace_fa6a6c9f73a4",
+    "trace_7ceb696664ff",
+    "trace_5d733f1afa80",
+    "trace_f058af292861",
+    "trace_c313f3b5f8b8",
+    "trace_3b814984f435",
+    "trace_d2b3bae30c80",
+    "trace_a92a30457704"
+  ],
+  "measurement_card_ids": [
+    "mcard_cf153577d332",
+    "mcard_50bd94361590",
+    "mcard_dc85a603344b",
+    "mcard_eabbb677d01a",
+    "mcard_2e00a3b6a910",
+    "mcard_039c933ca169",
+    "mcard_1a7fd736e62a",
+    "mcard_25f48ba3d799",
+    "mcard_caf312580840"
+  ],
+  "mechanism_card_ids": [
+    "mechcard_cf75605aa16f",
+    "mechcard_fd4d3d38fc24"
+  ],
+  "recipe_card_ids": [
+    "recipe_3dd3e3931a6d",
+    "recipe_07f26fad1ff6"
+  ],
+  "claim_card_ids": [
+    "claim_f3f61b49e568",
+    "claim_81351f24e844",
+    "claim_2f676d190303",
+    "claim_2d7f3d8af48f",
+    "claim_b16b3e66d01b",
+    "claim_13a3eafee5df",
+    "claim_81ac6816fcfe"
+  ],
+  "design_rule_card_ids": [
+    "drule_7707627083c1",
+    "drule_14afbf5004a2"
+  ],
+  "comparative_finding_card_ids": [
+    "comp_ede60e23c0d6"
+  ],
+  "failure_case_card_ids": [],
+  "material_instance_ids": [],
+  "canonical_material_ids": [
+    "mat_64d90fdebd09"
+  ],
+  "dossier_ids": [
+    "dossier_f9ad396fca86"
+  ],
+  "confirms_rule_ids": [],
+  "contradicts_rule_ids": [],
+  "extends_paper_ids": [],
+  "notable_quotes": [
+    "The frameworks contain two narrow amino-functionalized channels of 4.5 × 4.5 and 5.7 × 5.7 Å2, formed by bdc-pillared aminotriazolate layers.",
+    "Despite pore sizes larger than the kinetic diameters of H2 and N2, the MOFs show almost no uptake at 77 K and 1 atm: 1.5 and 0.8 cm3 g−1, respectively.",
+    "Two isostructural MOFs, [M(atz)(bdc)0.5] (M = Zn, Co), were synthesized as 3D microporous frameworks with a 6-connected self-penetrating a-Po net."
+  ],
+  "data_quality": "high",
+  "extraction_completeness": 1.0,
+  "build_id": "build_20260423_164514",
+  "created_at": "2026-04-24T00:19:51.046817",
+  "updated_at": "2026-04-24T00:19:51.046819",
+  "raw_path": "相关文献/liu2013.pdf-1.pdf"
+}

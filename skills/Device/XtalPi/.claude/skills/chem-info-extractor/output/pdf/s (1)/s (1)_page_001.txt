@@ -1,0 +1,90 @@
+2533
+© Georg Thieme Verlag  Stuttgart · New York — Synthesis  2018 , 50, 2533–2545D. Ma et al. Paper Syn  thesis
+Dimethylprolinol Versus Diphenylprolinol in CuBr2-Catalyzed
+Enantioselective Allenylation of Terminal Alkynols
+Dengke Ma
+Xinyu Duan Chunling Fu Xin Huang*
+Shengming Ma*
+
+0000-0002-2866-2431
+Laboratory of Molecular Recognition and Synthesis,
+Department of Chemistry, Zhejiang University, Hangzhou 310027, Zhejiang, People’s Republic of ChinaXinhuangzju@zju.edu.cnmasm@sioc.ac.cn+N
+H OH
+1,4-dioxane HOR1H
+OHR
+R
+( )n
+( )ncat. CuBr 2
+n = 1, 2, 3......O
+R1H
+37–61%
+90–99% eeR1 = alkyl, aryl(R) HOOCH
+n-C11H23
+phlomic acid
+95% eeR = Me vs Ph
+14-examples
+Received: 24.03.2018
+Accepted after revision: 30.03.2018Published online: 08.05.2018DOI: 10.1055/s-0036-1592007; Art ID: ss-2018-h0108-op
+Abstract The CuBr2-catalyzed enantioselective allenylation of terminal
+alkynols with carbon chains of different lengths has been developed.Compared with ( S)-α,α-diphenylprolinol, the reaction using ( S)-α,α-di-
+methylprolinol as the chiral amine afforded optically active 1,3-disub-stuted allenols with higher ee-values. Both aliphatic and aromatic alde-
+hydes could be applied. The naturally occurring phlomic acid wassynthesized in four steps from commercially available hex-5-yn-1-ol.
+Key words CuBr2, enantioselective allenylation, terminal alkynols, ( S)-
+α,α-diphenylprolinol, ( S)-α,α-dimethylprolinol, phlomic acid
+Optically active 1,3-disubstituted allenes1 are the key
+unit in some natural products or bioactive compounds,such as marasin,
+2 (R)-(–)-adenallene,3 and ( R)-(–)-cytal-
+lene.4 Allenols are potential precursors for a series of 1,3-
+disubstituted allenic natural products.5 Owing to the rich
+reactivity of the alcohol functionality towards other syn-thetically useful functional groups, including aldehydes,esters, amides, amines, halides, malonates, etc., chiral alle-nols are very useful starting materials in organic synthesis.So far, transition metal-catalyzed cyclization of allenols hasbeen a powerful tool for the construction of oxa-cyclic com-pounds.
+6 In addition, the axial chirality of allenes may be
+transferred to central chirality under suitable reaction con-ditions.
+7 Thus, the highly enantioselective synthesis of 1,3-
+disubstituted allenols is of high interest.
+Recently, significant advances on the synthesis of axially
+chiral allenes with functionalized groups such as boronates,alcohols, esters, amides, malonates, etc. have beenachieved.
+1,8 In 2015, we reported the CuBr2-catalyzed high-
+ly enantioselective synthesis of optically active allenes fromterminal alkynes, aldehydes, and ( R)- or ( S)-α,α-diphenyl-
+prolinol (Scheme 1, Equation 1).
+9 However, the enantio-
+selectivity for some α-allenols with longer carbon chainsbetween the allene moiety and alcohol functionality is not
+satisfactory (see also the data in Table 1). To our delight,when ( S)-α,α-dimethylprolinol was used instead of ( S)-α,α-
+diphenylprolinol, the enantioselectivity could be improvedto a satisfactory level.
+10 Reported methods for the prepara-
+tion of optically active 1,3-disubstituted allenols usuallysuffered from lengthy steps, harsh conditions, limitedscopes, and low enantioselectivity, etc.
+1b,11 Particularly, re-
+ports on the preparation of optically active allenols withlonger carbon chains than γ-allenols are rare. Herein, we
+wish to report our recent investigations on developing ageneral access to these 1,3-disubstituted allenols with apractical enantioselectivity from the readily available ter-minal alkynols (Scheme 1, Equation 2).
+12
+Scheme 1  CuBr2-catalyzed enantioselective allenylation of terminal
+alkynes
+Different terminal alkynols 1a–f were reacted with un-
+decanal ( 2a) under CuBr2 (20 mol%) in the presence of ( S)-
+α,α-diphenylprolinol [( S)-3a] and ( S)-α,α-dimethylprolinol
+[(S)-3b], respectively. As a result, the reactions promoted by
+(S)-3b afforded higher ee values (93–96% ee) than those by
+(S)-3a (85–93% ee) in all cases (Table 1, entries 1–6). WhenH
+FGcat. CuBr 2FG +
+N
+HPh
+Ph
+OHRCHO+
+R
+R = alkyl, aryl(S) (R)
++ +N
+H OH1,4-dioxaneHOR1H
+OHMe
+Me( )n
+( )ncat. CuBr 2
+n = 1, 2, 3......O
+R1H
+R1 = alkyl, aryl(S) (R)1,4-dioxane
+70 or 130 °C(1)
+(2)FG = CH 2OH, CHPhOH, (CH 2)2OH
+CH2NHTs, CH 2NHBz, CH 2NHBoc
+CH2CH(CO 2Me) 2, carbohydrateOur previous work:
+This work:SYNTHESIS 0039-78811437-210X
+© Georg Thieme Verlag  Stuttgart · New York
+2018, 50, 2533–2545
+paper
+en

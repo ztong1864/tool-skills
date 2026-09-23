@@ -1,0 +1,50 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_8723df4f5ffb",
+  "paper_id": "08078d819c99",
+  "raw_path": "相关文献/Zhang 等 - 2004 - Two Unprecedented 3-Connected Three-Dimensional Ne.pdf",
+  "title": "Two Unprecedented 3-Connected Three-Dimensional Ne",
+  "authors": [
+    "Zhang"
+  ],
+  "year": 2004,
+  "doi": null,
+  "journal": null,
+  "task_type": "gas separation",
+  "normalized_task_id": "gas_separation",
+  "target_molecules": [
+    "H2"
+  ],
+  "mechanism_type": null,
+  "has_computational_data": false,
+  "has_experimental_data": true,
+  "has_comparison_tables": false,
+  "has_synthesis_section": true,
+  "has_stability_tests": false,
+  "mentioned_materials": [
+    "USF-1"
+  ],
+  "mentioned_metals": [
+    "Cu",
+    "Co",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA",
+    "imidazolate"
+  ],
+  "mentioned_topologies": [
+    "nbo",
+    "nia"
+  ],
+  "key_sections": {
+    "results_summary": "Copper Triazolate Networks\nTwo Unprecedented 3-Connected Three-\nDimensional Networks of Copper(i) Triazolates:\nIn Situ Formation of Ligands by Cycloaddition of\nNitriles and Ammonia**\nJie-Peng Zhang, S"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T19:42:03.866289"
+}

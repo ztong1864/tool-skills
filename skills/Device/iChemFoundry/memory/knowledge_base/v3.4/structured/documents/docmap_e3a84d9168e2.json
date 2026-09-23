@@ -1,0 +1,58 @@
+{
+  "TYPE_TAG": "DocumentMap",
+  "id": "docmap_e3a84d9168e2",
+  "paper_id": "92ab82a51655",
+  "raw_path": "相关文献/Magnin 等 - 2023 - Abnormal CO2 and H2O Diffusion in CALF-20(Zn) Meta.pdf",
+  "title": "Abnormal CO2 and H2O Diffusion in CALF-20(Zn) Meta",
+  "authors": [
+    "Magnin"
+  ],
+  "year": 2023,
+  "doi": null,
+  "journal": null,
+  "task_type": "CO2 capture",
+  "normalized_task_id": "CO2_capture",
+  "target_molecules": [
+    "CO2",
+    "CH4",
+    "H2",
+    "C2H6"
+  ],
+  "mechanism_type": "thermodynamic",
+  "has_computational_data": true,
+  "has_experimental_data": true,
+  "has_comparison_tables": true,
+  "has_synthesis_section": true,
+  "has_stability_tests": true,
+  "mentioned_materials": [
+    "CALF-20",
+    "UiO-66",
+    "MOF-303",
+    "MOF-74",
+    "MIL-53"
+  ],
+  "mentioned_metals": [
+    "Zn",
+    "Co",
+    "Cr",
+    "Zr",
+    "In",
+    "V",
+    "Y"
+  ],
+  "mentioned_linkers": [
+    "TED",
+    "azolate",
+    "ATA"
+  ],
+  "mentioned_topologies": [
+    "acs"
+  ],
+  "key_sections": {
+    "abstract": "Carbon mitigation is one challenging issue that the\nworld is facing. To tackle the deleterious impacts of CO2, processes",
+    "results_summary": "Abnormal CO2 and H2O Diffusion in CALF-20(Zn) Metal−Organic\nFramework: Fundamental Understanding of CO2 Capture\nYann Magnin,* Estelle Dirand, Guillaume Maurin, and Philip L. Llewellyn\nCite This: https"
+  },
+  "page_count": 1,
+  "extraction_confidence": 0.5,
+  "created_at": "2026-04-23T18:32:48.311961"
+}
