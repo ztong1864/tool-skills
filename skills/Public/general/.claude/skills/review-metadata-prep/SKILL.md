@@ -110,7 +110,7 @@ python <review-root>/skills/review-metadata-prep/scripts/prepare_metadata.py \
   --discover-from-pdf-root \
   --append-registry \
   --use-llm \
-  --model gpt-5.4 \
+  --model gpt-6-luna \
   --reasoning-effort high \
   --wire-api responses
 ```

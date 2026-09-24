@@ -369,7 +369,7 @@ def main() -> int:
         or (foundryclaw["model"] if foundryclaw else "")
         or os.environ.get("REVIEW_WRITING_MODEL")
         or dotenv.get("REVIEW_WRITING_MODEL")
-        or "gpt-5.4"
+        or "gpt-6-luna"
     )
     wire_api = (
         args.wire_api

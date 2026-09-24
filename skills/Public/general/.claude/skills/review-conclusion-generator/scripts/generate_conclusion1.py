@@ -1030,7 +1030,7 @@ def run(args: argparse.Namespace) -> int:
     else:
         base_url = args.base_url or os.environ.get("OPENAI_BASE_URL", "https://api.openai.com")
         api_key = resolve_api_key(args.api_key, base_url)
-        model = args.model or os.environ.get("REVIEW_CONCLUSION_MODEL", "gpt-5.4")
+        model = args.model or os.environ.get("REVIEW_CONCLUSION_MODEL", "gpt-6-luna")
     prefer_chat = os.environ.get("REVIEW_CONCLUSION_WIRE_API", "").strip().lower() in {
         "chat",
         "chat-completions",
@@ -1159,7 +1159,7 @@ def parse_args() -> argparse.Namespace:
                              "Default: https://api.openai.com")
     parser.add_argument("--model", default="",
                         help="Model name (or set REVIEW_CONCLUSION_MODEL env var). "
-                             "Default: gpt-5.4")
+                             "Default: gpt-6-luna")
     return parser.parse_args()
 
 

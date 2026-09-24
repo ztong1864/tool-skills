@@ -220,7 +220,7 @@ def model_configuration(matrix_path: Path, args: argparse.Namespace) -> dict[str
     model = str(args.model or "").strip() or configured_value(
         "REVIEW_REFERENCE_OUTLINE_MODEL",
         dotenv,
-        configured_value("REVIEW_WRITING_MODEL", dotenv, "gpt-5.4"),
+        configured_value("REVIEW_WRITING_MODEL", dotenv, "gpt-6-luna"),
     )
     wire_api = str(args.wire_api or "").strip() or configured_value(
         "REVIEW_REFERENCE_OUTLINE_WIRE_API",

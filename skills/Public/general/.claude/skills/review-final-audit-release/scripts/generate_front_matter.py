@@ -245,7 +245,7 @@ def _front_matter_model_config() -> dict[str, str]:
     model = (
         os.environ.get("REVIEW_FRONT_MATTER_MODEL", "").strip()
         or os.environ.get("REVIEW_WRITING_MODEL", "").strip()
-        or "gpt-5.4"
+        or "gpt-6-luna"
     )
     if not api_key:
         raise RuntimeError(

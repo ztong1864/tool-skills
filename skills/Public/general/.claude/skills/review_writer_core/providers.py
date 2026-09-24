@@ -9,7 +9,7 @@ from urllib.parse import urlsplit, urlunsplit
 TEXT_WIRE_APIS = {"responses", "chat-completions"}
 IMAGE_WIRE_APIS = {"images", "chat-completions"}
 DEFAULT_OPENAI_BASE_URL = "https://api.openai.com/v1"
-DEFAULT_TEXT_MODEL = "gpt-5.4"
+DEFAULT_TEXT_MODEL = "gpt-6-luna"
 DEFAULT_IMAGE_MODEL = "gpt-image-2"
 DEFAULT_TEXT_WIRE_API = "chat-completions"
 DEFAULT_IMAGE_WIRE_API = "images"

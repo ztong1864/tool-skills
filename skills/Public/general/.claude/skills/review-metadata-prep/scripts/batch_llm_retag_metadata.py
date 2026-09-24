@@ -145,7 +145,7 @@ def main() -> int:
     else:
         api_key = args.api_key or os.environ.get("OPENAI_API_KEY", "")
         base_url = args.base_url or os.environ.get("OPENAI_BASE_URL", "https://api.openai.com")
-        model = args.model or os.environ.get("REVIEW_METADATA_MODEL", "gpt-5.4")
+        model = args.model or os.environ.get("REVIEW_METADATA_MODEL", "gpt-6-luna")
     reasoning_effort = args.reasoning_effort or os.environ.get("REVIEW_METADATA_REASONING_EFFORT", "high")
     wire_api = args.wire_api or os.environ.get("REVIEW_METADATA_WIRE_API", "responses")
     if not api_key:
