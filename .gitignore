@@ -76,3 +76,9 @@ desktop.ini
 
 # Claude Code worktrees
 .claude/worktrees/
+
+# ---------------------------------------------------------------------------
+# Moved-in old skill backups
+# ---------------------------------------------------------------------------
+old_skills_2206/
+old_skills_tools_2309/
