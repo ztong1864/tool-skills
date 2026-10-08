@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-figure-style-redraw
 description: Redraw selected source figures or schemes into a unified organic review style while preserving chemistry and content, using approved figure candidates and a configurable OpenAI-compatible image edit API. Use after section drafting has produced figure_candidates.json and before manuscript merge.
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-topic-paper-discovery
 description: Start a review project from a user topic, expand keywords against the eight LLM allene classification tags, retrieve local candidates from the metadata library, and optionally enrich with the hosted SciAtlas knowledge-graph search; produce 20-30 candidate papers for human check.
 ---

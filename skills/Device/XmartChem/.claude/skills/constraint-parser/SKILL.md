@@ -47,6 +47,7 @@ python scripts/parse_constraints.py --input-file instruction.txt --table-file ch
 - 表格转换默认读取 Excel 的第一个工作表。
 - 用户上传的表格默认不存在表头；脚本读取时不把第一行当列名，写出 CSV 时也不生成表头。
 - CSV 输出使用 UTF-8 with BOM，便于 Excel 和下游脚本读取中文。
+- 在 FounDryClaw 中运行时，模型接口一律使用当前用户在“密钥管理”中保存的 OPENAI-API-KEY（接口地址和 API Key），模型为 `gpt-6-luna`（可用环境变量 `CONSTRAINT_PARSER_MODEL` 覆盖）；未保存该密钥时脚本直接报错并提示先添加，不会改用 `.env`。不需要事先检查密钥或环境变量，直接运行脚本即可；只有脚本实际报错时才把该错误如实回传。下面的 `.env` 设置只用于 FounDryClaw 之外的独立运行。
 - 脚本先读仓库根目录 `.env`，再使用当前环境变量覆盖。
 - 只能输出 JSON 和 CSV 文件，不输出 Markdown 或解释性文件。
 

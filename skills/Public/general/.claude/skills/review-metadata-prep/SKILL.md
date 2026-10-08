@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-metadata-prep
 description: Prepare a MinerU-parsed review-writing paper library for metadata review. Use when Codex needs to extract or validate required paper metadata and eight fixed LLM classification tags from PDF/Markdown/content_list outputs.
 ---

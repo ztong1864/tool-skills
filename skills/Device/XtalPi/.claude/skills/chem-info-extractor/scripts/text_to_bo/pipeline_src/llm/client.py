@@ -1,10 +1,80 @@
 import json
 import os
 import re
+import urllib.error
+import urllib.request
+from functools import lru_cache
 from typing import Any, Dict, Optional, Tuple
 
 from pipeline_src.llm.cache import load_cache, make_cache_key, get_cached, save_cache
 from pipeline_src.llm.validator import validate_schema
+
+
+# --- FounDryClaw 密钥管理 key (same block in every FounDryClaw device skill script) ---
+PLATFORM_MODEL = "gpt-6-luna"
+PLATFORM_KEY_MISSING = (
+    "未在 FounDryClaw“密钥管理”中找到 OPENAI-API-KEY：请在 设置 → 密钥管理 中添加 "
+    "OPENAI-API-KEY（接口地址和 API Key）后重试。"
+)
+
+
+class PlatformKeyError(RuntimeError):
+    """Inside FounDryClaw the 密钥管理 OPENAI-API-KEY is required; raised when it is
+    missing or cannot be read. There is deliberately no fallback to .env there."""
+
+
+def _trust_system_ca_store() -> None:
+    """Windows only: also trust the OS certificate store. Antivirus HTTPS scanning (e.g. Avast Web/Mail
+    Shield) re-signs traffic with a root that only the OS store knows, so certifi alone fails with
+    CERTIFICATE_VERIFY_FAILED. Verification stays on; the OS roots are merged into a CA bundle."""
+    if sys.platform != "win32" or os.environ.get("REQUESTS_CA_BUNDLE") or os.environ.get("SSL_CERT_FILE"):
+        return
+    try:
+        import ssl
+        import tempfile
+
+        import certifi
+
+        pems = [Path(certifi.where()).read_text(encoding="utf-8")]
+        for store in ("ROOT", "CA"):
+            for cert, encoding, _trust in ssl.enum_certificates(store):
+                if encoding == "x509_asn":
+                    pems.append(ssl.DER_cert_to_PEM_cert(cert))
+        bundle = Path(tempfile.gettempdir()) / "foundryclaw_ca_bundle.pem"
+        bundle.write_text("\n".join(pems), encoding="utf-8")
+        os.environ["REQUESTS_CA_BUNDLE"] = os.environ["SSL_CERT_FILE"] = str(bundle)
+    except Exception:
+        pass  # keep the default bundle
+
+
+
+@lru_cache(maxsize=None)
+def platform_llm_config(model_env: str) -> "tuple[str, str, str] | None":
+    """(base_url, api_key, model) from the invoking user's OPENAI-API-KEY in 密钥管理,
+    model gpt-6-luna unless the model_env variable overrides it. Returns None outside
+    FounDryClaw (FOUNDRYCLAW_MODEL_ROUTER_* unset), where the .env settings apply."""
+    base = str(os.environ.get("FOUNDRYCLAW_MODEL_ROUTER_BASE_URL") or "").strip()
+    token = str(os.environ.get("FOUNDRYCLAW_MODEL_ROUTER_TOKEN") or "").strip()
+    if not base or not token:
+        return None
+    _trust_system_ca_store()
+    request = urllib.request.Request(
+        base.rstrip("/") + "/api/model-router/internal/openai-key",
+        headers={"Authorization": f"Bearer {token}", "Accept": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=10) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, ValueError, OSError) as exc:
+        raise PlatformKeyError(f"无法从 FounDryClaw 读取“密钥管理”中的 OPENAI-API-KEY：{exc}") from exc
+    if not isinstance(payload, dict) or not payload.get("configured"):
+        raise PlatformKeyError(PLATFORM_KEY_MISSING)
+    base_url = str(payload.get("base_url") or "").strip()
+    api_key = str(payload.get("api_key") or "").strip()
+    if not base_url or not api_key:
+        raise PlatformKeyError(PLATFORM_KEY_MISSING)
+    return base_url, api_key, os.getenv(model_env) or PLATFORM_MODEL
+# --- end FounDryClaw 密钥管理 key ---
 
 
 class LLMClient:
@@ -14,6 +84,14 @@ class LLMClient:
         self.model = os.getenv(config["model_env"], "").strip() or None
         temperature_text = os.getenv(config["temperature_env"], "").strip()
         self.temperature = float(temperature_text) if temperature_text else None
+        platform = platform_llm_config("CHEM_INFO_EXTRACTOR_MODEL")
+        if platform:
+            # FounDryClaw: the user's 密钥管理 key and gpt-6-luna, which rejects `temperature`,
+            # so it is not sent (the value below only keeps the cache key stable).
+            self.base_url, self.api_key, self.model = platform
+            if self.temperature is None:
+                self.temperature = 0.0
+        self.send_temperature = platform is None
         self.max_retries = int(config.get("max_retries", 2))
         self.request_timeout_seconds = float(config.get("request_timeout_seconds", 120))
         self.cache_dir = config.get("cache_dir")
@@ -71,15 +149,17 @@ class LLMClient:
         raise json.JSONDecodeError("Unable to parse JSON response", content, 0)
 
     def _chat(self, system_prompt: str, user_prompt: str, response_format: Optional[Dict[str, Any]]) -> Dict[str, Any]:
-        response = self._client.chat.completions.create(
-            model=self.model,
-            messages=[
+        request: Dict[str, Any] = {
+            "model": self.model,
+            "messages": [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt},
             ],
-            response_format=response_format,
-            temperature=self.temperature,
-        )
+            "response_format": response_format,
+        }
+        if self.send_temperature:
+            request["temperature"] = self.temperature
+        response = self._client.chat.completions.create(**request)
         content = response.choices[0].message.content
         if content is None:
             raise ValueError("Empty response content from LLM.")

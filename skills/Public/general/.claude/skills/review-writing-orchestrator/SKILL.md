@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-writing-orchestrator
 description: Use when a review-writing project needs stage ordering, artifact gates, and human approval checkpoints from discovery through DOCX export.
 ---

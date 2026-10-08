@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-section-drafting-figure-picking
 description: Draft each review section from section_blueprint.json, literature matrix, and writing rules; each section is a separate output file and should be written by a separate subagent when possible.
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-literature-acquisition
 description: Search Crossref from a review topic, rank journal-article candidates, resolve lawful open-access PDFs through a Crossref/Europe PMC/Semantic Scholar/optional Unpaywall fallback chain, validate downloads, and register them in review-library. Use when the user asks to find papers by topic, download accessible journal articles, or grow the shared Library from online sources.
 ---

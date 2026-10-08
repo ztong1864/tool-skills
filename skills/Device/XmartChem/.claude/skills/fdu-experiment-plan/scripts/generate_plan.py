@@ -13,6 +13,10 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+import urllib.error
+import urllib.request
+from functools import lru_cache
+
 import pandas as pd
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -126,7 +130,7 @@ def parse_reaction_duration_seconds(steps_text: str) -> tuple[int, int, int, int
 
 def call_llm(prompt: str, system_content: str = "你只输出干净的 Markdown，不要解释，不要代码围栏。") -> str:
     client = get_openai_client()
-    model = require_llm_config(OPENAI_MODEL, "OPENAI_MODEL")
+    model = resolve_llm_config()[2]
     extra_body = build_extra_body(model)
     try:
         request_kwargs: dict[str, Any] = {
@@ -135,7 +139,7 @@ def call_llm(prompt: str, system_content: str = "你只输出干净的 Markdown�
                 {"role": "system", "content": system_content},
                 {"role": "user", "content": prompt},
             ],
-            "temperature": 0.2,
+            **({} if platform_llm_config("FDU_EXPERIMENT_PLAN_MODEL") else {"temperature": 0.2}),  # gpt-6-luna on the 密钥管理 key rejects `temperature`
         }
         if extra_body is not None:
             request_kwargs["extra_body"] = extra_body
@@ -146,13 +150,94 @@ def call_llm(prompt: str, system_content: str = "你只输出干净的 Markdown�
         raise ExperimentPlanError(f"LLM request failed: {exc}") from exc
 
 
+# --- FounDryClaw 密钥管理 key (same block in every FounDryClaw device skill script) ---
+PLATFORM_MODEL = "gpt-6-luna"
+PLATFORM_KEY_MISSING = (
+    "未在 FounDryClaw“密钥管理”中找到 OPENAI-API-KEY：请在 设置 → 密钥管理 中添加 "
+    "OPENAI-API-KEY（接口地址和 API Key）后重试。"
+)
+
+
+class PlatformKeyError(RuntimeError):
+    """Inside FounDryClaw the 密钥管理 OPENAI-API-KEY is required; raised when it is
+    missing or cannot be read. There is deliberately no fallback to .env there."""
+
+
+def _trust_system_ca_store() -> None:
+    """Windows only: also trust the OS certificate store. Antivirus HTTPS scanning (e.g. Avast Web/Mail
+    Shield) re-signs traffic with a root that only the OS store knows, so certifi alone fails with
+    CERTIFICATE_VERIFY_FAILED. Verification stays on; the OS roots are merged into a CA bundle."""
+    if sys.platform != "win32" or os.environ.get("REQUESTS_CA_BUNDLE") or os.environ.get("SSL_CERT_FILE"):
+        return
+    try:
+        import ssl
+        import tempfile
+
+        import certifi
+
+        pems = [Path(certifi.where()).read_text(encoding="utf-8")]
+        for store in ("ROOT", "CA"):
+            for cert, encoding, _trust in ssl.enum_certificates(store):
+                if encoding == "x509_asn":
+                    pems.append(ssl.DER_cert_to_PEM_cert(cert))
+        bundle = Path(tempfile.gettempdir()) / "foundryclaw_ca_bundle.pem"
+        bundle.write_text("\n".join(pems), encoding="utf-8")
+        os.environ["REQUESTS_CA_BUNDLE"] = os.environ["SSL_CERT_FILE"] = str(bundle)
+    except Exception:
+        pass  # keep the default bundle
+
+
+
+@lru_cache(maxsize=None)
+def platform_llm_config(model_env: str) -> "tuple[str, str, str] | None":
+    """(base_url, api_key, model) from the invoking user's OPENAI-API-KEY in 密钥管理,
+    model gpt-6-luna unless the model_env variable overrides it. Returns None outside
+    FounDryClaw (FOUNDRYCLAW_MODEL_ROUTER_* unset), where the .env settings apply."""
+    base = str(os.environ.get("FOUNDRYCLAW_MODEL_ROUTER_BASE_URL") or "").strip()
+    token = str(os.environ.get("FOUNDRYCLAW_MODEL_ROUTER_TOKEN") or "").strip()
+    if not base or not token:
+        return None
+    _trust_system_ca_store()
+    request = urllib.request.Request(
+        base.rstrip("/") + "/api/model-router/internal/openai-key",
+        headers={"Authorization": f"Bearer {token}", "Accept": "application/json"},
+    )
+    try:
+        with urllib.request.urlopen(request, timeout=10) as response:
+            payload = json.loads(response.read().decode("utf-8"))
+    except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, ValueError, OSError) as exc:
+        raise PlatformKeyError(f"无法从 FounDryClaw 读取“密钥管理”中的 OPENAI-API-KEY：{exc}") from exc
+    if not isinstance(payload, dict) or not payload.get("configured"):
+        raise PlatformKeyError(PLATFORM_KEY_MISSING)
+    base_url = str(payload.get("base_url") or "").strip()
+    api_key = str(payload.get("api_key") or "").strip()
+    if not base_url or not api_key:
+        raise PlatformKeyError(PLATFORM_KEY_MISSING)
+    return base_url, api_key, os.getenv(model_env) or PLATFORM_MODEL
+# --- end FounDryClaw 密钥管理 key ---
+
+
+def resolve_llm_config() -> tuple[str, str, str]:
+    """(base_url, api_key, model): the user's 密钥管理 key inside FounDryClaw (never .env),
+    otherwise OPENAI_BASE_URL / OPENAI_API_KEY / OPENAI_MODEL from .env."""
+    try:
+        platform = platform_llm_config("FDU_EXPERIMENT_PLAN_MODEL")
+    except PlatformKeyError as exc:
+        raise ExperimentPlanError(str(exc)) from exc
+    if platform:
+        return platform
+    return (
+        require_llm_config(OPENAI_BASE_URL, "OPENAI_BASE_URL"),
+        require_llm_config(OPENAI_API_KEY, "OPENAI_API_KEY"),
+        require_llm_config(OPENAI_MODEL, "OPENAI_MODEL"),
+    )
+
+
 def get_openai_client() -> OpenAI:
     global OPENAI_CLIENT
     if OPENAI_CLIENT is not None:
         return OPENAI_CLIENT
-    api_key = require_llm_config(OPENAI_API_KEY, "OPENAI_API_KEY")
-    base_url = require_llm_config(OPENAI_BASE_URL, "OPENAI_BASE_URL")
-    require_llm_config(OPENAI_MODEL, "OPENAI_MODEL")
+    base_url, api_key, _model = resolve_llm_config()
     OPENAI_CLIENT = OpenAI(
         api_key=api_key,
         base_url=base_url,

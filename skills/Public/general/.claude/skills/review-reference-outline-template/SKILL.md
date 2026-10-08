@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-reference-outline-template
 description: Use AI to extract only the format, hierarchy, rhetorical organization, and writing conventions of an uploaded reference review PDF, DOCX, Markdown, or text file, then transfer that abstract style onto the current Matrix without copying source topics, claims, headings, citations, or scientific content. Use when a review project should imitate how a reference review is organized and written, not what it says.
 ---

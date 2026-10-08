@@ -29,5 +29,6 @@ description: 这是化学实验流程的一部分，用于将结构化实验方�
 - 不输出设备运行时字段和资源绑定字段。
 - 只有实验方案明确出现高滤语义时，才使用高滤步骤类型。
 - 对 `intern-s1-pro`、`intern-s1`、`intern-s1-mini` 这类模型，会自动关闭 `thinking_mode`。
+- 在 FounDryClaw 中运行时，模型接口一律使用当前用户在“密钥管理”中保存的 OPENAI-API-KEY（接口地址和 API Key），模型为 `gpt-6-luna`（可用环境变量 `FDU_STEP_JSON_MODEL` 覆盖）；未保存该密钥时脚本直接报错并提示先添加，不会改用 `.env`。不需要事先检查密钥或环境变量，直接运行脚本即可；只有脚本实际报错时才把该错误如实回传。下面的 `.env` 设置只用于 FounDryClaw 之外的独立运行。
 - 生成过程会先读取仓库根目录 `.env`，再使用当前环境变量覆盖。
 - 生成过程依赖 OpenAI 兼容接口，`OPENAI_API_KEY`、`OPENAI_BASE_URL`、`OPENAI_MODEL` 和 `OPENAI_TEMPERATURE` 都必须可用。

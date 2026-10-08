@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-outline-summary-chart
 description: Use when an approved final review Markdown needs one current full-review summary chart before document export.
 ---

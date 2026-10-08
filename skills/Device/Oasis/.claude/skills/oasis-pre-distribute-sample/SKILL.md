@@ -1,4 +1,4 @@
-﻿---
+---
 name: oasis-pre-distribute-sample
 description: 查询 Oasis 中某个临时实验已经分配好的样品信息。当用户已经拿到了 commonlyOrderId / associateId，想看“已分配样品是什么、对应哪个库位、样品 ID 是什么、预分样结果长什么样”时调用本技能；不要把它误当成入库接口或步骤保存接口。
 when: 当目标是根据 associateId 查询预分样结果时调用；它只负责读取已分配样品，不负责执行入库、不负责保存步骤，也不负责启动实验。

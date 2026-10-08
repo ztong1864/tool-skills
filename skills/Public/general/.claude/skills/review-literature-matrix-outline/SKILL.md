@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-literature-matrix-outline
 description: Read every paper explicitly selected by the human reviewer, build a concise fixed-field literature matrix, and draft review outline options using the writing-rule skill.
 ---

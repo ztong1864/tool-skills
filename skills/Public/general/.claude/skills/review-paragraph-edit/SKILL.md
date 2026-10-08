@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-paragraph-edit
 description: Paragraph-level incremental editing for review drafts. Supports targeted modification of individual paragraphs by paragraph_id, with automatic citation renumbering, figure binding maintenance, and version history for rollback.
 ---

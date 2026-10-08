@@ -1,4 +1,4 @@
-﻿---
+---
 name: labkag-skill
 description: "API wrapper skill for LabKAG. Use when an agent needs to call the LabKAG HTTP API through the bundled CLI script for health checks, upload, extraction, ingestion, literature query, evidence search, or knowledge inspection."
 ---

@@ -661,5 +661,12 @@
     "molecular_formula": "C8H12CuF6N4P",
     "molecular_weight": 372.72,
     "iupac_name": "tetrakis(acetonitrile);copper(1+);hexafluorophosphate"
+  },
+  "2133-40-6": {
+    "query": "2133-40-6",
+    "cid": 2733200,
+    "molecular_formula": "C6H12ClNO2",
+    "molecular_weight": 165.62,
+    "iupac_name": "methyl (2S)-pyrrolidine-2-carboxylate;hydrochloride"
   }
 }

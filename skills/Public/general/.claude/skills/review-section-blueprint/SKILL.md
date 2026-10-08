@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-section-blueprint
 description: Middle-layer writing-rule skill that converts the selected outline and literature matrix into section_blueprint.json for constrained section writing.
 ---

@@ -1,0 +1,5 @@
+# LabOntology 执行策略：启动实验会触发真实实验或仪器运行，必须先取得用户的明确确认。
+# requires_confirmation 由 Runtime 强制执行，不依赖 Agent 自己判断影响程度；
+# side_effect_level 不是 read_only，因此失败后不会被自动重试，也不能用作 agent_fallback。
+side_effect_level: device_action
+requires_confirmation: true

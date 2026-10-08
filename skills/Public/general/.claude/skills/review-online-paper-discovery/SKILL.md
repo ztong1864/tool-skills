@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-online-paper-discovery
 description: Start a review project from a user topic, search Crossref/SciAtlas for candidate papers, let a human confirm the shortlist, resolve a download source for each, then register the human's manually-downloaded PDFs into the shared library.
 ---

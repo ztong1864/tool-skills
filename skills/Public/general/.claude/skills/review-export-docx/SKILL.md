@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-export-docx
 description: Convert a finalized review Markdown draft into a Word DOCX that matches the bundled ACS-style review_template.docx. Use after the review writing pipeline has produced a stable first_draft.md or final_draft.md and the user wants a deliverable .docx with proper section styles, captions, tables, and math.
 ---

@@ -1,4 +1,4 @@
-﻿---
+---
 name: mineru-precise-parse-review-writer
 description: Parse local literature PDFs under the active review-writer root into Markdown with the MinerU precise parsing batch API. Use when Codex needs to batch-convert a review paper library, preserve full MinerU zip sidecars, keep extracted images and JSON outputs, and skip files that were already parsed unless a force rerun is explicitly requested.
 ---

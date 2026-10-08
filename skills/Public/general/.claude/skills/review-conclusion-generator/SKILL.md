@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-conclusion-generator
 description: Use when a merged review draft has been human-approved and needs a grounded conclusion, challenges, and future-insights section before final audit.
 ---

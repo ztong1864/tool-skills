@@ -13,15 +13,28 @@ description: 这是化学实验流程的一部分，用于基于 constraint-pars
 
 1. 读取 constraint JSON 的 `source_text`。
 2. 用 LLM 判断反应类型。
-3. 若为 ATA，参考 `KB/ata_step.md` 和实验方案样式生成编号步骤。
+3. 若为 ATA，参考 `KB/ata_step.md` 和实验方案样式生成编号步骤；给了 `--amounts`/`--rows` 时写选定条件的具体物料和用量。
 4. 非 ATA 反应直接报错，提示未支持模板。
 5. 输出只保留步骤列表，不附加其它章节。
 
 ## 输入输出
 
-- 输入：constraint JSON、`KB/ata_step.md`、`KB/reference_experiment_plan.md`、可选参考目录。
+- 输入：constraint JSON、`KB/ata_step.md`、`KB/reference_experiment_plan.md`、可选参考目录；可选的投料量 CSV（`--amounts`）和条件编号（`--rows`）。
 - 输出：`output/generated_experiment_steps_<timestamp>.md`
 - 约束：只输出 Markdown 编号步骤列表。
+
+## 只为选定条件写步骤（可选）
+
+用户只要其中一组或几组条件（例如“只保留第一条”）时，加 `--amounts <投料量 CSV> --rows 1`（多组写 `1,3`，范围写 `2-4`）：
+步骤写这几组的具体物料和用量，标为 none 的物料不写；多组时每组前有一行 `### 条件 N`。投料量 CSV 是投料计算步骤的
+输出（列成对出现：`xxx` 和 `xxx_amount`），`--rows` 是它的数据行号（从 1 开始）。不带这两个参数时照旧输出含候选类别的
+通用步骤。
+
+## 条件修改
+
+反应条件（预搅拌、温度、时间、转速）只从约束 JSON 的 `source_text` 读取，模板只提供步骤顺序、写法、后处理和用户没写的
+条件。用户改了条件（例如“只能室温反应”）时，用同一份约束 JSON 重跑只会得到原来的结果：要先用改过的指令（原指令加上
+修改）重新运行约束解析得到新的约束 JSON，再用它运行本 skill。不要手改约束 JSON 或已生成的步骤文件。
 
 ## 注意事项
 

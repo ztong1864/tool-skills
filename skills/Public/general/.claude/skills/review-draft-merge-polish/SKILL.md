@@ -1,4 +1,4 @@
-﻿---
+---
 name: review-draft-merge-polish
 description: Merge separately drafted section files into one coherent first review draft and polish transitions, terminology, and figure placement.
 ---

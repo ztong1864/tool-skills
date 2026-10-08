@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import os
 import re
 import sys
 from datetime import datetime
@@ -15,6 +16,33 @@ from urllib.parse import quote
 
 import pandas as pd
 import requests
+
+
+def _trust_system_ca_store() -> None:
+    """Windows only: also trust the OS certificate store. Antivirus HTTPS scanning (e.g. Avast Web/Mail
+    Shield) re-signs traffic with a root that only the OS store knows, so certifi alone fails with
+    CERTIFICATE_VERIFY_FAILED (PubChem lookups). Verification stays on; the OS roots are merged into a CA bundle."""
+    if sys.platform != "win32" or os.environ.get("REQUESTS_CA_BUNDLE") or os.environ.get("SSL_CERT_FILE"):
+        return
+    try:
+        import ssl
+        import tempfile
+
+        import certifi
+
+        pems = [Path(certifi.where()).read_text(encoding="utf-8")]
+        for store in ("ROOT", "CA"):
+            for cert, encoding, _trust in ssl.enum_certificates(store):
+                if encoding == "x509_asn":
+                    pems.append(ssl.DER_cert_to_PEM_cert(cert))
+        bundle = Path(tempfile.gettempdir()) / "foundryclaw_ca_bundle.pem"
+        bundle.write_text(chr(10).join(pems), encoding="utf-8")
+        os.environ["REQUESTS_CA_BUNDLE"] = os.environ["SSL_CERT_FILE"] = str(bundle)
+    except Exception:
+        pass  # keep the default bundle
+
+
+_trust_system_ca_store()
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -112,6 +140,55 @@ def normalize_key(value: Any) -> str:
 def is_blank_value(value: Any) -> bool:
     text = normalize_text(value)
     return not text or text.lower() in {"none", "nan", "data"}
+
+
+def read_recommendations_csv(path: Path) -> pd.DataFrame:
+    """Read the recommendation CSV; repair the two usual hand-writing mistakes before giving up.
+
+    1. A name that contains a comma but is not quoted ("1,4-Dioxane" -> two cells).
+    2. Doubled quotes around a whole cell (""name"" instead of "name")."""
+    try:
+        df = pd.read_csv(path)
+        if not isinstance(df.index, pd.RangeIndex):
+            # every row had more fields than the header: pandas silently shifted the first column into the index
+            raise pd.errors.ParserError("rows have more fields than the header")
+        return df
+    except pd.errors.ParserError as first_error:
+        import csv
+        import io
+
+        raw_lines = Path(path).read_text(encoding="utf-8-sig").splitlines()
+        if not raw_lines:
+            raise AmountCalculationError(f"Recommendations CSV is empty: {path}") from first_error
+        width = len(next(csv.reader([raw_lines[0]])))
+        rows: list[list[str]] = []
+        for line in raw_lines:
+            if not line.strip():
+                continue
+            line = re.sub(r'(^|,)""(?=[^",])', lambda m: m.group(1) + '"', line)
+            line = re.sub(r'(?<=[^",])""(?=,|$)', '"', line)
+            fields = next(csv.reader([line]))
+            while len(fields) > width:
+                for index in range(len(fields) - 1):
+                    if fields[index].strip().isdigit() and fields[index + 1][:1].isdigit():
+                        fields[index : index + 2] = [fields[index] + "," + fields[index + 1]]
+                        break
+                else:
+                    break
+            if len(fields) != width:
+                raise AmountCalculationError(
+                    f"Recommendations CSV is malformed ({first_error}). Names that contain commas must be wrapped "
+                    'in double quotes, e.g. "1,4-Dioxane" (never doubled quotes), and every row needs exactly '
+                    f"{width} columns like the header. Rewrite the file with Python's csv.writer and re-read it "
+                    f"with pandas.read_csv before using it: {path}"
+                ) from first_error
+            rows.append(fields)
+        buffer = io.StringIO()
+        csv.writer(buffer, lineterminator="\n").writerows(rows)
+        print(f"Warning: repaired a malformed recommendations CSV in memory ({path}); "
+              "fix the file itself when possible.", file=sys.stderr)
+        buffer.seek(0)
+        return pd.read_csv(buffer)
 
 
 def parse_chemical_space_csv(path: Path) -> dict[str, dict[str, str]]:
@@ -644,7 +721,7 @@ def main() -> int:
         chemical_space_path = Path(args.chemical_space)
 
         constraints = read_json(constraints_path)
-        bo_df = pd.read_csv(recommendations_csv_path)
+        bo_df = read_recommendations_csv(recommendations_csv_path)
         chemical_space = parse_chemical_space(chemical_space_path)
         cache = load_cache(CACHE_FILE)
         basis_mmol, basis_name = find_basis_mmol(constraints)
