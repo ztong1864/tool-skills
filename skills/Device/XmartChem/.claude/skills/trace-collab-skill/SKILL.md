@@ -112,12 +112,13 @@ TRACE 请求直接用本 skill，不经过 LabOntology：不要为 TRACE 请求�
 
 **导入已有项目**：用户带来的是已有项目（有 `project.yaml`、历史轮次或证据卡文件）时，调用 `import_project`：`project_id` 取一个新名字（加用户名前缀，例如 `bbb_lactonization`），`source` 传上传说明里该项目文件夹或 .zip 的绝对路径；零散上传的文件用 `files`（路径列表），同名上传被改名的（如 `design_space（1）.csv`）用 `named_files`（`{项目里的文件名: 路径}`）说明对应关系；没有 `project.yaml` 时传 `settings`，至少包含 `objective_name`（观测表里放结果的那一列，例如 `lactone_yield`，不要默认成 `yield`）。拿不准能不能导入时先 `dry_run: true`。
 
-- 工具把文件复制到用户工作区的 `trace_projects/<project_id>/` 再登记，原文件不会被改动；旧服务器留下的 `agent_config_path`、本版本不认识的设置会被自动修正并在 `repairs` 里列出，要转告用户。
+- 工具把文件复制到用户工作区的 `trace_projects/<project_id>/` 再登记，原文件不会被改动；旧服务器留下的 `agent_config_path`、本版本不认识的设置会被自动修正并在 `repairs` 里列出，要转告用户。用户在“设置 → 密钥管理”配置了 OPENAI-API-KEY 时，项目自带的 agent 配置（例如 `agent_bo.yaml`）的模型和网关也会改成那里的模型和网关、去掉 `temperature`，同样在 `repairs` 里列出，用一句中文告诉用户改了什么。
 - 返回的 `warnings`（例如证据卡的 mapping_status 不在允许列表内、被当作 background；Atlas 面对几十万种以上组合）逐条翻译成中文告诉用户；`next` 里建议改 `chunked_gp` 时，用 `update_project_config` 改完再 ask。检查结果里的 `mapping_status_aliases`（例如组里写卡指南用的 `same_redox_manifold`，TRACE 读作 `same_reaction_family`）不是错误，用一句话说明即可。
 - 导入的项目如果带着未回填的推荐批次（`pending_recommendation_count` 大于 0），按第 5 步先向用户要这批的结果，或问用户这批是否根本没做。
 - 一个文件夹里有多个项目时工具会报错并列出子项目，问用户要导入哪一个。
 - `import_project` 报检查错误时什么都不会导入：把错误逐条告诉用户，不要改用 `create_project` 手工转写来绕过。
 - 撤销导入用 `unregister_project`（`delete_files: true` 会删掉工作区里的副本，先和用户确认）。
+- **删除项目**（导入的项目和用 `create_project` 建的项目都一样）：先和用户确认，然后只调用一次 `unregister_project`。用 `create_project` 建的项目由 TRACE 移到服务器上的备份目录（返回里的 `backup_dir`），管理员可以恢复；告诉用户这一点。工具做不到的事（例如报错说不支持）如实告诉用户，说明需要管理员处理；**绝不**去搜索 FounDryClaw 或 TRACE 的代码、数据目录，也不要用 Bash/PowerShell 直接删除或改动项目文件（这些位置不在你的工作区里，会被拒绝）。
 
 如果用户上传了真实的设计空间 CSV 文件，必须用 `design_records_file` 传这个文件的路径，由工具原样读取
 ——不要读完 CSV 之后凭理解手动重新敲一份 `design_records` JSON，也不要把内容抄进 `design_records_csv`。
@@ -204,19 +205,22 @@ pending 推荐（例如上一轮只是 `import_observations` 导入的历史数�
 
 ### 4. 展示推荐表格
 
-`ask_recommendations` 返回的 JSON 里包含本批次每条推荐（`recommendation_id`、`rank`、候选
-变量取值、`rationale` 等）。agent 必须把它整理成 Markdown 表格展示给用户，包含：
-
-- `rank`
-- candidate 关键变量和值（每个变量单独成列，例如 `Additive`、`Solvent`、`Temperature`）
-- rationale 摘要
-- 有 `model_estimate` 时加一列“模型预测”（`predicted` ± `uncertainty`，单位同目标值）
+`ask_recommendations`（以及 `get_recommendations`）的返回里有 `table`：工具按本批推荐生成的 Markdown 表格，
+包含排名、每个活跃变量一列（带单位）、有 `model_estimate` 时的“模型预测”一列（`predicted` ± `uncertainty`，
+单位同目标值），表下一行是所有推荐共用的固定条件。把 `table` **原样**展示给用户：不要自己重写表格，不要调整、
+增删列或改动数值（自己整理的表格曾漏掉单元格、整行错位）。表格之后按排名逐条用中文简述推荐理由（来自
+`rationale`），每条一两句。
 
 用户问“为什么推荐第 N 条”时，按这条的 `model_estimate`（模型预测的目标值和不确定度，1 个标准差）和
 `proposed_by`（`ei`：期望改进最大；`ucb`：预测值加不确定度的上界最高；`ei+ucb`：两者都选中）回答：
 例如“模型预测收率约 62%（±8%），由 EI 选出，属于预测高、仍有把握提升的条件”。bo_only 模式除此之外没有
 别的理由，不要编造化学解释；agentic 模式再用 `get_trace` 看智能体的推理。没有 `model_estimate` 的
 （随机初始设计、Atlas）如实说明没有逐条预测。
+
+agentic 模式的每条推荐带 `relation_to_measured`（由代码算出）：`exact_duplicate_of` 不为空才是重复测量；
+否则 `closest_measured.differences` 列出它和最接近的已测实验差在哪几个变量（例如 `Additive: NaCl -> LiCl`）。
+解释推荐理由时以它为准。`semantic_assessment.consistency_warnings` 出现时，说明智能体的评语和代码比较矛盾
+（例如评语说“与已测条件完全相同”，其实有变量不同）：不要转述那句评语，按代码给出的差异说明。
 
 用户可见表格不要展示 `recommendation_id` 和 `batch_role`；这两个字段仍需要 agent 在上下文里
 记住，用于后续结果回填和 `tell_results` 提交（不再有本地 CSV 帮你保管这些字段）。
@@ -333,7 +337,10 @@ TRACE Lab 服务是所有用户共用的：`list_projects` 能看到所有项目
 
 agentic 模式的 LLM 步骤（推荐、反思）用用户自己在“设置 → 密钥管理”里配置的 OPENAI-API-KEY；没有配置时用
 TRACE 服务器自带的共享 key。`ask_recommendations`、`tell_results` 的返回里 `llm_key` 说明这次用的是哪一把；
-用户问起或用的是共享 key 时，用一句话告诉用户。
+用户问起或用的是共享 key 时，用一句话告诉用户。`llm_model` 是 agentic 步骤实际用的模型；`llm_adjustments`
+不为空时（模型拒绝了某个参数，例如 `temperature`，重试时去掉了它），用一句中文告诉用户做了什么调整。
+项目的 agent 配置（`agent_bo.yaml`）按原样使用：导入时 `import_project` 已把它的模型和网关改成密钥管理里的设置；
+不要自己去改它来绕过模型参数问题。
 
 ## 工具速查
 
@@ -342,7 +349,7 @@ TRACE 服务器自带的共享 key。`ask_recommendations`、`tell_results` 的�
 - `project_summary`：单个项目的状态摘要和 `owner`（选项很多的变量只列前几个，`full: true` 给全部）。
 - `create_project`：根据设计空间创建新项目（仅首次；上传的文件传 `*_file` 路径；不指定时优化器为 `chunked_gp`）。
 - `import_project`：导入已有项目（文件夹、.zip 或上传的项目文件），保留历史推荐批次和 trace；`dry_run` 只检查。
-- `unregister_project`：撤销导入（`delete_files` 同时删除工作区副本）。
+- `unregister_project`：移除项目。导入的项目撤销登记（`delete_files` 同时删除工作区副本）；用 `create_project` 建的项目由 TRACE 删除并留备份。
 - `import_observations`：导入历史实验记录。
 - `ask_recommendations`：生成候选推荐（首轮和后续轮次通用；chunked_gp 的每条推荐带 `model_estimate`）。
 - `tell_results`：提交实验结果（failed 测到的数值也一并提交）。

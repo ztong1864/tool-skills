@@ -850,6 +850,9 @@ def act_shortcut(cache_dir: Path, mission_id: str, args: argparse.Namespace) -> 
         }
         if args.retry_of:
             decision["retry_of"] = args.retry_of
+        inputs = _worker_inputs(args.input)
+        if inputs:
+            decision["inputs"] = inputs
     elif args.ask or args.ask_plan:
         question = args.ask or _plan_question(cache_dir, mission_id, suite_id)
         decision = {"kind": "request_human", "reason": args.reason or "The user must confirm or supply this.",
@@ -861,7 +864,50 @@ def act_shortcut(cache_dir: Path, mission_id: str, args: argparse.Namespace) -> 
     decision_file = cache_dir.resolve() / "runs" / mission_id / "decision.json"
     decision_file.parent.mkdir(parents=True, exist_ok=True)
     decision_file.write_text(json.dumps(decision, ensure_ascii=False, indent=2), encoding="utf-8")
-    return act_mission(cache_dir, mission_id, decision_file, suite_id)
+    result = act_mission(cache_dir, mission_id, decision_file, suite_id)
+    if args.skill:
+        _raise_if_worker_blocked(result, args.skill, cache_dir, mission_id)
+    return result
+
+
+def _worker_inputs(items: list[str] | None) -> dict[str, str]:
+    """act --skill X --input ARTIFACT_ID=PATH: input files for the Worker that the mission does not hold yet
+    (for example a file the user uploaded after the mission started)."""
+    inputs: dict[str, str] = {}
+    for item in items or []:
+        artifact_id, separator, path = item.partition("=")
+        if not separator or not artifact_id.strip() or not path.strip():
+            raise ValueError(f"--input needs ARTIFACT_ID=PATH (for example artifact:parsed-constraints=<file>), got {item!r}")
+        inputs[artifact_id.strip()] = str(Path(path.strip().strip("\"'")).expanduser().resolve())
+    return inputs
+
+
+def _raise_if_worker_blocked(result: dict[str, Any], skill_id: str, cache_dir: Path, mission_id: str) -> None:
+    """The Runtime records a Worker it could not start (an input or capability missing) as a "blocked"
+    observation and goes back to choosing; reported as success, that left a model retrying blindly. Say what
+    is missing and how to give it."""
+    mission = result.get("mission") or {}
+    decisions = [d for d in mission.get("decisions") or [] if isinstance(d, dict) and d.get("skill_id") == skill_id]
+    if not decisions:
+        return
+    action_id = decisions[-1].get("id")
+    blocked = next((o for o in reversed(mission.get("observations") or [])
+                    if isinstance(o, dict) and o.get("action_id") == action_id and o.get("status") == "blocked"), None)
+    if not blocked:
+        return
+    summary = str(blocked.get("summary") or "the Worker could not start")
+    message = f"{skill_id} was not started: {summary}."
+    missing = re.search(r"Required inputs missing: \[(.*)\]", summary)
+    if missing:
+        ids = [part.strip().strip("'\"") for part in missing.group(1).split(",") if part.strip()]
+        message += (
+            " Give each missing input as a file: python .claude/skills/labontology/scripts/labontology.py act "
+            f"--cache-dir {cache_dir.name} --mission-id {mission_id} --skill {skill_id} "
+            + " ".join(f"--input {artifact}=<path of that file>" for artifact in ids)
+            + ". A file the user uploaded counts (its path is in the message's attachment list); ask the user only "
+              "if no such file was given."
+        )
+    raise ValueError(message)
 
 
 def revise_mission(cache_dir: Path, mission_id: str, change: str, redo: str,
@@ -872,6 +918,22 @@ def revise_mission(cache_dir: Path, mission_id: str, change: str, redo: str,
     if suite_id:
         arguments.extend(["--suite", suite_id])
     return _runtime_result(arguments)
+
+
+def _reason_into_decision_file(decision_file: Path, reason: str) -> None:
+    """act --decision-file <file> --reason "...": the Runtime reads the reason from the file only, so a
+    --reason given on the command line is written into a decision that has none (a model once passed
+    --reason three times and got "Decision requires a reason" each time)."""
+    if not (reason or "").strip():
+        return
+    try:
+        decision = json.loads(decision_file.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return  # the Runtime reports the unreadable file
+    if not isinstance(decision, dict) or str(decision.get("reason") or "").strip():
+        return
+    decision["reason"] = reason.strip()
+    decision_file.write_text(json.dumps(decision, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def act_mission(cache_dir: Path, mission_id: str, decision_file: Path,
@@ -1340,9 +1402,12 @@ def _run_command(args: argparse.Namespace) -> dict[str, Any]:
                              "--cancel, --revise")
         if args.redo and not args.revise:
             raise ValueError("--redo belongs to --revise: act --revise \"<the user's change>\" --redo id1,id2")
+        if args.input and not args.skill:
+            raise ValueError("--input belongs to --skill: act --skill <Worker id> --input <artifact id>=<path>")
         if args.revise:
             result = revise_mission(args.cache_dir, args.mission_id, args.revise, args.redo, args.suite_id)
         elif args.decision_file:
+            _reason_into_decision_file(args.decision_file, args.reason)
             result = act_mission(args.cache_dir, args.mission_id, args.decision_file, args.suite_id)
         else:
             result = act_shortcut(args.cache_dir, args.mission_id, args)
@@ -1426,6 +1491,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     act_parser.add_argument("--decision-file", type=Path)
     act_parser.add_argument("--skill", help="Run this Worker next (the Runtime writes the decision for you)")
     act_parser.add_argument("--retry-of", help="Failed action id when re-running the same Worker")
+    act_parser.add_argument("--input", action="append", default=[], metavar="ARTIFACT_ID=PATH",
+                            help="With --skill: an input file for the Worker that the mission does not hold yet "
+                                 "(for example artifact:parsed-constraints=<uploaded file>); repeatable")
     act_parser.add_argument("--ask", help="Ask the user one question and wait for the answer")
     act_parser.add_argument("--ask-plan", action="store_true", help="Ask the user to confirm the mission's --plan")
     act_parser.add_argument("--complete", action="store_true", help="Close the mission once all results are recorded")

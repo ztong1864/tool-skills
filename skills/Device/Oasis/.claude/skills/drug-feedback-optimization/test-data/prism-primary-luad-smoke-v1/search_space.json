@@ -1,0 +1,19 @@
+{
+  "estimators": {
+    "RandomForestRegressor": ["n_estimators", "min_samples_leaf", "max_features", "max_depth", "n_jobs"],
+    "ExtraTreesRegressor": ["n_estimators", "min_samples_leaf", "max_features", "max_depth", "n_jobs"],
+    "HistGradientBoostingRegressor": ["max_iter", "learning_rate", "max_leaf_nodes", "max_depth", "min_samples_leaf", "l2_regularization"]
+  },
+  "calibrated_transforms": ["clip", "rank", "sigmoid"],
+  "base_weight_recommended_grid": [0.3, 0.5, 0.7, 0.9],
+  "explore_count_recommended_grid_for_batch_50": [0, 2, 5, 10, 15],
+  "shortlist_size_grid": [100, 150, 250],
+  "similarity_threshold_grid": [0.7, 0.8, 0.9],
+  "hard_limits": {
+    "explore_count_min": 0,
+    "explore_count_max": 15,
+    "shortlist_size_max": 500,
+    "base_weight_min": 0.0,
+    "base_weight_max": 1.0
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "replace_me",
+  "goal": "Improve a fixed measurable objective.",
+  "workspace": ".",
+  "metric_key": "score",
+  "direction": "higher",
+  "budget": 10,
+  "patience": 5,
+  "tolerance": 0.0,
+  "timeout_seconds": 3600,
+  "guard": {
+    "command": ["{python}", "guard.py"]
+  },
+  "baseline": {
+    "command": ["{python}", "evaluate.py", "baseline", "--output-dir", "{trial_dir}"]
+  },
+  "trial": {
+    "command": ["{python}", "evaluate.py", "trial", "--proposal", "{proposal_path}", "--output-dir", "{trial_dir}"]
+  },
+  "proposer": {
+    "command": ["{python}", "proposer.py"]
+  },
+  "proposal_schema": {
+    "type": "object",
+    "required": ["candidate_id"],
+    "properties": {
+      "candidate_id": {"type": "string"}
+    }
+  },
+  "search_guidance": [
+    "Change one main factor per trial.",
+    "Use recent failures to avoid repeating equivalent candidates."
+  ]
+}

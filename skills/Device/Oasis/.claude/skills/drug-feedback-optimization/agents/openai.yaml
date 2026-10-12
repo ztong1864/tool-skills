@@ -1,0 +1,6 @@
+interface:
+  display_name: "药效反馈闭环优化"
+  short_description: "结合逐轮实验反馈调整候选排序并推荐下一批药物"
+  default_prompt: "使用 $drug-feedback-optimization 校验药效反馈任务，并根据已有反馈推荐下一批候选药物。"
+policy:
+  allow_implicit_invocation: true

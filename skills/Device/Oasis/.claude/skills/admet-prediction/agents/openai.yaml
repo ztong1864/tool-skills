@@ -1,0 +1,6 @@
+interface:
+  display_name: "ADMET Prediction"
+  short_description: "Predict ADMET-AI v1 endpoints from molecular SMILES"
+  default_prompt: "Use $admet-prediction to predict ADMET properties for these molecules and explain uncertainty and applicability limits."
+policy:
+  allow_implicit_invocation: true

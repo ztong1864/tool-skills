@@ -1,0 +1,6 @@
+interface:
+  display_name: "Drug-Likeness Assessment"
+  short_description: "Assess SMILES with RDKit drug-likeness rules and alerts"
+  default_prompt: "Use $druglikeness-assessment to assess these molecules and explain the result boundaries."
+policy:
+  allow_implicit_invocation: true

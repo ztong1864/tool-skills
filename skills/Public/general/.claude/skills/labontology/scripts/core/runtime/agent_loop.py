@@ -203,10 +203,15 @@ class AgentRuntime:
             # A term every Worker shares (for example "experiment" in a lab
             # library) cannot tell Workers apart, so it does not count as a match.
             goal_terms -= set.intersection(*(terms for _, _, terms in selectable))
+        goal_text = str(state.goal or "").lower()
         for skill, knowledge, searchable_terms in selectable:
             name = str(knowledge.get("name") or skill.id)
             description = str(knowledge.get("description") or "")
             score = sum(term in searchable_terms for term in goal_terms)
+            # A Worker the goal names (its id or SKILL.md name) is always offered, first: word overlap missed
+            # one whose description is in another language than the goal.
+            if any(len(label) >= 3 and label.lower() in goal_text for label in {skill.id, name}):
+                score += 100
             card = {
                 "id": skill.id,
                 "name": name,
@@ -437,7 +442,9 @@ class AgentRuntime:
         if state.status == "waiting_agent":
             doc = (state.prepared_skill or {}).get("path") or "the prepared SKILL.md"
             steps = [f"Read {doc} and do the Worker's work (run its script if it declares one; write every output "
-                     f"file into {self._artifact_dir(state)})."]
+                     f"file into {self._artifact_dir(state)}). If the user asked for an output at a path of their own "
+                     "(for example `--output outputs/result.csv`), also copy that file there; the copy in the folder "
+                     "above is the one resume registers."]
             revision = self._open_revision(state)
             if revision and pending.get("skill_id") in revision.get("redo", []):
                 previous = self._previous_outputs(state, pending["skill_id"])
@@ -481,9 +488,9 @@ class AgentRuntime:
                                for out in (self.skills[step].outputs if step in self.skills else {})}
                     external = [a for a in missing if a not in earlier]
                     if external:
-                        note = (f"   (the mission does not hold input {external}; it cannot run yet. Start a new mission with "
-                                f"`run --new-mission ... --input-artifact {external[0]}=<path of that file>` using exactly this id, "
-                                "or ask the user for the file)")
+                        note = ("   (the mission does not hold input " + str(external) + ": add "
+                                + " ".join(f"--input {a}=<path of that file>" for a in external) + " to this act; a "
+                                "file the user uploaded counts, otherwise ask the user for the file)")
                     elif missing:
                         note = f"   (waiting for input {missing}: run the previous plan step first)"
                     else:
@@ -508,9 +515,38 @@ class AgentRuntime:
                                 f"{revision['number']}).")
                     return steps
             return [f"{script} act {base} --complete   (all plan steps are done), then report the results to the user"]
-        ready_ids = [c["id"] for c in candidates if not c["missing_inputs"] and not c["missing_capabilities"]]
-        return [f"Choose one Worker from {ready_ids or [c['id'] for c in candidates]}, then run: {script} act {base} --skill <id>",
-                f"If nothing fits or an input is missing: {script} act {base} --ask \"<one question for the user>\""]
+        # A Worker that lacks an input stays on the list (after the ready ones, unless the goal names it), with how
+        # to give that input: listing only the ready ones hid the Worker the user asked for when its input was a
+        # file uploaded after the mission started, and the model kept retrying resume.
+        usable = [c for c in candidates if not c["missing_capabilities"]] or candidates
+        usable = sorted(usable, key=lambda c: (c["match_score"] < 100, bool(c["missing_inputs"])))
+        steps = []
+        # Without a plan nothing says when the goal is met: after a Worker succeeded the model was only offered
+        # more Workers, and it ended the turn without --complete (the mission stayed open).
+        done = list(dict.fromkeys(
+            item.get("skill_id") for _, item in sorted(state.skill_executions.items(), key=lambda kv: _action_number(kv[0]))
+            if item.get("status") in _SUCCEEDED))
+        if done:
+            steps.append(f"{', '.join(done)} finished. If that meets the user's goal: {script} act {base} --complete, "
+                         "then report the results to the user. Only if the goal needs another step:")
+        steps.append(f"Choose one Worker from {[c['id'] for c in usable]}, then run: {script} act {base} --skill <id>")
+        needs: dict[tuple[str, ...], list[str]] = {}
+        for card in usable:
+            if card["missing_inputs"]:
+                needs.setdefault(tuple(card["missing_inputs"]), []).append(card["id"])
+        for missing, workers in needs.items():
+            makers = [skill_id for skill_id, skill in self.skills.items()
+                      if skill_id not in workers and any(a in skill.outputs for a in missing)][:2]
+            steps.append(
+                f"{', '.join(workers)} {'needs' if len(workers) == 1 else 'need'} {list(missing)}, which the mission "
+                "does not hold: add " + " ".join(f"--input {a}=<path of that file>" for a in missing) + " to its act. "
+                "A file the user uploaded counts (its path is in the message's attachment list)"
+                + (f"; without one, run {' or '.join(makers)} first, which makes it" if makers else "") + ".")
+        return steps + [
+            f"These are only the closest word matches: any registered Worker can be chosen the same way, for example "
+            f"one the user asked for by name (`{script} inspect --cache-dir {self._cache_arg()} --skills` "
+            "lists them). Do not ask the user whether to use a Worker they already asked for.",
+            f"If nothing fits or an input is missing: {script} act {base} --ask \"<one question for the user>\""]
 
     def context(self) -> dict[str, Any]:
         state = self._load()
@@ -713,7 +749,8 @@ class AgentRuntime:
             raise ValueError(f"Cannot replace an action while mission is {state.status}")
         action = deepcopy(decision)
         if not isinstance(action.get("reason"), str) or not action["reason"].strip():
-            raise ValueError("Decision requires a reason")
+            raise ValueError("Decision requires a reason: put a non-empty \"reason\" field in the decision file, or pass "
+                             "act --decision-file <file> --reason \"<why>\"")
         kind = action.get("kind")
         if kind not in {"skill", "request_human", "agent_fallback", "complete", "cancel"}:
             raise ValueError("Decision kind must be skill, request_human, agent_fallback, complete or cancel")

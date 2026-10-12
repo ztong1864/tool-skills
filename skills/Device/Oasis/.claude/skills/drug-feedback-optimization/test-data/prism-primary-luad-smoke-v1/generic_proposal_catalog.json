@@ -1,0 +1,38 @@
+[
+  {
+    "candidate_id": "generic_extra_trees",
+    "estimator": "ExtraTreesRegressor",
+    "parameters": {
+      "n_estimators": 100,
+      "min_samples_leaf": 3,
+      "max_features": 0.7,
+      "n_jobs": -1
+    },
+    "base_weight": 0.5,
+    "calibrated_transform": "clip",
+    "explore_count": 0,
+    "shortlist_size": 150,
+    "similarity_threshold": 0.8,
+    "explore_until_round": 0,
+    "summary": "ExtraTrees integration candidate",
+    "rationale": "Verify model-family search through the generic proposer protocol."
+  },
+  {
+    "candidate_id": "generic_rf_diverse2",
+    "estimator": "RandomForestRegressor",
+    "parameters": {
+      "n_estimators": 100,
+      "min_samples_leaf": 3,
+      "max_features": 0.7,
+      "n_jobs": -1
+    },
+    "base_weight": 0.5,
+    "calibrated_transform": "clip",
+    "explore_count": 2,
+    "shortlist_size": 100,
+    "similarity_threshold": 0.8,
+    "explore_until_round": 2,
+    "summary": "RandomForest with two Morgan-diverse acquisitions",
+    "rationale": "Verify acquisition-policy search through the generic proposer protocol."
+  }
+]

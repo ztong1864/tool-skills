@@ -58,7 +58,7 @@ import json
 import sys
 from pathlib import Path
 
-from claude_agent_sdk import create_sdk_mcp_server, tool
+from claude_agent_sdk import ToolAnnotations, create_sdk_mcp_server, tool
 
 _server_cache: dict = {}
 
@@ -224,11 +224,16 @@ def _get_engine():
     return _engine
 
 
-def make_tool(tool_name: str):
+def make_tool(tool_name: str, read_only: bool = False):
     """Build one claude_agent_sdk @tool object for a named ToolUniverse tool. Its
     description and parameter schema are read live from the installed package; only the
     tool_name string (a functional identifier, e.g. "PopGen_hwe_test") is passed in by
-    the caller."""
+    the caller.
+
+    read_only marks the tool readOnlyHint. The CLI runs an MCP tool alongside other
+    calls only when it carries that hint; without it, calls the model asks for together
+    run one after another (six ChEMBL lookups took 151 s where the slowest alone took
+    94 s)."""
     engine = _get_engine()
     config = engine.all_tool_dict.get(tool_name)
     if config is None:
@@ -245,7 +250,8 @@ def make_tool(tool_name: str):
             return {"content": [{"type": "text", "text": f"{tool_name} failed: {exc}"}], "is_error": True}
 
     _handler.__name__ = f"tu_{tool_name}"
-    return tool(tool_name, description, schema)(_handler)
+    annotations = ToolAnnotations(readOnlyHint=True) if read_only else None
+    return tool(tool_name, description, schema, annotations=annotations)(_handler)
 
 
 def make_tools(tool_names: list) -> list:
@@ -301,4 +307,6 @@ def _tools_for_category(category_key: str) -> list:
     ]
     if not names:
         raise ValueError(f"No ToolUniverse tools found for category {category_key!r} after loading categories {_CATEGORIES}")
-    return [make_tool(name) for name in names]
+    # The REST-API categories only look things up (none takes a path to save to), so
+    # several can run at once.
+    return [make_tool(name, read_only=True) for name in names]

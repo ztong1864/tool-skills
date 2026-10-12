@@ -1,0 +1,43 @@
+{
+  "name": "prism_primary_luad_generic_smoke",
+  "goal": "Improve cumulative high-activity compound acquisition on fixed PRISM primary LUAD development splits.",
+  "workspace": ".",
+  "metric_key": "acquisition_ncg_auc_mean",
+  "direction": "higher",
+  "budget": 2,
+  "patience": 2,
+  "tolerance": 0.0,
+  "timeout_seconds": 3600,
+  "guard": {
+    "command": ["{python}", "guard_autoresearch.py", "--strategy-path", "strategy.py"]
+  },
+  "baseline": {
+    "command": ["{python}", "generic_evaluator.py", "baseline", "--output-dir", "{trial_dir}", "--rounds", "2", "--batch-size", "17", "--top-k", "17"]
+  },
+  "trial": {
+    "command": ["{python}", "generic_evaluator.py", "trial", "--proposal", "{proposal_path}", "--output-dir", "{trial_dir}", "--rounds", "2", "--batch-size", "17", "--top-k", "17"]
+  },
+  "proposer": {
+    "command": ["{python}", "generic_catalog_proposer.py", "--catalog", "generic_proposal_catalog.json"]
+  },
+  "proposal_schema": {
+    "type": "object",
+    "required": ["candidate_id", "estimator", "parameters", "base_weight"],
+    "properties": {
+      "candidate_id": {"type": "string"},
+      "estimator": {"enum": ["RandomForestRegressor", "ExtraTreesRegressor", "HistGradientBoostingRegressor"]},
+      "parameters": {"type": "object"},
+      "base_weight": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+      "calibrated_transform": {"enum": ["clip", "rank", "sigmoid"]},
+      "explore_count": {"type": "integer", "minimum": 0, "maximum": 15},
+      "shortlist_size": {"type": "integer", "minimum": 17, "maximum": 500},
+      "similarity_threshold": {"type": "number", "minimum": 0.0, "maximum": 1.0},
+      "explore_until_round": {"type": "integer", "minimum": 0, "maximum": 2}
+    }
+  },
+  "search_guidance": [
+    "Change one main model, fusion, calibration, or acquisition factor per proposal.",
+    "Do not repeat evaluated candidate IDs.",
+    "Keep the evaluator, labels, feature list, split manifest, seeds, rounds, batch size, and metric fixed."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dataset": "PRISM_primary_LUAD",
+  "rows": 4684,
+  "unique_candidate_ids": 4684,
+  "feature_count": 268,
+  "seeds": [42, 43, 44, 45, 46, 47, 48, 49, 50, 51],
+  "verified_command": "python run_smoke.py --rounds 2 --batch-size 17 --top-k 17",
+  "verified_rounds": 2,
+  "verified_batch_size": 17,
+  "verified_top_k": 17,
+  "primary_metric": "round2_dev_ndcg_at_17_mean",
+  "round2_dev_ndcg_at_17_mean": 0.6227200396731953,
+  "round2_dev_ndcg_at_17_std": 0.07756418834125085,
+  "round2_dev_top17_true_activity_mean": 0.5624828616012005,
+  "note": "Small floating-point differences may occur across library versions. Structural checks and acquired counts must match exactly."
+}

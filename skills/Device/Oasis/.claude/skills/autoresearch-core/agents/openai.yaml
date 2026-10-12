@@ -1,0 +1,4 @@
+interface:
+  display_name: "通用 AutoResearch 核心"
+  short_description: "运行不绑定模型厂商的可测量策略搜索循环"
+  default_prompt: "使用 $autoresearch-core 配置并运行一个基于固定指标的通用 AutoResearch 循环。"

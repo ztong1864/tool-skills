@@ -13,7 +13,7 @@ Do not modify the LabKAG repository.
 Prefer the bundled script:
 
 ```text
-py -3.10 labkag-skill/scripts/labkag_api.py <command> [args]
+python labkag-skill/scripts/labkag_api.py <command> [args]
 ```
 
 Default base URL:

@@ -1,0 +1,52 @@
+{
+  "profile": "prism_primary_luad",
+  "task_name": "replace_me",
+  "dataset_name": "replace_me",
+  "disease_name": "replace_me",
+  "candidate_table": "path/to/frozen_candidates.csv",
+  "candidate_id_col": "candidate_id",
+  "target_col": "activity_score",
+  "higher_is_better": true,
+  "base_score_col": "base_score",
+  "smiles_col": "smiles",
+  "feature_columns_json": "path/to/feature_columns.json",
+  "split_manifest": null,
+  "activity_score_transform": {
+    "version": "activity_score_v1",
+    "minimum": 0.0,
+    "maximum": 1.0
+  },
+  "campaign": {
+    "num_rounds": 10,
+    "batch_size": 50,
+    "round_batch_sizes": {},
+    "allow_runtime_batch_size_override": true,
+    "max_total_candidates": 500
+  },
+  "strategy": {
+    "strategy_version": "cold_start_strategy_v1",
+    "min_feedback_to_fit": 30,
+    "feedback_model": {
+      "type": "RandomForestRegressor",
+      "n_estimators": 300,
+      "min_samples_leaf": 3,
+      "max_features": 0.7
+    },
+    "features": [
+      "base_score",
+      "Morgan256"
+    ],
+    "fusion": {
+      "type": "fixed_weight",
+      "base_weight": 0.7,
+      "feedback_weight": 0.3
+    },
+    "acquisition": {
+      "type": "greedy_final_score",
+      "top_fraction": 1.0,
+      "explore_fraction": 0.0,
+      "shortlist_size": 150,
+      "morgan_similarity_threshold": 0.8
+    }
+  }
+}

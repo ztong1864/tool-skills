@@ -34,7 +34,8 @@ Readers return compact views by default (see "Output slimming"); full=true gives
 import_project brings an existing TRACE project in with its whole history (observations, earlier
 recommendation batches, traces): it copies the folder, a .zip of it, or uploaded files into the chat
 user's own workspace (`trace_projects/<project_id>/`), repairs what a project.yaml carries over from
-another server (a stale agent_config_path, settings this TRACE version does not know), runs TRACE's
+another server (a stale agent_config_path, settings this TRACE version does not know), sets the
+project's own agent config to the user's 设置 → 密钥管理 model and endpoint (temperature removed), runs TRACE's
 folder check and registers the copy in place. The source is never modified. unregister_project undoes
 it. Both need FOUNDRYCLAW_USER_ID, which tool_backing_service sets on this module for every session;
 TRACE Lab must run on the same machine as the backend (it reads the copied folder by path).
@@ -367,10 +368,15 @@ def _user_llm() -> dict[str, str] | None:
     """{api_key, base_url, model} of the chat user's OPENAI-API-KEY, sent with ask/tell so TRACE's agentic mode
     runs on the user's own key. None when unset, outside a chat, or when TRACE is reached over plain http on
     another host (the key would travel unencrypted)."""
-    if not FOUNDRYCLAW_USER_ID:
-        return None
     parsed = urlparse(TRACE_LAB_BASE_URL)
     if parsed.scheme != "https" and (parsed.hostname or "") not in {"127.0.0.1", "localhost", "::1"}:
+        return None
+    return _user_llm_settings()
+
+
+def _user_llm_settings() -> dict[str, str] | None:
+    """{api_key, base_url, model} as saved in 设置 → 密钥管理 (base_url is the endpoint's API root), or None."""
+    if not FOUNDRYCLAW_USER_ID:
         return None
     try:
         from app.services.tool_credential_service import get_skill_openai_config, skill_openai_base_url
@@ -427,7 +433,8 @@ def _shrink(value: Any, text_limit: int = 500, list_limit: int = 12, depth: int 
 
 _REC_KEEP = (
     "round_id", "recommendation_id", "rank", "status", "candidate", "proposed_by", "model_estimate", "batch_role",
-    "controller_action", "planner_error", "planner_warnings", "evidence_refs", "result", "failure_reason", "notes",
+    "relation_to_measured", "controller_action", "planner_error", "planner_warnings", "evidence_refs", "result",
+    "failure_reason", "notes",
 )
 
 
@@ -444,7 +451,8 @@ def _slim_recommendation(rec: Any) -> Any:
     if isinstance(assessment, dict):
         slim["semantic_assessment"] = {
             key: (_cut(assessment[key], 300) if key == "soft_comment" else assessment[key])
-            for key in ("risk_level", "plausibility_score", "novelty_score", "soft_comment") if key in assessment
+            for key in ("risk_level", "plausibility_score", "novelty_score", "soft_comment", "consistency_warnings")
+            if key in assessment
         }
     return slim
 
@@ -454,6 +462,97 @@ def _slim_ask(data: Any) -> Any:
         data = dict(data)
         data["recommendations"] = [_slim_recommendation(rec) for rec in data["recommendations"]]
         data["note"] = "Recommendations are shown without their decision trace; use get_trace(project_id, round_id) for the reasoning."
+    return data
+
+
+# --- Recommendation table ----------------------------------------------------------------------------
+# The model used to write the batch as a Markdown table itself and dropped cells (fff's chat 9444d1b0: rows
+# 2-5 lost their solvent, so every later value sat one column to the left). The table is built here instead:
+# rank, one column per active variable, the model prediction; held conditions go in a line below it.
+_TABLE_HINT = (
+    "`table` is the batch as a Markdown table built by code from these recommendations: show it exactly as it is "
+    "(do not rebuild it, reorder, add or drop columns, or change values), then give each rank's reason in Chinese "
+    "in a short list below it."
+)
+
+
+def _table_cell(value: Any) -> str:
+    text = " ".join(str("" if value is None else value).split()).replace("|", "\\|")
+    return text or "—"
+
+
+def _with_unit(value: Any, unit: str) -> str:
+    text = str("" if value is None else value).strip()
+    try:
+        float(text)
+    except ValueError:
+        return text  # a category, or a value that carries its unit already ("4 mol%")
+    return f"{text} {unit}".strip()
+
+
+def _estimate_text(estimate: Any) -> str:
+    if not isinstance(estimate, dict) or not isinstance(estimate.get("predicted"), (int, float)):
+        return ""
+    text = f"{round(estimate['predicted'], 4):g}"
+    if isinstance(estimate.get("uncertainty"), (int, float)):
+        text += f" ± {round(estimate['uncertainty'], 4):g}"
+    return text
+
+
+def _recommendation_table(recs: Any, variables: Any, objective: str) -> str:
+    recs = sorted((r for r in recs or [] if isinstance(r, dict)),
+                  key=lambda r: (not isinstance(r.get("rank"), (int, float)), r.get("rank") or 0))
+    if not recs:
+        return ""
+    info = {str(v.get("name")): v for v in variables or [] if isinstance(v, dict) and v.get("name")}
+    candidates = [r.get("candidate") if isinstance(r.get("candidate"), dict) else {} for r in recs]
+    names = list(dict.fromkeys(name for candidate in candidates for name in candidate))
+    # Without the design space every variable gets a column; a held condition that differs between rows too.
+    held = [name for name in names if info and (info.get(name) or {}).get("active") is False
+            and len({str(candidate.get(name)) for candidate in candidates}) == 1]
+    shown = [name for name in names if name not in held]
+
+    def unit(name: str) -> str:
+        return str((info.get(name) or {}).get("unit") or "")
+
+    estimate = any(_estimate_text(r.get("model_estimate")) for r in recs)
+    header = ["排名", *shown] + ([f"模型预测（{objective}）" if objective else "模型预测"] if estimate else [])
+    lines = ["| " + " | ".join(_table_cell(h) for h in header) + " |",
+             "|" + "|".join("---:" if h == "排名" else "---" for h in header) + "|"]
+    for rec, candidate in zip(recs, candidates):
+        row = [rec.get("rank"), *(_with_unit(candidate.get(name), unit(name)) for name in shown)]
+        if estimate:
+            row.append(_estimate_text(rec.get("model_estimate")))
+        lines.append("| " + " | ".join(_table_cell(value) for value in row) + " |")
+    if held:
+        lines += ["", "固定条件：" + "；".join(f"{name} {_with_unit(candidates[0].get(name), unit(name))}" for name in held)]
+    return "\n".join(lines)
+
+
+async def _with_table(data: Any, project_id: str, batches: list[dict[str, Any]] | None = None) -> Any:
+    """Put `table` first in an ask answer (or in each of `batches`, replaced in place), using the project's
+    design space for which variables are active and their units; without it every variable is a column."""
+    targets = batches if batches is not None else [data]
+    if not any(isinstance(item, dict) and item.get("recommendations") for item in targets):
+        return data
+    try:
+        summary = await _request("GET", _project_path(project_id))
+    except Exception:  # noqa: BLE001 - the table is shown without units then
+        summary = {}
+    summary = summary if isinstance(summary, dict) else {}
+    variables = (summary.get("design_space") or {}).get("variables") or []
+    project = (data.get("project") if isinstance(data, dict) else None) or summary.get("project") or {}
+    objective = str(project.get("objective_name") or "") if isinstance(project, dict) else ""
+
+    def tabled(item: Any) -> Any:
+        if not (isinstance(item, dict) and item.get("recommendations")):
+            return item
+        table = _recommendation_table(item["recommendations"], variables, objective)
+        return {"table": table, "table_note": _TABLE_HINT, **item} if table else item
+
+    if batches is None:
+        return tabled(data)
+    batches[:] = [tabled(batch) for batch in batches]
     return data
 
 
@@ -936,10 +1035,17 @@ _ASK_SCHEMA = {
         "default if the project's latest batch has unresolved (pending) recommendations: gather each "
         "pending recommendation's outcome from the user first (status completed/failed/skipped, plus the "
         "objective value for completed ones) and submit it with tell_results before calling this again. "
-        "Failed and skipped conditions are not proposed again. With chunked_gp each recommendation has "
+        "Failed and skipped conditions are not proposed again. `table` is the batch as a Markdown table built by "
+        "code (rank, one column per active variable, the model prediction, the fixed conditions below it): show it "
+        "as it is, never write your own table, and give each rank's reason in Chinese below it. With chunked_gp each recommendation has "
         "`model_estimate` {predicted, uncertainty (1 sd)} and `proposed_by` (ei/ucb): use them to explain why "
         "a candidate was recommended. `planner_switched` means TRACE ran chunked_gp instead of the project's "
-        "Atlas because the design space is too large for Atlas: tell the user in one sentence."
+        "Atlas because the design space is too large for Atlas: tell the user in one sentence. In agentic mode "
+        "`llm_model` is the model the agentic steps used and `llm_adjustments` what was changed for it (a parameter "
+        "the model rejected, left out of the retried calls): tell the user in one sentence. Each recommendation's "
+        "`relation_to_measured` (computed by code) says whether it repeats a measured run and how it differs from "
+        "the closest one; when `semantic_assessment.consistency_warnings` is present, the LLM's comment "
+        "contradicted that comparison: explain the candidate from the computed differences, not the comment."
     ),
     _ASK_SCHEMA,
 )
@@ -970,6 +1076,7 @@ async def ask_recommendations(args: dict) -> dict:
         # client-side while the server keeps computing, and a subsequent retry can then race
         # the still-running attempt over the same project's log file.
         data = _mark_llm_key(await _request("POST", f"/api/projects/{encoded}/ask", payload, timeout=1200.0), bool(llm))
+        data = await _with_table(data, project_id)
         if bool(args.get("full", False)):
             # The batch exists now: an oversized answer falls back to the compact view instead of failing.
             return _full_or_compact(data, _slim_ask, "batch", "Use get_trace(round_id, recommendation_id) for the reasoning.")
@@ -1075,7 +1182,8 @@ async def tell_results(args: dict) -> dict:
     (
         "Get a project's recommendation batches with each recommendation's status and result. By default only the "
         "latest batch (or the batch `round_id`) is returned, without the decision traces (use get_trace for the "
-        "reasoning); `rounds` lists every round id. full=true returns all batches with their traces (very large)."
+        "reasoning), with `table`, the batch as a Markdown table built by code: show it as it is. `rounds` lists "
+        "every round id. full=true returns all batches with their traces (very large)."
     ),
     {"type": "object", "properties": {"project_id": {"type": "string"}, "round_id": {"type": "string"}, "full": _FULL_PROPERTY},
      "required": ["project_id"]},
@@ -1109,7 +1217,8 @@ async def get_recommendations(args: dict) -> dict:
             return _full_or_compact(data, compact, "recommendation history",
                                     f"Read the batches one at a time with round_id ({', '.join(rounds)}); "
                                     "get_trace has the reasoning.")
-        return compact(data)
+        result = compact(data)
+        return await _with_table(result, project_id, result["batches"])
 
     return await _run(_do)
 
@@ -1579,6 +1688,29 @@ def _set_top_level_key(destination: Path, key: str, value: str) -> None:
     path.write_text(text, encoding="utf-8")
 
 
+_TRACE_DEFAULT_AGENT_CONFIG = "configs/agent_bo.yaml"
+
+
+def _use_own_agent_config(destination: Path) -> str | None:
+    """Point agent_config_path at the agent config that came with the project when it names a file outside
+    the project (a path on the server it came from). Waiting for TRACE's check to report the path missing is
+    not enough: where this server has a project at that same path, TRACE would silently use that project's
+    config. TRACE's own default (configs/agent_bo.yaml) is left alone."""
+    match = re.search(r"^agent_config_path:(.*)$", (destination / "project.yaml").read_text(encoding="utf-8"), re.MULTILINE)
+    configured = _yaml_scalar(match.group(1)) if match else ""
+    if not configured or configured.replace("\\", "/") == _TRACE_DEFAULT_AGENT_CONFIG:
+        return None
+    path = Path(configured)
+    if not path.is_absolute() and (destination / path).is_file():
+        return None  # already the project's own file: TRACE looks in the project folder first
+    own = Path(configured.replace("\\", "/")).name
+    if not (destination / own).is_file():
+        return None
+    _set_top_level_key(destination, "agent_config_path", own)
+    return (f"agent_config_path `{configured}` points outside the project (a path on the server it came from); "
+            f"set to `{own}`, the project's own agent config")
+
+
 def _repair_imported_config(destination: Path, report: dict[str, Any]) -> tuple[list[str], list[str]]:
     """Fix what project.yaml carries over from the server it came from. Returns (repairs, keys to drop)."""
     repairs: list[str] = []
@@ -1594,6 +1726,87 @@ def _repair_imported_config(destination: Path, report: dict[str, Any]) -> tuple[
             repairs.append(f"agent_config_path `{old}` does not exist on this server; set to `{new}`"
                            + (" (the project's own agent config)" if new == "agent_bo.yaml" else " (TRACE's default)"))
     return repairs, list(dict.fromkeys(drop))
+
+
+_RUNTIME_SECTION = re.compile(r"^runtime\s*:\s*(#.*)?$")
+_YAML_KEY_LINE = re.compile(r"^(?P<indent>[ \t]+)(?P<key>[A-Za-z_][A-Za-z0-9_]*)\s*:(?P<value>.*)$")
+
+
+def _yaml_scalar(value: str) -> str:
+    return re.split(r"\s+#", value, maxsplit=1)[0].strip().strip("'\"")
+
+
+def _project_agent_config(destination: Path) -> Path | None:
+    """The imported project's own agent config file, as TRACE resolves agent_config_path (project folder
+    first); None when the project uses TRACE's default config."""
+    match = re.search(r"^agent_config_path:(.*)$", (destination / "project.yaml").read_text(encoding="utf-8"), re.MULTILINE)
+    path = Path(_yaml_scalar(match.group(1)) if match else "configs/agent_bo.yaml")
+    path = (path if path.is_absolute() else destination / path).resolve()
+    return path if path.is_file() and destination.resolve() in path.parents else None
+
+
+def _set_agent_llm(destination: Path, settings: dict[str, str] | None) -> str | None:
+    """Set the imported project's agent config to what the user has in 设置 → 密钥管理: model_name and
+    llm_fallback_model_name to its model, api_base to its endpoint, and temperature removed (the page has
+    none; a config from another server sets it for that server's model). The key itself is never written.
+    Returns the repair line, or None when there is nothing to change."""
+    path = _project_agent_config(destination) if settings else None
+    if path is None:
+        return None
+    original = path.read_text(encoding="utf-8")
+    lines = original.splitlines()
+    start = next((i for i, line in enumerate(lines) if _RUNTIME_SECTION.match(line)), None)
+    if start is None:
+        lines += ["runtime:"]
+        start = len(lines) - 1
+    end = next((i for i in range(start + 1, len(lines))
+                if lines[i].strip() and not lines[i][:1].isspace() and not lines[i].lstrip().startswith("#")), len(lines))
+    keys: dict[str, int] = {}
+    indent = None
+    for i in range(start + 1, end):
+        match = _YAML_KEY_LINE.match(lines[i])
+        if match and (indent is None or match["indent"] == indent):
+            indent = match["indent"]
+            keys[match["key"]] = i
+    indent = indent or "  "
+    old = {key: _yaml_scalar(_YAML_KEY_LINE.match(lines[i])["value"]) for key, i in keys.items()}
+    changes, inserts, removed = [], [], []
+    wanted = [("model_name", settings["model"]), ("api_base", settings["base_url"])]
+    if old.get("llm_fallback_model_name") not in (None, "", "null", "~"):
+        wanted.append(("llm_fallback_model_name", settings["model"]))
+    for key, value in wanted:
+        line = f"{indent}{key}: {json.dumps(value, ensure_ascii=False)}"
+        if key in keys:
+            if old[key] != value:
+                lines[keys[key]] = line
+                changes.append(f"{key} {old[key] or 'none'} → {value}")
+        else:
+            inserts.append(line)
+            changes.append(f"{key} {value}")
+    if old.get("temperature") not in (None, "", "null", "~"):
+        removed.append(keys["temperature"])
+        changes.append(f"temperature {old['temperature']} removed")
+    if not changes:
+        return None
+    for i in sorted(removed, reverse=True):
+        del lines[i]
+    lines[start + 1:start + 1] = inserts
+    backup = destination / "_backups" / f"{path.name}.before-import-{datetime.now():%Y%m%d_%H%M%S}"
+    backup.parent.mkdir(parents=True, exist_ok=True)
+    backup.write_text(original, encoding="utf-8")
+    path.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    name = path.relative_to(destination.resolve()).as_posix()
+    return (f"{name} set to the model and endpoint in 设置 → 密钥管理: {', '.join(changes)} "
+            f"(the API key is not written; original kept in _backups/{backup.name})")
+
+
+def _import_facts(report: dict[str, Any], llm_set: str | None) -> dict[str, Any]:
+    """The check's facts; once the agent config was set to the user's model and endpoint, TRACE's note that it
+    differs from the server's default only repeats the repair line."""
+    facts = dict(report.get("facts") or {})
+    if llm_set:
+        facts.pop("agent_llm_note", None)
+    return facts
 
 
 def _blocking_errors(report: dict[str, Any], dropped: list[str]) -> list[dict[str, Any]]:
@@ -1652,9 +1865,10 @@ _IMPORT_PROJECT_SCHEMA = {
         "whenever the user brings a project that already has a project.yaml or history -- nothing is retyped, so large "
         "design spaces and evidence files come in unchanged. The files are copied into the user's workspace "
         "(trace_projects/<project_id>/); the source is never modified. A stale agent_config_path and settings this TRACE "
-        "version does not know are repaired automatically and reported; anything else the project check finds is returned "
-        "as an error list and nothing is imported. Report the warnings (evidence cards treated as background, Atlas on a "
-        "large space...) to the user."
+        "version does not know are repaired automatically and reported; so is the project's own agent config (e.g. "
+        "agent_bo.yaml), set to the model and endpoint the user has in 设置 → 密钥管理, with temperature removed. Anything "
+        "else the project check finds is returned as an error list and nothing is imported. Report the repairs and "
+        "warnings (evidence cards treated as background, Atlas on a large space...) to the user."
     ),
     _IMPORT_PROJECT_SCHEMA,
 )
@@ -1678,10 +1892,16 @@ async def import_project(args: dict) -> dict:
             repairs: list[str] = []
             if not (destination / "project.yaml").exists():
                 repairs.append(_write_project_yaml(destination, handle, dict(args.get("settings") or {})))
+            own_config = _use_own_agent_config(destination)
+            if own_config:
+                repairs.append(own_config)
             report = await _request("POST", "/api/projects/check", {"path": str(destination)}, timeout=120.0)
             fixed, drop = _repair_imported_config(destination, report)
             repairs += fixed
-            if fixed:
+            llm_set = _set_agent_llm(destination, _user_llm_settings())
+            if llm_set:
+                repairs.append(llm_set)
+            if fixed or llm_set:
                 report = await _request("POST", "/api/projects/check", {"path": str(destination)}, timeout=120.0)
             errors = _blocking_errors(report, drop)
             if errors:
@@ -1690,7 +1910,8 @@ async def import_project(args: dict) -> dict:
             if dry_run:
                 shutil.rmtree(destination, ignore_errors=True)
                 return {"dry_run": True, "project_id": handle, "would_import_files": files, "repairs": repairs,
-                        "drop_settings": drop, "warnings": report.get("warnings", []), "facts": report.get("facts", {})}
+                        "drop_settings": drop, "warnings": report.get("warnings", []),
+                        "facts": _import_facts(report, llm_set)}
             registered = await _request("POST", "/api/projects/register",
                                         {"path": str(destination), "handle": handle, "drop_config_keys": drop},
                                         timeout=120.0)
@@ -1704,7 +1925,7 @@ async def import_project(args: dict) -> dict:
             repairs.append(f"removed settings this TRACE version does not use: {', '.join(drop)} "
                            f"(original project.yaml kept in {registered.get('config_backup_path') or '_backups/'})")
         return {"imported": True, "project_id": handle, "project_dir": str(destination), "files": files,
-                "repairs": repairs, "warnings": check.get("warnings", []), "facts": check.get("facts", {}),
+                "repairs": repairs, "warnings": check.get("warnings", []), "facts": _import_facts(check, llm_set),
                 "summary": summary, "next": _import_next_steps(summary, check.get("warnings", []))}
 
     return await _run(_do)
@@ -1713,9 +1934,11 @@ async def import_project(args: dict) -> dict:
 @tool(
     "unregister_project",
     (
-        "Remove an imported project (see import_project) from TRACE Lab. Its files stay in the user's workspace unless "
-        "delete_files=true, which deletes the copy made by import_project (only folders under the user's "
-        "trace_projects/). Confirm with the user before deleting files."
+        "Remove a project from TRACE Lab: both kinds, one call. An imported project (see import_project) is "
+        "unregistered; its files stay in the user's workspace unless delete_files=true, which deletes the copy made by "
+        "import_project (only folders under the user's trace_projects/). A project created in TRACE (create_project) "
+        "is deleted on the TRACE server, which keeps its folder in a backup (backup_dir) so an administrator can "
+        "restore it. Confirm with the user first. Never delete project files any other way."
     ),
     {"type": "object", "properties": {"project_id": {"type": "string"}, "delete_files": {"type": "boolean"},
                                       "others_project_ok": _OTHERS_OK_PROPERTY},
@@ -1725,7 +1948,17 @@ async def unregister_project(args: dict) -> dict:
     async def _do():
         handle = _require_project_id(args)
         _guard_owner(args, handle, "unregister_project")
-        result = await _request("DELETE", _project_path(handle, "/registration"))
+        try:
+            result = await _request("DELETE", _project_path(handle, "/registration"))
+        except RuntimeError as exc:
+            if "HTTP 404" not in str(exc) or "No registered project" not in str(exc):
+                raise
+            # Not an imported project: one created in TRACE, removed (with a backup) by TRACE itself.
+            result = await _request("DELETE", _project_path(handle))
+            _forget_owner(handle)
+            return {**result, "kind": "created_in_trace", "files_deleted": True,
+                    "note": "The project folder was moved to backup_dir on the TRACE server; an administrator can restore it."}
+        owner = (_load_owners().get(handle) or {}).get("owner")
         _forget_owner(handle)
         folder = Path(str(result.get("project_dir") or ""))
         result["files_deleted"] = False
@@ -1735,6 +1968,12 @@ async def unregister_project(args: dict) -> dict:
             if imports in folder.resolve().parents:
                 shutil.rmtree(folder, ignore_errors=True)
                 result["files_deleted"] = True
+            elif folder.parent.name == "trace_projects":
+                # Another user's import copy: unregistering it is allowed after the owner warning, deleting it is not.
+                whose = f"{owner}'s" if owner and owner != _current_user() else "another user's"
+                result["note"] = (f"{folder} is the import copy in {whose} workspace; only that user can delete it, so "
+                                  "its files were left in place. The project is no longer registered in TRACE; that "
+                                  "user (or an administrator) can import or register it again.")
             else:
                 result["note"] = f"{folder} was not created by import_project, so its files were left in place."
         return result

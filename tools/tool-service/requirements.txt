@@ -23,3 +23,10 @@ scipy
 networkx
 rdkit
 periodictable
+# Imported at module level by individual categories' tool files; without them the whole
+# category fails with "Tool type ... not found in registry": epam.indigo (chem_tool.py,
+# all 29 ChEMBL tools), xmltodict (T3DB), lxml (ConoServer), openpyxl (CellMarker).
+epam.indigo
+xmltodict
+lxml
+openpyxl

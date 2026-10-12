@@ -38,7 +38,7 @@ spaces and evidence files come in unchanged. It copies the files into the chat u
 and registers the copy in place (`POST /api/projects/register`). Files without a project.yaml need `settings`
 (at least `objective_name`). Sources must be inside the user's uploads or workspace, or a folder listed in the
 backend env `TRACE_IMPORT_ALLOWED_ROOTS` (os.pathsep-separated, for folders an admin shares on the server).
-`unregister_project` removes it from TRACE (and with `delete_files` the copy). Requirements: TRACE Lab runs on the
+`unregister_project` removes it from TRACE (and with `delete_files` the copy); for a project made with `create_project` it calls TRACE's `DELETE /api/projects/{id}`, which keeps the folder in the server's `_backups/`. Requirements: TRACE Lab runs on the
 same machine as the backend (it reads the copy by path), and `tool_backing_service` sets `FOUNDRYCLAW_USER_ID` on
 this module for each session (without it import_project reports that it only works inside a chat).
 
@@ -79,3 +79,5 @@ view with a note on how to read it in parts. `get_observations` returns the late
 Deployment: `tools/` is not under git in FounDryClaw_Web; the tracked copy is the `tool-skills`
 repo. The backend re-executes `trace_collab.py` for every new chat session (no restart needed), but
 silently drops the whole tool if its import fails -- import it once with the app's venv after editing.
+
+Agentic `ask`/`tell` results carry `llm_model` and `llm_adjustments`; agentic recommendations carry `relation_to_measured` and, when TRACE caught a contradicting comment, `semantic_assessment.consistency_warnings` (all kept in the compact views).
