@@ -85,10 +85,72 @@ def iter_dirs(root: Path) -> Iterator[Path]:
         yield Path(current)
 
 
+# A lock file is empty only between its creation and its holder writing the PID.
+EMPTY_LOCK_GRACE = 2.0
+
+
+def _lock_owner(path: Path) -> int | None:
+    """The PID written in a lock file, or None when it has none (still being created, or unreadable)."""
+    try:
+        text = path.read_text(encoding="ascii").strip()
+    except (OSError, UnicodeDecodeError):
+        return None
+    return int(text) if text.isdigit() else None
+
+
+def _process_running(pid: int) -> bool:
+    """Whether a process with this PID is running. When in doubt it is: the lock is then waited for."""
+    if pid <= 0:
+        return False
+    if os.name == "nt":
+        import ctypes
+        from ctypes import wintypes
+
+        kernel32 = ctypes.WinDLL("kernel32", use_last_error=True)
+        kernel32.OpenProcess.argtypes = (wintypes.DWORD, wintypes.BOOL, wintypes.DWORD)
+        kernel32.OpenProcess.restype = wintypes.HANDLE
+        kernel32.GetExitCodeProcess.argtypes = (wintypes.HANDLE, ctypes.POINTER(wintypes.DWORD))
+        kernel32.GetExitCodeProcess.restype = wintypes.BOOL
+        kernel32.CloseHandle.argtypes = (wintypes.HANDLE,)
+        handle = kernel32.OpenProcess(0x1000, False, pid)  # PROCESS_QUERY_LIMITED_INFORMATION
+        if not handle:
+            return ctypes.get_last_error() == 5  # ERROR_ACCESS_DENIED: it exists, owned by someone else
+        try:
+            code = wintypes.DWORD()
+            if not kernel32.GetExitCodeProcess(handle, ctypes.byref(code)):
+                return True
+            return code.value == 259  # STILL_ACTIVE
+        finally:
+            kernel32.CloseHandle(handle)
+    try:
+        os.kill(pid, 0)
+    except ProcessLookupError:
+        return False
+    except OSError:  # PermissionError: it exists, owned by someone else
+        return True
+    return True
+
+
+def _remove_abandoned_lock(path: Path, seen: os.stat_result) -> bool:
+    """Delete the abandoned lock file inspected as `seen`, unless another waiter has replaced it meanwhile.
+    False when it could not be deleted (the caller then waits instead of retrying at once)."""
+    try:
+        current = path.stat()
+        if (current.st_mtime_ns, current.st_size) == (seen.st_mtime_ns, seen.st_size):
+            path.unlink()
+    except FileNotFoundError:
+        pass
+    except OSError:
+        return False
+    return True
+
+
 @contextmanager
 def file_lock(path: Path, *, timeout: float = 60.0, stale_after: float = 600.0,
               poll: float = 0.1) -> Iterator[None]:
-    """Hold an exclusive lock file; a lock older than stale_after is abandoned."""
+    """Hold an exclusive lock file. A lock is abandoned when the process that wrote it has ended (a command
+    killed by a stopped chat turn or a timeout cannot remove its lock), when it stayed empty past
+    EMPTY_LOCK_GRACE, or, for a PID reused by another process, once it is older than stale_after."""
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
     deadline = time.monotonic() + timeout
@@ -98,14 +160,21 @@ def file_lock(path: Path, *, timeout: float = 60.0, stale_after: float = 600.0,
             break
         except (FileExistsError, PermissionError):
             try:
-                age = time.time() - path.stat().st_mtime
+                seen = path.stat()
             except FileNotFoundError:
                 continue
-            if age > stale_after:
-                path.unlink(missing_ok=True)
-                continue
+            except OSError:  # e.g. Windows, while the lock file is being deleted: still held
+                seen = None
+            owner = _lock_owner(path) if seen is not None else None
+            if seen is not None:
+                age = time.time() - seen.st_mtime
+                if (age > stale_after or (owner is None and age > EMPTY_LOCK_GRACE)
+                        or (owner is not None and not _process_running(owner))):
+                    if _remove_abandoned_lock(path, seen):
+                        continue
             if time.monotonic() >= deadline:
-                raise TimeoutError(f"Another LabOntology command is still running: {path}") from None
+                holder = f" (pid {owner} is still running)" if owner is not None else ""
+                raise TimeoutError(f"Another LabOntology command is still running: {path}{holder}") from None
             time.sleep(poll)
     try:
         os.write(descriptor, f"{os.getpid()}\n".encode("ascii"))
