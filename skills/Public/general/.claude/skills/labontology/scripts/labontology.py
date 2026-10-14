@@ -9,6 +9,7 @@ import os
 import re
 import shutil
 import sys
+import time
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Any, Sequence
@@ -20,11 +21,11 @@ VENDOR_DIR = Path(__file__).resolve().parent / "_vendor"
 if str(VENDOR_DIR) not in sys.path:
     sys.path.insert(0, str(VENDOR_DIR))
 from core import graph as GRAPH
-from core.creator.backup import GRAPH_FILES, has_graph, restore_active_graph
+from core.creator.backup import GRAPH_FILES, _validate_graph_root, has_graph, restore_active_graph
 from core.creator.bundle import export_bundle
 from core.creator.discovery import discover_tree
 from core.creator.intake import DISCOVERY_VERSION, receive_bundle, remove_suites, resolve_suite_root
-from core.fsutil import file_lock, iter_files, remove_tree
+from core.fsutil import _lock_owner, _process_running, file_lock, iter_files, remove_tree
 from core.creator.maintenance import maintain_graph as apply_graph_maintenance
 from core.runtime import commands as runtime_commands
 from core.runtime.feedback import FeedbackStore, repeated_problems
@@ -326,11 +327,67 @@ def _restore_graph_snapshot(cache: Path, snapshot: Path, had_graph: bool) -> Non
             folder.rmdir()
 
 
+# A refresh snapshots the graph into a folder with this prefix and restores it if the refresh fails. A process
+# killed part-way (a stopped chat ends bootstrap's command) restores nothing and leaves the folder behind, so the
+# next refresh repairs the cache from it first (_recover_interrupted_refresh). owner.pid names the process.
+_ROLLBACK_PREFIX = ".labontology-cache-rollback-"
+_ROLLBACK_OWNER = "owner.pid"
+# A rollback folder counts as abandoned when its owner has ended or, as a lock in file_lock, once it is this
+# old (also a folder from before owner.pid was written).
+_ROLLBACK_STALE_AFTER = 600.0
+
+
+def _same_graph_files(cache: Path, snapshot: Path) -> bool:
+    try:
+        return all(_sha256(cache / name) == _sha256(snapshot / name) for name in GRAPH_FILES)
+    except OSError:
+        return False
+
+
+def _recover_interrupted_refresh(workspace: Path, cache: Path) -> str | None:
+    """Repair the cache after a refresh whose process was killed part-way: when the cache differs from the
+    newest valid snapshot of such a run, restore that snapshot (the refresh that follows brings it up to date
+    again), then delete the dead runs' rollback folders. A recent folder whose owner is still running is left
+    alone. Returns the name of the folder restored from, if any. Call it under the workspace lock."""
+    dead: list[tuple[float, Path]] = []
+    for folder in workspace.glob(f"{_ROLLBACK_PREFIX}*"):
+        try:
+            if not folder.is_dir():
+                continue
+            created = folder.stat().st_mtime
+        except OSError:
+            continue
+        owner = _lock_owner(folder / _ROLLBACK_OWNER)
+        if (time.time() - created > _ROLLBACK_STALE_AFTER
+                or (owner is not None and not _process_running(owner))):
+            dead.append((created, folder))
+    restored = None
+    for _, folder in sorted(dead, reverse=True):
+        snapshot = folder / "graph"
+        if not has_graph(snapshot):
+            continue
+        try:
+            _validate_graph_root(snapshot)
+        except ValueError:
+            continue
+        if has_graph(cache) and _same_graph_files(cache, snapshot):
+            break
+        cache.mkdir(parents=True, exist_ok=True)
+        _restore_graph_snapshot(cache, snapshot, True)
+        restored = folder.name
+        break
+    for _, folder in dead:
+        with contextlib.suppress(OSError):
+            remove_tree(folder)
+    return restored
+
+
 def ensure_workspace_cache(workspace: Path,
                            skill_roots: Sequence[Path] | None = None) -> dict[str, Any]:
     """Create, reuse, or refresh the one cache for visible Worker Skills."""
     workspace = Path(workspace).resolve()
     cache = _workspace_cache_path(workspace)
+    recovered = _recover_interrupted_refresh(workspace, cache)
     automatic = skill_roots is None
     cached_roots = _cached_suite_roots(cache)
     if automatic:
@@ -376,7 +433,8 @@ def ensure_workspace_cache(workspace: Path,
         )
 
     workspace.mkdir(parents=True, exist_ok=True)
-    with TemporaryDirectory(prefix=".labontology-cache-rollback-", dir=str(workspace)) as temporary:
+    with TemporaryDirectory(prefix=_ROLLBACK_PREFIX, dir=str(workspace)) as temporary:
+        (Path(temporary) / _ROLLBACK_OWNER).write_text(f"{os.getpid()}\n", encoding="ascii")
         snapshot = Path(temporary) / "graph"
         had_graph = _snapshot_graph(cache, snapshot)
         try:
@@ -399,6 +457,8 @@ def ensure_workspace_cache(workspace: Path,
     }
     if removed_suites:
         result["removed_suites"] = removed_suites
+    if recovered:
+        result["recovered_interrupted_refresh"] = recovered
     if skipped_workers:
         result["skipped_workers"] = skipped_workers
     if skipped_duplicates:
@@ -981,7 +1041,10 @@ def _prepare_fresh(cache_dir: Path, mission_id: str, skill_id: str,
     except ValueError as exc:
         if _STALE_DOCUMENT not in str(exc):
             raise
-    ensure_workspace_cache(cache_dir.resolve().parent, None)
+    # The workspace lock, as bootstrap takes it: one graph writer at a time.
+    workspace = cache_dir.resolve().parent
+    with file_lock(workspace / ".labontology_workspace_cache.lock"):
+        ensure_workspace_cache(workspace, None)
     return prepare_mission_skill(cache_dir, mission_id, skill_id, suite_id)
 
 
