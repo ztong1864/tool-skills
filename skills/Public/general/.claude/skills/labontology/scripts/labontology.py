@@ -795,16 +795,53 @@ def _render(result: Any, compact: bool) -> str:
     return json.dumps(result, ensure_ascii=False, indent=2)
 
 
+# FounDryClaw runs every conversation of a user in the same workspace, so the missions of all of them share
+# one cache. It sets FOUNDRYCLAW_CONVERSATION_ID for each chat; `run` and `resume` record it with the mission,
+# so what a new message is assumed to continue (a waiting mission, the recent missions) comes from the same
+# conversation. A question asked in another conversation was never seen in this one: it blocked a new
+# conversation's `run`, and the model then asked the user that old question again.
+CONVERSATION_ENV = "FOUNDRYCLAW_CONVERSATION_ID"
+CONVERSATION_FILE = "conversation.json"
+
+
+def _current_conversation() -> str:
+    return os.environ.get(CONVERSATION_ENV, "").strip()
+
+
+def _record_conversation(cache_dir: Path, mission_id: str) -> None:
+    """The conversation that created or last resumed the mission."""
+    conversation = _current_conversation()
+    run_dir = cache_dir.resolve() / "runs" / mission_id
+    if conversation and run_dir.is_dir():
+        (run_dir / CONVERSATION_FILE).write_text(json.dumps({"conversation_id": conversation}), encoding="utf-8")
+
+
+def _in_current_conversation(run_dir: Path) -> bool:
+    """True outside FounDryClaw (no conversation id), else only for missions this conversation recorded;
+    missions from before conversations were recorded count as another conversation's."""
+    conversation = _current_conversation()
+    if not conversation:
+        return True
+    try:
+        recorded = json.loads((run_dir / CONVERSATION_FILE).read_text(encoding="utf-8")).get("conversation_id")
+    except (OSError, ValueError, AttributeError):
+        return False
+    return recorded == conversation
+
+
 def _refuse_run_while_waiting_for_user(cache_dir: Path) -> None:
     """A mission that is waiting for the user's answer is almost always what the next message continues.
 
     Creating a second mission then loses the first one's uploaded inputs and the confirmed plan, so
-    `run` refuses until the caller either resumes that mission or explicitly passes --new-mission."""
+    `run` refuses until the caller either resumes that mission or explicitly passes --new-mission.
+    Only this conversation's missions count (see CONVERSATION_ENV)."""
     runs_dir = cache_dir.resolve() / "runs"
     if not runs_dir.is_dir():
         return
     waiting = []
     for state_path in runs_dir.glob("*/state.json"):
+        if not _in_current_conversation(state_path.parent):
+            continue
         try:
             state = json.loads(state_path.read_text(encoding="utf-8"))
         except (OSError, json.JSONDecodeError):
@@ -876,6 +913,7 @@ def run_mission(cache_dir: Path, goal: str, mission_id: str | None, suite_id: st
     for artifact in input_artifacts:
         arguments.extend(["--input-artifact", artifact])
     result = _runtime_result(arguments)
+    _record_conversation(cache_dir, mission_id)
     if mapped_inputs:
         result["input_ids"] = mapped_inputs
     return {"mission_id": mission_id, **result}
@@ -1164,7 +1202,9 @@ def resume_mission(cache_dir: Path, mission_id: str, *, suite_id: str | None = N
         arguments.extend(["--evidence", item])
     for item in provided_artifacts or []:
         arguments.extend(["--provide-artifact", item])
-    return _runtime_result(arguments)
+    result = _runtime_result(arguments)
+    _record_conversation(cache_dir, mission_id)  # continuing it here makes it this conversation's mission
+    return result
 
 
 def _select_skill(registry: Registry, skill_id: str, suite_id: str | None = None):
@@ -1305,13 +1345,15 @@ def _repeat_guard(args: argparse.Namespace) -> dict[str, Any] | None:
 
 
 def _active_missions(cache: Path, limit: int = 3) -> list[dict[str, Any]]:
-    """Recent missions (updated within a day) with their status and next step, for a skipped bootstrap."""
+    """This conversation's recent missions (updated within a day) with their status and next step, for a
+    skipped bootstrap. `missions` still lists every mission in the workspace."""
     import time
     runs = cache / "runs"
     if not runs.is_dir():
         return []
     now = time.time()
-    paths = sorted((path for path in runs.glob("*/state.json") if now - path.stat().st_mtime <= 86400),
+    paths = sorted((path for path in runs.glob("*/state.json")
+                    if now - path.stat().st_mtime <= 86400 and _in_current_conversation(path.parent)),
                    key=lambda path: path.stat().st_mtime, reverse=True)[:limit]
     missions = []
     for path in paths:

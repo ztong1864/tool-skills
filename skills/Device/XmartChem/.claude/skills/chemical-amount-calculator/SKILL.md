@@ -1,6 +1,6 @@
 ---
 name: chemical-amount-calculator
-description: 这是化学实验流程的一部分，用于把约束 JSON 和推荐 CSV 换算为带实际投料量的 CSV；使用 KB/chemical_space.csv 作为化学条目库，负责分子量、质量和体积换算，不负责生成推荐或解析自然语言。
+description: 这是化学实验流程的一部分，用于把约束 JSON 和推荐 CSV 换算为带实际投料量的 CSV；使用 KB/chemical_space.csv 作为化学条目库（用户也称它为候选化学空间表），表中有各试剂的中英文名、分子式、SMILES、CAS 号和密度，查询这些信息时直接读这个表；负责分子量、质量和体积换算，不负责生成推荐或解析自然语言。
 ---
 
 # chemical-amount-calculator
@@ -9,7 +9,7 @@ description: 这是化学实验流程的一部分，用于把约束 JSON 和推�
 
 读取实验约束 JSON、推荐 CSV 和化学条目库 `KB/chemical_space.csv`，结合 PubChem 和本地条目中的分子式、SMILES、CAS、密度信息，生成带投料重量与体积的新 CSV。
 
-`KB/chemical_space.csv` 是本 skill 的长期化学条目库，而不是一次性推荐候选空间。默认计算时就使用这个文件；如果用户提供新的化学信息，应先补充或更新该条目库，再进行用量换算。
+`KB/chemical_space.csv` 是本 skill 的长期化学条目库（用户常称它为候选化学空间表），不是 literature-experiment-recommender 用的那份一次性推荐候选空间 CSV。默认计算时就使用这个文件；如果用户提供新的化学信息，应先补充或更新该条目库，再进行用量换算。
 
 ## 化学条目库
 
