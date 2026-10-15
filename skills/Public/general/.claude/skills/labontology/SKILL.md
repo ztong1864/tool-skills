@@ -11,13 +11,15 @@ description: >
   or general file-generation tasks unless they are part of a laboratory task.
   Not for TRACE Lab / Bayesian-optimization recommendation projects (TRACE,
   贝叶斯优化, 闭环推荐, 推荐下一轮): trace-collab-skill handles those directly.
+  Not for looking something up with a connected tool (SciGraph knowledge
+  graphs, chemistry / protein / literature databases): call that tool directly.
   Load it once per turn; once loaded, continue with its Runtime commands and do
   not call this Skill again in the same turn.
 ---
 
 # LabOntology
 
-LabOntology 是实验任务和实验流程库维护的统一入口，也是任务的监督者：先用它，再选择 Worker Skill。普通写作、表格、图片、PPT 和一般文件处理不属于它。TRACE Lab（贝叶斯优化闭环推荐：建项目、推荐下一轮、提交结果、证据卡）也不经过它，直接用 trace-collab-skill 和 `trace-collab` 工具，不要为此运行 bootstrap 或创建 mission。用户不需要知道内部流程，也不需要手动调用其他 Skill。
+LabOntology 是实验任务和实验流程库维护的统一入口，也是任务的监督者：先用它，再选择 Worker Skill。普通写作、表格、图片、PPT 和一般文件处理不属于它。TRACE Lab（贝叶斯优化闭环推荐：建项目、推荐下一轮、提交结果、证据卡）也不经过它，直接用 trace-collab-skill 和 `trace-collab` 工具，不要为此运行 bootstrap 或创建 mission。用已接入的工具查数据（SciGraph 知识图谱、化学 / 蛋白 / 文献数据库等）也不经过它：直接调用工具，同样不运行 bootstrap、不创建 mission；用户点名的工具不在可用工具里时，不要另找办法替代，告诉用户在 设置 → 密钥管理 配好它的密钥，或在对话的“工具目录”里为本对话开启它，然后再发一次消息。用户不需要知道内部流程，也不需要手动调用其他 Skill。
 
 ## 怎么运行
 
