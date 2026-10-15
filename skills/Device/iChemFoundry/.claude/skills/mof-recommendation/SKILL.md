@@ -13,18 +13,20 @@ allowed-tools: "Read Write Edit Bash Glob Grep Agent Skill"
 
 在开始任何实质性工作之前，你**必须**先调用 `/planning-with-files` skill 来创建和维护 plan 文件。这对于这个长程任务的进度追踪至关重要。
 
-调用方式：使用 Skill 工具，skill 名为 `planning-with-files:plan-zh`，不传参数即可。
+调用方式：使用 Skill 工具加载 `planning-with-files`（只加载一次）。plan 文件建在当前工作区的 `.planning/` 中；设备目录下的 `task_plan.md`、`findings.md`、`progress.md` 是原项目的记录，不要读取或修改。
 
 然后基于下方的完整 pipeline 步骤设计你的 plan。plan 中应清晰体现三大阶段及其子步骤，并在每个阶段完成后更新 progress.md。
 
 ## 数据来源
 
+下面的路径都相对于 **iChemFoundry 设备目录**（系统提示中 Device data 一行给出它的绝对路径，即本 Skill 目录往上三级），不是相对于当前工作区，所以在工作区里搜索找不到它们。读取时用绝对路径；用 Glob 或 Grep 检索时，把具体的数据目录（例如 `设备目录/memory/knowledge_base/v4/material`）作为 path。设备目录只读，你自己的副本和产出都写在工作区（本任务的输出目录）。
+
 - **KB V4**：稳定版知识库，位于 `memory/knowledge_base/v4/`
   - 原理知识库：`v4/principle/`（含 principles、playbooks、axioms、opt_levers、wiki 等）
   - 材料知识库：`v4/material/`（即 KB V3.4 的材料数据）
 - **KB V3.4**：`memory/knowledge_base/v3.4/structured/`（含 experience、playbooks、skilllets、documents 等）
-- **research-wiki**：`research-wiki/`（已有的原理性总结，需要在阶段一更新）
-- **相关文献**：`相关文献/`（原始 PDF 文献，含扩散相关文献子目录）
+- **research-wiki**：`research-wiki/`（已有的原理性总结；设备目录中的只读，阶段一复制一份到本任务的输出目录后更新副本）
+- **相关文献**：`相关文献/`（原始 PDF 文献，含 `扩散相关文献/` 等子目录；阅读方法见 Step 2 的"如何找到并阅读原始文献"）
 
 ## 用户需求
 
@@ -54,7 +56,7 @@ allowed-tools: "Read Write Edit Bash Glob Grep Agent Skill"
 - opt_levers 目录下的优化杠杆
 - wiki 目录下的原理 wiki
 
-同时阅读 `相关文献/扩散相关文献/` 中的相关文献来补充理解。
+同时阅读 `相关文献/扩散相关文献/` 中的相关文献来补充理解（阅读方法同 Step 2：用 Python 提取文本，只看相关段落）。
 
 关注的核心原理包括但不限于：扩散机制、气体分离原理、氮唑类材料特性等。
 
@@ -71,7 +73,7 @@ allowed-tools: "Read Write Edit Bash Glob Grep Agent Skill"
 
 ### 1.4 保存阶段性总结
 
-将所有学到的原理性知识**使用中文**保存在 `research-wiki/` 目录中，作为阶段性总结。更新已有文件或创建新文件均可。同时更新 `research-wiki/index.md` 索引。
+先把设备目录的 `research-wiki/` 复制到本任务的输出目录（LabOntology 给出的 artifact_dir；没有时用工作区的 `outputs/research-wiki/`），再将所有学到的原理性知识**使用中文**保存在这个副本中，作为阶段性总结。更新已有文件或创建新文件均可。同时更新副本的 `index.md` 索引。之后各阶段说的 research-wiki 都指这个副本。
 
 ---
 
@@ -103,6 +105,14 @@ KB 中的信息与原始文献一一对应。对于 Step 1 给出的每一个材
 这一步是为了防止被 KB 中的错误信息误导。例如：Zn-ATA 这个材料的柱撑体也由 ATA 组成（ATA 不仅用于2D层主体，也用于层间柱撑），但这不代表其柱撑体不可替换——把 ATA 换成其他柱撑体不会明显影响拓扑。
 
 > 你必须对 Step 1 的所有材料都严格执行这一步。
+
+### 如何找到并阅读原始文献
+
+1. **找文献**：KB V3.4 `structured/documents/` 中每篇文献有一条记录（`docmap_*.json`），其中 `raw_path` 是这篇文献在 `相关文献/` 下的文件。先用 Grep 以材料名、配体或 DOI 为关键词在 `documents/` 中检索记录；`raw_path` 是其他电脑上的绝对路径时，按其中的文件名在设备目录的 `相关文献/`（含子目录）里找。
+2. **读文献**：不要用 Read 工具打开 PDF，当前模型收不到 PDF 的内容。在 Bash 中用 Python（pymupdf 或 pypdf）提取文本，按材料名和要核对的数值搜索，只打印相关的段落或页（附页码），不要一次输出整篇文献。
+3. **记录**：每项核对结果注明文献文件名和页码。
+
+某个材料在 `相关文献/` 中找不到对应的 PDF 时，改为用 KB V3.4 中对应文献的记录（`v3.4/structured/evidence/`、`v3.4/structured/documents/`）核对上述三项，并在报告中明确说明哪些材料的原始文献未能核对、数值以知识库记录为准。
 
 ## Step 3：排名与报告撰写
 
@@ -154,7 +164,7 @@ KB 中的信息与原始文献一一对应。对于 Step 1 给出的每一个材
 1. 阶段一积累在 research-wiki 中的原理知识（主要依赖）
 2. KB V4 原理知识库 + 对应文献原文（辅助）
 3. KB V3.4 的 playbook 和 skilllet 中的优化技能
-4. `相关文献/扩散相关文献/` 中的文献
+4. `相关文献/扩散相关文献/` 中的文献（阅读方法同 Step 2）
 
 从两个知识库分别进行知识学习。
 
@@ -239,5 +249,5 @@ KB 中的信息与原始文献一一对应。对于 Step 1 给出的每一个材
 3. 所有关键数值必须经**原始文献验证**
 4. 保持对同一量纲/标准下比较的严格性
 5. 使用**中文**撰写所有报告和总结
-6. 实时更新 progress.md 记录进度
+6. 实时更新 progress.md 记录进度（工作区 `.planning/` 中的那份）
 7. 阶段二完成后**必须停下等待用户反馈**，不要自行进入阶段三
