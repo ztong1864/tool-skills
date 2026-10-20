@@ -17,6 +17,11 @@ DOC_NAMES = ("SKILL.md", "README.md", "README.rst", "README.txt", "manifest.md")
 KNOWLEDGE_SUFFIXES = {".json", ".yaml", ".yml", ".csv", ".md", ".rst", ".txt"}
 KNOWLEDGE_ROOTS = {"kb", "knowledge", "references", "deviceknowledge", "workflow", "workflows", "devices"}
 MAX_KNOWLEDGE_BYTES = 4 * 1024 * 1024
+# A device's ontology Skill declares the experiment flow of that device in this file: its Skills in order, the
+# review Skill after a step, where the user confirms, and named stop points (references/experiment-flows.md).
+# `run --flow` builds the mission plan from it.
+FLOW_FILE_NAMES = ("experiment_flows.yaml", "experiment_flows.yml")
+FLOW_SCHEMA = "labontology.experiment-flow.v1"
 
 # These values are action identifiers, not Skill names. They are strong
 # evidence of the capability a Skill needs because they come from the Skill's
@@ -31,7 +36,7 @@ ACTION_CAPABILITIES = {
 
 
 class SkillDiscoveryError(ValueError):
-    """A Worker's own metadata cannot be read; the Worker is skipped, never guessed."""
+    """A Skill's own metadata cannot be read; the Skill is skipped, never guessed."""
 
     def __init__(self, path: Path, reason: str):
         super().__init__(f"{path}: {reason}")
@@ -341,6 +346,77 @@ def _manifest_data(path: Path) -> tuple[dict[str, Any], list[dict[str, str]]]:
     return {}, []
 
 
+def _flow_text(value: Any) -> str:
+    return " ".join(str(value).split()) if isinstance(value, (str, int, float)) else ""
+
+
+def _experiment_flow(raw: Any, number: int) -> tuple[dict[str, Any] | None, str | None]:
+    """One declared flow, normalised; or why it cannot be used."""
+    if not isinstance(raw, dict) or not _flow_text(raw.get("id")):
+        return None, f"flow {number} has no id"
+    flow_id = _flow_text(raw["id"])
+    stops_raw = raw.get("stops") or {}
+    if not isinstance(stops_raw, dict):
+        return None, f"flow {flow_id}: stops must map each stop name to its description"
+    stops = {_flow_text(name): _flow_text(text) for name, text in stops_raw.items() if _flow_text(name)}
+    steps: list[dict[str, Any]] = []
+    for index, item in enumerate(raw.get("steps") or [], 1):
+        # `worker` is the step key's earlier name; flow files that still use it keep working.
+        name = _flow_text(item.get("skill") or item.get("worker")) if isinstance(item, dict) else ""
+        if not name:
+            return None, f"flow {flow_id}: step {index} has no skill"
+        step: dict[str, Any] = {"skill": name}
+        for key in ("review", "pause", "stop"):
+            if _flow_text(item.get(key)):
+                step[key] = _flow_text(item[key])
+        if item.get("optional") is True:
+            step["optional"] = True
+        if step.get("stop"):
+            stops.setdefault(step["stop"], "")
+        steps.append(step)
+    if not steps:
+        return None, f"flow {flow_id}: no steps"
+    declared_stops = {step["stop"] for step in steps if step.get("stop")}
+    unknown = sorted(set(stops) - declared_stops)
+    if unknown:
+        return None, f"flow {flow_id}: stops {unknown} are not set on any step (add `stop: <name>` to that step)"
+    default_stop = _flow_text(raw.get("default_stop")) or None
+    if default_stop and default_stop not in stops:
+        return None, f"flow {flow_id}: default_stop {default_stop!r} is not one of its stops {sorted(stops)}"
+    return {"id": flow_id, "name": _flow_text(raw.get("name")) or flow_id,
+            "description": _flow_text(raw.get("description")), "default_stop": default_stop,
+            "stops": stops, "steps": steps}, None
+
+
+def _experiment_flows(skill_dir: Path) -> tuple[list[dict[str, Any]], list[str]]:
+    """The experiment flows a Skill declares, and the problems that made any of them unusable. A bad flow file
+    never hides the Skill itself: the problems are reported (inspect) and the flow is left out."""
+    candidate = next((skill_dir / name for name in FLOW_FILE_NAMES if (skill_dir / name).is_file()), None)
+    if candidate is None:
+        return [], []
+    try:
+        data = yaml.safe_load(candidate.read_text(encoding="utf-8-sig"))
+    except UnicodeDecodeError:
+        return [], [f"{candidate}: not UTF-8 text"]
+    except yaml.YAMLError as exc:
+        return [], [f"{candidate}: invalid YAML: {_yaml_problem(exc)}"]
+    if not isinstance(data, dict) or data.get("schema") != FLOW_SCHEMA:
+        return [], [f"{candidate}: expected a mapping with `schema: {FLOW_SCHEMA}`"]
+    raw_flows = data.get("flows")
+    if not isinstance(raw_flows, list) or not raw_flows:
+        return [], [f"{candidate}: `flows` must be a non-empty list"]
+    flows, problems = [], []
+    for number, raw in enumerate(raw_flows, 1):
+        flow, problem = _experiment_flow(raw, number)
+        if problem:
+            problems.append(f"{candidate}: {problem}")
+        elif any(item["id"] == flow["id"] for item in flows):
+            problems.append(f"{candidate}: flow id {flow['id']!r} is declared twice")
+        else:
+            flows.append({**flow, "source": str(candidate)})
+    return flows, problems
+
+
 def _merge_parameters(manifest: dict[str, Any], discovered: list[dict[str, Any]]) -> list[dict[str, Any]]:
     raw = manifest.get("inputs", manifest.get("parameters", [])) or []
     if not isinstance(raw, (list, dict)):
@@ -414,14 +490,17 @@ def _artifact_id_from_path(path: str) -> str:
 
 def _output_path_candidates(documents: list[dict[str, Any]]) -> list[dict[str, Any]]:
     candidates: list[dict[str, Any]] = []
-    pattern = re.compile(
-        r"`([^`\r\n]*(?:output[\\/][^`\r\n]+\.(?:json|csv|md|yaml|yml|txt)|"
-        r"[A-Za-z0-9_.-]+\.(?:json|csv|md|yaml|yml|txt))[^`\r\n]*)`",
-        re.I,
-    )
+    span = re.compile(r"`([^`\r\n]+)`")
+    file_name = re.compile(
+        r"output[\\/][^`\r\n]+\.(?:json|csv|md|yaml|yml|txt)|[A-Za-z0-9_.-]+\.(?:json|csv|md|yaml|yml|txt)", re.I)
     for document in documents:
         for hint in document.get("output_hints", []):
-            for match in pattern.finditer(hint):
+            # Code spans are paired left to right first: searching for a file name between any two backticks read
+            # the prose between `scripts/write_recommendations.py` and `--rows -` (which names the rows JSON) as a
+            # second output, and with two outputs for one --output parameter neither was bound.
+            for match in span.finditer(hint):
+                if not file_name.search(match.group(1)):
+                    continue
                 path = match.group(1).strip().rstrip("。，；,;")
                 suffix = Path(path.replace("\\", "/")).suffix.lower().lstrip(".")
                 candidates.append({
@@ -600,17 +679,17 @@ def _capability_data(
 
 
 def _execution_policy(manifest: dict[str, Any]) -> dict[str, bool]:
-    """Worker-declared execution policy: requires_confirmation and/or blocked."""
+    """Skill-declared execution policy: requires_confirmation and/or blocked."""
     declared = manifest.get("execution_policy")
     source = declared if isinstance(declared, dict) else manifest
     return {key: True for key in ("requires_confirmation", "blocked") if source.get(key) is True}
 
 
 def _skill_metadata(skill_dir: Path) -> tuple[dict[str, Any], list[dict[str, str]]]:
-    """Identity comes from the Worker's own top-level document; SKILL.md wins.
+    """Identity comes from the Skill's own top-level document; SKILL.md wins.
 
     Nested documents (KB/README.md, examples/README.md, ...) still contribute
-    documentation hints but never rename or re-describe the Worker.
+    documentation hints but never rename or re-describe the Skill.
     """
     for name in DOC_NAMES:
         candidate = skill_dir / name
@@ -646,6 +725,7 @@ def discover_skill(skill_dir: Path) -> dict[str, Any]:
         manifest_data.get("dependencies", manifest_data.get("runtime_dependencies", []))
     )
     side_effect_level = manifest_data.get("side_effect_level")
+    experiment_flows, flow_problems = _experiment_flows(skill_dir)
     unresolved: list[str] = []
     if not description:
         unresolved.append("description")
@@ -681,19 +761,21 @@ def discover_skill(skill_dir: Path) -> dict[str, Any]:
         "evidence": evidence,
         "documentation": _merge_documentation(documents),
         "knowledge_files": knowledge_files,
+        "experiment_flows": experiment_flows,
+        "experiment_flow_problems": flow_problems,
     }
 
 
 def discover_tree(root: Path, exclude_skill_dirs: set[Path] | None = None,
                   errors: list[dict[str, str]] | None = None,
                   require_contract: bool = False) -> list[dict[str, Any]]:
-    """Discover Workers below root.
+    """Discover Skills below root.
 
-    When ``errors`` is a list, a Worker whose own metadata is unreadable is
-    skipped and reported there, so one broken Worker cannot block the others.
+    When ``errors`` is a list, a Skill whose own metadata is unreadable is
+    skipped and reported there, so one broken Skill cannot block the others.
     Without it the first such error is raised. With ``require_contract`` only
-    folders declaring a SKILL.md or manifest count as Workers; a folder holding
-    only a README (documentation, notes) is not a Worker.
+    folders declaring a SKILL.md or manifest count as Skills; a folder holding
+    only a README (documentation, notes) is not a Skill.
     """
     root = root.resolve()
     excluded = {Path(path).resolve() for path in (exclude_skill_dirs or set())}

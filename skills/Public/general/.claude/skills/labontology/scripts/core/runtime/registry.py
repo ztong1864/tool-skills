@@ -54,6 +54,10 @@ class SkillSuite:
     policies: list[ExecutionPolicySpec]
     available_capabilities: set[str] = field(default_factory=set)
     skill_knowledge: dict[str, dict[str, Any]] = field(default_factory=dict)
+    # Experiment flows declared by an ontology Skill of this library, by flow id (see core/runtime/flows.py),
+    # and the problems of declared flows that could not be read.
+    experiment_flows: dict[str, dict[str, Any]] = field(default_factory=dict)
+    experiment_flow_problems: list[dict[str, Any]] = field(default_factory=list)
 
     def skill_flow(self, flow_id: str) -> SkillFlow:
         path = self.flow_entries[flow_id]
@@ -194,12 +198,21 @@ class Registry:
                     "registry_file": str(graph_path.resolve()),
                 }
             flow_entries: dict[str, SkillFlow] = {}
+            experiment_flows: dict[str, dict[str, Any]] = {}
             for flow_entity in entities.values():
                 if flow_entity.get("type") != "SkillFlow":
                     continue
                 flow_id = flow_entity["id"]
                 if not any(r.get("relation") == "providesSkillFlow" and r.get("source") == suite_id and r.get("target") == flow_id for r in relations):
                     continue
+                flow_props = flow_entity.get("properties", {})
+                if flow_props.get("kind") == "experiment_flow" and flow_props.get("flow_id"):
+                    experiment_flows[str(flow_props["flow_id"])] = {
+                        "id": str(flow_props["flow_id"]), "suite_id": suite_id,
+                        **{key: flow_props.get(key) for key in (
+                            "name", "description", "ontology_skill", "default_stop", "stops", "steps",
+                            "missing_skills", "source")},
+                    }
                 node_ids = [r["target"] for r in relations if r.get("relation") == "hasNode" and r.get("source") == flow_id]
                 nodes = []
                 for node_id in node_ids:
@@ -227,7 +240,10 @@ class Registry:
                 ))
             suites[suite_id] = SkillSuite(suite_id, suite_entity.get("properties", {}).get("name", suite_id),
                                           system_dir, skills, flow_entries, policies,
-                                          set(suite_entity.get("properties", {}).get("available_capabilities", [])), knowledge)
+                                          set(suite_entity.get("properties", {}).get("available_capabilities", [])), knowledge,
+                                          experiment_flows=experiment_flows,
+                                          experiment_flow_problems=list(
+                                              suite_entity.get("properties", {}).get("experiment_flow_problems", [])))
         if not suites:
             raise ValueError(f"Canonical graph contains no SkillSuite: {graph_path}")
         return cls(suites)

@@ -2,7 +2,7 @@ classes:
   Mission:
     description: One concrete user-requested goal being executed by the Agent.
   SkillFlow:
-    description: Optional reference path that may help an Agent inspect dependencies or likely next Skills.
+    description: Optional reference path that may help an Agent inspect dependencies or likely next Skills, or an experiment flow a device's ontology Skill declares (kind experiment_flow), from which `run --flow` builds a plan the user confirms.
   FlowNode:
     description: One referenced Skill position in an optional SkillFlow; it is not an executable mission step.
   Skill:

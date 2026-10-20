@@ -36,7 +36,7 @@ description: 这是化学实验流程中的候选条件推荐技能，用于根�
 3. 读取输出格式示例，确定输出 CSV 的列名、列顺序和候选条件字段。
 4. 结合文献 PDF 或已有文献信息，为每个变量列选择合理候选，并形成完整条件组合。
 5. 生成用户要求数量的推荐数据；如果用户没有指定数量，默认生成 10 条。
-6. 写入 `output/literature_recommendations_<YYYYMMDD>.csv`。
+6. 用 `scripts/write_recommendations.py --output <mission artifacts 目录>/literature_recommendations_<YYYYMMDD>.csv` 写出（见“输出 CSV 的写法”）。
 
 ## 输入输出
 
@@ -44,7 +44,7 @@ description: 这是化学实验流程中的候选条件推荐技能，用于根�
 - 输入：用户提供的候选空间 CSV；未提供 CSV 时可回退 `KB/chemical_space.csv`。
 - 输入：文献 PDF 目录和 `KB/output_format_example.csv`。
 - 输入：可选推荐条数；未指定时默认为 10。
-- 输出：`output/literature_recommendations_<YYYYMMDD>.csv`。
+- 输出：`<mission artifacts 目录>/literature_recommendations_<YYYYMMDD>.csv`（`--output` 指定的路径；不要写进本技能目录）。
 
 ## 候选选择规则
 
@@ -76,7 +76,7 @@ description: 这是化学实验流程中的候选条件推荐技能，用于根�
 ## 缺少文献时
 
 - 先运行一次 `python <本技能目录>/scripts/write_recommendations.py --literature-status`（只读，检查 `KB/pdf_new`、`KB/pdfs`），再看任务输入里有没有用户上传的 PDF；只查这一次。不要用 Glob/Grep 或反复列目录去找 PDF，也不要上网搜索。
-- 结果是 `no_literature` 且用户没有上传 PDF 时，这是正常情况，不是失败：基于约束 JSON、用户的候选空间 CSV、`KB/output_format_example.csv` 和 `output/` 中已有的推荐结果完成推荐，照常用 `write_recommendations.py` 写出文件并登记。
+- 结果是 `no_literature` 且用户没有上传 PDF 时，这是正常情况，不是失败：基于约束 JSON、用户的候选空间 CSV 和 `KB/output_format_example.csv` 完成推荐（不要读本技能目录里以前的推荐结果，它们与本次任务无关），照常用 `write_recommendations.py` 写出文件并登记。
 - 回复里用一句话说明“本轮推荐未使用文献依据”即可（不得编造文献）；不要说推荐结果不可信，也不要让用户重新发起任务。
 
 ## 相关文件
@@ -84,4 +84,4 @@ description: 这是化学实验流程中的候选条件推荐技能，用于根�
 - `KB/output_format_example.csv`
 - 用户输入的 `chemical_space.csv` 或其它 `.csv` 候选空间文件
 - `KB/chemical_space.csv`（仅作为未提供 CSV 时的 fallback）
-- `output/literature_recommendations_<YYYYMMDD>.csv`
+- 输出写到 `--output` 指定的 mission artifacts 目录，不写进本技能目录

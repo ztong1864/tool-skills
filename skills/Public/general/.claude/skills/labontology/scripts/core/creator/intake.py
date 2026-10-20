@@ -1,7 +1,10 @@
 """Create and maintain the compact LabOntology graph cache.
 
 The cache is an evidence index for an agent. Workflow records are descriptive
-references only; this module never turns them into a runtime schedule.
+references only; this module never turns them into a runtime schedule. An
+experiment flow a device's ontology Skill declares is recorded the same way; it
+becomes a mission plan only when the Agent creates a mission with `run --flow`
+and the user confirms that plan.
 """
 from __future__ import annotations
 
@@ -20,7 +23,8 @@ import yaml
 BUNDLE_SCHEMA = "labontology.skill-bundle.v1"
 CACHE_SCHEMA = "labontology.workspace-cache.v1"
 # Bump when discovery or intake output changes so existing caches re-import once.
-DISCOVERY_VERSION = 4  # 4: trace-collab-skill is no longer a Worker (see _SEPARATE_ENTRY_SKILLS)
+DISCOVERY_VERSION = 6  # 5: experiment flows (experiment_flows.yaml); output file names only inside code spans;
+                       # 6: a flow step names its Skill under `skill` (was `worker`)
 MAINTAINABLE_KINDS = frozenset({"knowledge", "device", "workflow"})
 
 def _now() -> str:
@@ -118,7 +122,7 @@ INSTRUCTION_DOCUMENTS = ("SKILL.md", "README.md", "manifest.md", "README.rst", "
 
 
 def _instruction_metadata(source_dir: Path) -> dict[str, Any]:
-    """The document the host must read before acting: SKILL.md, else the Worker's own README."""
+    """The document the host must read before acting: SKILL.md, else the Skill's own README."""
     for name in INSTRUCTION_DOCUMENTS:
         document = source_dir / name
         if document.is_file():
@@ -127,7 +131,7 @@ def _instruction_metadata(source_dir: Path) -> dict[str, Any]:
 
 
 def _policy_records(skill_id: str, policy: Any) -> list[dict[str, Any]]:
-    """Worker-declared execution policy as an ExecutionPolicy entity applied to the Skill."""
+    """Skill-declared execution policy as an ExecutionPolicy entity applied to the Skill."""
     if not isinstance(policy, dict) or not any(policy.get(key) is True for key in ("requires_confirmation", "blocked")):
         return []
     policy_id = f"policy:compact-{_safe_name(skill_id)}"
@@ -286,6 +290,41 @@ def _workflow_records(skills: list[dict[str, Any]], workflows: list[dict[str, An
                 records.append(_relation("precedes", predecessor, node_id))
     return records
 
+def _experiment_flow_records(skills: list[dict[str, Any]], flows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """A declared experiment flow as a SkillFlow (kind experiment_flow) with its steps, stops and ordered nodes.
+
+    A flow naming a Skill this library does not have is kept with `missing_skills`, so inspect can say why
+    `run --flow` refuses it."""
+    known = {_skill_id(skill) for skill in skills}
+    records: list[dict[str, Any]] = []
+    for flow in flows:
+        name = str(flow.get("id") or "")
+        steps = [step for step in _as_list(flow.get("steps")) if isinstance(step, dict) and step.get("skill")]
+        if not name or not steps:
+            continue
+        flow_entity = f"flow:{_safe_name(name)}"
+        named = [skill_id for step in steps for skill_id in (step["skill"], step.get("review")) if skill_id]
+        missing = sorted({skill_id for skill_id in named if skill_id not in known})
+        records.append(_entity(flow_entity, "SkillFlow", {
+            "name": str(flow.get("name") or name), "kind": "experiment_flow", "flow_id": name,
+            "description": flow.get("description") or "", "ontology_skill": flow.get("ontology_skill"),
+            "default_stop": flow.get("default_stop"), "stops": dict(flow.get("stops") or {}), "steps": steps,
+            "missing_skills": missing, "source": flow.get("source"),
+            "status": "declared" if not missing else "missing_skills",
+            "inferred": False, "confidence": 1.0, "user_confirmed": True,
+            "inference_basis": ["declared experiment flow"],
+        }))
+        order = 0
+        for step in steps:
+            for node_type, skill_id in (("skill_call", step["skill"]), ("review", step.get("review"))):
+                if not skill_id or skill_id not in known:
+                    continue
+                order += 1
+                node_id = f"flow-node:{_safe_name(name)}:{order}_{_safe_name(skill_id)}"
+                records.extend([_entity(node_id, "FlowNode", {"skill_id": skill_id, "order": order, "node_type": node_type}),
+                                _relation("hasNode", flow_entity, node_id), _relation("calls", node_id, f"skill:{skill_id}")])
+    return records
+
 def _graph_records(bundle: dict[str, Any]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     skills = [item for item in _as_list(bundle.get("skills")) if isinstance(item, dict)]
     suite_id = str(bundle["suite_id"])
@@ -295,7 +334,11 @@ def _graph_records(bundle: dict[str, Any]) -> tuple[list[dict[str, Any]], list[d
         str(capability) for skill in skills for capability in _as_list(skill.get("required_capabilities"))
         if str(capability).startswith("capability:")
     )
-    records: list[dict[str, Any]] = [_entity(suite_id, "SkillSuite", {"name": suite_id, "skill_count": len(skills), "status": "maintained", "available_capabilities": sorted(available_capabilities)})]
+    suite_properties = {"name": suite_id, "skill_count": len(skills), "status": "maintained", "available_capabilities": sorted(available_capabilities)}
+    flow_problems = [item for item in _as_list(bundle.get("experiment_flow_problems")) if isinstance(item, dict)]
+    if flow_problems:
+        suite_properties["experiment_flow_problems"] = flow_problems
+    records: list[dict[str, Any]] = [_entity(suite_id, "SkillSuite", suite_properties)]
     sources: list[dict[str, Any]] = []
     outputs_by_skill = {_skill_id(skill): _skill_outputs(skill) for skill in skills}
     known_skill_ids = set(outputs_by_skill)
@@ -307,7 +350,7 @@ def _graph_records(bundle: dict[str, Any]) -> tuple[list[dict[str, Any]], list[d
         input_text = "\n".join(str(item).lower() for item in _as_list(documentation.get("input_hints")))
         for candidate in known_skill_ids:
             forms = {candidate.lower(), candidate.lower().replace("-", " "), candidate.lower().replace("-", "_")}
-            # Whole words only: "planning" must not make a Worker depend on "plan".
+            # Whole words only: "planning" must not make a Skill depend on "plan".
             if any(re.search(rf"(?<![a-z0-9]){re.escape(form)}(?![a-z0-9])", input_text) for form in forms):
                 references.append(candidate)
         dependency_map[_skill_id(skill)] = list(dict.fromkeys(item for item in references if item in known_skill_ids and item != _skill_id(skill)))
@@ -321,7 +364,7 @@ def _graph_records(bundle: dict[str, Any]) -> tuple[list[dict[str, Any]], list[d
             f"runtime output binding missing: {artifact}" for artifact in unbound_outputs
         ]
         properties = {"name": str(skill.get("name") or skill_id), "description": skill.get("description"), "status": str(skill.get("status") or "draft"), "side_effect_level": runtime["side_effect_level"], "required_capabilities": runtime["required_capabilities"], "entrypoints": [str(item) for item in _as_list(skill.get("entrypoints"))], "unresolved": list(dict.fromkeys(unresolved)), "runtime": runtime}
-        # Every imported Worker must be read before it can act; a Worker with no
+        # Every imported Skill must be read before it can act; a Skill with no
         # instruction document is therefore never selectable at runtime.
         properties["requires_instruction"] = True
         properties.update(_instruction_metadata(Path(str(skill.get("source_dir") or runtime["working_dir"]))))
@@ -355,6 +398,8 @@ def _graph_records(bundle: dict[str, Any]) -> tuple[list[dict[str, Any]], list[d
                 if path.exists():
                     sources.append(_source_record(path, ["knowledge"], skill_id))
     workflow_records = _workflow_records(skills, [item for item in _as_list(bundle.get("workflows")) if isinstance(item, dict)], suite_id, dependency_map)
+    workflow_records += _experiment_flow_records(
+        skills, [item for item in _as_list(bundle.get("experiment_flows")) if isinstance(item, dict)])
     records.extend(workflow_records)
     for record in workflow_records:
         entity = record.get("entity", {})
@@ -447,7 +492,7 @@ def _replace_suite_records(existing: list[dict[str, Any]], incoming: list[dict[s
     removable_skills = old_skill_ids - incoming_skill_ids - other_suite_members
     removable_contracts = {relation["target"] for relation in relations
                            if relation.get("relation") == "hasContract" and relation.get("source") in removable_skills}
-    # Worker-declared policies follow their Skill: re-imported Skills bring the
+    # Skill-declared policies follow their Skill: re-imported Skills bring the
     # current declaration (or none), removed Skills take theirs with them.
     removable_contracts |= {relation["source"] for relation in relations
                             if relation.get("relation") == "appliesTo"

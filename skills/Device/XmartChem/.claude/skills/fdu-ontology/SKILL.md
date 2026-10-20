@@ -19,6 +19,12 @@ description: 这是 FDU 实验自动化任务本体 skill。只要任务涉及�
 - 进入设备阶段时，需要理解哪些 `DeviceAction` 和 `Resource`
 - 任务、数据、资源和设备动作涉及哪些 `Condition`、`Property` 和 `Instrument`
 
+## 作为实验入口
+
+本 skill 是复旦装置实验的入口。主流程同时写在本目录的 `experiment_flows.yaml`（LabOntology 的实验流程格式）里：LabOntology 从它生成任务计划（`run --flow fdu-experiment-to-device-task --until <终点>`），带上每个规划步骤之后的 `fdu-risk-review`，只在确认点暂停。终点：`plan`（到中文实验方案）、`protocol`（默认：到设备协议 JSON，创建设备任务前停下）、`device`（用户明确要求时创建设备任务）。
+
+修改图谱里的主流程（`agent-flow:fdu-experiment-to-device-task`）、确认点（`pausesAt`）或风险审查规则时，同步修改 `experiment_flows.yaml`。
+
 ## 默认查询顺序
 
 所有 FDU 相关任务先按下面顺序查图谱：
@@ -222,18 +228,18 @@ Agent 可以执行的一步。它通常对应一个 skill 调用，也可以是�
 
 ## CLI
 
-统一入口：
+统一入口（在对话的工作目录运行）：
 
 ```bash
-python .agents/skills/fdu-ontology/scripts/graph_cli.py <command> [options]
+python .claude/skills/fdu-ontology/scripts/graph_cli.py <command> [options]
 ```
 
 常用查询：
 
 ```bash
-python .agents/skills/fdu-ontology/scripts/graph_cli.py entity-list --type Process --text FDU
-python .agents/skills/fdu-ontology/scripts/graph_cli.py entity-get --type AgentFlow --id agent-flow:fdu-experiment-to-device-task
-python .agents/skills/fdu-ontology/scripts/graph_cli.py entity-list --type TaskStep
-python .agents/skills/fdu-ontology/scripts/graph_cli.py entity-list --type DataArtifact --text amount
-python .agents/skills/fdu-ontology/scripts/graph_cli.py relation-list --type nextStep
+python .claude/skills/fdu-ontology/scripts/graph_cli.py entity-list --type Process --text FDU
+python .claude/skills/fdu-ontology/scripts/graph_cli.py entity-get --type AgentFlow --id agent-flow:fdu-experiment-to-device-task
+python .claude/skills/fdu-ontology/scripts/graph_cli.py entity-list --type TaskStep
+python .claude/skills/fdu-ontology/scripts/graph_cli.py entity-list --type DataArtifact --text amount
+python .claude/skills/fdu-ontology/scripts/graph_cli.py relation-list --type nextStep
 ```

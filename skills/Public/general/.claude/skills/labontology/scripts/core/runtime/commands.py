@@ -53,7 +53,10 @@ def build_agent_runtime(args: argparse.Namespace) -> AgentRuntime:
     registry = _load_registry(args)
     suites = [registry.suite(args.suite)] if args.suite else [registry.suites[key] for key in sorted(registry.suites)]
     skills, knowledge, workflows, policies = {}, {}, [], []
+    experiment_flows: dict[str, dict] = {}
     for suite in suites:
+        for flow_id, flow in suite.experiment_flows.items():
+            experiment_flows.setdefault(flow_id, flow)
         # Skill entities are global in the unified graph, so the same Skill may
         # belong to several suites; only a conflicting definition is ambiguous.
         duplicates = {skill_id for skill_id in set(skills).intersection(suite.skills)
@@ -74,6 +77,7 @@ def build_agent_runtime(args: argparse.Namespace) -> AgentRuntime:
         skills, _mission_store(args),
         available_capabilities=set(args.capability).union(*(suite.available_capabilities for suite in suites)), policies=policies,
         skill_knowledge=knowledge, workflow_references=workflows, suite_id=args.suite,
+        experiment_flows=experiment_flows,
     )
 
 
@@ -90,7 +94,7 @@ def _mission_command(args: argparse.Namespace, store: StateStore) -> None:
                       artifacts=_parse_initial_artifacts(args.input_artifact),
                       start_skill=args.start_skill,
                       plan=[item for item in (args.plan or "").split(",") if item.strip()],
-                      run_through=bool(args.run_through))
+                      run_through=bool(args.run_through), flow=args.flow, until=args.until)
     elif args.command == "act":
         decision = json.loads(Path(args.decision_file).read_text(encoding="utf-8-sig"))
         runtime.decide(decision)
@@ -150,12 +154,14 @@ def main(argv: Iterable[str] | None = None) -> int:
             command.add_argument("--goal", default="", help="Mission goal for default Agent mode")
             command.add_argument("--constraint", action="append", default=[])
             command.add_argument("--start-skill", help="Preferred first Skill; Agent may replan")
-            command.add_argument("--plan", default="", help="Comma-separated Worker ids for a multi-step goal, in order")
+            command.add_argument("--plan", default="", help="Comma-separated Skill ids for a multi-step goal, in order")
             command.add_argument("--run-through", action="store_true", help="Do not pause for the user after each plan step")
+            command.add_argument("--flow", default="", help="Build the plan from this declared experiment flow")
+            command.add_argument("--until", default="", help="Stop point of --flow (default: the flow's default_stop)")
         if name == "act":
             command.add_argument("--decision-file", required=True, help="One host-Agent decision as JSON")
         if name == "prepare-skill":
-            command.add_argument("--skill-id", required=True, help="Worker Skill to read before acting")
+            command.add_argument("--skill-id", required=True, help="Skill to read before acting")
         if name == "resume":
             command.add_argument("--action-id", default="", help="External Agent action being reported")
             command.add_argument("--confirm", action="store_true")
@@ -167,7 +173,7 @@ def main(argv: Iterable[str] | None = None) -> int:
             command.add_argument("--agent-failed", action="store_true")
         if name == "revise":
             command.add_argument("--change", required=True, help="The user's change to the finished task")
-            command.add_argument("--redo", default="", help="Comma-separated Worker ids to run again")
+            command.add_argument("--redo", default="", help="Comma-separated Skill ids to run again")
         if name == "reconcile":
             command.add_argument("--outcome", required=True,
                                  choices=("not_started", "succeeded", "failed", "unknown"))

@@ -82,3 +82,9 @@ desktop.ini
 # ---------------------------------------------------------------------------
 old_skills_2206/
 old_skills_tools_2309/
+
+# ---------------------------------------------------------------------------
+# Skill run outputs: a run writes into its own task folder (a LabOntology mission's artifact folder),
+# never into the shared skill. The scripts still create output/ when no path is given.
+# ---------------------------------------------------------------------------
+skills/Device/XmartChem/.claude/skills/*/output/

@@ -107,10 +107,20 @@ class MissionState:
     prepared_skill: dict[str, Any] | None = None
     replan_required: bool = False
     fallback_approval: dict[str, Any] | None = None
-    plan: list[str] = field(default_factory=list)  # ordered Worker ids the user confirmed for a multi-step goal
+    plan: list[str] = field(default_factory=list)  # ordered Skill ids the user confirmed for a multi-step goal
     run_through: bool = False  # the user asked for all plan steps without a pause after each one
     revisions: list[dict[str, Any]] = field(default_factory=list)  # changes to a finished task (act --revise), oldest first
     plan_base: int = 0  # decisions made before the current plan round; only later executions count as done
+    # A plan built from a device's experiment flow (run --flow): the flow and its stop, the plan positions
+    # (0-based) after which the user confirms (None: after every step), a label per position and the flow's
+    # question at each pause, by position.
+    flow: dict[str, Any] | None = None
+    plan_pauses: list[int] | None = None
+    plan_labels: list[str] = field(default_factory=list)
+    plan_questions: dict[str, str] = field(default_factory=dict)
+    # Plan positions (0-based, as strings) reopened by a redo before the plan was finished: only actions numbered
+    # above the value can do that position again (act --revise on an unfinished plan).
+    plan_floors: dict[str, int] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -141,6 +151,11 @@ class MissionState:
             "run_through": self.run_through,
             "revisions": self.revisions,
             "plan_base": self.plan_base,
+            "flow": self.flow,
+            "plan_pauses": self.plan_pauses,
+            "plan_labels": self.plan_labels,
+            "plan_questions": self.plan_questions,
+            "plan_floors": self.plan_floors,
         }
 
     @classmethod
@@ -173,4 +188,10 @@ class MissionState:
             run_through=bool(data.get("run_through", False)),
             revisions=list(data.get("revisions", [])),
             plan_base=int(data.get("plan_base", 0) or 0),
+            flow=data.get("flow"),
+            plan_pauses=(None if data.get("plan_pauses") is None
+                         else [int(item) for item in data.get("plan_pauses") or []]),
+            plan_labels=[str(item) for item in data.get("plan_labels") or []],
+            plan_questions={str(key): str(value) for key, value in (data.get("plan_questions") or {}).items()},
+            plan_floors={str(key): int(value) for key, value in (data.get("plan_floors") or {}).items()},
         )

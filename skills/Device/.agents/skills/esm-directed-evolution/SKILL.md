@@ -1,80 +1,80 @@
 ---
 name: esm-directed-evolution
-description: Use BioLM ESM/ESM-2 masked-language-model APIs for protein directed evolution tasks. Trigger when a user provides an enzyme or protein sequence containing one or more mask tokens and wants amino acid substitution probabilities, mutation candidate rankings, local library design, or a probability vector over the 20 standard amino acids plus selected special tokens.
+description: Score amino-acid substitutions at masked positions of an enzyme or protein with a local ESM-2 protein language model (Meta fair-esm, runs on the server's CPU, no online service or key). Trigger when a user gives a protein sequence with <mask> tokens, or a wild type and residue positions, and wants amino-acid probabilities, mutation candidate rankings, local library design, or a probability vector over the 20 standard amino acids plus special tokens (定向进化、突变位点氨基酸概率、ESM-2 掩码预测).
 ---
 
 # ESM Directed Evolution
 
-## Workflow
+Predicts, for each masked position of a protein, how likely each amino acid is under the ESM-2 protein
+language model, computed locally with the model installed in this skill's Python environment. It replaces
+the earlier BioLM-based version: no BioLM account, key or network access is involved.
 
-1. Confirm the input is a single protein sequence or a small batch of sequences containing at least one literal `<mask>` token.
-2. Remove a terminal `*` stop symbol before calling BioLM; BioLM accepts amino-acid residue tokens only and rejects `*`.
-3. Use BioLM's masked prediction endpoint for an ESM model, usually `esm2-35m` for quick iteration or `esm2-650m`/larger for higher-quality ranking.
-4. Convert the returned masked-position logits into probabilities with softmax.
-5. Report full probability vectors in the exact token order used by the script.
-6. For directed evolution, prefer ranking standard amino acids first; keep special tokens only when the user explicitly wants the full filtered vocabulary.
+## Quick start
 
-## Quick Start
+Run the bundled script from the workspace (the chat's `python` runs it in this skill's environment):
 
-Use the bundled script for deterministic API calls and probability formatting:
-
-```powershell
-python .claude\skills\esm-directed-evolution\scripts\biolm_esm_mask_probabilities.py `
-  --sequence "MKTFFV<mask>LVLLLSGALAAPVA" `
-  --model esm2-35m `
-  --output-json outputs\masked_probs.json
+```bash
+python .claude/skills/esm-directed-evolution/scripts/esm_mask_probabilities.py \
+  --sequence "MKTFFV<mask>LVLLLSGALAAPVA" \
+  --output-json outputs/masked_probs.json
 ```
 
-Do not ask the user to paste the BioLM key into a prompt. Resolve credentials in this order:
+Common variants:
 
-1. `--api-key` for a one-off override.
-2. `BIOLM_API_KEY` environment variable.
-3. `--api-key-file` or `BIOLM_API_KEY_FILE`.
-4. `.claude\secrets\biolm.env`, which is git-ignored and should contain `BIOLM_API_KEY=...`.
+- Wild type plus positions (1-based) instead of typing `<mask>`; the output then names the wild-type residue
+  and labels candidates like `A45V`:
+  `--sequence "<wild-type sequence>" --positions 45,120 --standard-only`
+- Each position on its own (the others keep the wild type): add `--independent` (needs `--positions`).
+  Without it all masked positions are predicted together in one pass.
+- Sequence from a file: `--fasta path/to/file.fasta` (or a GenBank `.gb`/`.gbk` file), `--record <id>` to pick
+  a record other than the first.
+- Coding DNA: add `--translate` (standard genetic code; the DNA must be whole codons).
+- Probabilities over only the output tokens: `--renormalize-selected`. More or fewer candidates per position:
+  `--top N` (default 5).
+- `--mock` checks the output format with made-up numbers and no model; never report its numbers as results.
 
-Prefer the project-local secret file for repeat Agent use on this workspace:
+## Model
 
-```powershell
-New-Item -ItemType Directory -Force .claude\secrets
-Set-Content .claude\secrets\biolm.env "BIOLM_API_KEY=your-token-here"
-```
+- Installed: **esm2-35m** (ESM-2, 35 million parameters, 12 layers), the default `--model`.
+- Larger ESM-2 models (`esm2-150m`, `esm2-650m`, ...) and ESM-1v are not installed. If the user asks for one,
+  say so and use esm2-35m, or tell them an administrator can add the model (it is a download entry of the
+  `iBioFoundry/esm` environment in `venv/packages.json`). The script's error message lists what is installed.
+- Do not pip install packages, download model files or call an online service to work around a missing model
+  or environment: report the script's message and that it needs an administrator (需要管理员处理).
 
-For offline validation of parsing and formatting:
+## Input rules
 
-```powershell
-python .claude\skills\esm-directed-evolution\scripts\biolm_esm_mask_probabilities.py --mock
-```
+- One protein chain of at most 1022 residues: letters `ACDEFGHIKLMNPQRSTVWY` (plus `X B Z U O`) and `<mask>`.
+  For a longer protein, pass the domain around the positions of interest and say so.
+- A terminal `*` is removed; an internal `*`, spaces, digits or a FASTA header in `--sequence` are refused
+  with a message (use `--fasta` for files).
+- Use either `<mask>` in the sequence or `--positions`, not both.
 
-## Output Contract
+## Output contract
 
-Return or save JSON with:
+JSON (printed, and written to `--output-json` when given):
 
-- `model`: BioLM model name.
-- `sequence`: input masked sequence.
-- `token_order`: selected output tokens, defaulting to the 20 standard amino acids followed by common ESM special/ambiguous symbols when present.
-- `positions`: one object per `<mask>` in API order, containing `probabilities` and `selected_probability_mass`.
+- `model`, `engine` (fair-esm version, local CPU), `sequence` (with `<mask>`), `masking` (`joint` or
+  `independent`), `token_order` (20 standard amino acids, then `X B Z U O - . <unk> <mask>` unless
+  `--standard-only` or `--tokens`), optional `record` and `notes`.
+- `positions`: one object per mask, in sequence order:
+  - `mask_index`, `position` (1-based residue number), `wild_type` (with `--positions`);
+  - `probabilities`: token → probability, softmax over the model's whole vocabulary then filtered to
+    `token_order` (so they may sum to slightly less than 1), or renormalized with `--renormalize-selected`;
+  - `selected_probability_mass`, `renormalized`;
+  - `top_standard`: the best standard amino acids, each with `probability` and, when the wild type is known,
+    `mutation` (e.g. `A45V`) and `log_ratio_vs_wild_type` (log p(mutant) − log p(wild type));
+  - `wild_type_probability` and `wild_type_rank` when the wild type is known.
 
-Use `--renormalize-selected` when the vector must sum to 1 over the selected candidate tokens. Without it, probabilities are softmaxed over the full BioLM vocabulary and then filtered; the selected token probabilities may sum to less than 1.
+## Using the results in directed evolution
 
-For `esm1v-all`, BioLM returns five ESM-1v submodel candidate lists. The bundled script must average scores across the submodels and output only the averaged 20-amino-acid vector, not the raw per-submodel response or a truncated top-k list.
+- These are model likelihoods under the learned sequence context, not measured fitness or activity. Say so.
+- Use the top amino acids as exploitation candidates; lower-probability but chemically plausible substitutions
+  are exploration candidates only with structural or functional support.
+- A positive `log_ratio_vs_wild_type` means the model finds the mutant more likely than the wild type at that
+  site; it is a ranking aid, not a stability or activity prediction.
+- esm2-35m is the smallest useful ESM-2 model: rankings are coarse. Combine them with active-site knowledge,
+  structure, assay data and diversity goals before proposing a library.
 
-## BioLM Notes
-
-Read `references/biolm-esm-api.md` when implementing custom calls, changing models, or troubleshooting response shapes.
-
-Important defaults:
-
-- Endpoint: `https://biolm.ai/api/v3/{model}/predict/`
-- Authorization header: `Authorization: Token <BIOLM_API_KEY>`
-- Payload: `{"items": [{"sequence": "...<mask>..."}]}`
-- Response fields: `results[].logits`, `results[].vocab_tokens`, `results[].sequence_tokens`
-- Strip a trailing `*` from user-provided protein sequences before API submission.
-- ESM-1v response fields differ from ESM-2; aggregate `esm1v-n*` candidate scores by token and report only the mean.
-
-## Directed Evolution Use
-
-For a masked enzyme sequence, interpret each mask independently unless the user asks for combinatorial design. For each mask:
-
-- Use the top standard amino acids as exploitation candidates.
-- Use lower-probability but chemically plausible substitutions as exploration candidates only if supported by structural or functional context.
-- Do not claim the ESM probability is experimental fitness; describe it as model likelihood under learned sequence context.
+Read `references/esm-local.md` for the model table, vocabulary, how the numbers are computed and how a larger
+model is added.

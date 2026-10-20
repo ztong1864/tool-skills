@@ -45,6 +45,7 @@ description: FDU 实验规划阶段风险审查 skill。用于候选条件推荐
 - `artifact:amount-table`
 - 草稿编号步骤
 - 来自 `fdu-ontology` 的设备动作、资源约束或仪器能力信息
+- `KB/solvent_boiling_points.csv`：常用溶剂的沸点（由下面的沸点检查脚本读取）
 
 如果关键上下文缺失，不要猜测，返回 `needs_human_review`。
 
@@ -70,11 +71,15 @@ description: FDU 实验规划阶段风险审查 skill。用于候选条件推荐
 1. 判断当前处于哪个 `TaskStep`。
 2. 读取 `references/risk_knowledge_base.md`。
 3. 读取该步骤已经生成的规划产物和可用上游上下文。
-4. 检查可行性：化学条件、物料类别、用量、温度、时间或步骤顺序是否自洽。
-5. 检查安全性：是否存在明显危险条件、不兼容物料、失控加热、压力、挥发性或不受支持的处理方式。
-6. 检查设备能力：当前计划是否符合已知 FDU 设备动作、资源或仪器能力边界。
-7. 检查动作边界：当前下游 skill 是否被要求执行超出其职责范围的工作。
-8. 输出简短结论；如果存在阻断问题，说明原因。
+4. 审查条件推荐或投料量时，先运行沸点检查（只读，输出 JSON）：`python <本技能目录>/scripts/check_boiling_points.py --table <推荐 CSV 或投料量 CSV> --constraints <约束 JSON>`。它按 `KB/solvent_boiling_points.csv` 比较每组的溶剂沸点和约束中的反应温度。
+   - `result` 为 `block`：verdict 必须是 `block`；findings 写它的 `message`（组号、溶剂、沸点和反应温度，例如“第 3、9 组的溶剂四氢呋喃（沸点约 66 ℃），低于反应温度 70 ℃”）；required_action 写去掉或替换这些组的溶剂。
+   - `result` 为 `needs_human_review`：写明沸点表里没有的溶剂（`unknown_solvents`），或约束中缺少反应温度。
+   - `result` 为 `pass`：溶剂沸点已经核对，不要再以“沸点数据缺失”“无法确认沸点”为由给出 `needs_human_review`；其他检查照常进行。
+5. 检查可行性：化学条件、物料类别、用量、温度、时间或步骤顺序是否自洽。
+6. 检查安全性：是否存在明显危险条件、不兼容物料、失控加热、压力、挥发性或不受支持的处理方式。
+7. 检查设备能力：当前计划是否符合已知 FDU 设备动作、资源或仪器能力边界。
+8. 检查动作边界：当前下游 skill 是否被要求执行超出其职责范围的工作。
+9. 输出简短结论；如果存在阻断问题，说明原因。
 
 ## 风险提醒流程
 

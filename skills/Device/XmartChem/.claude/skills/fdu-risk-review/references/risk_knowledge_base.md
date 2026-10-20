@@ -13,7 +13,7 @@ Use `block` when:
 - the plan asks the Agent to start or submit a device task through this skill,
 - the step would continue despite a known missing critical artifact,
 - a condition is obviously unsafe and cannot be resolved from context,
-- a material boiling point is clearly lower than the planned reaction temperature,
+- a material boiling point is clearly lower than the planned reaction temperature (solvents of condition and amount tables: `scripts/check_boiling_points.py`, which uses `KB/solvent_boiling_points.csv`),
 - the plan implies overflow, uncontrolled pressure rise, pollution release, or large venting risk,
 - the plan involves known severe acute hazards such as HCN, HF, or highly toxic gases without explicit containment and human approval,
 - the required action clearly exceeds XmartChem/FDU device capability or machine upper/lower limits.
@@ -21,7 +21,7 @@ Use `block` when:
 Use `needs_human_review` when:
 
 - chemical compatibility, hazard class, concentration, temperature, pressure, or scale cannot be verified from available context,
-- boiling point, volatility, gas generation, pressure behavior, or containment cannot be verified,
+- boiling point (of a solvent not in `KB/solvent_boiling_points.csv`), volatility, gas generation, pressure behavior, or containment cannot be verified,
 - a candidate reagent or solvent appears unusual for the reaction but is not explicitly forbidden,
 - HCN, HF, highly toxic gas, corrosive gas, strong oxidizer, pyrophoric, explosive, or water-sensitive risk is possible but not fully specified,
 - the recommendation or amount table contains ambiguous units,
@@ -97,7 +97,7 @@ Review physical risks after recommendations, amount tables, or numbered steps ar
 
 Return `block` when:
 
-- a solvent or reagent boiling point is clearly below the planned reaction temperature,
+- a solvent or reagent boiling point is clearly below the planned reaction temperature (for solvents, `scripts/check_boiling_points.py` lists the rows),
 - the plan implies boiling, overflow, or splash risk without a controlled handling step,
 - pressure rise, sealed-vessel behavior, or gas evolution is explicitly present without containment,
 - the plan implies contamination, pollution release, or large venting risk without mitigation,
@@ -105,7 +105,7 @@ Return `block` when:
 
 Return `needs_human_review` when:
 
-- boiling point data is missing for a volatile solvent or reagent,
+- boiling point data is missing for a volatile solvent or reagent (a solvent the check lists in `unknown_solvents`; the solvents in `KB/solvent_boiling_points.csv` are not missing),
 - reaction temperature is unspecified but heating is implied,
 - pressure behavior is not described,
 - vessel volume, liquid fill level, or gas-handling capacity is unknown,

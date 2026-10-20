@@ -41,6 +41,12 @@ def export_bundle(
         "skills": skills,
         "device_knowledge": [],
         "workflows": [],
+        # Experiment flows declared by a device's ontology Skill (experiment_flows.yaml), with the Skill that
+        # declares them; the problems of flows that could not be read are kept for inspect.
+        "experiment_flows": [{**flow, "ontology_skill": str(skill["id"])}
+                             for skill in skills for flow in skill.get("experiment_flows", [])],
+        "experiment_flow_problems": [{"skill_id": str(skill["id"]), "problem": problem}
+                                     for skill in skills for problem in skill.get("experiment_flow_problems", [])],
     }
     output_dir.mkdir(parents=True, exist_ok=True)
     knowledge_dir = output_dir / "Knowledge"

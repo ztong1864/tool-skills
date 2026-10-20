@@ -15,6 +15,7 @@ from typing import Any
 
 import urllib.error
 import urllib.request
+from concurrent.futures import ThreadPoolExecutor
 from functools import lru_cache
 
 import requests
@@ -116,15 +117,13 @@ def build_steps_prompt(source_text: str, ata_steps: str, reference_text: str,
                        selected: list[str] | None = None) -> str:
     if selected:
         material_rule = (
-            "4. 下面给出了用户选定的条件：步骤中写这些条件里的具体物料名称和用量，不要再写“从……中选 1 种”这类候选描述；"
+            "4. 下面给出了用户选定的条件：步骤中写这个条件里的具体物料名称和用量，不要再写“从……中选 1 种”这类候选描述；"
             "标为“不加入”的物料不写进步骤。"
-            + ("每个条件单独写一组编号步骤，每组前面单独一行写 `### 条件 N`（N 为下面给出的条件编号）。" if len(selected) > 1 else "")
         )
         selected_block = "\n\n## 选定条件（来自投料量表）\n" + "\n".join(selected)
-        heading_note = "（每组前的 `### 条件 N` 除外）" if len(selected) > 1 else ""
     else:
         material_rule = "4. 如果用户只给出类别，如“金属盐”“手性胺”“溶剂”，步骤中也保留类别，不要编造具体名称。"
-        selected_block = heading_note = ""
+        selected_block = ""
     return f"""
 你是自动化化学实验步骤编写助手。
 
@@ -132,7 +131,7 @@ def build_steps_prompt(source_text: str, ata_steps: str, reference_text: str,
 请根据用户原始实验指令和 ATA 步骤模板，输出可执行的实验步骤。
 
 严格要求：
-1. 只输出编号步骤列表，不要输出标题、实验概述、试剂作用与用量、过滤信息或其他章节{heading_note}。
+1. 只输出编号步骤列表，不要输出标题、实验概述、试剂作用与用量、过滤信息或其他章节。
 2. 直接参考 `ATA 步骤模板` 的步骤顺序和表达方式。
 3. 根据 `source_text` 替换或保留试剂/底物/用量信息。
 {material_rule}
@@ -365,9 +364,32 @@ def generate_steps(constraints_path: Path, reference_dir: Path,
         raise StepGenerationError(f"Unsupported reaction type: {detection.get('reaction_type')}; {reason}")
     ata_steps = read_text(ATA_STEP_FILE)
     reference_text = load_reference_markdown(reference_dir)
-    markdown = sanitize_markdown(call_llm(build_steps_prompt(source_text, ata_steps, reference_text, selected), system_content="你只输出编号实验步骤列表，不输出标题或解释。"))
-    validate_markdown(markdown)
-    return markdown
+
+    def steps_for(conditions: list[str] | None) -> str:
+        markdown = sanitize_markdown(call_llm(build_steps_prompt(source_text, ata_steps, reference_text, conditions),
+                                              system_content="你只输出编号实验步骤列表，不输出标题或解释。"))
+        validate_markdown(markdown)
+        return markdown
+
+    if not selected or len(selected) == 1:
+        return steps_for(selected)
+    # Several conditions run side by side on the workstation: fdu-experiment-plan gives each its own reaction
+    # position and fdu-multi-step-json lines their stirring steps up on the same rows. Asked for all of them in
+    # one list, the model wrote them one after another, each reacting 24 h after the previous one (10 conditions:
+    # about 10 days). Each condition is written on its own and the groups are put together here.
+    with ThreadPoolExecutor(max_workers=min(PARALLEL_LLM_CALLS, len(selected))) as pool:
+        groups = list(pool.map(lambda condition: steps_for([condition]), selected))
+    numbers = [re.match(r"条件 (\d+)", condition).group(1) for condition in selected]
+    return "\n\n".join([parallel_note(len(selected))]
+                       + [f"### 条件 {number}\n{steps}" for number, steps in zip(numbers, groups)])
+
+
+PARALLEL_LLM_CALLS = 4
+
+
+def parallel_note(count: int) -> str:
+    return (f"以下 {count} 组条件分别在各自的反应位上同时进行：各反应位分别加料后一起预搅拌、一起反应、一起后处理，"
+            "总时长与一组相同，不是一组做完再做下一组。")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -377,7 +399,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--output", default="", help="Output Markdown path.")
     parser.add_argument("--amounts", default="", help="Optional amounts CSV (chemical-amount-calculator output): write steps "
                         "for chosen conditions with their real materials and amounts.")
-    parser.add_argument("--rows", default="", help="With --amounts: condition numbers to keep, e.g. 1 or 1,3 (default: all).")
+    parser.add_argument("--rows", default="", help="With --amounts: condition numbers to keep, e.g. 1 or 1,3 (default: all). "
+                        "Several conditions are written as groups that run side by side, one reaction position each.")
     return parser
 
 

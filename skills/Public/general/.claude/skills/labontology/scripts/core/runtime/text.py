@@ -1,4 +1,4 @@
-"""Shared term extraction for Worker ranking and experience recall."""
+"""Shared term extraction for Skill ranking and experience recall."""
 from __future__ import annotations
 
 import re

@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import argparse
 import contextlib
+import copy
+import difflib
 import hashlib
 import io
 import json
@@ -10,6 +12,7 @@ import re
 import shutil
 import sys
 import time
+from datetime import datetime
 from pathlib import Path
 from tempfile import TemporaryDirectory
 from typing import Any, Sequence
@@ -23,11 +26,13 @@ if str(VENDOR_DIR) not in sys.path:
 from core import graph as GRAPH
 from core.creator.backup import GRAPH_FILES, _validate_graph_root, has_graph, restore_active_graph
 from core.creator.bundle import export_bundle
+from core.creator import discovery as DISCOVERY
 from core.creator.discovery import discover_tree
 from core.creator.intake import DISCOVERY_VERSION, receive_bundle, remove_suites, resolve_suite_root
 from core.fsutil import _lock_owner, _process_running, file_lock, iter_files, remove_tree
 from core.creator.maintenance import maintain_graph as apply_graph_maintenance
 from core.runtime import commands as runtime_commands
+from core.runtime.agent_loop import TURN_ENV
 from core.runtime.feedback import FeedbackStore, repeated_problems
 from core.runtime.registry import Registry
 
@@ -77,13 +82,35 @@ def import_suite(skill_root: Path, suite_id: str, workspace: Path,
         "validation": {"graphs": 1, "valid": True},
     }
     if skipped:
-        result["skipped_workers"] = skipped
+        result["skipped_skills"] = skipped
     return result
 
 
 def _brief(text: Any, limit: int = 120) -> str:
     text = " ".join(str(text or "").split())
     return text if len(text) <= limit else text[:limit].rstrip() + "…"
+
+
+def _flow_listing(flow: dict[str, Any]) -> dict[str, Any]:
+    """A declared experiment flow as inspect lists it: how to start a mission from it and what it runs."""
+    route = []
+    for step in flow.get("steps") or []:
+        text = step["skill"] + (f" + {step['review']}" if step.get("review") else "") + (" ⏸" if step.get("pause") else "")
+        if step.get("stop"):
+            text += f" [stop: {step['stop']}]"
+        if step.get("optional"):
+            text += " (optional)"
+        route.append(text)
+    item = {"id": flow.get("id"), "name": flow.get("name"), "ontology_skill": flow.get("ontology_skill"),
+            "stops": flow.get("stops") or {}, "default_stop": flow.get("default_stop"), "steps": " → ".join(route),
+            "start": "run --cache-dir labontology_workspace_cache --goal \"<goal>\" --flow "
+                     f"{flow.get('id')} --until <stop>"}
+    if flow.get("description"):
+        item["description"] = flow["description"]
+    if flow.get("missing_skills"):
+        item["missing_skills"] = flow["missing_skills"]
+        item["start"] = "unusable: the library lacks " + ", ".join(flow["missing_skills"])
+    return item
 
 
 def inspect_cache(cache_dir: Path, include_skills: bool = False) -> dict[str, Any]:
@@ -109,8 +136,15 @@ def inspect_cache(cache_dir: Path, include_skills: bool = False) -> dict[str, An
     }
     if len(suites) == 1:
         result.update({"suite_id": suites[0]["suite_id"], "skill_count": suites[0]["skill_count"]})
+    flows = [_flow_listing(flow) for suite in sorted(registry.suites.values(), key=lambda suite: suite.id)
+             for flow in suite.experiment_flows.values()]
+    if flows:
+        result["experiment_flows"] = flows
+    problems = [item for suite in registry.suites.values() for item in suite.experiment_flow_problems]
+    if problems:
+        result["experiment_flow_problems"] = problems
     if include_skills:
-        # Compact Worker inventory, so "what workflows are available" needs no mission.
+        # Compact Skill inventory, so "what workflows are available" needs no mission.
         inventory = []
         for suite in sorted(registry.suites.values(), key=lambda suite: suite.id):
             for skill_id, spec in sorted(suite.skills.items()):
@@ -195,14 +229,44 @@ def _automatic_suite_id(skill_root: Path) -> str:
     return f"suite:auto-{digest}"
 
 
+@contextlib.contextmanager
+def _discovery_cache():
+    """Parse each Skill folder once while one command runs.
+
+    One bootstrap discovers every root several times (its Skills, the LabOntology folders, the cache
+    check, new Skills, the import), and each discovery parses every SKILL.md and the syntax of every
+    script: 27 discoveries of 5 roots took about 20 s even when nothing had changed. Only for commands that
+    read Skill folders without writing them; each caller gets its own copy (the bundle export edits it)."""
+    original = DISCOVERY.discover_skill
+    parsed: dict[Path, tuple[dict[str, Any] | None, Exception | None]] = {}
+
+    def discover_skill(skill_dir: Path) -> dict[str, Any]:
+        key = Path(skill_dir).resolve()
+        if key not in parsed:
+            try:
+                parsed[key] = (original(skill_dir), None)
+            except DISCOVERY.SkillDiscoveryError as exc:
+                parsed[key] = (None, exc)
+        skill, error = parsed[key]
+        if error is not None:
+            raise error
+        return copy.deepcopy(skill)
+
+    DISCOVERY.discover_skill = discover_skill
+    try:
+        yield
+    finally:
+        DISCOVERY.discover_skill = original
+
+
 def _discover(skill_root: Path, exclude_skill_dirs: set[Path] | None = None,
               errors: list[dict[str, str]] | None = None) -> list[dict[str, Any]]:
-    """Release discovery: only declared Workers; unreadable ones are skipped."""
+    """Release discovery: only declared Skills; unreadable ones are skipped."""
     return discover_tree(skill_root, exclude_skill_dirs=exclude_skill_dirs,
                          errors=errors if errors is not None else [], require_contract=True)
 
 
-def _worker_skills(skill_root: Path, exclude_skill_dirs: set[Path],
+def _root_skills(skill_root: Path, exclude_skill_dirs: set[Path],
                    errors: list[dict[str, str]] | None = None) -> list[tuple[str, Path]]:
     return [
         (str(skill["id"]), Path(str(skill["source_dir"])).resolve())
@@ -211,8 +275,8 @@ def _worker_skills(skill_root: Path, exclude_skill_dirs: set[Path],
     ]
 
 
-def _worker_skill_ids(skill_root: Path, exclude_skill_dirs: set[Path]) -> set[str]:
-    return {skill_id for skill_id, _ in _worker_skills(skill_root, exclude_skill_dirs)}
+def _skill_ids(skill_root: Path, exclude_skill_dirs: set[Path]) -> set[str]:
+    return {skill_id for skill_id, _ in _root_skills(skill_root, exclude_skill_dirs)}
 
 
 def _cached_skill_owners(cache: Path) -> dict[str, Path]:
@@ -231,28 +295,28 @@ def _cached_skill_owners(cache: Path) -> dict[str, Path]:
     return owners
 
 
-def _deduplicate_workers(cache: Path, found: list[tuple[Path, set[Path], list[tuple[str, Path]]]]
+def _deduplicate_skills(cache: Path, found: list[tuple[Path, set[Path], list[tuple[str, Path]]]]
                          ) -> tuple[list[tuple[Path, set[Path]]], list[dict[str, str]]]:
-    """Import each Worker id once: keep the cached owner, else the first root."""
+    """Import each Skill id once: keep the cached owner, else the first root."""
     cached = _cached_skill_owners(cache)
     owners: dict[str, tuple[Path, Path]] = {}
-    for root, _, workers in found:
-        for skill_id, source in workers:
+    for root, _, skills in found:
+        for skill_id, source in skills:
             current = owners.get(skill_id)
             if current is None or (cached.get(skill_id) == root and current[0] != root):
                 owners[skill_id] = (root, source)
     root_pairs: list[tuple[Path, set[Path]]] = []
     skipped: list[dict[str, str]] = []
-    for root, excluded, workers in found:
-        duplicates = {source for skill_id, source in workers if owners[skill_id][1] != source}
+    for root, excluded, skills in found:
+        duplicates = {source for skill_id, source in skills if owners[skill_id][1] != source}
         skipped.extend({"skill_id": skill_id, "kept": str(owners[skill_id][1]), "skipped": str(source)}
-                       for skill_id, source in workers if source in duplicates)
-        if any(source not in duplicates for _, source in workers):
+                       for skill_id, source in skills if source in duplicates)
+        if any(source not in duplicates for _, source in skills):
             root_pairs.append((root, excluded | duplicates))
     return root_pairs, skipped
 
 
-# Skills that are their own entry point and are used directly, never as a LabOntology Worker: TRACE Lab's
+# Skills that are their own entry point and are used directly, never through LabOntology: TRACE Lab's
 # closed-loop recommendation (trace-collab-skill) runs through its own tool and project state, and routing it
 # through a mission only added a bootstrap and extra calls to every turn.
 _SEPARATE_ENTRY_SKILLS = {"trace-collab-skill"}
@@ -384,7 +448,7 @@ def _recover_interrupted_refresh(workspace: Path, cache: Path) -> str | None:
 
 def ensure_workspace_cache(workspace: Path,
                            skill_roots: Sequence[Path] | None = None) -> dict[str, Any]:
-    """Create, reuse, or refresh the one cache for visible Worker Skills."""
+    """Create, reuse, or refresh the one cache for visible Skills."""
     workspace = Path(workspace).resolve()
     cache = _workspace_cache_path(workspace)
     recovered = _recover_interrupted_refresh(workspace, cache)
@@ -398,16 +462,21 @@ def ensure_workspace_cache(workspace: Path,
         # script below it, which is slow for a large shared Skill library.
         if anchor in candidates:
             anchor_excluded = _labontology_dirs(anchor) if anchor.is_dir() else {_default_skill_dir()}
-            if _worker_skill_ids(anchor, anchor_excluded):
+            if _skill_ids(anchor, anchor_excluded):
                 candidates = [anchor, *[root for root in candidates if root in cached_roots and root != anchor]]
     else:
         candidates = _normalise_skill_roots(skill_roots or [])
-    skipped_workers: list[dict[str, str]] = []
+    fingerprint = None if recovered else _bootstrap_fingerprint(cache, candidates)
+    if fingerprint is not None:
+        unchanged = _unchanged_bootstrap_result(cache, fingerprint)
+        if unchanged is not None:
+            return unchanged
+    skipped_skills: list[dict[str, str]] = []
     found = []
     for root in candidates:
         excluded = _labontology_dirs(root)
-        found.append((root, excluded, _worker_skills(root, excluded, skipped_workers)))
-    root_pairs, skipped_duplicates = _deduplicate_workers(cache, found)
+        found.append((root, excluded, _root_skills(root, excluded, skipped_skills)))
+    root_pairs, skipped_duplicates = _deduplicate_skills(cache, found)
     if not root_pairs:
         raise ValueError("No visible standard Skill root was found")
 
@@ -459,11 +528,59 @@ def ensure_workspace_cache(workspace: Path,
         result["removed_suites"] = removed_suites
     if recovered:
         result["recovered_interrupted_refresh"] = recovered
-    if skipped_workers:
-        result["skipped_workers"] = skipped_workers
+    if skipped_skills:
+        result["skipped_skills"] = skipped_skills
     if skipped_duplicates:
         result["skipped_duplicates"] = skipped_duplicates
+    if not synchronized and not recovered:
+        _remember_bootstrap_result(cache, candidates, result)
     return result
+
+
+# A bootstrap that finds nothing changed still discovers every Skill root and checks every cached source file
+# (about 10 s for five device libraries), and chats run one every turn. When no file below the Skill roots, no
+# cached graph file and none of LabOntology's own code has changed in size or modification time since such a
+# bootstrap, the next one returns that result directly. Anything changed runs the full check as before.
+BOOTSTRAP_CHECK_FILE = "bootstrap-check.json"
+
+
+def _bootstrap_fingerprint(cache: Path, roots: Sequence[Path]) -> str | None:
+    digest = hashlib.sha256()
+    try:
+        for root in [*roots, Path(__file__).resolve().parent]:
+            digest.update(f"root\0{root}\n".encode("utf-8"))
+            for path in iter_files(root):
+                stat = path.stat()
+                digest.update(f"{path}\0{stat.st_size}\0{stat.st_mtime_ns}\n".encode("utf-8"))
+        for name in GRAPH_FILES:
+            stat = (cache / name).stat()
+            digest.update(f"{name}\0{stat.st_size}\0{stat.st_mtime_ns}\n".encode("utf-8"))
+    except OSError:
+        return None
+    return digest.hexdigest()
+
+
+def _unchanged_bootstrap_result(cache: Path, fingerprint: str) -> dict[str, Any] | None:
+    try:
+        stored = json.loads((cache / BOOTSTRAP_CHECK_FILE).read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return None
+    if not isinstance(stored, dict) or stored.get("fingerprint") != fingerprint:
+        return None
+    result = stored.get("result")
+    return result if isinstance(result, dict) else None
+
+
+def _remember_bootstrap_result(cache: Path, roots: Sequence[Path], result: dict[str, Any]) -> None:
+    fingerprint = _bootstrap_fingerprint(cache, roots)
+    if fingerprint is None:
+        return
+    target = cache / BOOTSTRAP_CHECK_FILE
+    temporary = target.with_name(target.name + ".tmp")
+    with contextlib.suppress(OSError):
+        temporary.write_text(json.dumps({"fingerprint": fingerprint, "result": result}, ensure_ascii=False),
+                             encoding="utf-8")
+        os.replace(temporary, target)
 
 
 def _cached_suites_for_root(cache_dir: Path, skill_root: Path) -> list[str]:
@@ -724,7 +841,8 @@ def _short(text: Any, limit: int) -> Any:
 def _slim_action(action: Any) -> Any:
     if not isinstance(action, dict):
         return action
-    slim = {key: action.get(key) for key in ("id", "kind", "skill_id", "retry_of", "step_gate", "completed_skill") if action.get(key)}
+    slim = {key: action.get(key) for key in ("id", "kind", "skill_id", "retry_of", "step_gate", "completed_skill",
+                                             "review_failed", "reviewed_skill") if action.get(key)}
     for key, limit in (("reason", 200), ("question", 400)):
         if action.get(key):
             slim[key] = _short(action[key], limit)
@@ -743,8 +861,13 @@ def _compact_result(result: dict[str, Any]) -> dict[str, Any]:
         mission["observations"] = [
             {**{k: item.get(k) for k in ("action_id", "status") if item.get(k)},
              "summary": _short(item.get("summary"), 200)} for item in mission.get("observations", [])[-2:]]
+        # The open question is in the top-level pending_ticket; the mission repeated it in pending_ticket and
+        # block_reason (about 1 KB per output while a plan question waits). An approval keeps block_reason: there
+        # it is the question (the ticket is the Skill action).
+        if mission.get("block_reason") and mission.get("block_reason") == (mission.get("pending_action") or {}).get("question"):
+            mission.pop("block_reason")
         mission["pending_action"] = _slim_action(mission.get("pending_action"))
-        mission["pending_ticket"] = _slim_action(mission.get("pending_ticket"))
+        mission.pop("pending_ticket", None)
         mission["action_history"] = mission.get("action_history", [])[-3:]
         executions = {}
         for key, item in (mission.get("skill_executions") or {}).items():
@@ -761,10 +884,23 @@ def _compact_result(result: dict[str, Any]) -> dict[str, Any]:
         mission["revisions"] = [{k: v for k, v in item.items() if k != "artifacts_before"}
                                 for item in mission.get("revisions", [])[-2:]]
         for noisy in ("available_capabilities", "constraints_digest", "supervisor_status", "mode", "start_skill",
-                      "suite_id", "fallback_approval", "untracked_external_calls", "constraints"):
+                      "suite_id", "fallback_approval", "untracked_external_calls", "constraints",
+                      "plan_pauses", "plan_labels", "plan_questions", "plan_floors"):  # the plan_* fields are in plan_progress
             mission.pop(noisy, None)
+    planned = bool(isinstance(mission, dict) and mission.get("plan"))
     cards = []
     for card in result.get("skills", []):
+        if planned:
+            # A plan mission's next step comes from plan_progress and do_next; the word-match candidates only
+            # matter when choosing a Skill outside the plan, which `inspect --skills` lists in full.
+            cards.append({"id": card.get("id")})
+            continue
+        if card.get("selection_note"):
+            # Document review (no Skill matched the goal's words): every Skill is listed, so keep each card short.
+            cards.append({key: (_short(card[key], 90) if key == "description" else card[key])
+                          for key in ("id", "description", "document", "side_effect_level") if card.get(key)
+                          and not (key == "side_effect_level" and card[key] == "read_only")})
+            continue
         slim = {"id": card.get("id"), "description": _short(card.get("description"), 160),
                 "match_score": card.get("match_score")}
         for key in ("inputs", "missing_inputs", "missing_capabilities"):
@@ -776,12 +912,16 @@ def _compact_result(result: dict[str, Any]) -> dict[str, Any]:
             slim["script_command"] = card["optional_script"]["script_command"]
         cards.append(slim)
     result["skills"] = cards
-    result["workflow_references"] = [{"id": item.get("id"), "skills": item.get("skills")}
-                                     for item in result.get("workflow_references", [])]
+    # Reference-only flows between Skills: a plan mission already has its steps.
+    result["workflow_references"] = [] if planned else [{"id": item.get("id"), "skills": item.get("skills")}
+                                                        for item in result.get("workflow_references", [])]
     result["historical_experiences"] = [{"summary": _short(item.get("summary"), 120)}
                                         for item in result.get("historical_experiences", [])[:2]]
     diagnostic = result.get("coverage_diagnostic") or {}
-    result["coverage_diagnostic"] = {k: diagnostic.get(k) for k in ("status", "user_message") if diagnostic.get(k)}
+    # Only meaningful when no Skill matches. With one found it said "任务还没有开始" in every output, even while a
+    # step was running, and the model kept re-sending the user's confirmation to "start" the task.
+    result["coverage_diagnostic"] = ({} if diagnostic.get("status") == "candidate_found" else
+                                     {k: diagnostic.get(k) for k in ("status", "user_message") if diagnostic.get(k)})
     result["pending_ticket"] = _slim_action(result.get("pending_ticket"))
     for noisy in ("available_capabilities", "start_skill", "candidate_count", "registered_skill_count",
                   "action_history_count", "supervisor_status"):
@@ -853,18 +993,23 @@ def _refuse_run_while_waiting_for_user(cache_dir: Path) -> None:
     if not waiting:
         return
     _, mission_id, question = max(waiting)
+    if os.environ.get(TURN_ENV, "").strip():
+        continue_it = (f"run the next command of that mission (`context --cache-dir {cache_dir} --mission-id "
+                       f"{mission_id}` shows it in do_next, usually `act ... --skill <next step>`); LabOntology records "
+                       "the user's message as the answer (an approval needs resume --confirm or --reject instead)")
+    else:
+        continue_it = (f"`resume --cache-dir {cache_dir} --mission-id {mission_id} --answer \"<the user's exact "
+                       "message>\"` (add --confirm or --reject for an approval)")
     raise ValueError(
         f"Mission {mission_id} is still waiting for the user's answer to: {question[:200]!r}. "
-        "If the user's latest message answers or confirms that, do not create a new mission: continue it with "
-        f"`resume --cache-dir {cache_dir} --mission-id {mission_id} --answer \"<the user's exact message>\"` "
-        "(add --confirm or --reject for an approval). Only when the message is clearly a different, unrelated "
-        "goal, run again with --new-mission.")
+        f"If the user's latest message answers or confirms that, do not create a new mission: {continue_it}. "
+        "Only when the message is clearly a different, unrelated goal, run again with --new-mission.")
 
 
 def _canonical_input_arguments(cache_dir: Path, items: list[str]) -> tuple[list[str], dict[str, str]]:
-    """Give an input file the artifact id a Worker declares for it.
+    """Give an input file the artifact id a Skill declares for it.
 
-    `parsed_constraints.json=...` becomes also `artifact:parsed-constraints=...` when some registered Worker
+    `parsed_constraints.json=...` becomes also `artifact:parsed-constraints=...` when some registered Skill
     declares that input, so a follow-up mission can reuse earlier results without guessing ids. The original
     name is kept as well."""
     try:
@@ -891,12 +1036,36 @@ def _canonical_input_arguments(cache_dir: Path, items: list[str]) -> tuple[list[
     return result, mapped
 
 
+_LIBRARY_KEYS = ("synchronized", "removed_suites", "recovered_interrupted_refresh", "skipped_skills",
+                 "skipped_duplicates")
+
+
+def _prepare_library(cache_dir: Path) -> dict[str, Any]:
+    """`run` and `inspect` prepare the workflow library themselves, so a chat turn needs no separate bootstrap
+    (models ran it again after every refusal or reload of this Skill).
+
+    Only the workspace's own cache (<workspace>/labontology_workspace_cache) is prepared: built when it is missing,
+    and refreshed with bootstrap's quick unchanged-check when the host names the Skill roots
+    (LABONTOLOGY_SKILL_ROOTS, as FounDryClaw does). A cache made by import/sync with explicit roots is left alone.
+    Returns what changed, for the output."""
+    cache = cache_dir.resolve()
+    workspace = cache.parent
+    if cache != _workspace_cache_path(workspace):
+        return {}
+    if (cache / "cache-manifest.json").is_file() and not os.environ.get("LABONTOLOGY_SKILL_ROOTS", "").strip():
+        return {}
+    with file_lock(workspace / ".labontology_workspace_cache.lock"), _discovery_cache():
+        result = ensure_workspace_cache(workspace, None)
+    return {key: result[key] for key in _LIBRARY_KEYS if result.get(key)}
+
+
 def run_mission(cache_dir: Path, goal: str, mission_id: str | None, suite_id: str | None,
                 input_artifacts: list[str], constraints: list[str] | None = None,
                 new_mission: bool = False, plan: str = "",
-                run_through: bool = False) -> dict[str, Any]:
+                run_through: bool = False, flow: str = "", until: str = "") -> dict[str, Any]:
     if not new_mission:
         _refuse_run_while_waiting_for_user(cache_dir)
+    library = _prepare_library(cache_dir)
     mission_id = mission_id or uuid4().hex
     arguments = [
         "run", "--system-dir", str(cache_dir.resolve()), "--mission-id", mission_id, "--goal", goal,
@@ -905,6 +1074,10 @@ def run_mission(cache_dir: Path, goal: str, mission_id: str | None, suite_id: st
         arguments.extend(["--suite", suite_id])
     if plan.strip():
         arguments.extend(["--plan", plan.strip()])
+    if flow.strip():
+        arguments.extend(["--flow", flow.strip()])
+    if until.strip():
+        arguments.extend(["--until", until.strip()])
     if run_through:
         arguments.append("--run-through")
     for constraint in constraints or []:
@@ -916,6 +1089,8 @@ def run_mission(cache_dir: Path, goal: str, mission_id: str | None, suite_id: st
     _record_conversation(cache_dir, mission_id)
     if mapped_inputs:
         result["input_ids"] = mapped_inputs
+    if library:
+        result["library"] = library
     return {"mission_id": mission_id, **result}
 
 
@@ -927,19 +1102,40 @@ def mission_context(cache_dir: Path, mission_id: str, suite_id: str | None = Non
 
 
 def _plan_question(cache_dir: Path, mission_id: str, suite_id: str | None) -> str:
-    progress = mission_context(cache_dir, mission_id, suite_id).get("plan_progress") or []
+    context = mission_context(cache_dir, mission_id, suite_id)
+    progress = context.get("plan_progress") or []
     if not progress:
         raise ValueError("This mission has no --plan; create it with `run --plan id1,id2,...` or use --ask")
-    lines = [f"{index}）{item['skill_id']}：{item.get('description') or ''}".rstrip("：")
-             for index, item in enumerate(progress, 1)]
-    return ("请确认按以下顺序逐步执行（每完成一个步骤会先展示结果，等你确认后再进行下一步；全程不提交设备）：\n" + "\n".join(lines) + "\n是否确认？")
+    flow = (context.get("mission") or {}).get("flow") or {}
+    run_through = bool((context.get("mission") or {}).get("run_through"))
+    paused = any("pause" in item for item in progress)
+    lines = []
+    for index, item in enumerate(progress, 1):
+        text = item.get("label") or item.get("description") or ""
+        line = f"{index}）{item['skill_id']}：{text}".rstrip("：")
+        if item.get("pause"):
+            line += "  ⏸ 完成后暂停，等你确认"
+        lines.append(line)
+    device = any(item.get("side_effect_level") not in (None, "read_only") for item in progress)
+    no_device = "" if device else "；全程不提交设备"
+    # A mission created with --run-through does not pause between steps; the question said it would.
+    pacing = ("（一次跑完，中间不暂停，全部完成后再展示结果" if run_through
+              else "（标 ⏸ 的步骤完成后会先展示结果，等你确认后再继续" if paused
+              else "（每完成一个步骤会先展示结果，等你确认后再进行下一步")
+    if flow:
+        header = (f"将按设备实验流程“{flow.get('name') or flow.get('id')}”执行到 {flow.get('until') or '流程末尾'}"
+                  + pacing + no_device + "）：\n")
+        ending = f"\n{flow['final_question']}（在最后一步完成后再问你）" if flow.get("final_question") else ""
+        return header + "\n".join(lines) + ending + "\n是否确认？"
+    order = "请确认按以下顺序执行" if run_through else "请确认按以下顺序逐步执行"
+    return f"{order}{pacing}{no_device}）：\n" + "\n".join(lines) + "\n是否确认？"
 
 
 def act_shortcut(cache_dir: Path, mission_id: str, args: argparse.Namespace) -> dict[str, Any]:
     """Build the decision file for the host Agent (no hand-written JSON), then submit it."""
     suite_id = args.suite_id
     if args.skill:
-        _prepare_fresh(cache_dir, mission_id, args.skill, suite_id)  # records the Worker document
+        _prepare_fresh(cache_dir, mission_id, args.skill, suite_id)  # records the Skill document
         decision: dict[str, Any] = {
             "kind": "skill", "skill_id": args.skill,
             "reason": args.reason or f"Run {args.skill}, the next step of the confirmed plan.",
@@ -948,10 +1144,12 @@ def act_shortcut(cache_dir: Path, mission_id: str, args: argparse.Namespace) -> 
         }
         if args.retry_of:
             decision["retry_of"] = args.retry_of
-        inputs = _worker_inputs(args.input)
+        inputs = _skill_inputs(args.input)
         if inputs:
             decision["inputs"] = inputs
     elif args.ask or args.ask_plan:
+        if args.ask_plan:
+            _refuse_confirmed_plan(cache_dir, mission_id)
         question = args.ask or _plan_question(cache_dir, mission_id, suite_id)
         decision = {"kind": "request_human", "reason": args.reason or "The user must confirm or supply this.",
                     "question": question}
@@ -964,12 +1162,25 @@ def act_shortcut(cache_dir: Path, mission_id: str, args: argparse.Namespace) -> 
     decision_file.write_text(json.dumps(decision, ensure_ascii=False, indent=2), encoding="utf-8")
     result = act_mission(cache_dir, mission_id, decision_file, suite_id)
     if args.skill:
-        _raise_if_worker_blocked(result, args.skill, cache_dir, mission_id)
+        _raise_if_skill_blocked(result, args.skill, cache_dir, mission_id)
     return result
 
 
-def _worker_inputs(items: list[str] | None) -> dict[str, str]:
-    """act --skill X --input ARTIFACT_ID=PATH: input files for the Worker that the mission does not hold yet
+def _refuse_confirmed_plan(cache_dir: Path, mission_id: str) -> None:
+    """act --ask-plan once the user has answered the plan or its steps have started: a batch of calls asked the
+    confirmed plan again and the user saw the plan question in place of the results."""
+    try:
+        state = json.loads((cache_dir.resolve() / "runs" / mission_id / "state.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return  # the Runtime reports an unknown mission
+    answered = any(item.get("status") == "human_answer" for item in state.get("action_history") or [])
+    if state.get("plan") and (answered or state.get("skill_executions")):
+        raise ValueError("The plan of this mission is already confirmed (the user answered it, or its steps have "
+                         "started), so it is not asked again. Run the next command from do_next.")
+
+
+def _skill_inputs(items: list[str] | None) -> dict[str, str]:
+    """act --skill X --input ARTIFACT_ID=PATH: input files for the Skill that the mission does not hold yet
     (for example a file the user uploaded after the mission started)."""
     inputs: dict[str, str] = {}
     for item in items or []:
@@ -980,8 +1191,8 @@ def _worker_inputs(items: list[str] | None) -> dict[str, str]:
     return inputs
 
 
-def _raise_if_worker_blocked(result: dict[str, Any], skill_id: str, cache_dir: Path, mission_id: str) -> None:
-    """The Runtime records a Worker it could not start (an input or capability missing) as a "blocked"
+def _raise_if_skill_blocked(result: dict[str, Any], skill_id: str, cache_dir: Path, mission_id: str) -> None:
+    """The Runtime records a Skill it could not start (an input or capability missing) as a "blocked"
     observation and goes back to choosing; reported as success, that left a model retrying blindly. Say what
     is missing and how to give it."""
     mission = result.get("mission") or {}
@@ -993,7 +1204,7 @@ def _raise_if_worker_blocked(result: dict[str, Any], skill_id: str, cache_dir: P
                     if isinstance(o, dict) and o.get("action_id") == action_id and o.get("status") == "blocked"), None)
     if not blocked:
         return
-    summary = str(blocked.get("summary") or "the Worker could not start")
+    summary = str(blocked.get("summary") or "the Skill could not start")
     message = f"{skill_id} was not started: {summary}."
     missing = re.search(r"Required inputs missing: \[(.*)\]", summary)
     if missing:
@@ -1010,7 +1221,7 @@ def _raise_if_worker_blocked(result: dict[str, Any], skill_id: str, cache_dir: P
 
 def revise_mission(cache_dir: Path, mission_id: str, change: str, redo: str,
                    suite_id: str | None = None) -> dict[str, Any]:
-    """Reopen a finished mission for the user's change; only the listed Workers run again."""
+    """Reopen a finished mission for the user's change; only the listed Skills run again."""
     arguments = ["revise", "--system-dir", str(cache_dir.resolve()), "--mission-id", mission_id,
                  "--change", change, "--redo", redo]
     if suite_id:
@@ -1072,7 +1283,7 @@ _STALE_DOCUMENT = "Skill document changed; refresh the cache"
 
 def _prepare_fresh(cache_dir: Path, mission_id: str, skill_id: str,
                    suite_id: str | None = None) -> dict[str, Any]:
-    """prepare-skill; a Worker document edited after the cache was built is refreshed once (as bootstrap does)
+    """prepare-skill; a Skill document edited after the cache was built is refreshed once (as bootstrap does)
     instead of failing in the middle of a mission, where the Agent is told not to run bootstrap."""
     try:
         return prepare_mission_skill(cache_dir, mission_id, skill_id, suite_id)
@@ -1108,24 +1319,71 @@ def mission_status(cache_dir: Path, mission_id: str) -> dict[str, Any]:
     ])
 
 
+def _stray_outputs(cache_dir: Path, mission_id: str, state: dict[str, Any]) -> list[Path]:
+    """Files written since the pending action was issued into a folder named like this mission's but typed wrong.
+
+    A model once cut the mission id short in one --csv-output path; the normalized table landed in
+    runs/<id cut short>/artifacts, register-all registered the step without it, and the next Skill looked for it."""
+    issued = str((state.get("pending_action") or {}).get("issued_at") or "")
+    try:
+        since = datetime.fromisoformat(issued).timestamp() - 1
+    except ValueError:
+        return []  # an action issued before actions were timestamped
+    runs = cache_dir.resolve() / "runs"
+    found: list[Path] = []
+    for folder in (runs.iterdir() if runs.is_dir() else []):
+        name = folder.name
+        if not folder.is_dir() or name == mission_id or (folder / "state.json").exists():
+            continue  # this mission, or another mission's folder
+        close = (len(name) >= 8 and (mission_id.startswith(name) or name.startswith(mission_id))) or (
+            len(name) >= 24 and difflib.SequenceMatcher(None, name, mission_id).ratio() >= 0.85)
+        if close:
+            found += [path for path in folder.rglob("*") if path.is_file() and path.stat().st_mtime >= since]
+    # A rev<N> folder no revision uses: a model made artifacts/rev1/ for a Skill run again before any revision, and
+    # register-all (which reads only the round's folder) found nothing new. Earlier revisions' folders are theirs.
+    artifacts = runs / mission_id / "artifacts"
+    revisions = len(state.get("revisions") or [])
+    for folder in (artifacts.iterdir() if artifacts.is_dir() else []):
+        if folder.is_dir() and re.fullmatch(r"rev\d+", folder.name) and int(folder.name[3:]) > revisions:
+            found += [path for path in folder.rglob("*") if path.is_file() and path.stat().st_mtime >= since]
+    return sorted(found)
+
+
 def _register_all_artifacts(cache_dir: Path, mission_id: str, explicit: list[str]) -> list[str]:
-    """--provide-artifact list covering every unregistered file the Worker wrote into the mission artifact folder."""
+    """--provide-artifact list covering every unregistered file the Skill wrote into the mission artifact folder."""
     run_dir = cache_dir.resolve() / "runs" / mission_id
     try:
         state = json.loads((run_dir / "state.json").read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError) as exc:
         raise ValueError(f"Unknown mission: {mission_id}") from exc
+    if state.get("status") != "waiting_agent":
+        # No Skill result is expected: the Runtime says so ("Nothing is waiting for a resume ..."); a scan here
+        # answered with "No unregistered files found" instead, which sent the model looking for files.
+        return list(explicit)
+    pending = state.get("pending_action") or {}
+    pending_name = f"{pending.get('skill_id') or 'the pending action'} ({pending.get('id')})"
+    revisions = state.get("revisions") or []
+    artifacts_dir = run_dir / "artifacts"
+    round_dir = artifacts_dir / f"rev{len(revisions)}" if revisions else artifacts_dir
+    stray = _stray_outputs(cache_dir, mission_id, state)
+    if stray:
+        raise ValueError(
+            f"{pending_name} wrote {len(stray)} file(s) outside this step's folder (a mistyped mission id, or a rev "
+            f"folder no revision uses): {', '.join(str(path) for path in stray[:8])}. Move each into {round_dir} "
+            "(when a file of that name is already there, give it a new name, for example with _v2), then run this "
+            "resume again. Write outputs into artifact_dir exactly as the output gives it: do not retype the mission "
+            "id or make your own folders.")
     known = {Path(value).resolve() for value in (state.get("artifacts") or {}).values() if isinstance(value, str)}
     known.update(Path(rec["path"]).resolve() for rec in (state.get("artifact_records") or {}).values()
                  if isinstance(rec, dict) and rec.get("path"))
     provided_paths = {Path(item.partition("=")[2]).resolve() for item in explicit}
-    artifacts_dir = run_dir / "artifacts"
+    # A registered folder (an earlier output, or one given here) covers the files in it.
+    covered = [path for path in known | provided_paths if path.is_dir()]
     # Only this round's folder (artifacts/rev<N>/ during a revision): a file another round left behind is not
-    # an output of the pending Worker.
-    revisions = state.get("revisions") or []
-    round_dir = artifacts_dir / f"rev{len(revisions)}" if revisions else artifacts_dir
+    # an output of the pending Skill.
     remaining = [path for path in sorted(round_dir.rglob("*"))
                  if path.is_file() and path.resolve() not in known and path.resolve() not in provided_paths
+                 and not any(folder in path.resolve().parents for folder in covered)
                  and (revisions or not re.fullmatch(r"rev\d+", path.relative_to(artifacts_dir).parts[0]))]
     pending_id = (state.get("pending_action") or {}).get("id")
     execution = (state.get("skill_executions") or {}).get(pending_id) or {}
@@ -1133,8 +1391,23 @@ def _register_all_artifacts(cache_dir: Path, mission_id: str, explicit: list[str
     templates = execution.get("output_templates") or {}
     if not remaining and not explicit:
         if not required:
-            return []  # a Worker without declared output files (e.g. one that works through a tool): nothing to register
-        raise ValueError(f"No unregistered files found in {round_dir}; write the Worker outputs there first")
+            return []  # a Skill without declared output files (e.g. one that works through a tool): nothing to register
+        # A Skill run again over an earlier run of it rewrites the same file names, so nothing here is new; the bare
+        # refusal left the Agent with a step it could neither register nor report, and it gave the task up.
+        folder = round_dir.resolve()
+        registered = {name: path for name, path in (state.get("artifacts") or {}).items()
+                      if name in required and isinstance(path, str) and folder in Path(path).resolve().parents}
+        if registered:
+            provide = " ".join(f'--provide-artifact "{name}={path}"' for name, path in registered.items())
+            raise ValueError(
+                f"No new files in {round_dir}: the files this Skill writes "
+                f"({', '.join(Path(path).name for path in registered.values())}) are already registered from an "
+                "earlier run of it. If this run rewrote them, register them again with: "
+                f'resume --cache-dir {cache_dir} --mission-id {mission_id} --agent-completed {provide} '
+                '--summary "<what really happened>". If the Skill did not really run, do its work first, or report '
+                "it with --agent-failed.")
+        raise ValueError(f"No unregistered files found in {round_dir} for {pending_name}: write that Skill's outputs "
+                         "there first (see do_next), then resume.")
     have = {item.partition("=")[0].removeprefix("artifact:") for item in explicit}
     result = list(explicit)
 
@@ -1142,17 +1415,35 @@ def _register_all_artifacts(cache_dir: Path, mission_id: str, explicit: list[str
         return re.sub(r"[^a-z0-9]", "", text.lower())
 
     missing = [name for name in required if name.removeprefix("artifact:") not in have]
-    for name in missing:
+    # New subfolders of this round's folder: an output declared without a file type can be a folder. For
+    # fdu-experiment-plan, `artifact:output-dir` is the folder its --output-dir names, holding one plan file per
+    # row; matching only files, --register-all could never register it.
+    round_resolved = round_dir.resolve()
+    folders = sorted({round_resolved / path.resolve().relative_to(round_resolved).parts[0] for path in remaining
+                      if len(path.resolve().relative_to(round_resolved).parts) > 1})
+    # Outputs with a file type first: a plan file inside such a folder is an output of its own.
+    ordered = sorted(missing, key=lambda name: not Path(str(templates.get(name, ""))).suffix)
+    for name in ordered:
         key = norm(name.removeprefix("artifact:"))
+        suffix = Path(str(templates.get(name, ""))).suffix.lower()
+        if not suffix and folders:
+            named = [folder for folder in folders if norm(folder.name).startswith(key)]
+            folder = named[0] if len(named) == 1 else folders[0] if len(folders) == 1 else None
+            if folder is not None:
+                result.append(f"{name}={folder}")
+                folders.remove(folder)
+                remaining = [path for path in remaining if folder not in path.resolve().parents]
+                continue
         matches = [path for path in remaining if norm(path.stem).startswith(key)]
         if not matches:
-            suffix = Path(str(templates.get(name, ""))).suffix.lower()
             same_kind = [path for path in remaining if suffix and path.suffix.lower() == suffix]
             if len(missing) == 1 and same_kind:
-                matches = same_kind  # the Worker's single declared output, whatever the file was named
+                matches = same_kind  # the Skill's single declared output, whatever the file was named
             elif len(same_kind) == 1:
                 matches = same_kind
-            elif len(missing) == 1 and len(remaining) == 1:
+            elif len(missing) == 1 and len(remaining) == 1 and not suffix:
+                # Only when the declared output has no file type: a recommender's rows JSON (the script's input)
+                # must not be registered as its recommendations CSV when the script failed to write the CSV.
                 matches = list(remaining)
         if matches:
             chosen = max(matches, key=lambda path: path.stat().st_mtime)
@@ -1377,23 +1668,23 @@ def _guard_next_step(args: argparse.Namespace) -> str:
         except (OSError, json.JSONDecodeError):
             pass
     hints = {
-        "awaiting_decision": ("You already have this mission's context in the conversation. Now pick one Worker from "
-                              "its `skills`, Read that Worker's SKILL.md, run `prepare-skill`, write decision.json, "
-                              "run `act`. If no Worker fits or an input is missing, tell the user and end the turn."),
-        "waiting_agent": ("A Worker action is issued: follow the prepared Worker SKILL.md (run its script if it "
+        "awaiting_decision": ("You already have this mission's context in the conversation. Now pick one Skill from "
+                              "its `skills`, Read that Skill's SKILL.md, run `prepare-skill`, write decision.json, "
+                              "run `act`. If no Skill fits or an input is missing, tell the user and end the turn."),
+        "waiting_agent": ("A Skill action is issued: follow the prepared SKILL.md (run its script if it "
                           "declares one), then `resume --agent-completed` (or `--agent-failed` with the real error) "
                           "including every file written to the artifacts folder."),
-        "waiting_human": ("If the user's latest message answers or confirms `pending_ticket.question`, run "
-                          "`resume --answer \"<their exact message>\"` now (add --confirm/--reject for an approval); "
-                          "otherwise relay the question and end the turn."),
+        "waiting_human": ("If the user's latest message replies to `pending_ticket.question`, run the next command "
+                          "from `do_next` (LabOntology records the message as the answer; an approval needs "
+                          "resume --confirm or --reject); otherwise relay the question and end the turn."),
         "completed": "The mission is completed: report the recorded result and end the turn.",
         "cancelled": "The mission is cancelled: tell the user and end the turn.",
     }
     if args.command == "resume" and status == "waiting_human":
         # The same answer sent again is not the user's reply to the question that is open now.
         hints["waiting_human"] = ("The open question in `pending_ticket.question` has not been answered by the user "
-                                  "yet. Do not run resume again in this turn: write your reply now (show the result of "
-                                  "the finished step, ask that question) and end the turn.")
+                                  "yet. Do not run resume or the next step in this turn: write your reply now (show "
+                                  "the result of the finished step, ask that question) and end the turn.")
     return (hints.get(status, "Decide from the context you already have.") +
             " Do not call bootstrap/context/status again; if you cannot proceed, reply to the user with what is "
             "finished, what blocks the next step and what you need.")
@@ -1439,7 +1730,7 @@ def _user_facing_error(exc: Exception) -> str:
     message = str(exc)
     translations = (
         ("No visible standard Skill root was found",
-         "没有找到可见的标准 Skill 目录，请确认实验 Worker Skill 已正常安装。"),
+         "没有找到可见的标准 Skill 目录，请确认实验能力已正常安装。"),
         ("Unknown mission:", "没有找到这个任务："),
         ("workspace cache is incomplete:",
          "实验流程库文件不完整，可以先执行 restore-backup 恢复："),
@@ -1476,14 +1767,25 @@ def _graph_workspace(args: argparse.Namespace) -> Path | None:
     return None
 
 
+# Commands that read the Skill folders without writing them: each Skill folder is parsed once per command.
+_READ_SKILLS_COMMANDS = {"import", "sync", "bootstrap", "resolve-cache"}
+
+
 def _run_command(args: argparse.Namespace) -> dict[str, Any]:
+    if args.command in _READ_SKILLS_COMMANDS:
+        with _discovery_cache():
+            return _dispatch_command(args)
+    return _dispatch_command(args)
+
+
+def _dispatch_command(args: argparse.Namespace) -> dict[str, Any]:
     if args.command == "import":
         result = import_suite(args.skill_root, args.suite_id, args.workspace,
                               exclude_skill_dirs=_labontology_dirs(args.skill_root.resolve()))
     elif args.command == "sync":
         if args.all and args.suite_id:
             raise ValueError("--all cannot be combined with --suite-id")
-        # Like bootstrap, never register LabOntology itself as a Worker.
+        # Like bootstrap, never register LabOntology itself as a Skill.
         excluded = _labontology_dirs(args.skill_root.resolve())
         result = (sync_workspace_all(args.skill_root, args.workspace, exclude_skill_dirs=excluded) if args.all
                   else sync_workspace(args.skill_root, args.workspace, args.suite_id, exclude_skill_dirs=excluded))
@@ -1492,11 +1794,14 @@ def _run_command(args: argparse.Namespace) -> dict[str, Any]:
     elif args.command == "resolve-cache":
         result = resolve_cache(args.skill_root, args.workspace, args.suite_id)
     elif args.command == "inspect":
+        library = _prepare_library(args.cache_dir)
         result = inspect_cache(args.cache_dir, args.skills)
+        if library:
+            result["library"] = library
     elif args.command == "run":
         result = run_mission(args.cache_dir, args.goal, args.mission_id, args.suite_id,
                              args.input_artifact, args.constraint, args.new_mission, args.plan,
-                             args.run_through)
+                             args.run_through, flow=args.flow, until=args.until)
     elif args.command == "context":
         result = mission_context(args.cache_dir, args.mission_id, args.suite_id)
     elif args.command == "act":
@@ -1508,7 +1813,7 @@ def _run_command(args: argparse.Namespace) -> dict[str, Any]:
         if args.redo and not args.revise:
             raise ValueError("--redo belongs to --revise: act --revise \"<the user's change>\" --redo id1,id2")
         if args.input and not args.skill:
-            raise ValueError("--input belongs to --skill: act --skill <Worker id> --input <artifact id>=<path>")
+            raise ValueError("--input belongs to --skill: act --skill <Skill id> --input <artifact id>=<path>")
         if args.revise:
             result = revise_mission(args.cache_dir, args.mission_id, args.revise, args.redo, args.suite_id)
         elif args.decision_file:
@@ -1571,7 +1876,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     inspect_parser = subparsers.add_parser("inspect", help="Summarize a compact cache")
     inspect_parser.add_argument("--cache-dir", type=Path, required=True)
     inspect_parser.add_argument("--skills", action="store_true",
-                                help="Also list each Worker's id, name and short description")
+                                help="Also list each Skill's id, name and short description")
     run_parser = subparsers.add_parser("run", help="Create an Agent-mode mission")
     run_parser.add_argument("--cache-dir", type=Path, required=True)
     run_parser.add_argument("--goal", required=True)
@@ -1580,9 +1885,13 @@ def main(argv: Sequence[str] | None = None) -> int:
     run_parser.add_argument("--input-artifact", action="append", default=[], metavar="ARTIFACT_ID=PATH")
     run_parser.add_argument("--constraint", action="append", default=[])
     run_parser.add_argument("--plan", default="",
-                            help="Comma-separated Worker ids in the order the goal needs them (multi-step requests)")
+                            help="Comma-separated Skill ids in the order the goal needs them (multi-step requests)")
     run_parser.add_argument("--run-through", action="store_true",
                             help="Only when the user asked for all steps at once: no pause for the user after each plan step")
+    run_parser.add_argument("--flow", default="",
+                            help="Build the plan from a declared experiment flow (inspect --skills lists them)")
+    run_parser.add_argument("--until", default="",
+                            help="Stop point of --flow; default: the flow's default_stop")
     run_parser.add_argument("--new-mission", action="store_true",
                             help="Create a new mission even though another one is waiting for the user's answer")
     context_parser = subparsers.add_parser("context", help="Return the current task context")
@@ -1594,10 +1903,10 @@ def main(argv: Sequence[str] | None = None) -> int:
     act_parser.add_argument("--cache-dir", type=Path, required=True)
     act_parser.add_argument("--mission-id", required=True)
     act_parser.add_argument("--decision-file", type=Path)
-    act_parser.add_argument("--skill", help="Run this Worker next (the Runtime writes the decision for you)")
-    act_parser.add_argument("--retry-of", help="Failed action id when re-running the same Worker")
+    act_parser.add_argument("--skill", help="Run this Skill next (the Runtime writes the decision for you)")
+    act_parser.add_argument("--retry-of", help="Failed action id when re-running the same Skill")
     act_parser.add_argument("--input", action="append", default=[], metavar="ARTIFACT_ID=PATH",
-                            help="With --skill: an input file for the Worker that the mission does not hold yet "
+                            help="With --skill: an input file for the Skill that the mission does not hold yet "
                                  "(for example artifact:parsed-constraints=<uploaded file>); repeatable")
     act_parser.add_argument("--ask", help="Ask the user one question and wait for the answer")
     act_parser.add_argument("--ask-plan", action="store_true", help="Ask the user to confirm the mission's --plan")
@@ -1605,8 +1914,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     act_parser.add_argument("--cancel", action="store_true",
                             help="Close the mission because the user stopped it; during a revision, drop only that change")
     act_parser.add_argument("--revise", default="",
-                            help="The user's change to a finished task: reopen this mission and redo only --redo Workers")
-    act_parser.add_argument("--redo", default="", help="Comma-separated Worker ids to run again (with --revise)")
+                            help="The user's change to this task: on a finished task reopen it and redo only the --redo "
+                                 "Skills; on an unfinished plan go back to the earliest --redo step that is done")
+    act_parser.add_argument("--redo", default="", help="Comma-separated Skill ids to run again (with --revise)")
     act_parser.add_argument("--reason", default="")
     act_parser.add_argument("--suite-id")
     reconcile_parser = subparsers.add_parser("reconcile", help="Reconcile an interrupted action")
@@ -1617,7 +1927,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     reconcile_parser.add_argument("--summary", required=True)
     reconcile_parser.add_argument("--evidence", action="append", default=[])
     reconcile_parser.add_argument("--provide-artifact", action="append", default=[], metavar="ARTIFACT_ID=PATH")
-    prepare_parser = subparsers.add_parser("prepare-skill", help="Read a Worker Skill before issuing an action")
+    prepare_parser = subparsers.add_parser("prepare-skill", help="Read a Skill before issuing an action")
     prepare_parser.add_argument("--cache-dir", type=Path, required=True)
     prepare_parser.add_argument("--mission-id", required=True)
     prepare_parser.add_argument("--skill-id", required=True)

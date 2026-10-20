@@ -62,7 +62,7 @@ def _check_protected_type(entity: dict[str, Any]) -> None:
     if entity.get("type") in _MISSION_TYPES:
         raise ValueError("mission-state modifications are not allowed")
     if entity.get("type") in _POLICY_TYPES:
-        raise ValueError("execution policy modifications are not allowed; policies come from Worker manifests")
+        raise ValueError("execution policy modifications are not allowed; policies come from Skill manifests")
 
 
 def _check_metadata(entity: dict[str, Any], updates: dict[str, Any]) -> None:

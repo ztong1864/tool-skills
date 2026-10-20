@@ -4,7 +4,7 @@ Use these workspace files as references when this skill is invoked.
 
 ## Main Input
 
-- `.agents/skills/constraint-parser/output/parsed_constraints_2026-05-14-16-08-55.json`
+- The constraint-parser JSON of the current task (in a LabOntology mission: `artifact:parsed-constraints` in the mission's artifact folder).
 
 Use this JSON as the primary source of user constraints and reaction context. Derive candidate-condition variables from its `items` array, and use them to form complete recommendation rows rather than isolated candidate lists.
 
@@ -17,7 +17,7 @@ Read relevant PDFs or extracted text when available. Prefer literature patterns 
 
 ## Candidate Space
 
-- User-provided `chemical_space.csv` or another explicit `.csv` candidate-space path. Current test input: `.agents/skills/constraint-parser/output/chemical_space.csv`.
+- User-provided `chemical_space.csv` or another explicit `.csv` candidate-space path (in a LabOntology mission: the candidate-space file the mission holds).
 - Fallback only when no CSV candidate-space file is provided: `KB/chemical_space.csv`.
 
 Only recommend candidates present in the active candidate-space CSV file. If the user provides a CSV file, it is authoritative and `KB/chemical_space.csv` must not be used for candidate selection except as an explicit fallback requested by the user.
@@ -42,4 +42,4 @@ Use the same column style when it matches the main input JSON, but do not copy i
 
 ## Output Path
 
-- `.agents/skills/literature-experiment-recommender/output/literature_recommendations_<YYYYMMDD>.csv`
+- `literature_recommendations_<YYYYMMDD>.csv` in the path given to `write_recommendations.py --output` (in a LabOntology mission: its artifact folder), never in this skill's own folder.

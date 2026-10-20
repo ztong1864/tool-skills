@@ -1,0 +1,36 @@
+# The experiment flow of the Fudan workstation for LabOntology (format: labontology/references/experiment-flows.md).
+# Written from this Skill's graph: steps = agent-flow:fdu-experiment-to-device-task, reviews =
+# rule:risk-review-after-planning-output, pauses = the pausesAt checkpoints, stop "plan" = process:fdu-plan-generation.
+# Update this file when the AgentFlow, the checkpoints or the risk-review rule change.
+schema: labontology.experiment-flow.v1
+flows:
+  - id: fdu-experiment-to-device-task
+    name: 复旦智能合成工作站：实验目标到设备任务
+    description: 解析实验目标和候选空间，推荐条件、计算投料量、生成编号步骤（每步后风险审查并请用户确认），写中文实验方案，再生成 step JSON、校验回填资源、编排设备协议，最后在用户确认后创建设备任务。
+    default_stop: protocol
+    stops:
+      plan: 只要实验方案：到中文实验方案（fdu-experiment-plan）为止，不生成 step JSON 和设备协议
+      protocol: 实验准备和方案生成（默认）：在实验方案之后生成 step JSON、校验并回填资源、编排设备协议 JSON，创建设备任务前停下
+      device: 用户明确要求创建（提交）设备任务时：在协议之后创建设备任务（需要用户再次确认，不会自动启动执行）
+    steps:
+      - skill: constraint-parser
+      - skill: literature-experiment-recommender
+        review: fdu-risk-review
+        pause: 请确认哪些推荐条件组合继续做投料量计算
+      - skill: chemical-amount-calculator
+        review: fdu-risk-review
+        pause: 请确认投料量后再生成编号实验步骤
+      - skill: experiment-step-generator
+        review: fdu-risk-review
+        pause: 请确认步骤顺序、时间、温度和后处理后再写实验方案
+      - skill: fdu-experiment-plan
+        stop: plan
+      - skill: fdu-multi-step-json
+      - skill: fdu-resource-verify
+      - skill: fdu-unit-orchestration-json
+        pause: 请确认是否根据生成的设备协议 JSON 创建设备任务
+        stop: protocol
+      - skill: fdu-device-run
+        stop: device
+      - skill: fdu-execution-monitoring
+        optional: true
