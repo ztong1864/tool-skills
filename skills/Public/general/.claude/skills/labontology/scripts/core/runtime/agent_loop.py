@@ -78,6 +78,32 @@ def _action_number(action_id: Any) -> int:
 
 _SUCCEEDED = {"succeeded", "reconciled_succeeded"}
 
+
+# A review's "stage: …" and "checked: feasibility, safety, …" parts: the user reads the summary inside a question,
+# where they only repeat the review's procedure (an English review summary once made up half of the question).
+_SUMMARY_BOILERPLATE = re.compile(r"(^|[;；。\n]|\.\s)\s*(?:stage|checked|阶段|已检查|检查项)\s*[:：][^;；。\n]*?(?=[;；。\n]|\.\s|$)",
+                                  re.IGNORECASE)
+# The keywords a review summary keeps in English (the Runtime reads "verdict:"), as the user reads them.
+_SUMMARY_KEYWORDS = {"pass": "通过", "needs_human_review": "需要人工确认", "block": "不通过"}
+_SUMMARY_LABELS = {"verdict": "结论", "findings": "发现", "required_action": "需要的处理"}
+
+
+def _question_summary(summary: str, skill_id: str = "") -> str:
+    """A Skill's --summary as it goes into a question to the user: without a leading "<Skill> 已完成：" (the question
+    names the step), without a review's stage and checked lists, and with its verdict and labels in Chinese."""
+    text = summary.strip()
+    if skill_id:
+        text = re.sub(rf"^\s*{re.escape(skill_id)}\s*(?:已完成|完成)?\s*[：:，,]\s*", "", text)
+    text = _SUMMARY_BOILERPLATE.sub(lambda match: match.group(1), text)
+    text = re.sub(r"([;；。]|\.\s)(\s*([;；。]|\.\s))+", r"\1", text)  # separators left back to back
+    text = re.sub(_VERDICT.pattern + r"(\s*[.;；。](?=\s|$))?\s*",
+                  lambda match: f"verdict：{_SUMMARY_KEYWORDS[match.group(1).lower()]}" + ("；" if match.group(2) else " "),
+                  text, flags=re.IGNORECASE)
+    text = re.sub(r"\b(verdict|findings|required[ _]action)\s*[:：]\s*",
+                  lambda match: _SUMMARY_LABELS[match.group(1).lower().replace(" ", "_")] + "：", text,
+                  flags=re.IGNORECASE)
+    return re.sub(r"^\s*[;；。.]\s*", "", text).strip()
+
 # FounDryClaw sets a new turn id for every user message and passes the message itself, so the Runtime can take the
 # user's reply to a question from the turn instead of the model sending it with `resume --answer` (models re-sent it
 # with every later command and looped on the refusals). Outside FounDryClaw neither is set.
@@ -1808,8 +1834,7 @@ class AgentRuntime:
             return state  # an experiment flow pauses only where it asks the user (see core/runtime/flows.py)
         label = state.plan_labels[position] if position < len(state.plan_labels) else ""
         # The summary often repeats the step name ("constraint-parser 已完成：…"), which the question already says.
-        brief = re.sub(rf"^\s*{re.escape(skill_id)}\s*(?:已完成|完成)?\s*[：:，,]\s*", "", summary.strip())
-        brief = brief[:300].rstrip("。．.；;，,：: ")  # the sentence goes on with "。下一步是…"
+        brief = _question_summary(summary, skill_id)[:300].rstrip("。．.；;，,：: ")  # goes on with "。下一步是…"
         flow_question = state.plan_questions.get(str(position), "").strip().rstrip("。？?")
         question = (f"步骤 {position + 1}/{len(state.plan)}（{skill_id}" + (f"：{label}" if label else "") + "）已完成"
                     + (f"：{brief}" if brief else "")
@@ -1834,7 +1859,7 @@ class AgentRuntime:
         same result and the user's reply was not recorded."""
         reviewed = state.plan[position - 1]
         label = state.plan_labels[position] if position < len(state.plan_labels) else f"审查 {reviewed} 的结果"
-        brief = summary.strip()[:400].rstrip("。．.；;，,：: ")
+        brief = _question_summary(summary)[:400].rstrip("。．.；;，,：: ")
         question = (f"{label}未通过：{brief}。请告诉我怎么修改（例如去掉或替换有问题的条件），或回答审查提出的问题："
                     f"需要修改时我会按你的修改重新运行 {reviewed} 再审查，只是回答问题时我会带着你的回答重新审查；"
                     "也可以停止这次任务。")

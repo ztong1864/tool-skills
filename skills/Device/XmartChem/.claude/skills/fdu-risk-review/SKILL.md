@@ -108,8 +108,10 @@ checked: feasibility, safety, device_capability, action_boundary
 findings:
 - <具体问题，或 none>
 required_action:
-- <continue | ask_user | revise_input | stop>
+- <continue | ask_user | revise_input | stop>：<用户下一步应该做什么>
 ```
+
+`verdict:` 和它的取值保持英文（Runtime 按它判断审查是否通过）；findings 和 required_action 的内容用中文写：审查结果会作为问题的一部分直接给用户看（在 LabOntology 中它就是 `--summary`）。沸点检查给出的 `message` 原样写进 findings，不要翻译或改写。
 
 判定规则：
 

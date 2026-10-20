@@ -66,6 +66,7 @@ Status values: `awaiting_decision` (choose the next action), `waiting_agent` (a 
 - `act --ask-plan` is refused once the plan is confirmed or its steps have started.
 - A review verdict (`verdict: ...`) sent as the result of a step that is not a review is refused.
 - A review step of a flow reports its own verdict: `--provide-artifact` of the reviewed step's files, or a `--summary` identical to the reviewed step's, is refused.
+- A step pause and a review that did not pass put the step's `--summary` into the question to the user, so write it in Chinese. The question leaves out a review's `stage:` and `checked:` parts and shows `verdict:`, `findings:` and `required_action:` as 结论, 发现 and 需要的处理.
 - One user message answers one question, asked before it: a question asked in this turn, or a second question after this turn's message already answered one, waits for the user's next message (`act` and `resume --answer` are refused with "the user has not answered this question yet"; FounDryClaw ends the turn with the question).
 - The very same `resume` sent three times within a minute is refused (`repeat_guard`).
 - Refusals print only the reason on stderr (exit 2), without the usage text.
