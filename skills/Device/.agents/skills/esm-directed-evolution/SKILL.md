@@ -1,17 +1,18 @@
 ---
 name: esm-directed-evolution
-description: Score amino-acid substitutions at masked positions of an enzyme or protein with a local ESM-2 protein language model (Meta fair-esm, runs on the server's CPU, no online service or key). Trigger when a user gives a protein sequence with <mask> tokens, or a wild type and residue positions, and wants amino-acid probabilities, mutation candidate rankings, local library design, or a probability vector over the 20 standard amino acids plus special tokens (定向进化、突变位点氨基酸概率、ESM-2 掩码预测).
+description: Score amino-acid substitutions at masked positions of an enzyme or protein with a local ESM-2 protein language model (Meta fair-esm, runs on the server's CPU, no online service or key). Trigger when a user gives a protein sequence with <mask> tokens, or a wild type and residue positions, and wants amino-acid probabilities, mutation candidate rankings, local library design, or a probability vector over the 20 standard amino acids plus special tokens (定向进化、突变位点氨基酸概率、ESM-2 掩码预测). Asking only whether the ESM service is reachable or which models are installed is a read-only check of this skill's own environment rather than an experiment, so run this skill's --health or --list-models directly and report the output, without a LabOntology mission (ESM 服务是否可用、装了哪些模型).
 ---
 
 # ESM Directed Evolution
 
 Predicts, for each masked position of a protein, how likely each amino acid is under the ESM-2 protein
-language model, computed locally with the model installed in this skill's Python environment. It replaces
-the earlier BioLM-based version: no BioLM account, key or network access is involved.
+language model. The model runs on the lab's own server: the ESM service keeps an ESM-2 checkpoint in
+memory and this skill's script asks it over HTTP, the way the TRACE Lab tools work. No account, no key and
+no online service are involved, and this skill needs no Python packages of its own.
 
 ## Quick start
 
-Run the bundled script from the workspace (the chat's `python` runs it in this skill's environment):
+Run the bundled script from the workspace (the chat's `python` runs it; the standard library is enough):
 
 ```bash
 python .claude/skills/esm-directed-evolution/scripts/esm_mask_probabilities.py \
@@ -31,16 +32,42 @@ Common variants:
 - Coding DNA: add `--translate` (standard genetic code; the DNA must be whole codons).
 - Probabilities over only the output tokens: `--renormalize-selected`. More or fewer candidates per position:
   `--top N` (default 5).
-- `--mock` checks the output format with made-up numbers and no model; never report its numbers as results.
+- Service status: `--health` and `--list-models` (see "Status queries" below; they need no LabOntology
+  mission). Run one of them first when a call fails.
+
+## Status queries (no mission)
+
+`--health` and `--list-models` only read the service's own state: whether it is up, which model is loaded,
+on which device, and which model files are installed.
+
+```bash
+python .claude/skills/esm-directed-evolution/scripts/esm_mask_probabilities.py --health
+python .claude/skills/esm-directed-evolution/scripts/esm_mask_probabilities.py --list-models
+```
+
+These are checks of this skill's own environment, not laboratory tasks: **run them directly and do not
+create a LabOntology mission for them.** A question such as "is the ESM service up?" or "which models are
+installed?" is answered by running the command above and reporting what it says. Neither command scores a
+sequence, writes a file or changes anything, so there is nothing for a mission to record — and a mission
+started for one cannot be completed, because LabOntology expects a Skill step to leave output files behind.
+
+If a mission was already created for a status question, close it (`act --complete`) instead of leaving it
+waiting; then answer from the command's output.
+
+Scoring a sequence is a different matter: that is the skill's real work and goes through LabOntology as
+usual, with the result registered as the step's output file (`--output-json`).
 
 ## Model
 
-- Installed: **esm2-35m** (ESM-2, 35 million parameters, 12 layers), the default `--model`.
-- Larger ESM-2 models (`esm2-150m`, `esm2-650m`, ...) and ESM-1v are not installed. If the user asks for one,
-  say so and use esm2-35m, or tell them an administrator can add the model (it is a download entry of the
-  `iBioFoundry/esm` environment in `venv/packages.json`). The script's error message lists what is installed.
-- Do not pip install packages, download model files or call an online service to work around a missing model
-  or environment: report the script's message and that it needs an administrator (需要管理员处理).
+- The ESM service holds the model files; `--list-models` says which are installed (a status query, see
+  above). Normally that is
+  **esm2-35m** (ESM-2, 35 million parameters, 12 layers), which is also the default `--model`.
+- Larger ESM-2 models (`esm2-150m`, `esm2-650m`, ...) and ESM-1v are usually not installed. If the user asks
+  for one, say so and use esm2-35m, or tell them an administrator can add it on the service's host
+  (`python scripts/fetch_models.py esm2-650m` there). The error message lists what is installed.
+- The service runs as its own process. If the script reports that it cannot be reached, report that and that
+  it needs an administrator (需要管理员处理). Do not pip install packages, download model files, start the
+  service yourself or call an online service to work around a missing model or an unreachable service.
 
 ## Input rules
 
@@ -56,7 +83,7 @@ JSON (printed, and written to `--output-json` when given):
 
 - `model`, `engine` (fair-esm version, local CPU), `sequence` (with `<mask>`), `masking` (`joint` or
   `independent`), `token_order` (20 standard amino acids, then `X B Z U O - . <unk> <mask>` unless
-  `--standard-only` or `--tokens`), optional `record` and `notes`.
+  `--standard-only` or `--tokens`), `elapsed_s` (the service's own timing), optional `record` and `notes`.
 - `positions`: one object per mask, in sequence order:
   - `mask_index`, `position` (1-based residue number), `wild_type` (with `--positions`);
   - `probabilities`: token → probability, softmax over the model's whole vocabulary then filtered to

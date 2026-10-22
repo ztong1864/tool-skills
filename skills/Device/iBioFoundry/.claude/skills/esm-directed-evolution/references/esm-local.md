@@ -6,23 +6,26 @@
   MIT licence. The repository was archived on 2024-08-01 and still installs and runs with current PyTorch.
 - Weights: Meta's `https://dl.fbaipublicfiles.com/fair-esm/models/<name>.pt`, each with a small
   `.../regression/<name>-contact-regression.pt` (only used for contact prediction; fair-esm warns without it).
-- On FounDryClaw the files live in `venv/iBioFoundry/esm/models/`, fetched by `venv/build_envs.py` from the
-  `downloads` of the `iBioFoundry/esm` environment in `venv/packages.json` and checked against their sha256.
-  The script finds them as `models/` of the Python environment it runs in (`--models-dir` or `ESM_MODELS_DIR`
-  override that).
+- The weights live with the ESM service (its own `models/`, or wherever `ESM_MODELS_DIR` points), fetched by
+  the service's `scripts/fetch_models.py` and checked against their sha256. Nothing on the FounDryClaw side
+  holds a model file or torch: this skill's script posts the sequence to the service and prints the answer.
+  It finds the service at `ESM_SERVICE_BASE_URL` (default `http://127.0.0.1:8789`, or `--base-url`), and the
+  service keeps the checkpoint in memory between calls, so a question costs about 0.05 s instead of a load.
 
 ## ESM-2 models
 
-| `--model` | File | Layers | Parameters | File size | Installed |
-|---|---|---|---|---|---|
-| `esm2-8m` | `esm2_t6_8M_UR50D` | 6 | 8M | 0.03 GB | no |
-| `esm2-35m` | `esm2_t12_35M_UR50D` | 12 | 35M | 0.13 GB | **yes** |
-| `esm2-150m` | `esm2_t30_150M_UR50D` | 30 | 150M | 0.59 GB | no |
-| `esm2-650m` | `esm2_t33_650M_UR50D` | 33 | 650M | 2.60 GB | no |
-| `esm2-3b` | `esm2_t36_3B_UR50D` | 36 | 3B | 5.68 GB | no |
+| `--model` | File | Layers | Parameters | File size |
+|---|---|---|---|---|
+| `esm2-8m` | `esm2_t6_8M_UR50D` | 6 | 8M | 0.03 GB |
+| `esm2-35m` | `esm2_t12_35M_UR50D` | 12 | 35M | 0.13 GB |
+| `esm2-150m` | `esm2_t30_150M_UR50D` | 30 | 150M | 0.59 GB |
+| `esm2-650m` | `esm2_t33_650M_UR50D` | 33 | 650M | 2.60 GB |
+| `esm2-3b` | `esm2_t36_3B_UR50D` | 36 | 3B | 5.68 GB |
+| `esm2-15b` | `esm2_t48_15B_UR50D` | 48 | 15B | large; not practical on a CPU |
 
-ESM-1v (five 650M models, 7.8 GB each as downloaded) is not installed. The ESM authors expect ESM-2 to predict
-variant effects about as well as ESM-1v.
+Which of them are installed is the service's business, not this skill's: `--list-models` says, and normally
+only esm2-35m is. ESM-1v (five 650M models, 7.8 GB each as downloaded) is not offered at all; the ESM authors
+expect ESM-2 to predict variant effects about as well as ESM-1v.
 
 ## Vocabulary and token order
 
@@ -46,14 +49,15 @@ Default output order: `A C D E F G H I K L M N P Q R S T V W Y`, then `X B Z U O
 
 ## Adding a model (administrator)
 
-Add both files to the `downloads` of `iBioFoundry/esm` in `venv/packages.json`:
+On the host that runs the ESM service:
 
-```json
-{"url": "https://dl.fbaipublicfiles.com/fair-esm/models/esm2_t33_650M_UR50D.pt",
- "path": "models/esm2_t33_650M_UR50D.pt", "sha256": "<sha256 of the file>"},
-{"url": "https://dl.fbaipublicfiles.com/fair-esm/regression/esm2_t33_650M_UR50D-contact-regression.pt",
- "path": "models/esm2_t33_650M_UR50D-contact-regression.pt", "sha256": "<sha256 of the file>"}
+```bash
+python scripts/fetch_models.py --list            # the names it knows
+python scripts/fetch_models.py esm2-650m         # weights plus the small contact-regression file
 ```
 
-then run `python3 venv/build_envs.py iBioFoundry/esm`. Memory needed is about the file size (650M: about
-2.6 GB of RAM on the CPU).
+The files land in the service's `models/` (`--models-dir` or `ESM_MODELS_DIR` to put them elsewhere), an
+interrupted download continues where it stopped, and the sha256 is checked for every model whose checksum is
+recorded in `esm_service/models.py`. The service loads a model on first use and keeps it in memory: memory
+needed is about the file size (650M: about 2.6 GB), and `ESM_SERVICE_MAX_LOADED_MODELS` decides how many stay
+loaded at once. Restarting the service is not needed for a newly added file, only for a changed setting.
