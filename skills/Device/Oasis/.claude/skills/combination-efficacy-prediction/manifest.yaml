@@ -1,0 +1,34 @@
+# 本技能的产物只有 scripts/run_combination_network.py 写进 --output-dir 的这六个文件。
+# examples/ 下的 README 还写了验收用的 expected_*.csv 和输入 data/candidate_pool.csv；没有这份
+# 声明时，Creator 会把那两个验收基准和这个输入登记为必需产物，排名步骤因此无法登记完成。
+# 调用 Open Targets 时另存的 API 快照不是每次都有，所以不作为必需产物声明。
+# 六个产物都写在 --output-dir 指向的同一个目录里，因此 binding 都指向该参数。
+side_effect_level: read_only
+command: ["python", "scripts/run_combination_network.py"]
+outputs:
+  artifact:candidate-drugs-selected:
+    path: candidate_drugs_selected.csv
+    format: csv
+    binding: &output_dir
+      parameter: output_dir
+      flag: --output-dir
+  artifact:disease-genes-selected:
+    path: disease_genes_selected.csv
+    format: csv
+    binding: *output_dir
+  artifact:single-drug-network:
+    path: single_drug_network.csv
+    format: csv
+    binding: *output_dir
+  artifact:all-pair-metrics:
+    path: all_pair_metrics.csv
+    format: csv
+    binding: *output_dir
+  artifact:ranked-pairs:
+    path: ranked_pairs.csv
+    format: csv
+    binding: *output_dir
+  artifact:run-summary:
+    path: run_summary.json
+    format: json
+    binding: *output_dir

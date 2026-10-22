@@ -1,0 +1,105 @@
+{
+  "model_name": "primekg_cgi_graph_graph_only_e50",
+  "task": "PrimeKG/KG existing-drug indication ranking with Graph CGI e50",
+  "model_root": "primekg_cgi_graph_graph_only_e50",
+  "bundle_dir": "primekg_cgi_graph_graph_only_e50/train",
+  "prepared_dir": "primekg_cgi_graph_graph_only_e50/prepared",
+  "eval_dir": "primekg_cgi_graph_graph_only_e50/eval",
+  "preferred_bundle": "best_bundle.pt",
+  "fallback_bundle": "bundle.pt",
+  "default_command": "bash score.sh \"diabetic retinopathy\" output_scores.csv python auto 100",
+  "input_schema": {
+    "disease": "Required. A disease_id or exact disease_name from prepared/disease_catalog.csv, which is built from graph_diseases.csv.",
+    "top_k": "Optional. 0 or omitted means all candidates; positive integer means first K rows.",
+    "device": "Optional. auto, cpu, cuda, or mps.",
+    "candidate_drugbank_ids": "Optional text file with one DrugBank ID per line; every ID must exist in candidate_pool.csv."
+  },
+  "output_schema": [
+    "disease_id",
+    "disease_name",
+    "rank",
+    "drugbank_id",
+    "drug_name",
+    "indication_score",
+    "has_cgi",
+    "has_drug_protein_target"
+  ],
+  "model_config": {
+    "split_mode": "pair",
+    "use_graph_cgi": true,
+    "use_perturbation_branch": false,
+    "use_drug_protein_branch": true,
+    "use_ppi": true,
+    "interaction_mode": "multitoken_cross_attention",
+    "max_atom_tokens": 80,
+    "max_protein_tokens": 16,
+    "random_state": 42
+  },
+  "counts": {
+    "candidate_drugs": 6945,
+    "indication_anchor_drugs": 1596,
+    "background_only_drugs": 5349,
+    "indication_rows": 8781,
+    "indication_diseases": 1279,
+    "graph_disease_count": 17070,
+    "drug_protein_edges": 23788,
+    "protein_protein_edges": 642150,
+    "perturbation_edges": 720768,
+    "perturbation_drugs": 1809,
+    "perturbation_up_edges": 360147,
+    "perturbation_down_edges": 360621,
+    "disease_catalog_rows": "17070 graph diseases"
+  },
+  "metrics": {
+    "best_epoch": 27,
+    "val_mrr": 0.3505930322012998,
+    "test_mrr": 0.3405655491444344,
+    "test_ndcg_at_10": 0.31106153857501123,
+    "test_hit_at_10": 0.5143338954468802,
+    "test_auc": 0.9747369398133975
+  },
+  "limitations": [
+    "Only supports drugs already present in the fitted PrimeKG candidate_pool.",
+    "Does not support arbitrary SMILES or KG-external new-drug cold start.",
+    "Scores are model ranking outputs, not clinical treatment recommendations.",
+    "Disease names must match disease_catalog.csv exactly after whitespace/case normalization."
+  ],
+  "source_code": {
+    "repository": "git@github.com:lulu754022140/KG-drug-efficacy-models.git",
+    "branch": "feature/cgi-graph-e50-handoff-clean",
+    "commit": "69fef47",
+    "package": "src/primekg_graph_indication_multitoken_cgi_graph",
+    "notes": "Lightweight helper modules are copied into the Graph CGI package; torch, dgl and rdkit remain required runtime dependencies.",
+    "archive": "source_archives/KG-drug-efficacy-models_feature-cgi-graph-e50-handoff-clean_69fef47.zip",
+    "handoff_options": [
+      "private GitHub collaborator access",
+      "included source archive zip"
+    ],
+    "kg_project_src_requirement": "Set KG_PROJECT_SRC to the src directory from the GitHub clone or extracted source archive."
+  },
+  "server_paths": {
+    "repo_root": "/slurm/home/yrd/fanlab/zhangjinlu/zjl_desktop/KG/PrimeKG",
+    "kg_project_src": "/slurm/home/yrd/fanlab/zhangjinlu/zjl_desktop/KG/PrimeKG/src",
+    "skill_docs": "/slurm/home/yrd/fanlab/zhangjinlu/zjl_desktop/KG/PrimeKG/skill_graph_cgi_e50/docs",
+    "recover_eval_script": "/slurm/home/yrd/fanlab/zhangjinlu/zjl_desktop/KG/PrimeKG/scripts/eval_recover_cgi_only.sh"
+  },
+  "environment": {
+    "recommended": "existing Oasis Python venv: /home/vipuser/srv/foundryclaw_project/FounDryClaw_Web/venv/Oasis/primekg",
+    "type": "python-venv",
+    "python": "3.10.22",
+    "numpy": "1.24.3",
+    "pandas": "2.0.3",
+    "scikit_learn": "1.3.2",
+    "torch": "1.13.1+cpu",
+    "rdkit": "2022.09.5",
+    "dgl": "required by inference source; missing from the current venv",
+    "device": "cpu"
+  },
+  "data_packaging": {
+    "inference_data_included": true,
+    "included_model_artifacts": "primekg_cgi_graph_graph_only_e50/prepared, train, eval",
+    "raw_data_required_for_inference": false,
+    "raw_data_required_for_reprepare_or_retrain": true,
+    "raw_data_notes": "Raw PrimeKG, DrugBank, CMap/CGI and disease embedding files are not required for scoring; they are required only for rebuilding prepared data or retraining."
+  }
+}

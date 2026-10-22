@@ -1,0 +1,13 @@
+# 线上 Python venv 运行环境清单（仅记录信息；不是 Conda 环境创建文件）。
+runtime:
+  type: python-venv
+  path: /home/vipuser/srv/foundryclaw_project/FounDryClaw_Web/venv/Oasis/primekg
+  python: "3.10.22"
+  device: cpu
+packages:
+  numpy: "1.24.3"
+  pandas: "2.0.3"
+  scikit-learn: "1.3.2"
+  rdkit: "2022.09.5"
+  pytorch: "1.13.1+cpu"
+  dgl: required-but-not-installed

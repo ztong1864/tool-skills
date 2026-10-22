@@ -1,0 +1,16 @@
+# 本包随附 model_source/（原模型源码与历次实验）和 runtime_deps/（随包依赖），其中的 README 与脚本
+# 描述的是别的程序，不是本技能的接口。没有这份声明时，Creator 会把反馈闭环实验的产物
+# （all_round_metrics.csv、final_before_after_ranking.csv）登记为本技能的必需产物，排序步骤
+# 因此永远无法登记完成。
+# 本技能只读取已训练模型与图谱数据做推理，不触发仪器或实验，所以 side_effect_level 是 read_only。
+side_effect_level: read_only
+# score.sh 还要疾病、输出 CSV、Python、设备和 top_k 五个位置参数，用法见 SKILL.md。
+command: ["bash", "score.sh"]
+outputs:
+  # 唯一产物：排序结果 CSV，由 score.sh 的第二个位置参数（内部 CLI 的 --output）命名。
+  artifact:indication-ranking:
+    path: indication_ranking.csv
+    format: csv
+    binding:
+      parameter: output
+      flag: --output

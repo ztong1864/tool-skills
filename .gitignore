@@ -50,6 +50,21 @@ env/
 *.jmod
 
 # ---------------------------------------------------------------------------
+# Oasis PrimeKG packages: model weights, prepared graph tables, the vendored
+# original source and the bundled dependency tree. Together about 9 GB, with
+# single files above GitHub's 100 MB limit, so they are delivered with the
+# skill package itself (see each skill's README), not through git. Only the
+# editable part of the Skill is tracked here: SKILL.md, manifest, docs,
+# scripts, src and the small examples.
+# ---------------------------------------------------------------------------
+skills/Device/Oasis/.claude/skills/primekg-cgi-drug-effect-prediction/primekg_cgi_graph_graph_only_e50/
+skills/Device/Oasis/.claude/skills/primekg-cgi-drug-effect-prediction/model_source/
+skills/Device/Oasis/.claude/skills/primekg-cgi-drug-effect-prediction/runtime_deps/
+skills/Device/Oasis/.claude/skills/primekg-cgi-drug-effect-prediction/source_archives/
+skills/Device/Oasis/.claude/skills/combination-efficacy-prediction/output/
+skills/Device/Oasis/.claude/skills/combination-efficacy-prediction/data/disease-gene.csv
+
+# ---------------------------------------------------------------------------
 # Generated at runtime
 # ---------------------------------------------------------------------------
 __pycache__/

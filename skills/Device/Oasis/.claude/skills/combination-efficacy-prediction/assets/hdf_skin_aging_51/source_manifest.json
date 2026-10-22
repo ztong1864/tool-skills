@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-10-21T10:32:13.116030+00:00",
+  "selection": "exact MCE/PubChem stereochemical structure; BATMAN known plus predicted score >0.6; >=2 PrimeKG PPI LCC targets",
+  "input_sha256": {
+    ".agents/skills/combination-efficacy-prediction/assets/hdf_skin_aging_51/source/mce_name_audit.csv": "914569905bc7e5b9c2e2fd771e78a5db84147af11bd60de11c22d9c916bbef10",
+    ".agents/skills/combination-efficacy-prediction/output/primekg_cgi_graph_graph_only/prepared/kg_with_cgi.csv": "28873f2f6e08621e171ba0f809d95c1b9a81f087ba080cadcad3e3ce6893d9cd",
+    ".agents/skills/combination-efficacy-prediction/assets/hdf_skin_aging_51/source/hdf_pair_names.csv": "e135fd326c08fb1efc23b70159ca0a28ac9c3441653ecacdc6c356a53003301a"
+  },
+  "case_input_snapshots": {
+    "/Users/lulu/Documents/year5/具身智能/skill交接/组合/combination-efficacy-prediction/assets/hdf_skin_aging_51/source/mce_name_audit.csv": "914569905bc7e5b9c2e2fd771e78a5db84147af11bd60de11c22d9c916bbef10",
+    "/Users/lulu/Documents/year5/具身智能/skill交接/组合/combination-efficacy-prediction/assets/hdf_skin_aging_51/source/hdf_pair_names.csv": "e135fd326c08fb1efc23b70159ca0a28ac9c3441653ecacdc6c356a53003301a"
+  },
+  "sources": {
+    "known_by_ingredients": {
+      "url": "http://batman2.cloudna.cn/downloadApiFile/data/browser/known_browse_by_ingredients.txt.gz",
+      "file": "/Users/lulu/Documents/year5/具身智能/skill交接/组合/combination-efficacy-prediction/assets/hdf_skin_aging_51/source/known_browse_by_ingredients.txt.gz",
+      "sha256": "8b615e243a7d7708b959cc8c6e119f905983130b061f4e16d305d20dee99ebe3",
+      "bytes": 88231
+    },
+    "predicted_by_ingredients": {
+      "url": "http://batman2.cloudna.cn/downloadApiFile/data/browser/predicted_browse_by_ingredients.txt.gz",
+      "file": "/Users/lulu/Documents/year5/具身智能/skill交接/组合/combination-efficacy-prediction/assets/hdf_skin_aging_51/source/predicted_browse_by_ingredients.txt.gz",
+      "sha256": "61d7215af9b74929b2d9ea8cc0562316ebddb7573bac77367986df903bc5f075",
+      "bytes": 5610906
+    },
+    "predicted_by_targets": {
+      "url": "http://batman2.cloudna.cn/downloadApiFile/data/browser/predicted__browse_by_targets.txt.gz",
+      "file": "/Users/lulu/Documents/year5/具身智能/skill交接/组合/combination-efficacy-prediction/assets/hdf_skin_aging_51/source/predicted__browse_by_targets.txt.gz",
+      "sha256": "19bf7db384c451749d652b9ee8c8e61d9aaa8acb35ff699a4accdc6990c959b2",
+      "bytes": 7430119
+    }
+  },
+  "pubchem_api": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/",
+  "ingredients": 81,
+  "candidate_drugs": 51,
+  "excluded_drugs": 30,
+  "identity_status_counts": {
+    "exact_stereo": 56,
+    "no_local_structure": 13,
+    "same_connectivity": 10,
+    "structure_mismatch": 2
+  },
+  "selection_status_counts": {
+    "selected": 51,
+    "no_local_structure": 13,
+    "same_connectivity": 10,
+    "no_batman_targets": 4,
+    "structure_mismatch": 2,
+    "ppi_targets_lt2": 1
+  },
+  "known_target_drugs": 36,
+  "predicted_target_drugs": 51,
+  "target_edges_known": 967,
+  "target_edges_predicted": 3555,
+  "ppi_lcc_nodes": 18345,
+  "possible_pairs": 1275,
+  "observed_pair_names_with_both_candidates": 214,
+  "artifact_sha256": {
+    "identity_audit.csv": "d839cbc6e2b38f9cd121fc7088200cd60fa134b6818b311d7320c9f836e959b6",
+    "excluded_compounds.csv": "ba92d0a6a90abf6515cddd897ffc263cd51b4525970917155b8f6790a057c146",
+    "candidate_compounds.csv": "f5b5ceb6c0230ba2afffac209b8080655a379bf3cd6e4fe2448fd5ebd66f29fd",
+    "target_edges.csv": "5b0ceccc85c75b236b6a4d5816e5743141098d9d3c8ddcd870dae929a4bb3752"
+  }
+}

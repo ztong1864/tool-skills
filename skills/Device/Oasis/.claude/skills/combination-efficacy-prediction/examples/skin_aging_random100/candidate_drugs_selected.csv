@@ -1,0 +1,101 @@
+drugbank_id,drug_name,human_target_genes,target_source,ppi_lcc_target_count
+DB00119,Pyruvic acid,ABAT;AGXT2;PC;PDHB;PKLR;PKM;SLC16A1;SLC16A2;SLC16A3;SLC16A4;SLC16A5;SLC16A6;SLC16A7;SLC16A8,PrimeKG:drug_protein_target,14
+DB00129,Ornithine,ARG1;ARG2;GATM;OAT;OAZ1;OTC;SLC25A15;SLC25A2;SLC7A1;SLC7A2,PrimeKG:drug_protein_target,10
+DB00207,Azithromycin,PADI4,PrimeKG:drug_protein_target,1
+DB00367,Levonorgestrel,AR;ESR1;NR3C1;PGR;SHBG;SRD5A1,PrimeKG:drug_protein_target,6
+DB00405,Dexbrompheniramine,HRH1,PrimeKG:drug_protein_target,1
+DB00490,Buspirone,ADRA1A;ADRA1B;ADRA1D;DRD2;DRD3;DRD4;HTR1A,PrimeKG:drug_protein_target,7
+DB00503,Ritonavir,NR1I2,PrimeKG:drug_protein_target,1
+DB00521,Carteolol,ADRB1;ADRB2,PrimeKG:drug_protein_target,2
+DB00621,Oxandrolone,AR,PrimeKG:drug_protein_target,1
+DB00688,Mycophenolate mofetil,IMPDH1;IMPDH2;PTS,PrimeKG:drug_protein_target,3
+DB00695,Furosemide,CA2;GPR35;SLC12A1,PrimeKG:drug_protein_target,3
+DB00796,Candesartan cilexetil,AGTR1,PrimeKG:drug_protein_target,1
+DB00881,Quinapril,ACE,PrimeKG:drug_protein_target,1
+DB00928,Azacitidine,DNMT1,PrimeKG:drug_protein_target,1
+DB00964,Apraclonidine,ADRA1A;ADRA2A;ADRA2B,PrimeKG:drug_protein_target,3
+DB01035,Procainamide,DNMT1;KCNH2;SCN5A,PrimeKG:drug_protein_target,3
+DB01113,Papaverine,PDE10A;PDE4B,PrimeKG:drug_protein_target,2
+DB01194,Brinzolamide,CA1;CA2;CA3;CA4;CA5A,PrimeKG:drug_protein_target,5
+DB01662,Trans-O-Hydroxy-Alpha-Methyl Cinnamate,CTRB1,PrimeKG:drug_protein_target,1
+DB01821,"L-N(omega)-Nitroarginine-2,4-L-diaminobutyric amide",NOS1;NOS3,PrimeKG:drug_protein_target,2
+DB01940,Balanol Analog 2,PRKACA,PrimeKG:drug_protein_target,1
+DB01951,Gpi-1046,FKBP1A,PrimeKG:drug_protein_target,1
+DB02072,"2-(Oxalyl-Amino)-4,7-Dihydro-5h-Thieno[2,3-C]Thiopyran-3-Carboxylic Acid",PTPN1,PrimeKG:drug_protein_target,1
+DB02169,"9,10-Deepithio-9,10-Didehydroacanthifolicin",PPP1CC,PrimeKG:drug_protein_target,1
+DB02249,2-Ethoxyethanol,ADH1C,PrimeKG:drug_protein_target,1
+DB02308,"4-(1,3,2-Dioxaborolan-2-Yloxy)Butan-1-Aminium",PRSS3,PrimeKG:drug_protein_target,1
+DB02402,"5-(4-Methoxyphenoxy)-2,4-Quinazolinediamine",DHFR2,PrimeKG:drug_protein_target,1
+DB02515,sn-glycerol 3-phosphate,ALDOB;PFKFB1,PrimeKG:drug_protein_target,2
+DB02611,Balanol Analog 1,PRKACA,PrimeKG:drug_protein_target,1
+DB02915,"4-(2,4-Dimethyl-1,3-thiazol-5-yl)-N-[4-(trifluoromethyl)phenyl]-2-pyrimidinamine",CCNA2;CDK2,PrimeKG:drug_protein_target,2
+DB02983,Para-Mercury-Benzenesulfonic Acid,CLC;ESR2,PrimeKG:drug_protein_target,2
+DB03008,5-fluoro-beta-L-gulosyl fluoride,MAN2A1,PrimeKG:drug_protein_target,1
+DB03032,S-octylglutathione,GSTM4,PrimeKG:drug_protein_target,1
+DB03183,"1-(4-Aminophenyl)-3,5-Dimethyl-1h-Pyrazole-4-Carboxylic Acid Ethyl Ester",PDE4D,PrimeKG:drug_protein_target,1
+DB03314,5-fluorotryptophan,GSTM1;TPI1,PrimeKG:drug_protein_target,2
+DB03456,N2-[(benzyloxy)carbonyl]-n1-[(3S)-1-cyanopyrrolidin-3-yl]-l-leucinamide,CTSK,PrimeKG:drug_protein_target,1
+DB03645,Phosphonoacetohydroxamic Acid,ENO3,PrimeKG:drug_protein_target,1
+DB03707,S-Ethyl-N-Phenyl-Isothiourea,NOS1;NOS3,PrimeKG:drug_protein_target,2
+DB03740,N-acetyl-alpha-D-glucosamine,ACE;ACHE;GBA;IGHG1;SIGLEC7,PrimeKG:drug_protein_target,5
+DB03793,Benzoic acid,DAO;SLC15A1,PrimeKG:drug_protein_target,2
+DB03877,AL-4623,CA2,PrimeKG:drug_protein_target,1
+DB03886,Biopterin,DHFR;PTS;SPR,PrimeKG:drug_protein_target,3
+DB03903,Tmr,ACTA1,PrimeKG:drug_protein_target,1
+DB04094,4-hydroxybutan-2-one,FKBP1A,PrimeKG:drug_protein_target,1
+DB04288,2-[Trans-(4-Aminocyclohexyl)Amino]-6-(Benzyl-Amino)-9-Cyclopentylpurine,CDK2,PrimeKG:drug_protein_target,1
+DB04295,N-(Benzoylcarbamoyl)-beta-D-glucopyranosylamine,PYGM,PrimeKG:drug_protein_target,1
+DB04365,Arecoline,CHRM1;CHRM3,PrimeKG:drug_protein_target,2
+DB04376,13-Acetylphorbol,PRKCD,PrimeKG:drug_protein_target,1
+DB04440,Nebularine,ADA,PrimeKG:drug_protein_target,1
+DB04447,"1,4-Dithiothreitol",ALDH1A1;AXIN1;CAMK2A;GSTZ1;HMGCR;LGALS1;MSRA;PPIB;TPI1;TRPM7,PrimeKG:drug_protein_target,10
+DB04531,S-Benzylcysteine,MGMT,PrimeKG:drug_protein_target,1
+DB04683,"(2R)-3-{[{[(2S)-2,3-DIHYDROXYPROPYL]OXY}(HYDROXY)PHOSPHORYL]OXY}-2-[(9E)-HEXADEC-9-ENOYLOXY]PROPYL (9E)-OCTADEC-9-ENOATE",NR5A1,PrimeKG:drug_protein_target,1
+DB04753,"9-DEAZAINOSINE-2',3'-O-ETHYLIDENEPHOSPHONATE",PNP,PrimeKG:drug_protein_target,1
+DB04857,Brasofensine,DRD2,PrimeKG:drug_protein_target,1
+DB04864,Huperzine A,ACHE,PrimeKG:drug_protein_target,1
+DB04881,Elacridar,ABCB1,PrimeKG:drug_protein_target,1
+DB05034,Ularitide,NPR1,PrimeKG:drug_protein_target,1
+DB05458,Pozanicline,CHRNA4;CHRNB2,PrimeKG:drug_protein_target,2
+DB05482,7-ethyl-10-hydroxycamptothecin,TOP1,PrimeKG:drug_protein_target,1
+DB05710,Gantacurium,CHRNA3,PrimeKG:drug_protein_target,1
+DB06127,Bisegliptin,DPP4,PrimeKG:drug_protein_target,1
+DB06878,1-[(2R)-2-aminobutanoyl]-N-(3-chlorobenzyl)-L-prolinamide,F2,PrimeKG:drug_protein_target,1
+DB06948,2-ANILINO-6-CYCLOHEXYLMETHOXYPURINE,CCNA2;CDK2,PrimeKG:drug_protein_target,2
+DB06961,"5-(5-chloro-2,4-dihydroxyphenyl)-N-ethyl-4-[4-(morpholin-4-ylmethyl)phenyl]isoxazole-3-carboxamide",HSP90AA1,PrimeKG:drug_protein_target,1
+DB06973,Bisphenol A,ESRRG,PrimeKG:drug_protein_target,1
+DB07037,(2S)-1-AMINO-3-[(5-NITROQUINOLIN-8-YL)AMINO]PROPAN-2-OL,CHEK1,PrimeKG:drug_protein_target,1
+DB07053,2-{5-[3-(7-PROPYL-3-TRIFLUOROMETHYLBENZO[D]ISOXAZOL-6-YLOXY)PROPOXY]INDOL-1-YL}ETHANOIC ACID,PPARG,PrimeKG:drug_protein_target,1
+DB07129,"(2R)-1-(2,6-dimethylphenoxy)propan-2-amine",PLAU,PrimeKG:drug_protein_target,1
+DB07151,4-(4-hydroxy-3-methylphenyl)-6-phenylpyrimidin-2(5H)-one,PIM1,PrimeKG:drug_protein_target,1
+DB07210,"3-bromo-5-phenyl-N-(pyridin-4-ylmethyl)pyrazolo[1,5-a]pyrimidin-7-amine",CDK2,PrimeKG:drug_protein_target,1
+DB07219,"BENZYL N-({(2S,3S)-3-[(PROPYLAMINO)CARBONYL]OXIRAN-2-YL}CARBONYL)-L-ISOLEUCYL-L-PROLINATE",CTSB,PrimeKG:drug_protein_target,1
+DB07253,"N'-(5-chloro-1,3-benzodioxol-4-yl)-N-(3-methylsulfonylphenyl)pyrimidine-2,4-diamine",EPHB4,PrimeKG:drug_protein_target,1
+DB07330,A-620223,PARP1,PrimeKG:drug_protein_target,1
+DB07468,"(3aS)-3a-hydroxy-5-methyl-1-phenyl-1,2,3,3a-tetrahydro-4H-pyrrolo[2,3-b]quinolin-4-one",MYH14,PrimeKG:drug_protein_target,1
+DB07619,"N-cyclopropyl-N-(trans-4-pyridin-3-ylcyclohexyl)-4-[(1S)-2,2,2-trifluoro-1-hydroxy-1-methylethyl]benzamide",HSD11B1,PrimeKG:drug_protein_target,1
+DB07630,"N-((1R,2R)-2-(5-CHLORO-1H-INDOLE-2-CARBOXAMIDO)CYCLOHEXYL)-5-METHYL-4,5,6,7-TETRAHYDROTHIAZOLO[5,4-C]PYRIDINE-2-CARBOXAMIDE",F10,PrimeKG:drug_protein_target,1
+DB08000,"2-(CARBOXYMETHYL)-1-OXO-1,2-DIHYDRONAPHTHO[1,2-D]ISOTHIAZOLE-4-CARBOXYLIC ACID 3,3-DIOXIDE",AKR1B1,PrimeKG:drug_protein_target,1
+DB08029,N~2~-(biphenyl-4-ylsulfonyl)-N-hydroxy-N~2~-(2-hydroxyethyl)glycinamide,MMP3,PrimeKG:drug_protein_target,1
+DB08059,Wortmannin,PIK3CA;PIK3CG;PIK3R1;PLK1,PrimeKG:drug_protein_target,4
+DB08341,"4-{[4-{[(1R,2R)-2-(dimethylamino)cyclopentyl]amino}-5-(trifluoromethyl)pyrimidin-2-yl]amino}-N-methylbenzenesulfonamide",PTK2B,PrimeKG:drug_protein_target,1
+DB08424,"[5-AMINO-1-(4-FLUOROPHENYL)-1H-PYRAZOL-4-YL](3-{[(2R)-2,3-DIHYDROXYPROPYL]OXY}PHENYL)METHANONE",MAPK14,PrimeKG:drug_protein_target,1
+DB08527,"1-[4-(AMINOSULFONYL)PHENYL]-1,6-DIHYDROPYRAZOLO[3,4-E]INDAZOLE-3-CARBOXAMIDE",CCNA2;CDK2,PrimeKG:drug_protein_target,2
+DB08562,4-(4-STYRYL-PHENYLCARBAMOYL)-BUTYRIC ACID,IGHG1;IGKC;IGKV2D-28,PrimeKG:drug_protein_target,2
+DB08695,3-(4-nitrophenyl)-1H-pyrazole,HPGDS,PrimeKG:drug_protein_target,1
+DB08752,N-[(1S)-2-[(4-cyano-1-methylpiperidin-4-yl)amino]-1-(cyclohexylmethyl)-2-oxoethyl]morpholine-4-carboxamide,CTSS,PrimeKG:drug_protein_target,1
+DB08755,N-[(1S)-2-{[(1R)-2-(benzyloxy)-1-cyano-1-methylethyl]amino}-1-(cyclohexylmethyl)-2-oxoethyl]morpholine-4-carboxamide,CTSS,PrimeKG:drug_protein_target,1
+DB08781,"1-[(2S)-4-(5-BROMO-1H-PYRAZOLO[3,4-B]PYRIDIN-4-YL)MORPHOLIN-2-YL]METHANAMINE",CHEK1,PrimeKG:drug_protein_target,1
+DB08810,Cinitapride,HTR1A;HTR2A;HTR4,PrimeKG:drug_protein_target,3
+DB08890,Linaclotide,GUCY2C,PrimeKG:drug_protein_target,1
+DB09147,Ferric pyrophosphate,FTL;HBA2;HBB,PrimeKG:drug_protein_target,3
+DB09185,Viloxazine,SLC6A2,PrimeKG:drug_protein_target,1
+DB09223,Blonanserin,DRD2;DRD3;HTR2A,PrimeKG:drug_protein_target,3
+DB09279,Fimasartan,AGTR1,PrimeKG:drug_protein_target,1
+DB09481,Magnesium carbonate,GRIN1;GRIN2A;GRIN2B;GRIN2C;GRIN2D;GRIN3A;GRIN3B,PrimeKG:drug_protein_target,7
+DB12271,ORE-1001,CPN1;CPN2,PrimeKG:drug_protein_target,1
+DB12418,Saccharin,CA3,PrimeKG:drug_protein_target,1
+DB13783,Acemetacin,PTGS1;PTGS2,PrimeKG:drug_protein_target,2
+DB13946,Testosterone undecanoate,AR;ESR1;NR3C2,PrimeKG:drug_protein_target,3
+DB14010,"5-methoxy-N,N-dimethyltryptamine",HTR1A;HTR2A,PrimeKG:drug_protein_target,2
+DB14062,Concanamycin A,ABCB1,PrimeKG:drug_protein_target,1

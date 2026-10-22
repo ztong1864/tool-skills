@@ -9,7 +9,7 @@ from typing import Any
 
 import yaml
 
-from ..fsutil import iter_dirs, iter_files
+from ..fsutil import iter_dirs, iter_files, iter_interface_files
 
 
 MANIFEST_NAMES = ("manifest.yaml", "manifest.yml", "skill.yaml", "skill.yml", "package.yaml")
@@ -56,7 +56,7 @@ def _evidence(source: str, path: Path, detail: str) -> dict[str, str]:
 
 def _document_files(skill_dir: Path) -> list[Path]:
     return sorted(
-        path for path in iter_files(skill_dir)
+        path for path in iter_interface_files(skill_dir)
         if path.name in DOC_NAMES
     )
 
@@ -571,7 +571,8 @@ def _output_contract_data(
         }]
 
     documented = _output_path_candidates(documents)
-    scripted = [item for path in sorted(iter_files(skill_dir, "*.py")) for item in _python_output_parameters(path)]
+    scripted = [item for path in sorted(iter_interface_files(skill_dir, "*.py"))
+                for item in _python_output_parameters(path)]
     outputs: dict[str, dict[str, Any]] = {}
     evidence: list[dict[str, Any]] = []
 
@@ -711,7 +712,7 @@ def discover_skill(skill_dir: Path) -> dict[str, Any]:
         if (skill_dir / name).exists():
             break
     python_parameters: list[dict[str, Any]] = []
-    for path in sorted(iter_files(skill_dir, "*.py")):
+    for path in sorted(iter_interface_files(skill_dir, "*.py")):
         found, python_evidence = _python_parameters(path)
         python_parameters.extend(found)
         evidence.extend(python_evidence)
@@ -754,7 +755,7 @@ def discover_skill(skill_dir: Path) -> dict[str, Any]:
         "fixed_arguments": manifest_data.get("fixed_arguments", []),
         "argument_bindings": manifest_data.get("argument_bindings", {}),
         "timeout_seconds": manifest_data.get("timeout_seconds"),
-        "entrypoints": [str(path) for path in sorted(iter_files(skill_dir, "*.py"))],
+        "entrypoints": [str(path) for path in sorted(iter_interface_files(skill_dir, "*.py"))],
         "status": "discovered",
         "confidence": round(0.5 + (0.2 if description else 0) + (0.2 if parameters else 0) + (0.1 if manifest_data else 0), 2),
         "unresolved": unresolved,

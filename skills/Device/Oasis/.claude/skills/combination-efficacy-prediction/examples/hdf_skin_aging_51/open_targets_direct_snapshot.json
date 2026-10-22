@@ -1,0 +1,6942 @@
+{
+  "retrieved_utc": "2026-10-10T11:20:08.731394+00:00",
+  "endpoint": "https://api.platform.opentargets.org/api/v4/graphql",
+  "disease_id": "EFO_0005422",
+  "disease_name": "skin aging",
+  "enableIndirect": false,
+  "association_count": 528,
+  "rows": [
+    {
+      "target": {
+        "id": "ENSG00000132639",
+        "approvedSymbol": "SNAP25"
+      },
+      "score": 0.5261379875719714,
+      "datatypeScores": [
+        {
+          "id": "clinical",
+          "score": 0.865457038266544
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000049540",
+        "approvedSymbol": "ELN"
+      },
+      "score": 0.5035814683042662,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.08557699667114775
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.8240744270240845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000258839",
+        "approvedSymbol": "MC1R"
+      },
+      "score": 0.4981934863492723,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02262853524443256
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.8183590289056373
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000187764",
+        "approvedSymbol": "SEMA4D"
+      },
+      "score": 0.4415718146293543,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.7263521051477543
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000248905",
+        "approvedSymbol": "FMN1"
+      },
+      "score": 0.4412681658528268,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.72585262596736
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000138821",
+        "approvedSymbol": "SLC39A8"
+      },
+      "score": 0.4346509939114938,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.7149678805862576
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000173068",
+        "approvedSymbol": "BNC2"
+      },
+      "score": 0.4327331272064559,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.7118131354860379
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000185305",
+        "approvedSymbol": "ARL15"
+      },
+      "score": 0.4275529078263189,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.7032920679558378
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164175",
+        "approvedSymbol": "SLC45A2"
+      },
+      "score": 0.42612428822371035,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.7009420971890644
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000115380",
+        "approvedSymbol": "EFEMP1"
+      },
+      "score": 0.4234965205120974,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6966196188380142
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000153814",
+        "approvedSymbol": "JAZF1"
+      },
+      "score": 0.42146978319523043,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6932857898482189
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000165476",
+        "approvedSymbol": "REEP3"
+      },
+      "score": 0.4173654498558861,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6865344731597586
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000188659",
+        "approvedSymbol": "SAXO2"
+      },
+      "score": 0.41438951892081033,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6816392927432254
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000151466",
+        "approvedSymbol": "SCLT1"
+      },
+      "score": 0.3986948583068005,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6558227677774408
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000047365",
+        "approvedSymbol": "ARAP2"
+      },
+      "score": 0.39372502930353703,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6476477764416038
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000114554",
+        "approvedSymbol": "PLXNA1"
+      },
+      "score": 0.38878291788179353,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6395183784226852
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000169554",
+        "approvedSymbol": "ZEB2"
+      },
+      "score": 0.38174585734808947,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6279429481905756
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000129038",
+        "approvedSymbol": "LOXL1"
+      },
+      "score": 0.380457240383603,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6258232711326784
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000135925",
+        "approvedSymbol": "WNT10A"
+      },
+      "score": 0.3764428005636605,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6192198224577403
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000172578",
+        "approvedSymbol": "KLHL6"
+      },
+      "score": 0.3762393492197126,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6188851604456377
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000131016",
+        "approvedSymbol": "AKAP12"
+      },
+      "score": 0.37619614547899655,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6188140935727539
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000113083",
+        "approvedSymbol": "LOX"
+      },
+      "score": 0.371160386278723,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.6096187558727022
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000181722",
+        "approvedSymbol": "ZBTB20"
+      },
+      "score": 0.3710718166741794,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.6103849617950101
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000137265",
+        "approvedSymbol": "IRF4"
+      },
+      "score": 0.3665252504041496,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03343619386863916
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.6012343958222585
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000135903",
+        "approvedSymbol": "PAX3"
+      },
+      "score": 0.36576121722582233,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.6010414981551395
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000166482",
+        "approvedSymbol": "MFAP4"
+      },
+      "score": 0.3623584471762715,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5960521306041244
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000162624",
+        "approvedSymbol": "LHX8"
+      },
+      "score": 0.3613377807142695,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5943732117765014
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163171",
+        "approvedSymbol": "CDC42EP3"
+      },
+      "score": 0.36079332627120253,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5934776255597709
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000049130",
+        "approvedSymbol": "KITLG"
+      },
+      "score": 0.3480195969361523,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.015198269940290528
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.5717058972554881
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000124813",
+        "approvedSymbol": "RUNX2"
+      },
+      "score": 0.34254049593273994,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.562541209450606
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000196284",
+        "approvedSymbol": "SUPT3H"
+      },
+      "score": 0.3420779469727419,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5626922477306039
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000277893",
+        "approvedSymbol": "SRD5A2"
+      },
+      "score": 0.34077328006181273,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5605461697295308
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000180828",
+        "approvedSymbol": "BHLHE22"
+      },
+      "score": 0.33823079086198915,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5563639680549121
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000054654",
+        "approvedSymbol": "SYNE2"
+      },
+      "score": 0.335910917954194,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5525479532767346
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000186951",
+        "approvedSymbol": "PPARA"
+      },
+      "score": 0.3346021617132894,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.015198269940290528
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.5496352351413528
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000081277",
+        "approvedSymbol": "PKP1"
+      },
+      "score": 0.334100639914426,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5495701833613429
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000147697",
+        "approvedSymbol": "GSDMC"
+      },
+      "score": 0.32489661852706575,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5344302670690279
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000266074",
+        "approvedSymbol": "BAHCC1"
+      },
+      "score": 0.3242014816286417,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5332868196550211
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000154240",
+        "approvedSymbol": "CEP112"
+      },
+      "score": 0.32218452504389855,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5299690792268882
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000128585",
+        "approvedSymbol": "MKLN1"
+      },
+      "score": 0.3220904081377901,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5298142640629284
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000233608",
+        "approvedSymbol": "TWIST2"
+      },
+      "score": 0.31662373825796947,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5208220072118237
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000125813",
+        "approvedSymbol": "PAX1"
+      },
+      "score": 0.31520819206263245,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.5184935412073076
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000104447",
+        "approvedSymbol": "TRPS1"
+      },
+      "score": 0.2885818450634932,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.47469522221483973
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000143353",
+        "approvedSymbol": "LYPLAL1"
+      },
+      "score": 0.27406494760939726,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.45081602821590344
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000151470",
+        "approvedSymbol": "C4orf33"
+      },
+      "score": 0.27403295646474213,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.45076340521213265
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000135250",
+        "approvedSymbol": "SRPK2"
+      },
+      "score": 0.2722451283993565,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.44782256379990365
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000064012",
+        "approvedSymbol": "CASP8"
+      },
+      "score": 0.26950282622184896,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.44179185795538506
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000178177",
+        "approvedSymbol": "LCORL"
+      },
+      "score": 0.2531889827029596,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.416476651121581
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000168646",
+        "approvedSymbol": "AXIN2"
+      },
+      "score": 0.2507813916075131,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.4125163465854312
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000107099",
+        "approvedSymbol": "DOCK8"
+      },
+      "score": 0.24820865703560377,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.4082843935703564
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000185737",
+        "approvedSymbol": "NRG3"
+      },
+      "score": 0.24464532044186005,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.40242297544884814
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000155846",
+        "approvedSymbol": "PPARGC1B"
+      },
+      "score": 0.24223696935709313,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.39846142078797453
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000101440",
+        "approvedSymbol": "ASIP"
+      },
+      "score": 0.23598471344728644,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.38817693456952673
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000134363",
+        "approvedSymbol": "FST"
+      },
+      "score": 0.22957287905527995,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.3776299538651494
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000149485",
+        "approvedSymbol": "FADS1"
+      },
+      "score": 0.22415536402417524,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.3687185530077023
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000149187",
+        "approvedSymbol": "CELF1"
+      },
+      "score": 0.22341577876484375,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.36750199141510476
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000072682",
+        "approvedSymbol": "P4HA2"
+      },
+      "score": 0.21685367851339732,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.3567078347821015
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000101019",
+        "approvedSymbol": "UQCC1"
+      },
+      "score": 0.2081267101325104,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.34235263446132064
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000134824",
+        "approvedSymbol": "FADS2"
+      },
+      "score": 0.20714034587721278,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.3407301401590534
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000184719",
+        "approvedSymbol": "RNLS"
+      },
+      "score": 0.20509001309481384,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.33735749842013496
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164574",
+        "approvedSymbol": "GALNT10"
+      },
+      "score": 0.19979577328793566,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.32864887594587033
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000126460",
+        "approvedSymbol": "PRRG2"
+      },
+      "score": 0.18711214630413522,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.30778527266465705
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000234186",
+        "approvedSymbol": "C16orf82"
+      },
+      "score": 0.17905588502003872,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.29453333458922615
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000162426",
+        "approvedSymbol": "SLC45A1"
+      },
+      "score": 0.1766860675966854,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.2906351648753975
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000118900",
+        "approvedSymbol": "UBN1"
+      },
+      "score": 0.17038397180753137,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.28026869583992
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000159685",
+        "approvedSymbol": "CHCHD6"
+      },
+      "score": 0.16926438087364468,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.27842705376768867
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000044459",
+        "approvedSymbol": "CNTLN"
+      },
+      "score": 0.16636868939073363,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.27366386115713603
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000188522",
+        "approvedSymbol": "SACK1G"
+      },
+      "score": 0.1653779992541954,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.2720342511087056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000184164",
+        "approvedSymbol": "CRELD2"
+      },
+      "score": 0.1643756981329916,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.2688657148781293
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000134825",
+        "approvedSymbol": "TMEM258"
+      },
+      "score": 0.15973936863461166,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.26275913189820294
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000288658",
+        "approvedSymbol": "RNF228"
+      },
+      "score": 0.1592002732008602,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.2618723608448702
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000131149",
+        "approvedSymbol": "GSE1"
+      },
+      "score": 0.1582637777757913,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.2603318969816343
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000172785",
+        "approvedSymbol": "ZNG1A"
+      },
+      "score": 0.15667536429948486,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.2577190774262723
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000153885",
+        "approvedSymbol": "KCTD15"
+      },
+      "score": 0.15465642238032126,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.2543980712737704
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000155749",
+        "approvedSymbol": "FLACC1"
+      },
+      "score": 0.14930056285962903,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.24558808904925766
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000133812",
+        "approvedSymbol": "SBF2"
+      },
+      "score": 0.14734188313712382,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.24236620963436326
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000137968",
+        "approvedSymbol": "SLC44A5"
+      },
+      "score": 0.1439142109091312,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.2367279490930995
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164258",
+        "approvedSymbol": "NDUFS4"
+      },
+      "score": 0.14350811701019214,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.2360599554653141
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000167178",
+        "approvedSymbol": "ISLR2"
+      },
+      "score": 0.142150390582067,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.23382659858742724
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000148926",
+        "approvedSymbol": "ADM"
+      },
+      "score": 0.14037093616712856,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.2308995311943467
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100425",
+        "approvedSymbol": "BRD1"
+      },
+      "score": 0.13975622596461484,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.229888379588064
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140459",
+        "approvedSymbol": "CYP11A1"
+      },
+      "score": 0.1370597018759958,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.22484487142011206
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000133789",
+        "approvedSymbol": "SWAP70"
+      },
+      "score": 0.13103828108011584,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.21554802223365913
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000154025",
+        "approvedSymbol": "SLC5A10"
+      },
+      "score": 0.12934729107422668,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.21276647207608768
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000112782",
+        "approvedSymbol": "CLIC5"
+      },
+      "score": 0.12825887330977448,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.21097610750050066
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140481",
+        "approvedSymbol": "CCDC33"
+      },
+      "score": 0.12586132882798132,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.20703232888094003
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000095015",
+        "approvedSymbol": "MAP3K1"
+      },
+      "score": 0.1247819168222436,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.20525677809460313
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000119640",
+        "approvedSymbol": "ACYP1"
+      },
+      "score": 0.12316972614382862,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.20260484684724933
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000166483",
+        "approvedSymbol": "WEE1"
+      },
+      "score": 0.12224178394177215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.20047052158878448
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000125965",
+        "approvedSymbol": "GDF5"
+      },
+      "score": 0.12181777398238806,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.20038098819960068
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000125970",
+        "approvedSymbol": "RALY"
+      },
+      "score": 0.12060192599533315,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.19838101058400426
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000153789",
+        "approvedSymbol": "CIBAR2"
+      },
+      "score": 0.11596036006039202,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.19074598706952456
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000117360",
+        "approvedSymbol": "PRPF3"
+      },
+      "score": 0.11524905411381728,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.1895759427990759
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000125798",
+        "approvedSymbol": "FOXA2"
+      },
+      "score": 0.112285235852734,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.18470068681150756
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000168300",
+        "approvedSymbol": "PCMTD1"
+      },
+      "score": 0.1028727877384427,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.16921792437987881
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000197548",
+        "approvedSymbol": "ATG7"
+      },
+      "score": 0.10277562951416985,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.16845017568086368
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164576",
+        "approvedSymbol": "SAP30L"
+      },
+      "score": 0.09612350432024086,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.15811586565096136
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000204022",
+        "approvedSymbol": "LIPJ"
+      },
+      "score": 0.09223228189925055,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.15171510024102036
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000205339",
+        "approvedSymbol": "IPO7"
+      },
+      "score": 0.091430831857085,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.15039677577824564
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000278662",
+        "approvedSymbol": "GOLGA6L10"
+      },
+      "score": 0.08870184788662956,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.14590780436706396
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000151304",
+        "approvedSymbol": "SRFBP1"
+      },
+      "score": 0.08829361934779974,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.14523629941874808
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000213265",
+        "approvedSymbol": "TSGA13"
+      },
+      "score": 0.08340657548556603,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.13719748335377252
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000106052",
+        "approvedSymbol": "TAX1BP1"
+      },
+      "score": 0.0822450557205842,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.13528687153817592
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000266472",
+        "approvedSymbol": "MRPS21"
+      },
+      "score": 0.08072142858026028,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.13278062058607776
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000075399",
+        "approvedSymbol": "VPS9D1"
+      },
+      "score": 0.07962714308787647,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.13098060404359801
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000171988",
+        "approvedSymbol": "JMJD1C"
+      },
+      "score": 0.07765705251122673,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.12773995464009744
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000131435",
+        "approvedSymbol": "PDLIM4"
+      },
+      "score": 0.07728673532371481,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.127130810985973
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000109805",
+        "approvedSymbol": "NCAPG"
+      },
+      "score": 0.0758158255585348,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.12471127611299278
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000001561",
+        "approvedSymbol": "ENPP4"
+      },
+      "score": 0.07462512881225107,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.12275267037865324
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000119718",
+        "approvedSymbol": "EIF2B2"
+      },
+      "score": 0.07421691472973985,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.12208118920988374
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000121057",
+        "approvedSymbol": "AKAP1"
+      },
+      "score": 0.07401805567633236,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.12175408116701317
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000169252",
+        "approvedSymbol": "ADRB2"
+      },
+      "score": 0.07391597093694036,
+      "datatypeScores": [
+        {
+          "id": "clinical",
+          "score": 0.12158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000196335",
+        "approvedSymbol": "STK31"
+      },
+      "score": 0.07377588618080971,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.12135573073555936
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000266265",
+        "approvedSymbol": "KLF14"
+      },
+      "score": 0.07329052836350153,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.12055735398081192
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100426",
+        "approvedSymbol": "ZBED4"
+      },
+      "score": 0.07171318911563514,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.11796275069033332
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000124920",
+        "approvedSymbol": "MYRF"
+      },
+      "score": 0.07087126069300685,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.11657784236534637
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000267795",
+        "approvedSymbol": "SMIM22"
+      },
+      "score": 0.06897063203881103,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.11345145254982325
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000158623",
+        "approvedSymbol": "COPG2"
+      },
+      "score": 0.06726340552195108,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.11064319456459346
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000172348",
+        "approvedSymbol": "RCAN2"
+      },
+      "score": 0.06686779253048201,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.10999244123374839
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000197375",
+        "approvedSymbol": "SLC22A5"
+      },
+      "score": 0.06639126958902387,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.10920859717891475
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000091106",
+        "approvedSymbol": "NLRC4"
+      },
+      "score": 0.06371394424047427,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.10480460027816878
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000047662",
+        "approvedSymbol": "FAM184B"
+      },
+      "score": 0.061665581647781034,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.10143519935171359
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000067560",
+        "approvedSymbol": "RHOA"
+      },
+      "score": 0.06140582776167762,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.10100792393299174
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000182858",
+        "approvedSymbol": "ALG12"
+      },
+      "score": 0.060958893462403275,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.10027275094779307
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000166484",
+        "approvedSymbol": "MAPK7"
+      },
+      "score": 0.06087141345981073,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.10012885298615627
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000166478",
+        "approvedSymbol": "ZNF143"
+      },
+      "score": 0.06051221662327915,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.09953800146499177
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000073756",
+        "approvedSymbol": "PTGS2"
+      },
+      "score": 0.05688535550192832,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.4678604515959211
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000221968",
+        "approvedSymbol": "FADS3"
+      },
+      "score": 0.056092785791476064,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.09226837332776675
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163257",
+        "approvedSymbol": "DCAF16"
+      },
+      "score": 0.056020430540114734,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.09214935443343603
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000116285",
+        "approvedSymbol": "ERRFI1"
+      },
+      "score": 0.05551477054432987,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.09131758213670184
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000067836",
+        "approvedSymbol": "ROGDI"
+      },
+      "score": 0.054879803597483616,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.09027310972414954
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000142546",
+        "approvedSymbol": "NOSIP"
+      },
+      "score": 0.05480953212118837,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.09015751848157502
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000144559",
+        "approvedSymbol": "TAMM41"
+      },
+      "score": 0.054427004163236356,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.08952828903727832
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000116791",
+        "approvedSymbol": "CRYZ"
+      },
+      "score": 0.0540411003106943,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.08889350650272314
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000145022",
+        "approvedSymbol": "TCTA"
+      },
+      "score": 0.05163892964632489,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.08494211816410495
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000162623",
+        "approvedSymbol": "TYW3"
+      },
+      "score": 0.050747568071725604,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.08347589605773828
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000181847",
+        "approvedSymbol": "TIGIT"
+      },
+      "score": 0.04972227099999535,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.08178936022872889
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000178965",
+        "approvedSymbol": "ERICH3"
+      },
+      "score": 0.04682419486510694,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.0770222450467475
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000214324",
+        "approvedSymbol": "PRR23E"
+      },
+      "score": 0.0460098636024822,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.07568273195442844
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000153786",
+        "approvedSymbol": "ZDHHC7"
+      },
+      "score": 0.045890451657301184,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.07548630837192505
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000119596",
+        "approvedSymbol": "YLPM1"
+      },
+      "score": 0.045090832060428236,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.07417099485266526
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000116783",
+        "approvedSymbol": "TNNI3K"
+      },
+      "score": 0.043748975916536134,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.07196374338726187
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000125977",
+        "approvedSymbol": "EIF2S2"
+      },
+      "score": 0.04305194042160324,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.07081717292616443
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000112679",
+        "approvedSymbol": "DUSP22"
+      },
+      "score": 0.04297187857563841,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.07068547726889658
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000147485",
+        "approvedSymbol": "PXDNL"
+      },
+      "score": 0.042026990875182704,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.06913120874990085
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000112796",
+        "approvedSymbol": "ENPP5"
+      },
+      "score": 0.04198233142999511,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.06814585115728002
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000144560",
+        "approvedSymbol": "VGLL4"
+      },
+      "score": 0.041364781340141814,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.0680419243483826
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000053524",
+        "approvedSymbol": "MCF2L2"
+      },
+      "score": 0.04129379943904704,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.06792516451095762
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140995",
+        "approvedSymbol": "DEF8"
+      },
+      "score": 0.0412280438413225,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.06781700154572723
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000077238",
+        "approvedSymbol": "IL4R"
+      },
+      "score": 0.041160666382330784,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.06770617074186532
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000197208",
+        "approvedSymbol": "SLC22A4"
+      },
+      "score": 0.040088941007708975,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.06594326388004437
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140623",
+        "approvedSymbol": "SEPTIN12"
+      },
+      "score": 0.039671828028508216,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.06525714470194141
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000153317",
+        "approvedSymbol": "ASAP1"
+      },
+      "score": 0.0393492421630171,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.06472651544815387
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000162959",
+        "approvedSymbol": "MEMO1"
+      },
+      "score": 0.03926338539848396,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.0645852875898673
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000197057",
+        "approvedSymbol": "DTHD1"
+      },
+      "score": 0.037506915153319685,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.06169602741080593
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000128567",
+        "approvedSymbol": "PODXL"
+      },
+      "score": 0.036879870460284764,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.06066458650421196
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000114796",
+        "approvedSymbol": "KLHL24"
+      },
+      "score": 0.036527637247718195,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.060085189615700335
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000131153",
+        "approvedSymbol": "GINS2"
+      },
+      "score": 0.036462762108635714,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05997847493808019
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000133794",
+        "approvedSymbol": "BMAL1"
+      },
+      "score": 0.0353462066577619,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.2907091300245571
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000185324",
+        "approvedSymbol": "CDK10"
+      },
+      "score": 0.03480797898526247,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.0572564823529465
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000168496",
+        "approvedSymbol": "FEN1"
+      },
+      "score": 0.03458639322223105,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05689199059845411
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000108641",
+        "approvedSymbol": "B9D1"
+      },
+      "score": 0.033719339029488135,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05546575228950626
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000158125",
+        "approvedSymbol": "XDH"
+      },
+      "score": 0.03304668377166802,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.054359285467192306
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140632",
+        "approvedSymbol": "GLYR1"
+      },
+      "score": 0.03302675745747482,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05432650819341133
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000108370",
+        "approvedSymbol": "RGS9"
+      },
+      "score": 0.032938497502074254,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05418132726862958
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000178075",
+        "approvedSymbol": "GRAMD1C"
+      },
+      "score": 0.032584039584457415,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05359827090923901
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000110536",
+        "approvedSymbol": "PTPMT1"
+      },
+      "score": 0.03188567892698663,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05244952065639043
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000170348",
+        "approvedSymbol": "TMED10"
+      },
+      "score": 0.03143343434001498,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.0517056126511563
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000116288",
+        "approvedSymbol": "PARK7"
+      },
+      "score": 0.03123514596699394,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.0513794433341879
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000131148",
+        "approvedSymbol": "EMC8"
+      },
+      "score": 0.031111721360808562,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05117641922902614
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000128482",
+        "approvedSymbol": "RNF112"
+      },
+      "score": 0.030968766268201043,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05094126895671036
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000013016",
+        "approvedSymbol": "EHD3"
+      },
+      "score": 0.030618100724829015,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.05036445076498577
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000188732",
+        "approvedSymbol": "FAM221A"
+      },
+      "score": 0.02975188844054524,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.04893959733152448
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000116120",
+        "approvedSymbol": "FARSB"
+      },
+      "score": 0.029541380347934503,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.04859332750371224
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163082",
+        "approvedSymbol": "SGPP2"
+      },
+      "score": 0.029346998562335937,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.04766565342880288
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140598",
+        "approvedSymbol": "EFL1"
+      },
+      "score": 0.029216908277064774,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.0480595955853023
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000155666",
+        "approvedSymbol": "KDM8"
+      },
+      "score": 0.028529274896387756,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.04692849088822408
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000178773",
+        "approvedSymbol": "CPNE7"
+      },
+      "score": 0.028021951735568318,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.0460939828112973
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000135709",
+        "approvedSymbol": "KIAA0513"
+      },
+      "score": 0.02763169721952522,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.04545204376564228
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140465",
+        "approvedSymbol": "CYP1A1"
+      },
+      "score": 0.02685805484790347,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        },
+        {
+          "id": "genetic_association",
+          "score": 0.043267564612971994
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000069018",
+        "approvedSymbol": "TRPC7"
+      },
+      "score": 0.026609749537298527,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.2188550871401836
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000205643",
+        "approvedSymbol": "CDPF1"
+      },
+      "score": 0.026396307043314058,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.04341992073278288
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000204021",
+        "approvedSymbol": "LIPK"
+      },
+      "score": 0.026078259773465718,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.04289675712419806
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000185909",
+        "approvedSymbol": "KLHDC8B"
+      },
+      "score": 0.02541350764734238,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.04180329035341601
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000153944",
+        "approvedSymbol": "MSI2"
+      },
+      "score": 0.024528190649638897,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.040347011117059454
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000114316",
+        "approvedSymbol": "USP4"
+      },
+      "score": 0.024504258902600634,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.040307645210393296
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000196639",
+        "approvedSymbol": "HRH1"
+      },
+      "score": 0.024484570429268132,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.040275259166768176
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000124102",
+        "approvedSymbol": "PI3"
+      },
+      "score": 0.024392270409190318,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.20061716321183495
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000138068",
+        "approvedSymbol": "SULT6B1"
+      },
+      "score": 0.023913278058664836,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03933552659712747
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000171735",
+        "approvedSymbol": "CAMTA1"
+      },
+      "score": 0.02360039444813948,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.038820856816036295
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000180871",
+        "approvedSymbol": "CXCR2"
+      },
+      "score": 0.022174791281082105,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.18237923928348632
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000197978",
+        "approvedSymbol": "GOLGA6L9"
+      },
+      "score": 0.021948470922263603,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03610356805164766
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000126464",
+        "approvedSymbol": "PRR12"
+      },
+      "score": 0.021310998213527513,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03505497385105685
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000049247",
+        "approvedSymbol": "UTS2"
+      },
+      "score": 0.02094289215436454,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03444946733516861
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000131143",
+        "approvedSymbol": "COX4I1"
+      },
+      "score": 0.020765770585351406,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.034158115803532126
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000049246",
+        "approvedSymbol": "PER3"
+      },
+      "score": 0.02062867512054781,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03393260417401409
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000171862",
+        "approvedSymbol": "PTEN"
+      },
+      "score": 0.019957093760680483,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03282790383228808
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000143374",
+        "approvedSymbol": "TARS2"
+      },
+      "score": 0.019722725170030268,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03244238529700252
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163125",
+        "approvedSymbol": "RPRD2"
+      },
+      "score": 0.019323604111915436,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03178586146290354
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000115828",
+        "approvedSymbol": "QPCT"
+      },
+      "score": 0.019140532046810054,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03148472181703493
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000129009",
+        "approvedSymbol": "ISLR"
+      },
+      "score": 0.019073486394749914,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.031374436810380324
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000116044",
+        "approvedSymbol": "NFE2L2"
+      },
+      "score": 0.01869063795125065,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.15372340095846926
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000123975",
+        "approvedSymbol": "CKS2"
+      },
+      "score": 0.01868719291000191,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.03073901336043234
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000169083",
+        "approvedSymbol": "AR"
+      },
+      "score": 0.01862271823327914,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.15316478706492784
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000169189",
+        "approvedSymbol": "NSMCE1"
+      },
+      "score": 0.018588918856191596,
+      "datatypeScores": [
+        {
+          "id": "genetic_association",
+          "score": 0.030577360004168105
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000170425",
+        "approvedSymbol": "ADORA2B"
+      },
+      "score": 0.01847899273423509,
+      "datatypeScores": [
+        {
+          "id": "clinical",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163485",
+        "approvedSymbol": "ADORA1"
+      },
+      "score": 0.01847899273423509,
+      "datatypeScores": [
+        {
+          "id": "clinical",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000282608",
+        "approvedSymbol": "ADORA3"
+      },
+      "score": 0.01847899273423509,
+      "datatypeScores": [
+        {
+          "id": "clinical",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000128271",
+        "approvedSymbol": "ADORA2A"
+      },
+      "score": 0.01847899273423509,
+      "datatypeScores": [
+        {
+          "id": "clinical",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000232810",
+        "approvedSymbol": "TNF"
+      },
+      "score": 0.018347150065218785,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.15089834350636017
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000141510",
+        "approvedSymbol": "TP53"
+      },
+      "score": 0.017901900746022537,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.14723633690178034
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000096717",
+        "approvedSymbol": "SIRT1"
+      },
+      "score": 0.017722391578451915,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.1457599421519514
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000204305",
+        "approvedSymbol": "AGER"
+      },
+      "score": 0.01707253606501831,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.14041512728168415
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164120",
+        "approvedSymbol": "HPGD"
+      },
+      "score": 0.017000673315496286,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.13982408345067285
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000091513",
+        "approvedSymbol": "TF"
+      },
+      "score": 0.017000673315496286,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.13982408345067285
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000162892",
+        "approvedSymbol": "IL24"
+      },
+      "score": 0.01626151360612688,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.13374477547455663
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000196611",
+        "approvedSymbol": "MMP1"
+      },
+      "score": 0.016033494311785534,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.13186940334966046
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000126368",
+        "approvedSymbol": "NR1D1"
+      },
+      "score": 0.015132241827923623,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.12445694384437908
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164056",
+        "approvedSymbol": "SPRY1"
+      },
+      "score": 0.014598404260045723,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.12006633252829517
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000079999",
+        "approvedSymbol": "KEAP1"
+      },
+      "score": 0.014413614332703372,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.11854650553426611
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000103375",
+        "approvedSymbol": "AQP8"
+      },
+      "score": 0.01404403447801867,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.115506851546208
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000128272",
+        "approvedSymbol": "ATF4"
+      },
+      "score": 0.01404403447801867,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.115506851546208
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100985",
+        "approvedSymbol": "MMP9"
+      },
+      "score": 0.012735142892314257,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.10474171519477905
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000105329",
+        "approvedSymbol": "TGFB1"
+      },
+      "score": 0.012708231794833392,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.10452038163521446
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000147889",
+        "approvedSymbol": "CDKN2A"
+      },
+      "score": 0.012621652772092937,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.10380830204424295
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000107643",
+        "approvedSymbol": "MAPK8"
+      },
+      "score": 0.012598635153438554,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.10361899086980654
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000109320",
+        "approvedSymbol": "NFKB1"
+      },
+      "score": 0.012547318695720166,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.10319693248816182
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000130816",
+        "approvedSymbol": "DNMT1"
+      },
+      "score": 0.012452787881459534,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.10241945243095782
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000142168",
+        "approvedSymbol": "SOD1"
+      },
+      "score": 0.011722825998770938,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.0964157930871937
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000146648",
+        "approvedSymbol": "EGFR"
+      },
+      "score": 0.01122085503251053,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.09228727247076415
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000087245",
+        "approvedSymbol": "MMP2"
+      },
+      "score": 0.011146288559273085,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.09167399153870416
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000149591",
+        "approvedSymbol": "TAGLN"
+      },
+      "score": 0.010348235931171651,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.08511031166562696
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000109610",
+        "approvedSymbol": "SOD3"
+      },
+      "score": 0.010348235931171651,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.08511031166562696
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164692",
+        "approvedSymbol": "COL1A2"
+      },
+      "score": 0.0103176605772934,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.08485884098838563
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000105974",
+        "approvedSymbol": "CAV1"
+      },
+      "score": 0.010163446003829301,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.08359048467159791
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000057252",
+        "approvedSymbol": "SOAT1"
+      },
+      "score": 0.009609076221802246,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07903100368951074
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000133816",
+        "approvedSymbol": "MICAL2"
+      },
+      "score": 0.009609076221802246,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07903100368951074
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000198355",
+        "approvedSymbol": "PIM3"
+      },
+      "score": 0.009609076221802246,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07903100368951074
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000026025",
+        "approvedSymbol": "VIM"
+      },
+      "score": 0.009588544007653096,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.0788621340235075
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000177606",
+        "approvedSymbol": "JUN"
+      },
+      "score": 0.009536074978804732,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07843059618191024
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000134852",
+        "approvedSymbol": "CLOCK"
+      },
+      "score": 0.009520056502722326,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07829885029779533
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000106546",
+        "approvedSymbol": "AHR"
+      },
+      "score": 0.00918925971920824,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.0755781723455211
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000142208",
+        "approvedSymbol": "AKT1"
+      },
+      "score": 0.009185147839445332,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07554435369561009
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000239264",
+        "approvedSymbol": "TXNDC5"
+      },
+      "score": 0.008869916512432843,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07295169571339452
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000213341",
+        "approvedSymbol": "CHUK"
+      },
+      "score": 0.008869916512432843,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07295169571339452
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000141522",
+        "approvedSymbol": "ARHGDIA"
+      },
+      "score": 0.008869916512432843,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07295169571339452
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000143546",
+        "approvedSymbol": "S100A8"
+      },
+      "score": 0.008869916512432843,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.07295169571339452
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000112115",
+        "approvedSymbol": "IL17A"
+      },
+      "score": 0.008446542256677366,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.06946960320040796
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000174080",
+        "approvedSymbol": "CTSF"
+      },
+      "score": 0.00813075680306344,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.06687238773727831
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000113889",
+        "approvedSymbol": "KNG1"
+      },
+      "score": 0.00813075680306344,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.06687238773727831
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100644",
+        "approvedSymbol": "HIF1A"
+      },
+      "score": 0.00794596687572109,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.06535256074324927
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000149968",
+        "approvedSymbol": "MMP3"
+      },
+      "score": 0.00785014871240067,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.06456449272879054
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000102174",
+        "approvedSymbol": "PHEX"
+      },
+      "score": 0.0073915970936940375,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.06079307976116211
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000123358",
+        "approvedSymbol": "NR4A1"
+      },
+      "score": 0.0073915970936940375,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.06079307976116211
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000184584",
+        "approvedSymbol": "STING1"
+      },
+      "score": 0.0073915970936940375,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.06079307976116211
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000167371",
+        "approvedSymbol": "PRRT2"
+      },
+      "score": 0.007206807166351686,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.05927325276713306
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000106483",
+        "approvedSymbol": "SFRP4"
+      },
+      "score": 0.006652437384324632,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.0547137717850459
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000176697",
+        "approvedSymbol": "BDNF"
+      },
+      "score": 0.006652437384324632,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.0547137717850459
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163932",
+        "approvedSymbol": "PRKCD"
+      },
+      "score": 0.006652437384324632,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.0547137717850459
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000096968",
+        "approvedSymbol": "JAK2"
+      },
+      "score": 0.006652437384324632,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.0547137717850459
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000133116",
+        "approvedSymbol": "KL"
+      },
+      "score": 0.006652437384324632,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.0547137717850459
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000179142",
+        "approvedSymbol": "CYP11B2"
+      },
+      "score": 0.006652437384324632,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.0547137717850459
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000136244",
+        "approvedSymbol": "IL6"
+      },
+      "score": 0.0065886173647763365,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.05418887635452136
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000077498",
+        "approvedSymbol": "TYR"
+      },
+      "score": 0.006504296004328333,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.053495365178748755
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000169429",
+        "approvedSymbol": "CXCL8"
+      },
+      "score": 0.0061704082728587,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.05074926535306646
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000145354",
+        "approvedSymbol": "CISD2"
+      },
+      "score": 0.005913277674955229,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04863446380892969
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000181092",
+        "approvedSymbol": "ADIPOQ"
+      },
+      "score": 0.005913277674955229,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04863446380892969
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000010610",
+        "approvedSymbol": "CD4"
+      },
+      "score": 0.005913277674955229,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04863446380892969
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000130725",
+        "approvedSymbol": "UBE2M"
+      },
+      "score": 0.005913277674955229,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04863446380892969
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000108821",
+        "approvedSymbol": "COL1A1"
+      },
+      "score": 0.005896406723476894,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04849570663833875
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000170961",
+        "approvedSymbol": "HAS2"
+      },
+      "score": 0.0057438869082247395,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04724128906440305
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000130203",
+        "approvedSymbol": "APOE"
+      },
+      "score": 0.005523165606121377,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04542594015486835
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000165238",
+        "approvedSymbol": "WNK2"
+      },
+      "score": 0.005504070646962668,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.045268891365485356
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100453",
+        "approvedSymbol": "GZMB"
+      },
+      "score": 0.005502633391972226,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04525707048886512
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000112715",
+        "approvedSymbol": "VEGFA"
+      },
+      "score": 0.005433439830289591,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.044687979714434244
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000150907",
+        "approvedSymbol": "FOXO1"
+      },
+      "score": 0.005420504535375625,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.044581591824852204
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000121691",
+        "approvedSymbol": "CAT"
+      },
+      "score": 0.005358907892928176,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.044074982826842524
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000102265",
+        "approvedSymbol": "TIMP1"
+      },
+      "score": 0.005340701499091544,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.043925242149876004
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000113580",
+        "approvedSymbol": "NR3C1"
+      },
+      "score": 0.0052357146080332755,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.043061764830823156
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000187098",
+        "approvedSymbol": "MITF"
+      },
+      "score": 0.0051741179655858255,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04255515583281348
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000146457",
+        "approvedSymbol": "WTAP"
+      },
+      "score": 0.0051741179655858255,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04255515583281348
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000113140",
+        "approvedSymbol": "SPARC"
+      },
+      "score": 0.0051741179655858255,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04255515583281348
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000161798",
+        "approvedSymbol": "AQP5"
+      },
+      "score": 0.005174117965585825,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04255515583281347
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000084774",
+        "approvedSymbol": "CAD"
+      },
+      "score": 0.005174117965585825,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04255515583281347
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000112164",
+        "approvedSymbol": "GLP1R"
+      },
+      "score": 0.0051535857514366755,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04238628616681025
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000115263",
+        "approvedSymbol": "GCG"
+      },
+      "score": 0.0051535857514366755,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04238628616681025
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000125398",
+        "approvedSymbol": "SOX9"
+      },
+      "score": 0.004989328038243475,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04103532883878443
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000125538",
+        "approvedSymbol": "IL1B"
+      },
+      "score": 0.004982723193839714,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.04098100650119511
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164136",
+        "approvedSymbol": "IL15"
+      },
+      "score": 0.004855868646273998,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03993767600976344
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000172819",
+        "approvedSymbol": "RARG"
+      },
+      "score": 0.004619748183558772,
+      "datatypeScores": [
+        {
+          "id": "clinical",
+          "score": 0.007599134970145264
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000077092",
+        "approvedSymbol": "RARB"
+      },
+      "score": 0.004619748183558772,
+      "datatypeScores": [
+        {
+          "id": "clinical",
+          "score": 0.007599134970145264
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000079931",
+        "approvedSymbol": "MOXD1"
+      },
+      "score": 0.004619748183558772,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.037995674850726316
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000131759",
+        "approvedSymbol": "RARA"
+      },
+      "score": 0.004619748183558772,
+      "datatypeScores": [
+        {
+          "id": "clinical",
+          "score": 0.007599134970145264
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000170345",
+        "approvedSymbol": "FOS"
+      },
+      "score": 0.004607018210786299,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03789097565780432
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000166949",
+        "approvedSymbol": "SMAD3"
+      },
+      "score": 0.004496554898663872,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03698245685470695
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000091831",
+        "approvedSymbol": "ESR1"
+      },
+      "score": 0.004473456157746078,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.025583754399489053
+        },
+        {
+          "id": "clinical",
+          "score": 0.006079307976116211
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000126838",
+        "approvedSymbol": "PZP"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000180530",
+        "approvedSymbol": "NRIP1"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000074047",
+        "approvedSymbol": "GLI2"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000122176",
+        "approvedSymbol": "FMOD"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000074181",
+        "approvedSymbol": "NOTCH3"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140718",
+        "approvedSymbol": "FTO"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000133110",
+        "approvedSymbol": "POSTN"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000047457",
+        "approvedSymbol": "CP"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000121318",
+        "approvedSymbol": "TAS2R10"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000122194",
+        "approvedSymbol": "PLG"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000169710",
+        "approvedSymbol": "FASN"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000067082",
+        "approvedSymbol": "KLF6"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000118523",
+        "approvedSymbol": "CCN2"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000105825",
+        "approvedSymbol": "TFPI2"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000187605",
+        "approvedSymbol": "TET3"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000160789",
+        "approvedSymbol": "LMNA"
+      },
+      "score": 0.0044349582562164215,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03647584785669726
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000168542",
+        "approvedSymbol": "COL3A1"
+      },
+      "score": 0.0044144260420672715,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03630697819069404
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000181019",
+        "approvedSymbol": "NQO1"
+      },
+      "score": 0.0044144260420672715,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03630697819069404
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000068024",
+        "approvedSymbol": "HDAC4"
+      },
+      "score": 0.0044144260420672715,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03630697819069404
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000111206",
+        "approvedSymbol": "FOXM1"
+      },
+      "score": 0.0042501683288740716,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03495602086266821
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000039068",
+        "approvedSymbol": "CDH1"
+      },
+      "score": 0.0042501683288740716,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03495602086266821
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000111537",
+        "approvedSymbol": "IFNG"
+      },
+      "score": 0.004229636114724921,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.034787151196664985
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000196689",
+        "approvedSymbol": "TRPV1"
+      },
+      "score": 0.004229636114724921,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.034787151196664985
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000124762",
+        "approvedSymbol": "CDKN1A"
+      },
+      "score": 0.00406537840153172,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.03343619386863916
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000186318",
+        "approvedSymbol": "BACE1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000196136",
+        "approvedSymbol": "SERPINA3"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000137077",
+        "approvedSymbol": "CCL21"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000196396",
+        "approvedSymbol": "PTPN1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000186908",
+        "approvedSymbol": "ZDHHC17"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000112742",
+        "approvedSymbol": "TTK"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000151176",
+        "approvedSymbol": "PLBD2"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140009",
+        "approvedSymbol": "ESR2"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000113924",
+        "approvedSymbol": "HGD"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000117594",
+        "approvedSymbol": "HSD11B1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000137975",
+        "approvedSymbol": "CLCA2"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000167468",
+        "approvedSymbol": "GPX4"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000161544",
+        "approvedSymbol": "CYGB"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000171720",
+        "approvedSymbol": "HDAC3"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000050628",
+        "approvedSymbol": "PTGER3"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000186340",
+        "approvedSymbol": "THBS2"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000122861",
+        "approvedSymbol": "PLAU"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000165949",
+        "approvedSymbol": "IFI27"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000182568",
+        "approvedSymbol": "SATB1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000115758",
+        "approvedSymbol": "ODC1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000117122",
+        "approvedSymbol": "MFAP2"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000165891",
+        "approvedSymbol": "E2F7"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100504",
+        "approvedSymbol": "PYGL"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000156709",
+        "approvedSymbol": "AIFM1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000171346",
+        "approvedSymbol": "KRT15"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000241794",
+        "approvedSymbol": "SPRR2A"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000171791",
+        "approvedSymbol": "BCL2"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163517",
+        "approvedSymbol": "HDAC11"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000125257",
+        "approvedSymbol": "ABCC4"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000120868",
+        "approvedSymbol": "APAF1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000082701",
+        "approvedSymbol": "GSK3B"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000142156",
+        "approvedSymbol": "COL6A1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000160862",
+        "approvedSymbol": "AZGP1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000204287",
+        "approvedSymbol": "HLA-DRA"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000079102",
+        "approvedSymbol": "RUNX1T1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000157227",
+        "approvedSymbol": "MMP14"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000086696",
+        "approvedSymbol": "HSD17B2"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000179348",
+        "approvedSymbol": "GATA2"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000104763",
+        "approvedSymbol": "ASAH1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000109424",
+        "approvedSymbol": "UCP1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163739",
+        "approvedSymbol": "CXCL1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000142192",
+        "approvedSymbol": "APP"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000130635",
+        "approvedSymbol": "COL5A1"
+      },
+      "score": 0.0036957985468470188,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.030396539880581056
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000198793",
+        "approvedSymbol": "MTOR"
+      },
+      "score": 0.003490476405355517,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02870784322054877
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000106366",
+        "approvedSymbol": "SERPINE1"
+      },
+      "score": 0.003490476405355517,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02870784322054877
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000179094",
+        "approvedSymbol": "PER1"
+      },
+      "score": 0.003326218692162316,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02735688589252295
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000291237",
+        "approvedSymbol": "SOD2"
+      },
+      "score": 0.003326218692162316,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02735688589252295
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000017427",
+        "approvedSymbol": "IGF1"
+      },
+      "score": 0.0030876343637491924,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02539462037356544
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000109819",
+        "approvedSymbol": "PPARGC1A"
+      },
+      "score": 0.0030876343637491924,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02539462037356544
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000165272",
+        "approvedSymbol": "AQP3"
+      },
+      "score": 0.00302850158699964,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024908275735476142
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000147050",
+        "approvedSymbol": "KDM6A"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000153802",
+        "approvedSymbol": "TMPRSS11D"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164305",
+        "approvedSymbol": "CASP3"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000154736",
+        "approvedSymbol": "ADAMTS5"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140941",
+        "approvedSymbol": "MAP1LC3B"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000276045",
+        "approvedSymbol": "ORAI1"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000149269",
+        "approvedSymbol": "PAK1"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000110107",
+        "approvedSymbol": "PRPF19"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000254274",
+        "approvedSymbol": "CRIPTOP5"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000240972",
+        "approvedSymbol": "MIF"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000125571",
+        "approvedSymbol": "IL37"
+      },
+      "score": 0.0029566388374776143,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024317231904464845
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000137745",
+        "approvedSymbol": "MMP13"
+      },
+      "score": 0.0029361066233284643,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.024148362238461615
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100292",
+        "approvedSymbol": "HMOX1"
+      },
+      "score": 0.002843711659657289,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.023388448741447087
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163631",
+        "approvedSymbol": "ALB"
+      },
+      "score": 0.002771848910135263,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02279740491043579
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000163513",
+        "approvedSymbol": "TGFBR2"
+      },
+      "score": 0.002771848910135263,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02279740491043579
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000259384",
+        "approvedSymbol": "GH1"
+      },
+      "score": 0.002751316695986113,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02262853524443256
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164362",
+        "approvedSymbol": "TERT"
+      },
+      "score": 0.002751316695986113,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.02262853524443256
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000133636",
+        "approvedSymbol": "NTS"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000132170",
+        "approvedSymbol": "PPARG"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000114200",
+        "approvedSymbol": "BCHE"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000095321",
+        "approvedSymbol": "CRAT"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000118689",
+        "approvedSymbol": "FOXO3"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000111424",
+        "approvedSymbol": "VDR"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000185591",
+        "approvedSymbol": "SP1"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000106462",
+        "approvedSymbol": "EZH2"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000197635",
+        "approvedSymbol": "DPP4"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000077463",
+        "approvedSymbol": "SIRT6"
+      },
+      "score": 0.0025870589827929123,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.021277577916406734
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000171608",
+        "approvedSymbol": "PIK3CD"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140943",
+        "approvedSymbol": "MBTPS1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000157404",
+        "approvedSymbol": "KIT"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000103510",
+        "approvedSymbol": "KAT8"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000120370",
+        "approvedSymbol": "GORAB"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000134817",
+        "approvedSymbol": "APLNR"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000105221",
+        "approvedSymbol": "AKT2"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164944",
+        "approvedSymbol": "VIRMA"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000143819",
+        "approvedSymbol": "EPHX1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000105447",
+        "approvedSymbol": "GRWD1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000138722",
+        "approvedSymbol": "MMRN1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000041982",
+        "approvedSymbol": "TNC"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000198886",
+        "approvedSymbol": "MT-ND4"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000006128",
+        "approvedSymbol": "TAC1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000106333",
+        "approvedSymbol": "PCOLCE"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000172270",
+        "approvedSymbol": "BSG"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000196262",
+        "approvedSymbol": "PPIA"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000111339",
+        "approvedSymbol": "ART4"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000242252",
+        "approvedSymbol": "BGLAP"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000142784",
+        "approvedSymbol": "WDTC1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000224003",
+        "approvedSymbol": "YES1P1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000042832",
+        "approvedSymbol": "TG"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000092439",
+        "approvedSymbol": "TRPM7"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000137440",
+        "approvedSymbol": "FGFBP1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000102032",
+        "approvedSymbol": "RENBP"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000187498",
+        "approvedSymbol": "COL4A1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000184500",
+        "approvedSymbol": "PROS1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140379",
+        "approvedSymbol": "BCL2A1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000175206",
+        "approvedSymbol": "NPPA"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000149554",
+        "approvedSymbol": "CHEK1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000028137",
+        "approvedSymbol": "TNFRSF1B"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000165376",
+        "approvedSymbol": "CLDN2"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000149273",
+        "approvedSymbol": "RPS3"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000171388",
+        "approvedSymbol": "APLN"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000102882",
+        "approvedSymbol": "MAPK3"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000201098",
+        "approvedSymbol": "RNY1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000135414",
+        "approvedSymbol": "GDF11"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000188807",
+        "approvedSymbol": "TMEM201"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000112033",
+        "approvedSymbol": "PPARD"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000136634",
+        "approvedSymbol": "IL10"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000108561",
+        "approvedSymbol": "C1QBP"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100030",
+        "approvedSymbol": "MAPK1"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000171345",
+        "approvedSymbol": "KRT19"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000258947",
+        "approvedSymbol": "TUBB3"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000175387",
+        "approvedSymbol": "SMAD2"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000156466",
+        "approvedSymbol": "GDF6"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000255346",
+        "approvedSymbol": "NOX5"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000254647",
+        "approvedSymbol": "INS"
+      },
+      "score": 0.0022174791281082107,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01823792392834863
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000007171",
+        "approvedSymbol": "NOS2"
+      },
+      "score": 0.00201215698661671,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.01654922726831635
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000103335",
+        "approvedSymbol": "PIEZO1"
+      },
+      "score": 0.0018478992734235094,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.015198269940290528
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000011465",
+        "approvedSymbol": "DCN"
+      },
+      "score": 0.0018478992734235094,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.015198269940290528
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000136869",
+        "approvedSymbol": "TLR4"
+      },
+      "score": 0.0018478992734235094,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.015198269940290528
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000114315",
+        "approvedSymbol": "HES1"
+      },
+      "score": 0.0018478992734235094,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.015198269940290528
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000142082",
+        "approvedSymbol": "SIRT3"
+      },
+      "score": 0.0018478992734235094,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.015198269940290528
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000152266",
+        "approvedSymbol": "PTH"
+      },
+      "score": 0.0018478992734235094,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.015198269940290528
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000143631",
+        "approvedSymbol": "FLG"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000164930",
+        "approvedSymbol": "FZD6"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000114113",
+        "approvedSymbol": "RBP2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000091140",
+        "approvedSymbol": "DLD"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000102970",
+        "approvedSymbol": "CCL17"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000175567",
+        "approvedSymbol": "UCP2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000050748",
+        "approvedSymbol": "MAPK9"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000108702",
+        "approvedSymbol": "CCL1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000011028",
+        "approvedSymbol": "MRC2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000065618",
+        "approvedSymbol": "COL17A1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000114026",
+        "approvedSymbol": "OGG1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000128519",
+        "approvedSymbol": "TAS2R16"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000019991",
+        "approvedSymbol": "HGF"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000142871",
+        "approvedSymbol": "CCN1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000204936",
+        "approvedSymbol": "CD177"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100393",
+        "approvedSymbol": "EP300"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000145839",
+        "approvedSymbol": "IL9"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000106211",
+        "approvedSymbol": "HSPB1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000204060",
+        "approvedSymbol": "FOXO6"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000148832",
+        "approvedSymbol": "PAOX"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140968",
+        "approvedSymbol": "IRF8"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000182492",
+        "approvedSymbol": "BGN"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000262406",
+        "approvedSymbol": "MMP12"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000169896",
+        "approvedSymbol": "ITGAM"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000118046",
+        "approvedSymbol": "STK11"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000101405",
+        "approvedSymbol": "OXT"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000179295",
+        "approvedSymbol": "PTPN11"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000183010",
+        "approvedSymbol": "PYCR1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000130513",
+        "approvedSymbol": "GDF15"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000108691",
+        "approvedSymbol": "CCL2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000162711",
+        "approvedSymbol": "NLRP3"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000115457",
+        "approvedSymbol": "IGFBP2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100823",
+        "approvedSymbol": "APEX1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000048052",
+        "approvedSymbol": "HDAC9"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000105851",
+        "approvedSymbol": "PIK3CG"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000107562",
+        "approvedSymbol": "CXCL12"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000120915",
+        "approvedSymbol": "EPHX2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000143320",
+        "approvedSymbol": "CRABP2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000103044",
+        "approvedSymbol": "HAS3"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000069509",
+        "approvedSymbol": "FUNDC1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000187531",
+        "approvedSymbol": "SIRT7"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000102962",
+        "approvedSymbol": "CCL22"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000112511",
+        "approvedSymbol": "PHF1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000157500",
+        "approvedSymbol": "APPL1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000054277",
+        "approvedSymbol": "OPN3"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000104067",
+        "approvedSymbol": "TJP1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000158828",
+        "approvedSymbol": "PINK1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000130988",
+        "approvedSymbol": "RGN"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000157500",
+        "approvedSymbol": "APPL1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000120915",
+        "approvedSymbol": "EPHX2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000107562",
+        "approvedSymbol": "CXCL12"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000105851",
+        "approvedSymbol": "PIK3CG"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000048052",
+        "approvedSymbol": "HDAC9"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100823",
+        "approvedSymbol": "APEX1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000115457",
+        "approvedSymbol": "IGFBP2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000162711",
+        "approvedSymbol": "NLRP3"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000108691",
+        "approvedSymbol": "CCL2"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000130513",
+        "approvedSymbol": "GDF15"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000183010",
+        "approvedSymbol": "PYCR1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000179295",
+        "approvedSymbol": "PTPN11"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000101405",
+        "approvedSymbol": "OXT"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000118046",
+        "approvedSymbol": "STK11"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000169896",
+        "approvedSymbol": "ITGAM"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000262406",
+        "approvedSymbol": "MMP12"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000143631",
+        "approvedSymbol": "FLG"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000140968",
+        "approvedSymbol": "IRF8"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000148832",
+        "approvedSymbol": "PAOX"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000204060",
+        "approvedSymbol": "FOXO6"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000106211",
+        "approvedSymbol": "HSPB1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000145839",
+        "approvedSymbol": "IL9"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000100393",
+        "approvedSymbol": "EP300"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000204936",
+        "approvedSymbol": "CD177"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000142871",
+        "approvedSymbol": "CCN1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000019991",
+        "approvedSymbol": "HGF"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000128519",
+        "approvedSymbol": "TAS2R16"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    },
+    {
+      "target": {
+        "id": "ENSG00000114026",
+        "approvedSymbol": "OGG1"
+      },
+      "score": 0.0014783194187388072,
+      "datatypeScores": [
+        {
+          "id": "literature",
+          "score": 0.012158615952232422
+        }
+      ]
+    }
+  ]
+}

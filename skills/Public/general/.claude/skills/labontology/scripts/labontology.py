@@ -1612,9 +1612,17 @@ def _repeat_guard(args: argparse.Namespace) -> dict[str, Any] | None:
             return skipped
         boots.append(now)
     elif args.command == "resume":
+        # Everything that makes this a different report belongs in the signature. A completion that the
+        # Runtime refused and the `--agent-failed` sent after it are two different calls: counting them as
+        # one refused the failure report with "it was recorded the first time", which it was not.
         signature = "resume:" + json.dumps([getattr(args, "mission_id", ""), getattr(args, "action_id", ""),
                                             getattr(args, "answer", ""), bool(getattr(args, "confirm", False)),
-                                            bool(getattr(args, "reject", False))], ensure_ascii=False)
+                                            bool(getattr(args, "reject", False)),
+                                            bool(getattr(args, "agent_completed", False)),
+                                            bool(getattr(args, "agent_failed", False)),
+                                            getattr(args, "summary", ""),
+                                            sorted(getattr(args, "provide_artifact", []) or [])],
+                                           ensure_ascii=False)
         recent = [item for item in state.get("resumes", []) if now - item["at"] <= _RESUME_WINDOW_SECONDS]
         count = sum(1 for item in recent if item["sig"] == signature) + 1
         state["resumes"] = recent + [{"sig": signature, "at": now}]

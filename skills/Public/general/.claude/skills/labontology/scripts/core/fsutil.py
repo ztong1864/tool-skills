@@ -21,6 +21,15 @@ IGNORED_DIRS = frozenset({
     "__pycache__", ".pytest_cache", ".mypy_cache", ".tox",
 })
 
+# Trees a Skill package carries with it that are not the Skill's own interface: the original model source,
+# vendored dependencies and source archives. Their READMEs and scripts describe other programs, so the
+# Creator must not read a Skill's command, parameters or outputs from them (a handoff package's experiment
+# README would otherwise become the Skill's required outputs). They stay part of the package at runtime,
+# which is why IGNORED_DIRS leaves them alone.
+VENDORED_DIRS = frozenset({
+    "model_source", "runtime_deps", "source_archives", "vendor", "third_party", "site-packages",
+})
+
 
 def _retry_writable(function: Any, path: str, _error: Any) -> None:
     os.chmod(path, stat.S_IWRITE)
@@ -73,6 +82,14 @@ def iter_files(root: Path, pattern: str = "*") -> Iterator[Path]:
         for name in sorted(files):
             if fnmatch(name, pattern):
                 yield Path(current) / name
+
+
+def iter_interface_files(root: Path, pattern: str = "*") -> Iterator[Path]:
+    """Yield the files that describe the Skill itself, skipping VENDORED_DIRS as well."""
+    root = Path(root)
+    for path in iter_files(root, pattern):
+        if VENDORED_DIRS.isdisjoint(path.relative_to(root).parts[:-1]):
+            yield path
 
 
 def iter_dirs(root: Path) -> Iterator[Path]:
