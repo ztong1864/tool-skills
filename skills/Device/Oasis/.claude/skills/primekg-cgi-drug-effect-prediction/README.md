@@ -104,7 +104,7 @@ bash score.sh "diabetic retinopathy" output_scores.csv /home/vipuser/srv/foundry
 ```bash
 source /home/vipuser/srv/foundryclaw_project/FounDryClaw_Web/venv/Oasis/primekg/bin/activate
 bash score.sh "diabetic retinopathy" output_scores.csv python auto 100
-bash score.sh 43789 output_scores.csv python auto 100
+bash score.sh <disease_id> output_scores.csv python auto 100
 ```
 
 等价 Python 命令：
@@ -188,7 +188,7 @@ disease embedding pkl
 
 ## 常见错误
 
-- `Disease was not found`：输入疾病不在 `disease_catalog.csv`。
+- `Disease was not found`：输入的不是 `disease_catalog.csv` 里的 `disease_id` 或完整名称。错误信息列出了名称含有这些词的条目，从中选与所问疾病同一层级的一条，用它的 `disease_id` 重新运行（规则见 SKILL.md 的“选择疾病”）。
 - `Disease name is ambiguous`：同一名称对应多个 disease_id，需要改用 disease_id。
 - `Unknown DrugBank IDs`：传入候选药不在当前 `candidate_pool.csv`。
 - `CUDA is not available`：指定了 `--device cuda` 但环境没有可用 GPU；可改用 `--device auto` 或 `cpu`。

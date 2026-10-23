@@ -49,10 +49,28 @@ PYTHON_BIN="$PY" bash "$SKILL_DIR/verify_handoff.sh"
 
 `score.sh` 默认使用随包 `model_source/src`，正常推理不需要设置源码路径。只有需要改用其它版本源码时，才通过 `KG_PROJECT_SRC` 显式覆盖。
 
+## 选择疾病
+
+`score.sh` 只认 `disease_catalog.csv` 里的 `disease_id` 或完整的 `disease_name`（只忽略大小写和空格），用户说的病名一般都要先查目录。运行前用疾病的英文名搜索：
+
+```bash
+grep -i "<英文关键词>" "$SKILL_DIR/primekg_cgi_graph_graph_only_e50/prepared/disease_catalog.csv"
+```
+
+从结果里选与用户所说疾病同一层级的那一条，用它的 `disease_id` 运行：
+
+- 不选更宽的上位疾病：肺结核用 `6052 pulmonary tuberculosis`，不用 `18076 tuberculosis`；
+- 不选更窄的亚型：脑卒中用 `5098 stroke disorder`，不用 `5490 large artery stroke`；
+- 跳过名称里带 `susceptibility`、`obsolete` 的条目，以及把几种病合在一起的综合征条目。
+
+没有合适的条目时，换同义词或全称再搜一次（如 `cerebrovascular`、`non-small cell lung carcinoma`）；两条同样贴切时才问用户。回复里写明用的是哪一条（`disease_id` 和 `disease_name`）。
+
+`score.sh` 报 `Disease '...' was not found` 不是本技能运行失败，只说明传入的不是目录里的完整名称：错误信息列出了名称含有这些词的条目，按上面的规则选一条重新运行，不要登记失败，也不要让用户去查疾病 ID。
+
 ## 标准推理
 
 ```bash
-bash "$SKILL_DIR/score.sh" 43789 <artifact_dir>/score_43789.csv "$PY" auto 20
+bash "$SKILL_DIR/score.sh" <disease_id> <artifact_dir>/score_<disease_id>.csv "$PY" auto 20
 bash "$SKILL_DIR/score.sh" "diabetic retinopathy" <artifact_dir>/score_dr.csv "$PY" auto 20
 ```
 

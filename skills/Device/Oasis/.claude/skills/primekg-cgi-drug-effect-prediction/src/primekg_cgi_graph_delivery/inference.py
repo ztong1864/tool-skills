@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+import re
 import sys
 from typing import Iterable
 
@@ -101,6 +102,20 @@ def load_disease_catalog(prepared_dir: str | Path) -> pd.DataFrame:
     return catalog[["disease_id", "disease_name"]].drop_duplicates().reset_index(drop=True)
 
 
+def similar_diseases(catalog: pd.DataFrame, normalized: str, limit: int = 10) -> list[str]:
+    """Catalog entries whose names contain every word of a query that matched nothing exactly, shortest names first.
+
+    A model passed "stroke" (the catalog has "stroke disorder") and, told only that it was not found, gave up and
+    asked the user for an ID; with the entries in the error it can choose one and run again."""
+    words = [word for word in re.split(r"[\s,;/()]+", normalized) if word]
+    if not words:
+        return []
+    names = catalog["disease_name"].map(normalize_query)
+    hits = catalog[names.map(lambda name: all(word in name for word in words))]
+    hits = hits.assign(name_length=hits["disease_name"].str.len()).sort_values(["name_length", "disease_name"])
+    return [f"{row.disease_id}:{row.disease_name}" for row in hits.head(limit).itertuples(index=False)]
+
+
 def resolve_disease(prepared_dir: str | Path, query: str) -> ResolvedDisease:
     query_text = str(query).strip()
     if not query_text:
@@ -113,7 +128,12 @@ def resolve_disease(prepared_dir: str | Path, query: str) -> ResolvedDisease:
         return ResolvedDisease(str(row["disease_id"]), str(row["disease_name"]))
     name_matches = catalog[catalog["disease_name"].map(normalize_query) == normalized]
     if name_matches.empty:
-        raise ValueError(f"Disease '{query_text}' was not found in disease_catalog.csv. Use a supported disease_id or exact disease_name.")
+        similar = similar_diseases(catalog, normalized)
+        hint = (f" Entries whose names contain these words: {'; '.join(similar)}." if similar else
+                " No disease_name contains these words: search disease_catalog.csv with a synonym or the full English "
+                "name.")
+        raise ValueError(f"Disease '{query_text}' was not found in disease_catalog.csv. Use a supported disease_id or "
+                         f"exact disease_name.{hint}")
     unique = name_matches.drop_duplicates(subset=["disease_id"]).sort_values(["disease_name", "disease_id"])
     if len(unique) > 1:
         pairs = "; ".join(f"{r.disease_id}:{r.disease_name}" for r in unique.itertuples(index=False))
