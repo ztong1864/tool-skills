@@ -1349,6 +1349,34 @@ def _stray_outputs(cache_dir: Path, mission_id: str, state: dict[str, Any]) -> l
     return sorted(found)
 
 
+def _refuse_other_runs(cache_dir: Path, mission_id: str, provided: list[str]) -> None:
+    """A file from another mission's run folder cannot be this step's output.
+
+    Registering it would record work this mission never did: one turn finished its task from the files three
+    earlier runs had left behind. An earlier result is an input, not an output, so it comes in through
+    `run --input-artifact` when the mission is created."""
+    runs = cache_dir.resolve() / "runs"
+    mine = runs / mission_id
+    borrowed = []
+    for item in provided:
+        raw = item.partition("=")[2] or item
+        try:
+            resolved = Path(raw).expanduser().resolve()
+        except (OSError, ValueError):
+            continue
+        parents = resolved.parents
+        if runs in parents and mine not in parents and resolved != mine:
+            borrowed.append(f"{resolved} (given as {item.partition('=')[0]})" if "=" in item else str(resolved))
+    if borrowed:
+        raise ValueError(
+            f"{len(borrowed)} of the files given belong to another mission's run folder: {', '.join(borrowed[:8])}. "
+            f"They are an earlier run's results, so they cannot be registered as this step's output - this mission "
+            f"would record work it never did. Run the Skill in this mission and write its output into "
+            f"{mine / 'artifacts'}; if it cannot run, report it with resume --agent-failed --summary \"<the real "
+            f"reason>\". To start from an earlier result on purpose, give it to the mission as an input when it is "
+            f"created: run --input-artifact <id>=<path>.")
+
+
 def _register_all_artifacts(cache_dir: Path, mission_id: str, explicit: list[str]) -> list[str]:
     """--provide-artifact list covering every unregistered file the Skill wrote into the mission artifact folder."""
     run_dir = cache_dir.resolve() / "runs" / mission_id
@@ -1474,6 +1502,7 @@ def resume_mission(cache_dir: Path, mission_id: str, *, suite_id: str | None = N
             "the user's next message.")
     if register_all:
         provided_artifacts = _register_all_artifacts(cache_dir, mission_id, provided_artifacts or [])
+    _refuse_other_runs(cache_dir, mission_id, provided_artifacts or [])
     arguments = ["resume", "--system-dir", str(cache_dir.resolve()), "--mission-id", mission_id]
     if suite_id:
         arguments.extend(["--suite", suite_id])
@@ -1568,10 +1597,42 @@ _READ_ONLY_COMMANDS = {"bootstrap", "context", "status", "inspect", "describe-sk
 _BOOTSTRAP_LIMIT = 2       # bootstrap runs allowed per window, whatever happened in between
 _REPEAT_WINDOW_SECONDS = 600  # ... within this window, without a state-changing command
 _DIGEST_FROM = 3            # from this repeat on, `context` returns a short digest instead of the full output
+# From this repeat on, `context` is refused instead: an Agent that keeps reading the same state is in a loop
+# (one turn asked 18 times, 13 of them answered with a digest that said "answer the user now", and the turn
+# ended with no answer), and every further copy of the state only makes the next copy more likely.
+_REFUSE_FROM = 6
+# A completed or cancelled mission cannot change without `act --revise` or a new `run`: its `context` is a
+# digest from the 2nd call and refused from the 3rd. One turn read a completed mission 6 times (and marked its
+# task done 9 times) for 250 s and ended with no answer.
+_FINISHED_DIGEST_FROM = 2
+_FINISHED_REFUSE_FROM = 3
 _RESUME_WINDOW_SECONDS = 60  # an identical `resume` inside this window is a repeat
 
 
 _LAST_REPEAT_COUNT = 0  # repeat number of the current read-only call (set by _repeat_guard)
+_CONTEXT_DIGEST = False  # the current `context` call returns the digest (set by _repeat_guard)
+
+
+def _mission_status(args: argparse.Namespace) -> str:
+    """The recorded status of the mission named in args, or "" when there is none."""
+    cache, mission = getattr(args, "cache_dir", None), getattr(args, "mission_id", None)
+    if not (cache and mission):
+        return ""
+    try:
+        return json.loads((Path(cache) / "runs" / mission / "state.json").read_text(encoding="utf-8")).get("status", "")
+    except (OSError, json.JSONDecodeError):
+        return ""
+
+
+def _signature_mission(signature: str) -> str:
+    """The mission a recorded call belongs to ("" for a call without one)."""
+    command, _, rest = signature.partition(":")
+    if command != "resume":
+        return rest
+    try:
+        return str(json.loads(rest)[0] or "")
+    except (ValueError, IndexError, TypeError):
+        return ""
 
 
 def _repeat_guard_path() -> Path:
@@ -1585,10 +1646,13 @@ def _repeat_guard(args: argparse.Namespace) -> dict[str, Any] | None:
 
     - `bootstrap` after two runs is skipped (the cache is unchanged; exit 0).
     - The very same `resume` sent again within a minute is refused (it was recorded the first time).
-    - Repeated read-only calls are never refused: from the 3rd repeat `context` returns a short digest
-      that still holds everything needed to proceed (see _context_digest)."""
+    - A repeated `context` returns a short digest that still holds everything needed to proceed (see
+      _context_digest) from the 3rd call, and is refused from the 6th; for a completed or cancelled mission
+      from the 2nd and the 3rd. The other read-only calls are never refused.
+    - A state-changing command resets the counts of its own mission (and those of calls without a mission)."""
     import time
-    global _LAST_REPEAT_COUNT
+    global _LAST_REPEAT_COUNT, _CONTEXT_DIGEST
+    _CONTEXT_DIGEST = False
     path = _repeat_guard_path()
     now = time.time()
     try:
@@ -1636,8 +1700,24 @@ def _repeat_guard(args: argparse.Namespace) -> dict[str, Any] | None:
         recent = [item for item in state.get("calls", []) if now - item["at"] <= _REPEAT_WINDOW_SECONDS]
         _LAST_REPEAT_COUNT = sum(1 for item in recent if item["sig"] == signature) + 1
         state["calls"] = recent + [{"sig": signature, "at": now}]
+        # Only `context` is refused: it is the one that carries `do_next`, so a repeat of it is the Agent
+        # asking again for an instruction it already has. The other read-only commands stay available.
+        if args.command == "context":
+            finished = _mission_status(args) in ("completed", "cancelled")
+            _CONTEXT_DIGEST = _LAST_REPEAT_COUNT >= (_FINISHED_DIGEST_FROM if finished else _DIGEST_FROM)
+            if _LAST_REPEAT_COUNT >= (_FINISHED_REFUSE_FROM if finished else _REFUSE_FROM):
+                result = {"repeat_guard": True, "command": "context", "repeat_count": _LAST_REPEAT_COUNT,
+                          "message": ("`context` was already answered " + str(_LAST_REPEAT_COUNT - 1) +
+                                      " times with no state-changing command in between; the state is the same and "
+                                      "reading it again cannot move the task forward."),
+                          "next": _guard_next_step(args)}
     else:
-        state = {}  # run / act / reconcile / prepare-skill ... changed something: counts reset
+        # run / act / reconcile / prepare-skill ... changed something: the counts of its mission reset. Only its
+        # own: every chat of a user shares this workspace and this file, and another chat's `act` reset a looping
+        # chat's count each time, so its `context` never reached the digest or the refusal.
+        mission = getattr(args, "mission_id", None) or ""
+        state = {key: [item for item in state.get(key, []) if _signature_mission(item["sig"]) not in ("", mission)]
+                 for key in ("calls", "resumes")}
     state["boots"] = boots
     _write_guard_state(path, state)
     return result
@@ -1668,13 +1748,7 @@ def _active_missions(cache: Path, limit: int = 3) -> list[dict[str, Any]]:
 
 def _guard_next_step(args: argparse.Namespace) -> str:
     """What to do instead of re-reading the same state, from the mission's recorded status."""
-    status = ""
-    cache, mission = getattr(args, "cache_dir", None), getattr(args, "mission_id", None)
-    if cache and mission:
-        try:
-            status = json.loads((Path(cache) / "runs" / mission / "state.json").read_text(encoding="utf-8")).get("status", "")
-        except (OSError, json.JSONDecodeError):
-            pass
+    status = _mission_status(args)
     hints = {
         "awaiting_decision": ("You already have this mission's context in the conversation. Now pick one Skill from "
                               "its `skills`, Read that Skill's SKILL.md, run `prepare-skill`, write decision.json, "
@@ -1989,7 +2063,7 @@ def main(argv: Sequence[str] | None = None) -> int:
                 if workspace is not None else contextlib.nullcontext())
         with lock:
             result = _run_command(args)
-        if args.command == "context" and _LAST_REPEAT_COUNT >= _DIGEST_FROM:
+        if args.command == "context" and _CONTEXT_DIGEST:
             result = _context_digest(result, args)
         elif args.command in _MISSION_COMMANDS and not getattr(args, "full", False):
             result = _compact_result(result)

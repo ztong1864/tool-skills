@@ -69,6 +69,8 @@ Status values: `awaiting_decision` (choose the next action), `waiting_agent` (a 
 - A step pause and a review that did not pass put the step's `--summary` into the question to the user, so write it in Chinese. The question leaves out a review's `stage:` and `checked:` parts and shows `verdict:`, `findings:` and `required_action:` as 结论, 发现 and 需要的处理.
 - One user message answers one question, asked before it: a question asked in this turn, or a second question after this turn's message already answered one, waits for the user's next message (`act` and `resume --answer` are refused with "the user has not answered this question yet"; FounDryClaw ends the turn with the question).
 - The very same `resume` sent three times within a minute is refused (`repeat_guard`).
+- `--provide-artifact` of a file inside another mission's `runs/<id>/` folder is refused: an earlier run's result is an input (`run --input-artifact <id>=<path>` when the mission is created), never this step's output.
+- Repeated `context` on the same mission with no state-changing command in between: from the 3rd it answers with a short digest, from the 6th it is refused (`repeat_guard`, exit 3) with the next step for the mission's status. Any `run` / `act` / `resume` resets the count.
 - Refusals print only the reason on stderr (exit 2), without the usage text.
 - `resume --answer` refuses the Skill-loading text ("Base directory for this skill: ..."): only the user's own message is an answer.
 - A declared output whose file has another name is matched by its extension; if it still cannot be matched, the error lists the candidate files and the exact `--provide-artifact <id>=<path>` to use.

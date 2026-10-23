@@ -1099,9 +1099,13 @@ class AgentRuntime:
             and isinstance(state.pending_action, dict)
             and state.pending_action.get("execution_source") == "agent_native"
         )
+        finished = state.status in {"completed", "cancelled"}
         execution_cycle = {
             "entrypoint": "act",
-            "after_act": "reconcile" if waiting_for_reconcile else ("resume" if waiting_for_resume else "context"),
+            # A finished mission has no next command: `context` here contradicted `do_next` ("Answer the user
+            # now ... Do not run context again"), and a model kept reading the completed mission.
+            "after_act": ("reconcile" if waiting_for_reconcile else "resume" if waiting_for_resume
+                          else "reply_to_user" if finished else "context"),
             "requires_resume": waiting_for_resume,
             "requires_reconcile": waiting_for_reconcile,
             "resume_mode": (
