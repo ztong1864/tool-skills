@@ -33,9 +33,23 @@ Result fields after `status` are empty for invalid SMILES.
 
 ## Commands
 
+Assess your own molecules, from the workspace:
+
 ```bash
-python scripts/rdkit_assess.py --input molecules.csv --output results.csv
-python scripts/verify_output.py \
-  --actual results.csv \
-  --expected assets/expected_output.csv
+python .claude/skills/druglikeness-assessment/scripts/rdkit_assess.py --input molecules.csv --output outputs/results.csv
+```
+
+`verify_output.py` is not part of that run. It checks this installation against the bundled acceptance
+fixture, so `--actual` must be a result produced from `assets/test_molecules.csv` and nothing else.
+Pointed at a result for any other molecules it always reports `valid: false` with a row-count mismatch
+and large value differences, which says nothing about that result. Run it only to confirm the
+environment reproduces the fixture, and write its output into the workspace, never into the skill folder:
+
+```bash
+python .claude/skills/druglikeness-assessment/scripts/rdkit_assess.py \
+  --input .claude/skills/druglikeness-assessment/assets/test_molecules.csv \
+  --output outputs/druglikeness_acceptance.csv
+python .claude/skills/druglikeness-assessment/scripts/verify_output.py \
+  --actual outputs/druglikeness_acceptance.csv \
+  --expected .claude/skills/druglikeness-assessment/assets/expected_output.csv
 ```
