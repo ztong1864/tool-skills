@@ -4,6 +4,8 @@ PDF: [paper.pdf](paper.pdf)
 
 Original title: "Machine learning-guided evolution of pyrrolysyl-tRNA synthetase for improved incorporation efficiency of diverse noncanonical amino acids"
 
+Citation: Zhang et al., Nature Communications, 2025. DOI: [10.1038/s41467-025-61952-2](https://doi.org/10.1038/s41467-025-61952-2)
+
 ## Scope
 
 This paper applies supervised and deep learning methods to engineer the tRNA-binding domain of PylRS, using an IFRS catalytic-domain variant as the model system. It is the strongest source for epistasis and scaffold-specific effects among NTD/TBD mutation sets.

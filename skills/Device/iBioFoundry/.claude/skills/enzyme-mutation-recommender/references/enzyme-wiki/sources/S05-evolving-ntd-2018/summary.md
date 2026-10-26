@@ -4,6 +4,8 @@ PDF: [paper.pdf](paper.pdf)
 
 Original title: "Evolving the N-Terminal Domain of Pyrrolysyl-tRNA Synthetase for Improved Incorporation of Noncanonical Amino Acids"
 
+Citation: Sharma et al., ChemBioChem, 2018 (online 2017). DOI: [10.1002/cbic.201700268](https://doi.org/10.1002/cbic.201700268)
+
 ## Scope
 
 This paper evolves the N-terminal region of MmPylRS to improve amber suppression and tests transfer of the resulting mutations to two MmPylRS-derived catalytic-domain variants.

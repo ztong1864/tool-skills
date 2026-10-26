@@ -4,7 +4,7 @@
 
 - `sources/` contains one directory per source paper. Each source package keeps immutable original evidence beside maintained derived notes:
   - `sources/Sxx-short-title-year/paper.pdf`: immutable source PDF.
-  - `sources/Sxx-short-title-year/summary.md`: maintained source summary and extraction notes.
+  - `sources/Sxx-short-title-year/summary.md`: maintained source summary and extraction notes, opening with the original title and a `Citation:` line (first author, journal, year, DOI). Those lines are the only bibliographic details the Wiki holds.
   - Optional supplements, extracted tables, or structure files may be added inside the same package with explicit names.
 - `scaffolds/` records protein backgrounds, domain boundaries, sequence origins, and known variant families.
 - `sites/` records residue positions only with an explicit numbering scheme.
@@ -41,7 +41,7 @@ Do not add free-floating claims such as "this mutation improves activity" withou
 
 1. Create `sources/S09-short-title-year/`.
 2. Copy the immutable source PDF to `sources/S09-short-title-year/paper.pdf`.
-3. Create `sources/S09-short-title-year/summary.md` with bibliographic metadata, scaffold, mutations, substrates, assays, results, mechanisms, and caveats.
+3. Create `sources/S09-short-title-year/summary.md` with bibliographic metadata, scaffold, mutations, substrates, assays, results, mechanisms, and caveats. Put a `Citation:` line directly under the original title, reading first author, journal, year and DOI taken from the paper itself or from a DOI lookup, never from recall.
 4. Add any supplements or extracted tables into the same source package with descriptive filenames.
 5. Update `sources/index.md` and the main Wiki `index.md`.
 6. Update `scaffolds/` if the paper uses a new enzyme origin, chimera, domain boundary, or parent variant.
@@ -54,3 +54,5 @@ Do not add free-floating claims such as "this mutation improves activity" withou
 ## Recommendation Use
 
 Before recommending candidates, the agent must read the index, the relevant scaffold page, the mutation evidence matrix, and all source summaries linked by candidate evidence. Recommendations must cite source ids and explain whether each mechanism is direct evidence, cross-paper synthesis, or hypothesis.
+
+Cite only what the Wiki records: source ids, original titles, and the `Citation:` lines. Do not add a journal, author, year or DOI from memory, and do not fill in a citation detail the Wiki does not hold -- say it is not recorded instead. A reader checks these references against the sources, so a recalled citation is treated as an error even when it turns out to be right.

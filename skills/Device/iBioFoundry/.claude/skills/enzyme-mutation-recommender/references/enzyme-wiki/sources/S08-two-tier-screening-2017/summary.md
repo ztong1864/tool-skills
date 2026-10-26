@@ -4,6 +4,8 @@ PDF: [paper.pdf](paper.pdf)
 
 Original title: "Two-Tier Screening Platform for Directed Evolution of Aminoacyl-tRNA Synthetases with Enhanced Stop Codon Suppression Efficiency"
 
+Citation: Owens et al., ChemBioChem, 2017. DOI: [10.1002/cbic.201700039](https://doi.org/10.1002/cbic.201700039)
+
 ## Scope
 
 This paper develops a two-tier screen for improved aaRS-mediated amber suppression and applies it to a MbPylRS-derived crotonyl-lysine synthetase.

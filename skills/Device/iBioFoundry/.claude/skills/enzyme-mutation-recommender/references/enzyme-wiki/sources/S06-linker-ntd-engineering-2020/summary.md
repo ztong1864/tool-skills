@@ -4,6 +4,8 @@ PDF: [paper.pdf](paper.pdf)
 
 Original title: "Linker and N-Terminal Domain Engineering of Pyrrolysyl-tRNA Synthetase for Substrate Range Shifting and Activity Enhancement"
 
+Citation: Jiang et al., Frontiers in Bioengineering and Biotechnology, 2020. DOI: [10.3389/fbioe.2020.00235](https://doi.org/10.3389/fbioe.2020.00235)
+
 ## Scope
 
 This paper probes remote effects beyond the PylRS active site by mutating positions near the N-terminal/tRNA-binding region and by inserting linkers between NTD and CTD.

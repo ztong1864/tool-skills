@@ -4,6 +4,8 @@ PDF: [paper.pdf](paper.pdf)
 
 Original title: "Crystal structures reveal an elusive functional domain of pyrrolysyl-tRNA synthetase"
 
+Citation: Suzuki et al., Nature Chemical Biology, 2017. DOI: [10.1038/nchembio.2497](https://doi.org/10.1038/nchembio.2497)
+
 ## Scope
 
 This paper provides the central structural evidence for PylRS N-terminal-domain recognition of tRNA(Pyl), explains anticodon independence and orthogonality, and interprets evolved NTD mutations.

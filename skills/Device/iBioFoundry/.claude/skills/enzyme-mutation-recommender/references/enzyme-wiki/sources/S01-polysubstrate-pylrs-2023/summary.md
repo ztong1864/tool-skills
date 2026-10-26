@@ -4,6 +4,8 @@ PDF: [paper.pdf](paper.pdf)
 
 Original title: "An evolved pyrrolysyl-tRNA synthetase with polysubstrate specificity expands the toolbox for engineering enzymes with incorporation of noncanonical amino acids"
 
+Citation: Liu et al., Bioresources and Bioprocessing, 2023. DOI: [10.1186/s40643-023-00712-w](https://doi.org/10.1186/s40643-023-00712-w)
+
 ## Scope
 
 This paper compares MmPylRS(N346A/C348A) with the homologous MbPylRS(N311A/C313A), then improves the Mb variant by combining previously reported N-terminal-domain mutations. The key product is an MbPylRS-derived polysubstrate variant called IPE: N311A/C313A/V31I/T56P/A100E.

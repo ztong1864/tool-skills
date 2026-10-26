@@ -4,6 +4,8 @@ PDF: [paper.pdf](paper.pdf)
 
 Original title: "Chimeric design of pyrrolysyl-tRNA synthetase/tRNA pairs and canonical synthetase/tRNA pairs for genetic code expansion"
 
+Citation: Ding et al., Nature Communications, 2020. DOI: [10.1038/s41467-020-16898-y](https://doi.org/10.1038/s41467-020-16898-y)
+
 ## Scope
 
 This paper uses the PylRS tRNA-binding domain and PylT structural features as transferable orthogonality modules to build chimeric aaRS/tRNA systems. It is primarily a system-design paper, but it is important for interpreting the role of the PylRS tRNA-binding domain.

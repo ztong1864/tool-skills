@@ -4,6 +4,8 @@ PDF: [paper.pdf](paper.pdf)
 
 Original title: "Continuous directed evolution of aminoacyl-tRNA synthetases"
 
+Citation: Bryson et al., Nature Chemical Biology, 2017. DOI: [10.1038/nchembio.2474](https://doi.org/10.1038/nchembio.2474)
+
 ## Scope
 
 This paper develops PACE selections for aminoacyl-tRNA synthetases and evolves a chimeric PylRS for improved BocK incorporation. It is a core source for the IPYE mutation set and its transferability.
