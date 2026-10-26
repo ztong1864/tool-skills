@@ -62,6 +62,13 @@ from claude_agent_sdk import ToolAnnotations, create_sdk_mcp_server, tool
 
 _server_cache: dict = {}
 
+# The CLI saves a tool result above roughly 40-75 KB to a file and shows the model only a 2 KB
+# preview ("Output too large ... saved to"), so a longer result is shortened here instead:
+# a literature search returned 388 KB from Crossref and 75 KB from Europe PMC.
+_MAX_RESULT_CHARS = 30_000
+_NESTED_LIST_ITEMS = 10
+_LONG_TEXT_CHARS = 1_000
+
 
 def get_or_build_server(cache_key: str, name: str, build_tools):
     """Cache a fully-built create_sdk_mcp_server() result across repeated calls,
@@ -244,14 +251,75 @@ def make_tool(tool_name: str, read_only: bool = False):
     async def _handler(args: dict) -> dict:
         try:
             result = await asyncio.to_thread(engine.run_one_function, {"name": tool_name, "arguments": args})
-            text = json.dumps(result, ensure_ascii=False, default=str, indent=2)
-            return {"content": [{"type": "text", "text": text}]}
+            return {"content": [{"type": "text", "text": _result_text(result)}]}
         except Exception as exc:  # noqa: BLE001 -- surfaced as tool output, not a crash
             return {"content": [{"type": "text", "text": f"{tool_name} failed: {exc}"}], "is_error": True}
 
     _handler.__name__ = f"tu_{tool_name}"
     annotations = ToolAnnotations(readOnlyHint=True) if read_only else None
     return tool(tool_name, description, schema, annotations=annotations)(_handler)
+
+
+def _result_text(result) -> str:
+    """The result as JSON text of at most _MAX_RESULT_CHARS characters: indented when that fits,
+    otherwise compact, otherwise shortened by _shortened_text()."""
+    text = json.dumps(result, ensure_ascii=False, default=str, indent=2)
+    if len(text) <= _MAX_RESULT_CHARS:
+        return text
+    text = json.dumps(result, ensure_ascii=False, default=str)
+    if len(text) <= _MAX_RESULT_CHARS:
+        return text
+    return _shortened_text(json.loads(text))
+
+
+def _shortened_text(value) -> str:
+    """Shorten a result that is too long even as compact JSON: first the lists and long texts
+    inside each record (Crossref records carry their whole reference lists), then the number of
+    records. A note at the top tells the model what was left out."""
+    records = _record_list(value)
+    if records is None:
+        value = _trimmed(value)
+    else:
+        records[:] = [_trimmed(record) for record in records]
+    note = (f"结果超过 {_MAX_RESULT_CHARS} 字符，已精简：每条记录里的列表只保留前 {_NESTED_LIST_ITEMS} 项，"
+            f"长文本只保留前 {_LONG_TEXT_CHARS} 字。")
+    total = len(records) if records is not None else 0
+    text = _with_note(value, note)
+    while len(text) > _MAX_RESULT_CHARS and records is not None and len(records) > 1:
+        del records[max(1, len(records) * 3 // 4):]
+        text = _with_note(value, note + f"只返回前 {len(records)} 条（共 {total} 条）；需要更多请缩小查询或减小 limit。")
+    if len(text) > _MAX_RESULT_CHARS:
+        text = text[:_MAX_RESULT_CHARS] + "…（结果过长，其余部分已截去）"
+    return text
+
+
+def _record_list(value):
+    """The result's main list of records: the result itself when it is a list, otherwise the
+    longest list among its values and its `data` values (ToolUniverse results are mostly
+    {"status", "data", "metadata"})."""
+    if isinstance(value, list):
+        return value
+    if not isinstance(value, dict):
+        return None
+    candidates = [item for item in value.values() if isinstance(item, list)]
+    if isinstance(value.get("data"), dict):
+        candidates += [item for item in value["data"].values() if isinstance(item, list)]
+    return max(candidates, key=lambda item: len(json.dumps(item, ensure_ascii=False)), default=None)
+
+
+def _trimmed(value):
+    if isinstance(value, dict):
+        return {key: _trimmed(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [_trimmed(item) for item in value[:_NESTED_LIST_ITEMS]]
+    if isinstance(value, str) and len(value) > _LONG_TEXT_CHARS:
+        return value[:_LONG_TEXT_CHARS] + "…"
+    return value
+
+
+def _with_note(value, note: str) -> str:
+    wrapped = {"platform_note": note, **value} if isinstance(value, dict) else {"platform_note": note, "data": value}
+    return json.dumps(wrapped, ensure_ascii=False)
 
 
 def make_tools(tool_names: list) -> list:

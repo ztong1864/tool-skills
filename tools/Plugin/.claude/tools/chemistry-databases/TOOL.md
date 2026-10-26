@@ -1,6 +1,6 @@
 ---
 name: chemistry-databases
-description: "化学与小分子数据库：PubChem、ChEMBL、ZINC、BindingDB 等化合物结构/活性/性质数据库，共 41 个 ToolUniverse 类别、约 190 个工具（不含需付费/双因素登录的 BRENDA、MetaCyc、Clue、mcule）。（基于 ToolUniverse，https://github.com/mims-harvard/ToolUniverse）"
+description: "化学与小分子数据库：PubChem、ChEMBL、ZINC、BindingDB 等化合物结构/活性/性质数据库，共 41 个 ToolUniverse 类别、约 190 个工具（不含需付费/双因素登录的 BRENDA、MetaCyc、Clue、mcule），另有 PubChem 实验性质查询（沸点、熔点、密度等）。（基于 ToolUniverse，https://github.com/mims-harvard/ToolUniverse）"
 category: chemistry
 ---
 
@@ -24,5 +24,10 @@ layout (~400 entries total across all ToolUniverse-backed tools) exceeded the OS
 command-line length limit and broke chat session startup entirely, not just sessions
 using these tools. Grouping by research theme keeps every individual tool just as
 callable while cutting the entry count this scales with.
+
+One tool is not from ToolUniverse: `PubChem_get_experimental_property` (defined in `tool.py`)
+reads the "Experimental Properties" section of a PubChem record through PUG View -- boiling
+point, melting point, density and the like, each value with the source PubChem cites.
+ToolUniverse's PubChem tools return computed properties only.
 
 Categories bundled: "aopwiki", "bigg_models", "bindingdb", "chebi", "ChEMBL", "classyfire", "cod_crystal", "drug_synergy", "emolecules", "enamine", "gnps", "klifs", "lipidmaps", "lipidmaps_gene", "lotus", "massbank", "mcsa", "metabolite", "mibig", "nci_cactus", "npatlas", "opsin", "pdbe_compound", "pdbe_ligands", "pharmacodb", "protacdb", "pubchem", "pubchem_bioassay", "pubchem_tox", "rcsb_chemcomp", "rhea", "rhea_reaction", "sabiork", "swissadme", "swissdock", "swisslipids", "synergxdb", "t3db", "tdc_dataset", "unichem", "zinc".
