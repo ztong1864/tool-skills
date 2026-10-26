@@ -1366,13 +1366,14 @@ def _refuse_other_runs(cache_dir: Path, mission_id: str, provided: list[str]) ->
             continue
         parents = resolved.parents
         if runs in parents and mine not in parents and resolved != mine:
-            borrowed.append(f"{resolved} (given as {item.partition('=')[0]})" if "=" in item else str(resolved))
+            shown = resolved.as_posix()  # forward slashes: the Agent pastes these back into a POSIX shell
+            borrowed.append(f"{shown} (given as {item.partition('=')[0]})" if "=" in item else shown)
     if borrowed:
         raise ValueError(
             f"{len(borrowed)} of the files given belong to another mission's run folder: {', '.join(borrowed[:8])}. "
             f"They are an earlier run's results, so they cannot be registered as this step's output - this mission "
             f"would record work it never did. Run the Skill in this mission and write its output into "
-            f"{mine / 'artifacts'}; if it cannot run, report it with resume --agent-failed --summary \"<the real "
+            f"{(mine / 'artifacts').as_posix()}; if it cannot run, report it with resume --agent-failed --summary \"<the real "
             f"reason>\". To start from an earlier result on purpose, give it to the mission as an input when it is "
             f"created: run --input-artifact <id>=<path>.")
 

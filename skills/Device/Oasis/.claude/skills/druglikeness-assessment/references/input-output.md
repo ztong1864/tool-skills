@@ -33,7 +33,9 @@ Result fields after `status` are empty for invalid SMILES.
 
 ## Commands
 
-Assess your own molecules, from the workspace:
+Assess your own molecules, from the workspace. In a LabOntology mission, write the input CSV outside
+the mission's `artifacts/` folder: that folder is for the step's declared outputs, and an input
+sitting beside the result leaves `resume --register-all` unable to tell which file is which.
 
 ```bash
 python .claude/skills/druglikeness-assessment/scripts/rdkit_assess.py --input molecules.csv --output outputs/results.csv

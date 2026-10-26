@@ -17,13 +17,33 @@ from .state_store import StateStore
 from .text import search_terms
 
 
+def _posix_path(value: str | Path) -> str:
+    """An absolute path written with forward slashes.
+
+    The Agent runs commands through a POSIX shell, where an unquoted backslash escapes the next
+    character, so a Windows path it reads here and pastes back arrives with its separators eaten:
+    `D:\\run\\artifacts\\x.csv` became `D:runartifactsx.csv` and the command failed. Forward slashes
+    survive that round trip and Windows accepts them everywhere this runtime uses a path."""
+    return Path(value).expanduser().resolve().as_posix()
+
+
+def _pastable_path(value: str | Path) -> str:
+    """Like _posix_path, but relative to the working directory when the file is under it, which is
+    both shorter and the form the Agent already runs its Skill commands with."""
+    path = Path(value).expanduser().resolve()
+    try:
+        return path.relative_to(Path.cwd()).as_posix()
+    except ValueError:
+        return path.as_posix()
+
+
 def _artifact_paths(artifacts: dict[str, str]) -> dict[str, str]:
     result = {}
     for name, value in artifacts.items():
         path = Path(value).expanduser().resolve()
         if not path.exists():
-            raise ValueError(f"Artifact does not exist: {name}={path}")
-        result[name] = str(path)
+            raise ValueError(f"Artifact does not exist: {name}={_posix_path(path)}")
+        result[name] = _posix_path(path)
     return result
 
 
@@ -36,7 +56,7 @@ def _materialize_artifacts(artifacts: dict[str, str], artifact_dir: Path) -> dic
         source = Path(source_value).resolve()
         if source == artifact_dir or artifact_dir in source.parents:
             # Already written into the mission-owned directory: record it in place.
-            result[artifact_id] = str(source)
+            result[artifact_id] = _posix_path(source)
             continue
         if source.is_dir() and source in artifact_dir.parents:
             raise ValueError(f"Artifact folder contains the mission directory; provide the output itself: {artifact_id}")
@@ -48,7 +68,7 @@ def _materialize_artifacts(artifacts: dict[str, str], artifact_dir: Path) -> dic
             else:
                 destination.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source, destination)
-        result[artifact_id] = str(destination)
+        result[artifact_id] = _posix_path(destination)
     return result
 
 
@@ -58,7 +78,7 @@ def _artifact_records(artifacts: dict[str, str], action_id: str) -> dict[str, di
         path = Path(value).resolve()
         record: dict[str, Any] = {
             "artifact_id": artifact_id,
-            "path": str(path),
+            "path": _posix_path(path),
             "action_id": action_id,
             "valid": path.exists(),
         }
@@ -190,7 +210,7 @@ def _untracked_artifacts(state: MissionState, artifact_dir: Path) -> list[str]:
     # A recorded output folder inside the mission directory covers its files.
     known_folders = [path for path in known
                      if path.is_dir() and (path == artifact_dir or artifact_dir in path.parents)]
-    return sorted(str(path) for path in (item.resolve() for item in artifact_dir.rglob("*"))
+    return sorted(_pastable_path(path) for path in (item.resolve() for item in artifact_dir.rglob("*"))
                   if path.is_file() and path not in known
                   and not any(folder in path.parents for folder in known_folders))
 
@@ -1773,7 +1793,7 @@ class AgentRuntime:
         missing = sorted(set(skill.outputs) - outputs.keys())
         if missing:
             given = {Path(path).resolve() for path in outputs.values()}
-            files = [f"{path} (given as {artifact_id})" for artifact_id, path in outputs.items()
+            files = [f"{_pastable_path(path)} (given as {artifact_id})" for artifact_id, path in outputs.items()
                      if artifact_id not in skill.outputs]
             files += [path for path in _untracked_artifacts(state, self.store.run_dir / "artifacts")
                       if Path(path).resolve() not in given]

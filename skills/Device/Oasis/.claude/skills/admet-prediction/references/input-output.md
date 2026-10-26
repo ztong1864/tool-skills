@@ -21,7 +21,9 @@ The exact ordered schema is the header of `assets/expected_output.csv`. The wrap
 
 ## Commands
 
-Predict for your own molecules, from the workspace:
+Predict for your own molecules, from the workspace. In a LabOntology mission, write the input CSV
+outside the mission's `artifacts/` folder: that folder is for the step's declared outputs, and an
+input sitting beside the result leaves `resume --register-all` unable to tell which file is which.
 
 ```bash
 python .claude/skills/admet-prediction/scripts/admet_predict.py --input molecules.csv --output outputs/results.csv
