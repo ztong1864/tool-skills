@@ -22,7 +22,7 @@ Use the bundled script for every API call instead of rebuilding requests by hand
 ## Defaults
 
 - Use `https` on port `443` unless the user explicitly overrides it.
-- Use Momentum credentials `operator` / `#Administrator123456` unless the user supplies different Momentum credentials.
+- Use the Momentum username `operator` unless the user supplies different Momentum credentials. The script reads the password from the `MOMENTUM_PASSWORD` environment variable; pass `--password` only when the user gives one, and never write the password into files.
 - Expect a self-signed certificate and disable certificate verification in the bundled script.
 - Disable proxies for the request path. This environment may expose a broken HTTPS proxy that blocks direct calls to the target host.
 
@@ -33,7 +33,7 @@ Run the bundled script with the `worklist` action.
 Example:
 
 ```powershell
-conda run -n skills-env python C:\Users\34209\.codex\skills\momentum-web-services\scripts\momentum_api.py worklist --host 100.65.75.32 --username operator --password '#Administrator123456' --process-name Single_Plate_Enzyme_Assay
+conda run -n skills-env python C:\Users\34209\.codex\skills\momentum-web-services\scripts\momentum_api.py worklist --host 100.65.75.32 --username operator --process-name Single_Plate_Enzyme_Assay
 ```
 
 Use these launch rules:
@@ -50,7 +50,7 @@ Run the bundled script with the `workqueue` action.
 Example:
 
 ```powershell
-conda run -n skills-env python C:\Users\34209\.codex\skills\momentum-web-services\scripts\momentum_api.py workqueue --host 100.65.75.32 --username operator --password '#Administrator123456'
+conda run -n skills-env python C:\Users\34209\.codex\skills\momentum-web-services\scripts\momentum_api.py workqueue --host 100.65.75.32 --username operator
 ```
 
 ## Check Queue Status By Work Unit Id
@@ -60,7 +60,7 @@ Run the bundled script with the `workqueue-id` action.
 Example:
 
 ```powershell
-conda run -n skills-env python C:\Users\34209\.codex\skills\momentum-web-services\scripts\momentum_api.py workqueue-id --host 100.65.75.32 --username operator --password '#Administrator123456' --workunit-id db600535-881f-408c-8be9-d0e0fc4a01ed
+conda run -n skills-env python C:\Users\34209\.codex\skills\momentum-web-services\scripts\momentum_api.py workqueue-id --host 100.65.75.32 --username operator --workunit-id db600535-881f-408c-8be9-d0e0fc4a01ed
 ```
 
 Use this when the user asks about a specific submitted item rather than the whole queue.

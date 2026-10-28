@@ -1,5 +1,6 @@
 import argparse
 import json
+import os
 import ssl
 import sys
 import urllib.error
@@ -118,7 +119,7 @@ def main():
     common = argparse.ArgumentParser(add_help=False)
     common.add_argument("--host", required=True)
     common.add_argument("--username", default="operator")
-    common.add_argument("--password", default="#Administrator123456")
+    common.add_argument("--password", default=os.environ.get("MOMENTUM_PASSWORD"))
     common.add_argument("--scheme", default="https", choices=["https", "http"])
     common.add_argument("--port", type=int, default=443)
 
@@ -139,6 +140,8 @@ def main():
     workqueue_id_parser.set_defaults(action_name="workqueue-id")
 
     args = parser.parse_args()
+    if not args.password:
+        parser.error("no Momentum password: set MOMENTUM_PASSWORD or pass --password")
     base_url = f"{args.scheme}://{args.host}:{args.port}"
     opener = build_opener(args.scheme)
 

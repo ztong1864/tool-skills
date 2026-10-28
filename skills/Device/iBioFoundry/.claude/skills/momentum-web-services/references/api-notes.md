@@ -9,7 +9,7 @@ Request body:
 ```json
 {
   "Username": "operator",
-  "Password": "#Administrator123456"
+  "Password": "<password>"
 }
 ```
 
