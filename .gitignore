@@ -106,3 +106,5 @@ skills/Device/XmartChem/.claude/skills/*/output/
 # Page-by-page text that chem-info-extractor extracts from source papers: copyrighted paper
 # content, regenerated locally from the PDFs by scripts/pdf_to_text.py.
 skills/Device/XtalPi/.claude/skills/chem-info-extractor/output/pdf/
+# LLM response cache from extraction runs; its cached prompts include excerpts of the same papers.
+skills/Device/XtalPi/.claude/skills/chem-info-extractor/output/logs/llm_cache.jsonl
