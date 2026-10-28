@@ -103,3 +103,6 @@ old_skills_tools_2309/
 # never into the shared skill. The scripts still create output/ when no path is given.
 # ---------------------------------------------------------------------------
 skills/Device/XmartChem/.claude/skills/*/output/
+# Page-by-page text that chem-info-extractor extracts from source papers: copyrighted paper
+# content, regenerated locally from the PDFs by scripts/pdf_to_text.py.
+skills/Device/XtalPi/.claude/skills/chem-info-extractor/output/pdf/

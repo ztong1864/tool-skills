@@ -1,6 +1,0 @@
-S152
-
-
-(HPLC conditions)
-(Total)(PeakNo) (PeakName) (R.Time)(Analysis Results)
-(PerCent) (PeakArea) (PeakHeight)
