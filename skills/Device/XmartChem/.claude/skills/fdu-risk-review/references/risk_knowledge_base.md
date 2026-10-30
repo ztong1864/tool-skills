@@ -68,6 +68,8 @@ Supported FDU device actions are limited to:
 
 Return `block` if a planning step requires an action outside this set unless the user explicitly says the action is manual and outside the automated device workflow.
 
+The post-processing of the ATA step template (`experiment-step-generator/KB/ata_step.md`: adding the internal standard and acetonitrile, stirring to mix, settling, taking supernatant and diluting it into a filtered HPLC sample) runs on the device: liquid addition (`exp_pipetting`), stirring and settling (`exp_magnetic_stirrer`), dilution with high filtering (`exp_high_filtering_samples`), as in `fdu-experiment-plan/KB/example_plan.md`. Do not ask whether these steps are done by hand.
+
 Before a plan enters XmartChem/FDU execution, review whether it requires specialized workstations or modules that are not represented in the current ontology, including:
 
 - low-temperature or high-temperature workstation,

@@ -8,6 +8,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -242,6 +243,25 @@ def resolve_llm_config() -> tuple[str, str, str]:
     )
 
 
+_RETRY_STATUS = {502, 503, 504}
+_ATTEMPTS = 3
+
+
+def post_to_model(url: str, headers: dict[str, str], payload: dict[str, Any]) -> requests.Response:
+    """POST to the model service. A dropped connection or a gateway error is tried again (one reset used to fail
+    the whole step); a read timeout is not, so a slow answer is not waited for twice."""
+    for attempt in range(1, _ATTEMPTS + 1):
+        try:
+            response = requests.post(url, headers=headers, json=payload, timeout=120)
+        except requests.ConnectionError as exc:
+            if attempt == _ATTEMPTS:
+                raise ConstraintParserError(f"LLM request failed after {_ATTEMPTS} attempts: {exc}") from exc
+        else:
+            if response.status_code not in _RETRY_STATUS or attempt == _ATTEMPTS:
+                return response
+        time.sleep(2 * attempt)
+
+
 def call_llm(prompt: str) -> str:
     base_url, api_key, model = resolve_llm_config()
 
@@ -265,7 +285,7 @@ def call_llm(prompt: str) -> str:
         **({} if platform_llm_config("CONSTRAINT_PARSER_MODEL") else {"temperature": 0.1}),  # gpt-6-luna on the 密钥管理 key rejects `temperature`
     }
 
-    response = requests.post(url, headers=headers, json=payload, timeout=120)
+    response = post_to_model(url, headers, payload)
     if response.status_code != 200:
         raise ConstraintParserError(
             f"LLM request failed: HTTP {response.status_code}; body={response.text[:1000]}"

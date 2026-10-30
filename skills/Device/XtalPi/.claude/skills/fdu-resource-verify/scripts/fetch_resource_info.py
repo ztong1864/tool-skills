@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import annotations
 
+import argparse
 import json
 import os
 from datetime import datetime
@@ -14,14 +15,21 @@ from dotenv import load_dotenv
 # 优先从.env文件加载配置，其次从环境变量加载
 load_dotenv()  # 加载.env文件中的环境变量
 
-BASE_URL = os.getenv("FDU_DEVICE_BASE_URL")
-USERNAME = os.getenv("FDU_DEVICE_USERNAME")
-PASSWORD = os.getenv("FDU_DEVICE_PASSWORD")
-TIMEOUT = int(os.getenv("FDU_DEVICE_TIMEOUT",))
-
 ROOT = Path(__file__).resolve().parents[1]
 KB_DIR = ROOT / "KB"
-KB_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def device_settings() -> tuple[str, str, str, int]:
+    """FDU_DEVICE_* from the server environment (or the .env above). Missing ones are named, never their values."""
+    missing = [name for name in ("FDU_DEVICE_BASE_URL", "FDU_DEVICE_USERNAME", "FDU_DEVICE_PASSWORD")
+               if not os.getenv(name)]
+    if missing:
+        raise SystemExit(f"设备接口没有配置：缺少 {'、'.join(missing)}（服务器环境变量或技能目录的 .env，由管理员配置）。"
+                         "配置之前不能刷新资源快照，也不能创建设备任务。")
+    timeout = os.getenv("FDU_DEVICE_TIMEOUT") or "20"
+    if not timeout.isdigit():
+        raise SystemExit(f"FDU_DEVICE_TIMEOUT 必须是秒数（整数），现在是 {timeout!r}。")
+    return os.environ["FDU_DEVICE_BASE_URL"], os.environ["FDU_DEVICE_USERNAME"], os.environ["FDU_DEVICE_PASSWORD"], int(timeout)
 
 
 class DeviceAPIClient:
@@ -107,17 +115,28 @@ def normalize_snapshot_timestamp(raw: Dict[str, Any]) -> Dict[str, Any]:
     return normalized
 
 
+def build_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="刷新设备资源快照。")
+    parser.add_argument("--resource-dir", default=str(KB_DIR),
+                        help="资源快照写到这个目录（resource_info.json 和带时间戳的原始快照）；在 LabOntology 中用 "
+                             "mission 的 artifacts 目录。默认是本技能的 KB/")
+    return parser
+
+
 def main() -> int:
-    client = DeviceAPIClient(BASE_URL, USERNAME, PASSWORD, TIMEOUT)
+    args = build_parser().parse_args()
+    client = DeviceAPIClient(*device_settings())
     client.login()
     raw = normalize_snapshot_timestamp(client.get_resource_info())
 
+    resource_dir = Path(args.resource_dir)
+    resource_dir.mkdir(parents=True, exist_ok=True)
     ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-    raw_path = KB_DIR / f"resource_info_{ts}.json"
+    raw_path = resource_dir / f"resource_info_{ts}.json"
     raw_path.write_text(json.dumps(raw, ensure_ascii=False, indent=2), encoding="utf-8")
 
     simplified = extract_resource_list(raw)
-    latest_path = KB_DIR / "resource_info.json"
+    latest_path = resource_dir / "resource_info.json"
     latest_path.write_text(json.dumps(simplified, ensure_ascii=False, indent=2), encoding="utf-8")
 
     print(f"raw saved to: {raw_path}")

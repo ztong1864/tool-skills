@@ -9,6 +9,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -28,7 +29,6 @@ AGENTS_ROOT = ROOT.parents[1]
 KB_DIR = ROOT / "KB"
 OUTPUT_DIR = ROOT / "output"
 
-DEFAULT_CONSTRAINTS = WORKSPACE / ".claude" / "skills" / "constraint-parser" / "output" / "parsed_constraints_2026-04-27-13-31-19.json"
 DEFAULT_REFERENCE_DIR = WORKSPACE / "experiment_plans"
 ATA_STEP_FILE = KB_DIR / "ata_step.md"
 REFERENCE_PLAN_FILE = KB_DIR / "reference_experiment_plan.md"
@@ -137,7 +137,7 @@ def build_steps_prompt(source_text: str, ata_steps: str, reference_text: str,
 3. 根据 `source_text` 替换或保留试剂/底物/用量信息。
 {material_rule}
 5. 不输出反应位、过滤位、layout_code、chemical_id、QR_code、托盘信息。
-6. 反应条件以 `source_text` 为准：预搅拌、反应温度、反应时间和转速按用户写的来；`source_text` 里有后加的修改（例如“修改：只能室温反应”）时以修改为准；用户没写的条件才沿用 ATA 模板。模板中的后处理照常保留：加入 0.2 mL 联苯内标溶液和 0.6 mL 乙腈；室温搅拌 5 分钟、静置 20 分钟；移取 0.02 mL 上层清液，用 0.8 mL 乙腈稀释。
+6. 反应条件和后处理以 `source_text` 为准：预搅拌、反应温度、反应时间、转速和后处理的用量按用户写的来；`source_text` 里有后加的修改（例如“修改：只能室温反应”“修改：第 6 步加入 0.5 mL 乙腈”）时以修改为准；用户没写的才沿用 ATA 模板，后处理的步骤和用量照模板原样写，不要改动模板里的数值。
 7. 步骤编号应连续，每步只表达一个主要操作。
 8. 不写长篇解释。
 
@@ -261,6 +261,25 @@ def resolve_llm_config() -> tuple[str, str, str]:
     )
 
 
+_RETRY_STATUS = {502, 503, 504}
+_ATTEMPTS = 3
+
+
+def post_to_model(url: str, headers: dict[str, str], payload: dict[str, Any]) -> requests.Response:
+    """POST to the model service. A dropped connection or a gateway error is tried again (one reset used to fail
+    the whole step); a read timeout is not, so a slow answer is not waited for twice."""
+    for attempt in range(1, _ATTEMPTS + 1):
+        try:
+            response = requests.post(url, headers=headers, json=payload, timeout=120)
+        except requests.ConnectionError as exc:
+            if attempt == _ATTEMPTS:
+                raise StepGenerationError(f"LLM request failed after {_ATTEMPTS} attempts: {exc}") from exc
+        else:
+            if response.status_code not in _RETRY_STATUS or attempt == _ATTEMPTS:
+                return response
+        time.sleep(2 * attempt)
+
+
 def call_llm(prompt: str, system_content: str = "你只输出干净内容，不输出解释。") -> str:
     base_url, api_key, model = resolve_llm_config()
 
@@ -284,7 +303,7 @@ def call_llm(prompt: str, system_content: str = "你只输出干净内容，不�
         **({} if platform_llm_config("EXPERIMENT_STEP_MODEL") else {"temperature": 0.2}),  # gpt-6-luna on the 密钥管理 key rejects `temperature`
     }
 
-    response = requests.post(url, headers=headers, json=payload, timeout=120)
+    response = post_to_model(url, headers, payload)
     if response.status_code != 200:
         raise StepGenerationError(f"LLM request failed: HTTP {response.status_code}; body={response.text[:1000]}")
     data = response.json()
@@ -395,7 +414,7 @@ def parallel_note(count: int) -> str:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Generate Markdown experiment steps using LLM.")
-    parser.add_argument("--constraints", default=str(DEFAULT_CONSTRAINTS), help="constraint-parser JSON path.")
+    parser.add_argument("--constraints", required=True, help="constraint-parser JSON path.")
     parser.add_argument("--reference-dir", default=str(DEFAULT_REFERENCE_DIR), help="Directory containing reference experiment .md files.")
     parser.add_argument("--output", default="", help="Output Markdown path.")
     parser.add_argument("--amounts", default="", help="Optional amounts CSV (chemical-amount-calculator output): write steps "

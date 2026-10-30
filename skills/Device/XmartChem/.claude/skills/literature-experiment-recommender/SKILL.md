@@ -73,6 +73,10 @@ description: 这是化学实验流程中的候选条件推荐技能，用于根�
 - 推荐结果用 `scripts/write_recommendations.py` 写出，不要手写 CSV：先把所有行写成 JSON 文件（例如 mission artifacts 目录下的 recommendation_rows.json，它只是脚本的输入；每行按列顺序 5 个单元格，列为 metal_salt_1, metal_salt_2, chiral_amine, molecular_sieve, solvent；不要用 `--rows -` 从标准输入传），再运行 `python <本技能目录>/scripts/write_recommendations.py --candidate-space <候选空间 CSV> --rows <这个 JSON 文件的路径> --output <mission artifacts 目录>/literature_recommendations_<日期>.csv`。脚本会自动给含逗号的名称加引号，逐格对照候选空间（不在候选空间里的名称会报错并列出，不会写出文件），写完再读回校验列数。脚本报告 `written: true` 之后才算完成；不要再改动或重写这个文件。
 - 推荐 CSV 必须是合法 CSV：名称里含逗号的单元格（例如 `1,4-Dioxane`、`1,4-二氧六环`、`(S)-α,α-二苯基脯氨醇`）要整格用一对双引号包起来，不要在名称内部再重复双引号（写成 `"1,4-Dioxane"`，不是 `1,4-Dioxane` 或 `""(S)-...""`）。最稳妥的做法是用 Python 的 `csv.writer` 生成文件，写完后用 `pandas.read_csv` 读一遍，确认每行都是 5 列（列数与表头一致）再登记；下游 chemical-amount-calculator 读到坏 CSV 会直接报错。
 
+## 在回复里列出推荐表
+
+之后每次向用户汇报这一步的结果（包括随后审查的暂停和审查未通过时），都在回复里完整列出全部推荐组，不要只写“已推荐 10 组”：Markdown 表格，每组一行，第一列是组号（从 1 开始，与 CSV 的行顺序一致，用户按组号选择，例如“只保留第一组”），其余列为金属盐（两种时写成“CuI + ZnBr₂”）、手性胺、分子筛（`none` 写“不加”）、溶剂。审查指出问题时，在表下写明是哪几组。
+
 ## 缺少文献时
 
 - 先运行一次 `python <本技能目录>/scripts/write_recommendations.py --literature-status`（只读，检查 `KB/pdf_new`、`KB/pdfs`），再看任务输入里有没有用户上传的 PDF；只查这一次。不要用 Glob/Grep 或反复列目录去找 PDF，也不要上网搜索。

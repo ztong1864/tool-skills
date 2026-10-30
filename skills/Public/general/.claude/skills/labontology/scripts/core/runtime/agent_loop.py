@@ -388,9 +388,11 @@ class AgentRuntime:
         return review, excluded_skills, False
 
     def _step_executions(self, state: MissionState, skill_id: str) -> list[dict[str, Any]]:
-        """Executions of one Skill in the current plan round (after the latest revision), oldest first."""
+        """Executions of one Skill in the current plan round (after the latest revision), oldest first; runs of a
+        dropped redo (see _drop_redo) are left out."""
         return [state.skill_executions[key] for key in sorted(state.skill_executions, key=_action_number)
-                if state.skill_executions[key].get("skill_id") == skill_id and _action_number(key) > state.plan_base]
+                if state.skill_executions[key].get("skill_id") == skill_id and _action_number(key) > state.plan_base
+                and state.skill_executions[key].get("status") != "dropped"]
 
     def _step_done(self, state: MissionState, skill_id: str) -> bool:
         return any(item.get("status") in _SUCCEEDED for item in self._step_executions(state, skill_id))
@@ -590,12 +592,16 @@ class AgentRuntime:
         start = min(starts)
         reopened = sorted(index for index in slots if index >= start)
         floor = len(state.decisions)
-        state.plan_floors = {**(state.plan_floors or {}), **{str(index): floor for index in reopened}}
+        floors_before = dict(state.plan_floors or {})
+        state.plan_floors = {**floors_before, **{str(index): floor for index in reopened}}
         number = sum(1 for item in state.observations if item.get("status") == "redo_requested") + 1
         steps = list(dict.fromkeys(state.plan[index] for index in reopened))
+        # floors_before and artifacts_before are what --cancel restores when it drops this redo (_drop_redo); turn
+        # tells the Agent's retries of one change (same turn) from a later change of the user's.
         state.observations.append({"action_id": f"redo:{number}", "status": "redo_requested", "summary": change,
                                    "redo": steps, "positions": reopened, "floor": floor,
-                                   "at": datetime.now(timezone.utc).isoformat()})
+                                   "floors_before": floors_before, "artifacts_before": dict(state.artifacts),
+                                   "turn": _current_turn() or None, "at": datetime.now(timezone.utc).isoformat()})
         state.status, state.supervisor_status, state.block_reason = "awaiting_decision", "needs_action", None
         state.replan_required = False
         state.pending_action = state.pending_ticket = None
@@ -604,12 +610,37 @@ class AgentRuntime:
         return state
 
     def _open_redo(self, state: MissionState) -> dict[str, Any] | None:
-        """The latest redo (_redo_steps) while one of its reopened positions is still open."""
-        record = next((item for item in reversed(state.observations) if item.get("status") == "redo_requested"), None)
+        """The latest redo (_redo_steps) that was not dropped, while one of its reopened positions is still open."""
+        record = next((item for item in reversed(state.observations)
+                       if item.get("status") == "redo_requested" and not item.get("dropped")), None)
         if record is None or int(record.get("floor") or 0) < state.plan_base:
             return None  # none, or one from before a revision started a new round
         slots = self._plan_slots(state)
         return record if any(index not in slots for index in record.get("positions") or []) else None
+
+    def _round_redos(self, state: MissionState) -> list[dict[str, Any]]:
+        """The redos (_redo_steps) of this round that were not dropped, latest first."""
+        records = []
+        for record in reversed(state.observations):
+            if record.get("status") != "redo_requested" or record.get("dropped"):
+                continue
+            if int(record.get("floor") or 0) < state.plan_base:
+                break  # from before a revision started a new round, and so are the older ones
+            records.append(record)
+        return records
+
+    def _redo_open(self, state: MissionState, record: dict[str, Any]) -> bool:
+        slots = self._plan_slots(state)
+        return any(index not in slots for index in record.get("positions") or [])
+
+    def _redos_to_drop(self, state: MissionState) -> list[dict[str, Any]]:
+        """What --cancel drops, latest first: the user's latest change while one of its steps is still open. That is
+        the latest redo with the ones the Agent issued before it in the same turn (one change tried another way); a
+        redo of an earlier turn is an earlier change of the user's."""
+        records = self._round_redos(state)
+        change = [record for record in records
+                  if record is records[0] or (record.get("turn") and record.get("turn") == records[0].get("turn"))]
+        return change if any(self._redo_open(state, record) for record in change) else []
 
     def _previous_outputs(self, state: MissionState, skill_id: str) -> list[str]:
         """Output paths of this Skill's latest success before the current round."""
@@ -1274,6 +1305,14 @@ class AgentRuntime:
             raise ValueError("All plan steps of this mission are done, so there is nothing to cancel: end it with act "
                              "--complete (the results stay) and tell the user what was produced. --cancel stops a task "
                              "before its steps are done.")
+        # During a redo of an unfinished plan --cancel drops only that redo, like a revision. It used to end the whole
+        # mission: a model followed "改动做不到时 --cancel：只撤销这次修改" and lost every confirmed step of an ATA flow.
+        redos: list[dict[str, Any]] = []
+        if kind == "cancel" and not revision:
+            redos = self._redos_to_drop(state)
+            refusal = self._redo_drop_refusal(state, redos)
+            if refusal:
+                raise ValueError(refusal)
         if kind == "complete" and revision:
             missing = list(dict.fromkeys(state.plan[index] for index in self._open_positions(state)))
             if missing:
@@ -1345,6 +1384,8 @@ class AgentRuntime:
                 state.artifacts = dict(revision.get("artifacts_before") or state.artifacts)
                 return self._observe(state, "revision_dropped", action["reason"], completed=True,
                                      revision=revision["number"])
+            if redos:
+                return self._drop_redo(state, redos, action["reason"])
             # The user stopped the task: close it without claiming a result.
             return self._observe(state, "cancelled", action["reason"], terminal_status="cancelled")
         if kind == "complete":
@@ -1887,10 +1928,14 @@ class AgentRuntime:
         question = (f"{label}未通过：{brief}。请告诉我怎么修改（例如去掉或替换有问题的条件），或回答审查提出的问题："
                     f"需要修改时我会按你的修改重新运行 {reviewed} 再审查，只是回答问题时我会带着你的回答重新审查；"
                     "也可以停止这次任务。")
-        action = {"kind": "request_human", "reason": "The review of a flow step did not pass; the user decides the change.",
-                  "question": question, "fallback_offered": False, "review_failed": True,
-                  "reviewed_skill": reviewed, "id": f"action:{len(state.decisions) + 1}",
-                  "return_to": "labontology-skill", "ticket_status": "issued"}
+        return self._request_human(state, question, "The review of a flow step did not pass; the user decides the change.",
+                                   review_failed=True, reviewed_skill=reviewed)
+
+    def _request_human(self, state: MissionState, question: str, reason: str, **details: Any) -> MissionState:
+        """The Runtime itself asks the user and waits (no decision of the Agent behind it)."""
+        action = {"kind": "request_human", "reason": reason, "question": question, "fallback_offered": False,
+                  **details, "id": f"action:{len(state.decisions) + 1}", "return_to": "labontology-skill",
+                  "ticket_status": "issued"}
         action["action_id"] = action["id"]
         state.decisions.append(deepcopy(action))
         state.pending_action = action
@@ -1898,6 +1943,55 @@ class AgentRuntime:
         state.supervisor_status = "decision_pending"
         self.store.event("agent_decision", action)
         return self._wait_human(state, question)
+
+    def _redo_drop_refusal(self, state: MissionState, redos: list[dict[str, Any]]) -> str | None:
+        """Why --cancel can neither drop these redos (_redos_to_drop) cleanly nor end the task; None when it may go on.
+        Refused, and the mission left as it is, instead of ending the whole task."""
+        stay = ("Leave the mission as it is and tell the user the change could not be applied; ask how to go on with "
+                "act --ask \"<question>\". If the user wants to stop the task, end it with act --complete (the results "
+                "so far stay). Do not run --cancel again.")
+        if not redos:
+            earlier = next((record for record in self._round_redos(state) if self._redo_open(state, record)), None)
+            if earlier is None:
+                return None  # no change in progress: --cancel stops the task
+            return (f"An earlier change ({earlier.get('summary')}) is still being redone, and a later one is done: "
+                    "--cancel cannot drop the earlier change without undoing the later one, and ending the whole task "
+                    f"would lose its confirmed steps. {stay}")
+        change = redos[-1].get("summary") or "the user's change"
+        if any("artifacts_before" not in record for record in redos):
+            return (f"This redo ({change}) was started before LabOntology recorded what to restore, so --cancel cannot "
+                    f"drop only the redo, and ending the whole task would lose its confirmed steps. {stay}")
+        floor = int(redos[-1].get("floor") or 0)
+        acted = [item["skill_id"] for key, item in state.skill_executions.items()
+                 if _action_number(key) > floor and item.get("status") in _SUCCEEDED
+                 and item.get("skill_id") in self.skills and self.skills[item["skill_id"]].side_effect_level != "read_only"]
+        if acted:
+            return (f"Since this redo ({change}) began, {', '.join(dict.fromkeys(acted))} ran and acted outside "
+                    "LabOntology (a device or another system). --cancel cannot undo that: dropping the redo would hide "
+                    f"it, and ending the whole task would lose its confirmed steps. {stay}")
+        return None
+
+    def _drop_redo(self, state: MissionState, redos: list[dict[str, Any]], reason: str) -> MissionState:
+        """--cancel during a redo of an unfinished plan: drop only the change (_redos_to_drop). The steps it reopened
+        count as done again with their results from before it, its runs no longer count, and the user decides how to
+        go on."""
+        cancel_id = state.pending_action["id"]
+        first = redos[-1]
+        floor = int(first.get("floor") or 0)
+        for key, item in state.skill_executions.items():
+            if _action_number(key) > floor and item.get("status") != "dropped":
+                item.update({"dropped_status": item.get("status"), "status": "dropped", "dropped_by": cancel_id})
+        state.plan_floors = dict(first.get("floors_before") or {})
+        state.artifacts = dict(first["artifacts_before"])
+        for record in redos:
+            record.update({"dropped": True, "dropped_reason": reason, "dropped_by": cancel_id})
+        ids = [record["action_id"] for record in reversed(redos)]
+        state = self._observe(state, "redo_dropped", reason, dropped_redos=ids)
+        brief = _question_summary(reason)[:300].rstrip("。．.；;，,：: ")
+        question = (f"这次修改没有完成，已撤销：{first.get('summary')}" + (f"（{brief}）" if brief else "")
+                    + "。之前完成的步骤保留修改前的结果。请告诉我怎么继续：换一种方式修改、按修改前的结果继续，或停止这次任务。")
+        return self._request_human(state, question, "A redo was dropped; the user decides how to go on.",
+                                   redo_dropped=ids)
 
     @staticmethod
     def _resumed_in_same_batch(action: dict[str, Any] | None) -> str | None:

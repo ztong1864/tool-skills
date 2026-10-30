@@ -11,7 +11,7 @@ from typing import Any, Dict, List, Optional
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "output"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+KB_DIR = ROOT / "KB"
 
 
 def load_json(path: Path) -> Any:
@@ -24,8 +24,8 @@ def load_step_json(step_json_path: Path) -> Dict[str, Any]:
     return load_json(step_json_path)
 
 
-def load_resource_info() -> List[Dict[str, Any]]:
-    resource_path = ROOT / "KB" / "resource_info.json"
+def load_resource_info(resource_dir: Path) -> List[Dict[str, Any]]:
+    resource_path = resource_dir / "resource_info.json"
     if not resource_path.exists():
         raise FileNotFoundError(f"资源信息文件不存在: {resource_path}")
     data = load_json(resource_path)
@@ -165,6 +165,7 @@ def attach_resource_info_direct(
 
 
 def save_enriched_step_json(step_json: Dict[str, Any], output_path: Path) -> None:
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(
         json.dumps(step_json, ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -191,6 +192,12 @@ def build_parser() -> argparse.ArgumentParser:
         default="",
         help="输出路径。默认写入 output/verified_step_json_<timestamp>.json",
     )
+    parser.add_argument(
+        "--resource-dir",
+        default=str(KB_DIR),
+        help="直接回填模式读取的资源快照目录（resource_info.json）；在 LabOntology 中用 mission 的 artifacts 目录。"
+             "默认是本技能的 KB/",
+    )
     return parser
 
 
@@ -208,7 +215,7 @@ def main() -> int:
         step_json = load_step_json(step_json_path)
 
         if args.direct or verification_result_path is None:
-            resource_list = load_resource_info()
+            resource_list = load_resource_info(Path(args.resource_dir))
             enriched_step_json = attach_resource_info_direct(step_json, resource_list)
             print("直接回填模式: 已使用当前 resource_info.json 回填资源信息。")
         else:

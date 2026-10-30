@@ -25,6 +25,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--plan", type=str, default="", help="Markdown 或纯文本格式的实验方案")
     parser.add_argument("--plan-file", type=str, default="", help="实验方案文件路径")
     parser.add_argument("--test", action="store_true", help="运行 KB/test_plan.md 示例实验方案")
+    parser.add_argument("--output", type=str, default="",
+                        help="step JSON 的输出路径（写进 mission 的 artifacts 目录）；默认 output/generated_step_json_<timestamp>.json")
     return parser
 
 
@@ -36,10 +38,10 @@ def resolve_plan_text(plan_text: str, plan_file: str, use_test: bool) -> str:
     return plan_text.strip()
 
 
-def build_run_timestamps() -> tuple[str, Path]:
+def build_run_timestamps(output: str = "") -> tuple[str, Path]:
     now = datetime.now().replace(microsecond=0)
     output_timestamp = now.strftime("%Y-%m-%d-%H-%M-%S")
-    out_path = OUTPUT_DIR / f"generated_step_json_{now.strftime('%Y-%m-%d-%H-%M-%S')}.json"
+    out_path = Path(output) if output else OUTPUT_DIR / f"generated_step_json_{output_timestamp}.json"
     return output_timestamp, out_path
 
 
@@ -52,7 +54,7 @@ def main() -> int:
         return 1
 
     try:
-        output_timestamp, out_path = build_run_timestamps()
+        output_timestamp, out_path = build_run_timestamps(args.output)
         step_json, steps = generate_step_json_from_text(plan_text, timestamp=output_timestamp)
         write_json(step_json, out_path)
 

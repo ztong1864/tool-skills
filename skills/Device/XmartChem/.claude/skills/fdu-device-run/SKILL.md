@@ -11,7 +11,8 @@ description: 这是化学实验流程的一部分，用于将协议 JSON 提交�
 
 ## 强制执行顺序
 
-1. 使用 `python scripts/run_protocol.py` 提交协议。
+1. 使用 `python scripts/run_protocol.py --protocol-file <协议 JSON> --output <回执文件>` 提交协议。在 LabOntology 中 `--output` 写 mission 的 artifacts 目录下的文件（例如 `<artifacts 目录>/submit.json`），这份提交记录就是设备任务回执；不带时写进本技能目录的 `output/`（所有用户共用）。
+   设备接口的配置（`FDU_DEVICE_BASE_URL`、`FDU_DEVICE_USERNAME`、`FDU_DEVICE_PASSWORD`，可选 `FDU_DEVICE_TIMEOUT`）是服务器环境变量，由管理员配置；缺少时脚本报“设备接口没有配置”并列出缺少的项：照实告诉用户需要管理员处理，不要自己去找或填写这些值。
 2. 优先接受 `--protocol-file` 或 `--protocol-json`。
 3. 如两者都未提供，再按标准输入或默认回退路径读取。
 4. 先调用 `AddTask`，只有显式开启时才调用 `StartTask`。
@@ -20,9 +21,9 @@ description: 这是化学实验流程的一部分，用于将协议 JSON 提交�
 
 - 输入：协议文件、内联 JSON、标准输入或默认回退协议文件。
 - 输入既可以是单个 JSON 对象，也可以是 JSON 数组；单个对象会自动包装成列表。
-- 输出：`output/submit_<timestamp>.json`，以及终端中的任务信息。
+- 输出：`--output` 指定的提交记录（不带时为 `output/submit_<timestamp>.json`），以及终端中的任务信息。
 - 约束：默认会重写 `unit_id`，以避免重复冲突。
-- 额外可选参数包括 `--task-name`、`--base-url`、`--username`、`--password`、`--timeout`、`--keep-unit-ids`、`--enable-start`、`--skip-curr-taskunit`、`--run-by-single-tube`、`--quick-cap` 和 `--use-tip-type`。
+- 额外可选参数包括 `--output`、`--task-name`、`--base-url`、`--username`、`--password`、`--timeout`、`--keep-unit-ids`、`--enable-start`、`--skip-curr-taskunit`、`--run-by-single-tube`、`--quick-cap` 和 `--use-tip-type`。
 
 ## 注意事项
 

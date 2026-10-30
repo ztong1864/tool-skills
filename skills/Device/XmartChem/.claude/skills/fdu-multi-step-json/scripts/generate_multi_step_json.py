@@ -8,6 +8,7 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 from copy import deepcopy
 from datetime import datetime
 from pathlib import Path
@@ -15,10 +16,8 @@ from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "output"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 STEP_SKILL_ROOT = ROOT.parent / "fdu-step-json"
-STEP_OUTPUT_DIR = STEP_SKILL_ROOT / "output"
 STEP_SCRIPT_PATH = STEP_SKILL_ROOT / "scripts" / "generate_step_json.py"
 
 
@@ -49,6 +48,8 @@ def build_parser() -> argparse.ArgumentParser:
         help="与 plan-files 一一对应的目标反应位",
     )
     parser.add_argument("--task-name", type=str, default="", help="输出中的 task_name")
+    parser.add_argument("--output", type=str, default="",
+                        help="总 step JSON 的输出路径（写进 mission 的 artifacts 目录）；默认 output/generated_multi_step_json_<timestamp>.json")
     return parser
 
 
@@ -76,19 +77,20 @@ def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def list_step_outputs() -> set[Path]:
-    return set(STEP_OUTPUT_DIR.glob("generated_step_json_*.json"))
-
-
 STEP_JSON_TIMEOUT_SECONDS = 180
 
 
 def call_fdu_step_json(plan_file: Path) -> Dict[str, Any]:
+    """Run fdu-step-json for one plan into a private temporary file: picking the newest file in fdu-step-json's
+    shared output/ could take another user's run, and that folder may not be writable."""
     if not STEP_SCRIPT_PATH.exists():
         raise MultiStepGenerationError(f"未找到 fdu-step-json 脚本：{STEP_SCRIPT_PATH}")
+    with tempfile.TemporaryDirectory(prefix="fdu_step_json_") as work_dir:
+        return _run_fdu_step_json(plan_file, Path(work_dir) / "step_json.json")
 
-    before = list_step_outputs()
-    cmd = [sys.executable, str(STEP_SCRIPT_PATH), "--plan-file", str(plan_file)]
+
+def _run_fdu_step_json(plan_file: Path, output: Path) -> Dict[str, Any]:
+    cmd = [sys.executable, str(STEP_SCRIPT_PATH), "--plan-file", str(plan_file), "--output", str(output)]
 
     try:
         subprocess.run(
@@ -115,15 +117,9 @@ def call_fdu_step_json(plan_file: Path) -> Dict[str, Any]:
     except KeyboardInterrupt:
         raise MultiStepGenerationError("调用 fdu-step-json 时收到键盘中断。请重试或检查上游命令是否已停止。")
 
-    after = list_step_outputs()
-    created = sorted(after - before, key=lambda p: p.stat().st_mtime)
-    if created:
-        return read_json(created[-1])
-
-    candidates = sorted(after, key=lambda p: p.stat().st_mtime, reverse=True)
-    if not candidates:
+    if not output.exists():
         raise MultiStepGenerationError("fdu-step-json 未生成任何输出文件。")
-    return read_json(candidates[0])
+    return read_json(output)
 
 
 def get_unit_type(step: Dict[str, Any]) -> str:
@@ -381,7 +377,8 @@ def main() -> int:
             args.target_layout_codes,
             args.task_name,
         )
-        out_path = OUTPUT_DIR / f"generated_multi_step_json_{result['timestamp']}.json"
+        out_path = (Path(args.output) if args.output
+                    else OUTPUT_DIR / f"generated_multi_step_json_{result['timestamp']}.json")
         write_json(result, out_path)
         log_status(f"{progress_label(len(args.plan_files), len(args.plan_files))} Multi-step JSON generated: {out_path}")
         log_status(f"步骤总数：{len(result['steps'])}")

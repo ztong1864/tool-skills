@@ -113,6 +113,8 @@ required_action:
 
 `verdict:` 和它的取值保持英文（Runtime 按它判断审查是否通过）；findings 和 required_action 的内容用中文写：审查结果会作为问题的一部分直接给用户看（在 LabOntology 中它就是 `--summary`）。沸点检查给出的 `message` 原样写进 findings，不要翻译或改写。
 
+审查之后向用户汇报时（不论 `pass`、`needs_human_review` 还是 `block`），先完整列出被审查的结果，再写结论和要用户回答的问题：条件推荐列出全部推荐组（带组号的表格，见 literature-experiment-recommender 的“在回复里列出推荐表”），投料量列出投料量表，编号步骤列出全部步骤；有问题时标出是哪几组或哪几步。
+
 判定规则：
 
 - 使用 `pass`：当前上下文中没有发现阻断问题。

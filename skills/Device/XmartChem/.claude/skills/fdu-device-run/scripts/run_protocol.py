@@ -32,7 +32,20 @@ if env_path.exists():
 BASE_URL = os.getenv("FDU_DEVICE_BASE_URL")
 USERNAME = os.getenv("FDU_DEVICE_USERNAME")
 PASSWORD = os.getenv("FDU_DEVICE_PASSWORD")
-TIMEOUT = int(os.getenv("FDU_DEVICE_TIMEOUT"))
+
+
+def check_device_settings(args: argparse.Namespace) -> None:
+    """Refuse with the names of the missing FDU_DEVICE_* settings (never their values) before touching the device."""
+    missing = [name for name, value in (("FDU_DEVICE_BASE_URL", args.base_url), ("FDU_DEVICE_USERNAME", args.username),
+                                        ("FDU_DEVICE_PASSWORD", args.password)) if not value]
+    if missing:
+        raise SystemExit(f"设备接口没有配置：缺少 {'、'.join(missing)}（服务器环境变量或技能目录的 .env，由管理员配置）。"
+                         "配置之前不能创建设备任务。")
+    if args.timeout is None:
+        timeout = os.getenv("FDU_DEVICE_TIMEOUT") or "20"
+        if not timeout.isdigit():
+            raise SystemExit(f"FDU_DEVICE_TIMEOUT 必须是秒数（整数），现在是 {timeout!r}。")
+        args.timeout = int(timeout)
 
 
 def parse_args() -> argparse.Namespace:
@@ -45,7 +58,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--base-url", default=BASE_URL, help="Device API base URL")
     parser.add_argument("--username", default=USERNAME, help="API username")
     parser.add_argument("--password", default=PASSWORD, help="API password")
-    parser.add_argument("--timeout", type=int, default=TIMEOUT, help="HTTP timeout in seconds")
+    parser.add_argument("--timeout", type=int, default=None,
+                        help="HTTP timeout in seconds (default: FDU_DEVICE_TIMEOUT, else 20)")
+    parser.add_argument("--output", default="",
+                        help="Path of the submission record (the device task receipt); in LabOntology a file in the "
+                             "mission's artifacts folder. Default: output/submit_<timestamp>.json")
     parser.add_argument(
         "--keep-unit-ids",
         action="store_true",
@@ -128,10 +145,10 @@ def execute(args: argparse.Namespace) -> Dict[str, Any]:
 
 def main() -> int:
     args = parse_args()
+    check_device_settings(args)
     try:
         result = execute(args)
-        prefix = make_output_prefix("submit")
-        output_file = prefix.with_suffix(".json")
+        output_file = Path(args.output) if args.output else make_output_prefix("submit").with_suffix(".json")
         write_json(result, output_file)
 
         print("Connected to device and AddTask finished successfully.")

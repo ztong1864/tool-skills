@@ -11,7 +11,7 @@ description: 这是化学实验流程的一部分，用于将结构化实验方�
 
 ## 强制执行顺序
 
-1. 使用 `python scripts/generate_step_json.py --plan-file "<方案文件>"` 或 `--plan "<方案内容>"`。
+1. 使用 `python scripts/generate_step_json.py --plan-file "<方案文件>" --output "<输出文件>"` 或 `--plan "<方案内容>"`。在 LabOntology 中 `--output` 写 mission 的 artifacts 目录下的文件；不带时写进本技能目录的 `output/`（所有用户共用）。
 2. 如需运行内置示例，使用 `python scripts/generate_step_json.py --test`。
 3. 脚本调用 `scripts/step_json_core.py` 完成解析、映射和校验。
 4. 生成结果按照 `KB/unit_skill_map.json` 映射到对应下游 skill。
@@ -19,7 +19,7 @@ description: 这是化学实验流程的一部分，用于将结构化实验方�
 ## 输入输出
 
 - 输入：结构化实验方案文件、结构化实验方案文本、测试模式输入。
-- 输出：`output/generated_step_json_<timestamp>.json`。
+- 输出：`--output` 指定的文件；不带 `--output` 时为 `output/generated_step_json_<timestamp>.json`。
 - 约束：输出顶层只保留 `timestamp` 和 `steps`，每个步骤都应具备对应的 `skill_input`。
 
 ## 注意事项

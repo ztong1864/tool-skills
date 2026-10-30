@@ -14,7 +14,7 @@ from typing import Any, Dict, List, Optional
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "output"
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+KB_DIR = ROOT / "KB"
 MAX_RESOURCE_AGE_HOURS = 24
 SUPPORTED_DOWNSTREAM_SKILLS = {
     "fdu-add-liquid-json",
@@ -27,8 +27,8 @@ def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8-sig"))
 
 
-def load_resource_info() -> List[Dict[str, Any]]:
-    resource_path = ROOT / "KB" / "resource_info.json"
+def load_resource_info(resource_dir: Path) -> List[Dict[str, Any]]:
+    resource_path = resource_dir / "resource_info.json"
     if not resource_path.exists():
         raise FileNotFoundError(f"资源信息文件不存在: {resource_path}")
     return load_json(resource_path)
@@ -165,8 +165,8 @@ def validate_volume(
         return False, f"体积验证失败：{exc}"
 
 
-def get_latest_snapshot_path() -> Path | None:
-    candidates = sorted(ROOT.joinpath("KB").glob("resource_info_*.json"))
+def get_latest_snapshot_path(resource_dir: Path) -> Path | None:
+    candidates = sorted(resource_dir.glob("resource_info_*.json"))
     filtered = [path for path in candidates if path.name != "resource_info.json"]
     return filtered[-1] if filtered else None
 
@@ -176,10 +176,10 @@ def is_resource_info_stale(path: Path) -> bool:
     return age_hours > MAX_RESOURCE_AGE_HOURS
 
 
-def refresh_resource_info() -> None:
+def refresh_resource_info(resource_dir: Path) -> None:
     script_path = ROOT / "scripts" / "fetch_resource_info.py"
     result = subprocess.run(
-        [sys.executable, str(script_path)],
+        [sys.executable, str(script_path), "--resource-dir", str(resource_dir)],
         cwd=ROOT,
         check=False,
         capture_output=True,
@@ -195,7 +195,7 @@ def refresh_resource_info() -> None:
         )
 
 
-def extract_resources_from_snapshot(snapshot_path: Path) -> List[Dict[str, Any]]:
+def extract_resources_from_snapshot(snapshot_path: Path, resource_dir: Path) -> List[Dict[str, Any]]:
     data = load_json(snapshot_path)
     if isinstance(data, dict) and isinstance(data.get("resources"), list):
         resources = data["resources"]
@@ -204,7 +204,7 @@ def extract_resources_from_snapshot(snapshot_path: Path) -> List[Dict[str, Any]]
     else:
         raise RuntimeError(f"资源快照格式不正确: {snapshot_path}")
 
-    resource_info_path = ROOT / "KB" / "resource_info.json"
+    resource_info_path = resource_dir / "resource_info.json"
     resource_info_path.write_text(
         json.dumps(resources, ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -212,27 +212,27 @@ def extract_resources_from_snapshot(snapshot_path: Path) -> List[Dict[str, Any]]
     return resources
 
 
-def ensure_resource_info() -> List[Dict[str, Any]]:
-    resource_info_path = ROOT / "KB" / "resource_info.json"
-    snapshot_path = get_latest_snapshot_path()
+def ensure_resource_info(resource_dir: Path) -> List[Dict[str, Any]]:
+    resource_info_path = resource_dir / "resource_info.json"
+    snapshot_path = get_latest_snapshot_path(resource_dir)
     needs_refresh = not resource_info_path.exists() or snapshot_path is None or is_resource_info_stale(snapshot_path)
 
     if needs_refresh:
         try:
-            refresh_resource_info()
+            refresh_resource_info(resource_dir)
         except Exception as exc:
-            snapshot_path = get_latest_snapshot_path()
+            snapshot_path = get_latest_snapshot_path(resource_dir)
             if snapshot_path is not None and snapshot_path.exists():
                 print(f"警告: 无法刷新资源信息 ({exc})，使用本地快照 {snapshot_path.name}", flush=True)
-                return extract_resources_from_snapshot(snapshot_path)
+                return extract_resources_from_snapshot(snapshot_path, resource_dir)
             if resource_info_path.exists():
                 print(f"警告: 无法刷新资源信息 ({exc})，使用本地 resource_info.json", flush=True)
-                return load_resource_info()
+                return load_resource_info(resource_dir)
             raise
 
     if not resource_info_path.exists():
         raise FileNotFoundError(f"未找到资源信息文件: {resource_info_path}")
-    return load_resource_info()
+    return load_resource_info(resource_dir)
 
 
 def load_step_json(step_json_path: Path) -> Dict[str, Any]:
@@ -527,6 +527,7 @@ def save_verification_result(results: List[Dict[str, Any]], output_path: Path) -
         ],
     }
 
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(
         json.dumps(save_data, ensure_ascii=False, indent=2),
         encoding="utf-8",
@@ -542,6 +543,12 @@ def build_parser() -> argparse.ArgumentParser:
         default="",
         help="验证结果输出路径。默认写入 output/verification_result_<timestamp>.json",
     )
+    parser.add_argument(
+        "--resource-dir",
+        default=str(KB_DIR),
+        help="资源快照所在目录（resource_info.json）；过期或不存在时刷新到这里。在 LabOntology 中用 mission 的 "
+             "artifacts 目录。默认是本技能的 KB/",
+    )
     return parser
 
 
@@ -556,7 +563,7 @@ def main() -> int:
 
     try:
         step_json = load_step_json(step_json_path)
-        resource_list = ensure_resource_info()
+        resource_list = ensure_resource_info(Path(args.resource_dir))
         results = verify_step_json(step_json, resource_list)
         invalid_count = sum(1 for result in results if not result.get("is_valid", False))
 

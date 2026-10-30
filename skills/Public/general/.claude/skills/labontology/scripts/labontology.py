@@ -1995,7 +1995,8 @@ def main(argv: Sequence[str] | None = None) -> int:
     act_parser.add_argument("--ask-plan", action="store_true", help="Ask the user to confirm the mission's --plan")
     act_parser.add_argument("--complete", action="store_true", help="Close the mission once all results are recorded")
     act_parser.add_argument("--cancel", action="store_true",
-                            help="Close the mission because the user stopped it; during a revision, drop only that change")
+                            help="Close the mission because the user stopped it; during a change (--revise, on a "
+                                 "finished or an unfinished plan), drop only that change and keep the earlier results")
     act_parser.add_argument("--revise", default="",
                             help="The user's change to this task: on a finished task reopen it and redo only the --redo "
                                  "Skills; on an unfinished plan go back to the earliest --redo step that is done")
