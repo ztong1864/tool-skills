@@ -29,6 +29,12 @@ Use `needs_human_review` when:
 - the draft step order may be risky but the context is incomplete,
 - the plan uses low/high temperature, light exposure, electrochemistry, high/low pressure gas, microwave, reflux, or other specialized module semantics but device support is unclear.
 
+Not a reason for `needs_human_review` (note them in findings instead):
+
+- a fact the user has already confirmed in this task (vial pressure rating and fill volume, dosing precision, an internal standard being ready),
+- a device or resource check a later flow step makes (resource mapping and availability: `fdu-resource-verify`; protocol fields: `fdu-unit-orchestration-json`),
+- on a re-review, the question the user answered in the previous round.
+
 Use `pass` only when:
 
 - all required context for the current stage is present,

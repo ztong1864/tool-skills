@@ -895,8 +895,10 @@ class AgentRuntime:
                     + (f" ({files})" if files else "") + ". Give the verdict and the findings in --summary. A verdict "
                     "that blocks the experiment is reported with --agent-failed, the findings and what must change "
                     "(the Runtime then asks the user; after the reply the reviewed Skill runs again with the change, "
-                    "then this review); a verdict that needs a person's judgement goes into the summary, so the user "
-                    "sees it when asked to confirm.")
+                    "then this review); a verdict that needs a person's judgement (needs_human_review) is reported with "
+                    "--agent-completed and its question in the summary: the Runtime asks it at the pause after this "
+                    "review, together with the go-ahead. A fact the user already confirmed in this task, or a check a "
+                    "later step of the flow makes, is not a question for the user.")
                 runs = self._step_executions(state, progress[position]["skill_id"])
                 answer = (self._review_reply(state, progress[position - 1]["skill_id"])
                           if len(runs) > 1 and runs[-2].get("status") == "failed" else "")
@@ -1493,13 +1495,18 @@ class AgentRuntime:
 
         Inputs are partly inferred from the Skills a SKILL.md mentions (fdu-multi-step-json "calls fdu-step-json
         internally", so it seemed to need fdu-step-json's outputs). The device's declared flow says which steps
-        feed which, so such an input never blocks the flow; an input no Skill makes (a user's file) still does."""
+        feed which, so such an input never blocks the flow; an input no Skill makes (a user's file) still does.
+        A Skill whose document names an output that discovery could not bind to an argument still makes it: once
+        fdu-step-json had an --output flag and two names for its file, it had no outputs, and fdu-multi-step-json
+        asked the user to upload two step JSON files."""
         if not state.flow or skill.id not in state.plan:
             return set()
         planned = set(state.plan)
         waived = set()
         for artifact in skill.input_artifacts:
-            makers = {skill_id for skill_id, spec in self.skills.items() if artifact in spec.outputs}
+            unbound = f"runtime output binding missing: {artifact}"
+            makers = {skill_id for skill_id, spec in self.skills.items()
+                      if artifact in spec.outputs or unbound in (self.knowledge.get(skill_id, {}).get("unresolved") or [])}
             if makers and not makers & planned:
                 waived.add(artifact)
         return waived
@@ -1886,7 +1893,7 @@ class AgentRuntime:
 
         The mission moves to waiting_human with a ticket, so the next Skill action is refused until the
         user has seen the result and answered (unless the user asked for --run-through)."""
-        if state.run_through or skill_id not in state.plan:
+        if skill_id not in state.plan:
             return state
         slots = self._plan_slots(state)
         done = state.skill_executions.get((state.observations[-1] if state.observations else {}).get("action_id"))
@@ -1895,8 +1902,21 @@ class AgentRuntime:
         remaining = [index for index in range(len(state.plan)) if index not in slots]
         if position is None or not remaining:
             return state
-        if state.plan_pauses is not None and position not in state.plan_pauses:
-            return state  # an experiment flow pauses only where it asks the user (see core/runtime/flows.py)
+        review = position < len(state.plan_labels) and bool(state.plan_labels[position])
+        verdict = _VERDICT.search(summary or "") if review else None
+        # A review that needs a person's judgement asks at this pause, with its question in the summary; it asks even
+        # in a run-through or where the flow has no pause, so the question never goes by unanswered.
+        if not (verdict and verdict.group(1).lower() == "needs_human_review"):
+            if state.run_through:
+                return state
+            if state.plan_pauses is not None and position not in state.plan_pauses:
+                return state  # an experiment flow pauses only where it asks the user (see core/runtime/flows.py)
+            if review and self._review_reply_confirmed(state, position):
+                # The user answered this review's question and said to go on; the review then passed, and the pause
+                # asked to confirm the same step again (three to four replies for one step in a user's chat).
+                self.notice = ("The review passed with the user's reply of this turn, and that reply was the user's "
+                               "confirmation of this step: go on with the next step (see do_next) without asking again.")
+                return state
         label = state.plan_labels[position] if position < len(state.plan_labels) else ""
         # The summary often repeats the step name ("constraint-parser 已完成：…"), which the question already says.
         brief = _question_summary(summary, skill_id)[:300].rstrip("。．.；;，,：: ")  # goes on with "。下一步是…"
@@ -2057,6 +2077,22 @@ class AgentRuntime:
         answer = next((item for item in reversed(state.observations)
                        if item.get("action_id") == ticket.get("id") and item.get("status") == "human_answer"), None)
         return str((answer or {}).get("summary") or "")
+
+    @staticmethod
+    def _review_reply_confirmed(state: MissionState, position: int) -> bool:
+        """The review at this plan position runs on the user's reply to its "did not pass" question: the reply came in
+        this turn (FounDryClaw), or, without turns, nothing has been asked since that question."""
+        ticket = next((item for item in reversed(state.decisions)
+                       if item.get("review_failed") and item.get("reviewed_skill") == state.plan[position - 1]), None)
+        answer = ticket and next((item for item in reversed(state.observations)
+                                  if item.get("action_id") == ticket.get("id") and item.get("status") == "human_answer"),
+                                 None)
+        if not answer:
+            return False
+        turn = _current_turn()
+        if turn:
+            return answer.get("turn") == turn
+        return next((item for item in reversed(state.decisions) if item.get("kind") == "request_human"), None) is ticket
 
     def _observe(self, state: MissionState, status: str, summary: str,
                  *, completed: bool = False, terminal_status: str | None = None,

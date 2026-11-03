@@ -95,7 +95,19 @@ description: FDU 实验规划阶段风险审查 skill。用于候选条件推荐
 
 提醒内容必须直接、具体、可执行。不要只写“存在风险”。
 
-当返回 `needs_human_review` 或 `block` 时，Agent 必须停止进入对应用户确认点和后续流程，不得将该规划产物作为已通过审查的结果继续使用。
+返回 `block` 时，该规划产物不能继续使用，必须先按 required_action 修改；返回 `needs_human_review` 时，用户回答问题之前不得进入后续流程（在 LabOntology 中，Runtime 在审查后的确认点向用户提问，见下文）。
+
+## 不再拿来问用户的内容
+
+- 用户在这项任务里已经确认过的事实（例如反应瓶耐压和装液量、微升级加样精度、内标溶液已配制可用）：在 findings 里写“用户已确认”，不作为 `needs_human_review` 的理由。
+- 流程后面的步骤会校验的内容（设备资源映射、工位/模块/耗材是否可用由 `fdu-resource-verify` 校验；协议编排由 `fdu-unit-orchestration-json` 完成）：在 findings 里写“留待 <步骤> 校验”，不作为 `needs_human_review` 的理由。
+- 重新审查（用户已经回答上一轮审查的问题或修改了条件）时，上一轮的问题已经有了答案：只有出现用户还没回答过的新问题时才给 `needs_human_review`，否则给 `pass`。
+
+## 在 LabOntology 中登记审查结果
+
+- `pass`：`resume --agent-completed --summary "<审查结果>"`。
+- `needs_human_review`：同样用 `resume --agent-completed --summary "<审查结果>"`，required_action 写 `ask_user：<要用户回答的问题>`。Runtime 在这次审查后的确认点把问题和“是否继续”一起交给用户，用户回复一次即可；不要用 `--agent-failed` 登记，那会让用户先回答“未通过”，再在确认点确认一次。
+- `block`：`resume --agent-failed --summary "<审查结果>"`。Runtime 请用户修改，用户回复后先按修改重跑被审查的 skill，再审查一次；再审查通过时直接进入下一步，不再为同一步确认。
 
 ## 输出格式
 
@@ -118,5 +130,5 @@ required_action:
 判定规则：
 
 - 使用 `pass`：当前上下文中没有发现阻断问题。
-- 使用 `needs_human_review`：风险无法通过当前上下文判断，需要用户或实验人员确认。
+- 使用 `needs_human_review`：风险无法通过当前上下文判断，需要用户或实验人员确认（用户已确认的内容和后续步骤会校验的内容除外，见“不再拿来问用户的内容”）。
 - 使用 `block`：继续推进会明显越过安全边界或设备能力边界。

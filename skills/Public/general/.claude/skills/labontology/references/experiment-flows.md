@@ -47,6 +47,9 @@ Rules:
 - `pause` makes the Runtime stop after that step (after its review) and ask the user, showing the step's result and the
   pause text; the user's next message is the answer. Steps without `pause` run on without asking. The pause of the
   plan's last step is asked when the plan is done, together with the command for the next step if the user agrees.
+- One reply per review: a review that passes after the user answered its question (or asked for a change) in the same
+  turn does not pause again, since that reply confirmed the step. A review whose verdict is `needs_human_review` always
+  stops to ask its question, even where the flow has no `pause` or the plan runs through.
 - A Skill that acts on a device (side effect other than read-only) still needs the user's explicit approval from the
   Runtime, whatever the flow says.
 - A malformed file does not hide the ontology Skill: the problem is listed under `experiment_flow_problems` by `inspect`.

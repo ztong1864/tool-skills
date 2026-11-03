@@ -16,7 +16,7 @@
 
 ## 常见输出
 
-- `output/generated_step_<timestamp>.json`
+- `output/generated_step_json_<timestamp>.json`（或 `--output` 指定的文件）
 
 ## 相关文件
 
