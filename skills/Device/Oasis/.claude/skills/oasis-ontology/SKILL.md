@@ -105,6 +105,15 @@ Agent 不应因为当前还没有完整物料信息，就误以为无法创建�
 
 如果跳过第 1 步，Agent 很容易直接查 workflow 结构，却不知道当前任务属于哪种工作情景，进而选错后续动作。
 
+### 用本地工作流快照生成 workflow JSON（不连接平台）
+
+用户提供了本地快照（例如 `Oasis-流程原始返回/`，内有 `README.md`、`manifest.json`、`workflow-list/workflow-category-label.json`、`sub-workflow-step-parameters/`、`material-type-mode/`），并要求不连接或查询绿洲平台时，用快照就能完成，不需要 `oasis-workflow-category-label`、`oasis-sub-workflow` 等查询平台的技能，也不要再请用户授权“只用本地资料”：
+
+1. 照上面的顺序先查 `Process`（图谱在本地，不访问平台），再读 `README.md`、`manifest.json` 和工作流总表，按任务选定子工作流。`manifest.json` 的每一项给出 workflowName、subWorkflowName、subWorkflowId 和该子工作流两个文件的路径。
+2. 该子工作流的 workflow JSON 就是 `sub-workflow-step-parameters/` 里的对应文件：复制到用户指定的位置，保留结构、步骤 ID、泳道（`m`）、顺序（`n`）和参数；`material-type-mode/` 里的物料需求位串可一起保存。用户要求改参数时只改 `Type` 为 `Editable` 的值；不加入快照里没有的步骤、参数或物料。
+3. 快照文件的 `path` 字段含有它自己的 subWorkflowId（步骤参数文件为 `/api/workflow/sub-workflow/<subWorkflowId>/step-parameters`）。要核对清单和文件是否对应，用脚本比较 `manifest.json` 的 `subWorkflowId` 和文件里的 `path`，不要凭印象判断“ID 对调”。
+4. 不调用 `oasis-start`、`oasis-order-progess` 等提交或执行技能。
+
 ## 四、为什么 Process 必须先查
 
 `Process` 不是普通图谱节点，它是工作情景入口。
