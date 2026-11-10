@@ -1,0 +1,4 @@
+interface:
+  display_name: "化学谱图与产率分析"
+  short_description: "逐样品完整展示化学实验的谱图、峰表、产率、转化率和计算依据"
+  default_prompt: "使用 $fdu-spectrum-analysis 分析谱图和实验记录，逐样品完整展示产率、转化率、峰面积占比、证据和待补信息。"

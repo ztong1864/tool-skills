@@ -37,6 +37,9 @@ load_env()
 
 DEFAULT_MAX_DURATION_SECONDS = 48 * 60 * 60
 DEFAULT_SCI_AGENT_API_BASE = "http://127.0.0.1:8000"
+# A FounDryClaw chat gives its scripts the backend's own address and the chat's id; alerts go to that chat.
+BACKEND_BASE_ENV = "FOUNDRYCLAW_MODEL_ROUTER_BASE_URL"
+CONVERSATION_ID_ENV = "FOUNDRYCLAW_CONVERSATION_ID"
 
 
 @dataclass(frozen=True)
@@ -95,13 +98,17 @@ def parse_args(argv: Optional[Sequence[str]] = None) -> argparse.Namespace:
     )
     parser.add_argument(
         "--sci-agent-api-base",
-        default=DEFAULT_SCI_AGENT_API_BASE,
-        help=f"sci_agent backend API base for pushed alerts. Default: {DEFAULT_SCI_AGENT_API_BASE}",
+        default=os.getenv(BACKEND_BASE_ENV) or DEFAULT_SCI_AGENT_API_BASE,
+        help=f"Backend API base for pushed alerts. Default: ${BACKEND_BASE_ENV} (set in FounDryClaw chats), "
+             f"else {DEFAULT_SCI_AGENT_API_BASE}",
     )
+    conversation_id = os.getenv(CONVERSATION_ID_ENV)
     parser.add_argument(
         "--conversation-id",
-        required=True,
-        help="sci_agent conversationId to receive pushed alerts. The Agent must resolve it before starting this script.",
+        default=conversation_id,
+        required=not conversation_id,
+        help=f"conversationId to receive pushed alerts. Default: ${CONVERSATION_ID_ENV} (the current FounDryClaw "
+             "chat); required when that is not set.",
     )
     parser.add_argument(
         "--push-token",

@@ -1,0 +1,13 @@
+{
+  "host": "100.79.217.71",
+  "port": 22,
+  "username": "FuDan",
+  "key_filename": null,
+  "known_hosts_file": null,
+  "password_env": null,
+  "password_file": "ssh-password.local",
+  "remote_dir": "/F:/MaSM Group/TestResults",
+  "patterns": ["*.pdf"],
+  "stable_seconds": 2,
+  "timeout": 30
+}

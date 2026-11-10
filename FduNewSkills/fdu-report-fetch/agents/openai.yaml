@@ -1,0 +1,4 @@
+interface:
+  display_name: "FDU 化学试剂检测报告获取"
+  short_description: "通过 SSH 读取固定目录中的最新化学试剂检测报告，下载并记录来源与校验信息"
+  default_prompt: "使用 $fdu-report-fetch 从配置的检测服务器获取最新化学试剂检测报告，并提供本地报告和来源信息。"

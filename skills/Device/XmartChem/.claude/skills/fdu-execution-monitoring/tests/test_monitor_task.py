@@ -6,15 +6,19 @@ from __future__ import annotations
 import argparse
 import contextlib
 import io
+import os
 import sys
 import unittest
 from pathlib import Path
+from unittest import mock
 
 
 SCRIPTS_DIR = Path(__file__).resolve().parents[1] / "scripts"
 sys.path.insert(0, str(SCRIPTS_DIR))
 
 from monitor_task import (  # noqa: E402
+    BACKEND_BASE_ENV,
+    CONVERSATION_ID_ENV,
     DEFAULT_MAX_DURATION_SECONDS,
     DEFAULT_SCI_AGENT_API_BASE,
     execute,
@@ -85,6 +89,14 @@ def fake_alert_sender(**kwargs):
 
 
 class MonitorTaskTests(unittest.TestCase):
+    def setUp(self):
+        # The tests may run inside a FounDryClaw chat, whose environment sets the chat's defaults.
+        patcher = mock.patch.dict(os.environ)
+        patcher.start()
+        self.addCleanup(patcher.stop)
+        os.environ.pop(BACKEND_BASE_ENV, None)
+        os.environ.pop(CONVERSATION_ID_ENV, None)
+
     def test_default_max_duration_is_48_hours(self):
         parsed = parse_args(["--conversation-id", "conv-1"])
         self.assertEqual(parsed.max_duration, DEFAULT_MAX_DURATION_SECONDS)
@@ -95,6 +107,14 @@ class MonitorTaskTests(unittest.TestCase):
         with contextlib.redirect_stderr(io.StringIO()):
             with self.assertRaises(SystemExit):
                 parse_args([])
+
+    def test_foundryclaw_chat_supplies_backend_and_conversation(self):
+        os.environ[BACKEND_BASE_ENV] = "http://127.0.0.1:8801"
+        os.environ[CONVERSATION_ID_ENV] = "conv-chat"
+        parsed = parse_args([])
+        self.assertEqual(parsed.sci_agent_api_base, "http://127.0.0.1:8801")
+        self.assertEqual(parsed.conversation_id, "conv-chat")
+        self.assertEqual(parse_args(["--conversation-id", "conv-1"]).conversation_id, "conv-1")
 
     def test_start_context_resolves_task_and_conversation_before_polling(self):
         context = resolve_start_context(args(task_id=494, conversation_id="conv-fixed"))

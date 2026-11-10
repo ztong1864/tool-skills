@@ -209,6 +209,12 @@ Agent 可以执行的一步。它通常对应一个 skill 调用，也可以是�
 13. `fdu-device-run`: 创建设备任务，产出 `artifact:device-submit-result`。
 14. 可选 `fdu-execution-monitoring`: 在设备任务已创建后只读监控任务状态、通知、故障和告警，产出 `artifact:device-monitor-result`。
 
+设备实验完成、检测报告生成后，结果分析是另一个流程（`experiment_flows.yaml` 的 `fdu-report-analysis`）：
+
+1. `fdu-report-fetch`: 通过 SSH/SFTP 只读获取检测服务器上最新匹配的检测报告，记录来源、修改时间和 SHA-256。
+2. 确认报告对应的实验编号、样品、目标产物和投料记录。
+3. `fdu-spectrum-analysis`: 读取谱图和峰表，判断目标结构，计算产率、转化率和峰面积占比。
+
 ## 与执行型 skill 的边界
 
 本 skill 只负责查图谱和维护语义，不直接执行下游任务。
@@ -225,6 +231,8 @@ Agent 可以执行的一步。它通常对应一个 skill 调用，也可以是�
 - `fdu-unit-orchestration-json`: 生成设备协议 JSON。
 - `fdu-device-run`: 提交设备任务；默认只创建任务，启动执行必须单独确认。
 - `fdu-execution-monitoring`: 设备任务创建后的可选只读监控；可读取状态并推送异常提醒，不得启动、暂停、取消、恢复、重试、跳过、提交或修改设备任务。
+- `fdu-report-fetch`: 从检测服务器只读下载最新匹配的检测报告；不运行检测、不操作设备任务、不更改报告。
+- `fdu-spectrum-analysis`: 分析谱图、峰表和实验记录，给出结构判断和逐样品的产率等定量结果。
 
 ## CLI
 

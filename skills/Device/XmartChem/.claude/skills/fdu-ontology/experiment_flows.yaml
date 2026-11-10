@@ -2,6 +2,7 @@
 # Written from this Skill's graph: steps = agent-flow:fdu-experiment-to-device-task, reviews =
 # rule:risk-review-after-planning-output, pauses = the pausesAt checkpoints, stop "plan" = process:fdu-plan-generation.
 # Update this file when the AgentFlow, the checkpoints or the risk-review rule change.
+# fdu-report-analysis (report fetching and spectrum analysis after the device run) is not in the graph yet.
 schema: labontology.experiment-flow.v1
 flows:
   - id: fdu-experiment-to-device-task
@@ -34,3 +35,22 @@ flows:
         stop: device
       - skill: fdu-execution-monitoring
         optional: true
+      # After the device run: a plan of this flow always starts at its first step, so the results are handled by
+      # the flow fdu-report-analysis below; listed here only to show where they come in the experiment.
+      - skill: fdu-report-fetch
+        optional: true
+      - skill: fdu-spectrum-analysis
+        optional: true
+  - id: fdu-report-analysis
+    name: 复旦智能合成工作站：检测报告获取与谱图分析
+    description: 设备实验完成、检测报告生成后：从检测服务器只读获取最新匹配的报告，用户确认报告对应的实验和样品后，读取谱图、判断结构并计算产率、转化率等。
+    default_stop: analysis
+    stops:
+      report: 只要报告：下载并读取最新匹配的检测报告，不做谱图分析
+      analysis: 获取报告并完成谱图与产率分析（默认）
+    steps:
+      - skill: fdu-report-fetch
+        pause: 请确认这份报告对应的实验编号和样品，以及目标产物和投料记录，再做谱图分析
+        stop: report
+      - skill: fdu-spectrum-analysis
+        stop: analysis

@@ -1,4 +1,5 @@
 import argparse
+import csv
 import json
 import re
 from datetime import datetime
@@ -9,6 +10,15 @@ SKILL_DIR = Path(__file__).resolve().parents[1]
 ROOT = SKILL_DIR.parents[2]
 DEVICE_DIR = ROOT / ".agents" / "skills" / "device-operation-library" / "references" / "devices"
 ASSEMBLER_DIR = ROOT / ".agents" / "skills" / "script-assembler" / "instructions"
+
+# The spreading plates are the only containers that scale with the library size. The two protocols
+# name the role differently, so they are selected by role rather than by the 8Well_Plate_* name.
+SPREADING_ROLES = {"spreading plate", "kanamycin clone plate"}
+
+# A 96-well plate, filled column by column: A1, B1, ... H1, A2, ... Confirm this direction with the
+# iBioFoundry team before the plate map is used to lay out a primer plate.
+PLATE_ROWS = "ABCDEFGH"
+PLATE_COLUMNS = 12
 
 
 def load_json_yaml(path):
@@ -81,12 +91,90 @@ def apply_containers(block, containers):
     return "\n".join(header + rendered)
 
 
-def render_action(step):
+def scale_protocol(protocol, plates):
+    """Keep only the first `plates` spreading plates; return (protocol, dropped container names).
+
+    Dropping a container from `containers` is not enough: `status_groups` lists names explicitly,
+    and render_status would otherwise emit a `set` for a container that was never acquired.
+    """
+    if plates is None:
+        return protocol, frozenset()
+    kept = []
+    dropped = set()
+    available = 0
+    for container in protocol["containers"]:
+        if container.get("role") in SPREADING_ROLES:
+            available += 1
+            if available > plates:
+                dropped.add(container["name"])
+                continue
+        kept.append(container)
+    if plates > available:
+        raise ValueError(
+            f"--spreading-plates {plates} is more than the {available} spreading plates this protocol "
+            f"defines, and the Fluent deck only has nests 5-8 for them"
+        )
+    scaled = dict(protocol, containers=kept)
+    groups = scaled.get("status_groups")
+    if groups:
+        scaled["status_groups"] = [[name for name in group if name not in dropped] for group in groups]
+    return scaled, frozenset(dropped)
+
+
+def scale_comment(plates, dropped):
+    """What the generated script says about its own scale. The device-side Tecan methods are named
+    here on purpose: changing the container count does not change what they do on the instrument."""
+    return (
+        f"scale: this script acquires {plates} spreading plate(s) instead of {plates + len(dropped)}. "
+        f"The device methods it calls (ZFL_ZZW_Tubu_afterTranform_8well_plate, ZFL_AI_pickolo8well_1plate) "
+        f"are unchanged and may still assume the native four-plate layout - confirm with the iBioFoundry team"
+    )
+
+
+def plate_wells(count):
+    wells = [f"{row}{column}" for column in range(1, PLATE_COLUMNS + 1) for row in PLATE_ROWS]
+    if count > len(wells):
+        raise ValueError(f"{count} mutants do not fit on one {len(wells)}-well plate")
+    return wells[:count]
+
+
+def write_plate_map(path, mutants):
+    """well -> mutant name. The DSL itself is positional and cannot carry a mutation label, so this
+    file is how the operator knows which primer goes where. It deliberately does not assign spreading
+    compartments: that mapping lives inside the Tecan method, not here."""
+    with open(path, "w", encoding="utf-8", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["pcr_well", "mutant"])
+        writer.writerows(zip(plate_wells(len(mutants)), mutants))
+
+
+def load_mutants(args):
+    if args.mutants and args.mutants_file:
+        raise ValueError("give --mutants or --mutants-file, not both")
+    if args.mutants:
+        names = args.mutants.split(",")
+    elif args.mutants_file:
+        names = Path(args.mutants_file).read_text(encoding="utf-8").splitlines()
+    else:
+        return None
+    names = [name.strip() for name in names if name.strip()]
+    if not names:
+        raise ValueError("no mutant names were given")
+    quoted = [name for name in names if "'" in name]
+    if quoted:
+        raise ValueError(f"mutant names must not contain a single quote: {', '.join(quoted)}")
+    return names
+
+
+def render_action(step, dropped=frozenset()):
     reference_device = step.get("reference_device", step["device"])
     block = extract_action_template(reference_device, step["action"], step.get("variant"))
     for key, value in step.get("params", {}).items():
         block = replace_param(block, key, value)
-    return apply_containers(block, step.get("containers"))
+    containers = step.get("containers")
+    if containers is not None and dropped:
+        containers = [item for item in containers if item.split()[0] not in dropped]
+    return apply_containers(block, containers)
 
 
 def indent(text, levels=2):
@@ -94,20 +182,20 @@ def indent(text, levels=2):
     return "\n".join(prefix + line if line else "" for line in text.splitlines())
 
 
-def render_step(step_id, step_map, levels=2):
+def render_step(step_id, step_map, levels=2, dropped=frozenset()):
     step = step_map[step_id]
     if step["type"] == "action":
-        return indent(render_action(step), levels)
+        return indent(render_action(step, dropped), levels)
     raise ValueError(f"Unsupported step type: {step['type']}")
 
 
-def render_parallel(branches, step_map, levels=2):
+def render_parallel(branches, step_map, levels=2, dropped=frozenset()):
     lines = ["\t" * levels + "parallel", "\t" * levels + "{"]
     for idx, branch in enumerate(branches, start=1):
         lines.append("\t" * (levels + 1) + f"branch // {idx} of {len(branches)}")
         lines.append("\t" * (levels + 1) + "{")
         for child in branch:
-            lines.append(render_step(child, step_map, levels + 2))
+            lines.append(render_step(child, step_map, levels + 2, dropped))
             lines.append("")
         if lines[-1] == "":
             lines.pop()
@@ -116,11 +204,11 @@ def render_parallel(branches, step_map, levels=2):
     return "\n".join(lines)
 
 
-def render_flow_entry(entry, step_map, levels=2):
+def render_flow_entry(entry, step_map, levels=2, dropped=frozenset()):
     if isinstance(entry, str):
-        return render_step(entry, step_map, levels)
+        return render_step(entry, step_map, levels, dropped)
     if isinstance(entry, dict) and "parallel" in entry:
-        return render_parallel(entry["parallel"], step_map, levels)
+        return render_parallel(entry["parallel"], step_map, levels, dropped)
     raise ValueError(f"Unsupported protocol flow entry: {entry!r}")
 
 
@@ -187,7 +275,7 @@ def render_status_blocks(protocol):
     return [render_status(protocol["containers"], set(group)) for group in groups]
 
 
-def render_process(process_name, protocol, step_map):
+def render_process(process_name, protocol, step_map, dropped=frozenset(), note_extra=""):
     lines = [f"\tprocess [{process_name}]", "\t{"]
     lines.append(render_acquire(protocol["containers"]))
     lines.append("")
@@ -198,11 +286,14 @@ def render_process(process_name, protocol, step_map):
     if note:
         lines.append(f"\t\tcomment ('{note}') ;")
         lines.append("")
+    if note_extra:
+        lines.append(f"\t\tcomment ('{note_extra}') ;")
+        lines.append("")
     for stage in protocol["stages"]:
         lines.append(f"\t\tcomment ('{stage['comment']}') ;")
         lines.append("")
         for entry in stage.get("flow", stage.get("steps", [])):
-            lines.append(render_flow_entry(entry, step_map, 2))
+            lines.append(render_flow_entry(entry, step_map, 2, dropped))
             lines.append("")
     if lines[-1] == "":
         lines.pop()
@@ -227,7 +318,26 @@ def main():
     parser.add_argument("--request", default="生成质粒构建实验脚本")
     parser.add_argument("--output-dir", default=str(ROOT / "outputs"))
     parser.add_argument("--timestamp", default=None, help="Override timestamp as YYYYMMDD_HHMMSS for deterministic tests.")
+    parser.add_argument("--spreading-plates", type=int, default=None,
+                        help="How many 8-well spreading plates to acquire. Default: every plate the protocol "
+                             "defines (four). This is NOT derived from --mutant-count: how the 96 wells are "
+                             "pooled onto the plates lives inside the Tecan method, not in this skill.")
+    parser.add_argument("--mutant-count", type=int, default=None,
+                        help="How many mutants this round builds. Only cross-checks --mutants; it does not "
+                             "change the script.")
+    parser.add_argument("--mutants", default=None,
+                        help="Mutant names, comma separated, e.g. D2A,D2S,R61L. Writes a well-to-mutant CSV "
+                             "beside the script.")
+    parser.add_argument("--mutants-file", default=None, help="Mutant names, one per line (instead of --mutants).")
     args = parser.parse_args()
+
+    if args.spreading_plates is not None and args.spreading_plates < 1:
+        raise ValueError("--spreading-plates must be at least 1")
+    if args.mutant_count is not None and args.mutant_count < 1:
+        raise ValueError("--mutant-count must be at least 1")
+    mutants = load_mutants(args)
+    if args.mutant_count is not None and mutants is not None and len(mutants) != args.mutant_count:
+        raise ValueError(f"--mutant-count {args.mutant_count} does not match the {len(mutants)} names given")
 
     intents = load_json_yaml(SKILL_DIR / "references" / "intent-map.yaml")
     intent = match_intent(args.request, intents)
@@ -235,11 +345,19 @@ def main():
     output_dir = Path(args.output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
     for protocol, step_map in load_intent_protocols(intent):
+        protocol, dropped = scale_protocol(protocol, args.spreading_plates)
+        note_extra = scale_comment(args.spreading_plates, dropped) if dropped else ""
         process_name = f"foundry_{protocol['standard_name']}_{timestamp}"
-        script = render_full_script(render_process(process_name, protocol, step_map))
+        script = render_full_script(render_process(process_name, protocol, step_map, dropped, note_extra))
         output_path = output_dir / f"{process_name}.txt"
         output_path.write_text(script, encoding="utf-8")
         print(output_path)
+        if mutants:
+            map_path = output_dir / f"{process_name}_platemap.csv"
+            write_plate_map(map_path, mutants)
+            print(map_path)
+        if note_extra:
+            print(note_extra)
 
 
 if __name__ == "__main__":
