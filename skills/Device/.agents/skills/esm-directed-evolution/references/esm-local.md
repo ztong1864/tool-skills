@@ -1,63 +1,97 @@
-# Local ESM-2 models (fair-esm)
+# The scoring engine behind this skill
 
-## Source
+Scoring happens on the **ProEngAgent service**, not here. The script sends the wild-type sequence, the service
+scores every single substitution of the whole protein with ESM-2 650M in one pass over the wild type
+(zero-shot, wild-type marginals), and the script reads the positions that were asked for out of the scan it
+gets back. This skill holds no weights, no torch and no fair-esm, and the local ESM service that used to do
+this work has been retired (see "What changed" below).
 
-- Code: Meta's [facebookresearch/esm](https://github.com/facebookresearch/esm), package `fair-esm` 2.0.0,
-  MIT licence. The repository was archived on 2024-08-01 and still installs and runs with current PyTorch.
-- Weights: Meta's `https://dl.fbaipublicfiles.com/fair-esm/models/<name>.pt`, each with a small
-  `.../regression/<name>-contact-regression.pt` (only used for contact prediction; fair-esm warns without it).
-- The weights live with the ESM service (its own `models/`, or wherever `ESM_MODELS_DIR` points), fetched by
-  the service's `scripts/fetch_models.py` and checked against their sha256. Nothing on the FounDryClaw side
-  holds a model file or torch: this skill's script posts the sequence to the service and prints the answer.
-  It finds the service at `ESM_SERVICE_BASE_URL` (default `http://127.0.0.1:8789`, or `--base-url`), and the
-  service keeps the checkpoint in memory between calls, so a question costs about 0.05 s instead of a load.
+## The API this skill uses
 
-## ESM-2 models
+Address: `PROENGAGENT_BASE_URL` (an administrator's setting on the server, passed into the chat environment).
+Nothing here hardcodes a host.
 
-| `--model` | File | Layers | Parameters | File size |
-|---|---|---|---|---|
-| `esm2-8m` | `esm2_t6_8M_UR50D` | 6 | 8M | 0.03 GB |
-| `esm2-35m` | `esm2_t12_35M_UR50D` | 12 | 35M | 0.13 GB |
-| `esm2-150m` | `esm2_t30_150M_UR50D` | 30 | 150M | 0.59 GB |
-| `esm2-650m` | `esm2_t33_650M_UR50D` | 33 | 650M | 2.60 GB |
-| `esm2-3b` | `esm2_t36_3B_UR50D` | 36 | 3B | 5.68 GB |
-| `esm2-15b` | `esm2_t48_15B_UR50D` | 48 | 15B | large; not practical on a CPU |
+| Call | Purpose |
+|---|---|
+| `GET {base}/api/general/tools` | The catalog. `--health` reads it and reports the scoring tool's entry, which names the model. |
+| `POST {base}/api/general/tool/multievolve_api` | The scan. Body `{"inputs": {"sequence": "<wild type>"}}`. |
+| `GET {base}/api/upload/file?path=<file>` | Brings the scan CSV here. The answer's `downloads` entry carries this URL. |
+| `POST {base}/api/general/tool/read_file` | Fallback for the CSV when the download URL fails. |
 
-Which of them are installed is the service's business, not this skill's: `--list-models` says, and normally
-only esm2-35m is. ESM-1v (five 650M models, 7.8 GB each as downloaded) is not offered at all; the ESM authors
-expect ESM-2 to predict variant effects about as well as ESM-1v.
+The request model is `{"inputs": {...}}` — that is the service's own `ToolExecuteRequest`, confirmed against
+its `/openapi.json`, not a guess. The answer is `{"success", "output", "error", "downloads"}`; `output` carries
+`top_mutations` (the best 20 only), `n_mutations_scored`, `output_file`, `elapsed_sec` and `output_dir`. The
+top-20 list is not enough for a chosen position, which is why the script always fetches the full scan.
 
-## Vocabulary and token order
+Measured on 2026-11-12: a 21-residue sequence scored 399 substitutions in 6.7 s, a 454-residue enzyme 8,626 in
+6.5 s, round trip about 11 s in both cases — the cost is one forward pass, not one per position. Two identical
+calls returned identical scores to every decimal.
 
-Every ESM-2 model has the same 33-token vocabulary:
-`<cls> <pad> <eos> <unk> L A G V S E R T I D P K Q N F Y M H W C X B U Z O . - <null_1> <mask>`.
+## The scan file
 
-Default output order: `A C D E F G H I K L M N P Q R S T V W Y`, then `X B Z U O - . <unk> <mask>`.
-`--standard-only` keeps the first 20; `--tokens` sets any order (tokens not in the vocabulary are dropped).
+`me_zeroshot_scan.csv`, sorted best first:
 
-## How the numbers are computed
-
-1. The sequence is tokenized with a start token before and an end token after it; each `<mask>` is the model's
-   mask token.
-2. One forward pass gives logits over the 33 tokens at every position. At each masked position the logits go
-   through a softmax over the whole vocabulary, then the requested tokens are picked out
-   (`selected_probability_mass` is their sum; `--renormalize-selected` divides by it).
-3. Joint masking (default): all masks in one pass, each prediction sees the other positions masked.
-   Independent (`--positions ... --independent`): one pass per position with the others at their wild type,
-   the usual masked-marginal setup for single-mutant scoring.
-4. `log_ratio_vs_wild_type` = ln p(mutant) − ln p(wild type) at that masked position.
-
-## Adding a model (administrator)
-
-On the host that runs the ESM service:
-
-```bash
-python scripts/fetch_models.py --list            # the names it knows
-python scripts/fetch_models.py esm2-650m         # weights plus the small contact-regression file
+```
+mutations,model_1_logratio,average_model_logratio,model_1_pass,total_model_pass
+M40C,3.244958,3.244958,1,1
 ```
 
-The files land in the service's `models/` (`--models-dir` or `ESM_MODELS_DIR` to put them elsewhere), an
-interrupted download continues where it stopped, and the sha256 is checked for every model whose checksum is
-recorded in `esm_service/models.py`. The service loads a model on first use and keeps it in memory: memory
-needed is about the file size (650M: about 2.6 GB), and `ESM_SERVICE_MAX_LOADED_MODELS` decides how many stay
-loaded at once. Restarting the service is not needed for a newly added file, only for a changed setting.
+`mutations` is `<wild type><1-based position><substitution>`; the log-ratio columns are the score, in natural
+log units, of that substitution against the wild type at that site. The wild type itself is not a row: under
+wild-type marginals its own score is 0 by definition. A positive score means the model prefers the
+substitution. The script prefers `average_model_logratio` and falls back to `model_1_logratio`.
+
+## How this skill's numbers come out of that file
+
+For each position asked about, the script takes the 19 substitution scores, adds the wild type at 0, and then:
+
+- `log_ratio_vs_wild_type` is the score as reported;
+- `probabilities` is the softmax of those 20 values, so it is a distribution over the 20 standard amino acids
+  at that position — a ranking aid, not the model's absolute token probability;
+- `wild_type_rank` is 1 plus the number of substitutions scoring above 0;
+- `top_standard` is the best `--top` of the 20, the wild type included.
+
+It also checks that the scan's wild-type letter at each position matches the sequence that was sent, and stops
+if the numbering disagrees — that mismatch is the usual sign that a construct, a domain or a different isoform
+was scored.
+
+## Wild-type marginals are not masked marginals
+
+The retired local service masked each position and read the model's distribution at the mask. This service
+runs one pass over the unmasked wild type and reads logit differences. Both answer "which substitutions does
+ESM-2 prefer here", and both put the wild type first at a conserved site, but the numbers and even the order
+differ. Measured on the same 21-residue test sequence at position 7 (wild type `A`):
+
+| engine | order |
+|---|---|
+| ProEngAgent, ESM-2 650M, wild-type marginals | A7L −3.384, A7S −3.643, A7V −3.784, A7T −3.857 |
+| retired local service, esm2-150m, masked marginals | A7A 0.3465, A7V 0.1332, A7T 0.1086, A7L 0.1078 |
+
+So a number from an earlier round scored by the local service cannot be compared with a number from this
+engine, and a test baseline taken under one of them has to be re-measured under the other.
+
+## What changed when the local service was retired
+
+- `--model`, `--tokens` and `--models-dir` are refused with a message: the service picks the model.
+- `--independent`, `--standard-only` and `--renormalize-selected` are accepted and ignored, with a note in the
+  answer: this engine always scores every substitution in one wild-type pass over the 20 standard amino acids.
+- `<mask>` in a sequence is refused: scoring needs the wild-type residue, so the wild type plus `--positions`
+  is the way to ask.
+- The 1022-residue input limit is gone; a long protein simply produces a large scan.
+- `elapsed_s` is still the service's own timing, and `round_trip_s` is added.
+- The local service's model table, model files and `fetch_models.py` no longer apply to this skill. Its code
+  remains in the `ESM_service` repository if it is ever needed again.
+
+## Failure modes worth knowing
+
+- **Unreachable service.** The address is on the lab network and has been seen down (a 6 s timeout) and up
+  (0.1 s) on the same day. The script reports it and says an administrator is needed; it never falls back to
+  another engine, so a round is never half-scored by two different models.
+- **`reliability: experimental`.** The catalog marks the scoring tool that way. Say so when a decision rests
+  on it.
+- **Two names, one tool.** The catalog lists `multievolve_api` and `multi_evolve_api` with the same
+  description and behaviour. This skill uses `multievolve_api`.
+- **Other tools on that service.** Its catalog also offers stability predictors (`Pythia_Mut`,
+  `ddgun_predict`, `imutant2_predict`, `foldx_stability`, `rosetta_ddg`), folding and embedding
+  (`esm_fold`, `esm3_embed`) and document helpers. They are outside this skill: scoring substitutions is what
+  it does, and anything else needs its own skill.
