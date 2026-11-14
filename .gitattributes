@@ -1,2 +1,5 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Momentum DSL exports kept as provenance: leave the bytes exactly as the instrument wrote them
+**/source-scripts/*.txt -text

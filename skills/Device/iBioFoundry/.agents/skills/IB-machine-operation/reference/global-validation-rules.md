@@ -22,9 +22,20 @@
 
 ## Process 顺序
 
-- `Acquire` 必须位于容器相关流程的开头。
-- `set ... Status` 必须紧接 `Acquire`。
+- 每个容器必须在第一次被设备动作使用之前 `Acquire`，配平板也要 `Acquire`。
+- `set ... Status` 必须紧接其对应的 `Acquire` 块。
 - 任何设备动作都不得出现在 `Acquire` 与 `set ... Status` 之间。
+- 多个 `Acquire` 块、流程中段的 `set`、不带 `where` 的 `Acquire` 这三种写法，
+  以 `container-and-status-rules/references/acquire-and-status.md` 的"允许的三种例外"为准；
+  不在那三种情形内的，按上面三条校验。
+
+## 控制结构
+
+- `parallel` 的每个 `branch` 的 `// i of n` 必须与实际分支数一致。
+- 每个 `Acquire(变量)` 必须有同层的 `Release(变量)`。
+- 并行分支里争用同一台设备时必须加设备锁。
+- `AddWork` 的 `ProcessName` 不带目录前缀、不带时间戳，`SourceName` 等于 `E_` + `ProcessName`。
+- 锁变量只能用 `variables` 固定模板里已声明的那几个，不得新增。
 
 ## 适用范围
 

@@ -1,0 +1,245 @@
+{
+ "steps": {
+  "evo_load_tips_mca200_1_pcr_plate_2": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "Load",
+   "containers": [
+    "Tips_MCA200_1 in 'FreedomEVO:Nest 5' GetMyOwnContainer",
+    "02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 2' GetMyOwnContainer"
+   ]
+  },
+  "operator_manual_open_inheco_4_add_ep_well_and_1000li": {
+   "type": "action",
+   "device": "MomentumOperator",
+   "action": "Manual",
+   "params": {
+    "TaskName": "Open inheco 4 add EP well and 1000liha"
+   },
+   "containers": []
+  },
+  "evo_load_tips_liha200_1": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "Load",
+   "containers": [
+    "Tips_Liha200_1 in 'FreedomEVO:Nest 3' GetMyOwnContainer"
+   ]
+  },
+  "xpeel_unseal_pcr_plate": {
+   "type": "action",
+   "device": "XPeel",
+   "action": "Remove Seal",
+   "containers": [
+    "02_LYY_PCR_plate in 'XPeel:Nest' GetMyOwnContainer"
+   ]
+  },
+  "evo_load_pcr_plate": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "Load",
+   "containers": [
+    "02_LYY_PCR_plate in 'FreedomEVO:Nest 1' GetMyOwnContainer"
+   ]
+  },
+  "evo_run_car_pre_pcr": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "RunScript",
+   "params": {
+    "ScriptName": "CAR_Pre_PCR.esc",
+    "MaximumOperationTime": "00:40:00",
+    "Duration": "00:37:21"
+   },
+   "containers": [
+    "02_LYY_PCR_plate in 'FreedomEVO:Nest 1' GetMyOwnContainer",
+    "02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 2' GetMyOwnContainer",
+    "Tips_Liha200_1 in 'FreedomEVO:Nest 3' GetMyOwnContainer",
+    "Tips_MCA200_1 in 'FreedomEVO:Nest 5' ends 'FreedomEVO:Waste' GetMyOwnContainer"
+   ]
+  },
+  "evo_run_lyy_chenwanyi_inheco_off": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "RunScript",
+   "params": {
+    "ScriptName": "LYY_chenwanyi_inheco_off.esc",
+    "MaximumOperationTime": "00:20:00"
+   },
+   "containers": []
+  },
+  "alps_seal_pcr_plate": {
+   "type": "action",
+   "device": "ALPS3000",
+   "action": "Seal",
+   "containers": [
+    "02_LYY_PCR_plate in 'ALPS3000:Nest' GetMyOwnContainer"
+   ]
+  },
+  "cyt2c425_load_pcr_plate": {
+   "type": "action",
+   "device": "Cytomat_2C425",
+   "action": "Load",
+   "containers": [
+    "02_LYY_PCR_plate GetMyOwnContainer"
+   ]
+  },
+  "cyt24h_load_tips_liha200_1": {
+   "type": "action",
+   "device": "Cytomat_24H",
+   "action": "Load",
+   "containers": [
+    "Tips_Liha200_1 GetMyOwnContainer"
+   ]
+  },
+  "alps_seal_pcr_plate_2": {
+   "type": "action",
+   "device": "ALPS3000",
+   "action": "Seal",
+   "containers": [
+    "02_LYY_PCR_plate_2 in 'ALPS3000:Nest' GetMyOwnContainer"
+   ]
+  },
+  "cfl_spin_balance_pcr_pcr_plate_2": {
+   "type": "action",
+   "device": "CentrifugeLoader",
+   "action": "Spin",
+   "params": {
+    "VelocityPercent": "50",
+    "AccelerationPercent": "50",
+    "DecelerationPercent": "50",
+    "SpinDuration": "00:00:30",
+    "Duration": "00:00:31"
+   },
+   "containers": [
+    "Balance_PCR in 'CentrifugeLoader:Bucket 2' GetMyOwnContainer",
+    "02_LYY_PCR_plate_2 in 'CentrifugeLoader:Bucket 1' GetMyOwnContainer"
+   ]
+  },
+  "cyt24h_load_balance_pcr": {
+   "type": "action",
+   "device": "Cytomat_24H",
+   "action": "Load",
+   "containers": [
+    "Balance_PCR GetMyOwnContainer"
+   ]
+  },
+  "operator_manual_check_atc_1_lid_temp_105": {
+   "type": "action",
+   "device": "MomentumOperator",
+   "action": "Manual",
+   "params": {
+    "TaskName": "check ATC_1 lid temp=105!!!"
+   },
+   "containers": []
+  },
+  "atc1_load_pcr_plate_2": {
+   "type": "action",
+   "device": "ATC_1",
+   "reference_device": "ATC-family",
+   "variant": "ATC_1",
+   "action": "Load",
+   "containers": [
+    "02_LYY_PCR_plate_2 in 'ATC_1:Nest' GetMyOwnContainer"
+   ]
+  },
+  "atc1_run_car_pcr_reaction": {
+   "type": "action",
+   "device": "ATC_1",
+   "reference_device": "ATC-family",
+   "variant": "ATC_1",
+   "action": "Run Protocol",
+   "params": {
+    "ProtocolFolderPath": "C:\\\\Users\\\\DELL\\\\Desktop\\\\ATC PCR template\\\\CNPC_CAR",
+    "ProtocolName": "CAR_PCR_Reaction.xml",
+    "CustomCoverTemperature": "105",
+    "MaximumOperationDuration": "02:30:00",
+    "Duration": "00:18:14"
+   },
+   "containers": [
+    "02_LYY_PCR_plate_2 in 'ATC_1:Nest' GetMyOwnContainer"
+   ]
+  },
+  "cyt24h_load_pcr_plate_2": {
+   "type": "action",
+   "device": "Cytomat_24H",
+   "action": "Load",
+   "containers": [
+    "02_LYY_PCR_plate_2 GetMyOwnContainer"
+   ]
+  },
+  "xpeel_unseal_pcr_plate_2": {
+   "type": "action",
+   "device": "XPeel",
+   "action": "Remove Seal",
+   "containers": [
+    "02_LYY_PCR_plate_2 in 'XPeel:Nest' GetMyOwnContainer"
+   ]
+  },
+  "operator_manual_pcr_plate_add_dpni": {
+   "type": "action",
+   "device": "MomentumOperator",
+   "action": "Manual",
+   "params": {
+    "TaskName": "PCR plate add DpnI"
+   },
+   "containers": []
+  },
+  "evo_run_car_add_dpni": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "RunScript",
+   "params": {
+    "ScriptName": "CAR_add_DpnI.esc",
+    "MaximumOperationTime": "00:40:00",
+    "Duration": "00:09:08"
+   },
+   "containers": [
+    "Tips_Liha10_1 in 'FreedomEVO:Nest 3' ends 'FreedomEVO:Waste' GetMyOwnContainer",
+    "02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 1' GetMyOwnContainer"
+   ]
+  },
+  "cfl_load_balance_pcr_pcr_plate_2": {
+   "type": "action",
+   "device": "CentrifugeLoader",
+   "action": "Load",
+   "containers": [
+    "Balance_PCR in 'CentrifugeLoader:Bucket 2' GetMyOwnContainer",
+    "02_LYY_PCR_plate_2 in 'CentrifugeLoader:Bucket 1' GetMyOwnContainer"
+   ]
+  },
+  "cfl_spin_balance_pcr_pcr_plate_2_2": {
+   "type": "action",
+   "device": "CentrifugeLoader",
+   "action": "Spin",
+   "params": {
+    "VelocityPercent": "50",
+    "AccelerationPercent": "50",
+    "DecelerationPercent": "50",
+    "SpinDuration": "00:00:10",
+    "Duration": "00:00:31"
+   },
+   "containers": [
+    "Balance_PCR in 'CentrifugeLoader:Bucket 2' GetMyOwnContainer",
+    "02_LYY_PCR_plate_2 in 'CentrifugeLoader:Bucket 1' GetMyOwnContainer"
+   ]
+  },
+  "atc1_run_car_dpni_reaction": {
+   "type": "action",
+   "device": "ATC_1",
+   "reference_device": "ATC-family",
+   "variant": "ATC_1",
+   "action": "Run Protocol",
+   "params": {
+    "ProtocolFolderPath": "C:\\\\Users\\\\DELL\\\\Desktop\\\\ATC PCR template\\\\CNPC_CAR",
+    "ProtocolName": "CAR_DpnI_Reaction.xml",
+    "CustomCoverTemperature": "105",
+    "MaximumOperationDuration": "02:30:00",
+    "Duration": "00:32:01"
+   },
+   "containers": [
+    "02_LYY_PCR_plate_2 in 'ATC_1:Nest' GetMyOwnContainer"
+   ]
+  }
+ }
+}

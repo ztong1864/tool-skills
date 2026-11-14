@@ -32,6 +32,11 @@ Use this skill as the single entry point for device action templates.
 - For device actions, preserve the exact lid annotation from the selected device template or workflow rule; an action may use `'Lidded'`, `'Unlidded'` with `HoldLid`, or no lid annotation.
 - If a device template contains a container name that conflicts with `container-and-status-rules/references/container-catalog.md`, use the catalog-approved name and treat the template entry as a reference defect to be fixed.
 - Do not change parameters unless the reference explicitly marks them editable.
+- `Duration` is the exception: it is the measured wall-clock time of that action on this
+  machine, so it is always taken from the experiment mapping rather than from the template.
+  For `Incubate`, `Spin`, `Run` and `Run Protocol` the duration *is* part of the protocol
+  (`08:00:01` of shaking is the experiment, not a template detail). Where the experiment
+  mapping says nothing, keep the template value.
 - In device reference files, concrete example values listed under the editable section are placeholders from the sample block, not a restriction that only those exact literal values may be used.
 - When a device family is merged into one file, select the exact variant from that family file instead of creating a new device-specific template.
 - If a flow uses both `CentrifugeLoader` and `Cytomat_24H`, read the corresponding workflow rule in addition to the individual device templates.

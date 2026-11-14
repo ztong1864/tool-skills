@@ -1,0 +1,2275 @@
+{
+ "version": 1,
+ "fetched_at": "2026-11-13T06:41:35+00:00",
+ "source": "http://10.98.35.223:7861/api/general/tools",
+ "n_tools": 110,
+ "note": "Snapshot read by tool.py. `probe` is this repo's own call-it-and-see verdict, not a field the service publishes; absent means never probed.",
+ "tools": [
+  {
+   "name": "AAComposition",
+   "description": "Amino-acid composition.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "properties": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_properties",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "Ala (A)   5  10.9%\nArg (R)   2   4.3%\nAsn (N)   3   6.5%\nAsp (D)   1   2.2%\nCys (C)   6  13.0%\nGln (Q)   0   0.0%\nGlu (E)   1   2.2%\nGly (G)   4   8.7%\nHis (H) "
+   }
+  },
+  {
+   "name": "AAFormula",
+   "description": "Molecular formula.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "properties": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_properties",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "Carbon (C) 202\nHydrogen (H) 321\nNitrogen (N)  55\nOxygen (O)  64\nSulfur (S)   6\nC202H321N55O64S6"
+   }
+  },
+  {
+   "name": "alphafold_api",
+   "description": "External API wrapper (stub quality varies).",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "pdb_file": "return_value"
+   },
+   "requirements": [
+    "api_key",
+    "internet"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "beta",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "This tool is not deployed on the server. Reason: ColabFold/AlphaFold is not installed in the serving env; use esm_fold for structure prediction."
+   }
+  },
+  {
+   "name": "arpeggio_contacts",
+   "description": "Arpeggio atomic contact analysis.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "contacts": "output_dir"
+   },
+   "requirements": [
+    "arpeggio"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "protein_protein_interaction",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "This tool is not deployed on the server. Reason: The installed 'arpeggio' package is a PEG parser library, not the protein-contact tool; installing the latter would clobber the parser lib. Use plip_analyze instead."
+   }
+  },
+  {
+   "name": "biopython_pdb_info",
+   "description": "Biopython PDB structure information extraction.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "structure_stats": "n_atoms"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "structure_analysis",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"chains\": [\"A\"], \"n_residues\": 46, \"n_atoms\": 327}"
+   }
+  },
+  {
+   "name": "biopython_sequence_features",
+   "description": "Biopython protein sequence feature calculation.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "properties": "molecular_weight"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "properties",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"molecular_weight\": 4736.429800000002, \"aromaticity\": 0.06521739130434782, \"instability_index\": 31.886956521739137, \"isoelectric_point\": 5.725"
+   }
+  },
+  {
+   "name": "Blast",
+   "description": "NCBI BLAST via BioPython.",
+   "inputs": {
+    "sequence": "sequence",
+    "blastmd": "blastmd",
+    "db": "db"
+   },
+   "outputs": {
+    "alignment_hits": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_alignment",
+   "has_wrapper": true
+  },
+  {
+   "name": "blastp_search",
+   "description": "BLASTP search via NCBI API.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "alignment_hits": "hits"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_search",
+   "has_wrapper": true,
+   "probe": {
+    "state": "unreachable",
+    "checked": "2026-11-13",
+    "detail": "TimeoutError: timed out"
+   }
+  },
+  {
+   "name": "boltz2",
+   "description": "Requires boltz conda env + GPU. Can handle ligands.",
+   "inputs": {
+    "sequence": "sequence",
+    "ligand": "ligand"
+   },
+   "outputs": {
+    "pdb_file": "boltz2_output/*.pdb"
+   },
+   "requirements": [
+    "conda:boltz",
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "beta",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "carp_embed",
+   "description": "CARP (Microsoft) protein language model embeddings.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "embedding": "embedding"
+   },
+   "requirements": [
+    "carp"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "sequence_to_embedding",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "This tool is not deployed on the server. Reason: CARP model weights are not downloaded (Tools/protein-sequence-models not set up)."
+   }
+  },
+  {
+   "name": "cdhit",
+   "description": "Local cd-hit binary in Tools/cdhit-4.8.1/",
+   "inputs": {
+    "sequence": "fasta"
+   },
+   "outputs": {
+    "redundancy_clusters": "return_value"
+   },
+   "requirements": [],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequences_to_redundancy_clusters",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "CD-HIT clustering done: 1 sequences -> 1 representative sequences (identity 0.8). Result saved in ./workspace/results/cdhit/input-out.fasta"
+   }
+  },
+  {
+   "name": "chai1_predict",
+   "description": "Chai-1 structure prediction by Chai Discovery.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "pdb_file": "pdb_files"
+   },
+   "requirements": [
+    "chai1",
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "beta",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "chainPDB",
+   "description": "Extracts chain A only.",
+   "inputs": {
+    "pdb_file": "pdb"
+   },
+   "outputs": {
+    "sequence": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "extract_sequence_from_pdb",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "TTCCPSIVARSNFNVCRLPGTPEAICATYTGCIIIPGATCPGDYAN"
+   }
+  },
+  {
+   "name": "clean_pdb",
+   "description": "Removes waters / ligands.",
+   "inputs": {
+    "pdb_content": "pdb_content"
+   },
+   "outputs": {
+    "pdb_file": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "refine_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "coilcoil",
+   "description": "Generates PNG.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "coiled_coil": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_coiled_coil",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "Successfully predicted the coiled-coil propensity, and the result has been saved in workspace/outputs/images/coli20261113143220.png"
+   }
+  },
+  {
+   "name": "create_docx_document",
+   "description": "Render markdown into a Word .docx report (native headings/tables/lists). Returns docx_path.",
+   "inputs": {
+    "content_markdown": "content_markdown",
+    "title": "title"
+   },
+   "outputs": {
+    "docx_file": "docx_path"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "render_docx_document",
+   "has_wrapper": true
+  },
+  {
+   "name": "create_pptx_deck",
+   "description": "Create a PowerPoint .pptx deck from structured slides [{title, bullets}]. Returns pptx_path.",
+   "inputs": {
+    "slides": "slides",
+    "title": "title"
+   },
+   "outputs": {
+    "pptx_file": "pptx_path"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "render_pptx_deck",
+   "has_wrapper": true
+  },
+  {
+   "name": "create_xlsx_workbook",
+   "description": "Create an Excel .xlsx workbook from column headers + data rows. Returns xlsx_path.",
+   "inputs": {
+    "columns": "columns",
+    "rows": "rows",
+    "title": "title"
+   },
+   "outputs": {
+    "xlsx_file": "xlsx_path"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "render_xlsx_workbook",
+   "has_wrapper": true
+  },
+  {
+   "name": "dali_search",
+   "description": "DALI structure alignment server.",
+   "inputs": {
+    "pdb_id": "pdb_id"
+   },
+   "outputs": {
+    "alignment_hits": "url"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "structure_alignment",
+   "has_wrapper": true
+  },
+  {
+   "name": "ddgun_predict",
+   "description": "DDGun: prediction of mutation free energy changes.",
+   "inputs": {
+    "wildtype_pdb": "wildtype_pdb",
+    "mutation": "mutation"
+   },
+   "outputs": {
+    "ddg": "ddg"
+   },
+   "requirements": [
+    "ddgun"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "beta",
+   "implements": "mutation_scoring",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "DDGun requires a precomputed PSI-BLAST profile and solvent-accessibility file; no pipeline is set up."
+   }
+  },
+  {
+   "name": "deepsol_predict",
+   "description": "DeepSol solubility predictor.",
+   "inputs": {
+    "sequence": "fasta_file"
+   },
+   "outputs": {
+    "solubility": "return_value"
+   },
+   "requirements": [],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "sequence_to_solubility",
+   "has_wrapper": true,
+   "probe": {
+    "state": "error",
+    "checked": "2026-11-13",
+    "detail": "deepsol_predict() got an unexpected keyword argument 'fasta_file'"
+   }
+  },
+  {
+   "name": "diffab_api",
+   "description": "Deployed: DiffAb diffusion CDR design (mlde3 env + _deps; structure & sequence modes). Inputs merged by chain, no physical docking (HDOCK skipped).",
+   "inputs": {
+    "antibody_pdb": "antibody_pdb",
+    "antigen_pdb": "antigen_pdb"
+   },
+   "outputs": {
+    "complex_structure": "return_value"
+   },
+   "requirements": [
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "antibody_antigen_to_complex",
+   "has_wrapper": true
+  },
+  {
+   "name": "diffab_codesign",
+   "description": "Joint CDR sequence+structure co-design (official DiffAb codesign checkpoints).",
+   "inputs": {
+    "antibody_pdb": "antibody_pdb",
+    "antigen_pdb": "antigen_pdb",
+    "mode": "mode",
+    "num_samples": "num_samples"
+   },
+   "outputs": {
+    "pdb_files": "designed_files"
+   },
+   "requirements": [
+    "conda:diffab"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "beta",
+   "implements": "antibody_antigen_to_cdr_codesign",
+   "has_wrapper": true
+  },
+  {
+   "name": "diffab_sequence",
+   "description": "Redesign CDR sequences on the native backbone (diffab_fixbb.pt).",
+   "inputs": {
+    "antibody_pdb": "antibody_pdb",
+    "antigen_pdb": "antigen_pdb",
+    "num_samples": "num_samples"
+   },
+   "outputs": {
+    "pdb_files": "output_files"
+   },
+   "requirements": [
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "antibody_antigen_to_cdr_sequence",
+   "has_wrapper": true
+  },
+  {
+   "name": "diffab_structure",
+   "description": "Resample CDR backbone conformations with native sequence (diffab_model.pt).",
+   "inputs": {
+    "antibody_pdb": "antibody_pdb",
+    "antigen_pdb": "antigen_pdb",
+    "num_samples": "num_samples"
+   },
+   "outputs": {
+    "pdb_files": "output_files"
+   },
+   "requirements": [
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "antibody_antigen_to_cdr_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "diffdock_api",
+   "description": "Deployed: DiffDock diffusion blind docking (paper v1.0 weights, _deps cu121 shadow env).",
+   "inputs": {
+    "receptor_pdb": "protein_pdb",
+    "ligand": "ligand_smiles"
+   },
+   "outputs": {
+    "docking_pose": "return_value"
+   },
+   "requirements": [
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "structure_to_docking_pose",
+   "has_wrapper": true
+  },
+  {
+   "name": "dssp_assign",
+   "description": "DSSP secondary structure assignment.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "secondary_structure": "dssp_output"
+   },
+   "requirements": [
+    "dssp"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "secondary_structure_prediction",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"method\": \"pydssp (backbone N/CA/C/O based, H/E/C 3-state)\", \"n_residues\": 46, \"ss_string\": \"-EE---HHHHHHHHHHHH----HHHHHHHH--EE------------\", "
+   }
+  },
+  {
+   "name": "ECPred",
+   "description": "Java-based EC prediction. Needs ECPred models.",
+   "inputs": {
+    "sequence": "fasta"
+   },
+   "outputs": {
+    "enzyme_commission": "return_value"
+   },
+   "requirements": [
+    "java"
+   ],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_enzyme_commission",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "Protein ID\tEC Number\tConfidence Score(max 1.0)\nquery\tnon Enzyme\t0.9\n"
+   }
+  },
+  {
+   "name": "equibind",
+   "description": "Deep-learning docking.",
+   "inputs": {
+    "receptor_pdb": "protein_file",
+    "ligand": "ligand_file"
+   },
+   "outputs": {
+    "docking_pose": "return_value"
+   },
+   "requirements": [
+    "conda:equibind",
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "medium",
+   "reliability": "beta",
+   "implements": "structure_to_docking_pose",
+   "has_wrapper": true
+  },
+  {
+   "name": "equidock",
+   "description": "Protein-protein docking.",
+   "inputs": {
+    "receptor_pdb": "receptor_pdb",
+    "ligand": "ligand_pdb"
+   },
+   "outputs": {
+    "docking_pose": "return_value"
+   },
+   "requirements": [
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "medium",
+   "reliability": "beta",
+   "implements": "structure_to_docking_pose",
+   "has_wrapper": true
+  },
+  {
+   "name": "esm3_embed",
+   "description": "ESM3 embeddings. Falls back to ESM-2 if ESM3 unavailable.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "embedding": "sequence_embedding"
+   },
+   "requirements": [
+    "gpu",
+    "esm3"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "beta",
+   "implements": "sequence_to_embedding",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"model_layer\": 36, \"embedding_shape\": [46, 2560], \"sequence_embedding\": [0.025905700400471687, -0.00842825137078762, -0.040829457342624664, -0"
+   }
+  },
+  {
+   "name": "esm_fold",
+   "description": "ESM Atlas API. Writes to fixed path.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "pdb_file": "outputs/structures/protein.pdb"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "Successfully predicted the protein structure, and the result has been saved in workspace/outputs/structures/protein.pdb"
+   }
+  },
+  {
+   "name": "esm_zeroshot",
+   "description": "Requires esm conda env. Returns CSV text.",
+   "inputs": {
+    "sequence": "sequence",
+    "dms_input": "dms_input",
+    "dms_output": "dms_output"
+   },
+   "outputs": {
+    "variant_effects": "return_value"
+   },
+   "requirements": [
+    "conda:esm"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_variant_effects",
+   "has_wrapper": true
+  },
+  {
+   "name": "evmutation_score",
+   "description": "EVmutation. Stub.",
+   "inputs": {
+    "sequence": "fasta_file"
+   },
+   "outputs": {
+    "variant_effects": "return_value"
+   },
+   "requirements": [],
+   "speed": "slow",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "sequence_to_variant_effects",
+   "has_wrapper": true
+  },
+  {
+   "name": "evoformer_predict",
+   "description": "Evoformer via AlphaFold2 architecture.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "pdb_file": "output"
+   },
+   "requirements": [
+    "alphafold",
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "filterpro",
+   "description": "Sub-cellular localization predictor.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "localization": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_localization",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "TTCCPSIVARSNFNVCRLPGTPEAICATYTGCIIIPGATCPGDYAN"
+   }
+  },
+  {
+   "name": "foldseek",
+   "description": "Structure-based search via Foldseek server.",
+   "inputs": {
+    "pdb_file": "pdb"
+   },
+   "outputs": {
+    "alignment_hits": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_alignment",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"n_hits\": 0, \"top_hits\": []}"
+   }
+  },
+  {
+   "name": "foldx_api",
+   "description": "Local FoldX 5 Stability; total + per-term energies from <name>_0_ST.fxout. Verified: 6zcw total energy ~147.74 kcal/mol.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "mutation_scores": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "structure_to_mutation_scores",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"total_energy_kcal_mol\": 9.35708, \"energy_terms\": {\"total energy\": 9.35708, \"Backbone Hbond\": -25.6939, \"Sidechain Hbond\": -5.53009, \"Van der "
+   }
+  },
+  {
+   "name": "foldx_stability",
+   "description": "Local FoldX 5 BuildModel. Verified: 6zcw LA35A ddG ~1.70 kcal/mol.",
+   "inputs": {
+    "pdb_file": "pdb_file",
+    "mutations": "mutations"
+   },
+   "outputs": {
+    "stability_score": "output_dir"
+   },
+   "requirements": [],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "stability_prediction",
+   "has_wrapper": true
+  },
+  {
+   "name": "fpocket_run",
+   "description": "FPocket ligand binding pocket detection.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "pockets": "output_dir"
+   },
+   "requirements": [
+    "fpocket"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "pocket_detection",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"output_dir\": \"fpocket_output\", \"stdout\": \"***** POCKET HUNTING BEGINS ***** \\n***** POCKET HUNTING ENDS ***** \\n\"}"
+   }
+  },
+  {
+   "name": "freesasa_run",
+   "description": "FreeSASA solvent accessible surface area calculation.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "sasa": "total_area"
+   },
+   "requirements": [
+    "freesasa"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "properties",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"total_area\": 2999.324990730335, \"n_atoms\": 327}"
+   }
+  },
+  {
+   "name": "get_pdb",
+   "description": "Downloads from RCSB. Returns string path message.",
+   "inputs": {
+    "pdb_id": "pdbID"
+   },
+   "outputs": {
+    "pdb_file": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "fetch_pdb",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13"
+   }
+  },
+  {
+   "name": "gremlin_potts",
+   "description": "GREMLIN Potts model inference from MSA.",
+   "inputs": {
+    "alignment_file": "alignment_file"
+   },
+   "outputs": {
+    "potts_model": "output_prefix"
+   },
+   "requirements": [
+    "gremlin"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "msa_to_potts",
+   "has_wrapper": true
+  },
+  {
+   "name": "gromacs_api",
+   "description": "Stub. Can take hours.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "md_trajectory": "return_value"
+   },
+   "requirements": [
+    "gromacs_installed"
+   ],
+   "speed": "very_slow",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "structure_to_md_trajectory",
+   "has_wrapper": true
+  },
+  {
+   "name": "gromacs_minimize",
+   "description": "GROMACS energy minimization.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "refined_structure": "output_dir"
+   },
+   "requirements": [
+    "gromacs"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "structure_refinement",
+   "has_wrapper": true
+  },
+  {
+   "name": "hdock_api",
+   "description": "Web API wrapper.",
+   "inputs": {
+    "receptor_pdb": "receptor_pdb",
+    "ligand": "ligand_pdb"
+   },
+   "outputs": {
+    "docking_pose": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "structure_to_docking_pose",
+   "has_wrapper": true
+  },
+  {
+   "name": "hmmer_search",
+   "description": "HMMER hidden Markov model search.",
+   "inputs": {
+    "query_fasta": "query_fasta",
+    "hmm_db": "hmm_db"
+   },
+   "outputs": {
+    "alignment_hits": "tblout"
+   },
+   "requirements": [
+    "hmmer"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "hmm_search",
+   "has_wrapper": true
+  },
+  {
+   "name": "Hydrophathicity",
+   "description": "Generates GIF plot.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "properties": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_hydropathy",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "Successfully calculated the hydrophobicity, and the result has been saved in workspace/outputs/images/pscale2605928.gif"
+   }
+  },
+  {
+   "name": "imutant2_predict",
+   "description": "I-Mutant2.0 web server for stability prediction.",
+   "inputs": {
+    "sequence": "sequence",
+    "mutation": "mutation"
+   },
+   "outputs": {
+    "ddg": "result"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "mutation_scoring",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "I-Mutant2.0 web server was rebuilt as a JS app; the old CGI endpoint no longer returns results."
+   }
+  },
+  {
+   "name": "interpro_scan",
+   "description": "InterProScan domain and family annotation via EBI API.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "function_annotation": "result"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "function_annotation",
+   "has_wrapper": true,
+   "probe": {
+    "state": "unreachable",
+    "checked": "2026-11-13",
+    "detail": "TimeoutError: timed out"
+   }
+  },
+  {
+   "name": "mafft_align",
+   "description": "MAFFT multiple sequence alignment.",
+   "inputs": {
+    "sequences": "sequences"
+   },
+   "outputs": {
+    "alignment": "output_file"
+   },
+   "requirements": [
+    "mafft"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_alignment",
+   "has_wrapper": true
+  },
+  {
+   "name": "mdtraj_analyze",
+   "description": "MDTraj molecular dynamics trajectory analysis.",
+   "inputs": {
+    "trajectory_file": "trajectory_file",
+    "topology_file": "topology_file"
+   },
+   "outputs": {
+    "md_stats": "rmsd_mean"
+   },
+   "requirements": [
+    "mdtraj"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "md_trajectory_analysis",
+   "has_wrapper": true
+  },
+  {
+   "name": "mmseqs_cluster",
+   "description": "MMseqs2 sequence clustering.",
+   "inputs": {
+    "input_fasta": "input_fasta"
+   },
+   "outputs": {
+    "redundancy_clusters": "cluster_tsv"
+   },
+   "requirements": [
+    "mmseqs2"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_clustering",
+   "has_wrapper": true
+  },
+  {
+   "name": "mmseqs_search",
+   "description": "MMseqs2 ultra-fast sequence search.",
+   "inputs": {
+    "query_fasta": "query_fasta",
+    "target_db": "target_db"
+   },
+   "outputs": {
+    "alignment_hits": "result_file"
+   },
+   "requirements": [
+    "mmseqs2"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_search",
+   "has_wrapper": true
+  },
+  {
+   "name": "modeller_api",
+   "description": "Local MODELLER in dedicated conda env /opt/anaconda3/envs/modeller (python path via MODELLER_PYTHON env var); single-chain templates recommended.",
+   "inputs": {
+    "sequence": "sequence",
+    "template_pdb": "template_pdb"
+   },
+   "outputs": {
+    "pdb_file": "pdb_file"
+   },
+   "requirements": [
+    "template"
+   ],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "molprobity_api",
+   "description": "Local MolProbity full validation (cctbx build; clashscore/Ramachandran/rotamers/MP score). Verified: 1PGA -> MP score 2.11.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "structure_quality": "return_value"
+   },
+   "requirements": [],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "beta",
+   "implements": "structure_to_quality",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"method\": \"MolProbity clashscore (reduce -FLIP + probe/cluster clashlist)\", \"clashscore\": 0.0, \"clashscore_blt40\": 0.0, \"atoms_with_hydrogens\""
+   }
+  },
+  {
+   "name": "multi_evolve_api",
+   "description": "Deployed: ESM zero-shot mutation scoring (wt-marginals, ESM2-650M); returns top-K mutations and full scan CSV.",
+   "inputs": {
+    "sequence": "fasta_file"
+   },
+   "outputs": {
+    "designed_sequences": "return_value"
+   },
+   "requirements": [],
+   "speed": "slow",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "sequence_to_evolved_variants",
+   "has_wrapper": true
+  },
+  {
+   "name": "multievolve_api",
+   "description": "Deployed: ESM zero-shot mutation scoring (wt-marginals, ESM2-650M); returns top-K mutations and full scan CSV.",
+   "inputs": {
+    "sequence": "fasta_file"
+   },
+   "outputs": {
+    "designed_sequences": "return_value"
+   },
+   "requirements": [],
+   "speed": "slow",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "sequence_to_evolved_variants",
+   "has_wrapper": true
+  },
+  {
+   "name": "muscle_align",
+   "description": "MUSCLE multiple sequence alignment.",
+   "inputs": {
+    "sequences": "sequences"
+   },
+   "outputs": {
+    "alignment": "output_file"
+   },
+   "requirements": [
+    "muscle"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_alignment",
+   "has_wrapper": true
+  },
+  {
+   "name": "mutcompute_api",
+   "description": "MutCompute features.",
+   "inputs": {
+    "sequence": "fasta_file"
+   },
+   "outputs": {
+    "mutation_scores": "return_value"
+   },
+   "requirements": [],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "structure_to_mutation_scores",
+   "has_wrapper": true,
+   "probe": {
+    "state": "error",
+    "checked": "2026-11-13",
+    "detail": "mutcompute_api() got an unexpected keyword argument 'fasta_file'"
+   }
+  },
+  {
+   "name": "NLStradamus",
+   "description": "Nuclear localization signal.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "localization": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_localization",
+   "has_wrapper": true,
+   "probe": {
+    "state": "empty",
+    "checked": "2026-11-13",
+    "detail": "success=true but output is null"
+   }
+  },
+  {
+   "name": "omegafold_predict",
+   "description": "OmegaFold structure prediction.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "pdb_file": "pdb_files"
+   },
+   "requirements": [
+    "omegafold",
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "beta",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "parse_pdf_document",
+   "description": "Extract full text from a PDF file (pypdf). Returns pages + text (capped).",
+   "inputs": {
+    "pdf_file": "pdf_path"
+   },
+   "outputs": {
+    "document_text": "text"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "parse_pdf_text",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13"
+   }
+  },
+  {
+   "name": "pdb_to_sequence",
+   "description": "Fetch protein sequence(s) for a PDB ID from RCSB in one step (all chains; pass chain to select one).",
+   "inputs": {
+    "pdb_id": "pdb_id",
+    "chain": "chain"
+   },
+   "outputs": {
+    "sequence": "sequence",
+    "chains": "chains"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "pdb_id_to_sequence",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13"
+   }
+  },
+  {
+   "name": "pdbfixer_fix",
+   "description": "PDBFixer: add missing atoms, residues, hydrogens.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "fixed_structure": "output_file"
+   },
+   "requirements": [
+    "pdbfixer"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "structure_repair",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"output_file\": \"workspace/uploads/1crn_fixed.pdb\"}"
+   }
+  },
+  {
+   "name": "pecc",
+   "description": "Peroxisomal targeting signal.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "localization": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_localization",
+   "has_wrapper": true,
+   "probe": {
+    "state": "empty",
+    "checked": "2026-11-13",
+    "detail": "success=true but output is null"
+   }
+  },
+  {
+   "name": "pepfold_predict",
+   "description": "PEP-FOLD3 peptide structure prediction server.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "pdb_file": "url"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "slow",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "PeptideMass",
+   "description": "Enzymatic digest mass calc.",
+   "inputs": {
+    "sequence": "sequence",
+    "enzyme": "enzyme",
+    "mplus": "mplus"
+   },
+   "outputs": {
+    "properties": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_peptide_mass",
+   "has_wrapper": true
+  },
+  {
+   "name": "plip_analyze",
+   "description": "PLIP protein-ligand interaction analysis.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "interactions": "stdout"
+   },
+   "requirements": [
+    "plip"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "protein_ligand_interaction",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"stdout\": \"\", \"stderr\": \"2026-11-13 14:35:14,690 [INFO] [plipcmd.py:151] plip: Protein-Ligand Interaction Profiler (PLIP) 3.0.0\\n2026-11-13 14"
+   }
+  },
+  {
+   "name": "Prank",
+   "description": "Pocket prediction.",
+   "inputs": {
+    "pdb_file": "pdb"
+   },
+   "outputs": {
+    "properties": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "structure_to_surface_pockets",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "pocket1\tprobability: 0.066\t['A_10', 'A_13', 'A_14', 'A_17', 'A_2', 'A_23']\npocket2\tprobability: 0.020\t['A_15', 'A_16', 'A_19', 'A_21', 'A_25', 'A_29']\n"
+   }
+  },
+  {
+   "name": "Prankweb_API",
+   "description": "Web API version of Prank.",
+   "inputs": {
+    "pdb_file": "pdb"
+   },
+   "outputs": {
+    "properties": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "beta",
+   "implements": "structure_to_surface_pockets",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "pocket1\tprobability: 0.066\t['A_10', 'A_13', 'A_14', 'A_17', 'A_2', 'A_23']\npocket2\tprobability: 0.020\t['A_15', 'A_16', 'A_19', 'A_21', 'A_25', 'A_29']\n"
+   }
+  },
+  {
+   "name": "Prekcatkm",
+   "description": "UniKP + CataPro pipeline. Writes CSV.",
+   "inputs": {
+    "sequence": "fasta",
+    "smiles": "Smiles"
+   },
+   "outputs": {
+    "kinetic_params": "return_value"
+   },
+   "requirements": [
+    "models:unikp",
+    "gpu"
+   ],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_kinetics",
+   "has_wrapper": true
+  },
+  {
+   "name": "prodigy_predict",
+   "description": "PRODIGY binding affinity prediction.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "binding_affinity": "stdout"
+   },
+   "requirements": [
+    "prodigy"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "binding_affinity_prediction",
+   "has_wrapper": true,
+   "probe": {
+    "state": "failed",
+    "checked": "2026-11-13",
+    "detail": "None"
+   }
+  },
+  {
+   "name": "prody_analyze",
+   "description": "ProDy protein structure analysis.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "structure_stats": "n_atoms"
+   },
+   "requirements": [
+    "prody"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "structure_analysis",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"n_atoms\": 327, \"n_residues\": 46, \"n_chains\": 1, \"ca_coords\": [[16.967, 12.784, 4.338], [13.856, 11.469, 6.066], [13.66, 10.707, 9.787], [10.6"
+   }
+  },
+  {
+   "name": "propka_run",
+   "description": "PROPKA pKa prediction.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "properties": "stdout"
+   },
+   "requirements": [
+    "propka"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "properties",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"stdout\": \"\", \"stderr\": \"\"}"
+   }
+  },
+  {
+   "name": "prorefiner_api",
+   "description": "Stub.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "pdb_file": "return_value"
+   },
+   "requirements": [],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "refine_structure",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"output_file\": \"/home/porser/data/ProEngAgent/workspace/results/prorefiner/20261113_142546_697960/prorefiner_result.txt\", \"refined_fasta\": \"/h"
+   }
+  },
+  {
+   "name": "prorefiner_refine",
+   "description": "Stub.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "pdb_file": "return_value"
+   },
+   "requirements": [],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "refine_structure",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"output_file\": \"/home/porser/data/ProEngAgent/workspace/results/prorefiner/20261113_142551_864904/prorefiner_result.txt\", \"refined_fasta\": \"/h"
+   }
+  },
+  {
+   "name": "prosite_scan",
+   "description": "ProSite pattern and profile scan via ExPASy.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "function_annotation": "result"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "function_annotation",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"result\": {\"n_match\": 1, \"n_seq\": 1, \"matchset\": [{\"sequence_ac\": \"USERSEQ1\", \"start\": 3, \"stop\": 16, \"signature_ac\": \"PS00271\", \"level_tag\": "
+   }
+  },
+  {
+   "name": "protein_iep",
+   "description": "Novopro IEP API wrapper.",
+   "inputs": {
+    "sequence": "sequence",
+    "pka": "pka"
+   },
+   "outputs": {
+    "properties": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_properties",
+   "has_wrapper": true
+  },
+  {
+   "name": "protein_mw",
+   "description": "Novopro MW API wrapper.",
+   "inputs": {
+    "sequence": "sequence",
+    "tag": "tag",
+    "copies": "copies"
+   },
+   "outputs": {
+    "properties": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_properties",
+   "has_wrapper": true,
+   "probe": {
+    "state": "empty",
+    "checked": "2026-11-13",
+    "detail": "answers success with no output (upstream Novopro API returns nothing); use ProtParam for molecular weight"
+   }
+  },
+  {
+   "name": "protein_sol_predict",
+   "description": "Protein-Sol web server for solubility prediction.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "solubility": "result"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "solubility_prediction",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "This tool is not deployed on the server. Reason: protein-sol.manchester.ac.uk removed its /predict endpoint (HTTP 404)."
+   }
+  },
+  {
+   "name": "proteinmpnn_api",
+   "description": "Stub.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "designed_sequences": "return_value"
+   },
+   "requirements": [
+    "gpu"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "structure_to_designed_sequences",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"output_dir\": \"/home/porser/data/ProEngAgent/workspace/results/proteinmpnn\", \"fasta\": \">6zcw, score=1.2161, global_score=1.2161, fixed_chains="
+   }
+  },
+  {
+   "name": "proteinmpnn_design",
+   "description": "Stub.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "designed_sequences": "return_value"
+   },
+   "requirements": [
+    "gpu"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "structure_to_designed_sequences",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"output_dir\": \"/home/porser/data/ProEngAgent/workspace/results/proteinmpnn\", \"fasta\": \">6zcw, score=1.2161, global_score=1.2161, fixed_chains="
+   }
+  },
+  {
+   "name": "ProtParam",
+   "description": "Biopython ProtParam. Very reliable.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "properties": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_properties",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "ProtParam Analysis Results:\nNumber of amino acids: 46\nMolecular weight: 4736.46\nTheoretical pI: 5.73\nExtinction coefficient: 3355\nInstability index: 31.89\nAliph"
+   }
+  },
+  {
+   "name": "PSIPRED",
+   "description": "Runs local PSIPRED if installed.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "secondary_structure": "return_value"
+   },
+   "requirements": [],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_secondary_structure",
+   "has_wrapper": true,
+   "probe": {
+    "state": "unreachable",
+    "checked": "2026-11-13",
+    "detail": "TimeoutError: timed out"
+   }
+  },
+  {
+   "name": "PSIPRED_API",
+   "description": "UCL PSIPRED REST API.",
+   "inputs": {
+    "sequence": "fastafile"
+   },
+   "outputs": {
+    "secondary_structure": "return_value"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_secondary_structure",
+   "has_wrapper": true,
+   "probe": {
+    "state": "unreachable",
+    "checked": "2026-11-13",
+    "detail": "TimeoutError: timed out"
+   }
+  },
+  {
+   "name": "pubmed_pdf_download",
+   "description": "Downloads a paper PDF (PMID/DOI/title) via NCBI/PMC/publisher direct links (campus IP). Returns pdf_path + text preview.",
+   "inputs": {
+    "paper_id": "pmid_or_doi"
+   },
+   "outputs": {
+    "pdf_file": "pdf_path"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "fetch_paper_pdf",
+   "has_wrapper": true
+  },
+  {
+   "name": "Pythia_Mut",
+   "description": "Requires pythia conda env. Returns path to mask txt.",
+   "inputs": {
+    "pdb_file": "pdb",
+    "mutation": "mutation"
+   },
+   "outputs": {
+    "stability_score": "return_value"
+   },
+   "requirements": [
+    "conda:pythia"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "structure_to_stability",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13"
+   }
+  },
+  {
+   "name": "Pythia_Seq",
+   "description": "Same env as Pythia_Mut.",
+   "inputs": {
+    "pdb_file": "pdb"
+   },
+   "outputs": {
+    "stability_score": "return_value"
+   },
+   "requirements": [
+    "conda:pythia"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "structure_to_stability",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"stability_score\": 1.5099587440490723, \"score_semantics\": \"Mean over Pythia's two models (pythia-c + pythia-p) of -mean(log P(native amino aci"
+   }
+  },
+  {
+   "name": "raptorx_predict",
+   "description": "RaptorX structure prediction server.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "pdb_file": "message"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "read_file",
+   "description": "Read tool-output files under workspace with pattern filtering / head / tail; a whitelist restricts reads to workspace/ only.",
+   "inputs": {
+    "file_path": "file_path",
+    "pattern": "pattern",
+    "head": "head",
+    "tail": "tail",
+    "max_chars": "max_chars"
+   },
+   "outputs": {
+    "content": "content"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "file_to_content",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13"
+   }
+  },
+  {
+   "name": "rfdiffusion_api",
+   "description": "Deployed: RFdiffusion unconditional backbone generation; sequence input sets length only (contigs=[L]). Pair with ProteinMPNN for sequence design.",
+   "inputs": {
+    "sequence": "contigs"
+   },
+   "outputs": {
+    "pdb_file": "return_value"
+   },
+   "requirements": [
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "sequence_to_backbone",
+   "has_wrapper": true
+  },
+  {
+   "name": "rfdiffusion_design",
+   "description": "Deployed: RFdiffusion unconditional backbone generation; sequence input sets length only (contigs=[L]). Pair with ProteinMPNN for sequence design.",
+   "inputs": {
+    "sequence": "contigs"
+   },
+   "outputs": {
+    "pdb_file": "return_value"
+   },
+   "requirements": [
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "sequence_to_backbone",
+   "has_wrapper": true
+  },
+  {
+   "name": "rosetta_api",
+   "description": "Local Rosetta ddg_monomer (release-280) batch run, one mut_file for all mutations; -ddg::iterations 3 (reduced sampling). Verified: 6zcw L35A/E32A.",
+   "inputs": {
+    "pdb_file": "pdb_file",
+    "mutations": "mutations"
+   },
+   "outputs": {
+    "mutation_scores": "return_value"
+   },
+   "requirements": [],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "experimental",
+   "implements": "structure_to_mutation_scores",
+   "has_wrapper": true
+  },
+  {
+   "name": "rosetta_ddg",
+   "description": "Local Rosetta ddg_monomer (release-280), -ddg::iterations 3. Verified: 6zcw L35A.",
+   "inputs": {
+    "pdb_file": "pdb_file",
+    "mutations": "mutation"
+   },
+   "outputs": {
+    "ddg": "output_dir"
+   },
+   "requirements": [],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "mutation_scoring",
+   "has_wrapper": true
+  },
+  {
+   "name": "rosetta_relax",
+   "description": "Local Rosetta relax (release-280), constrain_relax_to_start_coords, nstruct 1. Verified on 6zcw.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "refined_structure": "output_dir"
+   },
+   "requirements": [],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "structure_refinement",
+   "has_wrapper": true
+  },
+  {
+   "name": "saves_api",
+   "description": "SAVEs structure database API.",
+   "inputs": {
+    "pdb_id": "pdb_id"
+   },
+   "outputs": {
+    "pdb_file": "pdb_file"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "sequence_length",
+   "description": "Count amino-acid residues (raw sequence or FASTA). Returns length (+ non-standard characters if any).",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "properties": "length"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_length",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"length\": 46}"
+   }
+  },
+  {
+   "name": "seqvec_embed",
+   "description": "SeqVec sequence embeddings via bio-embeddings.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "embedding": "embedding"
+   },
+   "requirements": [
+    "seqvec"
+   ],
+   "speed": "medium",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "sequence_to_embedding",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "This tool is not deployed on the server. Reason: bio-embeddings is not installed (heavy legacy deps); use esm3_embed instead."
+   }
+  },
+  {
+   "name": "SignalP",
+   "description": "Local SignalP 6.0 fast model (DTU academic license; weights in Tools/_pylibs). Verified: PDIA4 -> SP 0.9997, CS 24-25.",
+   "inputs": {
+    "sequence": "fastafile"
+   },
+   "outputs": {
+    "signal_peptide": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "beta",
+   "implements": "sequence_to_signal_peptide",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "{\"success\": true, \"model\": \"SignalP 6.0 fast (distilled)\", \"organism\": \"other\", \"sequences\": 1, \"with_signal_peptide\": 0, \"results\": [{\"id\": \"query\", \"predictio"
+   }
+  },
+  {
+   "name": "soluprot_predict",
+   "description": "SoluProt: solubility prediction.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "solubility": "solubility"
+   },
+   "requirements": [
+    "soluprot"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "solubility_prediction",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "This tool is not deployed on the server. Reason: SoluProt repo under Tools/soluprot is not set up (models/env not installed)."
+   }
+  },
+  {
+   "name": "stride_assign",
+   "description": "STRIDE secondary structure assignment.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "secondary_structure": "stride_output"
+   },
+   "requirements": [
+    "stride"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "secondary_structure_prediction",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "This tool is not deployed on the server. Reason: The 'stride' binary in the env is not the protein STRIDE program (rejects PDB input); the real STRIDE is not packaged for this platform. Use dssp_assign instead."
+   }
+  },
+  {
+   "name": "thermonet_predict",
+   "description": "ThermoNet: thermostability prediction.",
+   "inputs": {
+    "pdb_file": "pdb_file"
+   },
+   "outputs": {
+    "stability_score": "output_dir"
+   },
+   "requirements": [
+    "thermonet"
+   ],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "experimental",
+   "implements": "stability_prediction",
+   "has_wrapper": true,
+   "probe": {
+    "state": "not_deployed",
+    "checked": "2026-11-13",
+    "detail": "This tool is not deployed on the server. Reason: ThermoNet requires pytorch3d and voxel preprocessing that are not installed."
+   }
+  },
+  {
+   "name": "tm_align",
+   "description": "TM-align structure superposition.",
+   "inputs": {
+    "pdb1": "pdb1",
+    "pdb2": "pdb2"
+   },
+   "outputs": {
+    "tm_score": "tm_score"
+   },
+   "requirements": [
+    "tmalign"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "structure_alignment",
+   "has_wrapper": true
+  },
+  {
+   "name": "tmhmm",
+   "description": "Transmembrane helix predictor.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "transmembrane_helices": "return_value"
+   },
+   "requirements": [],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_transmembrane",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "No transmembrane helices predicted"
+   }
+  },
+  {
+   "name": "TOMER",
+   "description": "Requires /home/porser/.local/bin/tome.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "thermo_optimum": "return_value"
+   },
+   "requirements": [
+    "tome_cli"
+   ],
+   "speed": "fast",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "sequence_to_thermo_optimum",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13",
+    "detail": "Predicted optimum temperature (OGT) of the sequence is 41.39 degC"
+   }
+  },
+  {
+   "name": "trrosetta_predict",
+   "description": "trRosetta structure prediction. Requires TF 1.x.",
+   "inputs": {
+    "sequence": "sequence"
+   },
+   "outputs": {
+    "pdb_file": "output_dir"
+   },
+   "requirements": [
+    "trrosetta",
+    "gpu"
+   ],
+   "speed": "slow",
+   "accuracy": "high",
+   "reliability": "beta",
+   "implements": "sequence_to_structure",
+   "has_wrapper": true
+  },
+  {
+   "name": "uniprot_to_sequence",
+   "description": "Fetch the protein sequence for a UniProt accession from the UniProt REST API in one step.",
+   "inputs": {
+    "uniprot_id": "uniprot_id"
+   },
+   "outputs": {
+    "sequence": "sequence"
+   },
+   "requirements": [
+    "internet"
+   ],
+   "speed": "fast",
+   "accuracy": "high",
+   "reliability": "stable",
+   "implements": "uniprot_id_to_sequence",
+   "has_wrapper": true,
+   "probe": {
+    "state": "ok",
+    "checked": "2026-11-13"
+   }
+  },
+  {
+   "name": "vina_dock",
+   "description": "AutoDock Vina molecular docking.",
+   "inputs": {
+    "receptor_pdb": "receptor_pdb",
+    "ligand_pdb": "ligand_pdb"
+   },
+   "outputs": {
+    "docking_pose": "output_file"
+   },
+   "requirements": [
+    "vina"
+   ],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "protein_ligand_docking",
+   "has_wrapper": true
+  },
+  {
+   "name": "whatcheck",
+   "description": "Structure validation. Writes to result_file/whatcheck/",
+   "inputs": {
+    "pdb_file": "pdb"
+   },
+   "outputs": {
+    "structure_quality": "return_value"
+   },
+   "requirements": [],
+   "speed": "medium",
+   "accuracy": "medium",
+   "reliability": "stable",
+   "implements": "structure_to_quality",
+   "has_wrapper": true,
+   "probe": {
+    "state": "unreachable",
+    "checked": "2026-11-13",
+    "detail": "TimeoutError: timed out"
+   }
+  }
+ ]
+}

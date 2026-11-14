@@ -1,0 +1,3 @@
+display_name: E. coli 96-Mutant Construction And Detection
+short_description: Generate the three chained Momentum scripts for the 96-mutant plasmid construction and detection workflow.
+default_prompt: Generate the complete 96-mutant E. coli plasmid construction and detection workflow.

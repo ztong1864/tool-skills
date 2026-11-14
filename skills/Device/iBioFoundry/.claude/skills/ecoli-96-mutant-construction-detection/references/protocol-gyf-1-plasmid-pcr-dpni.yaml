@@ -1,0 +1,170 @@
+{
+ "protocol_id": "gyf_plasmid_pcr_dpni",
+ "standard_name": "gyf_1_plasmid_pcr_dpni",
+ "process_name": "AI\\\\\\\\GYF_1_Plasmid_PCR_DpnI",
+ "containers": [
+  {
+   "name": "02_LYY_PCR_plate",
+   "role": "primer plate",
+   "acquire_status": "Primer plate"
+  },
+  {
+   "name": "Tips_Liha200_1",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "half"
+  },
+  {
+   "name": "02_LYY_PCR_plate_2",
+   "role": "PCR product plate",
+   "acquire_status": "New",
+   "final_status": "PCR_plate"
+  },
+  {
+   "name": "Balance_PCR",
+   "role": "balancing plate"
+  },
+  {
+   "name": "Tips_MCA200_1",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_Liha10_1",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  }
+ ],
+ "stages": [
+  {
+   "id": "stage1_containers",
+   "flow": [
+    {
+     "acquire": [
+      "02_LYY_PCR_plate",
+      "Tips_Liha200_1",
+      "02_LYY_PCR_plate_2",
+      "Balance_PCR",
+      "Tips_MCA200_1",
+      "Tips_Liha10_1"
+     ]
+    },
+    {
+     "set": [
+      "02_LYY_PCR_plate_2",
+      "Tips_Liha200_1",
+      "Tips_MCA200_1",
+      "Tips_Liha10_1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stage2_pcr",
+   "comment": "STEP 1 : pcr",
+   "flow": [
+    {
+     "lock": "Lock_EVO"
+    },
+    {
+     "parallel": [
+      [
+       "evo_load_tips_mca200_1_pcr_plate_2",
+       "operator_manual_open_inheco_4_add_ep_well_and_1000li",
+       "evo_load_tips_liha200_1"
+      ],
+      [
+       "xpeel_unseal_pcr_plate",
+       "evo_load_pcr_plate"
+      ]
+     ]
+    },
+    "evo_run_car_pre_pcr",
+    "evo_run_lyy_chenwanyi_inheco_off",
+    {
+     "parallel": [
+      [
+       "alps_seal_pcr_plate",
+       "cyt2c425_load_pcr_plate",
+       "cyt24h_load_tips_liha200_1"
+      ],
+      [
+       {
+        "lock": "lock_CentrifugeLoader"
+       },
+       "alps_seal_pcr_plate_2",
+       "cfl_spin_balance_pcr_pcr_plate_2",
+       "cyt24h_load_balance_pcr",
+       "operator_manual_check_atc_1_lid_temp_105",
+       "atc1_load_pcr_plate_2",
+       {
+        "unlock": "lock_CentrifugeLoader"
+       }
+      ]
+     ]
+    },
+    {
+     "unlock": "Lock_EVO"
+    },
+    "atc1_run_car_pcr_reaction",
+    "cyt24h_load_pcr_plate_2"
+   ]
+  },
+  {
+   "id": "stage3_dpni",
+   "comment": "STEP 2:  Dpn I",
+   "flow": [
+    "xpeel_unseal_pcr_plate_2",
+    "operator_manual_pcr_plate_add_dpni",
+    {
+     "set_status": [
+      {
+       "name": "02_LYY_PCR_plate_2",
+       "status": "PCR_Plate_DpnI"
+      }
+     ]
+    },
+    "evo_run_car_add_dpni",
+    {
+     "parallel": [
+      [
+       "alps_seal_pcr_plate_2",
+       {
+        "lock": "lock_CentrifugeLoader"
+       },
+       "cfl_load_balance_pcr_pcr_plate_2",
+       "cfl_spin_balance_pcr_pcr_plate_2_2",
+       "atc1_load_pcr_plate_2",
+       "cyt24h_load_balance_pcr",
+       {
+        "unlock": "lock_CentrifugeLoader"
+       }
+      ],
+      [
+       "evo_run_lyy_chenwanyi_inheco_off"
+      ]
+     ]
+    },
+    "atc1_run_car_dpni_reaction",
+    "cyt24h_load_pcr_plate_2",
+    {
+     "add_work": {
+      "WorkType": "Batch",
+      "BatchType": "Experiment",
+      "SourceName": "E_GYF_2_Ecoli_DNA_transformation",
+      "ProcessName": "GYF_2_Ecoli_DNA_transformation",
+      "Iterations": "1",
+      "AutoVerifyLoad": "No",
+      "AutoUnload": "No",
+      "AutoVerifyUnload": "No",
+      "StartType": "As soon as possible",
+      "FixedStart": "9/18/2026 9:45:58 AM",
+      "RelativeStart": "00:00:00"
+     }
+    }
+   ]
+  }
+ ]
+}

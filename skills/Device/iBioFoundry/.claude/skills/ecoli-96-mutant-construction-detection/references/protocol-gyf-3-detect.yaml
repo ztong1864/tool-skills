@@ -1,0 +1,484 @@
+{
+ "protocol_id": "gyf_detect",
+ "standard_name": "gyf_3_detect",
+ "process_name": "AI\\\\\\\\GYF_3_Detect",
+ "containers": [
+  {
+   "name": "03_48DWP_1",
+   "role": "48 deep-well seed plate",
+   "acquire_status": "48DWP_1"
+  },
+  {
+   "name": "03_48DWP_2",
+   "role": "48 deep-well seed plate",
+   "acquire_status": "48DWP_2"
+  },
+  {
+   "name": "02_LYY_cell_plate1",
+   "role": "save plate",
+   "acquire_status": "New",
+   "final_status": "Save_plate"
+  },
+  {
+   "name": "Cell_Plate1",
+   "role": "plate",
+   "acquire_status": "LB_1"
+  },
+  {
+   "name": "Cell_Plate2",
+   "role": "plate",
+   "acquire_status": "LB_2"
+  },
+  {
+   "name": "Cell_Plate3",
+   "role": "plate",
+   "acquire_status": "LB_3"
+  },
+  {
+   "name": "Cell_Plate4",
+   "role": "plate",
+   "acquire_status": "LB_4"
+  },
+  {
+   "name": "Tips_MCA200_11",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_Liha50_1",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_Liha50_2",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_Liha50_3",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_Liha50_4",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "03_AX_Buffer",
+   "role": "buffer plate"
+  },
+  {
+   "name": "PCR_Plate1",
+   "role": "lysis buffer plate",
+   "acquire_status": "lysis buffer"
+  },
+  {
+   "name": "03_ZFL_BMG_Plate1",
+   "role": "fluorescence assay plate",
+   "acquire_status": "black_1",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "03_ZFL_BMG_Plate2",
+   "role": "fluorescence assay plate",
+   "acquire_status": "black_2",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "03_ZFL_BMG_Plate3",
+   "role": "BCA assay plate",
+   "acquire_status": "white_3",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "03_ZFL_BMG_Plate4",
+   "role": "BCA assay plate",
+   "acquire_status": "white_4",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "Tips_MCA200_1",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_MCA200_2",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_MCA200_3",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_MCA200_4",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_MCA200_5",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_MCA200_6",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_MCA200_7",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_MCA200_8",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  }
+ ],
+ "stages": [
+  {
+   "id": "stage1_containers",
+   "flow": [
+    "operator_manual_ready_to_run",
+    "operator_manual_check_tos1_10c_37_tos_2_18",
+    {
+     "parallel": [
+      [
+       {
+        "acquire": [
+         "03_48DWP_1",
+         "03_48DWP_2",
+         "02_LYY_cell_plate1",
+         "Cell_Plate1",
+         "Cell_Plate2",
+         "Cell_Plate3",
+         "Cell_Plate4",
+         "Tips_MCA200_11",
+         "Tips_Liha50_1",
+         "Tips_Liha50_2",
+         "Tips_Liha50_3",
+         "Tips_Liha50_4"
+        ]
+       }
+      ],
+      [
+       {
+        "acquire": [
+         "03_AX_Buffer",
+         "PCR_Plate1",
+         "03_ZFL_BMG_Plate1",
+         "03_ZFL_BMG_Plate2",
+         "03_ZFL_BMG_Plate3",
+         "03_ZFL_BMG_Plate4",
+         "Tips_MCA200_1",
+         "Tips_MCA200_2",
+         "Tips_MCA200_3",
+         "Tips_MCA200_4",
+         "Tips_MCA200_5",
+         "Tips_MCA200_6",
+         "Tips_MCA200_7",
+         "Tips_MCA200_8"
+        ]
+       }
+      ]
+     ]
+    },
+    {
+     "set": [
+      "02_LYY_cell_plate1",
+      "Tips_MCA200_11",
+      "Tips_MCA200_1",
+      "Tips_MCA200_2",
+      "Tips_MCA200_3",
+      "Tips_MCA200_4",
+      "Tips_MCA200_5",
+      "Tips_MCA200_6",
+      "Tips_MCA200_7",
+      "Tips_MCA200_8",
+      "Tips_Liha50_1",
+      "Tips_Liha50_2",
+      "Tips_Liha50_3",
+      "Tips_Liha50_4"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stage2_seed_culture",
+   "flow": [
+    "fluent_load_48dwp_1_48dwp_2",
+    "fluent_incubate_48dwp_1_48dwp_2",
+    "cyt10h_load_48dwp_1_48dwp_2",
+    "operator_manual_replace_48_dwp",
+    {
+     "parallel": [
+      [
+       "kbs_seal_48dwp_1",
+       "tos1_load_48dwp_1"
+      ],
+      [
+       "kbs_seal_48dwp_2",
+       "tos1_load_48dwp_2"
+      ]
+     ]
+    },
+    "tos1_shake_500",
+    {
+     "comment": "incubate 8h"
+    },
+    "tos1_incubate_48dwp_1_48dwp_2"
+   ]
+  },
+  {
+   "id": "stage3_transfer_culture",
+   "flow": [
+    {
+     "parallel": [
+      [
+       "xpeel_unseal_48dwp_1",
+       "evo_load_48dwp_1"
+      ],
+      [
+       "xpeel_unseal_48dwp_2",
+       "evo_load_48dwp_2"
+      ]
+     ]
+    },
+    "operator_manual_liha_1000_nest_13",
+    "evo_run_ai_gyf_2_trans_culture",
+    {
+     "parallel": [
+      [
+       "kbs_seal_cell_plate1",
+       "tos1_load_cell_plate1",
+       "kbs_seal_cell_plate2",
+       "tos1_load_cell_plate2"
+      ],
+      [
+       "kbs_seal_cell_plate3",
+       "tos1_load_cell_plate3",
+       "kbs_seal_cell_plate4",
+       "tos1_load_cell_plate4"
+      ]
+     ]
+    },
+    {
+     "parallel": [
+      [
+       {
+        "parallel": [
+         [
+          "alps_seal_cell_plate1",
+          "cyt10h_load_cell_plate1"
+         ],
+         [
+          "kbs_seal_48dwp_1",
+          "cyt10h_load_48dwp_1"
+         ],
+         [
+          "kbs_seal_48dwp_2",
+          "cyt10h_load_48dwp_2"
+         ]
+        ]
+       },
+       "evo_load_tips_liha50s",
+       "evo_run_lyy_chenwanyi_inheco",
+       "operator_manual_manual_add_8_iptg_to_col_1_2"
+      ],
+      [
+       "tos1_shake_900",
+       {
+        "comment": "incubate 3.5h"
+       },
+       "tos1_incubate_cell_plates"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stage4_iptg_induction",
+   "flow": [
+    {
+     "parallel": [
+      [
+       "xpeel_unseal_cell_plate1",
+       "evo_load_cell_plate1"
+      ],
+      [
+       "xpeel_unseal_cell_plate2",
+       "evo_load_cell_plate2"
+      ],
+      [
+       "xpeel_unseal_cell_plate3",
+       "evo_load_cell_plate3"
+      ],
+      [
+       "xpeel_unseal_cell_plate4",
+       "evo_load_cell_plate4"
+      ]
+     ]
+    },
+    "evo_run_ai_gyf_3_add_iptg",
+    {
+     "parallel": [
+      [
+       "kbs_seal_cell_plate1",
+       "tos2_load_cell_plate1"
+      ],
+      [
+       "kbs_seal_cell_plate2",
+       "tos2_load_cell_plate2"
+      ],
+      [
+       "kbs_seal_cell_plate3",
+       "tos2_load_cell_plate3"
+      ],
+      [
+       "kbs_seal_cell_plate4",
+       "tos2_load_cell_plate4"
+      ]
+     ]
+    },
+    "tos2_shake_900",
+    {
+     "comment": "incubate 12h"
+    },
+    "tos2_incubate_cell_plates",
+    "staging_load_cell_plates"
+   ]
+  },
+  {
+   "id": "stage5_harvest_and_wash",
+   "flow": [
+    {
+     "parallel": [
+      [
+       {
+        "lock": "Lock_Rotanta"
+       },
+       "rotanta_load_cell_plates",
+       "rotanta_run_cell_plates",
+       "staging_load_cell_plates",
+       {
+        "unlock": "Lock_Rotanta"
+       },
+       "evo_load_cell_plates"
+      ],
+      [
+       {
+        "wait_until": {
+         "WaitType": "Expression",
+         "WaitUntil": "6/11/2026 4:09:16 PM",
+         "IgnoreDate": "Yes",
+         "WaitTimeout": "120"
+        }
+       },
+       "evo_load_ax_buffer_pcr_plate1_etc"
+      ]
+     ]
+    },
+    "evo_run_ai_gyf_4_add_tbs_wash",
+    "operator_manual_check_worktable_empty_start_to_get_s"
+   ]
+  },
+  {
+   "id": "stage6_detection",
+   "flow": [
+    "evo_run_ai_gyf_5_detect",
+    {
+     "parallel": [
+      [
+       {
+        "comment": "600rpm 20 min, 10C incubate 6h"
+       },
+       "cyt10c_incubate_zfl_bmg_plate1_zfl_bmg_plate2"
+      ],
+      [
+       "cyt10c_incubate_zfl_bmg_plate3_zfl_bmg_plate4",
+       {
+        "parallel": [
+         [
+          {
+           "lock": "Lock_Clariostar"
+          },
+          "rotate_zfl_bmg_plate3",
+          "bmg_run_bca_zfl_bmg_plate3",
+          "rotate_zfl_bmg_plate3",
+          "cyt10h_load_zfl_bmg_plate3",
+          {
+           "unlock": "Lock_Clariostar"
+          }
+         ],
+         [
+          {
+           "lock": "Lock_Clariostar"
+          },
+          "rotate_zfl_bmg_plate4",
+          "bmg_run_bca_zfl_bmg_plate4",
+          "rotate_zfl_bmg_plate4",
+          "cyt10h_load_zfl_bmg_plate4",
+          {
+           "unlock": "Lock_Clariostar"
+          }
+         ]
+        ]
+       }
+      ],
+      [
+       "alps_seal_cell_plate3",
+       "cyt10h_load_cell_plate3",
+       "alps_seal_cell_plate4",
+       "cyt10h_load_cell_plate4"
+      ]
+     ]
+    },
+    {
+     "parallel": [
+      [
+       {
+        "lock": "Lock_Clariostar"
+       },
+       "rotate_zfl_bmg_plate1",
+       "bmg_run_gyf_340_530_zfl_bmg_plate1",
+       "rotate_zfl_bmg_plate1",
+       "staging_load_zfl_bmg_plate1",
+       {
+        "unlock": "Lock_Clariostar"
+       }
+      ],
+      [
+       {
+        "lock": "Lock_Clariostar"
+       },
+       "rotate_zfl_bmg_plate2",
+       "bmg_run_gyf_340_530_zfl_bmg_plate2",
+       "rotate_zfl_bmg_plate2",
+       "staging_load_zfl_bmg_plate2",
+       {
+        "unlock": "Lock_Clariostar"
+       }
+      ]
+     ]
+    },
+    "operator_manual_3_detection_end"
+   ]
+  }
+ ]
+}

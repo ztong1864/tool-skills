@@ -3,7 +3,7 @@
 pools{}中啥都不用改，直接复制以下内容作为pools的设置
 
 ```
-    pools
+	pools
 	{
 		OperationPool Pool_ATC
 			(Strategy = 'Priority First Available', SkipError = 'No', 

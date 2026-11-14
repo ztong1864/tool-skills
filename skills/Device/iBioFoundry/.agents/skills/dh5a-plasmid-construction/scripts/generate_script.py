@@ -28,7 +28,9 @@ def load_json_yaml(path):
 
 def extract_first_fence(path):
     text = Path(path).read_text(encoding="utf-8")
-    match = re.search(r"```(?:javascript|txt)?\s*(.*?)```", text, re.S)
+    # The line break is matched explicitly: a \s* here would also swallow the first
+    # line's leading tab and the copied section would come out flush left.
+    match = re.search(r"```(?:javascript|txt)?[ \t]*\r?\n(.*?)```", text, re.S)
     if not match:
         raise ValueError(f"No fenced code block found in {path}")
     return match.group(1).strip("\n")
@@ -56,8 +58,14 @@ def extract_action_template(reference_device, action, variant=None):
 
 
 def replace_param(block, key, value):
+    """Set `key` to `value` in a copied template block.
+
+    The replacement is a function rather than a template string: a path value in this
+    DSL carries doubled backslashes, and re.subn would eat one level of them if the
+    value went through a replacement template.
+    """
     pattern = rf"(?<![A-Za-z0-9_])({re.escape(key)}\s*=\s*)'[^']*'"
-    new_block, count = re.subn(pattern, rf"\1'{value}'", block)
+    new_block, count = re.subn(pattern, lambda match: f"{match.group(1)}'{value}'", block)
     if count == 0:
         raise ValueError(f"Parameter {key!r} not present in template:\n{block}")
     return new_block

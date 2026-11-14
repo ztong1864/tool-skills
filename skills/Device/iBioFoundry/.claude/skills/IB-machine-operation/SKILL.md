@@ -25,7 +25,8 @@ description: 编写完整 Momentum DSL 实验脚本的总入口技能。用于�
 2. 如果用户需求命中已知固定实验类型，读 `reference/nl-to-process-mapping.md`，先确定 `process { ... }` 的核心骨架。
 3. 再读 [$device-operation-library](../device-operation-library/SKILL.md)。
 4. 按需读 [process-flow-planner](../process-flow-planner/SKILL.md)。
-5. 按需读 [script-assembler](../script-assembler/SKILL.md)。
+5. 按需读 [script-assembler](../script-assembler/SKILL.md)；流程里有并行、设备锁、
+   等待点或多脚本串联时，必读 `../script-assembler/instructions/control-flow.md`。
 6. 最终检查时读 `reference/global-validation-rules.md`。
 
 ## 固定脚本结构
@@ -49,7 +50,8 @@ profile [My System]
 - `devices` 直接复制 `../script-assembler/instructions/devices.md`
 - `pools` 直接复制 `../script-assembler/instructions/pools.md`
 - `variables` 直接复制 `../script-assembler/instructions/variables.md`
-- `process` 根据实验需求编写
+- `process` 根据实验需求编写；其中的控制结构（`parallel`/`branch`、设备锁、`wait_until`、
+  `AddWork`、`comment`）按 `../script-assembler/instructions/control-flow.md` 写
 
 ## 脚本与 process 命名
 
@@ -57,6 +59,8 @@ profile [My System]
 - `foundry_` 是固定前缀；`<standard_name>` 使用标准实验名，需转为 ASCII 兼容的小写下划线格式，避免空格、中文和特殊字符；时间后缀使用生成脚本时的本地日期时间，精确到秒。
 - `process[...]` 名称必须与输出脚本文件名保持一致，但去掉 `.txt` 后缀。
 - 示例：输出文件名为 `foundry_cell_seeding_384well_20260508_153012.txt` 时，脚本内应写 `process [foundry_cell_seeding_384well_20260508_153012]`。
+- **例外**：一个实验拆成多份脚本并用 `AddWork` 互相串联时，流程名必须固定、不带时间戳，
+  文件名照旧带时间戳。原因和写法见 `../script-assembler/SKILL.md` 的"多脚本串联时的命名"。
 
 ## 工作流程
 
@@ -97,7 +101,10 @@ profile [My System]
 5. 盖子管理使用统一规则。
    `Acquire` 默认值以 `$container-and-status-rules/references/lid-management.md` 为准；设备动作中的盖子写法以 `$device-operation-library` 的具体模板或 workflow rule 为准。
 6. `Acquire` 与 `set` 顺序固定。
-   `set ... Status` 必须紧接 `Acquire`，所有设备动作必须位于 `set` 之后。
+   `set ... Status` 必须紧接其对应的 `Acquire` 块，用到这些容器的设备动作必须位于 `set` 之后。
+   多个 `Acquire` 块、流程中段的 `set`、不带 `where` 的配平板，只在
+   `$container-and-status-rules/references/acquire-and-status.md` 列出的三种情形里允许。
+   流程里用到的配平板必须 `Acquire`。
 7. 设备动作只来自模板库。
    只从 `$device-operation-library` 的模板和 workflow rule 组装 device action。
 8. 容器命名以容器目录为准。
@@ -108,9 +115,10 @@ profile [My System]
 - [ ] 脚本结构正确
 - [ ] 固定部分与 `script-assembler/instructions/` 完全一致
 - [ ] 输出文件名符合 `foundry_<standard_name>_<YYYYMMDD_HHMMSS>.txt`
-- [ ] `process[...]` 名称等于输出文件名去掉 `.txt`
+- [ ] `process[...]` 名称等于输出文件名去掉 `.txt`；被 `AddWork` 串联的流程用固定流程名
+- [ ] 控制结构按 `../script-assembler/instructions/control-flow.md` 的清单核对过
 - [ ] 设备动作来自 `$device-operation-library`
 - [ ] 未使用 reference 之外的设备 / 动作 / 容器
 - [ ] 未修改禁止修改的参数
-- [ ] `process` 使用 `Acquire → set → 设备动作` 顺序
+- [ ] `process` 使用 `Acquire → set → 设备动作` 顺序，配平板也已 `Acquire`
 - [ ] `process` 顺序符合流程约束

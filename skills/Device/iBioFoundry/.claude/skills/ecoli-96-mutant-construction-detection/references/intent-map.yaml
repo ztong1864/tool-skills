@@ -1,0 +1,91 @@
+{
+  "intents": [
+    {
+      "protocol_id": "gyf_full_96_mutant_workflow",
+      "display_name": "96 突变体大肠杆菌质粒构建与检测（全流程三份脚本）",
+      "summary_prompt": "一次生成三份互相串联的 Momentum 脚本：第一份做全质粒 PCR 与 DpnI 酶切；第二份做化学转化、复苏并涂布到十二块八孔板（一个突变体一格）；第三份做 48 深孔板种子培养、转接、IPTG 诱导表达、离心收菌、TBS 洗涤，最后在四块酶标板上做 BCA 蛋白定量与 340/530 荧光读数。三份脚本靠 AddWork 依次排队。",
+      "protocols": [
+        {
+          "protocol_file": "protocol-gyf-1-plasmid-pcr-dpni.yaml",
+          "step_map_file": "step-map-gyf-1-plasmid-pcr-dpni.yaml"
+        },
+        {
+          "protocol_file": "protocol-gyf-2-ecoli-dna-transformation.yaml",
+          "step_map_file": "step-map-gyf-2-ecoli-dna-transformation.yaml"
+        },
+        {
+          "protocol_file": "protocol-gyf-3-detect.yaml",
+          "step_map_file": "step-map-gyf-3-detect.yaml"
+        }
+      ],
+      "keywords": [
+        "96突变体全流程",
+        "96 突变体全流程",
+        "突变体构建与检测",
+        "质粒构建与检测",
+        "大肠杆菌质粒构建与检测",
+        "96突变体大肠杆菌",
+        "构建并检测96个突变体",
+        "GYF全流程",
+        "gyf full workflow",
+        "96 mutant construction and detection",
+        "ecoli 96 mutant workflow"
+      ]
+    },
+    {
+      "protocol_id": "gyf_plasmid_pcr_dpni",
+      "display_name": "全质粒 PCR 与 DpnI 酶切",
+      "summary_prompt": "生成第一份脚本：引物板撕膜上机，FreedomEVO 配 PCR 体系到 96 孔 PCR 板，封膜离心后在 ATC_1 上跑 PCR（盖温 105 ℃），人工加 DpnI 后再跑酶切程序，产物交接状态置为 PCR_Plate_DpnI，结尾用 AddWork 排第二份脚本。",
+      "protocol_file": "protocol-gyf-1-plasmid-pcr-dpni.yaml",
+      "step_map_file": "step-map-gyf-1-plasmid-pcr-dpni.yaml",
+      "keywords": [
+        "全质粒PCR与DpnI",
+        "质粒PCR酶切",
+        "PCR与DpnI",
+        "PCR加DpnI",
+        "DpnI酶切",
+        "第一份脚本",
+        "plasmid pcr dpni",
+        "gyf_1",
+        "gyf 1"
+      ]
+    },
+    {
+      "protocol_id": "gyf_ecoli_dna_transformation",
+      "display_name": "大肠杆菌化学转化、复苏与涂布",
+      "summary_prompt": "生成第二份脚本：取 DpnI 产物板，FreedomEVO 配转化体系到组装板，在 ATC_1 上跑转化程序（盖温 30 ℃），加 LB 复苏后在 CYTOMAT_2_Tos1 上 450 rpm 振荡 1.5 h，再用 FreedomEVO 十二个 nest 一次涂布十二块八孔板，CYTOMAT_10C 培养 15 h，结尾用 AddWork 排第三份脚本。",
+      "protocol_file": "protocol-gyf-2-ecoli-dna-transformation.yaml",
+      "step_map_file": "step-map-gyf-2-ecoli-dna-transformation.yaml",
+      "keywords": [
+        "大肠杆菌转化复苏涂布",
+        "转化与涂布",
+        "化学转化涂布",
+        "转化复苏",
+        "涂布八孔板",
+        "第二份脚本",
+        "ecoli dna transformation",
+        "gyf_2",
+        "gyf 2"
+      ]
+    },
+    {
+      "protocol_id": "gyf_detect",
+      "display_name": "种子培养、诱导表达与 BCA / 荧光检测",
+      "summary_prompt": "生成第三份脚本：48 深孔板上 Fluent 孵育后在 CYTOMAT_2_Tos1 上 500 rpm 培养 8 h，转接到四块深孔培养板并补种到保种板，加 IPTG 后在 CYTOMAT_2_Tos2 上 900 rpm 诱导 12 h，Rotanta460 4000 rpm/15 ℃ 离心 10 min 收菌，TBS 洗涤后配四块酶标板：白板 3、4 走 BCA 蛋白定量，黑板 1、2 走 GYF_340_530 荧光读数。",
+      "protocol_file": "protocol-gyf-3-detect.yaml",
+      "step_map_file": "step-map-gyf-3-detect.yaml",
+      "keywords": [
+        "种子培养诱导检测",
+        "诱导表达与检测",
+        "IPTG诱导检测",
+        "BCA与荧光检测",
+        "BCA检测",
+        "荧光检测",
+        "第三份脚本",
+        "gyf detect",
+        "gyf_3",
+        "gyf 3"
+      ]
+    }
+  ]
+}

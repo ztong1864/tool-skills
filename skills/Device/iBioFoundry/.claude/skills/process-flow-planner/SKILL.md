@@ -7,10 +7,12 @@ description: Momentum DSL 脚本中 process 部分的流程安排规范，指导
 
 ## 📋 核心原则
 
-1. **顺序执行** - process 中的步骤按从上到下顺序执行
+1. **顺序执行** - process 中的步骤按从上到下顺序执行，`parallel` 块内的分支并发执行
 2. **先获取再设状态** - 先 Acquire 获取耗材，紧接着执行 set
-3. **随后设备操作** - 所有设备动作必须位于 set 之后
+3. **随后设备操作** - 用到某组容器的设备动作必须位于该组的 set 之后
 4. **必要约束** - 某些设备操作有固定前后置要求（如酶标仪需旋转）
+5. **并发要加锁** - 并行分支里争用同一台设备时必须用设备锁，见
+   `../script-assembler/instructions/control-flow.md`
 
 ---
 
@@ -65,9 +67,11 @@ process [foundry_standard_experiment_name_YYYYMMDD_HHMMSS]
 - 状态标记前后要一致
 
 ### 2. set 阶段
-- `set ... Status` 必须紧接在 `Acquire` 结束分号之后
+- `set ... Status` 必须紧接在其对应 `Acquire` 块的结束分号之后
 - 在 `Acquire` 与 `set` 之间不得插入设备动作
-- 所有需要更新的容器状态集中写入该 `set` 语句
+- 同一个 `Acquire` 块的容器状态集中写入该 `set` 语句
+- 容器分组在 `parallel` 分支里起步、状态在中段真实变化、或容器是配平板时，按
+  `../container-and-status-rules/references/acquire-and-status.md` 的"允许的三种例外"写
 
 ### 3. 设备操作阶段
 - 按实验逻辑顺序安排设备
@@ -107,8 +111,9 @@ Cytomat_24H [Load]
 
 ## 🎯 流程设计检查清单
 
-- [ ] 所有需要的耗材都在 Acquire 中列出
-- [ ] `set ... Status` 紧接 `Acquire`，且位于所有设备动作之前
+- [ ] 所有需要的耗材都在 Acquire 中列出，配平板也要列
+- [ ] `set ... Status` 紧接其对应 `Acquire`，且位于用到这些容器的设备动作之前
+- [ ] 并行分支里争用的设备都加了设备锁，且 `Acquire`/`Release` 成对同层
 - [ ] `process[...]` 名称等于最终脚本文件名去掉 `.txt`
 - [ ] 设备操作顺序符合实验逻辑
 - [ ] 酶标仪操作包含前后旋转步骤

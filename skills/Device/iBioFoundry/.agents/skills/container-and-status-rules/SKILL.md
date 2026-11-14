@@ -35,7 +35,8 @@ Use this skill as the single entry point for container names, consumable selecti
 - Keep experiment-specific statuses in the experiment-specific mapping or protocol reference that introduced them, not in this shared skill.
 - Do not infer statuses from device templates or free text when a structured experiment mapping is unavailable.
 - In this skill, `Status` means only workflow states used by `Acquire` and `set ... Status`.
-- Place the complete `set ... Status` statement immediately after the terminating semicolon of the `Acquire` block and before every device action.
+- Place the complete `set ... Status` statement immediately after the terminating semicolon of the `Acquire` block and before every device action. `references/acquire-and-status.md` lists the three cases where an experiment legitimately needs more than one `Acquire` block, a mid-process `set`, or an `Acquire` without a status filter.
+- Every container a device action touches must be acquired somewhere in the process, balancing plates included.
 - Apply `references/lid-management.md` to every `Acquire` and every device-action container binding.
 - Device-specific routing syntax such as `ends 'FreedomEVO:Waste'` is not managed by this skill; read `device-operation-library` workflow rules for those cases.
 - If a needed container is missing from the catalog, stop and report the missing container name.

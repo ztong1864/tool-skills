@@ -93,5 +93,8 @@ Editable example placeholders:
 - `MaximumOperationDuration`
 - `PCR_Plate1`: example PCR plate container name in this template block
 
-Fixed notes:
-- `ProtocolFolderPath` stays `C:\\Users\\DELL\\Desktop\\ATC PCR template\\ZFL`
+Editable with care:
+- `ProtocolFolderPath`: the folder on the ATC host that holds the protocol `.xml` files.
+  Each experiment family keeps its own folder under `C:\\Users\\DELL\\Desktop\\ATC PCR template\\`,
+  for example `\\ZFL` and `\\CNPC_CAR`. Take the folder from the experiment mapping; do not
+  guess a new folder name, and do not move a protocol between folders.

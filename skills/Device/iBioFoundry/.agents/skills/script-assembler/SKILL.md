@@ -33,6 +33,9 @@ profile [My System]
 | `pools` | `instructions/pools.md` | 耗材池定义（固定） |
 | `variables` | `instructions/variables.md` | 变量定义（固定） |
 
+`process` 部分自己编写，但其中的控制结构（`parallel`/`branch`、设备锁、`wait_until`、
+`AddWork`、`comment`）有固定写法，见 [instructions/control-flow.md](instructions/control-flow.md)。
+
 ### 步骤 2：编写 process 部分
 
 根据实验需求编写 `process [Name] { ... }` 部分。
@@ -44,6 +47,21 @@ profile [My System]
 - `<standard_name>` 使用标准实验名，并规范为 ASCII 兼容的小写下划线格式，避免空格、中文和特殊字符。
 - `<YYYYMMDD_HHMMSS>` 使用生成脚本时的本地日期时间，精确到秒，用于保证导入时不重名。
 - `process[...]` 中的名称必须等于输出脚本文件名去掉 `.txt` 后缀。
+
+### 多脚本串联时的命名
+
+一个实验拆成多份脚本、并用 `AddWork` 互相串联时，上述"流程名等于文件名"的规则不适用，
+原因是 `AddWork` 的 `SourceName` 指向机器上**事先建好的** Experiment（约定为 `E_` + 流程名），
+流程名一带时间戳就对不上，脚本能导入但运行到 `AddWork` 会失败。
+
+这种情况按下面两条写：
+
+- `process[...]` 用固定流程名，可带 Momentum 流程树的目录前缀，例如
+  `process [AI\\\\GYF_1_Plasmid_PCR_DpnI]`（源文件里是四个反斜杠的转义写法）。
+- 输出文件名照旧带时间戳：`foundry_<standard_name>_<YYYYMMDD_HHMMSS>.txt`，
+  保证每次生成的文件不互相覆盖。
+
+只有被 `AddWork` 串联的流程才用这个例外。单份独立脚本仍然"流程名等于文件名"。
 
 示例：
 
@@ -121,8 +139,9 @@ profile [My System]
 - [ ] pools 部分完全复制自 instructions/pools.md
 - [ ] variables 部分完全复制自 instructions/variables.md
 - [ ] 文件名符合 `foundry_<standard_name>_<YYYYMMDD_HHMMSS>.txt`
-- [ ] process 名称等于文件名去掉 `.txt`
-- [ ] process 中 `set ... Status` 紧接 `Acquire`，所有设备动作位于其后
+- [ ] process 名称等于文件名去掉 `.txt`；被 `AddWork` 串联的流程用固定流程名
+- [ ] process 中 `set ... Status` 紧接其对应的 `Acquire`，相关设备动作位于其后
+- [ ] 控制结构按 `instructions/control-flow.md` 的校验清单核对过
 - [ ] process 部分设备动作来自 reference
 - [ ] 没有使用 reference 外的设备/动作/容器
 - [ ] 没有修改禁止修改的参数

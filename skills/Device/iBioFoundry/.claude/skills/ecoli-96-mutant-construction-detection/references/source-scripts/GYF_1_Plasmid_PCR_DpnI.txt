@@ -1,0 +1,664 @@
+// Generated: Friday, November 13, 2026 2:48:46 PM
+profile [My System]
+{
+	// Runtime settings
+	runtime
+		(Mode = 'Normal', EnableVerboseLogging = 'No', AutoOffline = 'No', 
+		AllowNewIterationsOnDeviceError = 'No', EnableCongestionDetection = 'No', 
+		CongestionClearQueueTimeThreshold = '00:02:00', MaxQueueTimeThreshold = '00:05:00', 
+		DynamicLids = 'No', EnableBatchModificationByOperator = 'No', 
+		IsAccelerated = 'Yes', IsHybridExecution = 'No', AuditOnSimulate = 'No', 
+		LogOnSimulate = 'No', EnableSimulationEmailNotification = 'No', 
+		HibernateOnSimulate = 'No', EnableFixedStartTime = 'Yes', 
+		SimulationStartTime = '9/29/2021 12:00:00 AM', EnableExperiments = 'Yes', 
+		EnableCampaigns = 'Yes', EnableInspire = 'Yes', EnableHorizon = 'Yes', 
+		ContainerLoadPrompting = 'Yes', ContainerUnloadPrompting = 'Yes', 
+		AutoUnload = 'No', AutoLoad = 'No') ;
+
+	// Devices and settings
+	devices
+	{
+		ResolvexA200 A200
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel A200_Hotel
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ALPS3000 ALPS3000
+			(PreHeatingTemperature = '140', SealHeight = '0', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		ATC ATC_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ATC ATC_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ATC ATC_3
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ATC ATC_384
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ApplicationLauncherUtility ApplicationLauncher
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Arktic Arktic
+			(OrdersLocation = 'C:\\ProgramData\\SPTLabtech\\arktic\\Orders', 
+			MaxDuration = '00:00:30', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		AttuneNxT AttuneNxT
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		KeyenceSR710 BC_Reader_DNA
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		KeyenceSR710 BC_Reader_Micro
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Beacon Beacon
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Cytomat10 CYTOMAT_10C
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'No', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '100', RPMT2 = '100', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Cytomat2C4 CYTOMAT_2_Tos1
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'Yes', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '1000', RPMT2 = '1000', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Cytomat2C4 CYTOMAT_2_Tos2
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'Yes', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '1000', RPMT2 = '1000', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Dim4Carousel Carousel
+			(FAMModeEnabled = 'No', SearchMode = 'Entire Device', 
+			HotelsOccupancyLabel = '<Click to Edit ...>', ContainersParticipationLabel = '<Click to Edit ...>', 
+			Speed = '50', Acceleration = '50', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		CentrifugeLoader CentrifugeLoader
+			(CentrifugeLoaderProfileName = 'Loader', LoadUnloadSpeed = 'Medium', 
+			CounterWeight = 'Unknown', GripperOffsetFixedValue = '8', 
+			GripperOffsetPlateAttributeDefault = '8', GripperOffsetMode = 'Half of Plate Height', 
+			IgnoreOpticalPlateSensor = 'Yes', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		ChromeleonVanquish ChromeleonVanquish
+			(DataVault = 'ChromeleonData', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Clariostar Clariostar
+			(ProtocolPathListUI = '<Click Button to Edit>', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		MultidropCombi Combi
+			(ValvePortsUI = '0', InitFluid = 'Default Fluid', PrimeWhenIdle = 'No', 
+			PrimeOnInitialization = 'Yes', PrimeVolumeWhenIdle = '10', 
+			PrimeIntervalWhenIdle = '5', CassetteID = '1', ChangeCassetteAtRuntime = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		ContainerScanner ContainerScanner
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		CytomatHotel Cytomat_10H
+			(ShakeDuringIncubate = 'No', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '100', RPMT2 = '100', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		CytomatHotel Cytomat_24H
+			(ShakeDuringIncubate = 'No', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '100', RPMT2 = '100', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Cytomat2C4 Cytomat_2C425
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'No', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '100', RPMT2 = '100', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Cytomat2C4 Cytomat_2C450
+			(CO2Deadband = '2', CO2Enable = 'No', CO2HiHiLimit = '55', 
+			CO2HiLimit = '50', CO2LoLimit = '40', CO2LoLoLimit = '35', 
+			HumidityDeadband = '2', HumidityEnable = 'No', HumidityHiHiLimit = '75', 
+			HumidityHiLimit = '70', HumidityLoLimit = '30', HumidityLoLoLimit = '25', 
+			O2Deadband = '2', O2Enable = 'No', O2HiHiLimit = '75', 
+			O2HiLimit = '70', O2LoLimit = '60', O2LoLoLimit = '55', 
+			TemperatureDeadband = '2', TemperatureEnable = 'No', 
+			TemperatureHiHiLimit = '45', TemperatureHiLimit = '39', 
+			TemperatureLoLimit = '35', TemperatureLoLoLimit = '30', 
+			ShakeDuringIncubate = 'No', ShakeWhenInitialized = 'No', 
+			StopShakingWhenOffline = 'No', RPMT1 = '100', RPMT2 = '100', 
+			ShakingFrequency = '12', ShakingAmplitude = '50', ScanBarcodeOnGet = 'No', 
+			Use20CharBarcode = 'No', SubstituteGetPutWithTransfer = 'No', 
+			ManagedTransferStation = 'No', FAMModeEnabled = 'No', 
+			SearchMode = 'Entire Device', HotelsOccupancyLabel = '<Click to Edit ...>', 
+			ContainersParticipationLabel = '<Click to Edit ...>', 
+			IncubateTimeout = '00:00:00', IncubateTimeoutHeatOff = 'No', 
+			LowerElevatorAfterAccess = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		DataBuilder DataBuilder
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		DataMiner DataMiner
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Docking Docking
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Echo5XX Echo
+			(OutputPathListUI = '<Click Button to Edit>', LeaveBubblerPumpRunning = 'True', 
+			SkipPlatePropertyValidation = 'False', InsertsDictionary = 'Nest 1~SOURCE PLATE W/2.10 MM INSET;Nest 2~SOURCE PLATE W/4.50 MM INSET', 
+			InsertsOffsets = 'SOURCE PLATE W/2.10 MM INSET~1,0,-9.75;SOURCE PLATE W/4.50 MM INSET~1,1,-10.5', 
+			SetBarcodeCheck = 'No', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Hotel Echo_Hotel
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		GenericMover F7_1
+			(ParkLocation = 'STDloc:safe', ParkMoverAtEndOfRun = 'Yes', 
+			MotionSettings = 'Velocity: 50%, Acceleration: 25%, Jerk: 100%', 
+			AllowLidding = 'Yes', AttendedActionForNoCode = 'Prompt', 
+			UnattendedActionForNoCode = 'Warning', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		RotationStation F7_1_Rotation
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		GenericMover F7_2
+			(ParkLocation = 'STDloc:safe', ParkMoverAtEndOfRun = 'Yes', 
+			MotionSettings = 'Velocity: 50%, Acceleration: 25%, Jerk: 100%', 
+			AllowLidding = 'Yes', AttendedActionForNoCode = 'Prompt', 
+			UnattendedActionForNoCode = 'Warning', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		FileManager FileManager
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Fluent Fluent
+			(ParkScript = 'park', HandleLabwareInTransfer = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		FreedomEVO FreedomEVO
+			(ProtocolPath = '\\\\10.0.0.12\\c\\ProgramData\\Tecan\\EVOware\\database\\scripts', 
+			ParkScript = 'Park.esc', ExecuteParkMethod = 'Yes', 
+			UserName = 'Admin', UserPass = 'tecan2026', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Wtio GPIO_Moxa1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Wtio GPIO_Moxa2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Wtio GPIO_Regrips
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Infinity Infinity
+			(CapillarySize = '33 cm', ProtocolPathListUI = '<Click Button to Edit>', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		IntelliXcap96 IntelliXcap96
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		KBSWasp KBSWasp_sealer
+			(PreHeatingTemperature = '155', SealHeight = '0', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		AgilentMicroplateLabeler Labeler
+			(ProfileName = 'ethernet', Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Wtio LidPark_IO
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Lidpark Lidpark
+			(RegripBeforeLidDelid = 'Yes', DelidToStorageNests = 'No', 
+			LidFromStorageNests = 'No', Active = 'Inactive', TakeOfflineDuringChangeout = 'Yes');
+		MomentumOperator MomentumOperator
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		QuantStudio7Pro QuantStudio7Pro
+			(ProtocolPathListUI = '<Click to Edit Paths>', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Regrip Regrip_1
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Regrip Regrip_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Centrifuge Rotanta460
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Loader SideLoader
+			(MotionSettings = 'Velocity: 100%, Acceleration: 100%, Jerk: 100%', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		GenericMover SpinnakerBT
+			(ParkLocation = 'STDloc:safe', ParkMoverAtEndOfRun = 'Yes', 
+			MotionSettings = 'Velocity: 70%, Acceleration: 70%, Jerk: 70%', 
+			AllowLidding = 'Yes', AttendedActionForNoCode = 'Prompt', 
+			UnattendedActionForNoCode = 'Warning', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Hotel Staging_Nests
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SwapStation SwapStation_F7_1_2
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		SwapStation SwapStation_F7_2_3
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		Unite Unite_WellNOTrans
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		VisionMateSuite VisionMate
+			(FlagDuplicateScanResults = 'No', Active = 'Active', 
+			TakeOfflineDuringChangeout = 'Yes');
+		Waste Waste
+			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+		XPeel XPeel
+			(ElevateWarningsToErrors = 'No', IgnoreSealNotRemovedErrors = 'Yes', 
+			EnablePlatePresenceCheck = 'No', GetRemainingSealsOnStartup = 'No', 
+			Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
+	}
+
+	// Device Pools
+	pools
+	{
+		OperationPool Pool_ATC
+			(Strategy = 'Priority First Available', SkipError = 'No', 
+			SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') ATC_1,ATC_2,ATC_3 ;
+		OperationPool Pool_Cytomat2_Tos
+			(Strategy = 'Priority First Available', SkipError = 'No', 
+			SkipOffline = 'No', OfflineSkipDuration = '00:00:00', 
+			SkipUndocked = 'No', UndockedSkipDuration = '00:00:00') CYTOMAT_2_Tos1,CYTOMAT_2_Tos2 ;
+	}
+
+	// Profile variables
+	variables
+	{
+		Integer AATIFinished
+			(DefaultValue = '0', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		Integer Count_iteration
+			(DefaultValue = '0', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		String lock_CentrifugeLoader
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String Lock_Clariostar
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String Lock_Echo
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String Lock_EVO
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String Lock_Fluent
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		String Lock_Rotanta
+			(PromptForValue = 'No', Persist = 'No', Shared = 'Iteration', 
+			Capacity = '1');
+		Integer subculture
+			(DefaultValue = '1', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		Integer TecanTips
+			(DefaultValue = '0', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+		Integer test
+			(DefaultValue = '0', PromptForValue = 'No', Persist = 'No', 
+			Shared = 'Iteration', Capacity = '1');
+	}
+
+	// ******************  Version 1  ******************
+	// User: Admin  Date: Thursday, November 5, 2026 Time: 4:58:44 PM
+	// ******************  Version 2  ******************
+	// User: Admin  Date: Thursday, November 5, 2026 Time: 5:07:11 PM
+	// ******************  Version 3  ******************
+	// User: Admin  Date: Friday, November 6, 2026 Time: 2:14:41 PM
+	// ******************  Version 4  ******************
+	// User: Admin  Date: Friday, November 6, 2026 Time: 3:32:17 PM
+	// ******************  Version 5  ******************
+	// User: Admin  Date: Friday, November 6, 2026 Time: 5:15:10 PM
+	// ******************  Version 6  ******************
+	// User: Admin  Date: Friday, November 6, 2026 Time: 5:29:14 PM
+	// ******************  Version 7  ******************
+	// User: Admin  Date: Thursday, November 12, 2026 Time: 3:18:14 PM
+	process [AI\\\\GYF_1_Plasmid_PCR_DpnI]
+	{
+		// Process steps
+		Acquire, 
+		02_LYY_PCR_plate GetMyOwnContainer where '02_LYY_PCR_plate.Status=="Primer plate"',
+		Tips_Liha200_1 GetMyOwnContainer where 'Tips_Liha200_1.Status=="New"',
+		02_LYY_PCR_plate_2 GetMyOwnContainer where '02_LYY_PCR_plate_2.Status=="New"',
+		Balance_PCR GetMyOwnContainer,
+		Tips_MCA200_1 GetMyOwnContainer where 'Tips_MCA200_1.Status=="New"',
+		Tips_Liha10_1 GetMyOwnContainer where 'Tips_Liha10_1.Status=="New"';
+
+		set 02_LYY_PCR_plate_2.Status = '"PCR_plate"', Tips_Liha200_1.Status = '"half"', Tips_MCA200_1.Status = '"Used"', Tips_Liha10_1.Status = '"Used"';
+
+		comment ('STEP 1 : pcr') ;
+
+		Acquire(Lock_EVO);
+
+		parallel
+		{
+			branch // 1 of 2
+			{
+				FreedomEVO [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					Tips_MCA200_1 in 'FreedomEVO:Nest 5' GetMyOwnContainer,
+					02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 2' GetMyOwnContainer;
+
+				MomentumOperator [Manual]
+					(PauseSystem = 'No', EmailListLabel = '<Select Emails>...', 
+					TaskAction = 'Show', ShowAsError = 'Yes', TaskName = 'Open inheco 4 add EP well and 1000liha', 
+					TaskTimeout = '00:00:00', AllowCancellation = 'No', 
+					EmailList = 'weibin.zou@thermofisher.com~false;fei.liu2@thermofisher.com~false', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No');
+
+				FreedomEVO [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					Tips_Liha200_1 in 'FreedomEVO:Nest 3' GetMyOwnContainer;
+			}
+			branch // 2 of 2
+			{
+				XPeel [Remove Seal]
+					(ParameterSet = 'Set 4 - Location: default, Speed: slow', 
+					AdhereTime = '2.5', PeelTimeOut = '00:00:35', 
+					ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					02_LYY_PCR_plate in 'XPeel:Nest' GetMyOwnContainer;
+
+				FreedomEVO [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					02_LYY_PCR_plate in 'FreedomEVO:Nest 1' GetMyOwnContainer;
+			}
+		}
+
+		FreedomEVO [RunScript]
+			(SetVars = 'No', ScriptName = 'CAR_Pre_PCR.esc', MaximumOperationTime = '00:40:00', 
+			WaitMethod = 'Yes', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:37:21', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			02_LYY_PCR_plate in 'FreedomEVO:Nest 1' GetMyOwnContainer,
+			02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 2' GetMyOwnContainer,
+			Tips_Liha200_1 in 'FreedomEVO:Nest 3' GetMyOwnContainer,
+			Tips_MCA200_1 in 'FreedomEVO:Nest 5' ends 'FreedomEVO:Waste' GetMyOwnContainer;
+
+		FreedomEVO [RunScript]
+			(SetVars = 'No', ScriptName = 'LYY_chenwanyi_inheco_off.esc', 
+			MaximumOperationTime = '00:20:00', WaitMethod = 'Yes', 
+			ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No');
+
+		parallel
+		{
+			branch // 1 of 2
+			{
+				ALPS3000 [Seal]
+					(SealingTemperature = '140', ReserveForIteration = 'As Is', 
+					RunOnAbortedIteration = 'No', Duration = '00:00:03', 
+					MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+					RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+					Enabled = 'Yes', SkipOnError = 'No')
+					02_LYY_PCR_plate in 'ALPS3000:Nest' GetMyOwnContainer;
+
+				Cytomat_2C425 [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					02_LYY_PCR_plate GetMyOwnContainer;
+
+				Cytomat_24H [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					Tips_Liha200_1 GetMyOwnContainer;
+			}
+			branch // 2 of 2
+			{
+				Acquire(lock_CentrifugeLoader);
+
+				ALPS3000 [Seal]
+					(SealingTemperature = '140', ReserveForIteration = 'As Is', 
+					RunOnAbortedIteration = 'No', Duration = '00:00:03', 
+					MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+					RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+					Enabled = 'Yes', SkipOnError = 'No')
+					02_LYY_PCR_plate_2 in 'ALPS3000:Nest' GetMyOwnContainer;
+
+				CentrifugeLoader [Spin]
+					(VelocityPercent = '50', AccelerationPercent = '50', 
+					DecelerationPercent = '50', TimerMode = 'Time at Speed', 
+					SpinDuration = '00:00:30', BucketNumberToLoad = 'Bucket 1 and 2', 
+					ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:31', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					Balance_PCR in 'CentrifugeLoader:Bucket 2' GetMyOwnContainer,
+					02_LYY_PCR_plate_2 in 'CentrifugeLoader:Bucket 1' GetMyOwnContainer;
+
+				Cytomat_24H [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					Balance_PCR GetMyOwnContainer;
+
+				MomentumOperator [Manual]
+					(PauseSystem = 'No', EmailListLabel = '<Select Emails>...', 
+					TaskAction = 'Show', ShowAsError = 'Yes', TaskName = 'check ATC_1 lid temp=105!!!', 
+					TaskTimeout = '00:00:00', AllowCancellation = 'No', 
+					EmailList = 'weibin.zou@thermofisher.com~false;fei.liu2@thermofisher.com~false', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No');
+
+				ATC_1 [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					02_LYY_PCR_plate_2 in 'ATC_1:Nest' GetMyOwnContainer;
+
+				Release(lock_CentrifugeLoader);
+			}
+		}
+
+		Release(Lock_EVO);
+
+		ATC_1 [Run Protocol]
+			(ProtocolFolderPath = 'C:\\Users\\DELL\\Desktop\\ATC PCR template\\CNPC_CAR', 
+			ProtocolName = 'CAR_PCR_Reaction.xml', CustomCoverTemperature = '105', 
+			MaximumOperationDuration = '02:30:00', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:18:14', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			02_LYY_PCR_plate_2 in 'ATC_1:Nest' GetMyOwnContainer;
+
+		Cytomat_24H [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			02_LYY_PCR_plate_2 GetMyOwnContainer;
+
+		comment ('STEP 2:  Dpn I') ;
+
+		XPeel [Remove Seal]
+			(ParameterSet = 'Set 4 - Location: default, Speed: slow', 
+			AdhereTime = '2.5', PeelTimeOut = '00:00:35', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:00:01', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			02_LYY_PCR_plate_2 in 'XPeel:Nest' GetMyOwnContainer;
+
+		MomentumOperator [Manual]
+			(PauseSystem = 'No', EmailListLabel = '<Select Emails>...', 
+			TaskAction = 'Show', ShowAsError = 'Yes', TaskName = 'PCR plate add DpnI', 
+			TaskTimeout = '00:00:00', AllowCancellation = 'No', 
+			EmailList = 'weibin.zou@thermofisher.com~false;fei.liu2@thermofisher.com~false', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No');
+
+		set 02_LYY_PCR_plate_2.Status = '"PCR_Plate_DpnI"';
+
+		FreedomEVO [RunScript]
+			(SetVars = 'No', ScriptName = 'CAR_add_DpnI.esc', MaximumOperationTime = '00:40:00', 
+			WaitMethod = 'Yes', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:09:08', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			Tips_Liha10_1 in 'FreedomEVO:Nest 3' ends 'FreedomEVO:Waste' GetMyOwnContainer,
+			02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 1' GetMyOwnContainer;
+
+		parallel
+		{
+			branch // 1 of 2
+			{
+				ALPS3000 [Seal]
+					(SealingTemperature = '140', ReserveForIteration = 'As Is', 
+					RunOnAbortedIteration = 'No', Duration = '00:00:03', 
+					MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+					RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+					Enabled = 'Yes', SkipOnError = 'No')
+					02_LYY_PCR_plate_2 in 'ALPS3000:Nest' GetMyOwnContainer;
+
+				Acquire(lock_CentrifugeLoader);
+
+				CentrifugeLoader [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					Balance_PCR in 'CentrifugeLoader:Bucket 2' GetMyOwnContainer,
+					02_LYY_PCR_plate_2 in 'CentrifugeLoader:Bucket 1' GetMyOwnContainer;
+
+				CentrifugeLoader [Spin]
+					(VelocityPercent = '50', AccelerationPercent = '50', 
+					DecelerationPercent = '50', TimerMode = 'Time at Speed', 
+					SpinDuration = '00:00:10', BucketNumberToLoad = 'Bucket 1 and 2', 
+					ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:31', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					Balance_PCR in 'CentrifugeLoader:Bucket 2' GetMyOwnContainer,
+					02_LYY_PCR_plate_2 in 'CentrifugeLoader:Bucket 1' GetMyOwnContainer;
+
+				ATC_1 [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					02_LYY_PCR_plate_2 in 'ATC_1:Nest' GetMyOwnContainer;
+
+				Cytomat_24H [Load]
+					(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No')
+					Balance_PCR GetMyOwnContainer;
+
+				Release(lock_CentrifugeLoader);
+			}
+			branch // 2 of 2
+			{
+				FreedomEVO [RunScript]
+					(SetVars = 'No', ScriptName = 'LYY_chenwanyi_inheco_off.esc', 
+					MaximumOperationTime = '00:20:00', WaitMethod = 'Yes', 
+					ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+					Duration = '00:00:01', MinDelay = '00:00:00', 
+					MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+					SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', 
+					SkipOnError = 'No');
+			}
+		}
+
+		ATC_1 [Run Protocol]
+			(ProtocolFolderPath = 'C:\\Users\\DELL\\Desktop\\ATC PCR template\\CNPC_CAR', 
+			ProtocolName = 'CAR_DpnI_Reaction.xml', CustomCoverTemperature = '105', 
+			MaximumOperationDuration = '02:30:00', ReserveForIteration = 'As Is', 
+			RunOnAbortedIteration = 'No', Duration = '00:32:01', 
+			MinDelay = '00:00:00', MaxDelaySpecified = 'No', RequestedMaxDelay = '00:00:00', 
+			SpoilIfMaxDelayExceeded = 'No', Enabled = 'Yes', SkipOnError = 'No')
+			02_LYY_PCR_plate_2 in 'ATC_1:Nest' GetMyOwnContainer;
+
+		Cytomat_24H [Load]
+			(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No', 
+			Duration = '00:00:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No', 
+			RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No', 
+			Enabled = 'Yes', SkipOnError = 'No')
+			02_LYY_PCR_plate_2 GetMyOwnContainer;
+
+		AddWork
+			(WorkType = 'Batch', BatchType = 'Experiment', SourceName = 'E_GYF_2_Ecoli_DNA_transformation', 
+			ProcessName = 'GYF_2_Ecoli_DNA_transformation', Iterations = '1', 
+			AutoVerifyLoad = 'No', AutoUnload = 'No', AutoVerifyUnload = 'No', 
+			StartType = 'As soon as possible', FixedStart = '9/18/2026 9:45:58 AM', 
+			RelativeStart = '00:00:00') ;
+	}
+}

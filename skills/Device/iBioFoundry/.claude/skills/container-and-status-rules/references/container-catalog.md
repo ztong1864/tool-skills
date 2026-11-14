@@ -32,13 +32,26 @@ Balance_PCR
 
 ```text
 03_ZFL_BMG_Plate1
+03_ZFL_BMG_Plate2
+03_ZFL_BMG_Plate3
+03_ZFL_BMG_Plate4
 BMG_Plate1
 BMG_Plate2
+```
+
+`03_ZFL_BMG_Plate1`、`03_ZFL_BMG_Plate2` 用作黑板（荧光读数），`03_ZFL_BMG_Plate3`、`03_ZFL_BMG_Plate4` 用作白板（吸光 / BCA）。容器本身没有"黑白"字段，靠哪块板走哪个 Clariostar 协议区分。
+
+## 48 深孔板
+
+```text
+03_48DWP_1
+03_48DWP_2
 ```
 
 ## 深孔板（培养板）
 
 ```text
+02_LYY_cell_plate1
 Cell_Plate1
 Cell_Plate2
 Cell_Plate3
@@ -50,6 +63,10 @@ Cell_Plate6
 ## PCR板
 
 ```text
+02_LYY_PCR_plate
+02_LYY_PCR_plate_1
+02_LYY_PCR_plate_2
+02_LYY_PCR_Plate_3
 PCR_Plate1
 PCR_Plate2
 PCR_Plate3
@@ -68,6 +85,7 @@ Primer2
 ## 枪头
 
 ```text
+Tips_Liha10_1
 Tips_Liha1000_1
 Tips_Liha200_1
 Tips_Liha200_2
@@ -91,6 +109,7 @@ Tips_MCA200_7
 Tips_MCA200_8
 Tips_MCA200_9
 Tips_MCA200_10
+Tips_MCA200_11
 Tips_MCA50_1
 Tips_MCA50_2
 Tips_MCA50_3
@@ -100,3 +119,5 @@ Tips_MCA50_3
 
 - These identifiers are the approved container names.
 - If a requested name is not in this file, treat it as missing data rather than inventing a substitute.
+- `02_LYY_PCR_Plate_3` 的 `Plate` 是大写 P，同族的另外三个是小写 `plate`。这是机器上的现有写法，照抄即可。Momentum 比较容器名不区分大小写，但同一份脚本里必须前后一致：不要在 `Acquire` 里写一种拼法、在 `where` 子句里写另一种。
+- `02_LYY_*` 与 `03_*` 这两族名字带编号前缀，是 iBioFoundry 机器上既有的实物板标识，不要按 `PCR_Plate1` 的风格改写。

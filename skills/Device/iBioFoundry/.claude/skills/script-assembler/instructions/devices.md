@@ -3,7 +3,7 @@
 devices中啥都不用改，直接复制以下代码作为devices的内容：
 
 ```
-    devices
+	devices
 	{
 		ResolvexA200 A200
 			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');
@@ -213,7 +213,7 @@ devices中啥都不用改，直接复制以下代码作为devices的内容：
 		FreedomEVO FreedomEVO
 			(ProtocolPath = '\\\\10.0.0.12\\c\\ProgramData\\Tecan\\EVOware\\database\\scripts', 
 			ParkScript = 'Park.esc', ExecuteParkMethod = 'Yes', 
-			UserName = 'Admin', UserPass = 'tecan2024', Active = 'Active', 
+			UserName = 'Admin', UserPass = 'tecan2026', Active = 'Active', 
 			TakeOfflineDuringChangeout = 'Yes');
 		Wtio GPIO_Moxa1
 			(Active = 'Active', TakeOfflineDuringChangeout = 'Yes');

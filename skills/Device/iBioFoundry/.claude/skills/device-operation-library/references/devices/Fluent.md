@@ -20,6 +20,31 @@ Editable example placeholders:
 - `Tips_Liha200_2`: example tips container name in this template block
 - `8Well_Plate_1`: example lidded eight-well plate container name in this template block
 
+## Action: Incubate
+
+Description: hold labware on the Fluent deck for a fixed time, with the plates staying
+in their nests. Used when a short room-temperature or on-deck incubation happens between
+two liquid-handling steps and moving the plates to an incubator would cost more than it saves.
+
+```javascript
+Fluent [Incubate]
+	(ReserveForIteration = 'As Is', RunOnAbortedIteration = 'No',
+	Duration = '00:20:01', MinDelay = '00:00:00', MaxDelaySpecified = 'No',
+	RequestedMaxDelay = '00:00:00', SpoilIfMaxDelayExceeded = 'No',
+	Enabled = 'Yes', SkipOnError = 'No')
+	03_48DWP_1 in 'Fluent:Nest 1' GetMyOwnContainer,
+	03_48DWP_2 in 'Fluent:Nest 2' GetMyOwnContainer;
+```
+
+Editable example placeholders:
+- `Duration`: the incubation time itself
+- `03_48DWP_1`, `03_48DWP_2`: example plate container names in this template block
+
+Notes:
+- The plates must already be on the deck; pair this with `Fluent [Load]` before it.
+- This action occupies the Fluent for its whole duration. Anything else that needs the
+  Fluent has to wait, so keep it short or move the plate to a real incubator instead.
+
 ## Action: RunMethod
 
 Description: run a Fluent liquid-handling method.

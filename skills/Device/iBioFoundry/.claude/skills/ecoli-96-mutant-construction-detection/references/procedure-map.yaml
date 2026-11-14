@@ -1,0 +1,344 @@
+{
+  "note": "实验名 → 阶段 → 实验子步骤 → 代码步骤 ID 的自然语言对照表。derived_text 是从机器上在跑的三份脚本（references/source-scripts/）反推出来的中文描述，不是实验员本人写的原始方案，用于把自然语言需求对到代码步骤上；与实验员的原始方案对齐之后，把这里的文字换成他的原话。",
+  "experiment_name": "96 个大肠杆菌质粒突变体的构建与检测",
+  "experiment_description": "一块 96 孔板上的 96 个质粒突变体：先做全质粒 PCR 并用 DpnI 去掉模板，再化学转化进大肠杆菌、复苏并涂到十二块八孔板上（一个突变体一格），长板后挑单克隆到 48 深孔板做种子培养，转接到四块深孔板，加 IPTG 诱导表达，离心收菌、TBS 洗涤，最后在四块酶标板上读 BCA 蛋白定量和 340/530 荧光。",
+  "protocols": [
+    {
+      "protocol_id": "gyf_plasmid_pcr_dpni",
+      "standard_name": "gyf_1_plasmid_pcr_dpni",
+      "stages": [
+        {
+          "id": "stage2_pcr",
+          "title": "第一步：配全质粒 PCR 体系并扩增",
+          "derived_text": "取引物板（状态为 Primer plate）和一块新的 96 孔 PCR 板，连同 MCA200、Liha200、Liha10 三盒枪头一起上 FreedomEVO。人工打开 inheco、补 EP 管和 1000 µL Liha 枪头后，撕掉引物板的膜，EVO 跑 CAR_Pre_PCR.esc 配好 PCR 体系，MCA200 枪头用完直接进废液。引物板封膜后回 Cytomat_2C425 存放，PCR 板封膜、配平离心，确认 ATC_1 盖温 105 ℃ 后上机跑 CAR_PCR_Reaction.xml。",
+          "substeps": [
+            {
+              "id": "stage2_load_deck",
+              "text": "把新 PCR 板和 MCA200 枪头盒放上 EVO，人工开 inheco 并补耗材，再放 Liha200 枪头盒。",
+              "code_steps": ["evo_load_tips_mca200_1_pcr_plate_2",
+                             "operator_manual_open_inheco_4_add_ep_well_and_1000li",
+                             "evo_load_tips_liha200_1"]
+            },
+            {
+              "id": "stage2_unseal_and_load_primer",
+              "text": "引物板撕膜后上 EVO 第 1 位。",
+              "code_steps": ["xpeel_unseal_pcr_plate", "evo_load_pcr_plate"]
+            },
+            {
+              "id": "stage2_prepare_pcr_mix",
+              "text": "EVO 配 PCR 反应体系，结束后关掉 inheco。",
+              "code_steps": ["evo_run_car_pre_pcr", "evo_run_lyy_chenwanyi_inheco_off"]
+            },
+            {
+              "id": "stage2_store_primer_plate",
+              "text": "引物板封膜后存回 Cytomat_2C425，用过的 Liha200 枪头收进 Cytomat_24H。",
+              "code_steps": ["alps_seal_pcr_plate", "cyt2c425_load_pcr_plate",
+                             "cyt24h_load_tips_liha200_1"]
+            },
+            {
+              "id": "stage2_run_pcr",
+              "text": "PCR 板封膜、与配平板一起离心 30 s，确认 ATC_1 盖温 105 ℃ 后上机跑 PCR 程序，结束后回 Cytomat_24H。",
+              "code_steps": ["alps_seal_pcr_plate_2", "cfl_spin_balance_pcr_pcr_plate_2",
+                             "cyt24h_load_balance_pcr", "operator_manual_check_atc_1_lid_temp_105",
+                             "atc1_load_pcr_plate_2", "atc1_run_car_pcr_reaction",
+                             "cyt24h_load_pcr_plate_2"]
+            }
+          ]
+        },
+        {
+          "id": "stage3_dpni",
+          "title": "第二步：加 DpnI 酶切掉模板质粒",
+          "derived_text": "PCR 板撕膜，人工加 DpnI，把板的工作流状态改成 PCR_Plate_DpnI（第二份脚本按这个状态取板）。EVO 跑 CAR_add_DpnI.esc 用 Liha10 枪头混匀，枪头进废液。封膜、配平离心后回 ATC_1 跑 CAR_DpnI_Reaction.xml，结束后存回 Cytomat_24H，并用 AddWork 排第二份脚本。",
+          "substeps": [
+            {
+              "id": "stage3_add_dpni",
+              "text": "PCR 板撕膜，人工加 DpnI，并把状态改为 PCR_Plate_DpnI。",
+              "code_steps": ["xpeel_unseal_pcr_plate_2", "operator_manual_pcr_plate_add_dpni"]
+            },
+            {
+              "id": "stage3_mix_dpni",
+              "text": "EVO 混匀 DpnI 体系，结束后关 inheco。",
+              "code_steps": ["evo_run_car_add_dpni", "evo_run_lyy_chenwanyi_inheco_off"]
+            },
+            {
+              "id": "stage3_run_digestion",
+              "text": "封膜、配平离心后上 ATC_1 跑酶切程序，结束后连板带配平板一起收走。",
+              "code_steps": ["alps_seal_pcr_plate_2", "cfl_load_balance_pcr_pcr_plate_2",
+                             "cfl_spin_balance_pcr_pcr_plate_2_2", "atc1_load_pcr_plate_2",
+                             "cyt24h_load_balance_pcr", "atc1_run_car_dpni_reaction",
+                             "cyt24h_load_pcr_plate_2"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "protocol_id": "gyf_ecoli_dna_transformation",
+      "standard_name": "gyf_2_ecoli_dna_transformation",
+      "stages": [
+        {
+          "id": "stage2_dna_transformation",
+          "title": "第三步：化学转化进大肠杆菌",
+          "derived_text": "先人工把 ATC_1 的盖温改到 30 ℃。开 inheco，新的组装板上 EVO 第 1 位，DpnI 产物板撕膜后上第 2 位。人工加 4 管 BL21 感受态并检查 Tos1，EVO 跑 CAR_Pre_DNA_transformation.esc 把 DNA 分到感受态里，Liha10 枪头进废液。DpnI 产物板封膜存回 Cytomat_2C450，组装板封膜后上 ATC_1 跑 CAR_DNA_transformation.xml（盖温 30 ℃）。同时把装着 LB 的深孔板撕膜，放到中转位等复苏。",
+          "substeps": [
+            {
+              "id": "stage2_set_atc_lid",
+              "text": "人工把 ATC_1 盖温改到 30 ℃。",
+              "code_steps": ["operator_manual_change_atc1_lid_to_30c"]
+            },
+            {
+              "id": "stage2_load_plates",
+              "text": "开 inheco，组装板上 EVO 第 1 位，DpnI 产物板撕膜后上第 2 位。",
+              "code_steps": ["evo_run_lyy_chenwanyi_inheco", "evo_load_pcr_plate_3",
+                             "xpeel_unseal_pcr_plate_1", "evo_load_pcr_plate_1"]
+            },
+            {
+              "id": "stage2_add_competent_cells",
+              "text": "人工加 4 管 BL21 感受态并检查 Tos1，EVO 把 DNA 分到感受态里，结束后关 inheco。",
+              "code_steps": ["operator_manual_add_4_bl21_check_tos1",
+                             "evo_run_car_pre_dna_transformation",
+                             "evo_run_lyy_chenwanyi_inheco_off"]
+            },
+            {
+              "id": "stage2_run_transformation",
+              "text": "DpnI 产物板封膜存回 Cytomat_2C450、枪头收走；组装板封膜后上 ATC_1 跑转化程序。",
+              "code_steps": ["alps_seal_pcr_plate_1", "cyt2c450_load_pcr_plate_1",
+                             "cyt24h_load_tips_liha200_1", "alps_seal_pcr_plate_3",
+                             "atc1_load_pcr_plate_3", "atc1_run_car_dna_transformation"]
+            },
+            {
+              "id": "stage2_prepare_lb_plate",
+              "text": "装 LB 的深孔板撕膜后放到中转位，等复苏步骤取用。",
+              "code_steps": ["xpeel_unseal_cell_plate1", "staging_load_cell_plate1"]
+            }
+          ]
+        },
+        {
+          "id": "stage3_cell_revive",
+          "title": "第四步：加 LB 复苏",
+          "derived_text": "LB 深孔板和 MCA200 枪头上 EVO，组装板撕膜后上第 1 位，EVO 跑 CAR_Cell_revive.esc 把转化产物转进 LB，枪头进废液。组装板封膜存回 Cytomat_2C450，LB 板用 KBSWasp 封膜后进 CYTOMAT_2_Tos1，450 rpm 振荡复苏 1.5 h，再放到中转位等涂布。",
+          "substeps": [
+            {
+              "id": "stage3_load_revive_deck",
+              "text": "LB 板和 MCA200 枪头上 EVO，组装板撕膜后上第 1 位。",
+              "code_steps": ["evo_load_cell_plate1_tips_mca200_5", "xpeel_unseal_pcr_plate_3",
+                             "evo_load_pcr_plate_3"]
+            },
+            {
+              "id": "stage3_transfer_to_lb",
+              "text": "EVO 把转化产物转进 LB 深孔板。",
+              "code_steps": ["evo_run_car_cell_revive"]
+            },
+            {
+              "id": "stage3_incubate_revive",
+              "text": "组装板封膜存回 Cytomat_2C450；LB 板封膜后在 Tos1 上 450 rpm 振荡 1.5 h，结束后放中转位。",
+              "code_steps": ["alps_seal_pcr_plate_3", "cyt2c450_load_pcr_plate_3",
+                             "kbs_seal_cell_plate1", "tos1_load_cell_plate1", "tos1_shake_450",
+                             "tos1_incubate_cell_plate1", "staging_load_cell_plate1"]
+            }
+          ]
+        },
+        {
+          "id": "stage4_plating",
+          "title": "第五步：涂布到十二块八孔卡那板",
+          "derived_text": "十二块带盖的八孔板按编号放上 EVO 第 1 到第 12 位，EVO 跑 AI_GYF_Plating.esc 把复苏后的菌液涂上去（96 孔对 12 块板，一格一个突变体），然后十二块板一起进 CYTOMAT_10C 培养 15 h，并用 AddWork 排第三份脚本。",
+          "substeps": [
+            {
+              "id": "stage4_load_8well_plates",
+              "text": "十二块八孔板按 1 到 12 的编号放上 EVO 对应 nest。",
+              "code_steps": ["evo_load_8well_plates"]
+            },
+            {
+              "id": "stage4_spread",
+              "text": "EVO 跑涂布方法。",
+              "code_steps": ["evo_run_ai_gyf_plating"]
+            },
+            {
+              "id": "stage4_incubate_plates",
+              "text": "十二块板进 CYTOMAT_10C 培养 15 h 长单克隆。",
+              "code_steps": ["cyt10c_load_8well_plates", "cyt10c_incubate_8well_plates"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "protocol_id": "gyf_detect",
+      "standard_name": "gyf_3_detect",
+      "stages": [
+        {
+          "id": "stage1_containers",
+          "title": "开工前确认",
+          "derived_text": "人工确认可以开始，并确认 Tos1 和 CYTOMAT_10C 是 37 ℃、Tos2 是 18 ℃。两组容器分别在并行的两条支线里 Acquire：一条是培养侧（两块 48 深孔板、保种板、四块深孔培养板、Liha50 和 MCA200_11 枪头），另一条是检测侧（缓冲液板、裂解液板、四块酶标板、八盒 MCA200 枪头）。",
+          "substeps": [
+            {
+              "id": "stage1_confirm",
+              "text": "人工确认开工，并核对三台孵箱的温度。",
+              "code_steps": ["operator_manual_ready_to_run",
+                             "operator_manual_check_tos1_10c_37_tos_2_18"]
+            }
+          ]
+        },
+        {
+          "id": "stage2_seed_culture",
+          "title": "第六步：48 深孔板种子培养",
+          "derived_text": "两块 48 深孔板上 Fluent 孵育 20 min 后收进 Cytomat_10H，人工换上挑好单克隆的 48 深孔板，封膜进 CYTOMAT_2_Tos1，500 rpm 振荡培养 8 h。",
+          "substeps": [
+            {
+              "id": "stage2_fluent_incubate",
+              "text": "两块 48 深孔板上 Fluent 孵育 20 min，然后收进 Cytomat_10H。",
+              "code_steps": ["fluent_load_48dwp_1_48dwp_2", "fluent_incubate_48dwp_1_48dwp_2",
+                             "cyt10h_load_48dwp_1_48dwp_2"]
+            },
+            {
+              "id": "stage2_replace_plates",
+              "text": "人工换上已挑好单克隆的 48 深孔板。",
+              "code_steps": ["operator_manual_replace_48_dwp"]
+            },
+            {
+              "id": "stage2_shake_8h",
+              "text": "两块板分别封膜后进 Tos1，500 rpm 振荡培养 8 h。",
+              "code_steps": ["kbs_seal_48dwp_1", "tos1_load_48dwp_1", "kbs_seal_48dwp_2",
+                             "tos1_load_48dwp_2", "tos1_shake_500",
+                             "tos1_incubate_48dwp_1_48dwp_2"]
+            }
+          ]
+        },
+        {
+          "id": "stage3_transfer_culture",
+          "title": "第七步：转接到四块深孔培养板",
+          "derived_text": "两块 48 深孔板撕膜上 EVO 第 5、6 位，人工把 1000 µL Liha 枪头放到第 13 位，EVO 跑 AI_GYF_2_trans_culture.esc 把种子液转接到四块深孔培养板，同时分一份到保种板，MCA200_11 枪头进废液。四块培养板封膜进 Tos1；保种板封膜存进 Cytomat_10H，两块 48 深孔板也封膜收走。接着把四盒 Liha50 枪头上 EVO、开 inheco，人工往第 1、2 列加 8 个 IPTG 对照；培养板在 Tos1 上 900 rpm 振荡 3.5 h。",
+          "substeps": [
+            {
+              "id": "stage3_load_seed_plates",
+              "text": "两块 48 深孔板撕膜上 EVO，人工补 1000 µL 枪头。",
+              "code_steps": ["xpeel_unseal_48dwp_1", "evo_load_48dwp_1", "xpeel_unseal_48dwp_2",
+                             "evo_load_48dwp_2", "operator_manual_liha_1000_nest_13"]
+            },
+            {
+              "id": "stage3_transfer",
+              "text": "EVO 把种子液转接到四块深孔培养板并分一份到保种板。",
+              "code_steps": ["evo_run_ai_gyf_2_trans_culture"]
+            },
+            {
+              "id": "stage3_store_and_seal",
+              "text": "四块培养板封膜进 Tos1；保种板和两块 48 深孔板封膜后存进 Cytomat_10H。",
+              "code_steps": ["kbs_seal_cell_plate1", "tos1_load_cell_plate1", "kbs_seal_cell_plate2",
+                             "tos1_load_cell_plate2", "kbs_seal_cell_plate3", "tos1_load_cell_plate3",
+                             "kbs_seal_cell_plate4", "tos1_load_cell_plate4",
+                             "alps_seal_cell_plate1", "cyt10h_load_cell_plate1",
+                             "kbs_seal_48dwp_1", "cyt10h_load_48dwp_1",
+                             "kbs_seal_48dwp_2", "cyt10h_load_48dwp_2"]
+            },
+            {
+              "id": "stage3_prepare_iptg",
+              "text": "四盒 Liha50 枪头上 EVO、开 inheco，人工往第 1、2 列加 8 个 IPTG 对照。",
+              "code_steps": ["evo_load_tips_liha50s", "evo_run_lyy_chenwanyi_inheco",
+                             "operator_manual_manual_add_8_iptg_to_col_1_2"]
+            },
+            {
+              "id": "stage3_grow_to_od",
+              "text": "四块培养板在 Tos1 上 900 rpm 振荡 3.5 h 长到诱导密度。",
+              "code_steps": ["tos1_shake_900", "tos1_incubate_cell_plates"]
+            }
+          ]
+        },
+        {
+          "id": "stage4_iptg_induction",
+          "title": "第八步：加 IPTG 诱导表达 12 h",
+          "derived_text": "四块培养板逐块撕膜上 EVO 第 9 到 12 位，EVO 跑 AI_GYF_3_add_IPTG.esc 加 IPTG，四盒 Liha50 枪头进废液。四块板封膜后进 CYTOMAT_2_Tos2，900 rpm 诱导 12 h，然后放到中转位。",
+          "substeps": [
+            {
+              "id": "stage4_load_culture_plates",
+              "text": "四块培养板逐块撕膜上 EVO。",
+              "code_steps": ["xpeel_unseal_cell_plate1", "evo_load_cell_plate1",
+                             "xpeel_unseal_cell_plate2", "evo_load_cell_plate2",
+                             "xpeel_unseal_cell_plate3", "evo_load_cell_plate3",
+                             "xpeel_unseal_cell_plate4", "evo_load_cell_plate4"]
+            },
+            {
+              "id": "stage4_add_iptg",
+              "text": "EVO 加 IPTG。",
+              "code_steps": ["evo_run_ai_gyf_3_add_iptg"]
+            },
+            {
+              "id": "stage4_induce",
+              "text": "四块板封膜进 Tos2，900 rpm 诱导 12 h，结束后放中转位。",
+              "code_steps": ["kbs_seal_cell_plate1", "tos2_load_cell_plate1",
+                             "kbs_seal_cell_plate2", "tos2_load_cell_plate2",
+                             "kbs_seal_cell_plate3", "tos2_load_cell_plate3",
+                             "kbs_seal_cell_plate4", "tos2_load_cell_plate4",
+                             "tos2_shake_900", "tos2_incubate_cell_plates",
+                             "staging_load_cell_plates"]
+            }
+          ]
+        },
+        {
+          "id": "stage5_harvest_and_wash",
+          "title": "第九步：离心收菌与 TBS 洗涤",
+          "derived_text": "四块板进 Rotanta460，4000 rpm、15 ℃ 离心 10 min 收菌，回中转位后上 EVO 第 3 到 6 位；另一条支线等到时间点后把缓冲液板、裂解液板和六盒 MCA200 枪头上 EVO。EVO 跑 AI_GYF_4_add_TBS_wash.esc 洗菌，缓冲液板、裂解液板、前两块培养板和六盒枪头洗完全部进废液。人工确认台面清空，准备取第五步的板。",
+          "substeps": [
+            {
+              "id": "stage5_spin_down",
+              "text": "四块板在 Rotanta460 上 4000 rpm、15 ℃ 离心 10 min，回中转位后上 EVO。",
+              "code_steps": ["rotanta_load_cell_plates", "rotanta_run_cell_plates",
+                             "staging_load_cell_plates", "evo_load_cell_plates"]
+            },
+            {
+              "id": "stage5_load_buffers",
+              "text": "等到时间点后，缓冲液板、裂解液板和六盒 MCA200 枪头上 EVO。",
+              "code_steps": ["evo_load_ax_buffer_pcr_plate1_etc"]
+            },
+            {
+              "id": "stage5_wash",
+              "text": "EVO 洗菌，用完的板和枪头进废液；人工确认台面清空。",
+              "code_steps": ["evo_run_ai_gyf_4_add_tbs_wash",
+                             "operator_manual_check_worktable_empty_start_to_get_s"]
+            }
+          ]
+        },
+        {
+          "id": "stage6_detection",
+          "title": "第十步：BCA 蛋白定量与 340/530 荧光读数",
+          "derived_text": "EVO 跑 AI_GYF_5_detect.esc 把样品配到四块酶标板上，两盒 MCA200 枪头进废液。白板 3、4 在 CYTOMAT_10C 显色 15 min 后，各自加 Clariostar 锁、旋转进出读板机跑 BCA 协议，读完存进 Cytomat_10H；黑板 1、2 在 10 ℃ 显色 6 h 25 min 后跑 GYF_340_530 荧光协议，读完放中转位。后两块培养板封膜存进 Cytomat_10H。最后人工确认检测结束。",
+          "substeps": [
+            {
+              "id": "stage6_prepare_assay_plates",
+              "text": "EVO 把样品配到四块酶标板上。",
+              "code_steps": ["evo_run_ai_gyf_5_detect"]
+            },
+            {
+              "id": "stage6_bca",
+              "text": "白板 3、4 显色 15 min 后逐块读 BCA，读完存进 Cytomat_10H。",
+              "code_steps": ["cyt10c_incubate_zfl_bmg_plate3_zfl_bmg_plate4",
+                             "rotate_zfl_bmg_plate3", "bmg_run_bca_zfl_bmg_plate3",
+                             "cyt10h_load_zfl_bmg_plate3",
+                             "rotate_zfl_bmg_plate4", "bmg_run_bca_zfl_bmg_plate4",
+                             "cyt10h_load_zfl_bmg_plate4"]
+            },
+            {
+              "id": "stage6_store_remaining_cultures",
+              "text": "第三、四块培养板封膜存进 Cytomat_10H。",
+              "code_steps": ["alps_seal_cell_plate3", "cyt10h_load_cell_plate3",
+                             "alps_seal_cell_plate4", "cyt10h_load_cell_plate4"]
+            },
+            {
+              "id": "stage6_fluorescence",
+              "text": "黑板 1、2 在 10 ℃ 显色 6 h 25 min 后逐块读 340/530 荧光，读完放中转位。",
+              "code_steps": ["cyt10c_incubate_zfl_bmg_plate1_zfl_bmg_plate2",
+                             "rotate_zfl_bmg_plate1", "bmg_run_gyf_340_530_zfl_bmg_plate1",
+                             "staging_load_zfl_bmg_plate1",
+                             "rotate_zfl_bmg_plate2", "bmg_run_gyf_340_530_zfl_bmg_plate2",
+                             "staging_load_zfl_bmg_plate2"]
+            },
+            {
+              "id": "stage6_finish",
+              "text": "人工确认检测结束。",
+              "code_steps": ["operator_manual_3_detection_end"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

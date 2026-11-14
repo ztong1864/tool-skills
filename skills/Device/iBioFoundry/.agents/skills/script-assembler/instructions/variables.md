@@ -3,7 +3,7 @@
 variables{}中啥都不用改，直接复制以下内容作为配置
 
 ```
-    variables
+	variables
 	{
 		Integer AATIFinished
 			(DefaultValue = '0', PromptForValue = 'No', Persist = 'No', 

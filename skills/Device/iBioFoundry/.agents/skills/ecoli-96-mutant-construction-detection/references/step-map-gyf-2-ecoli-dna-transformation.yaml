@@ -1,0 +1,310 @@
+{
+ "steps": {
+  "operator_manual_change_atc1_lid_to_30c": {
+   "type": "action",
+   "device": "MomentumOperator",
+   "action": "Manual",
+   "params": {
+    "TaskName": "Change ATC1 lid to 30C"
+   },
+   "containers": []
+  },
+  "evo_run_lyy_chenwanyi_inheco": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "RunScript",
+   "params": {
+    "ScriptName": "LYY_chenwanyi_inheco.esc",
+    "MaximumOperationTime": "00:20:00"
+   },
+   "containers": []
+  },
+  "evo_load_pcr_plate_3": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "Load",
+   "containers": [
+    "02_LYY_PCR_Plate_3 in 'FreedomEVO:Nest 1' GetMyOwnContainer"
+   ]
+  },
+  "xpeel_unseal_pcr_plate_1": {
+   "type": "action",
+   "device": "XPeel",
+   "action": "Remove Seal",
+   "containers": [
+    "02_LYY_PCR_plate_2 in 'XPeel:Nest' GetMyOwnContainer"
+   ]
+  },
+  "evo_load_pcr_plate_1": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "Load",
+   "containers": [
+    "02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 2' GetMyOwnContainer"
+   ]
+  },
+  "operator_manual_add_4_bl21_check_tos1": {
+   "type": "action",
+   "device": "MomentumOperator",
+   "action": "Manual",
+   "params": {
+    "TaskName": "Add 4 BL21,check tos1 "
+   },
+   "containers": []
+  },
+  "evo_run_car_pre_dna_transformation": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "RunScript",
+   "params": {
+    "ScriptName": "CAR_Pre_DNA_transformation.esc",
+    "MaximumOperationTime": "00:40:00",
+    "Duration": "00:21:45"
+   },
+   "containers": [
+    "02_LYY_PCR_Plate_3 in 'FreedomEVO:Nest 1' GetMyOwnContainer",
+    "02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 2' GetMyOwnContainer",
+    "Tips_Liha200_1 in 'FreedomEVO:Nest 3' GetMyOwnContainer",
+    "Tips_Liha10_1 in 'FreedomEVO:Nest 4' ends 'FreedomEVO:Waste' GetMyOwnContainer"
+   ]
+  },
+  "evo_run_lyy_chenwanyi_inheco_off": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "RunScript",
+   "params": {
+    "ScriptName": "LYY_chenwanyi_inheco_off.esc",
+    "MaximumOperationTime": "00:20:00"
+   },
+   "containers": []
+  },
+  "alps_seal_pcr_plate_1": {
+   "type": "action",
+   "device": "ALPS3000",
+   "action": "Seal",
+   "containers": [
+    "02_LYY_PCR_plate_2 in 'ALPS3000:Nest' GetMyOwnContainer"
+   ]
+  },
+  "cyt2c450_load_pcr_plate_1": {
+   "type": "action",
+   "device": "Cytomat_2C450",
+   "action": "Load",
+   "containers": [
+    "02_LYY_PCR_plate_2 GetMyOwnContainer"
+   ]
+  },
+  "cyt24h_load_tips_liha200_1": {
+   "type": "action",
+   "device": "Cytomat_24H",
+   "action": "Load",
+   "containers": [
+    "Tips_Liha200_1 GetMyOwnContainer"
+   ]
+  },
+  "alps_seal_pcr_plate_3": {
+   "type": "action",
+   "device": "ALPS3000",
+   "action": "Seal",
+   "containers": [
+    "02_LYY_PCR_Plate_3 in 'ALPS3000:Nest' GetMyOwnContainer"
+   ]
+  },
+  "atc1_load_pcr_plate_3": {
+   "type": "action",
+   "device": "ATC_1",
+   "reference_device": "ATC-family",
+   "variant": "ATC_1",
+   "action": "Load",
+   "containers": [
+    "02_LYY_PCR_Plate_3 in 'ATC_1:Nest' GetMyOwnContainer"
+   ]
+  },
+  "atc1_run_car_dna_transformation": {
+   "type": "action",
+   "device": "ATC_1",
+   "reference_device": "ATC-family",
+   "variant": "ATC_1",
+   "action": "Run Protocol",
+   "params": {
+    "ProtocolFolderPath": "C:\\\\Users\\\\DELL\\\\Desktop\\\\ATC PCR template\\\\CNPC_CAR",
+    "ProtocolName": "CAR_DNA_transformation.xml",
+    "CustomCoverTemperature": "30",
+    "MaximumOperationDuration": "01:30:00",
+    "Duration": "00:01:06"
+   },
+   "containers": [
+    "02_LYY_PCR_Plate_3 in 'ATC_1:Nest' GetMyOwnContainer"
+   ]
+  },
+  "xpeel_unseal_cell_plate1": {
+   "type": "action",
+   "device": "XPeel",
+   "action": "Remove Seal",
+   "containers": [
+    "02_LYY_cell_plate1 in 'XPeel:Nest' GetMyOwnContainer"
+   ]
+  },
+  "staging_load_cell_plate1": {
+   "type": "action",
+   "device": "Staging_Nests",
+   "action": "Load",
+   "containers": [
+    "02_LYY_cell_plate1 GetMyOwnContainer"
+   ]
+  },
+  "evo_load_cell_plate1_tips_mca200_5": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "Load",
+   "containers": [
+    "02_LYY_cell_plate1 in 'FreedomEVO:Nest 2' GetMyOwnContainer",
+    "Tips_MCA200_5 in 'FreedomEVO:Nest 3' GetMyOwnContainer"
+   ]
+  },
+  "xpeel_unseal_pcr_plate_3": {
+   "type": "action",
+   "device": "XPeel",
+   "action": "Remove Seal",
+   "containers": [
+    "02_LYY_PCR_Plate_3 in 'XPeel:Nest' GetMyOwnContainer"
+   ]
+  },
+  "evo_run_car_cell_revive": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "RunScript",
+   "params": {
+    "ScriptName": "CAR_Cell_revive.esc",
+    "MaximumOperationTime": "00:40:00",
+    "Duration": "00:05:15"
+   },
+   "containers": [
+    "02_LYY_PCR_Plate_3 in 'FreedomEVO:Nest 1' GetMyOwnContainer",
+    "02_LYY_cell_plate1 in 'FreedomEVO:Nest 2' GetMyOwnContainer",
+    "Tips_MCA200_5 in 'FreedomEVO:Nest 3' ends 'FreedomEVO:Waste' GetMyOwnContainer"
+   ]
+  },
+  "cyt2c450_load_pcr_plate_3": {
+   "type": "action",
+   "device": "Cytomat_2C450",
+   "action": "Load",
+   "containers": [
+    "02_LYY_PCR_Plate_3 GetMyOwnContainer"
+   ]
+  },
+  "kbs_seal_cell_plate1": {
+   "type": "action",
+   "device": "KBSWasp_sealer",
+   "action": "Seal",
+   "containers": [
+    "02_LYY_cell_plate1 in 'KBSWasp_sealer:Nest' GetMyOwnContainer"
+   ]
+  },
+  "tos1_load_cell_plate1": {
+   "type": "action",
+   "device": "CYTOMAT_2_Tos1",
+   "reference_device": "CYTOMAT_2_Tos-family",
+   "variant": "CYTOMAT_2_Tos1",
+   "action": "Load",
+   "containers": [
+    "02_LYY_cell_plate1 GetMyOwnContainer"
+   ]
+  },
+  "tos1_shake_450": {
+   "type": "action",
+   "device": "CYTOMAT_2_Tos1",
+   "reference_device": "CYTOMAT_2_Tos-family",
+   "variant": "CYTOMAT_2_Tos1",
+   "action": "Set Shake Speeds",
+   "params": {
+    "Tower1Speed": "450",
+    "Tower2Speed": "450"
+   },
+   "containers": []
+  },
+  "tos1_incubate_cell_plate1": {
+   "type": "action",
+   "device": "CYTOMAT_2_Tos1",
+   "reference_device": "CYTOMAT_2_Tos-family",
+   "variant": "CYTOMAT_2_Tos1",
+   "action": "Incubate",
+   "params": {
+    "Duration": "01:30:01"
+   },
+   "containers": [
+    "02_LYY_cell_plate1 GetMyOwnContainer"
+   ]
+  },
+  "evo_load_8well_plates": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "Load",
+   "containers": [
+    "8Well_Plate_1 'Lidded' in 'FreedomEVO:Nest 1' GetMyOwnContainer",
+    "8Well_Plate_2 'Lidded' in 'FreedomEVO:Nest 2' GetMyOwnContainer",
+    "8Well_Plate_3 'Lidded' in 'FreedomEVO:Nest 3' GetMyOwnContainer",
+    "8Well_Plate_4 'Lidded' in 'FreedomEVO:Nest 4' GetMyOwnContainer",
+    "8Well_Plate_5 'Lidded' in 'FreedomEVO:Nest 5' GetMyOwnContainer",
+    "8Well_Plate_6 'Lidded' in 'FreedomEVO:Nest 6' GetMyOwnContainer",
+    "8Well_Plate_7 'Lidded' in 'FreedomEVO:Nest 7' GetMyOwnContainer",
+    "8Well_Plate_8 'Lidded' in 'FreedomEVO:Nest 8' GetMyOwnContainer",
+    "8Well_Plate_9 'Lidded' in 'FreedomEVO:Nest 9' GetMyOwnContainer",
+    "8Well_Plate_10 'Lidded' in 'FreedomEVO:Nest 10' GetMyOwnContainer",
+    "8Well_Plate_11 'Lidded' in 'FreedomEVO:Nest 11' GetMyOwnContainer",
+    "8Well_Plate_12 'Lidded' in 'FreedomEVO:Nest 12' GetMyOwnContainer"
+   ]
+  },
+  "evo_run_ai_gyf_plating": {
+   "type": "action",
+   "device": "FreedomEVO",
+   "action": "RunScript",
+   "params": {
+    "ScriptName": "AI_GYF_Plating.esc",
+    "MaximumOperationTime": "00:40:00"
+   },
+   "containers": []
+  },
+  "cyt10c_load_8well_plates": {
+   "type": "action",
+   "device": "CYTOMAT_10C",
+   "action": "Load",
+   "containers": [
+    "8Well_Plate_1 GetMyOwnContainer",
+    "8Well_Plate_2 GetMyOwnContainer",
+    "8Well_Plate_3 GetMyOwnContainer",
+    "8Well_Plate_4 GetMyOwnContainer",
+    "8Well_Plate_5 GetMyOwnContainer",
+    "8Well_Plate_6 GetMyOwnContainer",
+    "8Well_Plate_7 GetMyOwnContainer",
+    "8Well_Plate_8 GetMyOwnContainer",
+    "8Well_Plate_9 GetMyOwnContainer",
+    "8Well_Plate_10 GetMyOwnContainer",
+    "8Well_Plate_11 GetMyOwnContainer",
+    "8Well_Plate_12 GetMyOwnContainer"
+   ]
+  },
+  "cyt10c_incubate_8well_plates": {
+   "type": "action",
+   "device": "CYTOMAT_10C",
+   "action": "Incubate",
+   "params": {
+    "Duration": "15:00:01"
+   },
+   "containers": [
+    "8Well_Plate_1 GetMyOwnContainer",
+    "8Well_Plate_2 GetMyOwnContainer",
+    "8Well_Plate_3 GetMyOwnContainer",
+    "8Well_Plate_4 GetMyOwnContainer",
+    "8Well_Plate_5 GetMyOwnContainer",
+    "8Well_Plate_6 GetMyOwnContainer",
+    "8Well_Plate_7 GetMyOwnContainer",
+    "8Well_Plate_8 GetMyOwnContainer",
+    "8Well_Plate_9 GetMyOwnContainer",
+    "8Well_Plate_10 GetMyOwnContainer",
+    "8Well_Plate_11 GetMyOwnContainer",
+    "8Well_Plate_12 GetMyOwnContainer"
+   ]
+  }
+ }
+}

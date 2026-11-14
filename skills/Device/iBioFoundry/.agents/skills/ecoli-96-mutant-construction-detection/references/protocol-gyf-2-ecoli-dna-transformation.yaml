@@ -1,0 +1,260 @@
+{
+ "protocol_id": "gyf_ecoli_dna_transformation",
+ "standard_name": "gyf_2_ecoli_dna_transformation",
+ "process_name": "AI\\\\\\\\GYF_2_Ecoli_DNA_transformation",
+ "containers": [
+  {
+   "name": "02_LYY_PCR_plate_2",
+   "role": "DpnI product plate",
+   "acquire_status": "PCR_Plate_DpnI"
+  },
+  {
+   "name": "02_LYY_PCR_Plate_3",
+   "role": "transformation plate",
+   "acquire_status": "New",
+   "final_status": "Assemble_Plate"
+  },
+  {
+   "name": "Tips_Liha200_1",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "Tips_MCA200_5",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "02_LYY_cell_plate1",
+   "role": "LB revive plate",
+   "acquire_status": "LB",
+   "final_status": "Revive_plate"
+  },
+  {
+   "name": "Tips_Liha10_1",
+   "role": "tips",
+   "acquire_status": "New",
+   "final_status": "Used"
+  },
+  {
+   "name": "8Well_Plate_1",
+   "role": "spreading plate",
+   "acquire_status": "1",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_2",
+   "role": "spreading plate",
+   "acquire_status": "2",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_3",
+   "role": "spreading plate",
+   "acquire_status": "3",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_4",
+   "role": "spreading plate",
+   "acquire_status": "4",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_5",
+   "role": "spreading plate",
+   "acquire_status": "5",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_6",
+   "role": "spreading plate",
+   "acquire_status": "6",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_7",
+   "role": "spreading plate",
+   "acquire_status": "7",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_8",
+   "role": "spreading plate",
+   "acquire_status": "8",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_9",
+   "role": "spreading plate",
+   "acquire_status": "9",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_10",
+   "role": "spreading plate",
+   "acquire_status": "10",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_11",
+   "role": "spreading plate",
+   "acquire_status": "11",
+   "acquire_modifier": "'Lidded' HasLid"
+  },
+  {
+   "name": "8Well_Plate_12",
+   "role": "spreading plate",
+   "acquire_status": "12",
+   "acquire_modifier": "'Lidded' HasLid"
+  }
+ ],
+ "stages": [
+  {
+   "id": "stage1_containers",
+   "flow": [
+    {
+     "acquire": [
+      "02_LYY_PCR_plate_2",
+      "02_LYY_PCR_Plate_3",
+      "Tips_Liha200_1",
+      "Tips_MCA200_5",
+      "02_LYY_cell_plate1",
+      "Tips_Liha10_1",
+      "8Well_Plate_1",
+      "8Well_Plate_2",
+      "8Well_Plate_3",
+      "8Well_Plate_4",
+      "8Well_Plate_5",
+      "8Well_Plate_6",
+      "8Well_Plate_7",
+      "8Well_Plate_8",
+      "8Well_Plate_9",
+      "8Well_Plate_10",
+      "8Well_Plate_11",
+      "8Well_Plate_12"
+     ]
+    },
+    {
+     "set": [
+      "02_LYY_PCR_Plate_3",
+      "02_LYY_cell_plate1",
+      "Tips_Liha200_1",
+      "Tips_MCA200_5",
+      "Tips_Liha10_1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stage2_dna_transformation",
+   "comment": "STEP 3 : DNA transformation",
+   "flow": [
+    "operator_manual_change_atc1_lid_to_30c",
+    {
+     "lock": "Lock_EVO"
+    },
+    "evo_run_lyy_chenwanyi_inheco",
+    {
+     "parallel": [
+      [
+       "evo_load_pcr_plate_3"
+      ],
+      [
+       "xpeel_unseal_pcr_plate_1",
+       "evo_load_pcr_plate_1"
+      ]
+     ]
+    },
+    "operator_manual_add_4_bl21_check_tos1",
+    "evo_run_car_pre_dna_transformation",
+    "evo_run_lyy_chenwanyi_inheco_off",
+    {
+     "parallel": [
+      [
+       "alps_seal_pcr_plate_1",
+       "cyt2c450_load_pcr_plate_1",
+       "cyt24h_load_tips_liha200_1"
+      ],
+      [
+       "alps_seal_pcr_plate_3",
+       "atc1_load_pcr_plate_3"
+      ]
+     ]
+    },
+    {
+     "unlock": "Lock_EVO"
+    },
+    "atc1_run_car_dna_transformation",
+    "xpeel_unseal_cell_plate1",
+    "staging_load_cell_plate1"
+   ]
+  },
+  {
+   "id": "stage3_cell_revive",
+   "comment": "STEP 4 : Cell revive",
+   "flow": [
+    {
+     "lock": "Lock_EVO"
+    },
+    {
+     "parallel": [
+      [
+       "evo_load_cell_plate1_tips_mca200_5"
+      ],
+      [
+       "xpeel_unseal_pcr_plate_3",
+       "evo_load_pcr_plate_3"
+      ]
+     ]
+    },
+    "evo_run_car_cell_revive",
+    {
+     "parallel": [
+      [
+       "alps_seal_pcr_plate_3",
+       "cyt2c450_load_pcr_plate_3"
+      ],
+      [
+       "kbs_seal_cell_plate1",
+       "tos1_load_cell_plate1"
+      ]
+     ]
+    },
+    {
+     "unlock": "Lock_EVO"
+    },
+    "tos1_shake_450",
+    "tos1_incubate_cell_plate1",
+    "staging_load_cell_plate1"
+   ]
+  },
+  {
+   "id": "stage4_plating",
+   "comment": "STEP 5 : Plating",
+   "flow": [
+    "evo_load_8well_plates",
+    "evo_run_ai_gyf_plating",
+    "cyt10c_load_8well_plates",
+    "cyt10c_incubate_8well_plates",
+    {
+     "add_work": {
+      "WorkType": "Batch",
+      "BatchType": "Experiment",
+      "SourceName": "E_GYF_3_Detect",
+      "ProcessName": "GYF_3_Detect",
+      "Iterations": "1",
+      "AutoVerifyLoad": "No",
+      "AutoUnload": "No",
+      "AutoVerifyUnload": "No",
+      "StartType": "As soon as possible",
+      "FixedStart": "9/23/2026 5:50:37 PM",
+      "RelativeStart": "00:00:00"
+     }
+    }
+   ]
+  }
+ ]
+}

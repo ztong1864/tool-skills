@@ -37,4 +37,12 @@ process `DeviceName [ActionName]
         (参数列表)
         Container 规格 in '设备位置' 容器获取方式;` 中的动作只能从 `$device-operation-library` 的设备模板和 workflow rule 中选择，容器命名与 `Acquire` / `Status` 写法则遵循 `$container-and-status-rules`。
 
-`process` 中的顶层顺序固定为：先写完整 `Acquire`，紧接着写 `set ... Status`，然后才写任何设备动作。
+`process` 的默认顺序为：先写完整 `Acquire`，紧接着写 `set ... Status`，然后才写任何设备动作。
+容器分组在 `parallel` 不同分支里起步、状态在流程中段真实发生变化、或容器是配平板这三种情况下，
+`Acquire` 与 `set` 的位置按 `$container-and-status-rules/references/acquire-and-status.md`
+的"允许的三种例外"写。
+
+`process` 里还有五种控制结构不属于设备动作：`parallel` / `branch` 并行块、
+`Acquire(变量)` / `Release(变量)` 设备锁、`wait_until` 等待点、`AddWork` 串联下一份脚本、
+`comment` 阶段注释。它们在 `$device-operation-library` 里没有模板，写法见
+[control-flow.md](control-flow.md)。

@@ -5,6 +5,13 @@ description: Generate complete Momentum DSL txt scripts for the DH5a plasmid-con
 
 # DH5a Experiment Protocols
 
+**不是这个实验的话看另一个技能。** 这个技能做的是 DH5α 宿主、四块八孔板（32 格）、
+Fluent 涂布与挑克隆、单块 BMG 板 Bradford 检测的那一套，产出两份各自独立的脚本。
+96 个突变体涂十二块八孔板（一格一个）、BL21 感受态、48 深孔板种子培养、IPTG 诱导 12 h、
+BCA 与 340/530 荧光检测的那一套，是
+[$ecoli-96-mutant-construction-detection](../ecoli-96-mutant-construction-detection/SKILL.md)，
+三份脚本用 `AddWork` 串联。两边的设备程序没有一个是共用的。
+
 Use this skill to generate the complete DH5a plasmid-construction workflow as two independent Momentum `.txt` scripts:
 
 1. Mutant construction and transformation: PCR through kanamycin-plate spreading.
