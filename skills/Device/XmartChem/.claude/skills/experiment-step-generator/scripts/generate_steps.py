@@ -140,6 +140,7 @@ def build_steps_prompt(source_text: str, ata_steps: str, reference_text: str,
 6. 反应条件和后处理以 `source_text` 为准：预搅拌、反应温度、反应时间、转速和后处理的用量按用户写的来；`source_text` 里有后加的修改（例如“修改：只能室温反应”“修改：第 6 步加入 0.5 mL 乙腈”）时以修改为准；用户没写的才沿用 ATA 模板，后处理的步骤和用量照模板原样写，不要改动模板里的数值。
 7. 步骤编号应连续，每步只表达一个主要操作。
 8. 不写长篇解释。
+9. `source_text` 里关于流程的要求（例如“创建设备任务”“先不要启动执行”“关键步骤暂停等我确认”）不是实验操作，不写进步骤。
 
 ## source_text
 {source_text}{selected_block}
@@ -372,7 +373,9 @@ def detect_reaction_type(source_text: str) -> dict[str, Any]:
 
 
 def generate_steps(constraints_path: Path, reference_dir: Path,
-                   amounts_path: Path | None = None, rows: str = "") -> str:
+                   amounts_path: Path | None = None, rows: str = "") -> list[tuple[int | None, str]]:
+    """[(condition number, numbered steps)]: one entry per chosen condition of the amounts table, or a single
+    (None, steps) with the candidate categories when no amounts table is given."""
     selected = load_selected_conditions(amounts_path, rows) if amounts_path else None
     constraints = read_json(constraints_path)
     source_text = constraints.get("source_text")
@@ -391,36 +394,47 @@ def generate_steps(constraints_path: Path, reference_dir: Path,
         validate_markdown(markdown)
         return markdown
 
-    if not selected or len(selected) == 1:
-        return steps_for(selected)
-    # Several conditions run side by side on the workstation: fdu-experiment-plan gives each its own reaction
-    # position and fdu-multi-step-json lines their stirring steps up on the same rows. Asked for all of them in
-    # one list, the model wrote them one after another, each reacting 24 h after the previous one (10 conditions:
-    # about 10 days). Each condition is written on its own and the groups are put together here.
+    if not selected:
+        return [(None, steps_for(None))]
+    # Each condition is written on its own and saved to its own file, one per recommendation: fdu-experiment-plan
+    # reads the file of each row. Asked for several conditions in one list, the model wrote them one after another,
+    # each reacting 24 h after the previous one; the conditions run side by side, one reaction position each.
     with ThreadPoolExecutor(max_workers=min(PARALLEL_LLM_CALLS, len(selected))) as pool:
         groups = list(pool.map(lambda condition: steps_for([condition]), selected))
-    numbers = [re.match(r"条件 (\d+)", condition).group(1) for condition in selected]
-    return "\n\n".join([parallel_note(len(selected))]
-                       + [f"### 条件 {number}\n{steps}" for number, steps in zip(numbers, groups)])
+    numbers = [int(re.match(r"条件 (\d+)", condition).group(1)) for condition in selected]
+    return list(zip(numbers, groups))
 
 
 PARALLEL_LLM_CALLS = 4
+STEPS_FILE_STEM = "generated_experiment_steps"
 
 
-def parallel_note(count: int) -> str:
-    return (f"以下 {count} 组条件分别在各自的反应位上同时进行：各反应位分别加料后一起预搅拌、一起反应、一起后处理，"
-            "总时长与一组相同，不是一组做完再做下一组。")
+def write_step_files(results: list[tuple[int | None, str]], output_dir: Path) -> list[Path]:
+    """One Markdown file per condition, generated_experiment_steps_<N>.md (N = row of the amounts table) headed
+    `### 条件 N`; generated_experiment_steps.md for the generic steps written without an amounts table."""
+    output_dir.mkdir(parents=True, exist_ok=True)
+    paths: list[Path] = []
+    for number, steps in results:
+        if number is None:
+            path, text = output_dir / f"{STEPS_FILE_STEM}.md", steps
+        else:
+            path, text = output_dir / f"{STEPS_FILE_STEM}_{number}.md", f"### 条件 {number}\n{steps}"
+        write_text(text + "\n", path)
+        paths.append(path)
+    return paths
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Generate Markdown experiment steps using LLM.")
     parser.add_argument("--constraints", required=True, help="constraint-parser JSON path.")
     parser.add_argument("--reference-dir", default=str(DEFAULT_REFERENCE_DIR), help="Directory containing reference experiment .md files.")
-    parser.add_argument("--output", default="", help="Output Markdown path.")
+    parser.add_argument("--steps-output-dir", default="",
+                        help="Folder for the step files, one generated_experiment_steps_<N>.md per condition "
+                             "(default: output/generated_experiment_steps_<timestamp>/).")
     parser.add_argument("--amounts", default="", help="Optional amounts CSV (chemical-amount-calculator output): write steps "
                         "for chosen conditions with their real materials and amounts.")
     parser.add_argument("--rows", default="", help="With --amounts: condition numbers to keep, e.g. 1 or 1,3 (default: all). "
-                        "Several conditions are written as groups that run side by side, one reaction position each.")
+                        "Each condition gets its own file; the conditions run side by side, one reaction position each.")
     return parser
 
 
@@ -429,11 +443,17 @@ def main() -> int:
     try:
         if args.rows and not args.amounts:
             raise StepGenerationError("--rows needs --amounts (the amounts CSV the condition numbers refer to).")
-        markdown = generate_steps(Path(args.constraints), Path(args.reference_dir),
-                                  Path(args.amounts) if args.amounts else None, args.rows)
-        out_path = Path(args.output) if args.output else OUTPUT_DIR / f"generated_experiment_steps_{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}.md"
-        write_text(markdown + "\n", out_path)
-        print(f"Experiment steps generated: {out_path}")
+        results = generate_steps(Path(args.constraints), Path(args.reference_dir),
+                                 Path(args.amounts) if args.amounts else None, args.rows)
+        output_dir = (Path(args.steps_output_dir) if args.steps_output_dir
+                      else OUTPUT_DIR / f"{STEPS_FILE_STEM}_{datetime.now().strftime('%Y-%m-%d-%H-%M-%S')}")
+        paths = write_step_files(results, output_dir)
+        print(f"Experiment steps generated: {output_dir} ({len(paths)} file(s), one per condition)")
+        for path in paths:
+            print(f"  {path.name}")
+        if len(paths) > 1:
+            print("The conditions run side by side on the workstation, one reaction position each, "
+                  "not one after another.")
         return 0
     except Exception as exc:
         print(f"Generation failed: {exc}", file=sys.stderr)

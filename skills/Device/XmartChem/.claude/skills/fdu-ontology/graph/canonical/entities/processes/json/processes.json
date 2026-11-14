@@ -23,7 +23,7 @@
     "name": "FDU experiment plan generation"
   },
   "process:fdu-risk-review": {
-    "description": "Cross-cutting guard process that checks reaction feasibility, safety risk, device capability, and action boundaries after recommendation, amount calculation, and numbered step generation produce planning artifacts, before user confirmation.",
+    "description": "Cross-cutting guard process that checks the planned materials for hazardous compounds after recommendation, amount calculation, and numbered step generation produce planning artifacts, before user confirmation.",
     "document": "graph/canonical/entities/processes/FduRiskReviewProcess.md",
     "entity_type": "Process",
     "id": "process:fdu-risk-review",

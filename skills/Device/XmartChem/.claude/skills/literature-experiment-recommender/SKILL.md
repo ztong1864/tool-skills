@@ -13,7 +13,7 @@ description: 这是化学实验流程中的候选条件推荐技能，用于根�
 
 - constraint-parser 输出的实验约束 JSON
 - 用户提供的候选化学空间 CSV
-- 文献 PDF、输出格式示例和已有实验经验
+- 文献（任务自带的 PDF，或本技能自带的默认文献 `KB/literature/`）、输出格式示例和已有实验经验
 
 筛选并组合出一批合理的候选实验条件，输出为下游可继续使用的推荐 CSV。
 
@@ -34,7 +34,7 @@ description: 这是化学实验流程中的候选条件推荐技能，用于根�
 1. 读取主输入 JSON，理解 `source_text`、`items`、试剂类别、底物、固定条件和歧义项。
 2. 读取用户输入的候选化学空间 CSV；优先使用用户明确给出的 `chemical_space.csv` 或其它 `.csv` 路径。只有用户未提供候选空间文件时，才回退读取 `KB/chemical_space.csv`。
 3. 读取输出格式示例，确定输出 CSV 的列名、列顺序和候选条件字段。
-4. 结合文献 PDF 或已有文献信息，为每个变量列选择合理候选，并形成完整条件组合。
+4. 按“文献从哪来”那一节先跑一次 `--literature-status`，读到对应的文献（任务自带的 PDF，或默认文献 `KB/literature/`），据此为每个变量列选择合理候选，并形成完整条件组合。
 5. 生成用户要求数量的推荐数据；如果用户没有指定数量，默认生成 10 条。
 6. 用 `scripts/write_recommendations.py --output <mission artifacts 目录>/literature_recommendations_<YYYYMMDD>.csv` 写出（见“输出 CSV 的写法”）。
 
@@ -42,7 +42,7 @@ description: 这是化学实验流程中的候选条件推荐技能，用于根�
 
 - 输入：constraint-parser JSON。
 - 输入：用户提供的候选空间 CSV；未提供 CSV 时可回退 `KB/chemical_space.csv`。
-- 输入：文献 PDF 目录和 `KB/output_format_example.csv`。
+- 输入：文献 —— 任务自带的 PDF 目录（`KB/pdf_new`、`KB/pdfs`），或本技能自带的默认文献 `KB/literature/`（Markdown，带 `index.md`）；以及 `KB/output_format_example.csv`。
 - 输入：可选推荐条数；未指定时默认为 10。
 - 输出：`<mission artifacts 目录>/literature_recommendations_<YYYYMMDD>.csv`（`--output` 指定的路径；不要写进本技能目录）。
 
@@ -77,11 +77,13 @@ description: 这是化学实验流程中的候选条件推荐技能，用于根�
 
 之后每次向用户汇报这一步的结果（包括随后审查的暂停和审查未通过时），都在回复里完整列出全部推荐组，不要只写“已推荐 10 组”：Markdown 表格，每组一行，第一列是组号（从 1 开始，与 CSV 的行顺序一致，用户按组号选择，例如“只保留第一组”），其余列为金属盐（两种时写成“CuI + ZnBr₂”）、手性胺、分子筛（`none` 写“不加”）、溶剂。审查指出问题时，在表下写明是哪几组。
 
-## 缺少文献时
+## 文献从哪来（两级，任务自带的优先）
 
-- 先运行一次 `python <本技能目录>/scripts/write_recommendations.py --literature-status`（只读，检查 `KB/pdf_new`、`KB/pdfs`），再看任务输入里有没有用户上传的 PDF；只查这一次。不要用 Glob/Grep 或反复列目录去找 PDF，也不要上网搜索。
-- 结果是 `no_literature` 且用户没有上传 PDF 时，这是正常情况，不是失败：基于约束 JSON、用户的候选空间 CSV 和 `KB/output_format_example.csv` 完成推荐（不要读本技能目录里以前的推荐结果，它们与本次任务无关），照常用 `write_recommendations.py` 写出文件并登记。
-- 回复里用一句话说明“本轮推荐未使用文献依据”即可（不得编造文献）；不要说推荐结果不可信，也不要让用户重新发起任务。
+- 先运行一次 `python <本技能目录>/scripts/write_recommendations.py --literature-status`（只读），再看任务输入里有没有用户上传的 PDF；只查这一次。不要用 Glob/Grep 或反复列目录去找 PDF，也不要上网搜索。
+- `mode` 是 `task_literature`：本次任务自带 PDF（`KB/pdf_new`、`KB/pdfs` 或任务输入里的上传件），读这些，它们优先。只有这些 PDF 覆盖不到本次反应时，才另外去看默认文献。
+- `mode` 是 `default_literature`：本次任务没有 PDF，用本技能自带的默认文献 `KB/literature/`。它们是用 MinerU 从原始 PDF 转成的 Markdown，直接读，不需要解析 PDF。**先读 `KB/literature/index.md`**，按反应类型挑最接近的 2–3 篇再读全文，不要把 23 篇全读一遍。回复里点名依据了哪几篇，并说明这几篇来自本技能的默认文献、不是用户本次提供的文件。
+- `mode` 是 `no_literature`：两级都没有。这是正常情况，不是失败：基于约束 JSON、用户的候选空间 CSV 和 `KB/output_format_example.csv` 完成推荐（不要读本技能目录里以前的推荐结果，它们与本次任务无关），照常用 `write_recommendations.py` 写出文件并登记，回复里用一句话说明“本轮推荐未使用文献依据”。
+- 任何一种情况都不得编造文献，也不要说推荐结果不可信或让用户重新发起任务。默认文献的覆盖范围见 `KB/literature/index.md`；本次反应明显不在其中时，按实际情况说明依据有限，而不是硬套。
 
 ## 相关文件
 

@@ -11,7 +11,7 @@ description: 这是化学实验流程的一部分，用于根据实验步骤 Mar
 
 ## 强制执行顺序
 
-1. 使用 `python scripts/generate_plan.py --steps-file <path> --amounts-csv <path>` 运行批量生成。
+1. 使用 `python scripts/generate_plan.py --steps-file <编号步骤目录> --amounts-csv <path>` 运行批量生成。`--steps-file` 传 experiment-step-generator 的输出目录（`--steps-output-dir`，每组推荐条件一份 `generated_experiment_steps_<N>.md`）：每组用自己那份步骤写方案，只为有步骤文件的组生成方案（用户用 `--rows` 选了几组时就只有这几组）。传其中任一份文件也按整个目录处理；传单独一份不带组号的步骤文件时，它用于投料量 CSV 的每一行。
 2. `--output-dir` 可选，不提供时默认写入 `output/experiment_plan_<timestamp>/`。
 3. `--tray` 可选，不提供时默认使用 `T-3`。
 4. 每条推荐条件单独生成一份 Markdown 文件。
@@ -19,7 +19,7 @@ description: 这是化学实验流程的一部分，用于根据实验步骤 Mar
 
 ## 输入输出
 
-- 输入：实验步骤 Markdown、带用量推荐 CSV、`KB/example_plan.md` 示例模板。
+- 输入：编号步骤目录（每组一份）或单份实验步骤 Markdown、带用量推荐 CSV、`KB/example_plan.md` 示例模板。
 - 输出：`output/experiment_plan_<timestamp>/experiment_plan_<tray>_<index>.md`。
 - 约束：输出仅限 Markdown，并只包含 `## 实验概述`、`## 试剂作用与用量`、`## 实验步骤`、`## 反应位置与过滤信息` 四个章节。
 

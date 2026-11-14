@@ -11,7 +11,7 @@
 ## 常见输入
 
 - constraint-parser JSON
-- 文献 PDF 目录
+- 文献：任务自带的 PDF 目录（`KB/pdf_new`、`KB/pdfs`）优先；任务没带 PDF 时回退到本技能自带的默认文献 `KB/literature/`（用 MinerU 从 PDF 转成的 Markdown，带 `index.md`）。两级由 `scripts/write_recommendations.py --literature-status` 一次报出
 - 用户提供的 `chemical_space.csv` 或其它 `.csv` 候选空间文件
 - `KB/chemical_space.csv`（仅在用户未提供 CSV 时作为 fallback）
 - `KB/output_format_example.csv`

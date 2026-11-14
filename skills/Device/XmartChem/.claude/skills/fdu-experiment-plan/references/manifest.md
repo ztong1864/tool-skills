@@ -10,7 +10,7 @@
 
 ## 常见输入
 
-- 实验步骤参考 Markdown
+- 编号步骤目录（experiment-step-generator 每组推荐条件一份步骤）或单份实验步骤 Markdown
 - 带用量推荐 CSV
 - `KB/example_plan.md` 示例模板
 

@@ -8,12 +8,23 @@ Use these workspace files as references when this skill is invoked.
 
 Use this JSON as the primary source of user constraints and reaction context. Derive candidate-condition variables from its `items` array, and use them to form complete recommendation rows rather than isolated candidate lists.
 
-## Literature PDFs
+## Literature
 
-- `.agents/skills/literature-experiment-recommender/KB/pdf_new/`
-- `.agents/skills/literature-experiment-recommender/KB/pdfs/`
+Two tiers. Run `scripts/write_recommendations.py --literature-status` once; it reports both and says which to use.
 
-Read relevant PDFs or extracted text when available. Prefer literature patterns directly connected to the reaction context and constraints in the main input JSON. Do not assume a fixed reaction type when the user input does not specify one.
+**This task's own PDFs — these win.** Paths are relative to this skill's own directory:
+
+- `KB/pdf_new/`
+- `KB/pdfs/`
+
+plus any PDF the task itself supplies (in a LabOntology mission, the files the mission holds).
+
+**Default literature — the fallback when the task brought no PDF.**
+
+- `KB/literature/` — Markdown converted from the original PDFs with MinerU, so it is read directly, with no PDF parsing.
+- `KB/literature/index.md` — read this first and pick the two or three papers closest to the reaction at hand; do not read the whole set.
+
+Prefer literature patterns directly connected to the reaction context and constraints in the main input JSON. Do not assume a fixed reaction type when the user input does not specify one. When the reaction at hand falls outside what the default literature covers, say the basis is limited rather than stretching an unrelated paper to fit. Never search the web or the workspace for more PDFs, and never invent a citation.
 
 ## Candidate Space
 

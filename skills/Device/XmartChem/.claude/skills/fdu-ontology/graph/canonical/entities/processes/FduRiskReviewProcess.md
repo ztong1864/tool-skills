@@ -10,11 +10,10 @@ Use it to review the planning artifacts produced by planning-side steps before t
 
 What it checks:
 
-- reaction feasibility,
-- safety risk,
-- device capability,
-- action boundary,
-- whether the current step should stop and ask for human adjustment.
+- whether the planned materials, or what they obviously form together, are hazardous compounds (tiers in `fdu-risk-review/references/risk_knowledge_base.md`),
+- whether the current step should stop (Tier 1) or ask the user to confirm handling (Tier 2).
+
+Experiment details (step order, cooling, work-up, amounts, units, device capability) are not reviewed; the user judges them at the checkpoints.
 
 Relevant skill:
 

@@ -1,4 +1,4 @@
 interface:
   display_name: "FDU Risk Review"
-  short_description: "Review planning-stage FDU experiment risk."
-  default_prompt: "Review the current FDU planning step for reaction feasibility, safety risk, device capability, and action boundary issues."
+  short_description: "Check FDU planning artifacts for hazardous compounds."
+  default_prompt: "Check whether the materials of the current FDU planning step, or what they form together, include hazardous compounds; experiment details are out of scope."

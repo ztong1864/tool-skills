@@ -20,18 +20,33 @@ description: 这是化学实验流程的一部分，用于基于 constraint-pars
 ## 输入输出
 
 - 输入：constraint JSON、`KB/ata_step.md`、`KB/reference_experiment_plan.md`、可选参考目录；可选的投料量 CSV（`--amounts`）和条件编号（`--rows`）。
-- 输出：`output/generated_experiment_steps_<timestamp>.md`
-- 约束：只输出 Markdown 编号步骤列表。
+- 输出：`output/generated_experiment_steps_<timestamp>/generated_experiment_steps_<N>.md`，每组推荐条件一份（N 是投料量 CSV 的行号）；不带 `--amounts` 时只有一份 `generated_experiment_steps.md`（含候选类别的通用步骤）。
+- 约束：每份文件只有一行 `### 条件 N` 和这组条件的 Markdown 编号步骤列表。
 
-## 只为选定条件写步骤（可选）
+运行：
 
-用户只要其中一组或几组条件（例如“只保留第一条”）时，加 `--amounts <投料量 CSV> --rows 1`（多组写 `1,3`，范围写 `2-4`）：
-步骤写这几组的具体物料和用量，标为 none 的物料不写。投料量 CSV 是投料计算步骤的输出（列成对出现：`xxx` 和
-`xxx_amount`），`--rows` 是它的数据行号（从 1 开始）。不带这两个参数时照旧输出含候选类别的通用步骤。
+```
+python scripts/generate_steps.py --constraints <约束 JSON> --amounts <投料量 CSV> --steps-output-dir <输出目录>
+```
 
-多组条件在工作站上**同时进行**：每组占一个反应位（fdu-experiment-plan 为每组单独生成方案和反应位），各反应位一起预搅拌、
-一起反应，总时长与一组相同。所以多组时输出第一行说明这一点，之后每组前有一行 `### 条件 N`，组内步骤从 1 编号；脚本逐组
-生成后合并，不会把各组写成先后进行的一长串步骤。只传用户在投料量确认时选定的组（`--rows`）；用户没有选定时再写全部条件。
+在 LabOntology 中 `--steps-output-dir` 写 mission 的 artifacts 目录下的一个新子目录（例如 `<artifacts 目录>/numbered_steps`），
+`--register-all` 会登记这个目录和其中的步骤文件。重跑（修订）时写进另一个新子目录（例如 `numbered_steps_v2`），不要改旧目录
+里的文件。
+
+## 每组推荐条件一份步骤
+
+带 `--amounts <投料量 CSV>` 时，投料量 CSV 的每一行（每组推荐条件）各生成一份步骤文件，写这组条件的具体物料和用量，标为
+none 的物料不写，组内步骤从 1 编号。投料量 CSV 是投料计算步骤的输出（列成对出现：`xxx` 和 `xxx_amount`）。
+
+用户只要其中一组或几组条件（例如“只保留第一条”）时加 `--rows`（`1`，多组写 `1,3`，范围写 `2-4`；是投料量 CSV 的数据行号，
+从 1 开始），只为这几组生成文件。用户没有选定时不加 `--rows`，每组都生成。
+
+各组推荐条件不一定步骤完全相同（例如不加分子筛的组少一项物料），按各组自己的条件写，不要为了和其他组一致而补步骤或删步骤。
+
+多组条件在工作站上**同时进行**：每组占一个反应位，各反应位一起预搅拌、一起反应，总时长与一组相同，不是一组做完再做下一组。
+fdu-experiment-plan 把整个目录作为 `--steps-file`，每组用自己的那份步骤写方案。
+
+向用户汇报时按组列出步骤；各组相同的步骤可以只写一次，再说明哪几组在哪一步不同（例如第 2 组不加分子筛）。
 
 ## 条件修改
 
@@ -42,6 +57,7 @@ description: 这是化学实验流程的一部分，用于基于 constraint-pars
 ## 注意事项
 
 - 不生成完整实验方案，不生成设备 JSON。
+- 用户指令里关于流程的要求（创建设备任务、先不启动、暂停确认等）不是实验操作，不写进步骤。
 - 不绑定孔位、托盘、QR code 或仪器运行字段。
 - 参考 md 只用于学习语气和步骤粒度。
 

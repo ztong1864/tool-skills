@@ -201,27 +201,134 @@ def build_anchor_signature(step_group: Sequence[Dict[str, Any]], anchor_position
     return signature
 
 
-def validate_anchor_signatures(
+class AnchorSlot:
+    """One row shared by the groups' anchor steps (stirring, filtering) in the merged table."""
+
+    def __init__(self, kind: str, step: Dict[str, Any]) -> None:
+        self.kind = kind
+        self.step = step
+
+
+def _number(value: Any) -> Optional[float]:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def _stirrer_settings(step: Dict[str, Any]) -> Tuple[Optional[float], Optional[float], Optional[float]]:
+    skill_input = step.get("skill_input") if isinstance(step.get("skill_input"), dict) else {}
+    return (_number(skill_input.get("temperature")), _number(skill_input.get("reaction_duration")),
+            _number(skill_input.get("rotation_speed")))
+
+
+def _match_score(slot: AnchorSlot, kind: str, step: Dict[str, Any]) -> Optional[int]:
+    """How well a group's anchor step fits a row; None when it cannot share it. Stirring steps that agree in
+    temperature, duration and speed fit best, so a group missing one of them lines the others up with their match."""
+    if slot.kind != kind:
+        return None
+    if kind != "stirrer":
+        return 1
+    score = 1
+    for weight, mine, theirs in zip((1, 2, 1), _stirrer_settings(slot.step), _stirrer_settings(step)):
+        if mine is not None and theirs is not None and abs(mine - theirs) < 1e-6:
+            score += weight
+    return score
+
+
+def _align_to_slots(slots: List[AnchorSlot], anchors: List[Tuple[int, str]],
+                    step_group: Sequence[Dict[str, Any]]) -> Tuple[List[AnchorSlot], List[AnchorSlot]]:
+    """Line a group's anchors up with the rows so far, keeping both orders (the first step stays on the first row).
+    Returns the rows with the group's unmatched anchors added and the row of each of the group's anchors."""
+    rest_slots, rest_anchors = slots[1:], anchors[1:]
+    rows, cols = len(rest_slots), len(rest_anchors)
+    best = [[0] * (cols + 1) for _ in range(rows + 1)]
+    for i in range(1, rows + 1):
+        for j in range(1, cols + 1):
+            value = max(best[i - 1][j], best[i][j - 1])
+            score = _match_score(rest_slots[i - 1], rest_anchors[j - 1][1], step_group[rest_anchors[j - 1][0]])
+            if score is not None:
+                value = max(value, best[i - 1][j - 1] + score)
+            best[i][j] = value
+
+    pairs: List[Tuple[Optional[AnchorSlot], Optional[Tuple[int, str]]]] = []
+    i, j = rows, cols
+    while i > 0 or j > 0:
+        if i > 0 and j > 0:
+            score = _match_score(rest_slots[i - 1], rest_anchors[j - 1][1], step_group[rest_anchors[j - 1][0]])
+            if score is not None and best[i][j] == best[i - 1][j - 1] + score:
+                pairs.append((rest_slots[i - 1], rest_anchors[j - 1]))
+                i, j = i - 1, j - 1
+                continue
+        if i > 0 and (j == 0 or best[i][j] == best[i - 1][j]):
+            pairs.append((rest_slots[i - 1], None))
+            i -= 1
+        else:
+            pairs.append((None, rest_anchors[j - 1]))
+            j -= 1
+    pairs.reverse()
+
+    merged = [slots[0]]
+    mapping = [slots[0]]
+    for slot, anchor in pairs:
+        if slot is None:
+            slot = AnchorSlot(anchor[1], step_group[anchor[0]])
+        merged.append(slot)
+        if anchor is not None:
+            mapping.append(slot)
+    return merged, mapping
+
+
+def describe_slot(slot: AnchorSlot) -> str:
+    if slot.kind == "stirrer":
+        temperature, duration, speed = _stirrer_settings(slot.step)
+        parts = [f"{value:g} {unit}" for value, unit in ((temperature, "℃"), (duration, "s"), (speed, "rpm"))
+                 if value is not None]
+        return "反应控制" + (f"（{'、'.join(parts)}）" if parts else "")
+    return {"filtering": "过滤", "last": "最后一步"}.get(slot.kind, slot.kind)
+
+
+def plan_anchor_slots(
     step_groups: Sequence[Sequence[Dict[str, Any]]],
     anchor_positions_list: Sequence[Sequence[int]],
+) -> Tuple[List[AnchorSlot], List[List[AnchorSlot]]]:
+    """The shared rows of the anchor steps and, per group, the row of each of its anchors.
+
+    Groups with the same anchor sequence are lined up position by position. A recommendation does not always have
+    every step (no molecular sieve, a cooling step written as its own stirring step in one plan and not in another),
+    so differing sequences are lined up by order and stirring settings instead of failing; a group without one of
+    the rows leaves it empty on its reaction position."""
+    anchors_list = [list(zip(positions, build_anchor_signature(group, positions)))
+                    for group, positions in zip(step_groups, anchor_positions_list)]
+    signatures = [[kind for _, kind in anchors] for anchors in anchors_list]
+    if all(signature == signatures[0] for signature in signatures):
+        slots = [AnchorSlot(kind, step_groups[0][position]) for position, kind in anchors_list[0]]
+        return slots, [list(slots) for _ in step_groups]
+
+    reference = max(range(len(step_groups)), key=lambda index: (len(anchors_list[index]), -index))
+    slots = [AnchorSlot(kind, step_groups[reference][position]) for position, kind in anchors_list[reference]]
+    mappings: List[List[AnchorSlot]] = [[] for _ in step_groups]
+    mappings[reference] = list(slots)
+    for index, (group, anchors) in enumerate(zip(step_groups, anchors_list)):
+        if index != reference:
+            slots, mappings[index] = _align_to_slots(slots, anchors, group)
+    return slots, mappings
+
+
+def report_missing_anchors(
+    step_groups: Sequence[Sequence[Dict[str, Any]]],
+    slots: Sequence[AnchorSlot],
+    mappings: Sequence[Sequence[AnchorSlot]],
 ) -> None:
-    expected_signature: Optional[List[str]] = None
-
-    for group_idx, (step_group, anchor_positions) in enumerate(
-        zip(step_groups, anchor_positions_list),
-        start=1,
-    ):
-        current_signature = build_anchor_signature(step_group, anchor_positions)
-        if expected_signature is None:
-            expected_signature = current_signature
-            continue
-
-        if current_signature != expected_signature:
-            layout_code = get_step_layout_code(step_group[0]) if step_group else f"group-{group_idx}"
-            raise MultiStepGenerationError(
-                "各列实验的对齐锚点序列不一致："
-                f"{layout_code} -> {current_signature}，期望 {expected_signature}"
-            )
+    notes = []
+    for group, mapping in zip(step_groups, mappings):
+        present = {id(slot) for slot in mapping}
+        missing = [describe_slot(slot) for slot in slots if id(slot) not in present]
+        if missing:
+            notes.append(f"{get_step_layout_code(group[0])} 没有 {'、'.join(missing)}")
+    if notes:
+        log_status("提示：各组的反应控制/过滤步骤不完全相同，已按顺序和反应控制条件对齐，缺少的步骤在该反应位留空："
+                   + "；".join(notes) + "。")
 
 
 def distribute_rows_evenly(start_row: int, end_row: int, step_count: int) -> List[int]:
@@ -248,29 +355,52 @@ def distribute_rows_evenly(start_row: int, end_row: int, step_count: int) -> Lis
     return [available_rows[idx] for idx in chosen_indices]
 
 
-def align_step_group_rows(
+def split_across_rows(count: int, expected: Sequence[int], capacity: Sequence[int]) -> List[int]:
+    """How many of a group's in-between steps go into each stretch between two rows it skips: in proportion to
+    what the other groups do there (no cooling step: its additions after the reaction go after the others' cooling
+    row, not onto it), within the room each stretch has."""
+    weights = list(expected) if sum(expected) else list(capacity)
+    total = sum(weights) or 1
+    raw = [count * weight / total for weight in weights]
+    quota = [int(value) for value in raw]
+    for index in sorted(range(len(raw)), key=lambda i: (quota[i] - raw[i], -i))[:count - sum(quota)]:
+        quota[index] += 1
+    overflow = 0
+    for index in range(len(quota)):
+        quota[index] += overflow
+        overflow = max(0, quota[index] - capacity[index])
+        quota[index] -= overflow
+    for index in reversed(range(len(quota))):
+        take = min(capacity[index] - quota[index], overflow)
+        quota[index] += take
+        overflow -= take
+    return quota
+
+
+def place_group_steps(
     step_group: Sequence[Dict[str, Any]],
     anchor_positions: Sequence[int],
-    anchor_rows: Sequence[int],
+    anchor_slots: Sequence[int],
+    slot_rows: Sequence[int],
+    expected: Sequence[int],
 ) -> List[Tuple[int, Dict[str, Any]]]:
+    """(row, step) for one group: its anchors on their slots' rows, the steps between them spread over the rows in
+    between (a slot the group does not have stays empty for it)."""
     aligned_steps: List[Tuple[int, Dict[str, Any]]] = []
-
-    for anchor_idx, step_idx in enumerate(anchor_positions):
-        aligned_steps.append((anchor_rows[anchor_idx], deepcopy(step_group[step_idx])))
+    for step_idx, slot in zip(anchor_positions, anchor_slots):
+        aligned_steps.append((slot_rows[slot], deepcopy(step_group[step_idx])))
 
     for segment_idx in range(len(anchor_positions) - 1):
-        start_step_idx = anchor_positions[segment_idx]
-        end_step_idx = anchor_positions[segment_idx + 1]
-        interior_steps = step_group[start_step_idx + 1 : end_step_idx]
-        interior_rows = distribute_rows_evenly(
-            anchor_rows[segment_idx],
-            anchor_rows[segment_idx + 1],
-            len(interior_steps),
-        )
-        aligned_steps.extend(
-            (unit_row, deepcopy(step))
-            for unit_row, step in zip(interior_rows, interior_steps)
-        )
+        interior_steps = step_group[anchor_positions[segment_idx] + 1: anchor_positions[segment_idx + 1]]
+        start, end = anchor_slots[segment_idx], anchor_slots[segment_idx + 1]
+        stretches = list(range(start, end))
+        quota = split_across_rows(len(interior_steps), [expected[slot] for slot in stretches],
+                                  [slot_rows[slot + 1] - slot_rows[slot] - 1 for slot in stretches])
+        cursor = 0
+        for slot, count in zip(stretches, quota):
+            rows = distribute_rows_evenly(slot_rows[slot], slot_rows[slot + 1], count)
+            aligned_steps.extend((row, deepcopy(step)) for row, step in zip(rows, interior_steps[cursor: cursor + count]))
+            cursor += count
 
     return aligned_steps
 
@@ -287,24 +417,31 @@ def combine_steps(step_groups: List[List[Dict[str, Any]]]) -> List[Dict[str, Any
         ),
     )
     anchor_positions_list = [build_anchor_positions(group) for group in sorted_groups]
-    validate_anchor_signatures(sorted_groups, anchor_positions_list)
+    slots, mappings = plan_anchor_slots(sorted_groups, anchor_positions_list)
+    report_missing_anchors(sorted_groups, slots, mappings)
 
-    segment_max_lengths: List[int] = []
-    for segment_idx in range(len(anchor_positions_list[0]) - 1):
-        segment_max_lengths.append(
-            max(
-                anchor_positions[segment_idx + 1] - anchor_positions[segment_idx] - 1
-                for anchor_positions in anchor_positions_list
-            )
-        )
-
-    anchor_rows = [0]
-    for segment_max_length in segment_max_lengths:
-        anchor_rows.append(anchor_rows[-1] + segment_max_length + 1)
+    # Each slot's row leaves room for every group's steps between two of its anchors. A group that skips slots in
+    # between leaves their rows empty, so its steps need that many more rows. expected[i]: how many steps the groups
+    # that go straight from slot i to slot i + 1 have there, used to place a skipping group's steps.
+    slot_index = {id(slot): index for index, slot in enumerate(slots)}
+    anchor_slots_list = [[slot_index[id(slot)] for slot in mapping] for mapping in mappings]
+    slot_rows = [0] * len(slots)
+    expected = [0] * len(slots)
+    needs: Dict[int, List[Tuple[int, int]]] = {}
+    for anchor_positions, anchor_slots in zip(anchor_positions_list, anchor_slots_list):
+        for segment_idx in range(len(anchor_positions) - 1):
+            start, end = anchor_slots[segment_idx], anchor_slots[segment_idx + 1]
+            interior = anchor_positions[segment_idx + 1] - anchor_positions[segment_idx] - 1
+            needs.setdefault(end, []).append((start, interior + end - start - 1))
+            if end == start + 1:
+                expected[start] = max(expected[start], interior)
+    for index in range(1, len(slots)):
+        slot_rows[index] = max([slot_rows[index - 1] + 1]
+                               + [slot_rows[start] + interior + 1 for start, interior in needs.get(index, [])])
 
     combined_with_positions: List[Tuple[int, int, Dict[str, Any]]] = []
-    for step_group, anchor_positions in zip(sorted_groups, anchor_positions_list):
-        aligned_steps = align_step_group_rows(step_group, anchor_positions, anchor_rows)
+    for step_group, anchor_positions, anchor_slots in zip(sorted_groups, anchor_positions_list, anchor_slots_list):
+        aligned_steps = place_group_steps(step_group, anchor_positions, anchor_slots, slot_rows, expected)
         for unit_row, step in aligned_steps:
             skill_input = step.get("skill_input")
             if not isinstance(skill_input, dict):

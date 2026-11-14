@@ -64,7 +64,7 @@
       "task-step:calculate-reagent-amounts",
       "task-step:generate-numbered-steps"
     ],
-    "content": "After recommendation, amount calculation, or numbered-step generation produces its planning artifact, and before the corresponding user confirmation checkpoint, use the fdu-risk-review skill to check reaction feasibility, safety risk, device capability, and action boundaries against the generated artifact and available context. Stop if the review returns block, and ask for human review if the review returns needs_human_review.",
+    "content": "After recommendation, amount calculation, or numbered-step generation produces its planning artifact, and before the corresponding user confirmation checkpoint, use the fdu-risk-review skill to check whether the materials of the generated artifact, or what they obviously form together, are hazardous compounds. Experiment details (step order, work-up, amounts, device capability) are not part of this review. Stop if the review returns block, and ask for human review if the review returns needs_human_review.",
     "entity_type": "ExecutionRule",
     "id": "rule:risk-review-after-planning-output",
     "name": "Risk review after planning output",

@@ -220,7 +220,7 @@ Agent 可以执行的一步。它通常对应一个 skill 调用，也可以是�
 本 skill 只负责查图谱和维护语义，不直接执行下游任务。
 
 - `constraint-parser`: 解析自然语言约束。
-- `fdu-risk-review`: 在推荐、用量和编号步骤生成后、对应用户确认前，审查规划产物的反应可行性、安全风险、设备能力和动作边界。
+- `fdu-risk-review`: 在推荐、用量和编号步骤生成后、对应用户确认前，只审查规划产物里的物料是否属于危险化合物（不审查步骤、用量和设备能力等实验细节）。
 - `literature-experiment-recommender`: 生成候选条件。
 - `chemical-amount-calculator`: 换算投料量。
 - `experiment-step-generator`: 生成编号实验步骤。

@@ -370,6 +370,37 @@ def generate_one_plan(
     raise ExperimentPlanError(f"Failed to generate valid plan after {MAX_LLM_ATTEMPTS} attempts for {position}. {last_error}")
 
 
+CONDITION_STEPS_FILE = re.compile(r"^(?P<stem>.+)_(?P<number>\d+)\.md$")
+
+
+def load_condition_steps(steps_path: Path) -> dict[int, Path] | None:
+    """experiment-step-generator writes one file per condition, <stem>_<N>.md with N the row of the amounts table.
+    Given their folder, or one of the files, return {N: file}; None for a single steps file used for every row."""
+    if steps_path.is_dir():
+        numbered: dict[str, dict[int, Path]] = {}
+        for path in sorted(steps_path.glob("*.md")):
+            match = CONDITION_STEPS_FILE.match(path.name)
+            if match:
+                numbered.setdefault(match["stem"], {})[int(match["number"])] = path
+        if len(numbered) == 1:
+            return next(iter(numbered.values()))
+        plain = sorted(steps_path.glob("*.md"))
+        if not numbered and len(plain) == 1:
+            return None
+        raise ExperimentPlanError(
+            f"Steps folder {steps_path} should hold the step files of one run (<name>_<N>.md, one per condition); "
+            f"found: {', '.join(path.name for path in plain) or 'no .md files'}")
+    match = CONDITION_STEPS_FILE.match(steps_path.name)
+    if not match:
+        return None
+    files = {}
+    for path in steps_path.parent.glob(f"{match['stem']}_*.md"):
+        sibling = CONDITION_STEPS_FILE.match(path.name)
+        if sibling and sibling["stem"] == match["stem"]:
+            files[int(sibling["number"])] = path
+    return files
+
+
 def render_plans(
     steps_file: Path,
     amounts_csv: Path,
@@ -383,21 +414,37 @@ def render_plans(
     if not EXAMPLE_PLAN_FILE.exists():
         raise ExperimentPlanError(f"Missing example plan file: {EXAMPLE_PLAN_FILE}")
 
-    steps_text = read_text(steps_file)
     example_plan_text = read_text(EXAMPLE_PLAN_FILE)
     df = pd.read_csv(amounts_csv)
     if df.empty:
         raise ExperimentPlanError("Amounts CSV contains no experiments.")
+    records = df.to_dict(orient="records")
 
-    positions = allocate_positions(len(df), tray=tray)
+    condition_steps = load_condition_steps(steps_file)
+    if condition_steps is None:
+        # One steps file (the generic steps, or an older single file): every row of the amounts table gets a plan.
+        single = steps_file if steps_file.is_file() else next(iter(sorted(steps_file.glob("*.md"))))
+        work = [(number, read_text(single)) for number in range(1, len(records) + 1)]
+    else:
+        # One file per condition: each row uses its own steps, and only the conditions with a step file get a plan
+        # (those are the ones chosen for the steps, e.g. with --rows).
+        beyond = [number for number in condition_steps if not 1 <= number <= len(records)]
+        if beyond:
+            raise ExperimentPlanError(f"Step files for conditions {beyond}, but the amounts CSV has rows 1-{len(records)}")
+        work = [(number, read_text(condition_steps[number])) for number in sorted(condition_steps)]
+        skipped = [number for number in range(1, len(records) + 1) if number not in condition_steps]
+        log_status("Conditions with a step file: " + ", ".join(str(number) for number, _ in work)
+                   + (f" (no step file, so no plan: {', '.join(map(str, skipped))})" if skipped else ""))
+
+    positions = allocate_positions(len(work), tray=tray)
     output_dir.mkdir(parents=True, exist_ok=True)
     written_paths: list[Path] = []
-    log_status(f"Generating {len(df)} plans")
+    log_status(f"Generating {len(work)} plans")
 
-    for idx, (row, position) in enumerate(zip(df.to_dict(orient="records"), positions), start=1):
+    for idx, ((number, steps_text), position) in enumerate(zip(work, positions), start=1):
         idx, markdown = generate_one_plan(
             idx,
-            pd.Series(row),
+            pd.Series(records[number - 1]),
             position,
             tray,
             steps_text,
@@ -405,7 +452,8 @@ def render_plans(
         )
         path = output_dir / f"experiment_plan_{tray}_{position.split(':', 1)[1]}.md"
         write_text(markdown, path)
-        log_status(f"{progress_label(idx, len(df))} wrote {path.name}")
+        log_status(f"{progress_label(idx, len(work))} wrote {path.name}" + (
+            f" (condition {number})" if condition_steps is not None else ""))
         written_paths.append(path)
 
     return written_paths
@@ -413,7 +461,9 @@ def render_plans(
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Generate Markdown experiment plans with LLM.")
-    parser.add_argument("--steps-file", required=True, help="Generated experiment steps Markdown file.")
+    parser.add_argument("--steps-file", required=True,
+                        help="Folder of experiment-step-generator's step files (one <name>_<N>.md per condition; each "
+                             "row uses its own and only those rows get a plan), or a single steps Markdown file.")
     parser.add_argument("--amounts-csv", required=True, help="Recommendation CSV with amount columns.")
     parser.add_argument("--output-dir", default="", help="Output directory. Defaults to output/experiment_plan_<timestamp>.")
     parser.add_argument("--tray", default="T-3", help="Reaction tray prefix, default T-3.")

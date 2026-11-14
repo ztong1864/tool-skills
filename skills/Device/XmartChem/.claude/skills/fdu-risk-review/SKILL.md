@@ -1,11 +1,11 @@
 ---
 name: fdu-risk-review
-description: FDU 实验规划阶段风险审查 skill。用于候选条件推荐、投料量计算、编号实验步骤生成之后、对应用户确认之前，检查已生成规划产物的反应可行性、安全风险、设备能力和动作边界；本 skill 只负责审查和给出风险结论，不生成推荐、不计算用量、不编写实验步骤、不生成协议 JSON，也不提交设备任务。
+description: FDU 实验规划阶段的危险化合物审查 skill。用于候选条件推荐、投料量计算、编号实验步骤生成之后、对应用户确认之前，只检查规划产物里的物料（以及它们混合或反应时明显会生成的物质）是否属于危险化合物；不审查步骤顺序、后处理、用量写法、设备能力等实验细节，不生成推荐、不计算用量、不编写实验步骤、不生成协议 JSON，也不提交设备任务。
 ---
 
 # fdu-risk-review
 
-本 skill 是 FDU 实验自动化流程中的规划阶段风险守卫。
+本 skill 是 FDU 实验自动化流程中规划阶段的危险化合物审查。
 
 它由 ontology 规则 `rule:risk-review-after-planning-output` 在以下规划产物生成后、对应用户确认前触发：
 
@@ -13,122 +13,69 @@ description: FDU 实验规划阶段风险审查 skill。用于候选条件推荐
 - `task-step:calculate-reagent-amounts`
 - `task-step:generate-numbered-steps`
 
-## 职责范围
+## 审查范围
 
-在 Agent 将当前规划产物展示给用户确认之前，审查该产物是否可以接受。
+只审查一件事：规划产物里出现的物料——底物、试剂、催化剂、添加剂、溶剂、内标和后处理用的液体——以及它们混合或反应时
+明显会生成的物质，是否属于 `references/risk_knowledge_base.md` 列出的危险化合物。
 
-需要检查：
+以下是实验细节，不在审查范围内：不写进 findings，不作为 `block` 或 `needs_human_review` 的理由，也不拿来问用户。
 
-- 反应可行性
-- 安全风险
-- 设备能力
-- 动作边界
-- 当前步骤是否需要停止并要求用户调整或确认
+- 步骤顺序、是否写了冷却、搅拌转速和时长、后处理和内标的写法，以及这些内容来自模板还是用户；
+- 步骤里多出或缺少的文字、某组比其他组少一步或少一项物料；
+- 用量大小、单位写法、加样精度、反应瓶和装液量；
+- 设备动作、模块、资源和协议字段（后面的步骤会校验）；
+- 条件有没有文献依据、推荐是否合理、预期产率；
+- 溶剂沸点（只作提示，见审查流程第 4 步）。
 
-不负责：
-
-- 生成推荐条件
-- 计算投料量
-- 编写编号实验步骤
-- 创建或修改 step JSON
-- 生成协议 JSON
-- 提交或启动设备任务
+用户在每一步的确认点自己判断这些细节；本 skill 不因为它们中断流程。
 
 ## 输入
 
-根据当前阶段读取已经存在的上下文和产物：
-
-- 用户实验请求
-- `artifact:constraint-json`
-- `artifact:reaction-space-table`
-- `artifact:recommendation-table`
-- `artifact:amount-table`
-- 草稿编号步骤
-- 来自 `fdu-ontology` 的设备动作、资源约束或仪器能力信息
-- `KB/solvent_boiling_points.csv`：常用溶剂的沸点（由下面的沸点检查脚本读取）
-
-如果关键上下文缺失，不要猜测，返回 `needs_human_review`。
-
-## 风险知识库
-
-审查前必须读取：
-
-- `references/risk_knowledge_base.md`
-
-该文件包含当前可维护的风险依据，包括：
-
-- verdict 判定规则
-- 各阶段必需上下文
-- FDU 设备能力边界
-- skill 职责边界
-- 安全风险信号
-- 用量和单位风险信号
-
-如果知识库没有覆盖某个风险，不要自行补充成确定结论；应返回 `needs_human_review` 并说明缺少什么依据。
+- 当前阶段的规划产物：推荐表、投料量表或编号步骤（每组一份）
+- 用户实验请求或 `artifact:constraint-json`（看物料清单）
+- `references/risk_knowledge_base.md`：危险化合物分级
+- `KB/solvent_boiling_points.csv`：常用溶剂沸点（沸点检查脚本读取）
 
 ## 审查流程
 
-1. 判断当前处于哪个 `TaskStep`。
-2. 读取 `references/risk_knowledge_base.md`。
-3. 读取该步骤已经生成的规划产物和可用上游上下文。
-4. 审查条件推荐或投料量时，先运行沸点检查（只读，输出 JSON）：`python <本技能目录>/scripts/check_boiling_points.py --table <推荐 CSV 或投料量 CSV> --constraints <约束 JSON>`。它按 `KB/solvent_boiling_points.csv` 比较每组的溶剂沸点和约束中的反应温度。
-   - `result` 为 `block`：verdict 必须是 `block`；findings 写它的 `message`（组号、溶剂、沸点和反应温度，例如“第 3、9 组的溶剂四氢呋喃（沸点约 66 ℃），低于反应温度 70 ℃”）；required_action 写去掉或替换这些组的溶剂。
-   - `result` 为 `needs_human_review`：写明沸点表里没有的溶剂（`unknown_solvents`），或约束中缺少反应温度。
-   - `result` 为 `pass`：溶剂沸点已经核对，不要再以“沸点数据缺失”“无法确认沸点”为由给出 `needs_human_review`；其他检查照常进行。
-5. 检查可行性：化学条件、物料类别、用量、温度、时间或步骤顺序是否自洽。
-6. 检查安全性：是否存在明显危险条件、不兼容物料、失控加热、压力、挥发性或不受支持的处理方式。
-7. 检查设备能力：当前计划是否符合已知 FDU 设备动作、资源或仪器能力边界。
-8. 检查动作边界：当前下游 skill 是否被要求执行超出其职责范围的工作。
-9. 输出简短结论；如果存在阻断问题，说明原因。
-
-## 风险提醒流程
-
-审查过程中一旦发现风险，不要等到后续步骤再提醒。
-
-处理顺序：
-
-1. 判断风险等级。
-2. 如果风险可能通过补充信息判断，立即返回 `needs_human_review`。
-3. 如果风险已经明显越过安全边界、设备能力边界或 skill 职责边界，立即返回 `block`。
-4. 在 `findings` 中写清楚风险来源、涉及的物料/条件/动作、为什么不能继续。
-5. 在 `required_action` 中写清楚用户下一步应该做什么，例如补充沸点/危险性信息、确认人工处理、修改用量、替换条件、删除不支持动作或停止流程。
-
-提醒内容必须直接、具体、可执行。不要只写“存在风险”。
-
-返回 `block` 时，该规划产物不能继续使用，必须先按 required_action 修改；返回 `needs_human_review` 时，用户回答问题之前不得进入后续流程（在 LabOntology 中，Runtime 在审查后的确认点向用户提问，见下文）。
+1. 读取 `references/risk_knowledge_base.md`。
+2. 列出当前产物里全部组用到的物料，加上它们组合时明显会生成的物质（例如氰化物遇酸生成 HCN）。
+3. 逐一对照知识库的分级（用化学常识判断一种物质是否属于某一类，例如叠氮化钠属于叠氮化物）：
+   - 第一级（严重急性危害）：用户在本任务里还没有明确确认密闭、防护措施并批准时给 `block`；已经确认的给 `pass`，findings 写“用户已确认”。
+   - 第二级（高危，需要确认防护）：用户在本任务里还没有确认过这种物质的防护和处理时给 `needs_human_review`，只问这一次；已经确认的给 `pass`。
+   - 不属于这两级的物质：`pass`。不要因为“无法核实 SDS”“危害等级未知”给 `needs_human_review`。
+4. 审查条件推荐或投料量时运行沸点检查（只读，输出 JSON）：`python <本技能目录>/scripts/check_boiling_points.py --table <推荐 CSV 或投料量 CSV> --constraints <约束 JSON>`。它的 `result` 为 `block` 时，把 `message` 原样作为一行“提示（不影响结论）：……”写进 findings；verdict 仍只按危险化合物判断。`result` 为 `pass` 或 `needs_human_review` 时什么都不写。
+5. 输出简短结论。
 
 ## 不再拿来问用户的内容
 
-- 用户在这项任务里已经确认过的事实（例如反应瓶耐压和装液量、微升级加样精度、内标溶液已配制可用）：在 findings 里写“用户已确认”，不作为 `needs_human_review` 的理由。
-- 流程后面的步骤会校验的内容（设备资源映射、工位/模块/耗材是否可用由 `fdu-resource-verify` 校验；协议编排由 `fdu-unit-orchestration-json` 完成）：在 findings 里写“留待 <步骤> 校验”，不作为 `needs_human_review` 的理由。
-- 重新审查（用户已经回答上一轮审查的问题或修改了条件）时，上一轮的问题已经有了答案：只有出现用户还没回答过的新问题时才给 `needs_human_review`，否则给 `pass`。
+- 用户在这项任务里已经确认过的事实（例如“已按 SDS 或实验室 SOP 审核相容性和防护要求”）：findings 写“用户已确认”，不作为 `needs_human_review` 的理由。
+- 重新审查（用户已经回答上一轮的问题或修改了条件）时，上一轮的问题已经有了答案：只有出现新的危险化合物时才给 `needs_human_review` 或 `block`，否则给 `pass`。
 
 ## 在 LabOntology 中登记审查结果
 
 - `pass`：`resume --agent-completed --summary "<审查结果>"`。
-- `needs_human_review`：同样用 `resume --agent-completed --summary "<审查结果>"`，required_action 写 `ask_user：<要用户回答的问题>`。Runtime 在这次审查后的确认点把问题和“是否继续”一起交给用户，用户回复一次即可；不要用 `--agent-failed` 登记，那会让用户先回答“未通过”，再在确认点确认一次。
+- `needs_human_review`：同样用 `resume --agent-completed --summary "<审查结果>"`，required_action 写 `ask_user：<要用户确认的防护或处理>`。Runtime 在这次审查后的确认点把问题和“是否继续”一起交给用户，用户回复一次即可；不要用 `--agent-failed` 登记。
 - `block`：`resume --agent-failed --summary "<审查结果>"`。Runtime 请用户修改，用户回复后先按修改重跑被审查的 skill，再审查一次；再审查通过时直接进入下一步，不再为同一步确认。
 
 ## 输出格式
 
-返回简洁的审查结果：
-
 ```text
 verdict: pass | needs_human_review | block
 stage: <当前 TaskStep id 或简短阶段名>
-checked: feasibility, safety, device_capability, action_boundary
+checked: hazardous_compounds
 findings:
-- <具体问题，或 none>
+- <危险化合物、所属级别和涉及的组号，或 none>
 required_action:
-- <continue | ask_user | revise_input | stop>：<用户下一步应该做什么>
+- <continue | ask_user | revise_input>：<用户下一步应该做什么>
 ```
 
-`verdict:` 和它的取值保持英文（Runtime 按它判断审查是否通过）；findings 和 required_action 的内容用中文写：审查结果会作为问题的一部分直接给用户看（在 LabOntology 中它就是 `--summary`）。沸点检查给出的 `message` 原样写进 findings，不要翻译或改写。
+`verdict:` 和它的取值保持英文（Runtime 按它判断审查是否通过）；findings 和 required_action 的内容用中文写：审查结果会作为问题的一部分直接给用户看（在 LabOntology 中它就是 `--summary`）。
 
-审查之后向用户汇报时（不论 `pass`、`needs_human_review` 还是 `block`），先完整列出被审查的结果，再写结论和要用户回答的问题：条件推荐列出全部推荐组（带组号的表格，见 literature-experiment-recommender 的“在回复里列出推荐表”），投料量列出投料量表，编号步骤列出全部步骤；有问题时标出是哪几组或哪几步。
+审查之后向用户汇报时（不论 `pass`、`needs_human_review` 还是 `block`），先完整列出被审查的结果，再写结论：条件推荐列出全部推荐组（带组号的表格，见 literature-experiment-recommender 的“在回复里列出推荐表”），投料量列出投料量表，编号步骤按组列出步骤；有危险化合物时标出是哪几组。结论是 `pass` 时只写“未发现危险化合物”，不要再附加对实验细节的意见或问题。
 
 判定规则：
 
-- 使用 `pass`：当前上下文中没有发现阻断问题。
-- 使用 `needs_human_review`：风险无法通过当前上下文判断，需要用户或实验人员确认（用户已确认的内容和后续步骤会校验的内容除外，见“不再拿来问用户的内容”）。
-- 使用 `block`：继续推进会明显越过安全边界或设备能力边界。
+- `pass`：没有知识库所列的危险化合物，或其防护已由用户确认。绝大多数规划产物应是这个结论。
+- `needs_human_review`：出现第二级物质，且用户还没有确认它的防护和处理。
+- `block`：出现第一级物质（或物料组合明显会生成第一级物质），且用户没有明确确认密闭、防护措施并批准。

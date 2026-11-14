@@ -18,12 +18,17 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import re
 import sys
 from pathlib import Path
 
 DEFAULT_COLUMNS = ["metal_salt_1", "metal_salt_2", "chiral_amine", "molecular_sieve", "solvent"]
 SKILL_DIR = Path(__file__).resolve().parents[1]
 LITERATURE_DIRS = ("KB/pdf_new", "KB/pdfs")
+# Literature that ships with the skill, already converted from PDF to Markdown (MinerU), used
+# only when the task itself brought no PDF. Markdown so the Agent reads it without parsing a PDF.
+DEFAULT_LITERATURE_DIR = "KB/literature"
+DEFAULT_LITERATURE_INDEX = "KB/literature/index.md"
 FIXED_OK = {"none", "4a ms", "4a", "ms", ""}
 
 
@@ -68,19 +73,54 @@ def section_for(column: str, sections: dict[str, set[str]]) -> set[str] | None:
 
 
 def literature_status() -> int:
-    """One read-only check of the literature this skill can use, so the Agent never searches for PDFs."""
+    """One read-only check of the literature this skill can use, so the Agent never searches for PDFs.
+
+    Two tiers, reported in one answer: the PDFs this task brought (KB/pdf_new, KB/pdfs), and the
+    default literature bundled with the skill (KB/literature, Markdown). The task's own PDFs win;
+    the bundled set is the fallback so a round is never left with no literature basis at all.
+    """
     folders, total = [], 0
     for relative in LITERATURE_DIRS:
         folder = SKILL_DIR / relative
         pdfs = sorted(path.name for path in folder.rglob("*") if path.suffix.lower() == ".pdf") if folder.is_dir() else []
         total += len(pdfs)
         folders.append({"folder": str(folder), "exists": folder.is_dir(), "pdf_count": len(pdfs), "pdfs": pdfs[:20]})
-    note = ("Read the relevant PDFs listed here." if total else
-            "No literature PDFs here. Unless the user uploaded a PDF for this task, recommend from the constraints, the "
-            "candidate space, KB/output_format_example.csv and earlier outputs, and say once in the reply that this "
-            "round has no literature basis. This is a normal result, not a failure.")
-    print(json.dumps({"mode": "literature" if total else "no_literature", "pdf_count": total, "folders": folders,
-                      "note": note}, ensure_ascii=False, indent=2))
+
+    default_dir = SKILL_DIR / DEFAULT_LITERATURE_DIR
+    # Natural order, so a leading number reads 1, 2, ... 10 rather than 1, 10, 11, 2.
+    default_files = sorted((path.name for path in default_dir.glob("*.md") if path.name != "index.md"),
+                           key=lambda name: ([int(part) if part.isdigit() else part.casefold()
+                                              for part in re.split(r"(\d+)", name)])) if default_dir.is_dir() else []
+    index = SKILL_DIR / DEFAULT_LITERATURE_INDEX
+    default_literature = {
+        "folder": str(default_dir),
+        "exists": default_dir.is_dir(),
+        "file_count": len(default_files),
+        "files": default_files,
+        "index": str(index) if index.is_file() else None,
+        "format": "Markdown converted from the original PDFs with MinerU; read these directly.",
+    }
+
+    if total:
+        mode = "task_literature"
+        note = ("Read the relevant PDFs listed under `folders`. They belong to this task and take precedence; "
+                "only reach for the default literature as well if this task's PDFs do not cover the reaction.")
+    elif default_files:
+        mode = "default_literature"
+        note = ("This task brought no PDF, so use the default literature in `default_literature`. Read its `index` "
+                "first to pick the 2-3 papers closest to this reaction, then read those files; do not read all of "
+                "them. In the reply, name the papers the recommendation rests on and say they come from the skill's "
+                "default literature rather than from a file the user supplied. Do not search the web or the "
+                "workspace for more PDFs.")
+    else:
+        mode = "no_literature"
+        note = ("No literature at all: neither this task's PDFs nor the bundled default set. Recommend from the "
+                "constraints, the candidate space and KB/output_format_example.csv, and say once in the reply that "
+                "this round has no literature basis. This is a normal result, not a failure.")
+
+    print(json.dumps({"mode": mode, "pdf_count": total, "folders": folders,
+                      "default_literature": default_literature, "note": note},
+                     ensure_ascii=False, indent=2))
     return 0
 
 

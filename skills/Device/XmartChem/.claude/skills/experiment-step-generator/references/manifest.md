@@ -16,7 +16,7 @@
 
 ## 常见输出
 
-- `output/generated_experiment_steps_<timestamp>.md`
+- `output/generated_experiment_steps_<timestamp>/generated_experiment_steps_<N>.md`（每组推荐条件一份）
 
 ## 相关文件
 

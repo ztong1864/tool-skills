@@ -41,4 +41,4 @@ Important boundaries:
 Cross-cutting guard:
 
 - `rule:risk-review-after-planning-output` applies after recommendation, amount calculation, and numbered-step generation produce their planning artifacts, before the corresponding user confirmation checkpoints.
-- The Agent should use `fdu-risk-review` for safety risk, feasibility, device capability, and action boundary checks as part of the planning branch, not as a separate main route.
+- The Agent should use `fdu-risk-review` to check the planned materials for hazardous compounds as part of the planning branch, not as a separate main route.

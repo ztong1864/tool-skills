@@ -294,7 +294,13 @@ def _experiment_flow_records(skills: list[dict[str, Any]], flows: list[dict[str,
     """A declared experiment flow as a SkillFlow (kind experiment_flow) with its steps, stops and ordered nodes.
 
     A flow naming a Skill this library does not have is kept with `missing_skills`, so inspect can say why
-    `run --flow` refuses it."""
+    `run --flow` refuses it.
+
+    `missing_skills` is only ever a hint for inspect, never the gate: this runs per bundle, so a Skill that
+    came in with another suite over the same root is not in `known` here and would be recorded missing for
+    good once written to the cache. flow_plan() re-checks against the whole library at plan time, and only
+    for the steps the requested plan actually runs. Optional steps are excluded for the same reason -- no
+    plan is blocked by one, so calling the flow unusable over an absent optional step would be wrong."""
     known = {_skill_id(skill) for skill in skills}
     records: list[dict[str, Any]] = []
     for flow in flows:
@@ -303,7 +309,8 @@ def _experiment_flow_records(skills: list[dict[str, Any]], flows: list[dict[str,
         if not name or not steps:
             continue
         flow_entity = f"flow:{_safe_name(name)}"
-        named = [skill_id for step in steps for skill_id in (step["skill"], step.get("review")) if skill_id]
+        named = [skill_id for step in steps if not step.get("optional")
+                 for skill_id in (step["skill"], step.get("review")) if skill_id]
         missing = sorted({skill_id for skill_id in named if skill_id not in known})
         records.append(_entity(flow_entity, "SkillFlow", {
             "name": str(flow.get("name") or name), "kind": "experiment_flow", "flow_id": name,

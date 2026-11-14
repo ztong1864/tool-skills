@@ -108,8 +108,14 @@ def _flow_listing(flow: dict[str, Any]) -> dict[str, Any]:
     if flow.get("description"):
         item["description"] = flow["description"]
     if flow.get("missing_skills"):
+        # A hint, not a verdict, and `start` stays runnable: this was computed per bundle when the cache was
+        # written, so a Skill that came in with another suite reads as missing here even though the library
+        # has it. flow_plan() checks the live library for the steps the plan actually runs, and refuses then.
         item["missing_skills"] = flow["missing_skills"]
-        item["start"] = "unusable: the library lacks " + ", ".join(flow["missing_skills"])
+        item["missing_skills_note"] = (
+            "Recorded when this cache was written, against one bundle's Skills only, so it may be out of date "
+            "-- the library may well have them. Try the flow: run --flow checks the real library and says so "
+            "if a Skill the plan needs is genuinely absent.")
     return item
 
 

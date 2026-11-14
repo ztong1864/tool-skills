@@ -36,12 +36,6 @@ def _plan_entries(steps: list[dict[str, Any]]) -> dict[str, Any]:
 
 def flow_plan(flow: dict[str, Any], until: str | None, skills: set[str]) -> dict[str, Any]:
     """The plan for `run --flow <id> --until <stop>`; a ValueError names what is wrong and the valid choices."""
-    missing = sorted(set(flow.get("missing_skills") or []) | {
-        skill_id for step in flow.get("steps") or [] for skill_id in (step.get("skill"), step.get("review"))
-        if skill_id and skill_id not in skills})
-    if missing:
-        raise ValueError(f"Experiment flow {flow['id']} names Skills this library does not have: {missing}. "
-                         "Fix experiment_flows.yaml of its ontology Skill, or plan without --flow.")
     steps = [step for step in flow.get("steps") or [] if step.get("skill")]
     stops = dict(flow.get("stops") or {})
     stop = (until or "").strip() or flow.get("default_stop") or None
@@ -52,6 +46,17 @@ def flow_plan(flow: dict[str, Any], until: str | None, skills: set[str]) -> dict
     chosen = [step for step in steps[:end + 1] if not step.get("optional")]
     if not chosen:
         raise ValueError(f"Experiment flow {flow['id']} has no steps up to {stop!r}")
+    # Only what this plan will actually run has to exist: the steps up to the stop, optional ones left out.
+    # A Skill the flow names further on, or an optional step, does not block a plan that never reaches it.
+    # The flow's stored `missing_skills` is deliberately not consulted: intake computes it per bundle, so a
+    # Skill that arrived with a different suite over the same root is recorded missing there and, being
+    # persisted in the cache, would never clear no matter what the library actually holds.
+    missing = sorted({skill_id for step in chosen for skill_id in (step.get("skill"), step.get("review"))
+                      if skill_id and skill_id not in skills})
+    if missing:
+        raise ValueError(f"Experiment flow {flow['id']} needs Skills this library does not have, for the plan "
+                         f"up to {stop!r}: {missing}. Fix experiment_flows.yaml of its ontology Skill, or plan "
+                         "without --flow.")
     following = next((step for step in steps[end + 1:] if not step.get("optional")), None)
     return {**_plan_entries(chosen),
             "flow": {"id": flow["id"], "name": flow.get("name") or flow["id"], "until": stop,
