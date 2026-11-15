@@ -4,109 +4,130 @@
  "process_name": "AI\\\\\\\\GYF_2_Ecoli_DNA_transformation",
  "containers": [
   {
-   "name": "02_LYY_PCR_plate_2",
+   "name": "02_LYY_PCR_plate_1",
    "role": "DpnI product plate",
+   "acquire_status_field": "status",
    "acquire_status": "PCR_Plate_DpnI"
   },
   {
    "name": "02_LYY_PCR_Plate_3",
    "role": "transformation plate",
+   "acquire_where_name": "02_LYY_PCR_plate_3",
+   "set_name": "02_LYY_PCR_plate_3",
+   "acquire_status_field": "status",
    "acquire_status": "New",
    "final_status": "Assemble_Plate"
   },
   {
    "name": "Tips_Liha200_1",
    "role": "tips",
+   "acquire_status_field": "status",
    "acquire_status": "New",
    "final_status": "Used"
   },
   {
    "name": "Tips_MCA200_5",
    "role": "tips",
+   "acquire_status_field": "status",
    "acquire_status": "New",
    "final_status": "Used"
   },
   {
    "name": "02_LYY_cell_plate1",
    "role": "LB revive plate",
+   "set_status_field": "status",
+   "acquire_status_field": "status",
    "acquire_status": "LB",
    "final_status": "Revive_plate"
   },
   {
    "name": "Tips_Liha10_1",
    "role": "tips",
+   "acquire_status_field": "status",
    "acquire_status": "New",
    "final_status": "Used"
   },
   {
    "name": "8Well_Plate_1",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "1",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_2",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "2",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_3",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "3",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_4",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "4",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_5",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "5",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_6",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "6",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_7",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "7",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_8",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "8",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_9",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "9",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_10",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "10",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_11",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "11",
    "acquire_modifier": "'Lidded' HasLid"
   },
   {
    "name": "8Well_Plate_12",
    "role": "spreading plate",
+   "acquire_status_field": "status",
    "acquire_status": "12",
    "acquire_modifier": "'Lidded' HasLid"
   }
@@ -117,7 +138,7 @@
    "flow": [
     {
      "acquire": [
-      "02_LYY_PCR_plate_2",
+      "02_LYY_PCR_plate_1",
       "02_LYY_PCR_Plate_3",
       "Tips_Liha200_1",
       "Tips_MCA200_5",

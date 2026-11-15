@@ -12,10 +12,11 @@ description: 这是化学实验流程的一部分，用于根据实验步骤 Mar
 ## 强制执行顺序
 
 1. 使用 `python scripts/generate_plan.py --steps-file <编号步骤目录> --amounts-csv <path>` 运行批量生成。`--steps-file` 传 experiment-step-generator 的输出目录（`--steps-output-dir`，每组推荐条件一份 `generated_experiment_steps_<N>.md`）：每组用自己那份步骤写方案，只为有步骤文件的组生成方案（用户用 `--rows` 选了几组时就只有这几组）。传其中任一份文件也按整个目录处理；传单独一份不带组号的步骤文件时，它用于投料量 CSV 的每一行。
-2. `--output-dir` 可选，不提供时默认写入 `output/experiment_plan_<timestamp>/`。
-3. `--tray` 可选，不提供时默认使用 `T-3`。
-4. 每条推荐条件单独生成一份 Markdown 文件。
-5. 输出必须严格遵守 `KB/example_plan.md` 的四段结构。
+2. 每组方案都要调一次模型（正常 15-30 秒一份，10 组 3-6 分钟），用 Bash 工具执行时 `timeout` 至少给 `600000`（10 分钟）。模型服务抖动（连接中断、超时、429/5xx）由脚本自己重试，不要因为慢就另起一条命令并行跑。
+3. `--output-dir` 可选，不提供时默认写入 `output/experiment_plan_<timestamp>/`。
+4. `--tray` 可选，不提供时默认使用 `T-3`。
+5. 每条推荐条件单独生成一份 Markdown 文件。
+6. 输出必须严格遵守 `KB/example_plan.md` 的四段结构。
 
 ## 输入输出
 

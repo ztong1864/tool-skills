@@ -1,8 +1,10 @@
 {
-  "profile": "prism_primary_luad",
+  "profile": "real_campaign_v1",
   "task_name": "replace_me",
   "dataset_name": "replace_me",
   "disease_name": "replace_me",
+  "base_model": "replace_with_model_and_version",
+  "feature_generation_version": "replace_me",
   "candidate_table": "path/to/frozen_candidates.csv",
   "candidate_id_col": "candidate_id",
   "target_col": "activity_score",

@@ -30,7 +30,8 @@ EXAMPLE_PLAN_FILE = ROOT / "KB" / "example_plan.md"
 OUTPUT_DIR = ROOT / "output"
 
 MAX_LLM_ATTEMPTS = 3
-LLM_REQUEST_TIMEOUT = 600
+LLM_REQUEST_TIMEOUT = 240  # 一份方案正常 15-30 秒；留足余量，但别让卡住的上游占满一刻钟
+LLM_MAX_RETRIES = 3  # openai SDK 自己重试连接中断、超时和 429/5xx：每组方案都要调一次模型，一次抖动不能毁掉整批
 THINKING_MODE_MODELS = {"intern-s1-pro", "intern-s1", "intern-s1-mini"}
 FORBIDDEN_TOKENS = {"layout_code", "chemical_id", "tray_QR_code", "QR_code"}
 OPENAI_CLIENT: OpenAI | None = None
@@ -242,6 +243,7 @@ def get_openai_client() -> OpenAI:
         api_key=api_key,
         base_url=base_url,
         timeout=LLM_REQUEST_TIMEOUT,
+        max_retries=LLM_MAX_RETRIES,
     )
     return OPENAI_CLIENT
 

@@ -7,6 +7,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List
@@ -72,6 +73,13 @@ SKILL_INPUT_FIELDS = {
 
 class StepJsonGenerationError(Exception):
     pass
+
+
+class ModelServiceError(StepJsonGenerationError):
+    """模型服务连不上、被中断或连续返回网关错误。单独成类，便于上层区分“模型服务的问题”和“生成内容不合规”。
+
+    它是 StepJsonGenerationError 的子类，所以只会被最外层捕获；重新生成的循环只包住解析与校验，
+    不会拿同一个提示去重试网络故障。"""
 
 
 def read_text(path: Path) -> str:
@@ -323,6 +331,38 @@ def resolve_llm_config() -> tuple[str, str, str]:
     return OPENAI_BASE_URL, OPENAI_API_KEY, OPENAI_MODEL
 
 
+_RETRY_STATUS = {429, 502, 503, 504}
+_ATTEMPTS = 3
+_CONNECT_TIMEOUT = 15
+_READ_TIMEOUT = 180
+_RETRY_BACKOFF_SECONDS = 5
+
+
+def post_to_model(url: str, headers: Dict[str, str], payload: Dict[str, Any]) -> requests.Response:
+    """向模型服务发请求，连接被断开、网关错误（429/502/503/504）以及在读超时内一个字节都没返回的情况都重试。
+
+    一次正常的转换是 25-60 秒，所以读超时意味着上游卡住了，不是“还在算”，重试一次往往就过去了；
+    以前不重试，10 份方案里任何一次抖动都会让整批合并失败，并且重试要从第一份重做。"""
+    for attempt in range(1, _ATTEMPTS + 1):
+        wait = _RETRY_BACKOFF_SECONDS * attempt
+        try:
+            response = requests.post(
+                url, headers=headers, json=payload, timeout=(_CONNECT_TIMEOUT, _READ_TIMEOUT)
+            )
+        except (requests.ConnectionError, requests.Timeout) as exc:
+            if attempt == _ATTEMPTS:
+                raise ModelServiceError(
+                    f"调用模型服务 {_ATTEMPTS} 次都失败（{type(exc).__name__}）：{exc}"
+                ) from exc
+            print(f"模型服务第 {attempt} 次调用失败（{type(exc).__name__}），{wait} 秒后重试", flush=True)
+        else:
+            if response.status_code not in _RETRY_STATUS or attempt == _ATTEMPTS:
+                return response
+            print(f"模型服务返回 {response.status_code}（第 {attempt} 次），{wait} 秒后重试", flush=True)
+        time.sleep(wait)
+    raise ModelServiceError("调用模型服务失败。")  # 不会走到：循环内必定 return 或 raise
+
+
 def call_llm(prompt: str) -> str:
     base_url, api_key, model = resolve_llm_config()
 
@@ -343,30 +383,23 @@ def call_llm(prompt: str) -> str:
     if extra_body is not None:
         payload["extra_body"] = extra_body
 
+    response = post_to_model(url, headers, payload)
+
+    if response.status_code != 200:
+        raise ModelServiceError(
+            f"模型服务返回 HTTP {response.status_code}；URL={url}；模型={model}；"
+            f"提示长度={len(prompt)} 字符；响应={response.text[:600]}"
+        )
+
     try:
-        response = requests.post(url, headers=headers, json=payload, timeout=120)
-
-        # 添加详细的错误日志
-        if response.status_code != 200:
-            print(f"API 请求失败: {response.status_code}")
-            print(f"响应头: {response.headers}")
-            print(f"响应内容: {response.text}")
-            print(f"请求 URL: {url}")
-            print(f"请求模型: {OPENAI_MODEL}")
-            print(f"提示长度: {len(prompt)} 字符")
-
-        response.raise_for_status()
         data = response.json()
+    except ValueError as exc:
+        raise ModelServiceError(f"模型服务返回的不是 JSON：{exc}；响应={response.text[:600]}") from exc
 
-        try:
-            return (data["choices"][0]["message"]["content"] or "").strip()
-        except Exception as exc:
-            raise StepJsonGenerationError(f"Invalid LLM response format: {exc}; raw={data}")
-    except requests.exceptions.RequestException as exc:
-        print(f"请求异常: {exc}")
-        if hasattr(exc, 'response') and exc.response is not None:
-            print(f"错误响应: {exc.response.text}")
-        raise
+    try:
+        return (data["choices"][0]["message"]["content"] or "").strip()
+    except Exception as exc:
+        raise StepJsonGenerationError(f"Invalid LLM response format: {exc}; raw={data}")
 
 
 def normalize_model_output(text: str) -> str:

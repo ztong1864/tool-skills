@@ -12,6 +12,8 @@ Use one JSON task config per disease-specific experimental program. Copy `../ass
 - `campaign.num_rounds`, `campaign.batch_size`, `campaign.max_total_candidates`
 - `strategy.strategy_version`
 
+Record the upstream model and its version in optional `base_model`, and the origin/version of precomputed features in `feature_generation_version`; the real campaign manifest freezes these values when supplied.
+
 `split_manifest` is required for simulated evaluation and optional for a real campaign.
 
 ## Batch configuration
@@ -38,12 +40,16 @@ Required columns:
 
 - candidate ID, using the configured `candidate_id_col`;
 - frozen base score;
-- canonical or canonically resolvable SMILES;
+- canonical or canonically resolvable SMILES when `structure_group_id` is absent;
 - every frozen feature named in `feature_columns_json`.
+
+The real campaign CLI consumes precomputed numeric features. It does not create Morgan fingerprints or other molecular descriptors. If the upstream score column is named `indication_score`, set `base_score_col` accordingly. For fixed-weight fusion, values must be finite and in `[0,1]`; when the upstream score does not meet that contract, transform it before initialization and record the transformation in the task provenance.
 
 Optional columns include `name` and a precomputed `structure_group_id`. Candidate IDs must be unique. Reject missing or nonfinite base scores and feature values unless the strategy explicitly defines a frozen imputation rule.
 
 Derive `structure_group_id` from canonical SMILES when it is absent. The V1 default allows one candidate per structure group in a campaign unless the task config explicitly permits otherwise.
+
+The implemented CLI uses a supplied `structure_group_id`, or RDKit to canonicalize a single SMILES per row when the column is absent. For drug pairs, prepare pair-level features and a stable pair-level `structure_group_id` upstream; the SMILES column may then be absent. The CLI does not construct pair features from two SMILES. A feedback model using only `base_score` as a feature can recalibrate the base ranking but cannot learn pair-specific molecular relationships absent from its features.
 
 ## Feedback CSV
 
@@ -73,5 +79,8 @@ At initialization, create:
 - the strategy-version artifacts or immutable reference plus hashes
 - `feedback_ledger.csv`
 - `events.jsonl`
+- `feedback_inputs/` for exact copies of ingested feedback files
+
+Run `python scripts/campaign.py init-campaign --config task_config.json --campaign-dir campaign_dir` to create these artifacts and the first recommendation. The campaign directory must not already exist. Config paths to input files are resolved relative to the original task config file before freezing snapshots.
 
 The manifest records the base model identity, candidate-table hash, feature-list hash, activity-transform version, strategy version, campaign budget, and batch schedule.

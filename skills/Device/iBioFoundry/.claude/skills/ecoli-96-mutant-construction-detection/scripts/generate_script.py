@@ -235,13 +235,15 @@ def render_acquire(names, containers_by_name, levels=2):
         status = item.get("acquire_status")
         # Balancing plates and single-use buffer plates carry no workflow state, so they are
         # acquired without a filter. See acquire-and-status.md, exception three.
-        where = f" where '{name}.Status==\"{status}\"'" if status else ""
+        where_name = item.get("acquire_where_name", name)
+        status_field = item.get("acquire_status_field", "Status")
+        where = f" where '{where_name}.{status_field}==\"{status}\"'" if status else ""
         lines.append(f"{tab}{name}{modifier_text} GetMyOwnContainer{where}{suffix}")
     return "\n".join(lines)
 
 
 def render_set(assignments, levels=2):
-    body = ", ".join(f"{name}.Status = '\"{status}\"'" for name, status in assignments)
+    body = ", ".join(f"{name}.{field} = '\"{status}\"'" for name, field, status in assignments)
     return "\t" * levels + f"set {body};"
 
 
@@ -295,11 +297,11 @@ class Renderer:
                 status = item.get("final_status")
                 if not status:
                     raise ValueError(f"{name} is in a set entry but has no final_status")
-                assignments.append((name, status))
+                assignments.append((item.get("set_name", name), item.get("set_status_field", "Status"), status))
                 self.set_names.append(name)
             return render_set(assignments, levels)
         if "set_status" in entry:
-            pairs = [(a["name"], a["status"]) for a in entry["set_status"]
+            pairs = [(a["name"], a.get("field", "Status"), a["status"]) for a in entry["set_status"]
                      if a["name"] not in self.dropped]
             return render_set(pairs, levels)
         if "comment" in entry:

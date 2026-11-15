@@ -4,7 +4,9 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
+import os
 import re
 import subprocess
 import sys
@@ -19,6 +21,8 @@ OUTPUT_DIR = ROOT / "output"
 
 STEP_SKILL_ROOT = ROOT.parent / "fdu-step-json"
 STEP_SCRIPT_PATH = STEP_SKILL_ROOT / "scripts" / "generate_step_json.py"
+
+CACHE_DIR_NAME = "step_json_cache"
 
 
 class MultiStepGenerationError(Exception):
@@ -50,6 +54,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--task-name", type=str, default="", help="输出中的 task_name")
     parser.add_argument("--output", type=str, default="",
                         help="总 step JSON 的输出路径（写进 mission 的 artifacts 目录）；默认 output/generated_multi_step_json_<timestamp>.json")
+    parser.add_argument("--cache-dir", type=str, default="",
+                        help=f"单份方案已转换好的 step JSON 的缓存目录；默认是 --output 同级的 {CACHE_DIR_NAME}/。"
+                             "中途失败后用同一条命令重跑，只会补齐还缺的那几份")
+    parser.add_argument("--no-cache", action="store_true",
+                        help="不读也不写缓存，所有方案全部重新转换")
     return parser
 
 
@@ -77,7 +86,69 @@ def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-STEP_JSON_TIMEOUT_SECONDS = 180
+STEP_JSON_TIMEOUT_SECONDS = 660  # 一份方案正常 25-60 秒；fdu-step-json 内部最多重试 3 次（读超时 180 秒），留够它跑完
+
+
+def resolve_cache_dir(cache_dir: str, output: str) -> Path:
+    """缓存目录：显式给的优先，其次是总 step JSON 的同级目录（也就是 mission 的 artifacts 目录），最后是技能的 output/。"""
+    if cache_dir:
+        return Path(cache_dir).expanduser()
+    base = Path(output).expanduser().resolve().parent if output else OUTPUT_DIR
+    return base / CACHE_DIR_NAME
+
+
+def cache_path_for(cache_dir: Path, plan_file: Path, plan_text: str) -> Path:
+    """按方案正文的摘要命名：方案改过之后摘要就变了，不会拿旧的 step JSON 顶上。"""
+    digest = hashlib.sha256(plan_text.encode("utf-8")).hexdigest()[:12]
+    return cache_dir / f"{plan_file.stem}_{digest}.json"
+
+
+def read_cached_step_json(path: Path) -> Optional[Dict[str, Any]]:
+    """读缓存；文件不存在、读不动或内容不完整都当没有缓存，重新转换。"""
+    if not path.exists():
+        return None
+    try:
+        data = read_json(path)
+    except (OSError, ValueError):
+        return None
+    if not isinstance(data, dict):
+        return None
+    steps = data.get("steps")
+    return data if isinstance(steps, list) and steps else None
+
+
+def write_cached_step_json(path: Path, step_json: Dict[str, Any]) -> bool:
+    """先写临时文件再改名：这一轮被 Bash 超时掐掉时，缓存里不会留下半个文件。
+
+    缓存写不进去（例如不带 `--output`、落到了只读的技能目录）只提示一声，不影响这一轮合并。"""
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        temp = path.with_name(path.name + ".part")
+        temp.write_text(json.dumps(step_json, ensure_ascii=False, indent=2), encoding="utf-8")
+        os.replace(temp, path)
+        return True
+    except OSError as exc:
+        log_status(f"提示：step JSON 没能写进缓存目录（{exc}）；本轮照常继续，但中途失败后要从第一份重做。")
+        return False
+
+
+def cache_hint(cache_dir: Path, plan_files: Sequence[str], use_cache: bool) -> str:
+    """失败之后告诉操作者已经转换好几份：重跑同一条命令只补剩下的。"""
+    if not use_cache:
+        return ""
+    done = 0
+    for plan_file in plan_files:
+        path = Path(plan_file)
+        try:
+            text = path.read_text(encoding="utf-8").strip()
+        except OSError:
+            continue
+        if cache_path_for(cache_dir, path, text).exists():
+            done += 1
+    if not done:
+        return ""
+    return (f"提示：已转换好的 {done}/{len(plan_files)} 份保存在 {cache_dir}；"
+            f"用同一条命令重跑只会补齐剩下的 {len(plan_files) - done} 份。")
 
 
 def call_fdu_step_json(plan_file: Path) -> Dict[str, Any]:
@@ -460,7 +531,10 @@ def combine_steps(step_groups: List[List[Dict[str, Any]]]) -> List[Dict[str, Any
 
 
 def generate_multi_step_json_from_files(
-    plan_files: List[str], target_layout_codes: List[str], task_name: str
+    plan_files: List[str],
+    target_layout_codes: List[str],
+    task_name: str,
+    cache_dir: Optional[Path] = None,
 ) -> Dict[str, Any]:
     if not plan_files:
         raise MultiStepGenerationError("必须提供至少一个 plan file。")
@@ -476,15 +550,26 @@ def generate_multi_step_json_from_files(
         if not path.exists():
             raise MultiStepGenerationError(f"plans[{index}] 文件不存在：{path}")
 
-        if not path.read_text(encoding="utf-8").strip():
+        plan_text = path.read_text(encoding="utf-8").strip()
+        if not plan_text:
             raise MultiStepGenerationError(f"plans[{index}] 实验方案为空：{path}")
 
-        step_json = call_fdu_step_json(path)
+        cached_file = cache_path_for(cache_dir, path, plan_text) if cache_dir else None
+        step_json = read_cached_step_json(cached_file) if cached_file else None
+        from_cache = step_json is not None
+
+        if step_json is None:
+            step_json = call_fdu_step_json(path)
+
         steps = step_json.get("steps")
         if not isinstance(steps, list) or not steps:
             raise MultiStepGenerationError(f"fdu-step-json 返回结果缺少有效 steps：{path}")
 
-        log_status(f"{progress_label(index, len(plan_files))} fdu-step-json completed: {path.name} ({len(steps)} steps)")
+        if cached_file and not from_cache:
+            write_cached_step_json(cached_file, step_json)
+
+        source = "reused cached" if from_cache else "fdu-step-json completed"
+        log_status(f"{progress_label(index, len(plan_files))} {source}: {path.name} ({len(steps)} steps)")
 
         if target_layout_codes:
             target_layout_code = target_layout_codes[index - 1]
@@ -507,24 +592,37 @@ def generate_multi_step_json_from_files(
 
 def main() -> int:
     args = build_parser().parse_args()
+    use_cache = not args.no_cache
+    cache_dir = resolve_cache_dir(args.cache_dir, args.output) if use_cache else None
 
     try:
         result = generate_multi_step_json_from_files(
             args.plan_files,
             args.target_layout_codes,
             args.task_name,
+            cache_dir=cache_dir,
         )
         out_path = (Path(args.output) if args.output
                     else OUTPUT_DIR / f"generated_multi_step_json_{result['timestamp']}.json")
         write_json(result, out_path)
         log_status(f"{progress_label(len(args.plan_files), len(args.plan_files))} Multi-step JSON generated: {out_path}")
         log_status(f"步骤总数：{len(result['steps'])}")
+        if cache_dir:
+            log_status(f"单份方案的 step JSON 缓存在：{cache_dir}（合并成功后可以删）")
         return 0
     except MultiStepGenerationError as exc:
         print(f"生成失败：{exc}", file=sys.stderr)
+        if cache_dir:
+            hint = cache_hint(cache_dir, args.plan_files, use_cache)
+            if hint:
+                print(hint, file=sys.stderr)
         return 1
     except Exception as exc:
         print(f"发生未预期错误：{exc}", file=sys.stderr)
+        if cache_dir:
+            hint = cache_hint(cache_dir, args.plan_files, use_cache)
+            if hint:
+                print(hint, file=sys.stderr)
         return 1
 
 

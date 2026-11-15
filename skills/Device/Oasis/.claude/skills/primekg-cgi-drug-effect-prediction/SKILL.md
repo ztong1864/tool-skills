@@ -1,89 +1,149 @@
 ---
 name: primekg-cgi-drug-effect-prediction
-description: 给定疾病ID或精确疾病名，使用PrimeKG Graph CGI e50已训练模型对candidate_pool.csv中的KG已有候选药物按适应症分数排序，输出按优先级排列的候选药物CSV。用于疾病层面的候选药物推荐、优先级评估和当前通用药效预测；不支持任意SMILES、KG外新药、天然产物库或冷启动预测。
+description: 使用已训练的 PrimeKG Graph CGI e50 模型，对疾病目录中可匹配的疾病及候选药物库中的 KG 已有药物进行适应症排序，并输出排名 CSV。需要进行药物推荐时优先使用该技能。
 metadata:
-  short-description: 按疾病对KG已有候选药物排序的推荐与药效预测
+  short-description: 对 KG 已有候选药物进行疾病条件下的适应症排序
 ---
 
 # PrimeKG Graph CGI 通用药效预测
 
-本技能是完整的已训练模型推理包。使用前阅读 [README.md](README.md)；需要理解模型输入、输出或限制时，再阅读 `docs/model_io_spec.md`、`docs/model_architecture.md` 和 `docs/limitations.md`。
+本技能使用随包提供的已训练模型进行推理。开始前阅读 README.md。需要了解模型输入输出、架构或适用限制时，再阅读：
 
-## 能力边界
+- docs/model_io_spec.md
+- docs/model_architecture.md
+- docs/limitations.md
 
-- 输入疾病必须能在 `primekg_cgi_graph_graph_only_e50/prepared/disease_catalog.csv` 中按 `disease_id` 或规范化后的精确 `disease_name` 唯一匹配。
-- 只对 `prepared/candidate_pool.csv` 中的 6,945 个 KG 已有 DrugBank 药物打分。可用 DrugBank ID 白名单限制候选集，但白名单中的所有 ID 也必须已在 candidate pool 中。
-- 不接收任意 SMILES，不支持新 DrugBank ID、KG 外天然产物或其它化合物库的冷启动；遇到这类请求应说明需要单独的结构适配或冷启动模型。
-- `indication_score` 是同一疾病下的模型排序分数，不是真实疗效概率、临床治疗结论或处方建议。
-- 本包用于推理；重新 prepare 或训练才需要原始 PrimeKG、DrugBank、CMap/CGI 和疾病 embedding 数据。
+## 输入范围与适用限制
 
-## 必须保留的包结构
+- 疾病必须能在 primekg_cgi_graph_graph_only_e50/prepared/disease_catalog.csv 中通过 disease_id 或完整疾病名唯一匹配。疾病名匹配会忽略大小写和空格。
+- 默认候选范围为 prepared/candidate_pool.csv 中的 6,945 个 KG 已有 DrugBank 药物。可通过 DrugBank ID 白名单限制候选范围；白名单中的每个 ID 都必须存在于该候选库中。
+- 本技能不接受任意 SMILES，不支持新的 DrugBank ID、KG 外天然产物或其他化合物库的冷启动预测。
+- indication_score 是用于同一疾病内候选药排序的模型分数，不代表疗效概率、临床治疗结论或处方建议。
+- 随包模型用于推理。重新准备数据或训练模型时，才需要原始 PrimeKG、DrugBank、CMap/CGI 和疾病 embedding 数据。
 
-不要只保留 `source_archives/` 中的源码压缩包。推理还依赖：
+## 推理所需文件
 
-- `primekg_cgi_graph_graph_only_e50/prepared/`：疾病目录、候选药空间和图谱边数据；
-- `primekg_cgi_graph_graph_only_e50/train/`：模型权重、缓存和 embedding；
-- `src/primekg_cgi_graph_delivery/`：推理封装；
-- `model_source/src/`：已解压的原模型源码；`source_archives/` 同时保留源码压缩包备份。
+部署时保留完整技能包。模型推理依赖以下内容：
+
+- primekg_cgi_graph_graph_only_e50/prepared/：疾病目录、候选药物库及图谱数据。
+- primekg_cgi_graph_graph_only_e50/train/：模型权重、缓存和 embedding。
+- src/primekg_cgi_graph_delivery/：推理封装。
+- model_source/src/：已解压的模型源码。
+- source_archives/：源码压缩包备份；不能单独作为推理包使用。
+
+## 运行环境
+
+运行本技能必须使用服务器上的 primekg 虚拟环境：
+
+/home/vipuser/srv/foundryclaw_project/FounDryClaw_Web/venv/Oasis/primekg
+
+不得使用系统 Python、对话默认 Python 或其他技能的虚拟环境。运行前激活该环境，并在验证和打分命令中显式指定该环境的 Python 解释器：
+
+~~~bash
+source /home/vipuser/srv/foundryclaw_project/FounDryClaw_Web/venv/Oasis/primekg/bin/activate
+PY=/home/vipuser/srv/foundryclaw_project/FounDryClaw_Web/venv/Oasis/primekg/bin/python
+~~~
+
+该环境使用 Python 3.10，主要依赖为 PyTorch 1.13.1+cpu、DGL 1.1.2、NumPy 1.24.3、pandas 2.0.3、scikit-learn 1.3.2 和 RDKit 2022.09.5。包内的 environment.yml 是旧环境模板，不用于判断当前环境是否可用，也不代表需要创建 Conda 环境。
+
+当前 PyTorch 为 CPU 版本，设备参数使用 auto 或 cpu。只有切换到支持 CUDA 的 PyTorch 环境后，才使用 cuda。
+
+score.sh 默认使用随包的 model_source/src。正常推理不需要设置源码路径；只有需要替换源码版本时，才设置 KG_PROJECT_SRC。
 
 ## 运行前验证
 
-### 使用平台为本技能准备的 Python 环境
+将 SKILL_DIR 设置为本技能目录的绝对路径，然后执行交接包验证：
 
-本技能用仓库里的 `venv/Oasis/primekg`：它在本 SKILL.md 所在技能目录往上六层的仓库根下（`skills/Device/<设备>/.claude/skills/<本技能>` 往上六层就是仓库根）。解释器在 Linux 上是 `bin/python`，在 Windows 上是 `Scripts/python.exe`。环境里是 Python 3.10、PyTorch 1.13.1+cpu、DGL 1.1.2、NumPy 1.24.3、pandas 2.0.3、scikit-learn 1.3.2 和 RDKit 2022.09.5。技能包里的 `environment.yml` 是旧模板，不是运行环境说明：不要要求创建 Conda 环境，也不要因模板里的 Python 版本拒绝任务。
+~~~bash
+SKILL_DIR="<本技能目录的绝对路径>"
+source /home/vipuser/srv/foundryclaw_project/FounDryClaw_Web/venv/Oasis/primekg/bin/activate
+PY=/home/vipuser/srv/foundryclaw_project/FounDryClaw_Web/venv/Oasis/primekg/bin/python
 
-**不要用对话默认的 `python` 跑本技能**：`score.sh` 以 `python -m` 启动，环境路由在 `-m` 时按当前目录判断，工作区的默认环境没有 PyTorch 和 DGL，验证会报 `missing Python modules`。把上面这个解释器的绝对路径传给 `verify_handoff.sh` 和 `score.sh`。
-
-取得解释器路径并检查交接包（`SKILL_DIR` 写本 SKILL.md 所在目录的绝对路径，从 LabOntology 的输出里原样复制）：
-
-```bash
-SKILL_DIR=<本 SKILL.md 所在目录>
-PY="$SKILL_DIR/../../../../../../venv/Oasis/primekg/bin/python"
-[ -x "$PY" ] || PY="$SKILL_DIR/../../../../../../venv/Oasis/primekg/Scripts/python.exe"
 PYTHON_BIN="$PY" bash "$SKILL_DIR/verify_handoff.sh"
-```
+~~~
 
-验证脚本不比较环境名称，也不要求依赖版本与旧模板逐项相同；它检查当前解释器能否导入推理依赖（PyTorch、DGL、RDKit、pandas、NumPy），并检查随包文件。它报 `missing Python modules` 时，是解释器传错了或这个环境没装全，不是 Python 版本不匹配：先按上面的路径重试一次，仍然缺就如实登记失败并告诉用户，不要删掉依赖检查绕过去，也不要用别的模型、文献或联网检索代替本技能的排序结果。
+验证脚本检查指定解释器能否导入 PyTorch、DGL、RDKit、pandas 和 NumPy，并检查随包文件。验证通过后再运行正式推理。若报告 missing Python modules，先确认使用的是上述 primekg 解释器；该环境仍缺少依赖时，记录缺失模块并停止推理，不得跳过检查或用其他模型结果替代。
 
-当前 PyTorch 为 CPU 版本，标准命令使用 `auto` 或 `cpu`。只有切换到支持 CUDA 的 PyTorch 环境后才指定 `cuda`。
+## 疾病匹配
 
-`score.sh` 默认使用随包 `model_source/src`，正常推理不需要设置源码路径。只有需要改用其它版本源码时，才通过 `KG_PROJECT_SRC` 显式覆盖。
+正式打分前，必须先从 primekg_cgi_graph_graph_only_e50/prepared/disease_catalog.csv 中确认疾病记录。优先使用 disease_id 调用模型；使用疾病名时，必须使用目录中的完整名称。不得根据记忆或外部资料自行猜测疾病 ID。
 
-## 选择疾病
+可以通过疾病英文名或关键词搜索目录：
 
-`score.sh` 只认 `disease_catalog.csv` 里的 `disease_id` 或完整的 `disease_name`（只忽略大小写和空格），用户说的病名一般都要先查目录。运行前用疾病的英文名搜索：
+~~~bash
+grep -i "<英文关键词>" \
+  "$SKILL_DIR/primekg_cgi_graph_graph_only_e50/prepared/disease_catalog.csv"
+~~~
 
-```bash
-grep -i "<英文关键词>" "$SKILL_DIR/primekg_cgi_graph_graph_only_e50/prepared/disease_catalog.csv"
-```
+选择与用户指定疾病概念和层级相符的记录。不要仅因名称相似就改用更宽泛的上位疾病或更具体的亚型。标记为 susceptibility 或 obsolete 的条目通常不等同于当前疾病概念；只有在其含义确实符合用户请求时才考虑使用。若多个目录条目同样符合，且无法根据请求判断，应先向用户澄清。
 
-从结果里选与用户所说疾病同一层级的那一条，用它的 `disease_id` 运行：
+运行结果中注明从 disease_catalog.csv 选用的 disease_id 和 disease_name。
 
-- 不选更宽的上位疾病：肺结核用 `6052 pulmonary tuberculosis`，不用 `18076 tuberculosis`；
-- 不选更窄的亚型：脑卒中用 `5098 stroke disorder`，不用 `5490 large artery stroke`；
-- 跳过名称里带 `susceptibility`、`obsolete` 的条目，以及把几种病合在一起的综合征条目。
+若打分脚本报告疾病未找到，应重新核对 disease_catalog.csv 中的完整名称或 ID。只有脚本成功生成并通过检查的排名文件，才能报告为推理结果。
 
-没有合适的条目时，换同义词或全称再搜一次（如 `cerebrovascular`、`non-small cell lung carcinoma`）；两条同样贴切时才问用户。回复里写明用的是哪一条（`disease_id` 和 `disease_name`）。
+## 执行推理
 
-`score.sh` 报 `Disease '...' was not found` 不是本技能运行失败，只说明传入的不是目录里的完整名称：错误信息列出了名称含有这些词的条目，按上面的规则选一条重新运行，不要登记失败，也不要让用户去查疾病 ID。
+使用任务系统提供的产物目录；如果没有提供，在当前任务工作区创建专用目录，避免将结果写入模型或 prepared 数据目录。
 
-## 标准推理
+~~~bash
+ARTIFACT_DIR="<任务产物目录的绝对路径>"
+mkdir -p "$ARTIFACT_DIR"
+~~~
 
-```bash
-bash "$SKILL_DIR/score.sh" <disease_id> <artifact_dir>/score_<disease_id>.csv "$PY" auto 20
-bash "$SKILL_DIR/score.sh" "diabetic retinopathy" <artifact_dir>/score_dr.csv "$PY" auto 20
-```
+score.sh 参数顺序为：
 
-设备可使用 `auto`、`cpu`、`cuda` 或 `mps`。`top_k=0` 表示输出全部候选药。需要候选白名单时，直接调用 Python CLI 的 `--candidate-drugbank-ids`。
+~~~text
+score.sh <disease_id 或 disease_name> <output_csv> <python_executable> <device> <top_k>
+~~~
+
+优先使用已从 disease_catalog.csv 确认过的 disease_id：
+
+~~~bash
+bash "$SKILL_DIR/score.sh" \
+  43789 \
+  "$ARTIFACT_DIR/score_43789.csv" \
+  "$PY" \
+  auto \
+  20
+~~~
+
+使用 disease_catalog.csv 中完整疾病名的示例：
+
+~~~bash
+bash "$SKILL_DIR/score.sh" \
+  "diabetic retinopathy" \
+  "$ARTIFACT_DIR/score_dr.csv" \
+  "$PY" \
+  auto \
+  20
+~~~
+
+设备参数支持 auto、cpu、cuda 或 mps，但必须与当前 PyTorch 环境相符。top_k=0 表示输出全部候选药物。指定 DrugBank ID 白名单时，先确认所有 ID 都在 candidate_pool.csv 中，再按 Python CLI 的 --help 使用 --candidate-drugbank-ids 参数。
+
+运行后检查输出文件存在、非空，并包含预期字段。推理失败时记录实际命令、错误信息和环境检查结果；不得将失败运行描述为已完成的排名。
 
 ## 输出与报告
 
-输出 CSV 字段：
+本技能单次推理的必需产物是一份候选药物排名 CSV。核心字段为：
 
-```text
+~~~text
 disease_id,disease_name,rank,drugbank_id,drug_name,indication_score,has_cgi,has_drug_protein_target
-```
+~~~
 
-向用户报告时说明查询疾病及匹配到的 `disease_id`、模型名、结果文件路径和 Top N 候选药。`has_cgi` 和 `has_drug_protein_target` 只是相应图谱信息是否存在的标记，不是疗效证据强度。候选范围仅来自当前 candidate pool，结果用于研究排序。
+输出目录用于存放该 CSV，不是额外的模型产物。本技能不生成反馈前后排名对比或多轮评估指标；需要反馈闭环评估时，应另行使用 drug-feedback-optimization，并按该技能的实际输出登记产物。
 
-推理完成后，只有当前任务已经授权维护 ontology 时，才把结果登记为 `Data`，并由通用药效预测 `Process` 通过 `produce` 关系连接；若结果用于某个 Oasis 实验，再在确认具体 Workflow 后建立 `withData` 关系。当前任务未授权图谱写入时，只在报告中列出建议创建的实体和关系，不自动修改 ontology。
+向用户报告时，说明：
+
+- 从 disease_catalog.csv 匹配到的疾病名称和 disease_id
+- 模型名称
+- 结果 CSV 路径
+- Top N 候选药及其排序分数
+
+has_cgi 和 has_drug_protein_target 表示对应图谱信息是否存在，不表示疗效证据强弱。结果仅用于候选药研究排序。
+
+## Ontology 登记
+
+只有当前任务已获授权维护 ontology 时，才将推理结果登记为 Data，并通过通用药效预测 Process 的 produce 关系关联。若结果用于具体 Oasis 实验，只有在确认对应 Workflow 后，才建立 withData 关系。
+
+当前任务未授权图谱写入时，不自动修改 ontology；在报告中列出建议登记的实体和关系即可。
+

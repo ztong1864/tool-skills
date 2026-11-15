@@ -17,7 +17,7 @@ Line wrapping is not compared: generated bodies are copied from the template blo
 the references came out of Momentum's exporter. Statement order, device, action,
 parameter key/value pairs, container bindings, locks, comments and chaining are.
 
-Exit status is 0 only when the only differences are the ones listed in EXPECTED below.
+Exit status is 0 only when all compared statements match their references.
 """
 
 import argparse
@@ -36,14 +36,6 @@ PAIRS = [
     ("GYF_3_Detect.txt", "gyf_3_detect"),
 ]
 TIMESTAMP = "20261113_120000"
-
-# The deviations this skill makes on purpose. Both are documented in SKILL.md under
-# "两处刻意的改动"; anything else is a regression.
-EXPECTED = [
-    ("02_LYY_PCR_plate_1", "02_LYY_PCR_plate_2"),
-    ("02_LYY_PCR_plate_3", "02_LYY_PCR_Plate_3"),
-]
-
 
 # --------------------------------------------------------------------------- parsing
 def process_body(path):
@@ -123,7 +115,7 @@ class Parser:
             return {"acquire": [b.strip() for b in payload.split(",") if b.strip()]}
         if line.startswith("set "):
             payload = self.until_semicolon(line)[4:].strip().rstrip(";")
-            return {"set": re.findall(r"([A-Za-z0-9_]+)\.[Ss]tatus\s*=\s*'\"([^\"]*)\"'", payload)}
+            return {"set": re.findall(r"([A-Za-z0-9_]+)\.([Ss]tatus)\s*=\s*'\"([^\"]*)\"'", payload)}
         if line.startswith("comment"):
             statement = self.until_semicolon(line)
             return {"comment": re.search(r"comment\s*\('(.*)'\)\s*;", statement, re.S).group(1)}
@@ -160,8 +152,7 @@ def flatten(entries, path="", out=None):
 
 
 def canon(statement):
-    """Whitespace-insensitive, parameter-order-insensitive form. `.status` is folded to
-    `.Status` because Momentum ignores the case and the references mix the two."""
+    """Ignore whitespace and parameter order; preserve identifier and status spelling."""
     out = {}
     for key, value in statement.items():
         if key in ("params", "wait_until", "add_work"):
@@ -169,18 +160,12 @@ def canon(statement):
         elif key == "containers":
             out[key] = [" ".join(c.split()) for c in value]
         elif key == "acquire":
-            out[key] = [" ".join(c.split()).replace(".status==", ".Status==") for c in value]
+            out[key] = [" ".join(c.split()) for c in value]
         elif key == "set":
             out[key] = [list(pair) for pair in value]
         else:
             out[key] = value
     return out
-
-
-def apply_expected(text):
-    for before, after in EXPECTED:
-        text = text.replace(before, after)
-    return text
 
 
 def fixed_sections(path):
@@ -211,7 +196,7 @@ def compare(reference, generated):
     if len(ref) != len(gen):
         problems.append(f"statement count: reference {len(ref)}, generated {len(gen)}")
     for (ref_path, ref_statement), (gen_path, gen_statement) in zip(ref, gen):
-        left = apply_expected(json.dumps(canon(ref_statement), ensure_ascii=False, sort_keys=True))
+        left = json.dumps(canon(ref_statement), ensure_ascii=False, sort_keys=True)
         right = json.dumps(canon(gen_statement), ensure_ascii=False, sort_keys=True)
         if ref_path != gen_path or left != right:
             problems.append(f"at {ref_path}:\n    reference {left[:400]}\n    generated {right[:400]}")
@@ -279,8 +264,7 @@ def main():
     print()
     if failures or map_problems:
         sys.exit(f"{failures} script mismatch(es), {len(map_problems)} procedure-map problem(s)")
-    print(f"all {len(PAIRS)} scripts match their reference, "
-          f"allowing for the {len(EXPECTED)} documented renames")
+    print(f"all {len(PAIRS)} scripts match their reference; no container renames allowed")
 
 
 if __name__ == "__main__":

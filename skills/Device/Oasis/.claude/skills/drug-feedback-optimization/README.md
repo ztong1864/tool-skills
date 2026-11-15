@@ -43,7 +43,7 @@ $drug-feedback-optimization 读取第3轮反馈，本轮推荐35个分子
 - 用固定指标比较候选策略并冻结最佳实测版本。
 - 记录每个提案、评估结果、保留或拒绝决定和最终来源。
 
-当前包已实现并验证 PRISM 离线评估与通用 AutoResearch。规划中的真实实验通用 CLI（如 `init-campaign`、`ingest-feedback`、`recommend-next`）尚未实现，不能当作现有命令使用。
+真实实验 CLI 已实现 `init-campaign`、`ingest-feedback`、`recommend-next`，入口为 `scripts/campaign.py`。当前支持随机森林反馈模型、固定权重融合与贪心获取；`close-campaign` 尚未实现。PRISM 离线评估与通用 AutoResearch 仍可独立使用。
 
 ## 4. 目录结构
 
@@ -54,6 +54,8 @@ drug-feedback-optimization/
 ├── assets/task_config.template.json
 ├── references/
 ├── scripts/validate_task_config.py
+├── scripts/campaign.py
+├── tests/test_campaign.py
 └── test-data/prism-primary-luad-smoke-v1/
 
 autoresearch-core/

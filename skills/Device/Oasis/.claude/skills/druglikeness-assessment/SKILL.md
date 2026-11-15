@@ -1,6 +1,6 @@
 ---
 name: druglikeness-assessment
-description: Use when assessing SMILES-based small-molecule drug-likeness with RDKit descriptors, Lipinski Rule of Five, QED, PAINS, or Brenk structural alerts; do not use it as efficacy, ADMET, or experimental validation.
+description: Use when users require assessing drug-likeness. 当用户要求进行成药性预测或者分析成药性时，使用这个技能。
 ---
 
 # Drug-Likeness Assessment

@@ -1,5 +1,7 @@
 # Real campaign workflow
 
+Executable entry point: `python scripts/campaign.py {init-campaign,ingest-feedback,recommend-next} --help`. These commands implement the RandomForest, fixed-weight fusion, greedy acquisition subset of the contract below. `close-campaign` is not implemented.
+
 ## Campaign states
 
 Track each candidate as one of:
@@ -24,11 +26,11 @@ Only `available` candidates may enter a new recommendation. A recommendation res
 
 ## Feedback ingestion
 
-Ingest each CSV once using a content hash or stable batch ID. Refuse conflicting re-ingestion. Preserve the original input as `round_NNN/input_feedback.csv`.
+Ingest each CSV once using a content hash. Refuse repeated ingestion. Preserve the original input as `feedback_inputs/<sha256>.csv`; record accepted rows in `feedback_ledger.csv` and `state.json`.
 
 - Valid observations enter cumulative model training.
 - Compound failures affect realized campaign utility but do not become artificial activity labels.
-- Technical failures may be retried once. After the allowed retry they become unavailable.
+- Technical failures become `retryable_failure` after the first failed attempt and may be selected once more; a second technical failure makes the candidate unavailable. Each recommendation attempt consumes campaign budget.
 
 ## Next-batch recommendation
 

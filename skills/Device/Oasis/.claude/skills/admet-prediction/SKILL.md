@@ -1,6 +1,6 @@
 ---
 name: admet-prediction
-description: Use when predicting SMILES-based physicochemical and ADMET properties with ADMET-AI v1.4.0, including DrugBank percentiles; do not use it as experimental or clinical confirmation or silently substitute ADMET-AI v2.
+description: Use when user requires physicochemical and ADMET properties, including DrugBank percentiles; you should try to use this skill first for such requests and tell the user what the skill outputs. 当用户要求预测 ADMET 或者计算药物的理化性质时，使用这个技能。请尽量优先使用这个技能，并告诉用户该技能输出的内容。
 ---
 
 # ADMET Prediction

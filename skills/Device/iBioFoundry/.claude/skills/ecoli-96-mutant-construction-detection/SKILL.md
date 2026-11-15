@@ -1,6 +1,6 @@
 ---
 name: ecoli-96-mutant-construction-detection
-description: Generate the three chained Momentum DSL txt scripts for the 96-mutant E. coli plasmid workflow: whole-plasmid PCR plus DpnI digestion, chemical transformation with recovery and plating onto twelve eight-well plates, then seed culture, IPTG induction, harvest, TBS wash and BCA/fluorescence reading. Trigger on requests such as "96突变体全流程", "质粒构建与检测", "转化与涂布", "IPTG诱导检测", "BCA检测", "第一份脚本"/"第二份脚本"/"第三份脚本".
+description: 'Generate the three chained Momentum DSL txt scripts for the 96-mutant E. coli plasmid workflow: whole-plasmid PCR plus DpnI digestion, chemical transformation with recovery and plating onto twelve eight-well plates, then seed culture, IPTG induction, harvest, TBS wash and BCA/fluorescence reading. Trigger on requests such as "96突变体全流程", "质粒构建与检测", "转化与涂布", "IPTG诱导检测", "BCA检测", "第一份脚本"/"第二份脚本"/"第三份脚本".'
 ---
 
 # 96 突变体大肠杆菌质粒构建与检测
@@ -49,26 +49,18 @@ description: Generate the three chained Momentum DSL txt scripts for the 96-muta
    写明的例外。
 2. **三份都要先导入，再启动第一份**。只导入第一份的话，它跑到 `AddWork` 会找不到下一个流程。
 
-容器状态也承担串联作用：第一份把 PCR 产物板置为 `"PCR_Plate_DpnI"`，第二份用
-`where '...Status=="PCR_Plate_DpnI"'` 取出来。
+## 参考脚本保真与板子交接
 
-## 两处刻意的改动
+用户确认 `references/source-scripts/` 三份原件为可运行的权威模板。默认生成必须保留每处
+容器标识、板号、状态值、大小写、设备绑定位置和控制流程，不能自动改名、重编号、统一
+拼写或推断修正。即使跨脚本标识不同也原样保留；只有用户明确要求修改时才能调整，并说明差异。
+用户明确指定其他参考版本时，先比对并记录差异，不能静默替换模板。
 
-生成结果与 `references/source-scripts/` 里的原件逐语句一致，只有这两处例外，
-`scripts/verify_against_reference.py` 里也是按这两条放行的：
-
-1. **交接板统一为 `02_LYY_PCR_plate_2`。** 原件里第一份脚本把 `02_LYY_PCR_plate_2` 置为
-   `"PCR_Plate_DpnI"`，第二份却去取 `02_LYY_PCR_plate_1` 的同一个状态——按名字匹配的话
-   第二份取不到板。同一块实物板、两个标识，统一用产出方的那个。
-   **这一处要和实验员确认**：如果机器上确实是人工换标识衔接的，就把这里改回去。
-2. **`02_LYY_PCR_Plate_3` 按声明拼写。** 原件在 `Acquire` 里写 `Plate`（大写 P）、
-   在 `where` 子句和 `set` 里写 `plate`，`.Status` 和 `.status` 也混用。Momentum 不区分
-   大小写，生成端统一按声明的拼写来。
-
-另有一处**没有改**、但需要实验员确认：第二份脚本把 `02_LYY_cell_plate1` 留在
-`"Revive_plate"`，第三份却按 `"New"` 取同名板。按流程看第三份要的是一块**新的空保种板**
-（取来是新的、用完封膜存 10 ℃），所以保留原样；如果其实是同一块板，第三份的
-`acquire_status` 要改成 `"Revive_plate"`。
+第一份把 `02_LYY_PCR_plate_2` 标为 `PCR_Plate_DpnI`；第二份按此状态获取并使用
+`02_LYY_PCR_plate_1`。两者的现场交接机制无法仅从脚本确定，不要声称它们必然是同一块板。
+第二份中 `02_LYY_PCR_Plate_3` 与 `02_LYY_PCR_plate_3` 及 `Status`/`status` 的原始拼写也要逐处保留。
+第二份的 `02_LYY_cell_plate1` 状态为 `Revive_plate`，第三份按 `New` 获取同名容器；具体实物交接须由实验员确认。
+生成后的参考校验不能放行这些标识或状态拼写变更。
 
 ## Workflow
 
@@ -83,7 +75,7 @@ description: Generate the three chained Momentum DSL txt scripts for the 96-muta
 7. 并行块、设备锁、`wait_until`、`AddWork` 的写法以
    `../script-assembler/instructions/control-flow.md` 为准。
 8. 固定的 `runtime/devices/pools/variables` 以 `../script-assembler/SKILL.md` 为准。
-9. 用 `scripts/generate_script.py` 生成脚本。
+9. 用 `scripts/generate_script.py` 生成脚本。默认规模交付前必须运行下方参考校验；失败时停止交付并报告差异，不得称为模板一致。缩减规模属于用户指定的改动，须单独说明并核查，其结果不等同于原始模板。
 
 ## Command
 

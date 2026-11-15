@@ -243,23 +243,36 @@ def resolve_llm_config() -> tuple[str, str, str]:
     )
 
 
-_RETRY_STATUS = {502, 503, 504}
+_RETRY_STATUS = {429, 502, 503, 504}
 _ATTEMPTS = 3
+_CONNECT_TIMEOUT = 15
+_READ_TIMEOUT = 180
+_RETRY_BACKOFF_SECONDS = 5
 
 
 def post_to_model(url: str, headers: dict[str, str], payload: dict[str, Any]) -> requests.Response:
-    """POST to the model service. A dropped connection or a gateway error is tried again (one reset used to fail
-    the whole step); a read timeout is not, so a slow answer is not waited for twice."""
+    """POST to the model service. A dropped connection, a gateway error (429/502/503/504) and a request that
+    gets no byte back within the read timeout are all tried again. A read timeout used to be left alone so a
+    slow answer was not waited for twice, but the upstream stalling for the whole timeout is the common
+    failure, and one stalled request then failed the whole step."""
     for attempt in range(1, _ATTEMPTS + 1):
+        wait = _RETRY_BACKOFF_SECONDS * attempt
         try:
-            response = requests.post(url, headers=headers, json=payload, timeout=120)
-        except requests.ConnectionError as exc:
+            response = requests.post(
+                url, headers=headers, json=payload, timeout=(_CONNECT_TIMEOUT, _READ_TIMEOUT)
+            )
+        except (requests.ConnectionError, requests.Timeout) as exc:
             if attempt == _ATTEMPTS:
-                raise ConstraintParserError(f"LLM request failed after {_ATTEMPTS} attempts: {exc}") from exc
+                raise ConstraintParserError(
+                    f"LLM request failed after {_ATTEMPTS} attempts ({type(exc).__name__}): {exc}"
+                ) from exc
+            print(f"模型服务第 {attempt} 次调用失败（{type(exc).__name__}），{wait} 秒后重试", flush=True)
         else:
             if response.status_code not in _RETRY_STATUS or attempt == _ATTEMPTS:
                 return response
-        time.sleep(2 * attempt)
+            print(f"模型服务返回 {response.status_code}（第 {attempt} 次），{wait} 秒后重试", flush=True)
+        time.sleep(wait)
+    raise ConstraintParserError("LLM request failed.")  # unreachable: the loop returns or raises
 
 
 def call_llm(prompt: str) -> str:

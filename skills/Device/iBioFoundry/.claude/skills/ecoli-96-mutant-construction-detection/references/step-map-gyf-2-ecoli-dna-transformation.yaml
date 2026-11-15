@@ -32,7 +32,7 @@
    "device": "XPeel",
    "action": "Remove Seal",
    "containers": [
-    "02_LYY_PCR_plate_2 in 'XPeel:Nest' GetMyOwnContainer"
+    "02_LYY_PCR_plate_1 in 'XPeel:Nest' GetMyOwnContainer"
    ]
   },
   "evo_load_pcr_plate_1": {
@@ -40,7 +40,7 @@
    "device": "FreedomEVO",
    "action": "Load",
    "containers": [
-    "02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 2' GetMyOwnContainer"
+    "02_LYY_PCR_plate_1 in 'FreedomEVO:Nest 2' GetMyOwnContainer"
    ]
   },
   "operator_manual_add_4_bl21_check_tos1": {
@@ -63,7 +63,7 @@
    },
    "containers": [
     "02_LYY_PCR_Plate_3 in 'FreedomEVO:Nest 1' GetMyOwnContainer",
-    "02_LYY_PCR_plate_2 in 'FreedomEVO:Nest 2' GetMyOwnContainer",
+    "02_LYY_PCR_plate_1 in 'FreedomEVO:Nest 2' GetMyOwnContainer",
     "Tips_Liha200_1 in 'FreedomEVO:Nest 3' GetMyOwnContainer",
     "Tips_Liha10_1 in 'FreedomEVO:Nest 4' ends 'FreedomEVO:Waste' GetMyOwnContainer"
    ]
@@ -83,7 +83,7 @@
    "device": "ALPS3000",
    "action": "Seal",
    "containers": [
-    "02_LYY_PCR_plate_2 in 'ALPS3000:Nest' GetMyOwnContainer"
+    "02_LYY_PCR_plate_1 in 'ALPS3000:Nest' GetMyOwnContainer"
    ]
   },
   "cyt2c450_load_pcr_plate_1": {
@@ -91,7 +91,7 @@
    "device": "Cytomat_2C450",
    "action": "Load",
    "containers": [
-    "02_LYY_PCR_plate_2 GetMyOwnContainer"
+    "02_LYY_PCR_plate_1 GetMyOwnContainer"
    ]
   },
   "cyt24h_load_tips_liha200_1": {

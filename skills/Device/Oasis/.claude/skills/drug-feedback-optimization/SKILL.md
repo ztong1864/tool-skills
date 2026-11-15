@@ -75,7 +75,7 @@ base_score 与 feedback_score 按冻结规则融合
 
 真实 campaign 至少需要三类输入：
 
-1. **候选药物表**：每行一个候选，包含唯一 `candidate_id`、初始 `base_score`、SMILES 和反馈模型需要的分子特征。
+1. **候选表**：每行一个候选，包含唯一 `candidate_id`、初始 `base_score` 和反馈模型需要的预计算数值特征。单药可提供 SMILES，由 RDKit 生成结构组；药物组合需由上游提供稳定的组合级 `structure_group_id`，此时可不提供 SMILES。
 2. **任务配置 JSON**：说明疾病、文件路径、字段名称、每轮数量、总预算、反馈启用阈值和策略版本。以 [assets/task_config.template.json](assets/task_config.template.json) 为模板。
 3. **实验反馈 CSV**：至少包含 `candidate_id` 和 `[0,1]` 范围内的 `activity_score`。这是已经完成图像分析、重复孔汇总、对照归一化和 QC 后的结果，不是原始图像。
 
@@ -88,9 +88,10 @@ base_score 与 feedback_score 按冻结规则融合
 ```bash
 python .claude/skills/drug-feedback-optimization/scripts/check_environment.py
 python .claude/skills/drug-feedback-optimization/scripts/validate_task_config.py --help
+python .claude/skills/drug-feedback-optimization/scripts/campaign.py --help
 ```
 
-环境检测只确认目录、测试数据、相邻 `autoresearch-core` 和 Python 依赖，不运行评估或训练。真实运行仍需先校验任务配置和输入数据。
+环境检测只确认目录、测试数据、相邻 `autoresearch-core` 和 Python 依赖，不运行评估或训练。真实 campaign 使用带有 pandas、NumPy、scikit-learn 和 joblib 的平台 Python 环境；只有候选表未预先提供 `structure_group_id` 时才需要 RDKit 从 SMILES 生成规范结构组。真实运行仍需先校验任务配置和输入数据。
 
 ## 建立 campaign 时固定什么
 
@@ -131,6 +132,20 @@ final_score    = 0.7 × 0.80 + 0.3 × 0.60 = 0.74
 使用 [assets/task_config.template.json](assets/task_config.template.json) 创建配置，并用 `scripts/validate_task_config.py` 校验和解析批量大小。
 
 ## 反馈闭环
+
+### 已实现的真实 campaign 命令
+
+在平台工作区运行以下命令。`task_config.json` 以 [assets/task_config.template.json](assets/task_config.template.json) 为模板，候选表、特征列表和输出目录由调用者明确指定。候选表必须预先含有数值特征；本命令不从原始图像或 SMILES 生成模型特征。若原始实验读数不是 `[0,1]`、越大越好的 `activity_score`，先按冻结的实验规则完成转换。`--campaign-dir` 应指向工作区内的结果目录，不要指向技能目录。
+
+```bash
+python .claude/skills/drug-feedback-optimization/scripts/campaign.py init-campaign --config /path/to/task_config.json --campaign-dir /path/to/campaign
+python .claude/skills/drug-feedback-optimization/scripts/campaign.py ingest-feedback --campaign-dir /path/to/campaign --feedback-csv /path/to/feedback_round1.csv
+python .claude/skills/drug-feedback-optimization/scripts/campaign.py recommend-next --campaign-dir /path/to/campaign
+```
+
+`init-campaign` 冻结配置、候选池和特征，立即按 `base_score` 推荐第一轮。`ingest-feedback` 只接收已经推荐且仍待结果的候选，拒绝重复文件、未知 ID、重复 ID、越界分数和已定稿结果。`recommend-next` 使用所有累计有效反馈重新拟合当前 campaign 的反馈模型；反馈不足阈值时仍按基座分数排序，达到阈值后按 `final_score` 排序。每轮可用 `--batch-size K` 覆盖批量大小，前提是配置允许。
+
+当前真实 campaign CLI 只执行冻结的 `RandomForestRegressor`、固定权重融合、无探索的贪心获取；其它模型或探索策略应先扩展实现并验证，不要仅修改配置声称已经执行。未实现 `close-campaign` 汇总命令。真实运行细节与产物见 [references/campaign-workflow.md](references/campaign-workflow.md)。
 
 1. 校验任务配置、冻结候选表、特征列表、策略版本和反馈 CSV。
 2. 拒绝缺失、重复或未知 ID，非数值或越界分数，缺失特征及不一致 campaign 元数据。
@@ -191,9 +206,9 @@ else:
 
 ## 当前实现边界
 
-运行命令前检查实际脚本及其 `--help`。规划中的通用真实实验命令 `init-campaign`、`ingest-feedback`、`recommend-next` 和 `close-campaign` 尚未实现，不能当作现有入口。
+运行前检查 `.claude/skills/drug-feedback-optimization/scripts/campaign.py --help`。真实实验的 `init-campaign`、`ingest-feedback`、`recommend-next` 已实现；`close-campaign` 尚未实现。
 
-当前已经实现并随包验证的是 PRISM 离线 smoke、闭环评估、获取曲线评估、通用 AutoResearch 的药效评估器适配、配置校验和策略冻结链路。
+此外仍保留 PRISM 离线 smoke、闭环评估、获取曲线评估、通用 AutoResearch 的药效评估器适配、配置校验和策略冻结链路。PRISM 回顾性标签不得作为真实 campaign 未测候选的反馈输入。
 
 ## 报告要求
 

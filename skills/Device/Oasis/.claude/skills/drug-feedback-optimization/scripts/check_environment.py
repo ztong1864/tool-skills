@@ -19,6 +19,7 @@ def main() -> int:
     required_files = [
         ROOT / "assets" / "task_config.template.json",
         ROOT / "scripts" / "validate_task_config.py",
+        ROOT / "scripts" / "campaign.py",
         FIXTURE / "base_scored_oracle.csv",
         FIXTURE / "feature_columns.json",
         FIXTURE / "split_manifest.json",
@@ -26,7 +27,7 @@ def main() -> int:
         SKILLS_ROOT / "autoresearch-core" / "scripts" / "autoresearch_core.py",
     ]
     missing_files = [str(path) for path in required_files if not path.is_file()]
-    packages = ["numpy", "pandas", "scipy", "sklearn"]
+    packages = ["numpy", "pandas", "scipy", "sklearn", "joblib"]
     package_status = {name: importlib.util.find_spec(name) is not None for name in packages}
     ok = sys.version_info >= (3, 10) and not missing_files and all(package_status.values())
     result = {
@@ -36,6 +37,7 @@ def main() -> int:
         "skill_root": str(ROOT),
         "autoresearch_core_present": (SKILLS_ROOT / "autoresearch-core").is_dir(),
         "packages": package_status,
+        "rdkit_optional_for_precomputed_structure_group": importlib.util.find_spec("rdkit") is not None,
         "missing_files": missing_files,
         "note": "该检查不运行 smoke、训练或 AutoResearch。",
     }

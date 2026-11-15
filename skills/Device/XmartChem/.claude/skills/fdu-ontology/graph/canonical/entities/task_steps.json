@@ -131,7 +131,9 @@
   "task-step:merge-step-json": {
     "agent_should_check": [
       "One or more experiment plan Markdown files exist",
-      "Target layout codes match plan file count when explicitly provided"
+      "Target layout codes match plan file count when explicitly provided",
+      "Allow at least 15 minutes for the merge command: one model call per plan",
+      "After a failed or cut-off merge, rerun the same command; finished plans come from step_json_cache"
     ],
     "entity_type": "TaskStep",
     "failure_policy": "stop_and_report",
