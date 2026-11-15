@@ -24,6 +24,7 @@ import json
 import math
 import os
 import re
+import socket
 import sys
 import time
 import urllib.error
@@ -56,6 +57,12 @@ def fail(message: str) -> None:
 def base_url(args: argparse.Namespace) -> str:
     url = (args.base_url or os.environ.get("PROENGAGENT_BASE_URL") or "").strip().rstrip("/")
     if not url:
+        # FounDryClaw hands the chat PROENGAGENT_UNAVAILABLE instead of the address when the server cannot
+        # open a connection to the service, so say which address and what went wrong rather than "not set".
+        unavailable = (os.environ.get("PROENGAGENT_UNAVAILABLE") or "").strip()
+        if unavailable:
+            fail(f"the scoring service cannot be reached from this machine: {unavailable}. Report that it "
+                 "needs an administrator (需要管理员处理); do not score locally or call another service.")
         fail("the ProEngAgent address is not configured: set PROENGAGENT_BASE_URL (or pass --base-url). "
              "This is an administrator's setting on the server, not something to guess (需要管理员处理).")
     return url
@@ -161,6 +168,27 @@ def parse_positions(raw: str, seq: str) -> list[int]:
 
 
 # --- the service -------------------------------------------------------------------------------------------
+
+def check_reachable(base: str, timeout: float = 4.0) -> None:
+    """One short connection attempt before the real call.
+
+    A scan itself takes seconds, but an address the machine has no route to keeps `connect()` waiting for the
+    kernel's own limit -- about two minutes -- and the error then reads like the scoring service's fault. This
+    says which address and which error in a few seconds instead."""
+    parsed = urllib.parse.urlparse(base)
+    host = parsed.hostname
+    port = parsed.port or (443 if parsed.scheme == "https" else 80)
+    if not host:
+        fail(f"the ProEngAgent address {base} is not a usable http(s) address (需要管理员处理).")
+    try:
+        with socket.create_connection((host, port), timeout=timeout):
+            return
+    except OSError as exc:
+        fail(f"the ProEngAgent service at {host}:{port} does not accept connections "
+             f"({exc.strerror or exc}). That is the service or the route to it, not the sequence or the "
+             "positions: report that it needs an administrator (需要管理员处理); do not start a local model "
+             "and do not call another service instead.")
+
 
 def get_json(url: str, timeout: float) -> Any:
     try:
@@ -341,6 +369,7 @@ def main() -> None:
     if args.tokens:
         fail("--tokens is gone: the scan covers the 20 standard amino acids only.")
     base = base_url(args)
+    check_reachable(base)
 
     if args.health or args.list_models:
         entry = catalog_entry(base, min(args.timeout, 30.0))
