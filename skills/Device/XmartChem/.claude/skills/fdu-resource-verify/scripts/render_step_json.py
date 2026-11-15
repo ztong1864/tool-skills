@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -35,7 +36,9 @@ def load_resource_info(resource_dir: Path) -> List[Dict[str, Any]]:
 
 
 def normalize_substance_name(name: str) -> str:
-    return str(name).strip().lower()
+    """同 verify_resources.py：NFKC 把 CuBr₂ 折成 CuBr2、（MeCN）折成 (MeCN)，
+    设备瓶签上的普通数字和方案里的下标写法才能对上。"""
+    return unicodedata.normalize("NFKC", str(name)).strip().lower()
 
 
 def build_resource_index(resource_list: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:

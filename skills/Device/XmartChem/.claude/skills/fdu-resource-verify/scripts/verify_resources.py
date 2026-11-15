@@ -8,6 +8,7 @@ import json
 import subprocess
 import sys
 import time
+import unicodedata
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -35,7 +36,10 @@ def load_resource_info(resource_dir: Path) -> List[Dict[str, Any]]:
 
 
 def normalize_substance_name(name: str) -> str:
-    return name.strip().lower()
+    """Fold the typographic spellings apart from which the same chemical is the same chemical: NFKC turns
+    CuBr₂ into CuBr2, ＭeCN into MeCN and （MeCN） into (MeCN). The deck labels its bottles with plain
+    digits (Bi(OTf)3, i-Pr2NH), while a written plan says CuBr₂, and those used to miss each other."""
+    return unicodedata.normalize("NFKC", str(name)).strip().lower()
 
 
 def build_resource_index(resource_list: List[Dict[str, Any]]) -> Dict[str, List[Dict[str, Any]]]:
