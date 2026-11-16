@@ -48,6 +48,7 @@
   "rule:resource-snapshot-is-source-of-truth": {
     "applies_to_ids": [
       "task-step:verify-and-fill-resources",
+      "task-step:refresh-resource-snapshot",
       "artifact:resource-snapshot",
       "artifact:resource-verification-report"
     ],

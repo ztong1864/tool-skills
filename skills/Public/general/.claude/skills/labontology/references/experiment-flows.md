@@ -35,6 +35,15 @@ flows:
         stop: device
       - skill: my-monitor
         optional: true                # listed for reference; never put in a plan
+  - id: my-device-resources           # a one-step flow for a read-only query
+    name: 我的设备：只读查询资源清单
+    default_stop: snapshot
+    stops:
+      snapshot: 刷新资源快照并汇报
+    steps:
+      - skill: my-resource-verify
+        stop: snapshot
+        outputs: []                   # this step makes none of the Skill's declared outputs
 ```
 
 Rules:
@@ -47,6 +56,11 @@ Rules:
 - `pause` makes the Runtime stop after that step (after its review) and ask the user, showing the step's result and the
   pause text; the user's next message is the answer. Steps without `pause` run on without asking. The pause of the
   plan's last step is asked when the plan is done, together with the command for the next step if the user agrees.
+- `outputs` lists which of the Skill's declared outputs the step makes, when the flow uses only part of a Skill (a
+  read-only query of a Skill that can also write files); `outputs: []` for none. Without it the step must hand in all
+  of the Skill's declared outputs, as a Skill outside a flow does. Files the step writes beyond the listed outputs are
+  registered with `--provide-artifact <name>=<path>`. A one-step flow also lets a Skill start without the inputs it
+  needs only for its other uses: an input that only Skills outside the plan make does not block a flow step.
 - One reply per review: a review that passes after the user answered its question (or asked for a change) in the same
   turn does not pause again, since that reply confirmed the step. A review whose verdict is `needs_human_review` always
   stops to ask its question, even where the flow has no `pause` or the plan runs through.

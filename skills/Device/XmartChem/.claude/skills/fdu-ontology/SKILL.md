@@ -23,6 +23,8 @@ description: 这是 FDU 实验自动化任务本体 skill。只要任务涉及�
 
 本 skill 是复旦装置实验的入口。主流程同时写在本目录的 `experiment_flows.yaml`（LabOntology 的实验流程格式）里：LabOntology 从它生成任务计划（`run --flow fdu-experiment-to-device-task --until <终点>`），带上每个规划步骤之后的 `fdu-risk-review`，只在确认点暂停。终点：`plan`（到中文实验方案）、`protocol`（默认：到设备协议 JSON，创建设备任务前停下）、`device`（用户明确要求时创建设备任务）。
 
+只想看装置当前有哪些资源（刷新资源快照、列出资源清单、库位数量）而不做实验时，走只读流程 `run --flow fdu-resource-snapshot`：它只刷新设备资源快照并汇报资源清单，不需要 step JSON，也不做资源校验和回填（图谱里是 `agent-flow:fdu-resource-snapshot`）。对已有 step JSON 做资源校验与回填，是主流程 `fdu-experiment-to-device-task` 里的一步。
+
 修改图谱里的主流程（`agent-flow:fdu-experiment-to-device-task`）、确认点（`pausesAt`）或风险审查规则时，同步修改 `experiment_flows.yaml`。
 
 ## 默认查询顺序
@@ -59,6 +61,8 @@ description: 这是 FDU 实验自动化任务本体 skill。只要任务涉及�
 `agent-flow:fdu-experiment-to-device-task`
 
 它描述从用户实验目标到设备任务创建的完整路线。
+
+只读查询流程：`agent-flow:fdu-resource-snapshot`，只有一步 `task-step:refresh-resource-snapshot`，刷新资源快照并汇报资源清单，不需要 step JSON。
 
 ### TaskStep
 

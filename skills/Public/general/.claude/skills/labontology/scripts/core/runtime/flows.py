@@ -1,8 +1,9 @@
 """Mission plans from a device's declared experiment flow (experiment_flows.yaml, see references/experiment-flows.md).
 
 A flow lists Skills in order. A step may name a review Skill that checks its result right after it, a question
-the user answers before the flow goes on (`pause`), and a named stop point (`stop`). A plan is the flow up to one
-stop: each step's Skill, then its review; a step with a pause pauses after its last plan entry."""
+the user answers before the flow goes on (`pause`), a named stop point (`stop`) and the Skill's declared outputs the
+step makes (`outputs`, when the flow uses only part of the Skill). A plan is the flow up to one stop: each step's
+Skill, then its review; a step with a pause pauses after its last plan entry."""
 from __future__ import annotations
 
 from typing import Any
@@ -17,9 +18,12 @@ def _plan_entries(steps: list[dict[str, Any]]) -> dict[str, Any]:
     labels: list[str] = []
     pauses: list[int] = []
     questions: dict[str, str] = {}
+    outputs: dict[str, list[str]] = {}
     for step in steps:
         plan.append(step["skill"])
         labels.append("")
+        if "outputs" in step:
+            outputs[str(len(plan) - 1)] = list(step["outputs"])
         if step.get("review"):
             plan.append(step["review"])
             labels.append(_review_label(step["skill"]))
@@ -31,7 +35,7 @@ def _plan_entries(steps: list[dict[str, Any]]) -> dict[str, Any]:
     pauses = [position for position in pauses if position < len(plan) - 1]
     return {"plan": plan, "labels": labels, "pauses": pauses,
             "questions": {key: value for key, value in questions.items() if int(key) in pauses},
-            "final_question": final_question}
+            "final_question": final_question, "outputs": outputs}
 
 
 def flow_plan(flow: dict[str, Any], until: str | None, skills: set[str]) -> dict[str, Any]:

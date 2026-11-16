@@ -37,7 +37,7 @@
     "name": "FDU protocol orchestration"
   },
   "process:fdu-resource-verify": {
-    "description": "Used to refresh resource snapshots, verify required resources in step JSON, and backfill real resource information into step JSON.",
+    "description": "Used to refresh resource snapshots, verify required resources in step JSON, and backfill real resource information into step JSON; also answers a read-only query of the current resources (refresh the snapshot and report the resource list), which needs no step JSON.",
     "document": "graph/canonical/entities/processes/FduResourceVerifyProcess.md",
     "entity_type": "Process",
     "id": "process:fdu-resource-verify",

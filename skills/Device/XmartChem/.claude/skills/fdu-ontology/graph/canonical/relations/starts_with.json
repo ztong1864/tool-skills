@@ -4,5 +4,11 @@
     "id": "agent-flow:fdu-experiment-to-device-task--startsWith--task-step:parse-experiment-request",
     "relation_type": "startsWith",
     "to": "task-step:parse-experiment-request"
+  },
+  "agent-flow:fdu-resource-snapshot--startsWith--task-step:refresh-resource-snapshot": {
+    "from": "agent-flow:fdu-resource-snapshot",
+    "id": "agent-flow:fdu-resource-snapshot--startsWith--task-step:refresh-resource-snapshot",
+    "relation_type": "startsWith",
+    "to": "task-step:refresh-resource-snapshot"
   }
 }

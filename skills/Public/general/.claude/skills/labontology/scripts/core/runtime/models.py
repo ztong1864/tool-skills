@@ -118,6 +118,9 @@ class MissionState:
     plan_pauses: list[int] | None = None
     plan_labels: list[str] = field(default_factory=list)
     plan_questions: dict[str, str] = field(default_factory=dict)
+    # The declared outputs a flow step makes, by plan position, for steps that list them (`outputs:` in the flow):
+    # a position not listed makes all of its Skill's declared outputs.
+    plan_outputs: dict[str, list[str]] = field(default_factory=dict)
     # Plan positions (0-based, as strings) reopened by a redo before the plan was finished: only actions numbered
     # above the value can do that position again (act --revise on an unfinished plan).
     plan_floors: dict[str, int] = field(default_factory=dict)
@@ -155,6 +158,7 @@ class MissionState:
             "plan_pauses": self.plan_pauses,
             "plan_labels": self.plan_labels,
             "plan_questions": self.plan_questions,
+            "plan_outputs": self.plan_outputs,
             "plan_floors": self.plan_floors,
         }
 
@@ -193,5 +197,7 @@ class MissionState:
                          else [int(item) for item in data.get("plan_pauses") or []]),
             plan_labels=[str(item) for item in data.get("plan_labels") or []],
             plan_questions={str(key): str(value) for key, value in (data.get("plan_questions") or {}).items()},
+            plan_outputs={str(key): [str(item) for item in value or []]
+                          for key, value in (data.get("plan_outputs") or {}).items()},
             plan_floors={str(key): int(value) for key, value in (data.get("plan_floors") or {}).items()},
         )

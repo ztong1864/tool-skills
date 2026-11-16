@@ -9,20 +9,21 @@ description: 用于从 FDU 化学试剂检测仪器的服务器获取最新检�
 
 ## 配置
 
-使用 [config/report-source.json](config/report-source.json)。当前报告服务器为 `FuDan@100.79.217.71:22`，通过 Tailscale 访问，只有加入该 Tailscale 网络的机器（平台服务器）连得上；目录为 Windows 的 `F:\MaSM Group\TestResults`，配置中使用 SFTP 路径 `/F:/MaSM Group/TestResults`，保留目录名中的空格。脚本自动从同一配置目录的 `ssh-password.local` 读取密码，无需交互输入。该文件不进 git，由管理员放到服务器上本技能的 `config/` 目录；缺失时告诉用户需要管理员配置，不要让用户在对话里提供密码。`host` 填实际主机名或 IP；本脚本不解析 OpenSSH 主机别名、跳板或 ProxyCommand。
+使用 [config/report-source.json](config/report-source.json)。当前报告服务器为 `FuDan@100.79.217.71:22`，通过 Tailscale 访问，只有加入该 Tailscale 网络的机器（平台服务器）连得上；目录为 Windows 的 `F:\MaSM Group\TestResults`，配置中使用 SFTP 路径 `/F:/MaSM Group/TestResults`，保留目录名中的空格。登录名和密码由管理员写在设备目录的 `.env`（`skills/Device/XmartChem/.env` 的 `FDU_FETCH_NAME`、`FDU_FETCH_PASSWORD`），脚本自动读取，无需交互输入；`.env` 不进 git。缺失或为空时脚本报 `AUTH: environment variable … is unset or empty`，告诉用户需要管理员配置，不要让用户在对话里提供密码。`host` 填实际主机名或 IP；本脚本不解析 OpenSSH 主机别名、跳板或 ProxyCommand。
 
 | 配置项 | 含义 |
 | --- | --- |
-| `host` / `port` / `username` | 检测服务器主机、SSH 端口和登录用户；默认端口 22 |
+| `host` / `port` / `username` | 检测服务器主机、SSH 端口和登录用户；默认端口 22。设置了 `username_env` 时以环境变量为准，`username` 作为兜底 |
 | `remote_dir` | 固定报告目录，使用服务器 SFTP 的绝对路径（以 `/` 开头）；只扫描这一层 |
 | `patterns` | 报告文件名通配符列表，默认只取 `*.pdf`；按实际格式调整，可限定样品编号 |
 | `key_filename` | 本地私钥文件路径，可留空使用 SSH agent 或默认私钥 |
 | `known_hosts_file` | 可选的已验证主机密钥文件；默认使用 `~/.ssh/known_hosts` 及系统记录 |
-| `password_file` | 本地密码文件路径；相对路径以配置文件所在目录为准。当前使用 `ssh-password.local`，文件为单行 UTF-8 密码。 |
-| `password_env` | 可选的密码环境变量名，例如 `FDU_REPORT_SSH_PASSWORD`；与 `password_file` 二选一。 |
+| `username_env` | 登录名的环境变量名；当前为 `FDU_FETCH_NAME`，来自 `skills/Device/XmartChem/.env` |
+| `password_env` | 密码的环境变量名；当前为 `FDU_FETCH_PASSWORD`，来自同一个 `.env`。与 `password_file` 二选一 |
+| `password_file` | 本地密码文件路径（相对路径以配置文件所在目录为准，单行 UTF-8）；现在改用 `password_env`，此项留空 |
 | `stable_seconds` / `timeout` | 文件属性稳定观察间隔（默认 2 秒）和连接/通道操作超时（默认 30 秒） |
 
-密码内容只存放在本地凭据文件；技能说明、主配置、命令输出、下载清单和共享包均不包含其内容。不要读取或打印该文件。主机密钥必须预先通过可信指纹核验，登记在运行平台后端的用户的 `~/.ssh/known_hosts`；脚本拒绝未知或不匹配的主机密钥，此时报告原因，不要自行登记主机密钥。依赖 `paramiko` 已装在对话的 Python 环境中，不需要再安装。
+密码内容只存放在设备目录的 `.env`；技能说明、主配置、命令输出、下载清单和共享包均不包含其内容。不要读取或打印该文件。主机密钥必须预先通过可信指纹核验，登记在运行平台后端的用户的 `~/.ssh/known_hosts`；脚本拒绝未知或不匹配的主机密钥，此时报告原因，不要自行登记主机密钥。依赖 `paramiko` 已装在对话的 Python 环境中，不需要再安装。
 
 ## 获取流程
 

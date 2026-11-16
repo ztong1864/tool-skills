@@ -18,10 +18,43 @@ class ReportError(Exception):
     pass
 
 
+def load_device_env():
+    """登录凭据来自设备目录的 .env（`skills/Device/<设备>/.env`），技能目录和 `.claude/skills` 下的 .env 也认，
+    先找到的那份优先（和同树的 fdu-resource-verify / fdu-device-run 一致）。
+
+    load_dotenv 不覆盖已有的环境变量，所以服务器环境变量仍然优先；dotenv 装不上时只用进程环境。"""
+    try:
+        from dotenv import load_dotenv
+    except ImportError:
+        return
+    here = Path(__file__).resolve()
+    # parents: [0] scripts, [1] 技能, [2] .claude/skills, [3] .claude, [4] 设备目录
+    for root in (here.parents[1], here.parents[2], here.parents[4]):
+        env_path = root / ".env"
+        if env_path.is_file():
+            load_dotenv(env_path)
+
+
+load_device_env()
+
+
+def resolve_username(config):
+    """登录名：`username_env` 指定的环境变量优先，其次配置里的 `username`。"""
+    name_env = config.get("username_env")
+    if name_env:
+        value = (os.environ.get(name_env) or "").strip()
+        if value:
+            return value
+        if not (config.get("username") or "").strip():
+            raise ReportError(f"AUTH: environment variable {name_env} is unset or empty")
+    return config["username"]
+
+
 def validate_config(config):
     if not isinstance(config, dict):
         raise ReportError("CONFIG: configuration must be a JSON object")
-    for name in ("host", "username", "remote_dir"):
+    # username 可以改由 username_env 指定的环境变量提供，此时配置里不必再写。
+    for name in (("host", "remote_dir") if config.get("username_env") else ("host", "username", "remote_dir")):
         value = config.get(name)
         if not isinstance(value, str) or not value.strip():
             raise ReportError(f"CONFIG: fill in {name} before connecting")
@@ -41,7 +74,7 @@ def validate_config(config):
         not isinstance(p, str) or not p or any(c in p for c in "/\\\x00\r\n") for p in patterns
     ):
         raise ReportError("CONFIG: patterns must be a nonempty list of filename globs")
-    for field in ("key_filename", "known_hosts_file", "password_env", "password_file"):
+    for field in ("key_filename", "known_hosts_file", "password_env", "password_file", "username_env"):
         if config.get(field) is not None and (not isinstance(config[field], str) or not config[field].strip()):
             raise ReportError(f"CONFIG: {field} must be a nonempty string or null")
     if config.get("password_env") and config.get("password_file"):
@@ -168,9 +201,10 @@ def connect(config, *, config_dir=None):
     key = config.get("key_filename")
     timeout = config.get("timeout", 30)
     try:
-        client.connect(hostname=config["host"], port=config.get("port", 22), username=config["username"],
+        client.connect(hostname=config["host"], port=config.get("port", 22), username=resolve_username(config),
                        key_filename=str(Path(key).expanduser()) if key else None, password=password,
-                       allow_agent=not password_file, look_for_keys=not password_file,
+                       # 有口令就只用口令认证，不管它来自环境变量还是凭据文件。
+                       allow_agent=not password, look_for_keys=not password,
                        timeout=timeout, banner_timeout=timeout, auth_timeout=timeout, channel_timeout=timeout)
         return client
     except BaseException:

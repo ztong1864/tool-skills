@@ -3,6 +3,8 @@
 # rule:risk-review-after-planning-output, pauses = the pausesAt checkpoints, stop "plan" = process:fdu-plan-generation.
 # Update this file when the AgentFlow, the checkpoints or the risk-review rule change.
 # fdu-report-analysis (report fetching and spectrum analysis after the device run) is not in the graph yet.
+# fdu-resource-snapshot = agent-flow:fdu-resource-snapshot (task-step:refresh-resource-snapshot): a read-only query of
+# the device's current resources, without step JSON.
 schema: labontology.experiment-flow.v1
 flows:
   - id: fdu-experiment-to-device-task
@@ -54,3 +56,14 @@ flows:
         stop: report
       - skill: fdu-spectrum-analysis
         stop: analysis
+  - id: fdu-resource-snapshot
+    name: 复旦智能合成工作站：只读查询资源清单
+    description: 只刷新设备资源快照并按类别汇报当前资源清单；不做工作流资源校验，也不生成或修改 step JSON。
+    default_stop: snapshot
+    stops:
+      snapshot: 刷新资源快照并汇报资源清单（唯一终点）
+    steps:
+      - skill: fdu-resource-verify
+        stop: snapshot
+        # Only the snapshot files: this step writes no checked step JSON (registered with --provide-artifact).
+        outputs: []

@@ -146,14 +146,14 @@
     "user_visible": false
   },
   "artifact:resource-snapshot": {
-    "agent_meaning": "Current resource snapshot refreshed or maintained by fdu-resource-verify and used as the source of truth for resource verification.",
+    "agent_meaning": "Current resource snapshot refreshed or maintained by fdu-resource-verify and used as the source of truth for resource verification; also the answer of a read-only resource query (task-step:refresh-resource-snapshot).",
     "consumer_step_ids": [],
     "entity_type": "DataArtifact",
     "format": "json",
     "id": "artifact:resource-snapshot",
     "must_confirm": false,
     "name": "Resource snapshot",
-    "path_hint": "fdu-resource-verify/KB/resource_info.json",
+    "path_hint": "fdu-resource-verify/KB/resource_info.json; under LabOntology, resource_info.json and resource_info_<timestamp>.json in the mission's artifacts folder",
     "producer_step_id": "task-step:verify-and-fill-resources",
     "required_fields": [],
     "user_visible": false

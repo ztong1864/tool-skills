@@ -9,11 +9,29 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import requests
+from dotenv import load_dotenv
 
-BASE_URL = os.getenv("FDU_DEVICE_BASE_URL", "http://10.26.3.226:4669")
-USERNAME = os.getenv("FDU_DEVICE_USERNAME", "admin")
-PASSWORD = os.getenv("FDU_DEVICE_PASSWORD", "admin")
-TIMEOUT = int(os.getenv("FDU_DEVICE_TIMEOUT", "20"))
+
+def load_device_env() -> None:
+    """设备接口的配置放在设备目录的 .env（`skills/Device/<设备>/.env`），技能目录和 `.claude/skills` 下的
+    .env 也认，先找到的那份优先（和 fdu-execution-monitoring 的 load_env 一致）。
+
+    这个脚本原来把工作站地址和登录名写死在代码里（一台换掉的机器加 admin/admin），所以换工作站时它还在
+    连旧地址，口令也明文留在技能目录里。现在和 fdu-resource-verify 一样只从环境或设备目录的 .env 取。"""
+    here = Path(__file__).resolve()
+    # parents: [0] scripts, [1] 技能, [2] .claude/skills, [3] .claude, [4] 设备目录
+    for root in (here.parents[1], here.parents[2], here.parents[4]):
+        env_path = root / ".env"
+        if env_path.is_file():
+            load_dotenv(env_path)
+
+
+load_device_env()
+
+BASE_URL = os.getenv("FDU_DEVICE_BASE_URL")
+USERNAME = os.getenv("FDU_DEVICE_USERNAME")
+PASSWORD = os.getenv("FDU_DEVICE_PASSWORD")
+TIMEOUT = int(os.getenv("FDU_DEVICE_TIMEOUT") or "20")
 
 ROOT = Path(__file__).resolve().parents[1]
 KB_DIR = ROOT / "KB"
@@ -92,6 +110,11 @@ def extract_resource_list(raw: Dict[str, Any]) -> List[Dict[str, Any]]:
 
 
 def main() -> int:
+    missing = [name for name, value in (("FDU_DEVICE_BASE_URL", BASE_URL), ("FDU_DEVICE_USERNAME", USERNAME),
+                                        ("FDU_DEVICE_PASSWORD", PASSWORD)) if not value]
+    if missing:
+        raise SystemExit(f"设备接口没有配置：缺少 {'、'.join(missing)}（服务器环境变量或 "
+                         "skills/Device/<设备>/.env，由管理员配置）。配置之前不能刷新资源快照。")
     client = DeviceAPIClient(BASE_URL, USERNAME, PASSWORD, TIMEOUT)
     client.login()
     raw = client.get_resource_info()
