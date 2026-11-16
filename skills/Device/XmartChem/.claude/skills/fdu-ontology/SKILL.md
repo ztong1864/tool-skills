@@ -228,6 +228,7 @@ Agent 可以执行的一步。它通常对应一个 skill 调用，也可以是�
 - `fdu-step-json`: 将单个方案拆成 step JSON；主流程通常由 `fdu-multi-step-json` 内部调用。
 - `fdu-multi-step-json`: 从一个或多个方案 Markdown 生成合并后的 step JSON。
 - `fdu-resource-verify`: 刷新资源快照、校验资源、回填资源。
+- `fdu-resource-fetch`: 只读查询装置当前的资源清单（刷新资源快照并按区域、托盘汇总），不需要 step JSON；不校验、不回填，不创建或操作设备任务。用户只想看资源状态时用它。
 - `fdu-unit-orchestration-json`: 生成设备协议 JSON。
 - `fdu-device-run`: 提交设备任务；默认只创建任务，启动执行必须单独确认。
 - `fdu-execution-monitoring`: 设备任务创建后的可选只读监控；可读取状态并推送异常提醒，不得启动、暂停、取消、恢复、重试、跳过、提交或修改设备任务。
