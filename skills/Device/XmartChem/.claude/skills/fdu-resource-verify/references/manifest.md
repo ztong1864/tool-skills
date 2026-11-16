@@ -2,7 +2,7 @@
 
 ## 概述
 
-这是化学实验流程的一部分，用于把资源处理拆成刷新、校验、渲染三个入口脚本。也可以单独只读查询装置当前的资源清单（只用刷新脚本）。
+这是化学实验流程的一部分，用于把资源处理拆成刷新、校验、渲染三个入口脚本。
 
 ## 流程视图
 
@@ -18,14 +18,8 @@
    - `scripts/render_step_json.py <step_json_path> <verification_result_path>` 根据校验结果回填资源信息，输出 `verified_step_json`
 2. 直接回填工作流
    - `scripts/render_step_json.py <step_json_path> --direct` 直接根据 `KB/resource_info.json` 回填资源信息，输出 `verified_step_json`
-3. 只读快照模式（流程 `fdu-resource-snapshot`）
-   - 只运行 `scripts/fetch_resource_info.py --resource-dir <artifacts 目录>`，写出 `resource_info_<时间戳>.json`（原始快照，带 `timestamp`）和 `resource_info.json`（精简列表）
-   - 不需要 step JSON，不运行校验和渲染脚本，不产出 `verified_step_json`
-   - 设备接口不可用时直接报错，不退回本地快照；用户明确要看本地快照时才读 `KB/resource_info.json`，并说明它不是设备现状
 
 ## 常见输入
-
-以下是校验和回填工作流的输入；只读快照模式不需要输入文件。
 
 - `fdu-multi-step-json` 输出的 step JSON
 - 设备资源快照

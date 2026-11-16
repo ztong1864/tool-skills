@@ -23,21 +23,11 @@ from protocol_utils import (
     write_json,
 )
 
-def load_device_env() -> None:
-    """设备接口的配置放在设备目录的 .env（`skills/Device/<设备>/.env`），技能目录和 `.claude/skills` 下的
-    .env 也认，先找到的那份优先（和 fdu-execution-monitoring 的 load_env 一致）。
+# 优先从.env文件加载配置，其次从环境变量加载
 
-    load_dotenv 不覆盖已有的环境变量，所以服务器环境变量仍然优先于这些文件：同一台工作站的地址和口令
-    只写在设备目录里一份，run、monitor 和资源快照刷新都从这里取。"""
-    here = Path(__file__).resolve()
-    # parents: [0] scripts, [1] 技能, [2] .claude/skills, [3] .claude, [4] 设备目录
-    for root in (here.parents[1], here.parents[2], here.parents[4]):
-        env_path = root / ".env"
-        if env_path.is_file():
-            load_dotenv(env_path)
-
-
-load_device_env()
+env_path = Path(__file__).resolve().parents[2] / ".env"
+if env_path.exists():
+    load_dotenv(env_path)
 
 BASE_URL = os.getenv("FDU_DEVICE_BASE_URL")
 USERNAME = os.getenv("FDU_DEVICE_USERNAME")
@@ -49,7 +39,7 @@ def check_device_settings(args: argparse.Namespace) -> None:
     missing = [name for name, value in (("FDU_DEVICE_BASE_URL", args.base_url), ("FDU_DEVICE_USERNAME", args.username),
                                         ("FDU_DEVICE_PASSWORD", args.password)) if not value]
     if missing:
-        raise SystemExit(f"设备接口没有配置：缺少 {'、'.join(missing)}（服务器环境变量或 skills/Device/<设备>/.env，由管理员配置）。"
+        raise SystemExit(f"设备接口没有配置：缺少 {'、'.join(missing)}（服务器环境变量或技能目录的 .env，由管理员配置）。"
                          "配置之前不能创建设备任务。")
     if args.timeout is None:
         timeout = os.getenv("FDU_DEVICE_TIMEOUT") or "20"

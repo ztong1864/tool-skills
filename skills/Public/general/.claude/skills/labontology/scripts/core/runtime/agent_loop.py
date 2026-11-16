@@ -292,7 +292,7 @@ class AgentRuntime:
                 if chosen:
                     plan = chosen["plan"]
                     built = {"pauses": chosen["pauses"], "labels": chosen["labels"],
-                             "questions": chosen["questions"], "outputs": chosen["outputs"]}
+                             "questions": chosen["questions"]}
                     self.notice = (f"These Skills are steps of the experiment flow {declared.get('name') or declared['id']} "
                                    f"({declared['id']}): the plan runs them in the flow's order with the review after "
                                    "each step that has one, and pauses only where the flow pauses (see plan_progress).")
@@ -308,7 +308,6 @@ class AgentRuntime:
             state.plan_pauses = built["pauses"]
             state.plan_labels = built["labels"]
             state.plan_questions = built["questions"]
-            state.plan_outputs = dict(built.get("outputs") or {})
         self.store.save(state)
         self.store.event("mission_created", {"goal": goal, "mode": "agent"})
         return state
@@ -425,20 +424,6 @@ class AgentRuntime:
     def _open_positions(self, state: MissionState) -> list[int]:
         slots = self._plan_slots(state)
         return [index for index in range(len(state.plan)) if index not in slots]
-
-    def _required_outputs(self, state: MissionState, skill: SkillSpec) -> list[str]:
-        """The declared outputs this run of the Skill must hand in: all of them, unless the experiment-flow step it
-        fills (its earliest open plan position) lists the ones it makes (`outputs:`, see core/runtime/flows.py).
-        fdu-resource-verify also answers a read-only query for the device's resources, which writes the resource
-        snapshot and no checked step JSON; requiring the step JSON left that step no way to finish but registering
-        the snapshot as the step JSON or reporting a failure."""
-        if state.plan_outputs and skill.id in state.plan:
-            position = next((index for index in self._open_positions(state) if state.plan[index] == skill.id), None)
-            listed = state.plan_outputs.get(str(position)) if position is not None else None
-            if listed is not None:
-                wanted = {name.removeprefix("artifact:") for name in listed}
-                return [name for name in skill.outputs if name.removeprefix("artifact:") in wanted]
-        return list(skill.outputs)
 
     def _open_review_index(self, state: MissionState, skill_id: str) -> int | None:
         """The plan position this Skill works on (its earliest open one) when that position is a flow review."""
@@ -563,10 +548,8 @@ class AgentRuntime:
         if revision_plan is not None:
             state.plan, state.plan_pauses = revision_plan["plan"], revision_plan["pauses"]
             state.plan_labels, state.plan_questions = revision_plan["labels"], revision_plan["questions"]
-            state.plan_outputs = dict(revision_plan.get("outputs") or {})
         else:
             state.plan, state.plan_pauses, state.plan_labels, state.plan_questions = redo, None, [], {}
-            state.plan_outputs = {}
         if state.flow:
             # A revision ends like any revision (act --complete and report), not at the flow's stop question.
             state.flow = {**state.flow, "final_question": None, "next": None}
@@ -899,12 +882,6 @@ class AgentRuntime:
             running = self.skills.get(pending.get("skill_id") or "")
             folder_outputs = [name for name, template in (running.outputs.items() if running else [])
                               if not Path(str(template or "")).suffix]
-            needed = self._required_outputs(state, running) if running else []
-            skipped = [name for name in (running.outputs if running else {}) if name not in needed]
-            if skipped:
-                steps.append(f"This step of the experiment flow makes {needed or 'none of the declared outputs'} "
-                             f"(not {skipped}): do only the part of the Skill the flow asks for, then register the "
-                             "files it really wrote with --provide-artifact <name>=<path>.")
             if folder_outputs:
                 steps.append(f"{', '.join(folder_outputs)} {'is' if len(folder_outputs) == 1 else 'are'} declared without "
                              "a file type: when the Skill writes it as a folder (an --output-dir), make that folder a "
@@ -1640,7 +1617,6 @@ class AgentRuntime:
             self._record_prerequisite_feedback(skill, action, error)
             return self._observe(state, "blocked", error)
         state.artifacts.update(action.get("inputs", {}))
-        required = self._required_outputs(state, skill)
         # Every Skill is executed through the prepared document contract. A
         # script, when present, is merely an optional host-side accelerator.
         action["ticket_status"] = "waiting_external"
@@ -1649,8 +1625,8 @@ class AgentRuntime:
         state.skill_executions[action["id"]] = {
             "skill_id": skill.id,
             "status": "waiting_agent",
-            "required_outputs": required,
-            "output_templates": {name: skill.outputs[name] for name in required},
+            "required_outputs": list(skill.outputs),
+            "output_templates": dict(skill.outputs),
             "optional_script_available": bool(skill.optional_command or skill.optional_entrypoints),
         }
         self.store.save(state)
@@ -1693,7 +1669,7 @@ class AgentRuntime:
             raise ValueError("Selected Skill changed during interruption; cannot reconcile its contract")
         outputs = _materialize_artifacts(_artifact_paths(provided_artifacts or {}), self.store.run_dir / "artifacts")
         if outcome == "succeeded":
-            missing = sorted(set(self._required_outputs(state, skill)) - outputs.keys())
+            missing = sorted(set(skill.outputs) - outputs.keys())
             if missing:
                 raise ValueError(f"Required reconciled outputs missing: {missing}")
             state.artifacts.update(outputs)
@@ -1862,7 +1838,7 @@ class AgentRuntime:
             return self._review_not_passed(state, review, summary) if review is not None else state
         outputs = _materialize_artifacts(_artifact_paths(provided_artifacts or {}), self.store.run_dir / "artifacts")
         outputs = _canonical_outputs(skill.outputs, outputs)
-        missing = sorted(set(self._required_outputs(state, skill)) - outputs.keys())
+        missing = sorted(set(skill.outputs) - outputs.keys())
         if missing:
             given = {Path(path).resolve() for path in outputs.values()}
             files = [f"{_pastable_path(path)} (given as {artifact_id})" for artifact_id, path in outputs.items()

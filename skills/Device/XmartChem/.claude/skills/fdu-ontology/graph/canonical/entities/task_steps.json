@@ -173,25 +173,6 @@
     "skill_name": "fdu-resource-verify",
     "step_kind": "skill_call"
   },
-  "task-step:refresh-resource-snapshot": {
-    "agent_should_check": [
-      "The resource snapshot files were written in this run (resource_info.json and the timestamped raw snapshot)",
-      "The reply says whether the numbers come from the device or from the local fallback snapshot",
-      "Do not ask for, generate or modify step JSON in this read-only query"
-    ],
-    "entity_type": "TaskStep",
-    "failure_policy": "stop_and_report",
-    "id": "task-step:refresh-resource-snapshot",
-    "input_artifact_ids": [],
-    "name": "Refresh resource snapshot (read-only query)",
-    "output_artifact_ids": [
-      "artifact:resource-snapshot"
-    ],
-    "requires_user_confirmation_after": false,
-    "requires_user_confirmation_before": false,
-    "skill_name": "fdu-resource-verify",
-    "step_kind": "skill_call"
-  },
   "task-step:orchestrate-device-protocol": {
     "agent_should_check": [
       "Verified step JSON exists",

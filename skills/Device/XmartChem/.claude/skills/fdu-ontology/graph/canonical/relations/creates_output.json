@@ -76,11 +76,5 @@
     "id": "task-step:write-experiment-plan--createsOutput--artifact:experiment-plan-md",
     "relation_type": "createsOutput",
     "to": "artifact:experiment-plan-md"
-  },
-  "task-step:refresh-resource-snapshot--createsOutput--artifact:resource-snapshot": {
-    "from": "task-step:refresh-resource-snapshot",
-    "id": "task-step:refresh-resource-snapshot--createsOutput--artifact:resource-snapshot",
-    "relation_type": "createsOutput",
-    "to": "artifact:resource-snapshot"
   }
 }

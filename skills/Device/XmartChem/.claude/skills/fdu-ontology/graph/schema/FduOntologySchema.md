@@ -236,10 +236,6 @@ Route:
 14. `task-step:create-device-task`
 15. Optional: `task-step:monitor-device-task`
 
-## Read-only Resource Query Flow
-
-`agent-flow:fdu-resource-snapshot` (entry `process:fdu-resource-verify`) has one step, `task-step:refresh-resource-snapshot`: refresh the device resource snapshot and report the resource list. It needs no step JSON and does not verify or backfill resources. In LabOntology it is the flow `fdu-resource-snapshot` of `experiment_flows.yaml`.
-
 ## Modeling Rules
 
 - Use `TaskStep` for Agent actions.

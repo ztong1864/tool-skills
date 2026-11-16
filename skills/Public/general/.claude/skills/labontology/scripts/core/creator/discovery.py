@@ -371,14 +371,6 @@ def _experiment_flow(raw: Any, number: int) -> tuple[dict[str, Any] | None, str 
                 step[key] = _flow_text(item[key])
         if item.get("optional") is True:
             step["optional"] = True
-        if "outputs" in item:
-            # The Skill's declared outputs this step makes, when the flow uses only part of the Skill (a read-only
-            # query of a Skill that can also write files); `outputs: []` for none. Absent: all of them.
-            listed = item["outputs"]
-            if not isinstance(listed, list) or not all(_flow_text(name) for name in listed):
-                return None, (f"flow {flow_id}: step {index} outputs must be a list of the Skill's declared output "
-                              "ids ([] for none)")
-            step["outputs"] = [_flow_text(name) for name in listed]
         if step.get("stop"):
             stops.setdefault(step["stop"], "")
         steps.append(step)

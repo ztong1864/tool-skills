@@ -88,11 +88,5 @@
     "id": "rule:stop-on-skill-failure--appliesTo--agent-flow:fdu-experiment-to-device-task",
     "relation_type": "appliesTo",
     "to": "agent-flow:fdu-experiment-to-device-task"
-  },
-  "rule:resource-snapshot-is-source-of-truth--appliesTo--task-step:refresh-resource-snapshot": {
-    "from": "rule:resource-snapshot-is-source-of-truth",
-    "id": "rule:resource-snapshot-is-source-of-truth--appliesTo--task-step:refresh-resource-snapshot",
-    "relation_type": "appliesTo",
-    "to": "task-step:refresh-resource-snapshot"
   }
 }

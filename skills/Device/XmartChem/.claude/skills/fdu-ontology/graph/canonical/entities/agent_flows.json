@@ -18,16 +18,5 @@
       "task-step:create-device-task",
       "task-step:monitor-device-task"
     ]
-  },
-  "agent-flow:fdu-resource-snapshot": {
-    "description": "Read-only query of the workstation's current resources: refreshes the device resource snapshot and reports the resource list. Needs no step JSON; does not verify or backfill resources.",
-    "entity_type": "AgentFlow",
-    "entry_process_id": "process:fdu-resource-verify",
-    "id": "agent-flow:fdu-resource-snapshot",
-    "name": "FDU resource snapshot query",
-    "start_step_id": "task-step:refresh-resource-snapshot",
-    "steps": [
-      "task-step:refresh-resource-snapshot"
-    ]
   }
 }
